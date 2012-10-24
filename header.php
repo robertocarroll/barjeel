@@ -1,0 +1,75 @@
+<?php
+/**
+ * The Header for our theme.
+ *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * @package barjeel
+ * @since barjeel 1.0
+ */
+?>
+
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<head>
+
+<!-- Meta Data & SEO -->
+<meta charset="<?php bloginfo( 'charset' ); ?>" />
+<meta name="viewport" content="width=device-width" />
+
+<title><?php wp_title(''); ?></title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+<!-- Favicons and Apple Touch icons
+	================================================== -->
+	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
+	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-114x114.png">
+
+<!--[if lt IE 9]>
+<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<?php wp_head(); ?>
+
+</head>
+
+<!-- Header starts here -->
+
+<body <?php body_class(); ?> >
+<div id="page" class="hfeed site">
+	<?php do_action( 'before' ); ?>
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<!-- First comes the logo -->
+	
+			<div class="logo">	
+				<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" /></a>
+			</div><!-- .logo -->
+				
+		</hgroup>
+		
+		<!-- Language selector - WPML --->
+			<div class="language">
+			
+				<?php do_action('icl_language_selector'); ?>
+				
+			</div><!-- .language -->	
+			
+			
+		<nav role="navigation" class="site-navigation main-navigation">
+			<h1 class="assistive-text"><?php _e( 'Menu', 'barjeel' ); ?></h1>
+			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'barjeel' ); ?>"><?php _e( 'Skip to content', 'barjeel' ); ?></a></div>
+
+			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		</nav><!-- .site-navigation .main-navigation -->
+	</header><!-- #masthead .site-header -->
+
+<!-- End Header -->
+ 
+<!-- Body starts here -->
+
+	<div id="main" class="site-main">

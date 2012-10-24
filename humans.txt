@@ -1,0 +1,30 @@
+
+	<SITE NAME>
+	
+	==========================
+	
+	/* TEAM */
+	
+	PROJECT LEAD
+	John Doe
+	http://johndoe.com
+	@johndoe
+	
+	DESIGNER
+	John Smith
+	http://johnsmith.org
+	@johnny
+	
+	DEVELOPER
+	Jane Doe
+	http://janedoe.se
+	@janey
+	
+	
+	/* SITE */
+	
+	Date: 2011-07-18
+	
+	TECHNOLOGIES
+	- Built with Wordpress
+	- Developed with HTML5, CSS3, jQuery.

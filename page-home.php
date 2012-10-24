@@ -26,7 +26,7 @@ Template Name: Home Page
    'meta_key' => 'post_views_count',
    'orderby' => 'meta_value_num',
    'order' => 'DESC',
-   'posts_per_page'    => 5,
+   'posts_per_page'    => 6,
     'category_name' => 'collection',
  );
  $mostviewed_query = new WP_Query($mostviewed); ?>
@@ -35,8 +35,13 @@ Template Name: Home Page
     <h2>Most Popular</h2>
 
     <div id="slider-code">
-    <a class="buttons prev" href="#">left</a>
-     <a class="buttons next" href="#">right</a>
+
+    	<div class="slidernav">
+
+    		<a class="buttons prev" href="#">left</a>
+     		<a class="buttons next" href="#">right</a>
+     	</div>
+     		
      <div class="viewport">
         <ul class="overview">
     

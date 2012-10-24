@@ -43,11 +43,11 @@
 				<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false); ?>
 			
 							<?php if ( $exhibitions ) { ?>	
-							<li>Exhibition:</li>
+							<li>Exhibition:
 								<?php foreach($exhibitions as $exhibition) {
-									echo '<li>'.$exhibition.'</li>';
+									echo ''.$exhibition.' ';
 									} ?>
-						
+							</li>
 							<?php } ?>
 			</ul>		
 		
@@ -104,7 +104,7 @@ $currentID = get_the_ID();
 				
 				<?php if( $artwork_query->have_posts() ) : ?>
 
-				<?php echo rw_get_the_term_list(null, 'artist', false, 'More work by ', ', ', ''); ?>
+				<h2><?php echo rw_get_the_term_list(null, 'artist', false, 'More work by ', ', ', ''); ?></h2>
 				
 				<div id="sortartist">
 			

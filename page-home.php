@@ -7,8 +7,7 @@ Template Name: Home Page
 
 <?php get_header(); ?>
 		
-		
-		
+			
 		
 	<div id="primary" class="content-area">
 			<div id="content" class="site-content" role="main">
@@ -33,42 +32,43 @@ Template Name: Home Page
  $mostviewed_query = new WP_Query($mostviewed); ?>
 
 <?php if( $mostviewed_query->have_posts() ) : ?>
-    <h2>Most Viewed</h2>
-    
-    <div id="sort">
+    <h2>Most Popular</h2>
+
+    <div id="slider-code">
+    <a class="buttons prev" href="#">left</a>
+     <a class="buttons next" href="#">right</a>
+     <div class="viewport">
+        <ul class="overview">
     
         <?php while ( $mostviewed_query->have_posts() ) : $mostviewed_query->the_post(); ?>
-           
-        <div class="box-ms">
-		
-				<article <?php post_class(); ?>>
-									
-								<div class="center">						
+          
+								<li>
+								<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+
+								<?php echo getPostViews(get_the_ID()); ?>						
 									<?php
 									if ( has_post_thumbnail() ){ ?>
 										<a href="<?php the_permalink(); ?>">
 											<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
 											<?php the_post_thumbnail('collection-thumb'); ?>
 										</a>	
-									<?php } ?>
-								
-								</div><!-- .center -->	
+									<?php } ?>	
 							
-								<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								
-								<p class="artist"><?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?></p>
+								
+								
 
-								<?php
-          echo getPostViews(get_the_ID());
-?>
-		
-							</article>
-									
-						</div><!-- .box-ms -->	      
+							</li>
+
+				   
         
             <?php endwhile; ?>
-				
-		</div>
+
+            </ul>
+    </div>
+  
+</div>
 				
 		<?php endif; ?>	
     

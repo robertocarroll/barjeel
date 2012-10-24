@@ -9,11 +9,11 @@
 					
 					Using Artist
 					
-				<h2 class="gamma">
+				<h1 class="gamma">
 						<?php
 								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 						?>
-					</h2>
+					</h1>
 					
 					<?php echo category_description(); ?>
 					

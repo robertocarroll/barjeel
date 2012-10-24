@@ -1,4 +1,8 @@
-
+jQuery(document).ready(function ($) {
+                
+        $('#slider-code').tinycarousel({ display: 2 });
+        
+    });
 
 
 

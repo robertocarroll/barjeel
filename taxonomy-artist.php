@@ -26,14 +26,20 @@
 					
 					if($term->parent > 0) 
 							{ 
-							 echo "Related artists";
-										
+							 			
 							$termID = $term->parent;
 							$taxonomyName = $term->taxonomy;
 							$termchildren = get_term_children( $termID, $taxonomyName );
 							$exclude = array($term->term_id);
-		
-								echo '<ul>';
+
+ 							if (empty($termchildren) or ($termchildren==$exclude)) {
+ 								echo 'do nothing';
+ 								}
+
+ 								else {
+
+								echo '<h2>Related artists</h2><ul>';
+
 								foreach ($termchildren as $child) {
 									
 									if (!in_array($child, $exclude)) {
@@ -44,7 +50,7 @@
 									}
 								}
 								echo '</ul>';
-							
+								}
 							} 
 							else 
 							{ 

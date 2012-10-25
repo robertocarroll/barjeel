@@ -36,11 +36,7 @@ Template Name: Home Page
 
     <div id="slider-code">
 
-    	<div class="slidernav">
 
-    		<a class="buttons prev" href="#">left</a>
-     		<a class="buttons next" href="#">right</a>
-     	</div>
      		
      <div class="viewport">
         <ul class="overview">
@@ -72,6 +68,12 @@ Template Name: Home Page
 
             </ul>
     </div>
+
+    <div class="slidernav">
+
+    		<a class="buttons prev" href="#">left</a>
+     		<a class="buttons next" href="#">right</a>
+     	</div>
   
 </div>
 				

@@ -867,7 +867,7 @@
 ================================================== */
 
 #slider-code { height: 225px; overflow:hidden; }
-#slider-code .slidernav {float:right; }
+#slider-code .slidernav {float:left; }
 #slider-code .viewport { float: left; width: 440px; height: 225px; overflow: hidden; position: relative; }
 #slider-code .buttons { display: block; margin: 30px 10px 0 0; float: left; }
 #slider-code .next { margin: 30px 0 0 10px;  }

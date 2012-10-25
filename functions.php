@@ -82,8 +82,6 @@ add_action('wp_enqueue_scripts', 'barjeel_css_loader');
 function barjeel_scripts() {
 
 	wp_enqueue_script( 'okzoom', get_template_directory_uri() . '/js/okzoom.js', array( 'jquery' ), '20120206', true );
-
-	wp_enqueue_script( 'small-menu', get_template_directory_uri() . '/js/small-menu.js', array( 'jquery' ), '20120206', true );
 	
 	wp_enqueue_script( 'tooltips', get_template_directory_uri() . '/js/bootstrap-tooltip-popover.min.js', array( 'jquery' ), '20120206', true );
 	

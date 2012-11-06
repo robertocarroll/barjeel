@@ -3,19 +3,38 @@
 
 		<section id="primary" class="site-content">
 			<div id="content" class="container" role="main">
-			
-	<h2>Featured Post (sticky) </h2>
+
 			<?php
-				$args = array(
-					'posts_per_page' => 1,
-					'post__in'  => get_option( 'sticky_posts' ),
+
+				/* Get all sticky posts */
+				$sticky = get_option( 'sticky_posts' );
+
+				/* Sort the stickies with the newest ones at the top */
+				rsort( $sticky );
+
+				/* Get the 5 newest stickies (change 5 for a different number) */
+				$sticky = array_slice( $sticky, 0, 2 );
+
+				$stickyexhibition = array(
+					'posts_per_page' => 2,
+					'post__in'  => $sticky,
 					'ignore_sticky_posts' => 1,
 					'category_name' => 'exhibitions'
 				);
 				
-				query_posts( $args ); ?>
-											
-				<?php while (have_posts()) : the_post(); ?>
+			 ?>
+				
+
+				<?php $stickyexhibition_query = new WP_Query( $stickyexhibition ); ?>
+				
+				<?php /* Start the Loop */ ?>
+				
+				<?php if( $stickyexhibition_query->have_posts() ) : ?>		
+			
+					<h2>Featured Post (sticky) </h2>
+
+
+				<?php while ( $stickyexhibition_query->have_posts() ) : $stickyexhibition_query->the_post(); ?>
 					<article class="sticky">
 			
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -29,7 +48,9 @@
 							</article>
 				<?php endwhile; ?>
 
-				<?php wp_reset_query(); ?>  
+				<?php endif; ?>	
+				
+				<?php /* Reset query */ wp_reset_postdata(); ?>
 			
 			
 			

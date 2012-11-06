@@ -24,7 +24,7 @@
 				
 			 ?>
 				
-
+	
 				<?php $stickyexhibition_query = new WP_Query( $stickyexhibition ); ?>
 				
 				<?php /* Start the Loop */ ?>

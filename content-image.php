@@ -96,9 +96,7 @@ $currentID = get_the_ID();
 			
 			?>
 			
-				<?php 
-
-				$artwork_query = new WP_Query( $artistwork ); ?>
+				<?php $artwork_query = new WP_Query( $artistwork ); ?>
 				
 				<?php /* Start the Loop */ ?>
 				
@@ -110,30 +108,8 @@ $currentID = get_the_ID();
 			
 				<?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>
 		
-				<div class="box-ms-artist">
-		
-				<article <?php post_class(); ?>>
-									
-								<div class="center">						
-									<?php
-									if ( has_post_thumbnail() ){ ?>
-										<a href="<?php the_permalink(); ?>">
-											<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-											<?php the_post_thumbnail('collection-thumb'); ?>
-										</a>	
-									<?php } ?>
-								
-								</div><!-- .center -->	
-							
-								<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								
-								<p class="artist"><?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?></p>
-		
-							</article>
-									
-				</div><!-- .box-ms -->	      
+					<?php get_template_part('catalogue');?> 	      
 
-				
 				<?php endwhile; ?>
 
 			</div><!-- .sortartist -->	 
@@ -200,30 +176,9 @@ $currentID = get_the_ID();
     
     <div id="sort">
     
-        <?php while ( $related_query->have_posts() ) : $related_query->the_post(); ?>
+       		 <?php while ( $related_query->have_posts() ) : $related_query->the_post(); ?>
            
-        <div class="box-ms">
-		
-				<article <?php post_class(); ?>>
-									
-								<div class="center">						
-									<?php
-									if ( has_post_thumbnail() ){ ?>
-										<a href="<?php the_permalink(); ?>">
-											<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-											<?php the_post_thumbnail('collection-thumb'); ?>
-										</a>	
-									<?php } ?>
-								
-								</div><!-- .center -->	
-							
-								<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								
-								<p class="artist"><?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?></p>
-		
-							</article>
-									
-						</div><!-- .box-ms -->	      
+       			 <?php get_template_part('catalogue');?>     
         
             <?php endwhile; ?>
 				

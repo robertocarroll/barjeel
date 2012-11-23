@@ -45,7 +45,7 @@ var $containerartist = $('#sortartist');
 
 $containerartist.imagesLoaded( function(){
   $containerartist.isotope({
-    itemSelector : '.box-ms-artist',
+    itemSelector : '.box-ms',
     layoutMode : 'fitRows',
     animationEngine : 'best-available'
   });

@@ -102,7 +102,7 @@ $currentID = get_the_ID();
 				
 				<?php if( $artwork_query->have_posts() ) : ?>
 
-				<h2><?php echo rw_get_the_term_list(null, 'artist', false, 'More work by ', ', ', ''); ?></h2>
+					<h2><?php echo rw_get_the_term_list(null, 'artist', false, 'More work by ', ', ', ''); ?></h2>
 				
 				<div id="sortartist">
 			
@@ -151,22 +151,30 @@ $currentID = get_the_ID();
 
  	<br><br>related scores:  <?php print_r($scores); ?> -->
 
- 	<?php $posts = array_slice( array_keys( $scores ), 0, 100 ); // slice the results ?> 
+ 	<?php $maxvalue = max($scores); // slice the results ?> 
+
+ 	<!-- <br><br>Max value of content score :  <?php print_r($maxvalue); ?> -->
+
+ 	<?php $posts = array_slice( array_keys( $scores ), 0, 15 ); // slice the results ?> 
 
  	<!-- <br><br>Ten scores :  <?php print_r($posts); ?> -->
-
 
  	<?php $result = array_diff($posts, $artexclude_query); ?>
   
     <!-- <br><br>five related posts :  <?php print_r($result); ?> -->
 
     <?php
+
+    if ($maxvalue > 5) { // set some boundaries for the related content 
+
     $related = array(
         'post__in'          => $result,
         'posts_per_page'    => 5,
         'category_name' => 'collection',
         'caller_get_posts'  => 1 // ignore sticky status
     );
+    }
+
 ?>
     	
  <?php $related_query = new WP_Query( $related );?>

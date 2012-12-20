@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $Misc
+\*------------------------------------*/
+
+	.remove-bottom { margin-bottom: 0 !important; }
+	.half-bottom { margin-bottom: 10px !important; }
+	.add-bottom { margin-bottom: 20px !important; }
+		
+	/* Text meant only for screen readers */
+	.assistive-text {
+		clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+		clip: rect(1px, 1px, 1px, 1px);
+		position: absolute !important;
+	}	
+	
+	.center {text-align:center; }

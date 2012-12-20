@@ -65,10 +65,10 @@ add_action( 'after_setup_theme', 'barjeel_setup' );
 ################################################################################
   function barjeel_css_loader() {
   
-    wp_enqueue_style('barjeel', get_template_directory_uri().'/stylesheets/screen.css', false ,'0.90', 'all' );
+    wp_enqueue_style('barjeel', get_template_directory_uri().'/stylesheets/barjeel.css', false ,'0.90', 'all' );
     
     if (ICL_LANGUAGE_CODE == "ar") {
-	 wp_enqueue_style('barjeel-ar', get_template_directory_uri().'/stylesheets/rtl.css', false ,'0.90', 'all' );
+	 wp_enqueue_style('barjeel-ar', get_template_directory_uri().'/stylesheets/barjeel-rtl.css', false ,'0.90', 'all' );
 	}
 
   }
@@ -81,17 +81,15 @@ add_action('wp_enqueue_scripts', 'barjeel_css_loader');
  
 function barjeel_scripts() {
 
-	wp_enqueue_script( 'okzoom', get_template_directory_uri() . '/js/okzoom.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'okzoom', get_template_directory_uri() . '/javascripts/okzoom.js', array( 'jquery' ), '20120206', true );
 	
-	wp_enqueue_script( 'tooltips', get_template_directory_uri() . '/js/bootstrap-tooltip-popover.min.js', array( 'jquery' ), '20120206', true );
-	
-	wp_enqueue_script( 'barjeel', get_template_directory_uri() . '/js/barjeel.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'barjeel', get_template_directory_uri() . '/javascripts/barjeel.js', array( 'jquery' ), '20120206', true );
 
-	wp_enqueue_script( 'backstretch', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'backstretch', get_template_directory_uri() . '/javascripts/jquery.backstretch.min.js', array( 'jquery' ), '20120206', true );
 	
-	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/js/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/javascripts/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
 
-	wp_enqueue_script( 'tinycarousel', get_template_directory_uri() . '/js/jquery.tinycarousel.min.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'tinycarousel', get_template_directory_uri() . '/javascripts/jquery.tinycarousel.min.js', array( 'jquery' ), '20120206', true );
 		
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );

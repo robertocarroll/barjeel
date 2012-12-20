@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    $Links
+\*------------------------------------*/
+
+	
+	/*  Normal link */
+	a {color: #0088cc; text-decoration: none;}
+	
+	/*  Hover over */	
+	a:hover, a:focus {color: #005580; text-decoration: underline;}
+	
+	/*  Link that's been clicked on */
+	a:visited {color: #FF9747;}
+	
+	/*  When the link is being clicked	 */
+	a:active { color: #005580;}
+	
+	p a, p a:visited { line-height: inherit; }
+	
+	/*	 
+	   No text-shadow: twitter.com/miketaylr/status/12228805301 
+	   Also: highlight colour for selection */
+	::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
+	::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+	
+	/*  j.mp/webkit-tap-highlight-color */
+	a:link { -webkit-tap-highlight-color: #FF5E99; } 
+	
+	/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+	a:hover, a:active { outline: none; }

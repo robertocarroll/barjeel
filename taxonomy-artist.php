@@ -89,24 +89,7 @@
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		
-							<div class="box-ms">
-		
-							<article <?php post_class(); ?>>
-							
-							<div class="center">						
-							<?php
-							if ( has_post_thumbnail() ){ ?>
-								<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-								<?php the_post_thumbnail('collection-thumb'); ?>
-						<?php } ?>
-						
-						</div><!-- .center -->	
-							
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		
-							</article>
-									
-							</div><!-- .box -->
+							<?php get_template_part('catalogue');?> 
 
 				<?php endwhile; ?>
 				

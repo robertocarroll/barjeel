@@ -61,66 +61,8 @@
 	
 </article><!-- #post-<?php the_ID(); ?> -->
 
-<aside>
-
-<!-- Get other work by the same artist by looking for other posts with the same term (artistname) in the taxonomy artist -->
-
-<?php 
-
-$artistlink = rw_get_the_term_list(null, 'artist', false, '', ', ', ''); 
-$artist = strip_tags($artistlink);
-
-?>
-
-<?php
-
-global $post;
-$currentID = get_the_ID();
-
-			$artistwork = array(
-			'post__not_in' => array($currentID),
-			'tax_query' => array(
-				array(
-							'taxonomy' => 'category',
-							'terms' => array('collection'),
-							'field' => 'slug',
-						),
-				array(
-							'taxonomy' => 'artist',
-							'field' => 'slug',
-							'terms' => $artist
-						),
-			)
-		);
-
-			
-			?>
-			
-				<?php $artwork_query = new WP_Query( $artistwork ); ?>
-				
-				<?php /* Start the Loop */ ?>
-				
-				<?php if( $artwork_query->have_posts() ) : ?>
-
-					<h2><?php echo rw_get_the_term_list(null, 'artist', false, 'More work by ', ', ', ''); ?></h2>
-				
-				<div id="sortartist">
-			
-				<?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>
-		
-					<?php get_template_part('catalogue');?> 	      
-
-				<?php endwhile; ?>
-
-			</div><!-- .sortartist -->	 
-
-				<?php echo rw_get_the_term_list(null, 'artist', false, 'Go to ', ', ', ''); ?>
-				
-				<?php endif; ?>	
-				
-				<?php /* Reset query */ wp_reset_postdata(); ?>
 
 
-</aside> 
+
 
 

@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    $Header
+\*------------------------------------*/
+
+
+
+footer[role="contentinfo"] {
+		width: 100%;
+		background: $barjeel-blue;
+		@extend .cf;
+}
+
+
+.footerwrapper {
+  		margin: 0 auto;
+		width: 90%;
+		float: none;
+}
+
+.footer {
+  @include gs-span(da, all);  
+}
+
+
+
+

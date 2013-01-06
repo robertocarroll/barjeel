@@ -4,15 +4,15 @@
 		
 							<article <?php post_class(); ?>>
 									
-								<div class="center">						
-									<?php
-									if ( has_post_thumbnail() ){ ?>
-										<a href="<?php the_permalink(); ?>">
-											<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-											<?php the_post_thumbnail('collection-thumb'); ?>
-										</a>	
-									<?php } ?>
-								
+								<div class="center">
+
+								<a href="<?php the_permalink(); ?>">	
+								 
+								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
+
+								 endif; ?>						
+								</a>	
+
 								</div><!-- .center -->	
 							
 								<h3 class="title"><a href="<?php the_permalink(); ?>">

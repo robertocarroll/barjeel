@@ -42,6 +42,7 @@ $.each(list.letters, function(i, letter){
 
 
 
+
 /*! For the isotope layout on the artwork page */
 
 jQuery(document).ready(function($){
@@ -49,12 +50,24 @@ jQuery(document).ready(function($){
 var $container = $('#sort');
 
 $container.imagesLoaded( function(){
+
+ 
+$container.show();
+
   $container.isotope({
    	itemSelector : '.box-ms',
-  	layoutMode : 'fitRows',
+  	layoutMode : 'masonry',
+     masonry: {
+    columnWidth: 200
+  },
   	animationEngine : 'best-available'
   });
+
+
 });
+
+
+
 
 
 
@@ -63,7 +76,10 @@ var $containerartist = $('#sortartist');
 $containerartist.imagesLoaded( function(){
   $containerartist.isotope({
     itemSelector : '.box-ms',
-    layoutMode : 'fitRows',
+    layoutMode : 'masonry',
+     masonry: {
+    columnWidth: 200
+  },
     animationEngine : 'best-available'
   });
 });

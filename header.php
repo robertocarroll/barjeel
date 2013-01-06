@@ -48,33 +48,28 @@
 <!-- Header starts here -->
 
 <body <?php body_class(); ?> >
+
 <div id="page" class="hfeed site">
-	<?php do_action( 'before' ); ?>
-	<header id="masthead" class="site-header" role="banner">
-		<hgroup>
-			<!-- First comes the logo -->
 	
-			<div class="logo">	
-				<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" /></a>
-			</div><!-- .logo -->
-				
-		</hgroup>
+	<?php do_action( 'before' ); ?>
+	
+	<header role="banner">
 		
-		<!-- Language selector - WPML --->
-			<div class="language">
+		<!-- First comes the logo -->
+
+		<div class="logo">	
+			<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" /></a>
+		</div><!-- .logo -->
+
+		<!-- Then the navigation -->		
 			
-				<?php do_action('icl_language_selector'); ?>
-				
-			</div><!-- .language -->	
-			
-			
-		<nav role="navigation" class="site-navigation main-navigation">
+		<nav role="navigation">
 			<h1 class="assistive-text"><?php _e( 'Menu', 'barjeel' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'barjeel' ); ?>"><?php _e( 'Skip to content', 'barjeel' ); ?></a></div>
 
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- .site-navigation .main-navigation -->
-	</header><!-- #masthead .site-header -->
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class'      => 'nav  nav--stacked') ); ?>
+		</nav>
+	</header>
 
 <!-- End Header -->
  

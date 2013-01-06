@@ -88,8 +88,6 @@ function barjeel_scripts() {
 	wp_enqueue_script( 'backstretch', get_template_directory_uri() . '/javascripts/jquery.backstretch.min.js', array( 'jquery' ), '20120206', true );
 	
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/javascripts/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
-
-	wp_enqueue_script( 'tinycarousel', get_template_directory_uri() . '/javascripts/jquery.tinycarousel.min.js', array( 'jquery' ), '20120206', true );
 		
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );
@@ -110,8 +108,37 @@ function barjeel_widgets_init() {
 		'before_title' => '<h1 class="widget-title">',
 		'after_title' => '</h1>',
 	) );
+
+	register_sidebar( array(
+		'name' => __( 'Homepage-main', 'barjeel' ),
+		'id' => 'homepage',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
 }
 add_action( 'widgets_init', 'barjeel_widgets_init' );
+
+
+/*
+| -------------------------------------------------------------------
+| Define additional "post thumbnails". Relies on MultiPostThumbnails to work
+| -------------------------------------------------------------------
+| */
+
+// 
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(array(
+        'label' => 'Cropped image',
+        'id' => 'feature-image-2',
+        'post_type' => 'post'
+        )
+    );
+
+    };
+
 
 /*
 | -------------------------------------------------------------------
@@ -126,10 +153,13 @@ if ( function_exists( 'add_theme_support' ) ) {
 if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'collection-zoom', 1500, 1500 ); // 1500 pixels wide by 1500 pixels high
 	add_image_size( 'collection-big', 680, 500 ); // 680 pixels wide by 680 pixels high
-  	add_image_size( 'collection-thumb', 999, 200 ); // unlimited width by 200 pixels high
-  	add_image_size( 'bootstrap-small', 260, 180 ); // 260 pixels wide by 180 pixels high
-  	add_image_size( 'bootstrap-medium', 360, 268 ); // 360 pixels wide by 268 pixels high
+  	add_image_size('cropped-thumb', 170, 170, true);
+  	add_image_size('homepage-thumb', 745, 745, true);
 }
+
+
+
+
 /*
 | -------------------------------------------------------------------
 | Revising Default Excerpt

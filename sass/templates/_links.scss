@@ -4,13 +4,13 @@
 
 	
 	/*  Normal link */
-	a {color: #0088cc; text-decoration: none;}
+	a {color: $barjeel-grey; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 	
 	/*  Hover over */	
-	a:hover, a:focus {color: #005580; text-decoration: underline;}
+	a:hover, a:focus {color: $barjeel-red !important; text-decoration: none;} 
 	
 	/*  Link that's been clicked on */
-	a:visited {color: #FF9747;}
+	a:visited {color: $barjeel-grey;}
 	
 	/*  When the link is being clicked	 */
 	a:active { color: #005580;}

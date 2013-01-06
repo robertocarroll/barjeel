@@ -45,7 +45,7 @@
 									if (!in_array($child, $exclude)) {
 								
 									$term = get_term_by( 'id', $child, $taxonomyName );
-									echo '<li><a href="' . get_term_link( $term->name, $taxonomyName ) . '">' . $term->name . '</a></li>';
+									echo '<li><a href="' . get_term_link( $term->slug, $taxonomyName ) . '">' . $term->name . '</a></li>';
 									
 									}
 								}

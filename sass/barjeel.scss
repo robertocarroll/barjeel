@@ -8,6 +8,7 @@
  */
 
 @import "compass/reset";
+@import "compass/css3";
 
 /**
  * Inuit Setup
@@ -20,8 +21,10 @@
  * Barjeel imports
  */
 
+@import "templates/mixins.scss";
 @import "grid/gridset.scss";
 @import "templates/artwork-category.scss";
+@import "templates/footer.scss";
 @import "templates/header.scss";
 @import "templates/images.scss";
 @import "templates/isotope.scss";
@@ -41,11 +44,28 @@ $dir: left !default;
 $opdir: right !default;
 
 
+
 /**
  * Fonts
  */
 
 body {
     font-family: Constantia,"Lucida Bright",Lucidabright,"Lucida Serif",Lucida,"DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;
+	background-image: url(../images/background.jpg);
+	background-repeat: repeat;
+}
+
+/**
+ * Main block
+ */
+
+#page {
+  		margin: 0 auto;
+		width: 90%;
+		float: none;
+}
+
+#main {
+  @include gs-span(da, 2, 5);
 }
 

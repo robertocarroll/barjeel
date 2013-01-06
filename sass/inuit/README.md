@@ -1,4 +1,4 @@
-# ![inuit.css](http://csswizardry.com/inuitcss/img/logo.jpg)
+# ![inuit.css](https://a248.e.akamai.net/camo.github.com/b402c145cb1134727d8b1416c7f080731cca1244/687474703a2f2f63737377697a61726472792e636f6d2f696e7569746373732f696d672f6c6f676f2e6a7067)
 
 inuit.css is a powerful little framework designed for _serious_ developers.
 
@@ -31,6 +31,14 @@ _lot_ more.
 * You need a framework that supplies design (I’d recommend
   [Bootstrap](http://twitter.github.com/bootstrap/) for that).
 
+## Browser support
+
+inuit.css is a modern framework for modern browsers. It takes advantage of
+[normalize.css](http://necolas.github.com/normalize.css/) and global
+`box-sizing:border-box;` (optional). As such, inuit.css is intended for **IE8**
+and above only.  The last release to support IE7 was
+[v4.1.5](https://github.com/csswizardry/inuit.css/archive/v4.1.5.zip).
+
 ## The developer
 
 There are a million-and-one different CSS frameworks out there so this rather
@@ -56,15 +64,28 @@ condensed into one powerful little framework.
 
 ## Installation
 
+**Requires Sass 3.2**
+
+[**Watch _An introduction to inuit.css_ screencast**](http://www.youtube.com/watch?v=IkaILVOgGRA&hd=1)
+
 inuit.css is incredibly easy to get up and running (provided you’re all set for
 Sass). Simply [download the latest version](https://github.com/csswizardry/inuit.css/zipball/master)
 of inuit.css from right here on GitHub, unpack the zip file, rename
-`your-project.scss` to whatever your project is called and then watch that file
-to a minified version with:
+`your-project.scss` to whatever your project is called and then watch that file.
+
+You can watch the file by `cd`ing into the directory that houses the `.scss`
+and running the following:
 
     sass --watch [your-project].scss:[your-project].min.css --style compressed
 
 …where `[your-project]` is the name you have chosen for your build.
+
+Alternatively you can modify [`watch.sh`](https://github.com/csswizardry/inuit.css/blob/master/watch.sh)
+to reflect the name of your project and simply run:
+
+    sh watch.sh
+
+…from the command line.
 
 That’s it, your project is now set up on inuit.css.
 
@@ -102,7 +123,7 @@ This ensures that you aren’t packaging more than you need to.
 ## Footprint
 
 **inuit.css is tiny.** The full framework – _including_ debug mode – once minified
-and gzipped weighs **less than 3.6kB**
+and gzipped weighs **less than 5.6kB**
 
 It is essential to **compile to a minified file** because inuit.css is packed
 full of comments and whitespace; so much so that it would be detrimental to
@@ -122,10 +143,20 @@ Although there are no docs as such, there is [a dedicated inuit.css jsFiddle
 account](http://jsfiddle.net/user/inuitcss/fiddles/) which houses plenty of
 demos of various aspects of the framework.
 
+### Development
+
+You can keep up-to-date with upcoming features, suggestions and fixes by looking
+at the [inuit.css Trello board](https://trello.com/board/inuit-css/50a16487543dea585502f3d2).
+
 ## Looking for a little LESS?
 
 [Peter Wilson](http://twitter.com/pwcc) is maintaining a LESS port of inuit.css:
-check the [GitHub repo](https://github.com/peterwilsoncc/inuit.css).
+check [the GitHub repo](https://github.com/peterwilsoncc/inuit.css).
+
+## Using Compass?
+
+[Stephen Way](http://github.com/stephenway) is maintaining a Compass port of
+inuit.css: check [the GitHub repo](https://github.com/stephenway/compass-inuit).
 
 ## Test-drive
 
@@ -164,6 +195,12 @@ been possible without inspiration and work from an array of other people.
 * **[Bryan James](https://twitter.com/WengersToyBus)** for the inuit.css logo
 
 And probably more…
+
+## License
+
+Copyright 2012 Harry Roberts
+
+Licensed under the Apache License, Version 2.0.
 
 ---
 

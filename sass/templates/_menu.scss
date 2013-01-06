@@ -2,3 +2,8 @@
     $Menu
 \*------------------------------------*/
 
+nav[role="navigation"] {
+	text-transform: uppercase;
+}
+
+.current-menu-item > a, .current-post-parent > a {color: $barjeel-red !important;}

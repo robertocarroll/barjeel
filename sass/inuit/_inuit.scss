@@ -18,7 +18,7 @@
  * take care to read and refer to them as you build. For further support please
  * tweet at @inuitcss.
  * 
- * Owing to the amount of comments please only ever use `inuit.min.css` in
+ * Owing to the amount of comments please only ever use minified CSS in
  * production. This file is purely a dev document.
  * 
  * The table of contents below maps to section titles of the same name, to jump
@@ -62,6 +62,7 @@
  * IMPORTS.............Begin importing the sections below
  * 
  * MIXINS..............Super-simple Sass stuff
+ * NORMALIZE...........normalize.css
  * RESET...............Set some defaults
  * CLEARFIX............
  * SHARED..............Shared declarations
@@ -79,7 +80,6 @@
  * FORMS...............
  * 
  * GRIDS...............Fluid, proportional and nestable grids
- * IE7-GRIDS...........Make the grids work in old IE
  * FLEXBOX.............Crudely emulate flexbox
  * COLUMNS.............CSS3 columns
  * NAV.................A simple abstraction to put a list in horizontal nav mode
@@ -87,20 +87,26 @@
  * PAGINATION..........Very stripped back, basic paginator
  * BREADCRUMB..........Simple breadcrumb trail object
  * MEDIA...............Media object
+ * MARGINALIA..........Simple marginalia content
  * ISLAND..............Boxed off content
  * BLOCK-LIST..........Blocky lists of content
  * MATRIX..............Gridded lists
  * SPLIT...............A simple split-in-two object
  * THIS-OR-THIS........Options object
- * COMPLEX-LINK........
+ * LINK-COMPLEX........
  * FLYOUT..............Flyout-on-hover object
+ * ARROWS..............CSS arrows
  * SPRITE..............Generic spriting element
  * ICON-TEXT...........Icon and text couplings
  * BUTTONS.............
  * LOZENGES............Basic lozenge styles
+ * RULES...............Horizontal rules
+ * STATS...............Simple stats object
  * GREYBOX.............Wireframing styles
  * 
  * WIDTHS..............Width classes for use alongside the grid system etc.
+ * PUSH................Push classes for manipulating grids
+ * PULL................Pull classes for manipulating grids
  * BRAND...............Helper class to apply brand treatment to elements
  * HELPER..............A series of helper classes to use arbitrarily
  * DEBUG...............Enable to add visual flags for debugging purposes
@@ -136,26 +142,27 @@
 /**
  * Generic utility styles etc.
  */
-@import "partials/generic/mixins";
-@import "partials/generic/reset";
-@import "partials/generic/clearfix";
-@import "partials/generic/shared";
+   @import "generic/mixins";
+   @import "generic/normalize";
+   @import "generic/reset";
+   @import "generic/clearfix";
+   @import "generic/shared";
 
 
 /**
  * Base styles; unclassed HTML elements etc.
  */
-@import "partials/base/main";
-@import "partials/base/headings";
-@import "partials/base/paragraphs";
-@import "partials/base/smallprint";
-@import "partials/base/quotes";
-@import "partials/base/code";
-@import "partials/base/links";
-@import "partials/base/images";
-@import "partials/base/lists";
-@import "partials/base/tables";
-@import "partials/base/forms";
+   @import "base/main";
+   @import "base/headings";
+   @import "base/paragraphs";
+   @import "base/smallprint";
+   @import "base/quotes";
+   @import "base/code";
+   @import "base/links";
+   @import "base/images";
+   @import "base/lists";
+   @import "base/tables";
+   @import "base/forms";
 
 
 /**
@@ -163,34 +170,38 @@
  * 
  * Single-line comment (//) out any objects you do not need in your project.
  */
-   //@import "partials/objects/grids";
-   //@import "partials/objects/grids-ie7";
-   //@import "partials/objects/flexbox";
-   //@import "partials/objects/columns";
-   @import "partials/objects/nav";
-   //@import "partials/objects/options";
-   //@import "partials/objects/pagination";
-   @import "partials/objects/breadcrumb";
-   @import "partials/objects/media";
-   //@import "partials/objects/island";
-   //@import "partials/objects/block-list";
-   //@import "partials/objects/matrix";
-   //@import "partials/objects/split";
-// @import "example/unnecessary/file";
-   //@import "partials/objects/this-or-this";
-   //@import "partials/objects/complex-link";
-   //@import "partials/objects/flyout";
-   //@import "partials/objects/sprite";
-   //@import "partials/objects/icon-text";
-   @import "partials/objects/buttons";
-   //@import "partials/objects/lozenges";
-   //@import "partials/objects/greybox";
+  // @import "objects/grids";
+  // @import "objects/flexbox";
+  // @import "objects/columns";
+   @import "objects/nav";
+  // @import "objects/options";
+   @import "objects/pagination";
+  // @import "objects/breadcrumb";
+   @import "objects/media";
+   @import "objects/marginalia";
+  // @import "objects/island";
+  // @import "objects/block-list";
+  // @import "objects/matrix";
+  // @import "objects/split";
+ //  @import "objects/this-or-this";
+  // @import "objects/link-complex";
+  // @import "objects/flyout";
+  // @import "objects/arrows";
+  // @import "objects/sprite";
+  // @import "objects/icon-text";
+   @import "objects/buttons";
+  // @import "objects/lozenges";
+  // @import "objects/rules";
+  // @import "objects/stats";
+  // @import "objects/greybox";
 
 
 /**
  * Style trumps; helper and brand classes
  */
-//@import "partials/generic/widths";
-//@import "partials/generic/brand";
-//@import "partials/generic/helper";
-@import "partials/generic/debug";
+  // @import "generic/widths";
+  // @import "generic/push";
+  // @import "generic/pull";
+  // @import "generic/brand";
+  // @import "generic/helper";
+   @import "generic/debug";

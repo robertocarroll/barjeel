@@ -38,3 +38,15 @@
 	  -moz-border-radius: 500px;
 	  border-radius: 500px;
 	}
+
+	/* Second thumbnail has a strange width. This setting overrides it.  */
+
+	.attachment-cropped-thumb {
+		border-radius: 50%;
+		width: 170px !important; 
+	}
+
+	.attachment-homepage-thumb  {
+		border-radius: 50%;
+	
+	} 

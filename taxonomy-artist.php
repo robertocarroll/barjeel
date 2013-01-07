@@ -7,8 +7,6 @@
 			
 			<header class="page-header">
 					
-					Using Artist
-					
 				<h1 class="gamma">
 						<?php
 								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );

@@ -109,6 +109,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Palette
  */
 /**
+ * Direction ltr / rtl
+ */
+/**
  * inuit.css will work these next ones out for you.
  *
  * Assign our `$base-line-height` to a new spacing var for more transparency.
@@ -2232,23 +2235,6 @@ label,
   padding-bottom: 1em;
 }
 
-/* line 9, ../sass/templates/_artwork-category.scss */
-#sortartist {
-  width: 700px;
-}
-
-/* line 11, ../sass/templates/_artwork-category.scss */
-.box-ms-artist {
-  padding-right: 1em;
-  padding-bottom: 1em;
-}
-
-/* line 13, ../sass/templates/_artwork-category.scss */
-.hover {
-  border: 10px solid #428E8D;
-  z-index: 2;
-}
-
 /*------------------------------------*\
     $Header
 \*------------------------------------*/
@@ -2289,6 +2275,72 @@ header[role="banner"] {
 /* line 9, ../sass/templates/_header.scss */
 .logo {
   padding: 24px 0;
+}
+
+/*------------------------------------*\
+    $Homepage
+\*------------------------------------*/
+/* line 5, ../sass/templates/_homepage.scss */
+.first-column {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 23.01287%;
+}
+
+/* line 9, ../sass/templates/_homepage.scss */
+.second-column {
+  display: block;
+  float: left;
+  margin-left: 25.67752%;
+  margin-right: -100%;
+  width: 22.99773%;
+}
+
+/* line 13, ../sass/templates/_homepage.scss */
+.third-column {
+  display: block;
+  float: left;
+  margin-left: 51.33989%;
+  margin-right: -100%;
+  width: 22.99773%;
+}
+
+/* line 17, ../sass/templates/_homepage.scss */
+.fourth-column {
+  display: block;
+  float: left;
+  margin-left: 77.00227%;
+  margin-right: -100%;
+  width: 22.99773%;
+}
+
+/* line 21, ../sass/templates/_homepage.scss */
+.square {
+  width: 15px;
+  height: 15px;
+  margin-left: 40.59343%;
+}
+
+/* line 27, ../sass/templates/_homepage.scss */
+.first-column .square {
+  background-color: #ff1900;
+}
+
+/* line 32, ../sass/templates/_homepage.scss */
+.second-column .square {
+  background-color: #8acfe6;
+}
+
+/* line 37, ../sass/templates/_homepage.scss */
+.third-column .square {
+  background-color: #ff1900;
+}
+
+/* line 42, ../sass/templates/_homepage.scss */
+.fourth-column .square {
+  background-color: #8acfe6;
 }
 
 /*------------------------------------*\
@@ -2341,6 +2393,13 @@ img {
 }
 
 /* line 49, ../sass/templates/_images.scss */
+.attachment-cropped-thumb:hover {
+  -webkit-box-shadow: red 2px 2px 20px inset;
+  -moz-box-shadow: red 2px 2px 20px inset;
+  box-shadow: red 2px 2px 20px inset;
+}
+
+/* line 55, ../sass/templates/_images.scss */
 .attachment-homepage-thumb {
   border-radius: 50%;
 }
@@ -2624,6 +2683,16 @@ nav[role="navigation"] {
   text-align: center;
 }
 
+/* line 18, ../sass/templates/_misc.scss */
+.white {
+  background: white;
+}
+
+/* line 20, ../sass/templates/_misc.scss */
+.grey {
+  background: gray;
+}
+
 /*------------------------------------*\
     $Pagination
 \*------------------------------------*/
@@ -2843,7 +2912,7 @@ pre code {
 /**
  * Fonts
  */
-/* line 52, ../sass/barjeel.scss */
+/* line 53, ../sass/barjeel.scss */
 body {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   background-image: url(../images/background.jpg);
@@ -2853,14 +2922,14 @@ body {
 /**
  * Main block
  */
-/* line 62, ../sass/barjeel.scss */
+/* line 63, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 68, ../sass/barjeel.scss */
+/* line 69, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;

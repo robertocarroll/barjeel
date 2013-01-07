@@ -6,12 +6,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-	<h1 class="entry-title"><?php the_title(); ?></h1>
 		
 	<div class="entry-content">
 		
-		<div class="featured-image center">
+		<div class="featured-image center grey">
 
 			<!-- Gets the featured image -->
 				
@@ -28,7 +26,10 @@
 			
 			<?php endif; ?>		
 		
-		<div class="meta">
+
+		<div class="meta white center">	
+
+		<h1 class="entry-title"><?php the_title(); ?></h1>
 		
 			<ul>
 				
@@ -50,10 +51,14 @@
 							</li>
 							<?php } ?>
 			</ul>		
+
+			<?php the_content(); ?>
 		
 		</div><!-- .meta -->
 	
-		<?php the_content(); ?>
+
+			<?php related_posts(); ?>
+		
 
 		<?php setPostViews(get_the_ID()); ?>
 		

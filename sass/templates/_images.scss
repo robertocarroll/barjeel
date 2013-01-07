@@ -46,6 +46,12 @@
 		width: 170px !important; 
 	}
 
+	.attachment-cropped-thumb:hover { 
+		@include box-shadow(red 2px 2px 20px inset); 
+	}
+	
+
+
 	.attachment-homepage-thumb  {
 		border-radius: 50%;
 	

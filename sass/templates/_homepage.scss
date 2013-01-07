@@ -2,3 +2,44 @@
     $Homepage
 \*------------------------------------*/
 
+.first-column {
+  @include gs-span(da, 2, 2, (2, 5));
+}
+
+.second-column {
+  @include gs-span(da, 3, 3, (2, 5));
+}
+
+.third-column {
+  @include gs-span(da, 4, 4, (2, 5));
+}
+
+.fourth-column {
+  @include gs-span(da, 5, 5, (2, 5));
+}
+
+.square {
+	width: 15px;
+	height: 15px;
+	margin-#{$dir}: #{gs-width(da, 2, 3	) + '%'};
+}
+
+.first-column .square {
+	background-color: $barjeel-red;
+
+}
+
+.second-column .square {
+	background-color: $barjeel-blue;
+
+}
+
+.third-column .square {
+	background-color: $barjeel-red;
+
+}
+
+.fourth-column .square {
+	background-color: $barjeel-blue;
+
+}

@@ -6,54 +6,30 @@
 
 			<?php if ( have_posts() ) : ?>
 			
-				<div class="two columns">
-
 				<header class="page-header">
+					<h1 class="gamma">
+						<?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
+					</h1>
 					
-					<h2 class="gamma">
-						<?php
-								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-
-						?>
-					</h2>
-					
-					<?php echo category_description(); ?>
+					<select class="sort-by">
+					  <option value="original-order">Date</a></option>
+					  <option value="random">Random</a></option>
+					  <option value="title">Title</a></option>
+					  <option value="artist">Artist</a></option>
+					</select>  
 					
 				</header>
 					
-						<hr/>
-					
-					</div><!-- two columns-->	
-				
-
 				<?php rewind_posts(); ?>
 			
 				<div id="sort">
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		
-							<div class="box-ms">
-		
-							<article <?php post_class(); ?>>
-							
-							<div class="center">						
-							<?php
-							if ( has_post_thumbnail() ){ ?>
-								<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-								<?php the_post_thumbnail('collection-thumb'); ?>
-						<?php } ?>
-						
-						</div><!-- .center -->	
-							
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		
-							</article>
-									
-								</div>
+							<?php get_template_part('catalogue');?> 
 					
 
 				<?php endwhile; ?>
-				</div>
 				
 				</div>
 				

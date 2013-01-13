@@ -3,5 +3,47 @@
 \*------------------------------------*/
 
 
-	
+	.entry-title {
+		@extend .bold;
+		@extend .beta;
+		padding-top: $half-spacing-unit;
+		margin: 0;
+		color: $barjeel-grey;
+	}
 
+
+	.entry-meta {
+		@extend .epsilon;
+		@extend .light;
+		@extend .nav;
+		padding-bottom: $base-spacing-unit;
+	}
+
+
+	.entry-meta > li {
+		padding: 0;
+		margin: 0;
+		text-transform: uppercase;
+	}
+ 		
+ 	.entry-meta > li:after {
+ 		content: " / ";
+ 	} 	
+	
+	.entry-meta > li:last-child:after {
+ 		content: "";
+ 	} 	
+
+ 	.related-title {
+		@extend .light;
+		@extend .epsilon;
+		padding-top: $half-spacing-unit;
+		padding-bottom: $half-spacing-unit;
+		margin: 0;
+		color: $barjeel-grey;
+	}
+
+	#sort-entry {
+		@include gs-span(da, 2, 5, (2, 5));
+		display: none;
+	}

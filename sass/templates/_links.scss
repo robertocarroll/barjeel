@@ -20,11 +20,11 @@
 	/*	 
 	   No text-shadow: twitter.com/miketaylr/status/12228805301 
 	   Also: highlight colour for selection */
-	::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-	::selection { background:#FF5E99; color:#fff; text-shadow: none; } 
+	::-moz-selection{ background: $barjeel-red; color:#fff; text-shadow: none; }
+	::selection { background:$barjeel-red; color:#fff; text-shadow: none; } 
 	
 	/*  j.mp/webkit-tap-highlight-color */
-	a:link { -webkit-tap-highlight-color: #FF5E99; } 
+	a:link { -webkit-tap-highlight-color: $barjeel-red; } 
 	
 	/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 	a:hover, a:active { outline: none; }

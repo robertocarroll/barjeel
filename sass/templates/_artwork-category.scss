@@ -1,10 +1,88 @@
 /*------------------------------------*\
     $Artwork category
 \*------------------------------------*/
-
-	#sort {width: 700px; display: none;}
 	
-	.box-ms {padding-right:1em; padding-bottom:1em;}
+	.page-header {
+		@extend .cf;
+		padding-bottom: $base-spacing-unit * 2;
+	}
 
+	.filter-one {	
+		@include gs-span(da, 2, 2, (2, 5));
+	}
+
+	.filter-two {
+		@include gs-span(da, 3, 3, (2, 5));
+	}	
+
+	.filter-title {
+		padding-left: 8px;
+	}
+
+
+	#sort {
+		@include gs-span(da, 2, 4, (2, 5));
+		display: none;
+	}
 	
+	.box-ms {
+		padding-right: #{2*gs-gutter(da) + '%'};
+		width: 211px; 
+	}
+
+
+	.browse {
+		@include gs-span(da, 5, 5, (2, 5));
+		@extend .cf;
+	}	
+
+
+	.artwork-title {
+		@extend .bold;
+		@extend .small;
+		padding-top: $half-spacing-unit;
+		margin: 0;
+
+	}
+
+	.artwork-meta {
+		@extend .micro;
+		@extend .light;
+		@extend .nav;
+		
+	}
+
+	.artwork-meta > li {
+		padding: 0;
+		margin: 0;
+		text-transform: uppercase;
+	}
+ 		
+ 	.artwork-meta > li:after {
+ 		content: " / ";
+ 	} 	
+	
+	.artwork-meta > li:last-child:after {
+ 		content: "";
+ 	} 	
+
+
+
+ 	.browse-title {
+		@extend .bold;
+		@extend .small;
+		padding-bottom: $base-spacing-unit;
+		margin: 0;
+		color: $barjeel-blue;
+		text-transform: uppercase;
+	}
+
+	.list-title {
+		@extend .light;
+		@extend .small;
+		padding-bottom: $half-spacing-unit;
+		margin: 0;
+		color: $barjeel-grey;
+		text-transform: uppercase;
+	}
 

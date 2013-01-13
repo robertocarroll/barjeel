@@ -2,16 +2,21 @@
     $Pagination
 \*------------------------------------*/
 
+
 .pagination {
-	padding:7px 10px 5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	border-radius:5px;
-}
+		@include gs-span(da, 2, 5, (2, 5));
+		text-align: justify;
+		@extend .light;
+		@extend .micro;
+		text-transform: uppercase;
+		margin-top: $base-spacing-unit;
+	}	
+
+
 .pagination .page-numbers {
-	padding:3px 6px;
+	padding: $half-spacing-unit;
 
 }
 .pagination .current {
-	color:#000;
+	color: $barjeel-red;
 }

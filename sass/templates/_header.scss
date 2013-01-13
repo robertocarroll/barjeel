@@ -6,7 +6,7 @@ header[role="banner"] {
   @include gs-span(da, 1);
 }
 
-.logo {padding: $base-spacing-unit 0;}
+.logo {padding: $base-spacing-unit 0 ($base-spacing-unit*3) 0;}
 
 
 

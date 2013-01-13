@@ -2,12 +2,39 @@
     $Typography
 \*------------------------------------*/
 
+	.bold { 
+		font-style: normal;
+		font-weight: 700;
+	}
+
+	.light {
+		font-style: normal;
+		font-weight: 300;
+	}
+
+	.small {
+		font-size: $milli-size;
+		line-height: $lowest-line-height;
+	}
+
+	.micro {
+		font-size: 	$micro-size;
+		line-height: $lowest-line-height;
+	}
+
+	.no-padding {margin: 0;}
 
 	/*  <strong>For emphasizing a snippet of text with important</strong> */
-	strong {font-weight: bold;}
+	strong {
+		font-style: normal;
+		font-weight: 700;
+	}
 
 	/*  <em>For emphasizing a snippet of text with stress</em> */
-	em {font-style: italic;}
+	em {
+		font-style: italic;
+		font-weight: 400;
+	}
 	
 	/*  Class for muted text */
 	.muted {color: #999999;}
@@ -156,3 +183,6 @@
 	  max-height: 340px;
 	  overflow-y: scroll;
 	}
+
+
+

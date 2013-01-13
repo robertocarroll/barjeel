@@ -31,12 +31,8 @@ get_header(); ?>
 					
 					?>
 
-				<?php barjeel_content_nav( 'nav-below' ); ?>
-
 			<?php endwhile; // end of the loop. ?>
 			
-			
-
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->
 

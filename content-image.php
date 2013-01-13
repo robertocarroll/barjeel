@@ -29,30 +29,30 @@
 
 		<div class="meta white center">	
 
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-		
-			<ul>
-				
-				<li><?php echo rw_get_the_term_list(null, 'artist', false, 'Artist: ', ', ', ''); ?></li>
-				
-				<li><?php echo rw_get_the_term_list(null, 'artist', true, 'Country: ', ', ', ''); ?></li>
-			
-				<li><?php echo get_the_term_list( get_the_ID(), 'theme', "Theme: " ) ?></li>
-				
-				<!-- Exhibitions- from custom field called exhibitions -->
-				
-				<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false); ?>
-			
-							<?php if ( $exhibitions ) { ?>	
-							<li>Exhibition:
-								<?php foreach($exhibitions as $exhibition) {
-									echo ''.$exhibition.' ';
-									} ?>
-							</li>
-							<?php } ?>
-			</ul>		
+		<h1 class="entry-title">
 
-			<?php the_content(); ?>
+			<?php the_title(); ?> - 
+
+			<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+
+		</h1>	
+		
+			<ul class="entry-meta">	
+									
+									<!-- Exhibitions- from custom field called exhibitions -->
+									
+									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false); ?>
+								
+												<?php if ( $exhibitions ) { ?>	
+												
+													<?php foreach($exhibitions as $exhibition) {
+														echo '<li>'.$exhibition.'</li> ';
+														} ?>
+												
+												<?php } ?>
+
+									<li><?php echo rw_get_the_term_list(null, 'artist', true, '', ', ', ''); ?></li>
+								</ul>	
 		
 		</div><!-- .meta -->
 	

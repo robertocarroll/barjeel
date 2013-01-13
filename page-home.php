@@ -6,10 +6,10 @@ Template Name: Home Page
 ?>
 
 <?php get_header(); ?>
-		
 			
-		
+	
 	<div id="primary" class="content-area">
+		
 			<div id="content" class="site-content" role="main">
 
 				<?php 
@@ -17,16 +17,15 @@ Template Name: Home Page
 					 if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Homepage-main') ) : ?>
 					<?php endif;
 					// Custom widget Area End
-					?>		
+					?>
 
-			
+			<div class="article-row">
 
 			<?php
-			    $barjeel_style_classes = array('first-column','second-column','third-column', 'fourth-column');
+			    $barjeel_style_classes = array('article-one','article-two','article-three', 'article-four');
 			    $barjeel_styles_count = count($barjeel_style_classes);
 			    $barjeel_style_index = 0;
 			?>		
-
 				
 			<?php
 				$args = array(
@@ -39,15 +38,24 @@ Template Name: Home Page
 					
 					<?php while (have_posts()) : the_post(); ?>
 							
-					<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?> center">		
+					<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">		
 
 						<article>	
 
-							<div class="square"></div>
+							<div class="square">&nbsp;</div>
 															
-							<h1 class="omega"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+							<h1 class="gamma bold"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 									 
-							<?php the_excerpt(); ?> 												
+							<?php the_excerpt(); ?>
+
+								<a href="<?php the_permalink(); ?>">	
+	 
+								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
+
+								 endif; ?>			
+
+								</a>	
+												
 					
 						</article>
 
@@ -57,7 +65,7 @@ Template Name: Home Page
 
 					<?php wp_reset_query(); ?>  		
 
-
+				</div>	<!-- .article-row -->
 
 			</div><!-- #content .site-content -->
 		</div><!-- #primary .content-area -->

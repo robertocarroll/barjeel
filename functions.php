@@ -48,6 +48,9 @@ function barjeel_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'barjeel' ),
+		'artist' => __( 'Artist Menu', 'barjeel' ),
+		'filter' => __( 'Filter Menu', 'barjeel' ),
+		'country' => __( 'Country Menu', 'barjeel' )
 	) );
 
 
@@ -112,8 +115,8 @@ function barjeel_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Homepage-main', 'barjeel' ),
 		'id' => 'homepage',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget' => '</aside>',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => '</article>',
 		'before_title' => '<h1 class="widget-title">',
 		'after_title' => '</h1>',
 	) );
@@ -158,6 +161,18 @@ if ( function_exists( 'add_image_size' ) ) {
 }
 
 
+/*
+| -------------------------------------------------------------------
+| Get the menu name
+| -------------------------------------------------------------------
+| */
+
+function mf_get_menu_name($location){
+    if(!has_nav_menu($location)) return false;
+    $menus = get_nav_menu_locations();
+    $menu_title = wp_get_nav_menu_object($menus[$location])->name;
+    return $menu_title;
+}
 
 
 /*
@@ -266,8 +281,8 @@ function barjeel_content_nav( $nav_id ) {
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 <ul class="pager">
-		<?php previous_post_link( '<li class="previous">%link</li>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'barjeel' ) . '</span> %title', 'Next post in category', TRUE ); ?>
-		<?php next_post_link( '<li class="next">%link</li>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'barjeel' ) . '</span>', 'Next post in category', TRUE ); ?>
+		<?php previous_post_link( '<li class="previous">%link</li>', '<span class="meta-nav">' . _x( '', 'Previous post link', 'barjeel' ) . '</span> %title', 'Next post in category', TRUE ); ?>
+		<?php next_post_link( '<li class="next">%link</li>', '%title <span class="meta-nav">' . _x( '', 'Next post link', 'barjeel' ) . '</span>', 'Next post in category', TRUE ); ?>
 </ul>
 	
 	<?php endif; ?>
@@ -420,6 +435,8 @@ function base_pagination() {
 		'base' => str_replace( $big, '%#%', get_pagenum_link($big) ),
 		'current' => max( 1, get_query_var('paged') ),
 		'total' => $wp_query->max_num_pages,
+		'prev_text'    => __('Previous'),
+		'next_text'    => __('Next'),
 		'mid_size' => 5
 	) );
  

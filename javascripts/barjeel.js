@@ -1,9 +1,6 @@
-
-
-
 /*! For the magnifying glass on the artwork */
 
- jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) {
       $('.imagezoom').okzoom({
         scaleWidth: 1200,
         backgroundRepeat: "repeat",
@@ -41,48 +38,69 @@ $.each(list.letters, function(i, letter){
 });
 
 
+/*! For the isotope layout on the artwork page */
+
+jQuery(document).ready(function($){
+
+      var $container1 = $('#sort1')
+
+     $container1.imagesLoaded( function(){ 
+// initialize Isotope
+$container1.isotope({
+  // options...
+  resizable: false, // disable normal resizing
+  // set columnWidth to a percentage of container width
+  masonry: { columnWidth: $container1.width() / 4 }
+});
+
+// update columnWidth on window resize
+$(window).smartresize(function(){
+  $container1.isotope({
+    // update columnWidth to a percentage of container width
+    masonry: { columnWidth: $container1.width() / 4 }
+  });
+});
+
+
+});
+
+});
 
 
 /*! For the isotope layout on the artwork page */
 
 jQuery(document).ready(function($){
 
-var $container = $('#sort');
+    var $container = $('#sort');
+    
+    $container.imagesLoaded( function(){
 
-$container.imagesLoaded( function(){
+        $container.show();
 
- 
-$container.show();
+          $container.isotope({
+       	      resizable: false, // disable normal resizing
+              itemSelector : '.box-ms',
+      	       layoutMode : 'masonry',
+             masonry: {
+            columnWidth: $container.width() / 3 
+          },
+      	
+          animationEngine : 'best-available'
+        });
 
+});
+
+
+
+// update columnWidth on window resize
+$(window).smartresize(function(){
   $container.isotope({
-   	itemSelector : '.box-ms',
-  	layoutMode : 'masonry',
-     masonry: {
-    columnWidth: 200
-  },
-  	animationEngine : 'best-available'
-  });
-
-
-});
-
-
-
-
-
-
-var $containerartist = $('#sortartist');
-
-$containerartist.imagesLoaded( function(){
-  $containerartist.isotope({
-    itemSelector : '.box-ms',
-    layoutMode : 'masonry',
-     masonry: {
-    columnWidth: 200
-  },
-    animationEngine : 'best-available'
+    // update columnWidth to a percentage of container width
+    masonry: { columnWidth: $container.width() / 3 }
   });
 });
+
+
 
 
 

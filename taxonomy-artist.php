@@ -7,6 +7,8 @@
 			
 			<header class="page-header">
 					
+					Using Artist
+					
 				<h1 class="gamma">
 						<?php
 								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );
@@ -43,7 +45,7 @@
 									if (!in_array($child, $exclude)) {
 								
 									$term = get_term_by( 'id', $child, $taxonomyName );
-									echo '<li><a href="' . get_term_link( $term->slug, $taxonomyName ) . '">' . $term->name . '</a></li>';
+									echo '<li><a href="' . get_term_link( $term->name, $taxonomyName ) . '">' . $term->name . '</a></li>';
 									
 									}
 								}
@@ -87,7 +89,24 @@
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 		
-							<?php get_template_part('catalogue');?> 
+							<div class="box-ms">
+		
+							<article <?php post_class(); ?>>
+							
+							<div class="center">						
+							<?php
+							if ( has_post_thumbnail() ){ ?>
+								<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
+								<?php the_post_thumbnail('collection-thumb'); ?>
+						<?php } ?>
+						
+						</div><!-- .center -->	
+							
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		
+							</article>
+									
+							</div><!-- .box -->
 
 				<?php endwhile; ?>
 				

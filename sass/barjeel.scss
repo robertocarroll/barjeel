@@ -24,6 +24,7 @@
 @import "templates/mixins.scss";
 @import "grid/gridset.scss";
 @import "templates/artwork-category.scss";
+@import "templates/artwork-single.scss";
 @import "templates/footer.scss";
 @import "templates/header.scss";
 @import "templates/homepage.scss";
@@ -33,16 +34,10 @@
 @import "templates/lists.scss";
 @import "templates/menu.scss";
 @import "templates/misc.scss";
+@import "templates/navigation.scss";
 @import "templates/pagination.scss";
+@import "templates/select-box.scss";
 @import "templates/typography.scss";
-
-
-/**
- * Direction ltr / rtl
- */
-
-$dir: left !default;
-$opdir: right !default;
 
 
 
@@ -51,7 +46,7 @@ $opdir: right !default;
  */
 
 body {
-    font-family: Constantia,"Lucida Bright",Lucidabright,"Lucida Serif",Lucida,"DejaVu Serif","Bitstream Vera Serif","Liberation Serif",Georgia,serif;
+  font-family: "adelle-sans",sans-serif;
 	background-image: url(../images/background.jpg);
 	background-repeat: repeat;
 }
@@ -64,9 +59,12 @@ body {
   		margin: 0 auto;
 		width: 90%;
 		float: none;
+		@extend .cf
 }
 
 #main {
   @include gs-span(da, 2, 5);
+  padding-top: $base-spacing-unit * 2;
+  padding-bottom: $base-spacing-unit * 2;
 }
 

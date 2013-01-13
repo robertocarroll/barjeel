@@ -4,7 +4,7 @@
 		
 							<article <?php post_class(); ?>>
 									
-								<div class="center">
+								<div class="center round">
 
 								<a href="<?php the_permalink(); ?>">	
 								 
@@ -12,19 +12,37 @@
 
 								 endif; ?>						
 								</a>	
-
-								</div><!-- .center -->	
 							
-								<h3 class="title"><a href="<?php the_permalink(); ?>">
+								<h1 class="artwork-title"><a href="<?php the_permalink(); ?>">
 
 									<?php $title = get_the_title(); 
 									echo mb_strimwidth($title, 0, 20, '...'); 
-									?>
+									?>,
 								
-								</a></h3>
+									</a> 
+
+									<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+
+								</h1>
 								
-								<p class="artist"><?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?></p>
+								<ul class="artwork-meta">	
 									
+									<!-- Exhibitions- from custom field called exhibitions -->
+									
+									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false); ?>
+								
+												<?php if ( $exhibitions ) { ?>	
+												
+													<?php foreach($exhibitions as $exhibition) {
+														echo '<li>'.$exhibition.'</li> ';
+														} ?>
+												
+												<?php } ?>
+
+									<li><?php echo rw_get_the_term_list(null, 'artist', true, '', ', ', ''); ?></li>
+								</ul>
+								
+								</div><!-- .center -->		
 		
 							</article>
 									

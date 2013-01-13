@@ -41,18 +41,29 @@
 
 	/* Second thumbnail has a strange width. This setting overrides it.  */
 
-	.attachment-cropped-thumb {
+	.round img {
 		border-radius: 50%;
+	}	
+
+	.attachment-cropped-thumb {
+	
 		width: 170px !important; 
+
 	}
 
 	.attachment-cropped-thumb:hover { 
-		@include box-shadow(red 2px 2px 20px inset); 
+		
 	}
 	
 
-
 	.attachment-homepage-thumb  {
-		border-radius: 50%;
-	
+		border-radius: 50%;	
+		 @include transition-property(box-shadow);
+  		@include transition-duration(.1s);
+  		@include transition-timing-function(ease-in);
+	} 
+
+	.attachment-homepage-thumb:hover {
+		//@include box-shadow($barjeel-blue 0px 0px 0px 20px);
+
 	} 

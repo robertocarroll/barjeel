@@ -2,44 +2,92 @@
     $Homepage
 \*------------------------------------*/
 
-.first-column {
-  @include gs-span(da, 2, 2, (2, 5));
+.main-image {
+  @include gs-span(da, 2, 4, (2, 5));
 }
 
-.second-column {
-  @include gs-span(da, 3, 3, (2, 5));
-}
-
-.third-column {
-  @include gs-span(da, 4, 4, (2, 5));
-}
-
-.fourth-column {
+.headline {
   @include gs-span(da, 5, 5, (2, 5));
+   @include gs-float(da, $opdir);
+   text-align: $opdir;
 }
 
-.square {
-	width: 15px;
-	height: 15px;
-	margin-#{$dir}: #{gs-width(da, 2, 3	) + '%'};
+.headline h1 { 
+  line-height: $mid-line-height;
+  margin-bottom: $half-spacing-unit;
+  text-transform: uppercase;
 }
 
-.first-column .square {
+.date {
+  color: $barjeel-red;
+  line-height: $less-line-height;
+  margin-bottom: $half-spacing-unit;
+  text-transform: uppercase;
+}
+
+
+.widget_featured_post_widget { 
+	@extend .cf
+}	
+
+.article-row {
+  padding-top: 2 * $base-spacing-unit;  
+  line-height: $less-line-height;
+  text-transform: uppercase;
+}
+
+.article-row h1 { 
+  line-height: $mid-line-height;
+  margin-bottom: $quarter-spacing-unit;
+  
+}
+
+.article-row p { 
+  line-height: $less-line-height;
+  margin-bottom: $quarter-spacing-unit;
+}
+
+.article-one {		
+  @include gs-span(da, 2, 2, (2, 5));
+  color: $barjeel-red;
+  text-align: center;
+}
+
+.article-two {
+  @include gs-span(da, 3, 3, (2, 5));
+  color: $barjeel-blue;
+  text-align: center;
+}
+
+.article-three {
+  @include gs-span(da, 4, 4, (2, 5));
+  color: $barjeel-red;
+  text-align: center;
+}
+
+.article-four {
+  @include gs-span(da, 5, 5, (2, 5));
+  color: $barjeel-blue;
+  text-align: center;
+}
+
+
+.article-one .square {
 	background-color: $barjeel-red;
 
 }
 
-.second-column .square {
+.article-two .square {
 	background-color: $barjeel-blue;
 
 }
 
-.third-column .square {
+.article-three .square {
 	background-color: $barjeel-red;
 
 }
 
-.fourth-column .square {
+.article-four .square {
 	background-color: $barjeel-blue;
 
 }

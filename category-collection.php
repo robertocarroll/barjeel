@@ -6,16 +6,42 @@
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
-					<h1 class="gamma">
-						<?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
-					</h1>
 					
-					<select class="sort-by">
-					  <option value="original-order">Date</a></option>
-					  <option value="random">Random</a></option>
-					  <option value="title">Title</a></option>
-					  <option value="artist">Artist</a></option>
-					</select>  
+					<div class="filter filter-one lighter"> 		
+							
+							<span class="filter-title">Sort by</span>	
+
+							<select class="dropdown sort-by">
+							  <option value="original-order">Date</a></option>
+							  <option value="random">Random</a></option>
+							  <option value="title">Title</a></option>
+							  <option value="artist">Artist</a></option>
+							</select>
+
+					</div>  <!-- .filter -->
+
+					<div class="filter filter-two lighter"> 	
+						
+							<span class="filter-title">Filter by</span>	
+
+							<?php
+									$items = wp_get_nav_menu_items('filter');
+
+									 echo "<select class='dropdown filter-by'>";
+
+									echo "<option value='/collection'>All work</option>";
+
+									 foreach ($items as $list)
+									 	{
+									 		
+											echo "<option value=".$list->url.">".$list->title."</option>";
+									 }
+
+								 echo "</select>";
+								 
+								 ?>
+
+					</div>  <!-- .filter -->
 					
 				</header>
 	
@@ -31,12 +57,29 @@
 						<?php endwhile; ?>
 				
 				</div><!-- sort -->	
+
+			<aside>
+
+				<div class="browse">
+
+					<h1 class="browse-title">Browse our collection</h1>
+
+					<h2 class="list-title"><?php echo mf_get_menu_name('artist'); ?></h2>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'artist', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?>
+
+					<h2 class="list-title"><?php echo mf_get_menu_name('country'); ?></h2>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'country', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?> 
+
+				</div> <!-- browse -->	
+
+			</aside>
+
+				<div style="clear:both;"></div>
 				
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
-					<div class="navigation clearfix">
-						<div class="alignleft"><?php next_posts_link('&laquo; Previous Entries') ?></div>
-						<div class="alignright"><?php previous_posts_link('Next Entries &raquo;') ?></div>
-					</div>
+					
 					<?php } ?>
 
 			<?php else : ?>

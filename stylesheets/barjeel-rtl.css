@@ -825,16 +825,16 @@ textarea:focus {
  * and over in your markup.
  */
 /* line 9, ../sass/inuit/generic/_clearfix.scss */
-.cf, .nav, .artwork-meta, .entry-meta, .media, .page-header, .browse, footer[role="contentinfo"], .widget_featured_post_widget, #page {
+.cf, .nav, .artwork-meta, .entry-meta, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, #page {
   zoom: 1;
 }
 /* line 13, ../sass/inuit/generic/_clearfix.scss */
-.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .media:before, .page-header:before, .browse:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, #page:after {
+.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, #page:after {
   content: " ";
   display: table;
 }
 /* line 18, ../sass/inuit/generic/_clearfix.scss */
-.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, #page:after {
+.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, #page:after {
   clear: both;
 }
 
@@ -2245,7 +2245,7 @@ label,
   float: left;
   margin-left: 25.67752%;
   margin-right: -100%;
-  width: 22.99773%;
+  width: 48.66011%;
 }
 
 /* line 18, ../sass/templates/_artwork-category.scss */
@@ -2325,31 +2325,32 @@ label,
   padding-top: 12px;
   margin: 0;
   color: gray;
+  line-height: 30px;
 }
 
-/* line 15, ../sass/templates/_artwork-single.scss */
+/* line 16, ../sass/templates/_artwork-single.scss */
 .entry-meta {
   padding-bottom: 24px;
 }
 
-/* line 23, ../sass/templates/_artwork-single.scss */
+/* line 24, ../sass/templates/_artwork-single.scss */
 .entry-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 29, ../sass/templates/_artwork-single.scss */
+/* line 30, ../sass/templates/_artwork-single.scss */
 .entry-meta > li:after {
   content: " / ";
 }
 
-/* line 33, ../sass/templates/_artwork-single.scss */
+/* line 34, ../sass/templates/_artwork-single.scss */
 .entry-meta > li:last-child:after {
   content: "";
 }
 
-/* line 37, ../sass/templates/_artwork-single.scss */
+/* line 38, ../sass/templates/_artwork-single.scss */
 .related-title {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -2357,7 +2358,7 @@ label,
   color: gray;
 }
 
-/* line 46, ../sass/templates/_artwork-single.scss */
+/* line 47, ../sass/templates/_artwork-single.scss */
 #sort-entry {
   display: block;
   float: left;
@@ -2365,6 +2366,31 @@ label,
   margin-right: -100%;
   width: 100%;
   display: none;
+}
+
+/*------------------------------------*\
+    $Contact
+\*------------------------------------*/
+/* line 6, ../sass/templates/_contact.scss */
+.full-page {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 100%;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  padding: 12px;
+}
+
+/* line 15, ../sass/templates/_contact.scss */
+#map_canvas {
+  min-width: 300px;
+  width: 100%;
+  height: 400px;
 }
 
 /*------------------------------------*\
@@ -2916,6 +2942,48 @@ nav[role="navigation"] {
 }
 
 /*------------------------------------*\
+    $Page
+\*------------------------------------*/
+/* line 5, ../sass/templates/_page.scss */
+.page-intro {
+  text-align: right;
+  padding-bottom: 48px;
+  padding-top: 12px;
+}
+
+/* line 12, ../sass/templates/_page.scss */
+.page-image {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 48.67525%;
+}
+
+/* line 17, ../sass/templates/_page.scss */
+.page-text {
+  display: block;
+  float: left;
+  margin-left: 51.33989%;
+  margin-right: -100%;
+  width: 48.66011%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 2.22222%;
+  padding-right: 2.22222%;
+  left: -2.22222%;
+  position: relative;
+  padding-left: 2.22222%;
+  padding-right: 2.22222%;
+}
+
+/* line 23, ../sass/templates/_page.scss */
+.entry-content {
+  padding-top: 24px;
+}
+
+/*------------------------------------*\
     $Navigation
 \*------------------------------------*/
 /*------------------------------------*\
@@ -2972,56 +3040,63 @@ nav[role="navigation"] {
     $Typography
 \*------------------------------------*/
 /* line 5, ../sass/templates/_typography.scss */
+p {
+  font-family: "adelle-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* line 11, ../sass/templates/_typography.scss */
 .bold, .artwork-title, .browse-title, .entry-title {
   font-style: normal;
   font-weight: 700;
 }
 
-/* line 10, ../sass/templates/_typography.scss */
+/* line 16, ../sass/templates/_typography.scss */
 .light, .artwork-meta, .list-title, .entry-meta, .related-title, .pagination {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 15, ../sass/templates/_typography.scss */
+/* line 21, ../sass/templates/_typography.scss */
 .small, .artwork-title, .browse-title, .list-title {
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 20, ../sass/templates/_typography.scss */
+/* line 26, ../sass/templates/_typography.scss */
 .micro, .artwork-meta, .pagination {
   font-size: 12px;
   line-height: 16px;
 }
 
-/* line 25, ../sass/templates/_typography.scss */
+/* line 31, ../sass/templates/_typography.scss */
 .no-padding {
   margin: 0;
 }
 
 /*  <strong>For emphasizing a snippet of text with important</strong> */
-/* line 28, ../sass/templates/_typography.scss */
+/* line 34, ../sass/templates/_typography.scss */
 strong {
   font-style: normal;
   font-weight: 700;
 }
 
 /*  <em>For emphasizing a snippet of text with stress</em> */
-/* line 34, ../sass/templates/_typography.scss */
+/* line 40, ../sass/templates/_typography.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
 
 /*  Class for muted text */
-/* line 40, ../sass/templates/_typography.scss */
+/* line 46, ../sass/templates/_typography.scss */
 .muted {
   color: #999999;
 }
 
 /*  Defines a thematic change in the content */
-/* line 44, ../sass/templates/_typography.scss */
+/* line 50, ../sass/templates/_typography.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -3035,27 +3110,27 @@ providing additional context on hover.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 */
-/* line 58, ../sass/templates/_typography.scss */
+/* line 64, ../sass/templates/_typography.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 62, ../sass/templates/_typography.scss */
+/* line 68, ../sass/templates/_typography.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
 /*  For quoting blocks of content from another source within your document */
-/* line 68, ../sass/templates/_typography.scss */
+/* line 74, ../sass/templates/_typography.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
-/* line 74, ../sass/templates/_typography.scss */
+/* line 80, ../sass/templates/_typography.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
@@ -3063,14 +3138,14 @@ blockquote p {
   line-height: 25px;
 }
 
-/* line 81, ../sass/templates/_typography.scss */
+/* line 87, ../sass/templates/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 
-/* line 87, ../sass/templates/_typography.scss */
+/* line 93, ../sass/templates/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
@@ -3078,19 +3153,19 @@ blockquote small:before {
 /*  Add <small> tag for identifying the source. Wrap the name of the source work in <cite>.
 	<small>Someone famous <cite title="Source Title">Source Title</cite></small>
  */
-/* line 95, ../sass/templates/_typography.scss */
+/* line 101, ../sass/templates/_typography.scss */
 cite {
   font-style: normal;
 }
 
 /*  <small>For fine print etc.</small> */
-/* line 100, ../sass/templates/_typography.scss */
+/* line 106, ../sass/templates/_typography.scss */
 small {
   font-size: 85%;
 }
 
 /* Floated, right-aligned blockquote. */
-/* line 105, ../sass/templates/_typography.scss */
+/* line 111, ../sass/templates/_typography.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -3099,23 +3174,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 114, ../sass/templates/_typography.scss */
+/* line 120, ../sass/templates/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 117, ../sass/templates/_typography.scss */
+/* line 123, ../sass/templates/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 120, ../sass/templates/_typography.scss */
+/* line 126, ../sass/templates/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 127, ../sass/templates/_typography.scss */
+/* line 133, ../sass/templates/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -3124,7 +3199,7 @@ blockquote:after {
 }
 
 /* Present contact information. Use <br> for line breaks */
-/* line 132, ../sass/templates/_typography.scss */
+/* line 138, ../sass/templates/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -3133,7 +3208,7 @@ address {
 }
 
 /* To display code etc. */
-/* line 141, ../sass/templates/_typography.scss */
+/* line 147, ../sass/templates/_typography.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -3145,7 +3220,7 @@ pre {
   border-radius: 3px;
 }
 
-/* line 150, ../sass/templates/_typography.scss */
+/* line 156, ../sass/templates/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -3153,7 +3228,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 156, ../sass/templates/_typography.scss */
+/* line 162, ../sass/templates/_typography.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -3172,12 +3247,12 @@ pre {
   border-radius: 4px;
 }
 
-/* line 173, ../sass/templates/_typography.scss */
+/* line 179, ../sass/templates/_typography.scss */
 pre.prettyprint {
   margin-bottom: 20px;
 }
 
-/* line 176, ../sass/templates/_typography.scss */
+/* line 182, ../sass/templates/_typography.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -3185,7 +3260,7 @@ pre code {
   border: 0;
 }
 
-/* line 182, ../sass/templates/_typography.scss */
+/* line 188, ../sass/templates/_typography.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
@@ -3194,9 +3269,11 @@ pre code {
 /**
  * Fonts
  */
-/* line 48, ../sass/barjeel.scss */
+/* line 50, ../sass/barjeel.scss */
 body {
   font-family: "adelle-sans",sans-serif;
+  font-style: normal;
+  font-weight: 400;
   background-image: url(../images/background.jpg);
   background-repeat: repeat;
 }
@@ -3204,14 +3281,14 @@ body {
 /**
  * Main block
  */
-/* line 58, ../sass/barjeel.scss */
+/* line 63, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 65, ../sass/barjeel.scss */
+/* line 70, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;

@@ -7,7 +7,7 @@ Related Thumbnails
 	
 	<h2 class="related-title">Related artwork</h2>
 
-	<div id="sort1">
+	<div id="sortArtwork">
 		
 		<?php while ($related_query->have_posts()) : $related_query->the_post(); ?>
 

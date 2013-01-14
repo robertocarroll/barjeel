@@ -39,7 +39,15 @@ Template Name: Contact page
 	      		mapTypeId: google.maps.MapTypeId.SATELLITE //   ROADMAP; SATELLITE; HYBRID; TERRAIN;
 			};
 	    	
-			map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+			map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+
+			var image = '<?php echo get_template_directory_uri(); ?>/images/custom.png';
+			var myLatLng = new google.maps.LatLng(25.322311, 55.3762336); //add new marker
+			var barjeelMarker = new google.maps.Marker({
+				      position: myLatLng,
+				      map: map,
+				      icon: image
+				  });
 			
 	
 		}//end initialize
@@ -49,15 +57,19 @@ Template Name: Contact page
 	</script>
 
 	
-		
-
-
-<!--Google Maps APIv3 Background-->
-	<div id="canvas_holder">
-		<div id="map_canvas"></div>
-	</div><!-- End Google Maps Background -->
-
+	
+<!--Google Maps APIv3 -->
 
 	
+	
 
+		<div id="map_canvas" ></div>	
+
+	<div class="full-page white">			
+
+	<?php the_content(); ?>	
+
+	
+	</div><!-- .full-page -->
+		
 <?php get_footer(); ?>

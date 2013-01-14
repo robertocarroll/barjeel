@@ -156,6 +156,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'collection-zoom', 1500, 1500 ); // 1500 pixels wide by 1500 pixels high
 	add_image_size( 'collection-big', 680, 500 ); // 680 pixels wide by 680 pixels high
+  	add_image_size( 'page-big', 490, 800 );
   	add_image_size('cropped-thumb', 170, 170, true);
   	add_image_size('homepage-thumb', 745, 745, true);
 }
@@ -437,7 +438,7 @@ function base_pagination() {
 		'total' => $wp_query->max_num_pages,
 		'prev_text'    => __('Previous'),
 		'next_text'    => __('Next'),
-		'mid_size' => 5
+		'mid_size' => 3
 	) );
  
 	// Display the pagination if more than one page is found

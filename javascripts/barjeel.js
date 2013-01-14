@@ -42,22 +42,28 @@ $.each(list.letters, function(i, letter){
 
 jQuery(document).ready(function($){
 
-      var $container1 = $('#sort1')
+      var $containerArtwork = $('#sortArtwork')
 
-     $container1.imagesLoaded( function(){ 
-// initialize Isotope
-$container1.isotope({
-  // options...
-  resizable: false, // disable normal resizing
-  // set columnWidth to a percentage of container width
-  masonry: { columnWidth: $container1.width() / 4 }
-});
+     $containerArtwork.imagesLoaded( function(){ 
+        
+        // initialize Isotope
+
+          $containerArtwork.isotope({
+  
+          // options...
+        
+          resizable: false, // disable normal resizing
+        
+          // set columnWidth to a percentage of container width
+  
+            masonry: { columnWidth: $containerArtwork.width() / 4 }
+        });
 
 // update columnWidth on window resize
 $(window).smartresize(function(){
-  $container1.isotope({
+  $containerArtwork.isotope({
     // update columnWidth to a percentage of container width
-    masonry: { columnWidth: $container1.width() / 4 }
+    masonry: { columnWidth: $containerArtwork.width() / 4 }
   });
 });
 
@@ -140,4 +146,7 @@ jQuery(document).ready(function($){
 });
 
 */
+
+
+
 		

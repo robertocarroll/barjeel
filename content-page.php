@@ -7,14 +7,37 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-	</header><!-- .entry-header -->
 
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+		<!-- Gets the featured image -->
+				
+			<?php if (has_post_thumbnail( $post->ID ) ): ?>
+
+				<div class="page-image">
+		
+					<?php the_post_thumbnail ('page-big'); ?>	
+				
+				</div><!-- .page-image -->
+			
+			<?php endif; ?>	
+
+	<div class="page-text white">
+
+				<?php $intro = get_post_meta($post->ID, 'Intro', true);
+						//Checking if anything exists for the intro
+						if ($intro) { ?>
+						<?php echo '<div class="page-intro">'.$intro.'</div>'; ?>
+					<?php } ?>
+	
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+	
 	<div class="entry-content">
+		
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'barjeel' ), 'after' => '</div>' ) ); ?>
-		<?php edit_post_link( __( 'Edit', 'barjeel' ), '<span class="edit-link">', '</span>' ); ?>
+		
 	</div><!-- .entry-content -->
+
+</div><!-- .page-text -->
 </article><!-- #post-<?php the_ID(); ?> -->

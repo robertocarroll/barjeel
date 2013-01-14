@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    $Contact
+\*------------------------------------*/
+
+
+.full-page {
+		@include gs-span(da, 2, 5, (2, 5));	
+		@include column-count(3);
+		@extend .cf;
+		padding: $half-spacing-unit;
+	}
+
+
+
+#map_canvas {
+	min-width: 300px;
+	width:100%;
+	height: 400px;
+}
+
+
+

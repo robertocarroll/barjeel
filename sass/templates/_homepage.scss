@@ -12,7 +12,7 @@
    text-align: $opdir;
 }
 
-.headline h1 { 
+.main-title { 
   line-height: $mid-line-height;
   margin-bottom: $half-spacing-unit;
   text-transform: uppercase;
@@ -25,6 +25,10 @@
   text-transform: uppercase;
 }
 
+.e-date {
+  color: $barjeel-blue;
+  margin-bottom: $quarter-spacing-unit;
+}
 
 .widget_featured_post_widget { 
 	@extend .cf
@@ -69,6 +73,7 @@
   @include gs-span(da, 5, 5, (2, 5));
   color: $barjeel-blue;
   text-align: center;
+  @extend .cf
 }
 
 

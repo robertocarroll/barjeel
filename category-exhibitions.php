@@ -35,26 +35,49 @@
 					
 					<article>
 
-						<!-- Gets the featured image -->
+						<!-- Gets the cropped image -->
 				
-							<?php if (has_post_thumbnail( $post->ID ) ): ?>
+							<div class="page-image">	
 
-								<div class="page-image">
-						
-									<?php the_post_thumbnail ('page-big'); ?>	
-								
-								</div><!-- .page-image -->
-							
-							<?php endif; ?>	
+								<a href="<?php the_permalink(); ?>">	
+	 
+								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'page-big'); 
 
-					<div class="page-text white">		
+								 endif; ?>			
 
+								</a>	
+
+							</div>	
+										
+
+					<div class="page-text white">
+
+						<div class="exhibition-text">
+
+						<?php $status = get_post_meta($post->ID, 'Status', true);
+						//Checking if anything exists for the intro
+						if ($status) { ?>
+						<?php echo '<h2 class="date epsilon">'.$status.'</h2>'; ?>
+					<?php } ?>		
 			
-						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-							
-							<ul class="post-info">
-								<li><?php the_time('j F Y'); ?></li>
-							</ul>
+						<h1 class="alpha bold main-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+						<?php $dates = get_post_meta($post->ID, 'Dates', true);
+						//Checking if anything exists for the dates
+						if ($dates) { ?>
+						<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
+					<?php } ?>	
+
+					<?php $location = get_post_meta($post->ID, 'Location', true);
+						//Checking if anything exists for the location
+						if ($location) { ?>
+						<?php echo '<h2 class="date epsilon">'.$location.'</h2>'; ?>
+					<?php } ?>	
+
+														
+							<?php the_excerpt(); ?>
+
+						</div>
 
 					</div>		
 					
@@ -66,6 +89,10 @@
 				<?php endif; ?>	
 				
 				<?php /* Reset query */ wp_reset_postdata(); ?>
+
+				<div style="clear:both;"></div>
+
+				<div class="article-row">
 			
 			<?php
 			    $barjeel_style_classes = array('article-one','article-two','article-three', 'article-four');
@@ -75,7 +102,7 @@
 
 		<?php 
 													
-			query_posts(array("post__not_in" =>get_option("sticky_posts"), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 2)); ?>
+			query_posts(array("post__not_in" =>get_option("sticky_posts"), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 8)); ?>
 				
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
@@ -103,6 +130,8 @@
 					</div>
 
 				<?php endwhile; ?>
+
+			</div><!-- .article-row -->
 
 				<div style="clear:both;"></div>
 				

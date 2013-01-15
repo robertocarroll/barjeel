@@ -825,16 +825,16 @@ textarea:focus {
  * and over in your markup.
  */
 /* line 9, ../sass/inuit/generic/_clearfix.scss */
-.cf, .nav, .artwork-meta, .entry-meta, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, #page {
+.cf, .nav, .artwork-meta, .entry-meta, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, .article-four, .page-text, #page {
   zoom: 1;
 }
 /* line 13, ../sass/inuit/generic/_clearfix.scss */
-.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, #page:after {
+.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .article-four:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
   content: " ";
   display: table;
 }
 /* line 18, ../sass/inuit/generic/_clearfix.scss */
-.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, #page:after {
+.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
   clear: both;
 }
 
@@ -2394,6 +2394,14 @@ label,
 }
 
 /*------------------------------------*\
+    $Exhibition category 
+\*------------------------------------*/
+/* line 5, ../sass/templates/_exhibition-category.scss */
+.exhibition-text {
+  padding-top: 48px;
+}
+
+/*------------------------------------*\
     $Header
 \*------------------------------------*/
 /* line 7, ../sass/templates/_footer.scss */
@@ -2462,7 +2470,7 @@ header[role="banner"] {
 }
 
 /* line 15, ../sass/templates/_homepage.scss */
-.headline h1 {
+.main-title {
   line-height: 30px;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -2476,26 +2484,32 @@ header[role="banner"] {
   text-transform: uppercase;
 }
 
-/* line 33, ../sass/templates/_homepage.scss */
+/* line 28, ../sass/templates/_homepage.scss */
+.e-date {
+  color: #8acfe6;
+  margin-bottom: 6px;
+}
+
+/* line 37, ../sass/templates/_homepage.scss */
 .article-row {
   padding-top: 48px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-/* line 39, ../sass/templates/_homepage.scss */
+/* line 43, ../sass/templates/_homepage.scss */
 .article-row h1 {
   line-height: 30px;
   margin-bottom: 6px;
 }
 
-/* line 45, ../sass/templates/_homepage.scss */
+/* line 49, ../sass/templates/_homepage.scss */
 .article-row p {
   line-height: 20px;
   margin-bottom: 6px;
 }
 
-/* line 50, ../sass/templates/_homepage.scss */
+/* line 54, ../sass/templates/_homepage.scss */
 .article-one {
   display: block;
   float: left;
@@ -2506,7 +2520,7 @@ header[role="banner"] {
   text-align: center;
 }
 
-/* line 56, ../sass/templates/_homepage.scss */
+/* line 60, ../sass/templates/_homepage.scss */
 .article-two {
   display: block;
   float: left;
@@ -2517,7 +2531,7 @@ header[role="banner"] {
   text-align: center;
 }
 
-/* line 62, ../sass/templates/_homepage.scss */
+/* line 66, ../sass/templates/_homepage.scss */
 .article-three {
   display: block;
   float: left;
@@ -2528,7 +2542,7 @@ header[role="banner"] {
   text-align: center;
 }
 
-/* line 68, ../sass/templates/_homepage.scss */
+/* line 72, ../sass/templates/_homepage.scss */
 .article-four {
   display: block;
   float: left;
@@ -2539,22 +2553,22 @@ header[role="banner"] {
   text-align: center;
 }
 
-/* line 75, ../sass/templates/_homepage.scss */
+/* line 80, ../sass/templates/_homepage.scss */
 .article-one .square {
   background-color: #ff1900;
 }
 
-/* line 80, ../sass/templates/_homepage.scss */
+/* line 85, ../sass/templates/_homepage.scss */
 .article-two .square {
   background-color: #8acfe6;
 }
 
-/* line 85, ../sass/templates/_homepage.scss */
+/* line 90, ../sass/templates/_homepage.scss */
 .article-three .square {
   background-color: #ff1900;
 }
 
-/* line 90, ../sass/templates/_homepage.scss */
+/* line 95, ../sass/templates/_homepage.scss */
 .article-four .square {
   background-color: #8acfe6;
 }
@@ -2978,7 +2992,7 @@ nav[role="navigation"] {
   padding-right: 2.22222%;
 }
 
-/* line 23, ../sass/templates/_page.scss */
+/* line 24, ../sass/templates/_page.scss */
 .entry-content {
   padding-top: 24px;
 }
@@ -3269,7 +3283,7 @@ pre code {
 /**
  * Fonts
  */
-/* line 50, ../sass/barjeel.scss */
+/* line 51, ../sass/barjeel.scss */
 body {
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
@@ -3281,14 +3295,14 @@ body {
 /**
  * Main block
  */
-/* line 63, ../sass/barjeel.scss */
+/* line 64, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 70, ../sass/barjeel.scss */
+/* line 71, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;

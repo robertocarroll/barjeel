@@ -45,6 +45,12 @@ Template Name: Home Page
 							<div class="square">&nbsp;</div>
 															
 							<h1 class="gamma bold"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+							<?php $dates = get_post_meta($post->ID, 'Dates', true);
+								//Checking if anything exists for the dates
+								if ($dates) { ?>
+								<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
+							<?php } ?>
 									 
 							<?php the_excerpt(); ?>
 

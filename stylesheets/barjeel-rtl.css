@@ -2402,6 +2402,23 @@ label,
 }
 
 /*------------------------------------*\
+    $Exhibition single
+\*------------------------------------*/
+/* line 5, ../sass/templates/_exhibition-single.scss */
+.exhibition-text {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 74.33762%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 2.22222%;
+  padding-right: 2.22222%;
+}
+
+/*------------------------------------*\
     $Header
 \*------------------------------------*/
 /* line 7, ../sass/templates/_footer.scss */
@@ -2933,21 +2950,26 @@ nav[role="navigation"] {
 }
 
 /* line 22, ../sass/templates/_misc.scss */
+.gray {
+  color: gray;
+}
+
+/* line 24, ../sass/templates/_misc.scss */
 .red {
   color: #ff1900;
 }
 
-/* line 24, ../sass/templates/_misc.scss */
+/* line 26, ../sass/templates/_misc.scss */
 .blue {
   color: #8acfe6;
 }
 
-/* line 27, ../sass/templates/_misc.scss */
+/* line 29, ../sass/templates/_misc.scss */
 .outline {
   outline: 1px solid #99999a;
 }
 
-/* line 29, ../sass/templates/_misc.scss */
+/* line 31, ../sass/templates/_misc.scss */
 .square {
   width: 15px;
   height: 15px;
@@ -3283,7 +3305,7 @@ pre code {
 /**
  * Fonts
  */
-/* line 51, ../sass/barjeel.scss */
+/* line 52, ../sass/barjeel.scss */
 body {
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
@@ -3295,14 +3317,14 @@ body {
 /**
  * Main block
  */
-/* line 64, ../sass/barjeel.scss */
+/* line 65, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 71, ../sass/barjeel.scss */
+/* line 72, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;

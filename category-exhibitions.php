@@ -13,10 +13,10 @@
 				rsort( $sticky );
 
 				/* Get the 5 newest stickies (change 5 for a different number) */
-				$sticky = array_slice( $sticky, 0, 2 );
+				$sticky = array_slice( $sticky, 0, 1 );
 
 				$stickyexhibition = array(
-					'posts_per_page' => 2,
+					'posts_per_page' => 1,
 					'post__in'  => $sticky,
 					'ignore_sticky_posts' => 1,
 					'category_name' => 'exhibitions'
@@ -31,77 +31,80 @@
 				
 				<?php if( $stickyexhibition_query->have_posts() ) : ?>		
 			
-					<h2>Featured Post (sticky) </h2>
-
-
 				<?php while ( $stickyexhibition_query->have_posts() ) : $stickyexhibition_query->the_post(); ?>
-					<article class="sticky">
+					
+					<article>
+
+						<!-- Gets the featured image -->
+				
+							<?php if (has_post_thumbnail( $post->ID ) ): ?>
+
+								<div class="page-image">
+						
+									<?php the_post_thumbnail ('page-big'); ?>	
+								
+								</div><!-- .page-image -->
+							
+							<?php endif; ?>	
+
+					<div class="page-text white">		
+
 			
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+						<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+							
 							<ul class="post-info">
 								<li><?php the_time('j F Y'); ?></li>
-								<li><?php the_category(', '); ?></li>
 							</ul>
+
+					</div>		
 					
 					</article>
 								 
-							</article>
+							
 				<?php endwhile; ?>
 
 				<?php endif; ?>	
 				
 				<?php /* Reset query */ wp_reset_postdata(); ?>
 			
-			
-			
-
-
-<h2>Upcoming Events</h2>
-
 			<?php
-
-			//tommorrow to seventy days later.
-				$tomorrow = date('Y-m-d', strtotime('1 days'))." 0:00:00";
-				$seven_days = date('Y-m-d', strtotime('70 days'))." 23:59:59";
-
-				global $wpdb;
-
-			$fivesdrafts = $wpdb->get_results("
-			SELECT * FROM $wpdb->posts
-			WHERE post_status = 'future'
-			AND post_date BETWEEN \"$tomorrow\" AND \"$seven_days\" 
-			ORDER BY post_date ASC");
-			
-			?>
-			
-			<?php
-			foreach ($fivesdrafts as $post) { setup_postdata($post);?>
-
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-
-			<?php } ?>
-
-
-
-<h2>Past Events</h2>
+			    $barjeel_style_classes = array('article-one','article-two','article-three', 'article-four');
+			    $barjeel_styles_count = count($barjeel_style_classes);
+			    $barjeel_style_index = 0;
+			?>	
 
 		<?php 
 													
 			query_posts(array("post__not_in" =>get_option("sticky_posts"), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 2)); ?>
+				
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 
-					<article <?php post_class(); ?>>
-		
-						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<ul class="post-info">
-								<li><?php the_time('j F Y'); ?></li>
-								<li><?php the_category(', '); ?></li>
-							</ul>
-					
-					</article>
+							<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">		
+
+						<article>	
+
+							<div class="square">&nbsp;</div>
+															
+							<h1 class="gamma bold"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+									 
+							<?php the_excerpt(); ?>
+
+								<a href="<?php the_permalink(); ?>">	
+	 
+								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
+
+								 endif; ?>			
+
+								</a>	
+																
+						</article>
+
+					</div>
 
 				<?php endwhile; ?>
+
+				<div style="clear:both;"></div>
 				
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
 					<div class="navigation clearfix">
@@ -111,7 +114,7 @@
 					<?php } ?>
 				
 				
-				<?php endif; ?>
+				<?php endif; ?>			
 
 		<?php wp_reset_query(); ?>
 

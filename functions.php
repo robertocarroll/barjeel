@@ -493,6 +493,27 @@ endif;
 }
 
 
+/**
+ * Related Post Connection *
+ * 
+ * http://www.billerickson.net/manually-curated-related-posts/
+ */
+
+add_action( 'init', 'be_post_type_connections' );
+
+function be_post_type_connections() {
+ 
+	// Make Sure plugin is active
+	if ( !function_exists( 'p2p_register_connection_type' ) )
+		return;
+ 
+	p2p_register_connection_type( array(
+		'name' => 'related-articles', // unique name
+		'from' => 'post',
+		'to' => 'post',
+		'title' => array( 'to' => 'All Connections', 'from' => 'Related Articles' )
+	) );
+}
 
 
 

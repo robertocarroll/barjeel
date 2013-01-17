@@ -14,43 +14,46 @@
 						echo get_royalslider($example_product);
 	
 				?>	
-
-
 	
 	<div class="exhibition-text white">
 
 		<h1 class="alpha bold main-title gray"><?php the_title(); ?></h1>
 
-		<?php $dates = get_post_meta($post->ID, 'Dates', true);
+					<?php $dates = get_post_meta($post->ID, 'Dates', true);
 						//Checking if anything exists for the dates
 						if ($dates) { ?>
-						<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
+						<?php echo '<h2 class="exhibition-meta e-date">'.$dates.'</h2>'; ?>
 					<?php } ?>	
 
 					<?php $location = get_post_meta($post->ID, 'Location', true);
 						//Checking if anything exists for the location
 						if ($location) { ?>
-						<?php echo '<h2 class="date epsilon">'.$location.'</h2>'; ?>
+						<?php echo '<h2 class="exhibition-meta">'.$location.'</h2>'; ?>
 					<?php } ?>	
-		
-	<div class="entry-content">
-		
-		<?php the_content(); ?>
-		
-	</div><!-- .entry-content -->
+	
+		<div class="exhibition-main-text">
 
+			<?php the_content(); ?>
+		
+		</div><!-- .exhibition-main-text -->	
 
 		<!-- Artists - from custom field called artists -->
 		
 	<?php $artists = get_post_meta($post->ID, 'artists', false); ?>
 	
 	<?php if ( $artists ) { ?>	
+
+	<div class="artist-list">
 	
-	<ul>
-		<?php foreach($artists as $artist) {
-			echo '<li>'.$artist.'</li>';
-			} ?>
-	</ul>
+		<ul class = "nav  nav--stacked">
+			<?php foreach($artists as $artist) {
+				echo '<li>'.$artist.'</li>';
+				} ?>
+		</ul>
+
+	</div><!-- .artist-list -->	
+
+
 	<?php } ?>
 
 	</article><!-- #post-<?php the_ID(); ?> -->
@@ -58,42 +61,9 @@
 	<div style="clear:both;"></div>
 	
 						
-	<!-- Press releases - looks for posts with a category press releases and a taxonomy exhibition -->
-	
-		<?php global $post;
-			$pressreleases['tax_query'] = array(
-				array(
-					'taxonomy' => 'category',
-					'terms' => array('press-releases'),
-					'field' => 'slug',
-				),
-				array(
-					'taxonomy' => 'exhibition',
-					'terms' => array($post->post_name),
-					'field' => 'slug',
-				),
-			);
-			 ?>					
-	
-				<?php $pressreleases_query = new WP_Query( $pressreleases ); ?>
-				
-				<?php /* Start the Loop */ ?>
-				
-				<?php if( $pressreleases_query->have_posts() ) : ?>
-				
-				<h2 class="related-title">News about <?php the_title(); ?> </h2>
-				
-				<?php while ( $pressreleases_query->have_posts() ) : $pressreleases_query->the_post(); ?>
-				
-					<h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-				<?php endwhile; ?>	
-			
-			<?php endif; ?>	
-			
-			<?php /* Reset query */ wp_reset_postdata(); ?>
-	
 
 <!-- Artwork - looks for posts with a category collection and a taxonomy exhibition -->
+		
 		<?php global $post;
 			$artwork['tax_query'] = array(
 				array(

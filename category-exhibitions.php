@@ -52,7 +52,7 @@
 
 					<div class="page-text white">
 
-						<div class="exhibition-text">
+						<div class="exhibition-tease">
 
 						<?php $status = get_post_meta($post->ID, 'Status', true);
 						//Checking if anything exists for the intro

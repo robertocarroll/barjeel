@@ -21,3 +21,7 @@
 	padding-bottom: $base-spacing-unit;
 }
 
+.related-posts {
+  @include gs-span(da, 5, 5, (2, 5));
+ 
+}

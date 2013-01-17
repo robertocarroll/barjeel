@@ -516,5 +516,4 @@ function be_post_type_connections() {
 }
 
 
-
 ?>

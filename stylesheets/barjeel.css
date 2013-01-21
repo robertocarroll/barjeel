@@ -2233,8 +2233,8 @@ label,
 #carousel-gallery {
   width: 100%;
   margin: 0;
-  padding: 15px 0;
-  background: #EFEFEF;
+  padding: 0px 0;
+  background: gray;
   overflow: hidden !important;
 }
 
@@ -2247,7 +2247,7 @@ label,
 /* line 20, ../sass/templates/_artist.scss */
 #carousel-gallery .touchcarousel-item {
   margin-right: 15px;
-  background: #CCC;
+  background: gray;
   height: 400px;
 }
 
@@ -2268,7 +2268,22 @@ label,
 
 /* line 35, ../sass/templates/_artist.scss */
 #carousel-gallery .scrollbar-holder {
-  bottom: 6px;
+  bottom: 0px;
+}
+
+/* line 39, ../sass/templates/_artist.scss */
+.artist-text {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* line 45, ../sass/templates/_artist.scss */
+.artist-detail {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 2.22222%;
+  padding-right: 2.22222%;
 }
 
 /*------------------------------------*\
@@ -3871,7 +3886,7 @@ pre code {
 /**
  * Fonts
  */
-/* line 57, ../sass/barjeel.scss */
+/* line 56, ../sass/barjeel.scss */
 body {
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
@@ -3883,14 +3898,14 @@ body {
 /**
  * Main block
  */
-/* line 70, ../sass/barjeel.scss */
+/* line 69, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 77, ../sass/barjeel.scss */
+/* line 76, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;

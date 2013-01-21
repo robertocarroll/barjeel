@@ -5,13 +5,18 @@
 
 			<?php if ( have_posts() ) : ?>
 
+				<?php $total_posts = $wp_query->found_posts; ?>
+
+				<?php /* Check if more than one image */ ?>
+
+				<?php if ( $total_posts > 1 ) { ?>	
+
 				<div id="carousel-gallery" class="touchcarousel black-and-white"> 
 
-					<ul class="touchcarousel-container">				
+					<ul class="touchcarousel-container">			
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-
 						
 							 <li class="touchcarousel-item">
 		
@@ -36,6 +41,44 @@
 				</ul>
 				
 				</div><!-- .carousel-gallery-->
+
+
+				<?php } ?>	
+
+				<?php /* Do this if there's only one image */ ?>	
+
+				<?php if ( $total_posts == 1 ) { ?>	
+
+						<?php /* Start the Loop */ ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+						
+							 <div class="featured-image center grey">
+		
+									<?php
+									if ( has_post_thumbnail() ){ ?>
+
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+
+									<?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'carousel-gallery' ); ?>	
+				
+									 <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
+   									
+   									</a>
+								
+								<?php } ?>
+							
+									
+							</div><!-- .featured-image -->			
+
+				<?php endwhile; ?>
+
+				<?php } ?>	
+
+
+				
+
+
+
 		
 			<?php else : ?>
 
@@ -43,22 +86,22 @@
 
 			<?php endif; ?>
 			
-			<header class="page-header">
-					
-					Using Artist
-					
-				<h1 class="gamma">
-						<?php
-								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-						?>
-					</h1>
+				<div class="meta white">	
+
+				<div class= "artist-text">	
+
+				<h1 class="alpha bold main-title center gray">
+	
+					<?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
+				
+				</h1>
+
+				<div class= "artist-detail">	
 					
 					<?php echo category_description(); ?>
+
 					
-			</header>
-					
-					
-					<?php 
+				<?php 
 					
 					$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 					
@@ -71,23 +114,23 @@
 							$exclude = array($term->term_id);
 
  							if (empty($termchildren) or ($termchildren==$exclude)) {
- 								echo 'do nothing';
+ 								
  								}
 
  								else {
 
-								echo '<h2>Related artists</h2><ul>';
+								echo '<h2 class="related-title">Related artists</h2><div class="artist-list"><ul class = "nav  nav--stacked">';
 
 								foreach ($termchildren as $child) {
 									
 									if (!in_array($child, $exclude)) {
 								
 									$term = get_term_by( 'id', $child, $taxonomyName );
-									echo '<li><a href="' . get_term_link( $term->name, $taxonomyName ) . '">' . $term->name . '</a></li>';
+									echo '<li><a href="' . get_term_link( intval($term->term_id), $taxonomyName ) . '">' . $term->name . '</a></li>';
 									
 									}
 								}
-								echo '</ul>';
+								echo '</ul></div><!-- .artist-list -->	';
 								}
 							} 
 							else 
@@ -115,7 +158,18 @@
 					
 		
 				<?php rewind_posts(); ?>
+
+				</div><!-- .artist-detail -->	
+
+				</div><!-- .artist-text -->	
+
+				</div><!-- .meta -->	
+					
+					
+					
+					
 				
+				<?php related_posts(); ?>
 		
 
 			</div><!-- #content -->

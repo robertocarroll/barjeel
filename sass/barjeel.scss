@@ -23,8 +23,11 @@
 
 @import "templates/mixins.scss";
 @import "grid/gridset.scss";
+@import "templates/artist.scss";
 @import "templates/artwork-category.scss";
 @import "templates/artwork-single.scss";
+@import "templates/black-and-white-skin.scss";
+
 @import "templates/contact.scss";
 @import "templates/exhibition-category.scss";
 @import "templates/exhibition-single.scss";
@@ -36,11 +39,13 @@
 @import "templates/links.scss";
 @import "templates/lists.scss";
 @import "templates/menu.scss";
+@import "templates/minimal-light-skin.scss";
 @import "templates/misc.scss";
 @import "templates/page.scss";
 @import "templates/navigation.scss";
 @import "templates/pagination.scss";
 @import "templates/select-box.scss";
+@import "templates/touchcarousel.scss";
 @import "templates/typography.scss";
 
 

@@ -2224,6 +2224,54 @@ label,
    
    -------------------------------------------------------------- */
 /*------------------------------------*\
+    $Artist
+\*------------------------------------*/
+/**
+		* "Free-scroll" gallery
+		**/
+/* line 9, ../sass/templates/_artist.scss */
+#carousel-gallery {
+  width: 100%;
+  margin: 0;
+  padding: 15px 0;
+  background: #EFEFEF;
+  overflow: hidden !important;
+}
+
+/* line 16, ../sass/templates/_artist.scss */
+#carousel-gallery .touchcarousel-wrapper {
+  overflow: visible;
+  margin-left: 80px;
+}
+
+/* line 20, ../sass/templates/_artist.scss */
+#carousel-gallery .touchcarousel-item {
+  margin-right: 15px;
+  background: #CCC;
+  height: 400px;
+}
+
+/* line 26, ../sass/templates/_artist.scss */
+#carousel-gallery .arrow-icon.left {
+  left: 25px;
+}
+
+/* line 29, ../sass/templates/_artist.scss */
+#carousel-gallery .arrow-icon.right {
+  right: 25px;
+}
+
+/* line 32, ../sass/templates/_artist.scss */
+#carousel-gallery .arrow-holder {
+  width: 60px;
+}
+
+/* line 35, ../sass/templates/_artist.scss */
+#carousel-gallery .scrollbar-holder {
+  bottom: 6px;
+}
+
+/*------------------------------------*\
     $Artwork category
 \*------------------------------------*/
 /* line 5, ../sass/templates/_artwork-category.scss */
@@ -2370,6 +2418,125 @@ label,
   display: none;
 }
 
+/******************************************************\
+*
+*  Minimal Light Skin
+*
+*    1. Arrows(direction) navigation
+*    2. Paging navigation
+*
+\******************************************************/
+/******************************************************\
+*
+*  1. Arrows (direction) navigation
+*
+\******************************************************/
+/* line 17, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-icon {
+  width: 30px;
+  height: 30px;
+  margin-top: -15px;
+  background-image: url("sprite.png");
+  background-repeat: no-repeat;
+  background-color: #323232;
+  background-color: rgba(0, 0, 0, 0.7);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+}
+
+/* line 37, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-holder {
+  width: 35px;
+}
+
+/* line 40, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-holder:active .arrow-icon {
+  -moz-opacity: 0.7 !important;
+  -webkit-opacity: 0.7 !important;
+  opacity: 0.7 !important;
+}
+
+/* line 45, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-icon.left {
+  left: 10px;
+  background-position: -2px -6px;
+}
+
+/* line 49, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-icon.right {
+  right: 10px;
+  background-position: -175px -6px;
+}
+
+/* line 53, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-holder:hover .arrow-icon {
+  background-color: #1e1e1e;
+  background-color: rgba(0, 0, 0, 0.7);
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
+/* line 61, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.left {
+  background-position: -39px -6px;
+}
+
+/* line 64, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.right {
+  background-position: -138px -6px;
+}
+
+/* line 68, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.left,
+.touchcarousel.black-and-white .arrow-holder.disabled .arrow-icon.right {
+  background-color: #c8c8c8;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/******************************************************\
+*
+*  2. Paging navigation
+*
+\******************************************************/
+/* line 78, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .tc-paging-container {
+  margin-top: -22px;
+}
+
+/* line 81, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .tc-paging-item {
+  background-image: url("sprite.png");
+  background-repeat: no-repeat;
+  background-position: -95px -4px;
+  width: 16px;
+  height: 16px;
+}
+
+/* line 90, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .tc-paging-item.current {
+  background-position: -95px -22px;
+}
+
+/* line 93, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .tc-paging-container {
+  margin-top: -25px;
+}
+
+/* line 96, ../sass/templates/_black-and-white-skin.scss */
+.touchcarousel.black-and-white .tc-paging-centerer-inside {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #323232;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2px 4px;
+}
+
 /*------------------------------------*\
     $Contact
 \*------------------------------------*/
@@ -2436,34 +2603,34 @@ label,
   background: gray;
 }
 
-/* line 21, ../sass/templates/_exhibition-single.scss */
+/* line 20, ../sass/templates/_exhibition-single.scss */
 .exhibition-title {
   padding-top: 48px;
 }
 
-/* line 26, ../sass/templates/_exhibition-single.scss */
+/* line 25, ../sass/templates/_exhibition-single.scss */
 .rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
   background: none repeat scroll 0 0 gray !important;
 }
 
-/* line 38, ../sass/templates/_exhibition-single.scss */
+/* line 37, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:first-child {
   color: #8acfe6;
 }
 
-/* line 42, ../sass/templates/_exhibition-single.scss */
+/* line 41, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:after {
   color: gray;
   content: " / ";
   padding-left: 6px;
 }
 
-/* line 48, ../sass/templates/_exhibition-single.scss */
+/* line 47, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:last-child:after {
   content: "";
 }
 
-/* line 53, ../sass/templates/_exhibition-single.scss */
+/* line 52, ../sass/templates/_exhibition-single.scss */
 .artist-list {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -2473,7 +2640,7 @@ label,
   padding-bottom: 24px;
 }
 
-/* line 58, ../sass/templates/_exhibition-single.scss */
+/* line 57, ../sass/templates/_exhibition-single.scss */
 .related-posts {
   display: block;
   float: left;
@@ -2482,7 +2649,7 @@ label,
   width: 22.99773%;
 }
 
-/* line 63, ../sass/templates/_exhibition-single.scss */
+/* line 62, ../sass/templates/_exhibition-single.scss */
 .related-list {
   padding-bottom: 48px;
 }
@@ -2995,6 +3162,102 @@ nav[role="navigation"] {
   color: #ff1900 !important;
 }
 
+/******************************************************\
+*
+*  Minimal Light Skin
+*
+*    1. Arrows(direction) navigation
+*    2. Paging navigation
+*
+\******************************************************/
+/******************************************************\
+*
+*  1. Arrows (direction) navigation
+*
+\******************************************************/
+/* line 17, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-icon {
+  width: 23px;
+  height: 28px;
+  margin-top: -14px;
+}
+
+/* line 22, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-icon.left {
+  left: 5px;
+  background: url("sprite.png") no-repeat -6px -7px;
+}
+
+/* line 26, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-icon.right {
+  right: 5px;
+  background: url("sprite.png") no-repeat -173px -7px;
+}
+
+/* line 30, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-holder.disabled {
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
+/* line 35, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.left {
+  background: url("sprite.png") no-repeat -40px -7px;
+}
+
+/* line 38, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.right {
+  background: url("sprite.png") no-repeat -139px -7px;
+}
+
+/* line 41, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-holder {
+  width: 35px;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+}
+
+/* line 47, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .arrow-holder:hover {
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
+/******************************************************\
+*
+*  2. Paging navigation
+*
+\******************************************************/
+/* line 58, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .tc-paging-container {
+  margin-top: -22px;
+}
+
+/* line 61, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .tc-paging-item {
+  background: url("sprite.png") no-repeat -95px -4px;
+  width: 16px;
+  height: 16px;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+  opacity: 0.8;
+}
+
+/* line 71, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .tc-paging-item.current {
+  background: url("sprite.png") no-repeat -95px -22px;
+}
+
+/* line 74, ../sass/templates/_minimal-light-skin.scss */
+.touchcarousel.minimal-light .tc-paging-item:hover {
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
 /*------------------------------------*\
     $Misc
 \*------------------------------------*/
@@ -3160,6 +3423,215 @@ nav[role="navigation"] {
   -webkit-border-radius: 0px;
 }
 
+/******************************************************\
+*
+*  Base TouchCarousel stylesheet
+*   
+*  Contents:
+*
+*   1. Main containers
+*   2. Carousel items
+*   3. Arrows(direction) navigation
+*   4. Paging navigation
+*   5. Scrollbar
+*   6. Cursors
+*
+\******************************************************/
+/******************************************************\
+*
+*  1. Main containers (carousel size, background)
+*
+\******************************************************/
+/* line 26, ../sass/templates/_touchcarousel.scss */
+.touchcarousel {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  /* style is removed after carousel is inited, use !important if you want to keep it*/
+  overflow: hidden;
+}
+
+/* line 34, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .touchcarousel-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  left: 0;
+}
+
+/* line 41, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .touchcarousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/******************************************************\
+*
+*  2. Carousel items (item styling, spacing between items)
+*
+\******************************************************/
+/* line 58, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .touchcarousel-item {
+  /* use margin-right for spacing between items */
+  margin: 0 0 0 0;
+  padding: 0;
+  float: left;
+}
+
+/* Last carousel item  */
+/* line 66, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .touchcarousel-item.last {
+  margin-right: 0 !important;
+}
+
+/******************************************************\
+*
+*  3. Arrows(direction) navigation
+*
+\******************************************************/
+/* arrow hitstate and icon holder */
+/* line 81, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .arrow-holder {
+  height: 100%;
+  width: 45px;
+  position: absolute;
+  top: 0;
+  display: block;
+  cursor: pointer;
+  z-index: 25;
+}
+
+/* line 90, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .arrow-holder.left {
+  left: 0;
+}
+
+/* line 93, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .arrow-holder.right {
+  right: 0;
+}
+
+/* arrow icons */
+/* line 98, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .arrow-icon {
+  width: 45px;
+  height: 90px;
+  top: 50%;
+  margin-top: -45px;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* line 109, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .arrow-holder.disabled {
+  cursor: default;
+}
+
+/* line 110, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .arrow-holder.disabled .arrow-icon {
+  cursor: default;
+}
+
+/******************************************************\
+*
+*  4. Paging navigation
+*
+\******************************************************/
+/* line 122, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .tc-paging-container {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  margin-top: -20px;
+  z-index: 25;
+}
+
+/* line 129, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .tc-paging-centerer {
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+/* line 134, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .tc-paging-centerer-inside {
+  float: left;
+  position: relative;
+  left: -50%;
+}
+
+/* Paging items */
+/* line 141, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .tc-paging-item {
+  float: left;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-indent: -9999px;
+}
+
+/******************************************************\
+*
+*  5. Scrollbar
+*
+\******************************************************/
+/* line 160, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .scrollbar-holder {
+  position: absolute;
+  z-index: 30;
+  left: 6px;
+  right: 6px;
+  bottom: 5px;
+  height: 4px;
+  overflow: hidden;
+}
+
+/* line 169, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .scrollbar {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  bottom: 0px;
+}
+
+/* line 175, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .scrollbar.dark {
+  background-color: #828282;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 179, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .scrollbar.light, .touchcarousel .scrollbar.artwork-meta, .touchcarousel .scrollbar.list-title, .touchcarousel .scrollbar.entry-meta, .touchcarousel .scrollbar.related-title, .touchcarousel .scrollbar.pagination {
+  background-color: #d2d2d2;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/******************************************************\
+*
+*  6. Cursors
+*
+\******************************************************/
+/* IE and Opera use "move", FF uses -moz-grab */
+/* line 195, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .grab-cursor {
+  cursor: url(grab.png) 8 8, move;
+}
+
+/* line 196, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .grabbing-cursor {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* Cursor that used when mouse drag is disabled */
+/* line 199, ../sass/templates/_touchcarousel.scss */
+.touchcarousel .auto-cursor {
+  cursor: auto;
+}
+
+/* Copyright 2011, Dmitry Semenov, http://dimsemenov.com */
 /*------------------------------------*\
     $Typography
 \*------------------------------------*/
@@ -3399,7 +3871,7 @@ pre code {
 /**
  * Fonts
  */
-/* line 52, ../sass/barjeel.scss */
+/* line 57, ../sass/barjeel.scss */
 body {
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
@@ -3411,14 +3883,14 @@ body {
 /**
  * Main block
  */
-/* line 65, ../sass/barjeel.scss */
+/* line 70, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 72, ../sass/barjeel.scss */
+/* line 77, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;

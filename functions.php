@@ -91,6 +91,8 @@ function barjeel_scripts() {
 	wp_enqueue_script( 'backstretch', get_template_directory_uri() . '/javascripts/jquery.backstretch.min.js', array( 'jquery' ), '20120206', true );
 	
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/javascripts/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
+
+	wp_enqueue_script( 'touchcarousel', get_template_directory_uri() . '/javascripts/jquery.touchcarousel-1.1.min.js', array( 'jquery' ), '20120206', true );
 		
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );
@@ -157,6 +159,7 @@ if ( function_exists( 'add_image_size' ) ) {
 	add_image_size( 'collection-zoom', 1500, 1500 ); // 1500 pixels wide by 1500 pixels high
 	add_image_size( 'collection-big', 680, 500 ); // 680 pixels wide by 680 pixels high
   	add_image_size( 'page-big', 490, 800 );
+  	add_image_size( 'carousel-gallery', 900, 400 );
   	add_image_size('cropped-thumb', 170, 170, true);
   	add_image_size('homepage-thumb', 745, 745, true);
 }

@@ -10,6 +10,29 @@ jQuery(document).ready(function ($) {
     });
 
 
+
+/*! For the carousel on the artist page */
+
+jQuery(document).ready(function($){
+
+  $("#carousel-gallery").touchCarousel({        
+        itemsPerPage: 1,        
+        scrollbar: true,
+        scrollbarAutoHide: false,
+        scrollbarTheme: "dark",       
+        pagingNav: false,
+        snapToItems: true,
+        scrollToLast: true,
+        useWebkit3d: true,        
+        loopItems: false
+      }); 
+
+
+    });
+
+
+
+
 /*! For the alphabetical list */
 
 jQuery(document).ready(function($){
@@ -105,11 +128,6 @@ $(window).smartresize(function(){
     masonry: { columnWidth: $container.width() / 3 }
   });
 });
-
-
-
-
-
 
 
 $('#sort').isotope({

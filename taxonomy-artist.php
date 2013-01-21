@@ -5,33 +5,37 @@
 
 			<?php if ( have_posts() ) : ?>
 
+				<div id="carousel-gallery" class="touchcarousel black-and-white"> 
 
-				<div id="sort">
+					<ul class="touchcarousel-container">				
+
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-		
-							<div class="box-ms">
-		
-							<article <?php post_class(); ?>>
-							
-							<div class="center">						
-							<?php
-							if ( has_post_thumbnail() ){ ?>
-								<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-								<?php the_post_thumbnail('collection-thumb'); ?>
-						<?php } ?>
+
 						
-						</div><!-- .center -->	
-							
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+							 <li class="touchcarousel-item">
 		
-							</article>
+									<?php
+									if ( has_post_thumbnail() ){ ?>
+
+									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+
+									<?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'carousel-gallery' ); ?>	
+				
+									 <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
+   									
+   									</a>
+								
+								<?php } ?>
+							
 									
-							</div><!-- .box -->
+							</li><!-- .touchcarousel-item -->			
 
 				<?php endwhile; ?>
+
+				</ul>
 				
-				</div><!-- .sort -->
+				</div><!-- .carousel-gallery-->
 		
 			<?php else : ?>
 

@@ -22,7 +22,7 @@ Template Name: Home Page
 			<div class="article-row">
 
 			<?php
-			    $barjeel_style_classes = array('article-one','article-two','article-three', 'article-four');
+			    $barjeel_style_classes = array('article-one column-one','article-two column-two','article-three column-three', 'article-four column-four');
 			    $barjeel_styles_count = count($barjeel_style_classes);
 			    $barjeel_style_index = 0;
 			?>		
@@ -44,24 +44,21 @@ Template Name: Home Page
 
 							<div class="square">&nbsp;</div>
 															
-							<h1 class="gamma bold"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+							<h1 class="gamma bold article-list"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 							<?php $dates = get_post_meta($post->ID, 'Dates', true);
 								//Checking if anything exists for the dates
 								if ($dates) { ?>
-								<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
+								<?php echo '<h2 class="date epsilon bold e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
 									 
-							<?php the_excerpt(); ?>
-
-								<a href="<?php the_permalink(); ?>">	
+									<a href="<?php the_permalink(); ?>">	
 	 
 								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
 
 								 endif; ?>			
 
-								</a>	
-												
+								</a>												
 					
 						</article>
 

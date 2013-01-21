@@ -58,10 +58,7 @@ Template Name: Contact page
 
 	
 	
-<!--Google Maps APIv3 -->
-
-	
-	
+<!--Google Maps APIv3 -->	
 
 		<div id="map_canvas" ></div>	
 

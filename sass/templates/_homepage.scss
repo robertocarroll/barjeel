@@ -36,46 +36,50 @@
 
 .article-row {
   padding-top: 2 * $base-spacing-unit;  
-  line-height: $less-line-height;
+}
+
+.article-list { 
+  line-height: $mid-line-height;
+  margin-bottom: $quarter-spacing-unit;
   text-transform: uppercase;
 }
 
-.article-row h1 { 
-  line-height: $mid-line-height;
-  margin-bottom: $quarter-spacing-unit;
-  
-}
-
-.article-row p { 
-  line-height: $less-line-height;
-  margin-bottom: $quarter-spacing-unit;
-}
-
 .article-one {		
-  @include gs-span(da, 2, 2, (2, 5));
   color: $barjeel-red;
   text-align: center;
 }
 
+.column-one {   
+  @include gs-span(da, 2, 2, (2, 5));
+  }
+
 .article-two {
-  @include gs-span(da, 3, 3, (2, 5));
   color: $barjeel-blue;
   text-align: center;
 }
 
+.column-two {
+  @include gs-span(da, 3, 3, (2, 5));
+  }
+
 .article-three {
-  @include gs-span(da, 4, 4, (2, 5));
   color: $barjeel-red;
   text-align: center;
 }
 
+.column-three {
+  @include gs-span(da, 4, 4, (2, 5));
+  }
+
 .article-four {
-  @include gs-span(da, 5, 5, (2, 5));
   color: $barjeel-blue;
   text-align: center;
   @extend .cf
 }
 
+.column-four {
+  @include gs-span(da, 5, 5, (2, 5));
+}
 
 .article-one .square {
 	background-color: $barjeel-red;
@@ -94,5 +98,15 @@
 
 .article-four .square {
 	background-color: $barjeel-blue;
+
+}
+
+.article-one .e-date {
+  color: $barjeel-red;
+
+}
+
+.article-three .e-date {
+  color: $barjeel-red;
 
 }

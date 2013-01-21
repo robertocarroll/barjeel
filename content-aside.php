@@ -9,28 +9,47 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
-					$example_product = get_post_meta($post->ID, 'slideshow', true);
-					if ($example_product)
-						echo get_royalslider($example_product);
+	<div class="exhibition-main">
+
+		<?php
+						$royal_slideshow = get_post_meta($post->ID, 'slideshow', true);
+						if ($royal_slideshow)
+						{
+						
+					?>
+
+						<?php echo '<div class="exhibition-slideshow">' ?>
 	
-				?>	
+							<?php echo get_new_royalslider($royal_slideshow); ?>
+
+						<?php echo '</div>' ?>
+
+						<?php } ?>
+								
+	<div class="exhibition-text white">						
+
+		<h1 class="alpha bold exhibition-title gray"><?php the_title(); ?></h1>
+
+					<?php $dates = get_post_meta($post->ID, 'Dates', true); ?>	
+
+					<?php $location = get_post_meta($post->ID, 'Location', true); ?>	
+
+					<?php $exhibition_meta = array ($dates, $location) ?>
+
+					<?php	if(!empty($exhibition_meta)) { ?>
+
+						<?php echo '<ul class="exhibition-meta-list">' ?>	
+
+						<?php	
+
+							foreach($exhibition_meta as $value) {
+  							print '<li>'.$value.'</li>'; ;
+							}
+						?>		
 	
-	<div class="exhibition-text white">
+						<?php echo '</ul>' ?>	
+						<?php } ?>
 
-		<h1 class="alpha bold main-title gray"><?php the_title(); ?></h1>
-
-					<?php $dates = get_post_meta($post->ID, 'Dates', true);
-						//Checking if anything exists for the dates
-						if ($dates) { ?>
-						<?php echo '<h2 class="exhibition-meta e-date">'.$dates.'</h2>'; ?>
-					<?php } ?>	
-
-					<?php $location = get_post_meta($post->ID, 'Location', true);
-						//Checking if anything exists for the location
-						if ($location) { ?>
-						<?php echo '<h2 class="exhibition-meta">'.$location.'</h2>'; ?>
-					<?php } ?>	
 	
 		<div class="exhibition-main-text">
 
@@ -44,6 +63,8 @@
 	
 	<?php if ( $artists ) { ?>	
 
+	<h2 class="related-title">Artists in <?php the_title(); ?> </h2>
+
 	<div class="artist-list">
 	
 		<ul class = "nav  nav--stacked">
@@ -54,6 +75,9 @@
 
 	</div><!-- .artist-list -->	
 
+</div><!-- .white -->	
+
+</div><!-- .exhibition-text -->
 
 	<?php } ?>
 
@@ -82,23 +106,21 @@
 					global $post;
 					if( isset( $post->connected ) && !empty( $post->connected ) ):
 
-						echo '<div class="related-posts">';
-						
-
-						echo '<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">	';
+						echo '<div class="related-posts">'; 			
 						
 						$count = 1;
 						
 						foreach( $post->connected as $related ):
 							
-
 							if( $count < 3 ) {	?>
 
 						<article>	
 
+						<div class="related-list <?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">	
+
 							<div class="square">&nbsp;</div>
 															
-							<h1 class="gamma bold">
+							<h1 class="gamma bold article-list">
 
 								<?php	
 
@@ -111,10 +133,9 @@
 							<?php $dates = get_post_meta($post->ID, 'Dates', true);
 								//Checking if anything exists for the dates
 								if ($dates) { ?>
-								<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
+								<?php echo '<h2 class="date epsilon bold e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
-									 
-							<?php the_excerpt(); ?>
+							
 
 								<a href="<?php the_permalink(); ?>">	
 	 

@@ -825,16 +825,16 @@ textarea:focus {
  * and over in your markup.
  */
 /* line 9, ../sass/inuit/generic/_clearfix.scss */
-.cf, .nav, .artwork-meta, .entry-meta, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, .article-four, .page-text, #page {
+.cf, .nav, .artwork-meta, .entry-meta, .exhibition-meta-list, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, .article-four, .page-text, #page {
   zoom: 1;
 }
 /* line 13, ../sass/inuit/generic/_clearfix.scss */
-.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .article-four:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
+.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .exhibition-meta-list:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .article-four:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
   content: " ";
   display: table;
 }
 /* line 18, ../sass/inuit/generic/_clearfix.scss */
-.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
+.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
   clear: both;
 }
 
@@ -958,7 +958,7 @@ h4, .delta {
 }
 
 /* line 23, ../sass/inuit/base/_headings.scss */
-h5, .epsilon, .entry-meta, .related-title, .exhibition-meta {
+h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -1824,15 +1824,16 @@ label,
  * 
  */
 /* line 19, ../sass/inuit/objects/_nav.scss */
-.nav, .artwork-meta, .entry-meta {
+.nav, .artwork-meta, .entry-meta, .exhibition-meta-list {
   list-style: none;
   margin-left: 0;
 }
 /* line 27, ../sass/inuit/objects/_nav.scss */
-.nav > li, .artwork-meta > li, .entry-meta > li,
+.nav > li, .artwork-meta > li, .entry-meta > li, .exhibition-meta-list > li,
 .nav > li > a,
 .artwork-meta > li > a,
-.entry-meta > li > a {
+.entry-meta > li > a,
+.exhibition-meta-list > li > a {
   display: inline-block;
   *display: inline;
   zoom: 1;
@@ -2322,35 +2323,36 @@ label,
 \*------------------------------------*/
 /* line 6, ../sass/templates/_artwork-single.scss */
 .entry-title {
-  padding-top: 12px;
+  padding-top: 24px;
+  padding-bottom: 6px;
   margin: 0;
   color: gray;
   line-height: 30px;
 }
 
-/* line 16, ../sass/templates/_artwork-single.scss */
+/* line 17, ../sass/templates/_artwork-single.scss */
 .entry-meta {
   padding-bottom: 24px;
 }
 
-/* line 24, ../sass/templates/_artwork-single.scss */
+/* line 25, ../sass/templates/_artwork-single.scss */
 .entry-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 30, ../sass/templates/_artwork-single.scss */
+/* line 31, ../sass/templates/_artwork-single.scss */
 .entry-meta > li:after {
   content: " / ";
 }
 
-/* line 34, ../sass/templates/_artwork-single.scss */
+/* line 35, ../sass/templates/_artwork-single.scss */
 .entry-meta > li:last-child:after {
   content: "";
 }
 
-/* line 38, ../sass/templates/_artwork-single.scss */
+/* line 39, ../sass/templates/_artwork-single.scss */
 .related-title {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -2358,7 +2360,7 @@ label,
   color: gray;
 }
 
-/* line 47, ../sass/templates/_artwork-single.scss */
+/* line 48, ../sass/templates/_artwork-single.scss */
 #sort-entry {
   display: block;
   float: left;
@@ -2383,7 +2385,7 @@ label,
   -ms-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
-  padding: 12px;
+  padding: 24px;
 }
 
 /* line 15, ../sass/templates/_contact.scss */
@@ -2391,6 +2393,12 @@ label,
   min-width: 300px;
   width: 100%;
   height: 400px;
+}
+
+/* line 22, ../sass/templates/_contact.scss */
+.keeptogether {
+  display: inline-block;
+  width: 100%;
 }
 
 /*------------------------------------*\
@@ -2405,26 +2413,57 @@ label,
     $Exhibition single
 \*------------------------------------*/
 /* line 5, ../sass/templates/_exhibition-single.scss */
-.exhibition-text {
+.exhibition-main {
   display: block;
   float: left;
   margin-left: 0%;
   margin-right: -100%;
   width: 74.33762%;
+}
+
+/* line 10, ../sass/templates/_exhibition-single.scss */
+.exhibition-text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 2.22222%;
   padding-right: 2.22222%;
+}
+
+/* line 15, ../sass/templates/_exhibition-single.scss */
+.exhibition-slideshow {
+  padding-bottom: 24px;
+  background: gray;
+}
+
+/* line 21, ../sass/templates/_exhibition-single.scss */
+.exhibition-title {
   padding-top: 48px;
 }
 
-/* line 12, ../sass/templates/_exhibition-single.scss */
-.exhibition-meta {
-  display: inline;
+/* line 26, ../sass/templates/_exhibition-single.scss */
+.rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
+  background: none repeat scroll 0 0 gray !important;
 }
 
-/* line 19, ../sass/templates/_exhibition-single.scss */
+/* line 38, ../sass/templates/_exhibition-single.scss */
+.exhibition-meta-list > li:first-child {
+  color: #8acfe6;
+}
+
+/* line 42, ../sass/templates/_exhibition-single.scss */
+.exhibition-meta-list > li:after {
+  color: gray;
+  content: " / ";
+  padding-left: 6px;
+}
+
+/* line 48, ../sass/templates/_exhibition-single.scss */
+.exhibition-meta-list > li:last-child:after {
+  content: "";
+}
+
+/* line 53, ../sass/templates/_exhibition-single.scss */
 .artist-list {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -2434,13 +2473,18 @@ label,
   padding-bottom: 24px;
 }
 
-/* line 24, ../sass/templates/_exhibition-single.scss */
+/* line 58, ../sass/templates/_exhibition-single.scss */
 .related-posts {
   display: block;
   float: left;
   margin-left: 77.00227%;
   margin-right: -100%;
   width: 22.99773%;
+}
+
+/* line 63, ../sass/templates/_exhibition-single.scss */
+.related-list {
+  padding-bottom: 48px;
 }
 
 /*------------------------------------*\
@@ -2512,14 +2556,14 @@ header[role="banner"] {
 }
 
 /* line 15, ../sass/templates/_homepage.scss */
-.main-title {
+.main-title, .exhibition-title {
   line-height: 30px;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
 
 /* line 21, ../sass/templates/_homepage.scss */
-.date, .exhibition-meta {
+.date, .exhibition-meta-list {
   color: #ff1900;
   line-height: 20px;
   margin-bottom: 12px;
@@ -2535,84 +2579,103 @@ header[role="banner"] {
 /* line 37, ../sass/templates/_homepage.scss */
 .article-row {
   padding-top: 48px;
-  line-height: 20px;
+}
+
+/* line 41, ../sass/templates/_homepage.scss */
+.article-list {
+  line-height: 30px;
+  margin-bottom: 6px;
   text-transform: uppercase;
 }
 
-/* line 43, ../sass/templates/_homepage.scss */
-.article-row h1 {
-  line-height: 30px;
-  margin-bottom: 6px;
-}
-
-/* line 49, ../sass/templates/_homepage.scss */
-.article-row p {
-  line-height: 20px;
-  margin-bottom: 6px;
-}
-
-/* line 54, ../sass/templates/_homepage.scss */
+/* line 47, ../sass/templates/_homepage.scss */
 .article-one {
+  color: #ff1900;
+  text-align: center;
+}
+
+/* line 52, ../sass/templates/_homepage.scss */
+.column-one {
   display: block;
   float: left;
   margin-left: 0%;
   margin-right: -100%;
   width: 23.01287%;
-  color: #ff1900;
+}
+
+/* line 56, ../sass/templates/_homepage.scss */
+.article-two {
+  color: #8acfe6;
   text-align: center;
 }
 
-/* line 60, ../sass/templates/_homepage.scss */
-.article-two {
+/* line 61, ../sass/templates/_homepage.scss */
+.column-two {
   display: block;
   float: left;
   margin-left: 25.67752%;
   margin-right: -100%;
   width: 22.99773%;
-  color: #8acfe6;
+}
+
+/* line 65, ../sass/templates/_homepage.scss */
+.article-three {
+  color: #ff1900;
   text-align: center;
 }
 
-/* line 66, ../sass/templates/_homepage.scss */
-.article-three {
+/* line 70, ../sass/templates/_homepage.scss */
+.column-three {
   display: block;
   float: left;
   margin-left: 51.33989%;
   margin-right: -100%;
   width: 22.99773%;
-  color: #ff1900;
-  text-align: center;
 }
 
-/* line 72, ../sass/templates/_homepage.scss */
+/* line 74, ../sass/templates/_homepage.scss */
 .article-four {
-  display: block;
-  float: left;
-  margin-left: 77.00227%;
-  margin-right: -100%;
-  width: 22.99773%;
   color: #8acfe6;
   text-align: center;
 }
 
 /* line 80, ../sass/templates/_homepage.scss */
+.column-four {
+  display: block;
+  float: left;
+  margin-left: 77.00227%;
+  margin-right: -100%;
+  width: 22.99773%;
+}
+
+/* line 84, ../sass/templates/_homepage.scss */
 .article-one .square {
   background-color: #ff1900;
 }
 
-/* line 85, ../sass/templates/_homepage.scss */
+/* line 89, ../sass/templates/_homepage.scss */
 .article-two .square {
   background-color: #8acfe6;
 }
 
-/* line 90, ../sass/templates/_homepage.scss */
+/* line 94, ../sass/templates/_homepage.scss */
 .article-three .square {
   background-color: #ff1900;
 }
 
-/* line 95, ../sass/templates/_homepage.scss */
+/* line 99, ../sass/templates/_homepage.scss */
 .article-four .square {
   background-color: #8acfe6;
+}
+
+/* line 104, ../sass/templates/_homepage.scss */
+.article-one .e-date {
+  color: #ff1900;
+}
+
+/* line 109, ../sass/templates/_homepage.scss */
+.article-three .e-date {
+  color: #ff1900;
 }
 
 /*------------------------------------*\
@@ -2928,7 +2991,7 @@ nav[role="navigation"] {
 }
 
 /* line 9, ../sass/templates/_menu.scss */
-.current-menu-item > a, .current-post-parent > a {
+.current-menu-item > a, .current-page-ancestor > a, .current-post-ancestor > a {
   color: #ff1900 !important;
 }
 
@@ -3064,7 +3127,7 @@ nav[role="navigation"] {
 
 /* line 16, ../sass/templates/_pagination.scss */
 .pagination .page-numbers {
-  padding: 12px;
+  padding: 24px;
 }
 
 /* line 20, ../sass/templates/_pagination.scss */
@@ -3120,44 +3183,50 @@ p {
 }
 
 /* line 21, ../sass/templates/_typography.scss */
+.light p, .artwork-meta p, .list-title p, .entry-meta p, .related-title p, .pagination p {
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* line 26, ../sass/templates/_typography.scss */
 .small, .artwork-title, .browse-title, .list-title {
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 26, ../sass/templates/_typography.scss */
+/* line 31, ../sass/templates/_typography.scss */
 .micro, .artwork-meta, .pagination {
   font-size: 12px;
   line-height: 16px;
 }
 
-/* line 31, ../sass/templates/_typography.scss */
+/* line 36, ../sass/templates/_typography.scss */
 .no-padding {
   margin: 0;
 }
 
 /*  <strong>For emphasizing a snippet of text with important</strong> */
-/* line 34, ../sass/templates/_typography.scss */
+/* line 39, ../sass/templates/_typography.scss */
 strong {
   font-style: normal;
   font-weight: 700;
 }
 
 /*  <em>For emphasizing a snippet of text with stress</em> */
-/* line 40, ../sass/templates/_typography.scss */
+/* line 45, ../sass/templates/_typography.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
 
 /*  Class for muted text */
-/* line 46, ../sass/templates/_typography.scss */
+/* line 51, ../sass/templates/_typography.scss */
 .muted {
   color: #999999;
 }
 
 /*  Defines a thematic change in the content */
-/* line 50, ../sass/templates/_typography.scss */
+/* line 55, ../sass/templates/_typography.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -3171,27 +3240,27 @@ providing additional context on hover.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 */
-/* line 64, ../sass/templates/_typography.scss */
+/* line 69, ../sass/templates/_typography.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 68, ../sass/templates/_typography.scss */
+/* line 73, ../sass/templates/_typography.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
 /*  For quoting blocks of content from another source within your document */
-/* line 74, ../sass/templates/_typography.scss */
+/* line 79, ../sass/templates/_typography.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
-/* line 80, ../sass/templates/_typography.scss */
+/* line 85, ../sass/templates/_typography.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
@@ -3199,14 +3268,14 @@ blockquote p {
   line-height: 25px;
 }
 
-/* line 87, ../sass/templates/_typography.scss */
+/* line 92, ../sass/templates/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 
-/* line 93, ../sass/templates/_typography.scss */
+/* line 98, ../sass/templates/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
@@ -3214,19 +3283,19 @@ blockquote small:before {
 /*  Add <small> tag for identifying the source. Wrap the name of the source work in <cite>.
 	<small>Someone famous <cite title="Source Title">Source Title</cite></small>
  */
-/* line 101, ../sass/templates/_typography.scss */
+/* line 106, ../sass/templates/_typography.scss */
 cite {
   font-style: normal;
 }
 
 /*  <small>For fine print etc.</small> */
-/* line 106, ../sass/templates/_typography.scss */
+/* line 111, ../sass/templates/_typography.scss */
 small {
   font-size: 85%;
 }
 
 /* Floated, right-aligned blockquote. */
-/* line 111, ../sass/templates/_typography.scss */
+/* line 116, ../sass/templates/_typography.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -3235,23 +3304,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 120, ../sass/templates/_typography.scss */
+/* line 125, ../sass/templates/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 123, ../sass/templates/_typography.scss */
+/* line 128, ../sass/templates/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 126, ../sass/templates/_typography.scss */
+/* line 131, ../sass/templates/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 133, ../sass/templates/_typography.scss */
+/* line 138, ../sass/templates/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -3260,7 +3329,7 @@ blockquote:after {
 }
 
 /* Present contact information. Use <br> for line breaks */
-/* line 138, ../sass/templates/_typography.scss */
+/* line 143, ../sass/templates/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -3269,7 +3338,7 @@ address {
 }
 
 /* To display code etc. */
-/* line 147, ../sass/templates/_typography.scss */
+/* line 152, ../sass/templates/_typography.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -3281,7 +3350,7 @@ pre {
   border-radius: 3px;
 }
 
-/* line 156, ../sass/templates/_typography.scss */
+/* line 161, ../sass/templates/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -3289,7 +3358,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 162, ../sass/templates/_typography.scss */
+/* line 167, ../sass/templates/_typography.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -3308,12 +3377,12 @@ pre {
   border-radius: 4px;
 }
 
-/* line 179, ../sass/templates/_typography.scss */
+/* line 184, ../sass/templates/_typography.scss */
 pre.prettyprint {
   margin-bottom: 20px;
 }
 
-/* line 182, ../sass/templates/_typography.scss */
+/* line 187, ../sass/templates/_typography.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -3321,7 +3390,7 @@ pre code {
   border: 0;
 }
 
-/* line 188, ../sass/templates/_typography.scss */
+/* line 193, ../sass/templates/_typography.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;

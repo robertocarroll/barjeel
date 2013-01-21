@@ -7,7 +7,7 @@
 		@include gs-span(da, 2, 5, (2, 5));	
 		@include column-count(3);
 		@extend .cf;
-		padding: $half-spacing-unit;
+		padding: $base-spacing-unit;
 	}
 
 
@@ -18,5 +18,10 @@
 	height: 400px;
 }
 
+
+.keeptogether {
+    display: inline-block;
+    width: 100%;
+ }
 
 

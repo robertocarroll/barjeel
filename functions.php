@@ -438,7 +438,7 @@ function base_pagination() {
 		'total' => $wp_query->max_num_pages,
 		'prev_text'    => __('Previous'),
 		'next_text'    => __('Next'),
-		'mid_size' => 3
+		'mid_size' => 2
 	) );
  
 	// Display the pagination if more than one page is found

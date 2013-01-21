@@ -6,7 +6,8 @@
 	.entry-title {
 		@extend .bold;
 		@extend .beta;
-		padding-top: $half-spacing-unit;
+		padding-top: $base-spacing-unit;
+		padding-bottom: $quarter-spacing-unit;
 		margin: 0;
 		color: $barjeel-grey;
 		line-height: $mid-line-height;

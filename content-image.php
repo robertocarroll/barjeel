@@ -51,7 +51,13 @@
 												
 												<?php } ?>
 
-									<li><?php echo rw_get_the_term_list(null, 'artist', true, '', ', ', ''); ?></li>
+									<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
+								
+												<?php if ( $country ) { ?>	
+												
+													<?php echo '<li>'.$country.'</li> '; ?>
+												
+												<?php } ?>	
 								</ul>	
 		
 		</div><!-- .meta -->

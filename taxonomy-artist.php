@@ -4,6 +4,40 @@
 			<div id="content" class="container" role="main">
 
 			<?php if ( have_posts() ) : ?>
+
+
+				<div id="sort">
+						<?php /* Start the Loop */ ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+		
+							<div class="box-ms">
+		
+							<article <?php post_class(); ?>>
+							
+							<div class="center">						
+							<?php
+							if ( has_post_thumbnail() ){ ?>
+								<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
+								<?php the_post_thumbnail('collection-thumb'); ?>
+						<?php } ?>
+						
+						</div><!-- .center -->	
+							
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+		
+							</article>
+									
+							</div><!-- .box -->
+
+				<?php endwhile; ?>
+				
+				</div><!-- .sort -->
+		
+			<?php else : ?>
+
+				<?php get_template_part( 'no-results', 'archive' ); ?>
+
+			<?php endif; ?>
 			
 			<header class="page-header">
 					
@@ -78,45 +112,7 @@
 		
 				<?php rewind_posts(); ?>
 				
-				
-				Art in the collection by <?php
-								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-
-						?>
-						
 		
-				<div id="sort">
-						<?php /* Start the Loop */ ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-		
-							<div class="box-ms">
-		
-							<article <?php post_class(); ?>>
-							
-							<div class="center">						
-							<?php
-							if ( has_post_thumbnail() ){ ?>
-								<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-								<?php the_post_thumbnail('collection-thumb'); ?>
-						<?php } ?>
-						
-						</div><!-- .center -->	
-							
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-		
-							</article>
-									
-							</div><!-- .box -->
-
-				<?php endwhile; ?>
-				
-				</div><!-- .sort -->
-		
-			<?php else : ?>
-
-				<?php get_template_part( 'no-results', 'archive' ); ?>
-
-			<?php endif; ?>
 
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->

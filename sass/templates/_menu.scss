@@ -6,4 +6,4 @@ nav[role="navigation"] {
 	text-transform: uppercase;
 }
 
-.current-menu-item > a, .current-post-parent > a {color: $barjeel-red !important;}
+.current-menu-item > a, .current-page-ancestor > a, .current-post-ancestor > a {color: $barjeel-red !important;}

@@ -2,18 +2,52 @@
     $Exhibition single
 \*------------------------------------*/
 
-.exhibition-text {
+.exhibition-main {
   @include gs-span(da, 2, 4, (2, 5));
-  @include gs-pad (da, padinfull);
-  padding-top: $base-spacing-unit * 2;
 
 }
 
-.exhibition-meta {
+.exhibition-text {
+  @include gs-pad (da, padinfull);
+
+}
+
+.exhibition-slideshow {
+ 	padding-bottom: $base-spacing-unit;
+ 	
+ 	background: $barjeel-grey;
+}
+
+.exhibition-title { 
+  @extend .main-title;
+  padding-top: $base-spacing-unit * 2;
+}
+
+.rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
+    background: none repeat scroll 0 0 $barjeel-grey !important;
+}
+
+
+.exhibition-meta-list {	
+	@extend .nav;
 	@extend .date;
 	@extend .epsilon;
-	display: inline;
+
 }
+
+.exhibition-meta-list > li:first-child {
+  color: $barjeel-blue;
+}
+
+.exhibition-meta-list > li:after {
+		color: $barjeel-grey;
+ 		content: " / ";
+ 		padding-#{$opdir}: $quarter-spacing-unit;
+ 	} 	
+	
+.exhibition-meta-list > li:last-child:after {
+ 		content: "";
+ 	} 
 
 
 .artist-list {
@@ -24,4 +58,9 @@
 .related-posts {
   @include gs-span(da, 5, 5, (2, 5));
  
+}
+
+.related-list {
+
+	padding-bottom: $base-spacing-unit*2;
 }

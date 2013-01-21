@@ -76,7 +76,7 @@
 
 			</aside>
 
-				<div style="clear:both;"></div>
+					
 				
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
 					

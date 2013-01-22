@@ -133,10 +133,10 @@ $(window).smartresize(function(){
 $('#sort').isotope({
   getSortData : {
     title : function ( $elem ) {
-      return $elem.find('.title').text();
+      return $elem.find('.artwork-title').text();
     },
     artist : function ( $elem ) {
-      return $elem.find('.artist').text();
+      return $elem.find('.artist-name').text();
       
 //      $("#searchquery").text().split(/ +/);
       

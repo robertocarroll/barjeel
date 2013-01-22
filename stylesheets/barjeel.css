@@ -2343,29 +2343,34 @@ label,
 }
 
 /* line 40, ../sass/templates/_artwork-category.scss */
-.artwork-title {
+.artwork-title, .artist-name {
   padding-top: 12px;
   margin: 0;
 }
 
-/* line 55, ../sass/templates/_artwork-category.scss */
+/* line 48, ../sass/templates/_artwork-category.scss */
+.artist-name {
+  padding-top: 0;
+}
+
+/* line 60, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 61, ../sass/templates/_artwork-category.scss */
+/* line 66, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 65, ../sass/templates/_artwork-category.scss */
+/* line 70, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   content: "";
 }
 
-/* line 71, ../sass/templates/_artwork-category.scss */
+/* line 76, ../sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 24px;
   margin: 0;
@@ -2373,7 +2378,7 @@ label,
   text-transform: uppercase;
 }
 
-/* line 80, ../sass/templates/_artwork-category.scss */
+/* line 85, ../sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 12px;
   margin: 0;
@@ -3539,7 +3544,7 @@ p {
 }
 
 /* line 11, ../sass/templates/_typography.scss */
-.bold, .artwork-title, .browse-title, .entry-title {
+.bold, .artwork-title, .artist-name, .browse-title, .entry-title {
   font-style: normal;
   font-weight: 700;
 }
@@ -3557,7 +3562,7 @@ p {
 }
 
 /* line 26, ../sass/templates/_typography.scss */
-.small, .artwork-title, .browse-title, .list-title {
+.small, .artwork-title, .artist-name, .browse-title, .list-title {
   font-size: 14px;
   line-height: 16px;
 }

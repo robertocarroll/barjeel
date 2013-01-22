@@ -45,6 +45,11 @@
 
 	}
 
+	.artist-name {
+		padding-top: 0;
+		@extend .artwork-title;
+	}
+
 	.artwork-meta {
 		@extend .micro;
 		@extend .light;

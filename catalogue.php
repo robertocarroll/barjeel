@@ -13,17 +13,23 @@
 								 endif; ?>						
 								</a>	
 							
-								<h1 class="artwork-title"><a href="<?php the_permalink(); ?>">
+								<h1 class="artwork-title">
+
+									<a href="<?php the_permalink(); ?>">
 
 									<?php $title = get_the_title(); 
 									echo mb_strimwidth($title, 0, 20, '...'); 
-									?>,
+									?>
 								
 									</a> 
 
-									<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+								</h1>	
 
-								</h1>
+								<h2 class="artist-name">	
+									<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+								</h2>
+
+								
 								
 								<ul class="artwork-meta">	
 									

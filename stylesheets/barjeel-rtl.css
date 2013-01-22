@@ -5,7 +5,7 @@
 /**
  * Compass imports
  */
-/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,45 +27,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, /Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -352,7 +352,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*
  * Corrects `block` display not defined in IE 8/9.
  */
-/* line 21, ../sass/inuit/generic/_normalize.scss */
+/* line 21, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 article,
 aside,
 details,
@@ -370,7 +370,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 8/9.
  */
-/* line 31, ../sass/inuit/generic/_normalize.scss */
+/* line 31, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 audio,
 canvas,
 video {
@@ -381,7 +381,7 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 40, ../sass/inuit/generic/_normalize.scss */
+/* line 40, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -390,7 +390,7 @@ audio:not([controls]) {
 /*
  * Addresses styling for `hidden` attribute not present in IE 8/9.
  */
-/* line 49, ../sass/inuit/generic/_normalize.scss */
+/* line 49, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -403,7 +403,7 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 63, ../sass/inuit/generic/_normalize.scss */
+/* line 63, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -416,7 +416,7 @@ html {
 /*
  * Removes default margin.
  */
-/* line 73, ../sass/inuit/generic/_normalize.scss */
+/* line 73, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 body {
   margin: 0;
 }
@@ -427,7 +427,7 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-/* line 85, ../sass/inuit/generic/_normalize.scss */
+/* line 85, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -435,7 +435,7 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-/* line 94, ../sass/inuit/generic/_normalize.scss */
+/* line 94, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -448,7 +448,7 @@ a:hover {
  * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
  * Safari 5, and Chrome.
  */
-/* line 107, ../sass/inuit/generic/_normalize.scss */
+/* line 107, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 h1 {
   font-size: 2em;
 }
@@ -456,7 +456,7 @@ h1 {
 /*
  * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 115, ../sass/inuit/generic/_normalize.scss */
+/* line 115, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -464,7 +464,7 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 124, ../sass/inuit/generic/_normalize.scss */
+/* line 124, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -473,7 +473,7 @@ strong {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 132, ../sass/inuit/generic/_normalize.scss */
+/* line 132, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -481,7 +481,7 @@ dfn {
 /*
  * Addresses styling not present in IE 8/9.
  */
-/* line 140, ../sass/inuit/generic/_normalize.scss */
+/* line 140, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -490,7 +490,7 @@ mark {
 /*
  * Corrects font family set oddly in Safari 5 and Chrome.
  */
-/* line 153, ../sass/inuit/generic/_normalize.scss */
+/* line 153, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 code,
 kbd,
 pre,
@@ -502,7 +502,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 162, ../sass/inuit/generic/_normalize.scss */
+/* line 162, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -512,7 +512,7 @@ pre {
 /*
  * Sets consistent quote types.
  */
-/* line 172, ../sass/inuit/generic/_normalize.scss */
+/* line 172, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -520,7 +520,7 @@ q {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 180, ../sass/inuit/generic/_normalize.scss */
+/* line 180, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -528,7 +528,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 189, ../sass/inuit/generic/_normalize.scss */
+/* line 189, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -537,12 +537,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 196, ../sass/inuit/generic/_normalize.scss */
+/* line 196, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 200, ../sass/inuit/generic/_normalize.scss */
+/* line 200, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -553,7 +553,7 @@ sub {
 /*
  * Removes border when inside `a` element in IE 8/9.
  */
-/* line 212, ../sass/inuit/generic/_normalize.scss */
+/* line 212, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 img {
   border: 0;
 }
@@ -561,7 +561,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-/* line 220, ../sass/inuit/generic/_normalize.scss */
+/* line 220, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -572,7 +572,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 8/9 and Safari 5.
  */
-/* line 232, ../sass/inuit/generic/_normalize.scss */
+/* line 232, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -583,7 +583,7 @@ figure {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 244, ../sass/inuit/generic/_normalize.scss */
+/* line 244, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -594,7 +594,7 @@ fieldset {
  * 1. Corrects color not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 255, ../sass/inuit/generic/_normalize.scss */
+/* line 255, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -607,7 +607,7 @@ legend {
  * 2. Corrects font size not being inherited in all browsers.
  * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
  */
-/* line 269, ../sass/inuit/generic/_normalize.scss */
+/* line 269, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 button,
 input,
 select,
@@ -624,7 +624,7 @@ textarea {
  * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 281, ../sass/inuit/generic/_normalize.scss */
+/* line 281, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -637,7 +637,7 @@ input {
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 296, ../sass/inuit/generic/_normalize.scss */
+/* line 296, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -651,7 +651,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 306, ../sass/inuit/generic/_normalize.scss */
+/* line 306, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -661,7 +661,7 @@ input[disabled] {
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
  */
-/* line 316, ../sass/inuit/generic/_normalize.scss */
+/* line 316, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -675,7 +675,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 327, ../sass/inuit/generic/_normalize.scss */
+/* line 327, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -689,7 +689,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 340, ../sass/inuit/generic/_normalize.scss */
+/* line 340, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -698,7 +698,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 4+.
  */
-/* line 349, ../sass/inuit/generic/_normalize.scss */
+/* line 349, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -709,7 +709,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 359, ../sass/inuit/generic/_normalize.scss */
+/* line 359, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -723,7 +723,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 372, ../sass/inuit/generic/_normalize.scss */
+/* line 372, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -739,7 +739,7 @@ table {
 /**
 * Let’s make the box model all nice, shall we…?
 */
-/* line 16, ../sass/inuit/generic/_reset.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -751,7 +751,7 @@ table {
 /**
  * The usual...
  */
-/* line 30, ../sass/inuit/generic/_reset.scss */
+/* line 30, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 dl, dd, ol, ul,
@@ -765,7 +765,7 @@ hr {
 /**
  * Give a help cursor to elements that give extra info on `:hover`.
  */
-/* line 38, ../sass/inuit/generic/_reset.scss */
+/* line 38, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 abbr[title], dfn[title] {
   cursor: help;
 }
@@ -773,7 +773,7 @@ abbr[title], dfn[title] {
 /**
  * Remove underlines from potentially troublesome elements.
  */
-/* line 45, ../sass/inuit/generic/_reset.scss */
+/* line 45, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 a, u, ins {
   text-decoration: none;
 }
@@ -781,7 +781,7 @@ a, u, ins {
 /**
  * Apply faux underline via `border-bottom`.
  */
-/* line 52, ../sass/inuit/generic/_reset.scss */
+/* line 52, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 ins {
   border-bottom: 1px solid;
 }
@@ -789,7 +789,7 @@ ins {
 /**
  * So that `alt` text is visually offset if images don’t load.
  */
-/* line 59, ../sass/inuit/generic/_reset.scss */
+/* line 59, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 img {
   font-style: italic;
 }
@@ -797,7 +797,7 @@ img {
 /**
  * Give form elements some cursor interactions...
  */
-/* line 71, ../sass/inuit/generic/_reset.scss */
+/* line 71, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 label,
 input,
 textarea,
@@ -807,7 +807,7 @@ option {
   cursor: pointer;
 }
 
-/* line 77, ../sass/inuit/generic/_reset.scss */
+/* line 77, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_reset.scss */
 .text-input:active,
 .text-input:focus,
 textarea:active,
@@ -824,16 +824,16 @@ textarea:focus {
  * Extend the clearfix class with Sass to avoid the `.cf` class appearing over
  * and over in your markup.
  */
-/* line 9, ../sass/inuit/generic/_clearfix.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_clearfix.scss */
 .cf, .nav, .artwork-meta, .entry-meta, .exhibition-meta-list, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, .article-four, .page-text, #page {
   zoom: 1;
 }
-/* line 13, ../sass/inuit/generic/_clearfix.scss */
+/* line 13, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_clearfix.scss */
 .cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .exhibition-meta-list:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .article-four:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
   content: " ";
   display: table;
 }
-/* line 18, ../sass/inuit/generic/_clearfix.scss */
+/* line 18, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_clearfix.scss */
 .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
   clear: both;
 }
@@ -849,7 +849,7 @@ textarea:focus {
 /**
  * Base elements
  */
-/* line 24, ../sass/inuit/generic/_shared.scss */
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_shared.scss */
 h1, h2, h3, h4, h5, h6, hgroup,
 ul, ol, dl,
 blockquote, p, address,
@@ -863,7 +863,7 @@ pre,
   margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
-/* line 28, ../sass/inuit/generic/_shared.scss */
+/* line 28, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_shared.scss */
 .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
 ul, .islet ol, .islet dl, .islet
 blockquote, .islet p, .islet address, .islet
@@ -880,7 +880,7 @@ pre, .islet .form-fields > li, .islet
 /**
  * Doubled up `margin-bottom` helper class.
  */
-/* line 38, ../sass/inuit/generic/_shared.scss */
+/* line 38, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_shared.scss */
 .landmark {
   margin-bottom: 48px;
   margin-bottom: 3rem;
@@ -890,7 +890,7 @@ pre, .islet .form-fields > li, .islet
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
-/* line 48, ../sass/inuit/generic/_shared.scss */
+/* line 48, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_shared.scss */
 hr {
   margin-bottom: 22px;
   margin-bottom: 1.375rem;
@@ -900,7 +900,7 @@ hr {
  * Where `margin-left` is concerned we want to try and indent certain elements
  * by a consistent amount. Define that amount once, here.
  */
-/* line 58, ../sass/inuit/generic/_shared.scss */
+/* line 58, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/generic/_shared.scss */
 ul, ol, dd {
   margin-left: 48px;
   margin-left: 3rem;
@@ -912,7 +912,7 @@ ul, ol, dd {
 /*------------------------------------*\
     $MAIN
 \*------------------------------------*/
-/* line 4, ../sass/inuit/base/_main.scss */
+/* line 4, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_main.scss */
 html {
   font: 1em/1.5 serif;
   overflow-y: scroll;
@@ -929,42 +929,42 @@ html {
  * This allows us to apply, say, `class=alpha` to a `h3`; a double-stranded
  * heading hierarchy.
  */
-/* line 11, ../sass/inuit/base/_headings.scss */
+/* line 11, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 h1, .alpha {
   font-size: 32px;
   font-size: 2rem;
   line-height: 1.5;
 }
 
-/* line 14, ../sass/inuit/base/_headings.scss */
+/* line 14, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 h2, .beta, .entry-title {
   font-size: 28px;
   font-size: 1.75rem;
   line-height: 1.71429;
 }
 
-/* line 17, ../sass/inuit/base/_headings.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 h3, .gamma {
   font-size: 26px;
   font-size: 1.625rem;
   line-height: 1.84615;
 }
 
-/* line 20, ../sass/inuit/base/_headings.scss */
+/* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 h4, .delta {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2;
 }
 
-/* line 23, ../sass/inuit/base/_headings.scss */
+/* line 23, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
-/* line 26, ../sass/inuit/base/_headings.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 h6, .zeta {
   font-size: 15px;
   font-size: 0.9375rem;
@@ -981,7 +981,7 @@ h6, .zeta {
    </hgroup>
  * 
  */
-/* line 43, ../sass/inuit/base/_headings.scss */
+/* line 43, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 hgroup .hN {
   margin-bottom: 0;
 }
@@ -990,21 +990,21 @@ hgroup .hN {
  * A series of classes for setting massive type; for use in heroes, mastheads,
  * promos, etc.
  */
-/* line 52, ../sass/inuit/base/_headings.scss */
+/* line 52, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 .giga {
   font-size: 96px;
   font-size: 6rem;
   line-height: 1;
 }
 
-/* line 55, ../sass/inuit/base/_headings.scss */
+/* line 55, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 .mega {
   font-size: 72px;
   font-size: 4.5rem;
   line-height: 1;
 }
 
-/* line 58, ../sass/inuit/base/_headings.scss */
+/* line 58, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_headings.scss */
 .kilo {
   font-size: 48px;
   font-size: 3rem;
@@ -1018,7 +1018,7 @@ hgroup .hN {
  * The `.lede` class is used to make the introductory text (usually a paragraph)
  * of a document slightly larger.
  */
-/* line 9, ../sass/inuit/base/_paragraphs.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_paragraphs.scss */
 .lede,
 .lead {
   font-size: 18px;
@@ -1032,7 +1032,7 @@ hgroup .hN {
 /**
  * A series of classes for setting tiny type; for use in smallprint etc.
  */
-/* line 8, ../sass/inuit/base/_smallprint.scss */
+/* line 8, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_smallprint.scss */
 .smallprint,
 .milli {
   font-size: 14px;
@@ -1040,7 +1040,7 @@ hgroup .hN {
   line-height: 1.71429;
 }
 
-/* line 11, ../sass/inuit/base/_smallprint.scss */
+/* line 11, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_smallprint.scss */
 .micro, .artwork-meta, .pagination {
   font-size: 12px;
   font-size: 0.75rem;
@@ -1053,53 +1053,53 @@ hgroup .hN {
 /**
  * Big up @boblet: html5doctor.com/blockquote-q-cite
  */
-/* line 7, ../sass/inuit/base/_quotes.scss */
+/* line 7, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 q {
   quotes: "‘" "’" "“" "”";
 }
 
-/* line 9, ../sass/inuit/base/_quotes.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 q:before {
   content: "‘";
   content: open-quote;
 }
 
-/* line 10, ../sass/inuit/base/_quotes.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 q:after {
   content: "’";
   content: close-quote;
 }
 
-/* line 12, ../sass/inuit/base/_quotes.scss */
+/* line 12, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 q q:before {
   content: "“";
   content: open-quote;
 }
 
-/* line 13, ../sass/inuit/base/_quotes.scss */
+/* line 13, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 q q:after {
   content: "”";
   content: close-quote;
 }
 
-/* line 15, ../sass/inuit/base/_quotes.scss */
+/* line 15, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 blockquote {
   quotes: "“" "”";
 }
 
-/* line 16, ../sass/inuit/base/_quotes.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 blockquote p:before {
   content: "“";
   content: open-quote;
 }
 
-/* line 17, ../sass/inuit/base/_quotes.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 blockquote p:after {
   content: "";
   content: no-close-quote;
 }
 
-/* line 18, ../sass/inuit/base/_quotes.scss */
+/* line 18, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 blockquote p:last-of-type:after {
   content: "”";
   content: close-quote;
@@ -1114,24 +1114,24 @@ blockquote p:last-of-type:after {
    </blockquote>
  * 
  */
-/* line 30, ../sass/inuit/base/_quotes.scss */
+/* line 30, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 blockquote {
   /**
    * .4em is roughly equal to the width of the opening “ that we wish to hang.
    */
   text-indent: -0.4em;
 }
-/* line 36, ../sass/inuit/base/_quotes.scss */
+/* line 36, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 blockquote p:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 41, ../sass/inuit/base/_quotes.scss */
+/* line 41, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 .source {
   display: block;
   text-indent: 0;
 }
-/* line 45, ../sass/inuit/base/_quotes.scss */
+/* line 45, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_quotes.scss */
 .source:before {
   content: "—";
 }
@@ -1142,12 +1142,12 @@ blockquote p:last-of-type {
 /**
  * Use an explicit font stack to ensure browsers render correct `line-height`.
  */
-/* line 7, ../sass/inuit/base/_code.scss */
+/* line 7, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_code.scss */
 pre {
   overflow: auto;
 }
 
-/* line 10, ../sass/inuit/base/_code.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_code.scss */
 pre mark {
   background: none;
   border-bottom: 1px solid;
@@ -1160,7 +1160,7 @@ pre mark {
    <code>&lt;/div&gt;<span class=code-comment>&lt;!-- /wrapper --&gt;</span></code>
  * 
  */
-/* line 23, ../sass/inuit/base/_code.scss */
+/* line 23, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_code.scss */
 .code-comment {
   /**
    * Override this setting in your theme stylesheet
@@ -1191,7 +1191,7 @@ pre mark {
  * 3. Make sure lines of code don’t wrap.
  * 4. Give the code form by forcing the `code` to honour white-space.
  */
-/* line 54, ../sass/inuit/base/_code.scss */
+/* line 54, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_code.scss */
 .line-numbers {
   font-family: monospace, serif;
   /* [1] */
@@ -1204,7 +1204,7 @@ pre mark {
   margin-left: 0;
 }
 
-/* line 61, ../sass/inuit/base/_code.scss */
+/* line 61, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_code.scss */
 .line-numbers code {
   white-space: pre;
   /* [4] */
@@ -1219,13 +1219,13 @@ pre mark {
  * Sometimes, particularly on larger projects, it is useful to scope link
  * styling only to anchors which have `href` attributes.
  */
-/* line 10, ../sass/inuit/base/_links.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_links.scss */
 a {
   /**
    * Set colors etc in your theme stylesheet.
    */
 }
-/* line 17, ../sass/inuit/base/_links.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_links.scss */
 a:hover, a:active, a:focus {
   text-decoration: underline;
 }
@@ -1241,7 +1241,7 @@ a:hover, a:active, a:focus {
    </ul>
  * 
  */
-/* line 34, ../sass/inuit/base/_links.scss */
+/* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_links.scss */
 .current a {
   cursor: text;
   text-decoration: underline;
@@ -1253,7 +1253,7 @@ a:hover, a:active, a:focus {
 /**
  * Demo: jsfiddle.net/inuitcss/yMtur
  */
-/* line 7, ../sass/inuit/base/_images.scss */
+/* line 7, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 img {
   max-width: 100%;
   height: auto;
@@ -1262,21 +1262,21 @@ img {
 /**
  * Image placement variations.
  */
-/* line 16, ../sass/inuit/base/_images.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 .img--right {
   float: right;
   margin-bottom: 24px;
   margin-left: 24px;
 }
 
-/* line 21, ../sass/inuit/base/_images.scss */
+/* line 21, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 .img--left {
   float: left;
   margin-right: 24px;
   margin-bottom: 24px;
 }
 
-/* line 26, ../sass/inuit/base/_images.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 .img--center {
   display: block;
   margin-right: auto;
@@ -1290,17 +1290,17 @@ img {
  * Please note, these will not work too nicely with fluid images and will
  * distort when resized below a certain width. Use with caution.
  */
-/* line 40, ../sass/inuit/base/_images.scss */
+/* line 40, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 .img--short {
   height: 120px;
 }
 
-/* line 43, ../sass/inuit/base/_images.scss */
+/* line 43, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 .img--medium {
   height: 240px;
 }
 
-/* line 46, ../sass/inuit/base/_images.scss */
+/* line 46, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 .img--tall {
   height: 360px;
 }
@@ -1308,7 +1308,7 @@ img {
 /**
  * Images in `figure` elements.
  */
-/* line 54, ../sass/inuit/base/_images.scss */
+/* line 54, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_images.scss */
 figure > img {
   display: block;
 }
@@ -1319,7 +1319,7 @@ figure > img {
 /**
  * Remove vertical spacing from nested lists.
  */
-/* line 9, ../sass/inuit/base/_lists.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_lists.scss */
 li > ul,
 li > ol {
   margin-bottom: 0;
@@ -1329,7 +1329,7 @@ li > ol {
  * Have a numbered `ul` without the semantics implied by using an `ol`.
  */
 /*ul*/
-/* line 17, ../sass/inuit/base/_lists.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_lists.scss */
 .numbered-list {
   list-style-type: decimal;
 }
@@ -1391,19 +1391,19 @@ li > ol {
    </table>
  *
  */
-/* line 58, ../sass/inuit/base/_tables.scss */
+/* line 58, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 table {
   width: 100%;
 }
 
-/* line 62, ../sass/inuit/base/_tables.scss */
+/* line 62, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 th,
 td {
   padding: 6px;
   text-align: left;
 }
 @media screen and (min-width: 480px) {
-  /* line 62, ../sass/inuit/base/_tables.scss */
+  /* line 62, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
   th,
   td {
     padding: 12px;
@@ -1413,27 +1413,27 @@ td {
 /**
  * Cell alignments
  */
-/* line 74, ../sass/inuit/base/_tables.scss */
+/* line 74, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 [colspan] {
   text-align: center;
 }
 
-/* line 77, ../sass/inuit/base/_tables.scss */
+/* line 77, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 [colspan="1"] {
   text-align: left;
 }
 
-/* line 80, ../sass/inuit/base/_tables.scss */
+/* line 80, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 [rowspan] {
   vertical-align: middle;
 }
 
-/* line 83, ../sass/inuit/base/_tables.scss */
+/* line 83, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 [rowspan="1"] {
   vertical-align: top;
 }
 
-/* line 86, ../sass/inuit/base/_tables.scss */
+/* line 86, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .numerical {
   text-align: right;
 }
@@ -1444,136 +1444,136 @@ td {
  * class so that column can soak up the effects of any accidental breakage in
  * the table.
  */
-/* line 96, ../sass/inuit/base/_tables.scss */
+/* line 96, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t5 {
   width: 5%;
 }
 
-/* line 97, ../sass/inuit/base/_tables.scss */
+/* line 97, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t10 {
   width: 10%;
 }
 
-/* line 98, ../sass/inuit/base/_tables.scss */
+/* line 98, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t12 {
   width: 12.5%;
 }
 
 /* 1/8 */
-/* line 99, ../sass/inuit/base/_tables.scss */
+/* line 99, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t15 {
   width: 15%;
 }
 
-/* line 100, ../sass/inuit/base/_tables.scss */
+/* line 100, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t20 {
   width: 20%;
 }
 
-/* line 101, ../sass/inuit/base/_tables.scss */
+/* line 101, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t25 {
   width: 25%;
 }
 
 /* 1/4 */
-/* line 102, ../sass/inuit/base/_tables.scss */
+/* line 102, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t30 {
   width: 30%;
 }
 
-/* line 103, ../sass/inuit/base/_tables.scss */
+/* line 103, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t33 {
   width: 33.333%;
 }
 
 /* 1/3 */
-/* line 104, ../sass/inuit/base/_tables.scss */
+/* line 104, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t35 {
   width: 35%;
 }
 
-/* line 105, ../sass/inuit/base/_tables.scss */
+/* line 105, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t37 {
   width: 37.5%;
 }
 
 /* 3/8 */
-/* line 106, ../sass/inuit/base/_tables.scss */
+/* line 106, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t40 {
   width: 40%;
 }
 
-/* line 107, ../sass/inuit/base/_tables.scss */
+/* line 107, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t45 {
   width: 45%;
 }
 
-/* line 108, ../sass/inuit/base/_tables.scss */
+/* line 108, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t50 {
   width: 50%;
 }
 
 /* 1/2 */
-/* line 109, ../sass/inuit/base/_tables.scss */
+/* line 109, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t55 {
   width: 55%;
 }
 
-/* line 110, ../sass/inuit/base/_tables.scss */
+/* line 110, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t60 {
   width: 60%;
 }
 
-/* line 111, ../sass/inuit/base/_tables.scss */
+/* line 111, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t62 {
   width: 62.5%;
 }
 
 /* 5/8 */
-/* line 112, ../sass/inuit/base/_tables.scss */
+/* line 112, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t65 {
   width: 65%;
 }
 
-/* line 113, ../sass/inuit/base/_tables.scss */
+/* line 113, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t66 {
   width: 66.666%;
 }
 
 /* 2/3 */
-/* line 114, ../sass/inuit/base/_tables.scss */
+/* line 114, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t70 {
   width: 70%;
 }
 
-/* line 115, ../sass/inuit/base/_tables.scss */
+/* line 115, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t75 {
   width: 75%;
 }
 
 /* 3/4*/
-/* line 116, ../sass/inuit/base/_tables.scss */
+/* line 116, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t80 {
   width: 80%;
 }
 
-/* line 117, ../sass/inuit/base/_tables.scss */
+/* line 117, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t85 {
   width: 85%;
 }
 
-/* line 118, ../sass/inuit/base/_tables.scss */
+/* line 118, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t87 {
   width: 87.5%;
 }
 
 /* 7/8 */
-/* line 119, ../sass/inuit/base/_tables.scss */
+/* line 119, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t90 {
   width: 90%;
 }
 
-/* line 120, ../sass/inuit/base/_tables.scss */
+/* line 120, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .t95 {
   width: 95%;
 }
@@ -1581,22 +1581,22 @@ td {
 /**
  * Bordered tables
  */
-/* line 129, ../sass/inuit/base/_tables.scss */
+/* line 129, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .table--bordered th,
 .table--bordered td {
   border: 1px solid #ccc;
   /* Override this color in your theme stylesheet */
 }
-/* line 132, ../sass/inuit/base/_tables.scss */
+/* line 132, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .table--bordered th:empty,
 .table--bordered td:empty {
   border: none;
 }
-/* line 137, ../sass/inuit/base/_tables.scss */
+/* line 137, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .table--bordered thead tr:last-child th {
   border-bottom-width: 2px;
 }
-/* line 141, ../sass/inuit/base/_tables.scss */
+/* line 141, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .table--bordered tbody tr th:last-of-type {
   border-right-width: 2px;
 }
@@ -1604,7 +1604,7 @@ td {
 /**
  * Striped tables
  */
-/* line 152, ../sass/inuit/base/_tables.scss */
+/* line 152, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .table--striped tbody tr:nth-of-type(odd) {
   background-color: #ffc;
   /* Override this color in your theme stylesheet */
@@ -1613,7 +1613,7 @@ td {
 /**
  * Data table
  */
-/* line 161, ../sass/inuit/base/_tables.scss */
+/* line 161, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_tables.scss */
 .table--data {
   font: 12px/1.5 sans-serif;
 }
@@ -1626,7 +1626,7 @@ td {
  * Demo: jsfiddle.net/inuitcss/MhHHU
  * 
  */
-/* line 9, ../sass/inuit/base/_forms.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 fieldset {
   padding: 24px;
 }
@@ -1641,7 +1641,7 @@ fieldset {
    <input type=password class=text-input>
  * 
  */
-/* line 25, ../sass/inuit/base/_forms.scss */
+/* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .text-input,
 textarea {
   /**
@@ -1668,13 +1668,13 @@ textarea {
    </ul>
  * 
  */
-/* line 51, ../sass/inuit/base/_forms.scss */
+/* line 51, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .form-fields {
   list-style: none;
   margin: 0;
 }
 
-/* line 58, ../sass/inuit/base/_forms.scss */
+/* line 58, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .form-fields > li:last-child {
   margin-bottom: 0;
 }
@@ -1705,7 +1705,7 @@ textarea {
    </li>
  * 
  */
-/* line 90, ../sass/inuit/base/_forms.scss */
+/* line 90, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 label,
 .label {
   display: block;
@@ -1717,7 +1717,7 @@ label,
    <label>Card number <small class=additional>No spaces</small></label>
  * 
  */
-/* line 99, ../sass/inuit/base/_forms.scss */
+/* line 99, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .additional {
   display: block;
   font-weight: normal;
@@ -1738,7 +1738,7 @@ label,
    </li>
  * 
  */
-/* line 120, ../sass/inuit/base/_forms.scss */
+/* line 120, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .check-list {
   list-style: none;
   margin: 0;
@@ -1747,7 +1747,7 @@ label,
 /*
  * Labels in check-lists
  */
-/* line 129, ../sass/inuit/base/_forms.scss */
+/* line 129, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .check-label,
 .check-list label,
 .check-list .label {
@@ -1769,7 +1769,7 @@ label,
    </li>
  * 
  */
-/* line 149, ../sass/inuit/base/_forms.scss */
+/* line 149, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .spoken-form label {
   display: inline-block;
   font: inherit;
@@ -1788,13 +1788,13 @@ label,
  * 
  */
 /*small*/
-/* line 167, ../sass/inuit/base/_forms.scss */
+/* line 167, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .extra-help {
   display: inline-block;
   visibility: hidden;
 }
 
-/* line 172, ../sass/inuit/base/_forms.scss */
+/* line 172, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/base/_forms.scss */
 .text-input:active + .extra-help,
 .text-input:focus + .extra-help {
   visibility: visible;
@@ -1823,12 +1823,12 @@ label,
  * Demo: jsfiddle.net/inuitcss/Vnph4
  * 
  */
-/* line 19, ../sass/inuit/objects/_nav.scss */
+/* line 19, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav, .artwork-meta, .entry-meta, .exhibition-meta-list {
   list-style: none;
   margin-left: 0;
 }
-/* line 27, ../sass/inuit/objects/_nav.scss */
+/* line 27, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav > li, .artwork-meta > li, .entry-meta > li, .exhibition-meta-list > li,
 .nav > li > a,
 .artwork-meta > li > a,
@@ -1850,11 +1850,11 @@ label,
    </ul>
  * 
  */
-/* line 49, ../sass/inuit/objects/_nav.scss */
+/* line 49, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--stacked > li {
   display: list-item;
 }
-/* line 52, ../sass/inuit/objects/_nav.scss */
+/* line 52, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--stacked > li > a {
   display: block;
 }
@@ -1870,7 +1870,7 @@ label,
    </ul>
  * 
  */
-/* line 70, ../sass/inuit/objects/_nav.scss */
+/* line 70, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--banner {
   text-align: center;
 }
@@ -1887,11 +1887,11 @@ label,
    </ul>
  * 
  */
-/* line 87, ../sass/inuit/objects/_nav.scss */
+/* line 87, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--block {
   line-height: 1;
 }
-/* line 92, ../sass/inuit/objects/_nav.scss */
+/* line 92, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--block > li > a {
   padding: 12px;
 }
@@ -1909,16 +1909,16 @@ label,
  * 
  * Thanks to @pimpl for this idea!
  */
-/* line 112, ../sass/inuit/objects/_nav.scss */
+/* line 112, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--fit {
   display: table;
   width: 100%;
 }
-/* line 116, ../sass/inuit/objects/_nav.scss */
+/* line 116, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--fit > li {
   display: table-cell;
 }
-/* line 119, ../sass/inuit/objects/_nav.scss */
+/* line 119, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--fit > li > a {
   display: block;
 }
@@ -1929,11 +1929,11 @@ label,
    `<ul class="nav  nav--keywords>`
  * 
  */
-/* line 136, ../sass/inuit/objects/_nav.scss */
+/* line 136, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--keywords > li:after {
   content: ", ";
 }
-/* line 140, ../sass/inuit/objects/_nav.scss */
+/* line 140, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_nav.scss */
 .nav--keywords > li:last-child:after {
   display: none;
 }
@@ -1961,28 +1961,28 @@ label,
  * Demo: jsfiddle.net/inuitcss/9Y6PU
  * 
  */
-/* line 24, ../sass/inuit/objects/_pagination.scss */
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_pagination.scss */
 .pagination {
   text-align: center;
 }
 
-/* line 27, ../sass/inuit/objects/_pagination.scss */
+/* line 27, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_pagination.scss */
 .pagination > li {
   padding: 12px;
 }
 
-/* line 30, ../sass/inuit/objects/_pagination.scss */
+/* line 30, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_pagination.scss */
 .pagination > li > a {
   padding: 12px;
   margin: -12px;
 }
 
-/* line 34, ../sass/inuit/objects/_pagination.scss */
+/* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_pagination.scss */
 .pagination__first a:before {
   content: "« ";
 }
 
-/* line 37, ../sass/inuit/objects/_pagination.scss */
+/* line 37, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_pagination.scss */
 .pagination__last a:after {
   content: " »";
 }
@@ -2004,12 +2004,12 @@ label,
  * Demo: jsfiddle.net/inuitcss/cf4Qs
  * 
  */
-/* line 18, ../sass/inuit/objects/_media.scss */
+/* line 18, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .media {
   display: block;
 }
 
-/* line 22, ../sass/inuit/objects/_media.scss */
+/* line 22, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .media__img {
   float: left;
   margin-right: 24px;
@@ -2018,24 +2018,24 @@ label,
 /**
  * Reversed image location (right instead of left).
  */
-/* line 29, ../sass/inuit/objects/_media.scss */
+/* line 29, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .media__img--rev {
   float: right;
   margin-left: 24px;
 }
 
-/* line 35, ../sass/inuit/objects/_media.scss */
+/* line 35, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .media__img img,
 .media__img--rev img {
   display: block;
 }
 
-/* line 39, ../sass/inuit/objects/_media.scss */
+/* line 39, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .media__body {
   overflow: hidden;
 }
 
-/* line 43, ../sass/inuit/objects/_media.scss */
+/* line 43, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .media__body,
 .media__body > :last-child {
   margin-bottom: 0;
@@ -2044,12 +2044,12 @@ label,
 /**
  * `.img`s in `.islet`s need an appropriately sized margin.
  */
-/* line 51, ../sass/inuit/objects/_media.scss */
+/* line 51, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .islet .media__img {
   margin-right: 12px;
 }
 
-/* line 54, ../sass/inuit/objects/_media.scss */
+/* line 54, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_media.scss */
 .islet .media__img--rev {
   margin-left: 12px;
 }
@@ -2069,7 +2069,7 @@ label,
  * Demo: jsfiddle.net/inuitcss/AemkH
  *
  */
-/* line 16, ../sass/inuit/objects/_marginalia.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_marginalia.scss */
 .marginalia {
   font-size: 14px;
   font-size: 0.875rem;
@@ -2081,18 +2081,18 @@ label,
  * marginalia are inline with the other text.
  */
 @media (min-width: 1024px) {
-  /* line 25, ../sass/inuit/objects/_marginalia.scss */
+  /* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_marginalia.scss */
   .marginalia {
     position: relative;
   }
 
-  /* line 30, ../sass/inuit/objects/_marginalia.scss */
+  /* line 30, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_marginalia.scss */
   .marginalia__body,
   .marginalia__body--right {
     position: absolute;
   }
 
-  /* line 34, ../sass/inuit/objects/_marginalia.scss */
+  /* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_marginalia.scss */
   .marginalia__body {
     right: 100%;
     padding-right: 24px;
@@ -2102,7 +2102,7 @@ label,
   /**
    * Align marginalia to the right of the text.
    */
-  /* line 43, ../sass/inuit/objects/_marginalia.scss */
+  /* line 43, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_marginalia.scss */
   .marginalia__body--right {
     left: 100%;
     padding-left: 24px;
@@ -2118,7 +2118,7 @@ label,
  * Demo: jsfiddle.net/inuitcss/RqHcp
  * 
  */
-/* line 10, ../sass/inuit/objects/_buttons.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_buttons.scss */
 .btn {
   font: inherit;
   cursor: pointer;
@@ -2133,7 +2133,7 @@ label,
   padding: 0.5em;
 }
 
-/* line 24, ../sass/inuit/objects/_buttons.scss */
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_buttons.scss */
 .btn,
 .btn:hover {
   text-decoration: none;
@@ -2142,17 +2142,17 @@ label,
 /**
  * Basic button modifiers
  */
-/* line 31, ../sass/inuit/objects/_buttons.scss */
+/* line 31, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_buttons.scss */
 .btn--sml {
   font-size: .75em;
 }
 
-/* line 32, ../sass/inuit/objects/_buttons.scss */
+/* line 32, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_buttons.scss */
 .btn--lrg {
   font-size: 1.50em;
 }
 
-/* line 34, ../sass/inuit/objects/_buttons.scss */
+/* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/inuit/objects/_buttons.scss */
 .btn--full {
   display: block;
   text-align: center;
@@ -2229,7 +2229,7 @@ label,
 /**
 		* "Free-scroll" gallery
 		**/
-/* line 9, ../sass/templates/_artist.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 #carousel-gallery {
   width: 100%;
   margin: 0;
@@ -2238,46 +2238,46 @@ label,
   overflow: hidden !important;
 }
 
-/* line 16, ../sass/templates/_artist.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 #carousel-gallery .touchcarousel-wrapper {
   overflow: visible;
   margin-left: 80px;
 }
 
-/* line 20, ../sass/templates/_artist.scss */
+/* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 #carousel-gallery .touchcarousel-item {
   margin-right: 15px;
   background: gray;
   height: 400px;
 }
 
-/* line 26, ../sass/templates/_artist.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 #carousel-gallery .arrow-icon.left {
   left: 25px;
 }
 
-/* line 29, ../sass/templates/_artist.scss */
+/* line 29, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 #carousel-gallery .arrow-icon.right {
   right: 25px;
 }
 
-/* line 32, ../sass/templates/_artist.scss */
+/* line 32, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 #carousel-gallery .arrow-holder {
   width: 60px;
 }
 
-/* line 35, ../sass/templates/_artist.scss */
+/* line 35, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 #carousel-gallery .scrollbar-holder {
   bottom: 0px;
 }
 
-/* line 39, ../sass/templates/_artist.scss */
+/* line 39, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 .artist-text {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-/* line 45, ../sass/templates/_artist.scss */
+/* line 45, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artist.scss */
 .artist-detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2289,12 +2289,12 @@ label,
 /*------------------------------------*\
     $Artwork category
 \*------------------------------------*/
-/* line 5, ../sass/templates/_artwork-category.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .page-header {
   padding-bottom: 48px;
 }
 
-/* line 10, ../sass/templates/_artwork-category.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .filter-one {
   display: block;
   float: left;
@@ -2303,7 +2303,7 @@ label,
   width: 23.01287%;
 }
 
-/* line 14, ../sass/templates/_artwork-category.scss */
+/* line 14, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .filter-two {
   display: block;
   float: left;
@@ -2312,12 +2312,12 @@ label,
   width: 48.66011%;
 }
 
-/* line 18, ../sass/templates/_artwork-category.scss */
+/* line 18, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .filter-title {
   padding-left: 8px;
 }
 
-/* line 23, ../sass/templates/_artwork-category.scss */
+/* line 23, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 #sort {
   display: block;
   float: left;
@@ -2327,13 +2327,13 @@ label,
   display: none;
 }
 
-/* line 28, ../sass/templates/_artwork-category.scss */
+/* line 28, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .box-ms {
   padding-right: 4.44444%;
   width: 211px;
 }
 
-/* line 34, ../sass/templates/_artwork-category.scss */
+/* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .browse {
   display: block;
   float: left;
@@ -2342,35 +2342,35 @@ label,
   width: 22.99773%;
 }
 
-/* line 40, ../sass/templates/_artwork-category.scss */
+/* line 40, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
   padding-top: 12px;
   margin: 0;
 }
 
-/* line 48, ../sass/templates/_artwork-category.scss */
+/* line 48, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 60, ../sass/templates/_artwork-category.scss */
+/* line 60, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 66, ../sass/templates/_artwork-category.scss */
+/* line 66, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 70, ../sass/templates/_artwork-category.scss */
+/* line 70, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   content: "";
 }
 
-/* line 76, ../sass/templates/_artwork-category.scss */
+/* line 76, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 24px;
   margin: 0;
@@ -2378,7 +2378,7 @@ label,
   text-transform: uppercase;
 }
 
-/* line 85, ../sass/templates/_artwork-category.scss */
+/* line 85, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 12px;
   margin: 0;
@@ -2389,7 +2389,7 @@ label,
 /*------------------------------------*\
     $Artwork single
 \*------------------------------------*/
-/* line 6, ../sass/templates/_artwork-single.scss */
+/* line 6, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-single.scss */
 .entry-title {
   padding-top: 24px;
   padding-bottom: 6px;
@@ -2398,29 +2398,30 @@ label,
   line-height: 30px;
 }
 
-/* line 17, ../sass/templates/_artwork-single.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-single.scss */
 .entry-meta {
   padding-bottom: 24px;
+  margin-bottom: 0;
 }
 
-/* line 25, ../sass/templates/_artwork-single.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-single.scss */
 .entry-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 31, ../sass/templates/_artwork-single.scss */
+/* line 32, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-single.scss */
 .entry-meta > li:after {
   content: " / ";
 }
 
-/* line 35, ../sass/templates/_artwork-single.scss */
+/* line 36, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-single.scss */
 .entry-meta > li:last-child:after {
   content: "";
 }
 
-/* line 39, ../sass/templates/_artwork-single.scss */
+/* line 40, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-single.scss */
 .related-title {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -2428,7 +2429,7 @@ label,
   color: gray;
 }
 
-/* line 48, ../sass/templates/_artwork-single.scss */
+/* line 49, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_artwork-single.scss */
 #sort-entry {
   display: block;
   float: left;
@@ -2441,7 +2442,7 @@ label,
 /*------------------------------------*\
     $Contact
 \*------------------------------------*/
-/* line 6, ../sass/templates/_contact.scss */
+/* line 6, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_contact.scss */
 .full-page {
   display: block;
   float: left;
@@ -2456,14 +2457,14 @@ label,
   padding: 24px;
 }
 
-/* line 15, ../sass/templates/_contact.scss */
+/* line 15, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_contact.scss */
 #map_canvas {
   min-width: 300px;
   width: 100%;
   height: 400px;
 }
 
-/* line 22, ../sass/templates/_contact.scss */
+/* line 22, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_contact.scss */
 .keeptogether {
   display: inline-block;
   width: 100%;
@@ -2472,7 +2473,7 @@ label,
 /*------------------------------------*\
     $Exhibition category 
 \*------------------------------------*/
-/* line 5, ../sass/templates/_exhibition-category.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-category.scss */
 .exhibition-tease {
   padding-top: 48px;
 }
@@ -2480,7 +2481,7 @@ label,
 /*------------------------------------*\
     $Exhibition single
 \*------------------------------------*/
-/* line 5, ../sass/templates/_exhibition-single.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .exhibition-main {
   display: block;
   float: left;
@@ -2489,7 +2490,7 @@ label,
   width: 74.33762%;
 }
 
-/* line 10, ../sass/templates/_exhibition-single.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .exhibition-text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2498,40 +2499,40 @@ label,
   padding-right: 2.22222%;
 }
 
-/* line 15, ../sass/templates/_exhibition-single.scss */
+/* line 15, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .exhibition-slideshow {
   padding-bottom: 24px;
   background: gray;
 }
 
-/* line 20, ../sass/templates/_exhibition-single.scss */
+/* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .exhibition-title {
   padding-top: 48px;
 }
 
-/* line 25, ../sass/templates/_exhibition-single.scss */
+/* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
   background: none repeat scroll 0 0 gray !important;
 }
 
-/* line 37, ../sass/templates/_exhibition-single.scss */
+/* line 37, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:first-child {
   color: #8acfe6;
 }
 
-/* line 41, ../sass/templates/_exhibition-single.scss */
+/* line 41, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:after {
   color: gray;
   content: " / ";
   padding-left: 6px;
 }
 
-/* line 47, ../sass/templates/_exhibition-single.scss */
+/* line 47, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:last-child:after {
   content: "";
 }
 
-/* line 52, ../sass/templates/_exhibition-single.scss */
+/* line 52, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .artist-list {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -2541,7 +2542,7 @@ label,
   padding-bottom: 24px;
 }
 
-/* line 57, ../sass/templates/_exhibition-single.scss */
+/* line 57, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .related-posts {
   display: block;
   float: left;
@@ -2550,7 +2551,7 @@ label,
   width: 22.99773%;
 }
 
-/* line 62, ../sass/templates/_exhibition-single.scss */
+/* line 62, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_exhibition-single.scss */
 .related-list {
   padding-bottom: 48px;
 }
@@ -2558,20 +2559,20 @@ label,
 /*------------------------------------*\
     $Header
 \*------------------------------------*/
-/* line 7, ../sass/templates/_footer.scss */
+/* line 7, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_footer.scss */
 footer[role="contentinfo"] {
   width: 100%;
   background: #8acfe6;
 }
 
-/* line 14, ../sass/templates/_footer.scss */
+/* line 14, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_footer.scss */
 .footerwrapper {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 20, ../sass/templates/_footer.scss */
+/* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_footer.scss */
 .footer {
   clear: both;
   display: block;
@@ -2583,7 +2584,7 @@ footer[role="contentinfo"] {
 /*------------------------------------*\
     $Header
 \*------------------------------------*/
-/* line 5, ../sass/templates/_header.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_header.scss */
 header[role="banner"] {
   display: block;
   float: left;
@@ -2592,7 +2593,7 @@ header[role="banner"] {
   width: 14.34343%;
 }
 
-/* line 9, ../sass/templates/_header.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_header.scss */
 .logo {
   padding: 24px 0 72px 0;
 }
@@ -2600,7 +2601,7 @@ header[role="banner"] {
 /*------------------------------------*\
     $Homepage
 \*------------------------------------*/
-/* line 5, ../sass/templates/_homepage.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .main-image {
   display: block;
   float: left;
@@ -2609,7 +2610,7 @@ header[role="banner"] {
   width: 74.33762%;
 }
 
-/* line 9, ../sass/templates/_homepage.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .headline {
   display: block;
   float: left;
@@ -2623,14 +2624,14 @@ header[role="banner"] {
   text-align: left;
 }
 
-/* line 15, ../sass/templates/_homepage.scss */
+/* line 15, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .main-title, .exhibition-title {
   line-height: 30px;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
 
-/* line 21, ../sass/templates/_homepage.scss */
+/* line 21, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .date, .exhibition-meta-list {
   color: #ff1900;
   line-height: 20px;
@@ -2638,31 +2639,31 @@ header[role="banner"] {
   text-transform: uppercase;
 }
 
-/* line 28, ../sass/templates/_homepage.scss */
+/* line 28, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .e-date {
   color: #8acfe6;
   margin-bottom: 6px;
 }
 
-/* line 37, ../sass/templates/_homepage.scss */
+/* line 37, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-row {
   padding-top: 48px;
 }
 
-/* line 41, ../sass/templates/_homepage.scss */
+/* line 41, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-list {
   line-height: 30px;
   margin-bottom: 6px;
   text-transform: uppercase;
 }
 
-/* line 47, ../sass/templates/_homepage.scss */
+/* line 47, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-one {
   color: #ff1900;
   text-align: center;
 }
 
-/* line 52, ../sass/templates/_homepage.scss */
+/* line 52, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .column-one {
   display: block;
   float: left;
@@ -2671,13 +2672,13 @@ header[role="banner"] {
   width: 23.01287%;
 }
 
-/* line 56, ../sass/templates/_homepage.scss */
+/* line 56, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-two {
   color: #8acfe6;
   text-align: center;
 }
 
-/* line 61, ../sass/templates/_homepage.scss */
+/* line 61, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .column-two {
   display: block;
   float: left;
@@ -2686,13 +2687,13 @@ header[role="banner"] {
   width: 22.99773%;
 }
 
-/* line 65, ../sass/templates/_homepage.scss */
+/* line 65, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-three {
   color: #ff1900;
   text-align: center;
 }
 
-/* line 70, ../sass/templates/_homepage.scss */
+/* line 70, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .column-three {
   display: block;
   float: left;
@@ -2701,13 +2702,13 @@ header[role="banner"] {
   width: 22.99773%;
 }
 
-/* line 74, ../sass/templates/_homepage.scss */
+/* line 74, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-four {
   color: #8acfe6;
   text-align: center;
 }
 
-/* line 80, ../sass/templates/_homepage.scss */
+/* line 80, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .column-four {
   display: block;
   float: left;
@@ -2716,32 +2717,32 @@ header[role="banner"] {
   width: 22.99773%;
 }
 
-/* line 84, ../sass/templates/_homepage.scss */
+/* line 84, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-one .square {
   background-color: #ff1900;
 }
 
-/* line 89, ../sass/templates/_homepage.scss */
+/* line 89, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-two .square {
   background-color: #8acfe6;
 }
 
-/* line 94, ../sass/templates/_homepage.scss */
+/* line 94, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-three .square {
   background-color: #ff1900;
 }
 
-/* line 99, ../sass/templates/_homepage.scss */
+/* line 99, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-four .square {
   background-color: #8acfe6;
 }
 
-/* line 104, ../sass/templates/_homepage.scss */
+/* line 104, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-one .e-date {
   color: #ff1900;
 }
 
-/* line 109, ../sass/templates/_homepage.scss */
+/* line 109, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_homepage.scss */
 .article-three .e-date {
   color: #ff1900;
 }
@@ -2749,7 +2750,7 @@ header[role="banner"] {
 /*------------------------------------*\
     $Images
 \*------------------------------------*/
-/* line 5, ../sass/templates/_images.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_images.scss */
 img {
   /* Responsive images (ensure images don't scale beyond their parents) */
   max-width: 100%;
@@ -2763,14 +2764,14 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 22, ../sass/templates/_images.scss */
+/* line 22, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_images.scss */
 .img-rounded {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
 
-/* line 27, ../sass/templates/_images.scss */
+/* line 27, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_images.scss */
 .img-polaroid {
   padding: 4px;
   background-color: #fff;
@@ -2781,7 +2782,7 @@ img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* line 36, ../sass/templates/_images.scss */
+/* line 36, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_images.scss */
 .img-circle {
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;
@@ -2789,17 +2790,17 @@ img {
 }
 
 /* Second thumbnail has a strange width. This setting overrides it.  */
-/* line 44, ../sass/templates/_images.scss */
+/* line 44, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_images.scss */
 .round img {
   border-radius: 50%;
 }
 
-/* line 48, ../sass/templates/_images.scss */
+/* line 48, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_images.scss */
 .attachment-cropped-thumb {
   width: 170px !important;
 }
 
-/* line 59, ../sass/templates/_images.scss */
+/* line 59, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_images.scss */
 .attachment-homepage-thumb {
   border-radius: 50%;
   -webkit-transition-property: box-shadow;
@@ -2819,7 +2820,7 @@ img {
 /*------------------------------------*\
     $Isotope
 \*------------------------------------*/
-/* line 6, ../sass/templates/_isotope.scss */
+/* line 6, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_isotope.scss */
 .isotope,
 .isotope .isotope-item {
   /* change duration value to whatever you like */
@@ -2830,7 +2831,7 @@ img {
   transition-duration: 0.8s;
 }
 
-/* line 15, ../sass/templates/_isotope.scss */
+/* line 15, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_isotope.scss */
 .isotope {
   -webkit-transition-property: height, width;
   -moz-transition-property: height, width;
@@ -2839,7 +2840,7 @@ img {
   transition-property: height, width;
 }
 
-/* line 23, ../sass/templates/_isotope.scss */
+/* line 23, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_isotope.scss */
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
   -moz-transition-property: -moz-transform, opacity;
@@ -2849,7 +2850,7 @@ img {
 }
 
 /**** disabling Isotope CSS3 transitions ****/
-/* line 35, ../sass/templates/_isotope.scss */
+/* line 35, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_isotope.scss */
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -2864,7 +2865,7 @@ img {
     $Links
 \*------------------------------------*/
 /*  Normal link */
-/* line 7, ../sass/templates/_links.scss */
+/* line 7, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 a {
   color: gray;
   text-decoration: none;
@@ -2876,25 +2877,25 @@ a {
 }
 
 /*  Hover over */
-/* line 10, ../sass/templates/_links.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 a:hover, a:focus {
   color: #ff1900 !important;
   text-decoration: none;
 }
 
 /*  Link that's been clicked on */
-/* line 13, ../sass/templates/_links.scss */
+/* line 13, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 a:visited {
   color: gray;
 }
 
 /*  When the link is being clicked	 */
-/* line 16, ../sass/templates/_links.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 a:active {
   color: #005580;
 }
 
-/* line 18, ../sass/templates/_links.scss */
+/* line 18, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 p a, p a:visited {
   line-height: inherit;
 }
@@ -2902,14 +2903,14 @@ p a, p a:visited {
 /*	 
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: highlight colour for selection */
-/* line 23, ../sass/templates/_links.scss */
+/* line 23, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 ::-moz-selection {
   background: #ff1900;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 24, ../sass/templates/_links.scss */
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 ::selection {
   background: #ff1900;
   color: #fff;
@@ -2917,13 +2918,13 @@ p a, p a:visited {
 }
 
 /*  j.mp/webkit-tap-highlight-color */
-/* line 27, ../sass/templates/_links.scss */
+/* line 27, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 a:link {
   -webkit-tap-highlight-color: #ff1900;
 }
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-/* line 30, ../sass/templates/_links.scss */
+/* line 30, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_links.scss */
 a:hover, a:active {
   outline: none;
 }
@@ -2931,97 +2932,97 @@ a:hover, a:active {
 /*------------------------------------*\
     $Lists
 \*------------------------------------*/
-/* line 5, ../sass/templates/_lists.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul, ol {
   margin-bottom: 20px;
 }
 
-/* line 6, ../sass/templates/_lists.scss */
+/* line 6, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul {
   list-style: none outside;
 }
 
-/* line 7, ../sass/templates/_lists.scss */
+/* line 7, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 8, ../sass/templates/_lists.scss */
+/* line 8, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ol, ul.square, ul.circle, ul.disc {
   margin-left: 30px;
 }
 
-/* line 9, ../sass/templates/_lists.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul.square {
   list-style: square outside;
 }
 
-/* line 10, ../sass/templates/_lists.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul.circle {
   list-style: circle outside;
 }
 
-/* line 11, ../sass/templates/_lists.scss */
+/* line 11, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul.disc {
   list-style: disc outside;
 }
 
-/* line 13, ../sass/templates/_lists.scss */
+/* line 13, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul ul, ul ol,
 ol ol, ol ul {
   margin: 4px 0 5px 30px;
   font-size: 90%;
 }
 
-/* line 15, ../sass/templates/_lists.scss */
+/* line 15, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul ul li, ul ol li,
 ol ol li, ol ul li {
   margin-bottom: 6px;
 }
 
-/* line 16, ../sass/templates/_lists.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 li {
   line-height: 18px;
   margin-bottom: 12px;
 }
 
-/* line 17, ../sass/templates/_lists.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 ul.large li {
   line-height: 21px;
 }
 
-/* line 18, ../sass/templates/_lists.scss */
+/* line 18, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 li p {
   line-height: 21px;
 }
 
 /*  Definition lists */
-/* line 22, ../sass/templates/_lists.scss */
+/* line 22, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 dl {
   margin-bottom: 20px;
 }
 
-/* line 23, ../sass/templates/_lists.scss */
+/* line 23, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 dt, dd {
   line-height: 20px;
 }
 
-/* line 24, ../sass/templates/_lists.scss */
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 25, ../sass/templates/_lists.scss */
+/* line 25, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 dd {
   margin-left: 10px;
 }
 
-/* line 26, ../sass/templates/_lists.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 .dl-horizontal {
   *zoom: 1;
 }
 
-/* line 28, ../sass/templates/_lists.scss */
+/* line 28, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 .dl-horizontal:before,
 .dl-horizontal:after {
   display: table;
@@ -3029,12 +3030,12 @@ dd {
   line-height: 0;
 }
 
-/* line 33, ../sass/templates/_lists.scss */
+/* line 33, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 .dl-horizontal:after {
   clear: both;
 }
 
-/* line 34, ../sass/templates/_lists.scss */
+/* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 .dl-horizontal dt {
   float: left;
   width: 160px;
@@ -3045,7 +3046,7 @@ dd {
   white-space: nowrap;
 }
 
-/* line 43, ../sass/templates/_lists.scss */
+/* line 43, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_lists.scss */
 .dl-horizontal dd {
   margin-left: 180px;
 }
@@ -3053,12 +3054,12 @@ dd {
 /*------------------------------------*\
     $Menu
 \*------------------------------------*/
-/* line 5, ../sass/templates/_menu.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_menu.scss */
 nav[role="navigation"] {
   text-transform: uppercase;
 }
 
-/* line 9, ../sass/templates/_menu.scss */
+/* line 9, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_menu.scss */
 .current-menu-item > a, .current-page-ancestor > a, .current-post-ancestor > a {
   color: #ff1900 !important;
 }
@@ -3076,43 +3077,43 @@ nav[role="navigation"] {
 *  1. Arrows (direction) navigation
 *
 \******************************************************/
-/* line 17, ../sass/templates/_minimal-light-skin.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-icon {
   width: 23px;
   height: 28px;
   margin-top: -14px;
 }
 
-/* line 22, ../sass/templates/_minimal-light-skin.scss */
+/* line 22, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-icon.left {
   left: 5px;
   background: url("sprite.png") no-repeat -6px -7px;
 }
 
-/* line 26, ../sass/templates/_minimal-light-skin.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-icon.right {
   right: 5px;
   background: url("sprite.png") no-repeat -173px -7px;
 }
 
-/* line 30, ../sass/templates/_minimal-light-skin.scss */
+/* line 30, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-holder.disabled {
   -moz-opacity: 1;
   -webkit-opacity: 1;
   opacity: 1;
 }
 
-/* line 35, ../sass/templates/_minimal-light-skin.scss */
+/* line 35, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.left {
   background: url("sprite.png") no-repeat -40px -7px;
 }
 
-/* line 38, ../sass/templates/_minimal-light-skin.scss */
+/* line 38, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.right {
   background: url("sprite.png") no-repeat -139px -7px;
 }
 
-/* line 41, ../sass/templates/_minimal-light-skin.scss */
+/* line 41, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-holder {
   width: 35px;
   -moz-opacity: 0.8;
@@ -3120,7 +3121,7 @@ nav[role="navigation"] {
   opacity: 0.8;
 }
 
-/* line 47, ../sass/templates/_minimal-light-skin.scss */
+/* line 47, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .arrow-holder:hover {
   -moz-opacity: 1;
   -webkit-opacity: 1;
@@ -3132,12 +3133,12 @@ nav[role="navigation"] {
 *  2. Paging navigation
 *
 \******************************************************/
-/* line 58, ../sass/templates/_minimal-light-skin.scss */
+/* line 58, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .tc-paging-container {
   margin-top: -22px;
 }
 
-/* line 61, ../sass/templates/_minimal-light-skin.scss */
+/* line 61, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .tc-paging-item {
   background: url("sprite.png") no-repeat -95px -4px;
   width: 16px;
@@ -3147,12 +3148,12 @@ nav[role="navigation"] {
   opacity: 0.8;
 }
 
-/* line 71, ../sass/templates/_minimal-light-skin.scss */
+/* line 71, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .tc-paging-item.current {
   background: url("sprite.png") no-repeat -95px -22px;
 }
 
-/* line 74, ../sass/templates/_minimal-light-skin.scss */
+/* line 74, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_minimal-light-skin.scss */
 .touchcarousel.minimal-light .tc-paging-item:hover {
   -moz-opacity: 1;
   -webkit-opacity: 1;
@@ -3162,23 +3163,23 @@ nav[role="navigation"] {
 /*------------------------------------*\
     $Misc
 \*------------------------------------*/
-/* line 5, ../sass/templates/_misc.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .remove-bottom {
   margin-bottom: 0 !important;
 }
 
-/* line 6, ../sass/templates/_misc.scss */
+/* line 6, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .half-bottom {
   margin-bottom: 10px !important;
 }
 
-/* line 7, ../sass/templates/_misc.scss */
+/* line 7, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .add-bottom {
   margin-bottom: 20px !important;
 }
 
 /* Text meant only for screen readers */
-/* line 10, ../sass/templates/_misc.scss */
+/* line 10, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .assistive-text {
   clip: rect(1px 1px 1px 1px);
   /* IE6, IE7 */
@@ -3186,42 +3187,42 @@ nav[role="navigation"] {
   position: absolute !important;
 }
 
-/* line 16, ../sass/templates/_misc.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .center {
   text-align: center;
 }
 
-/* line 18, ../sass/templates/_misc.scss */
+/* line 18, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .white {
   background: white;
 }
 
-/* line 20, ../sass/templates/_misc.scss */
+/* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .grey {
   background: gray;
 }
 
-/* line 22, ../sass/templates/_misc.scss */
+/* line 22, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .gray {
   color: gray;
 }
 
-/* line 24, ../sass/templates/_misc.scss */
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .red {
   color: #ff1900;
 }
 
-/* line 26, ../sass/templates/_misc.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .blue {
   color: #8acfe6;
 }
 
-/* line 28, ../sass/templates/_misc.scss */
+/* line 28, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .outline {
   outline: 1px solid #99999a;
 }
 
-/* line 30, ../sass/templates/_misc.scss */
+/* line 30, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_misc.scss */
 .square {
   width: 15px;
   height: 15px;
@@ -3232,14 +3233,14 @@ nav[role="navigation"] {
 /*------------------------------------*\
     $Page
 \*------------------------------------*/
-/* line 5, ../sass/templates/_page.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_page.scss */
 .page-intro {
   text-align: right;
   padding-bottom: 48px;
   padding-top: 12px;
 }
 
-/* line 12, ../sass/templates/_page.scss */
+/* line 12, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_page.scss */
 .page-image {
   display: block;
   float: left;
@@ -3248,7 +3249,7 @@ nav[role="navigation"] {
   width: 48.67525%;
 }
 
-/* line 17, ../sass/templates/_page.scss */
+/* line 17, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_page.scss */
 .page-text {
   display: block;
   float: left;
@@ -3266,7 +3267,7 @@ nav[role="navigation"] {
   padding-right: 2.22222%;
 }
 
-/* line 24, ../sass/templates/_page.scss */
+/* line 24, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_page.scss */
 .entry-content {
   padding-top: 24px;
 }
@@ -3277,7 +3278,7 @@ nav[role="navigation"] {
 /*------------------------------------*\
     $Pagination
 \*------------------------------------*/
-/* line 6, ../sass/templates/_pagination.scss */
+/* line 6, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_pagination.scss */
 .pagination {
   display: block;
   float: left;
@@ -3289,12 +3290,12 @@ nav[role="navigation"] {
   margin-top: 24px;
 }
 
-/* line 16, ../sass/templates/_pagination.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_pagination.scss */
 .pagination .page-numbers {
   padding: 24px;
 }
 
-/* line 20, ../sass/templates/_pagination.scss */
+/* line 20, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_pagination.scss */
 .pagination .current {
   color: #ff1900;
 }
@@ -3302,7 +3303,7 @@ nav[role="navigation"] {
 /*------------------------------------*\
     $Select-box
 \*------------------------------------*/
-/* line 5, ../sass/templates/_select-box.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_select-box.scss */
 .filter {
   background: #8acfe6;
   color: white;
@@ -3310,7 +3311,7 @@ nav[role="navigation"] {
   height: 24px;
 }
 
-/* line 13, ../sass/templates/_select-box.scss */
+/* line 13, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_select-box.scss */
 .dropdown {
   background: url(../images/arrow.png) no-repeat right #d4e2ef;
   border: 0;
@@ -3343,7 +3344,7 @@ nav[role="navigation"] {
 *  1. Main containers (carousel size, background)
 *
 \******************************************************/
-/* line 26, ../sass/templates/_touchcarousel.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel {
   position: relative;
   width: 600px;
@@ -3352,7 +3353,7 @@ nav[role="navigation"] {
   overflow: hidden;
 }
 
-/* line 34, ../sass/templates/_touchcarousel.scss */
+/* line 34, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .touchcarousel-container {
   position: relative;
   margin: 0;
@@ -3361,7 +3362,7 @@ nav[role="navigation"] {
   left: 0;
 }
 
-/* line 41, ../sass/templates/_touchcarousel.scss */
+/* line 41, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .touchcarousel-wrapper {
   position: relative;
   overflow: hidden;
@@ -3374,7 +3375,7 @@ nav[role="navigation"] {
 *  2. Carousel items (item styling, spacing between items)
 *
 \******************************************************/
-/* line 58, ../sass/templates/_touchcarousel.scss */
+/* line 58, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .touchcarousel-item {
   /* use margin-right for spacing between items */
   margin: 0 0 0 0;
@@ -3383,7 +3384,7 @@ nav[role="navigation"] {
 }
 
 /* Last carousel item  */
-/* line 66, ../sass/templates/_touchcarousel.scss */
+/* line 66, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .touchcarousel-item.last {
   margin-right: 0 !important;
 }
@@ -3394,7 +3395,7 @@ nav[role="navigation"] {
 *
 \******************************************************/
 /* arrow hitstate and icon holder */
-/* line 81, ../sass/templates/_touchcarousel.scss */
+/* line 81, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .arrow-holder {
   height: 100%;
   width: 45px;
@@ -3405,18 +3406,18 @@ nav[role="navigation"] {
   z-index: 25;
 }
 
-/* line 90, ../sass/templates/_touchcarousel.scss */
+/* line 90, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .arrow-holder.left {
   left: 0;
 }
 
-/* line 93, ../sass/templates/_touchcarousel.scss */
+/* line 93, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .arrow-holder.right {
   right: 0;
 }
 
 /* arrow icons */
-/* line 98, ../sass/templates/_touchcarousel.scss */
+/* line 98, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .arrow-icon {
   width: 45px;
   height: 90px;
@@ -3426,12 +3427,12 @@ nav[role="navigation"] {
   cursor: pointer;
 }
 
-/* line 109, ../sass/templates/_touchcarousel.scss */
+/* line 109, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .arrow-holder.disabled {
   cursor: default;
 }
 
-/* line 110, ../sass/templates/_touchcarousel.scss */
+/* line 110, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .arrow-holder.disabled .arrow-icon {
   cursor: default;
 }
@@ -3441,7 +3442,7 @@ nav[role="navigation"] {
 *  4. Paging navigation
 *
 \******************************************************/
-/* line 122, ../sass/templates/_touchcarousel.scss */
+/* line 122, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .tc-paging-container {
   width: 100%;
   overflow: hidden;
@@ -3450,14 +3451,14 @@ nav[role="navigation"] {
   z-index: 25;
 }
 
-/* line 129, ../sass/templates/_touchcarousel.scss */
+/* line 129, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .tc-paging-centerer {
   float: left;
   position: relative;
   left: 50%;
 }
 
-/* line 134, ../sass/templates/_touchcarousel.scss */
+/* line 134, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .tc-paging-centerer-inside {
   float: left;
   position: relative;
@@ -3465,7 +3466,7 @@ nav[role="navigation"] {
 }
 
 /* Paging items */
-/* line 141, ../sass/templates/_touchcarousel.scss */
+/* line 141, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .tc-paging-item {
   float: left;
   cursor: pointer;
@@ -3479,7 +3480,7 @@ nav[role="navigation"] {
 *  5. Scrollbar
 *
 \******************************************************/
-/* line 160, ../sass/templates/_touchcarousel.scss */
+/* line 160, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .scrollbar-holder {
   position: absolute;
   z-index: 30;
@@ -3490,7 +3491,7 @@ nav[role="navigation"] {
   overflow: hidden;
 }
 
-/* line 169, ../sass/templates/_touchcarousel.scss */
+/* line 169, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .scrollbar {
   position: absolute;
   left: 0;
@@ -3498,13 +3499,13 @@ nav[role="navigation"] {
   bottom: 0px;
 }
 
-/* line 175, ../sass/templates/_touchcarousel.scss */
+/* line 175, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .scrollbar.dark {
   background-color: #828282;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* line 179, ../sass/templates/_touchcarousel.scss */
+/* line 179, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .scrollbar.light, .touchcarousel .scrollbar.artwork-meta, .touchcarousel .scrollbar.list-title, .touchcarousel .scrollbar.entry-meta, .touchcarousel .scrollbar.related-title, .touchcarousel .scrollbar.pagination {
   background-color: #d2d2d2;
   background-color: rgba(255, 255, 255, 0.5);
@@ -3516,18 +3517,18 @@ nav[role="navigation"] {
 *
 \******************************************************/
 /* IE and Opera use "move", FF uses -moz-grab */
-/* line 195, ../sass/templates/_touchcarousel.scss */
+/* line 195, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .grab-cursor {
   cursor: url(grab.png) 8 8, move;
 }
 
-/* line 196, ../sass/templates/_touchcarousel.scss */
+/* line 196, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .grabbing-cursor {
   cursor: url(grabbing.png) 8 8, move;
 }
 
 /* Cursor that used when mouse drag is disabled */
-/* line 199, ../sass/templates/_touchcarousel.scss */
+/* line 199, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_touchcarousel.scss */
 .touchcarousel .auto-cursor {
   cursor: auto;
 }
@@ -3536,70 +3537,70 @@ nav[role="navigation"] {
 /*------------------------------------*\
     $Typography
 \*------------------------------------*/
-/* line 5, ../sass/templates/_typography.scss */
+/* line 5, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 p {
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 11, ../sass/templates/_typography.scss */
+/* line 11, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .bold, .artwork-title, .artist-name, .browse-title, .entry-title {
   font-style: normal;
   font-weight: 700;
 }
 
-/* line 16, ../sass/templates/_typography.scss */
+/* line 16, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .light, .artwork-meta, .list-title, .entry-meta, .related-title, .pagination {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 21, ../sass/templates/_typography.scss */
+/* line 21, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .light p, .artwork-meta p, .list-title p, .entry-meta p, .related-title p, .pagination p {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 26, ../sass/templates/_typography.scss */
+/* line 26, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .small, .artwork-title, .artist-name, .browse-title, .list-title {
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 31, ../sass/templates/_typography.scss */
+/* line 31, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .micro, .artwork-meta, .pagination {
   font-size: 12px;
   line-height: 16px;
 }
 
-/* line 36, ../sass/templates/_typography.scss */
+/* line 36, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .no-padding {
   margin: 0;
 }
 
 /*  <strong>For emphasizing a snippet of text with important</strong> */
-/* line 39, ../sass/templates/_typography.scss */
+/* line 39, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 strong {
   font-style: normal;
   font-weight: 700;
 }
 
 /*  <em>For emphasizing a snippet of text with stress</em> */
-/* line 45, ../sass/templates/_typography.scss */
+/* line 45, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
 
 /*  Class for muted text */
-/* line 51, ../sass/templates/_typography.scss */
+/* line 51, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .muted {
   color: #999999;
 }
 
 /*  Defines a thematic change in the content */
-/* line 55, ../sass/templates/_typography.scss */
+/* line 55, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -3613,27 +3614,27 @@ providing additional context on hover.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 */
-/* line 69, ../sass/templates/_typography.scss */
+/* line 69, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 73, ../sass/templates/_typography.scss */
+/* line 73, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
 /*  For quoting blocks of content from another source within your document */
-/* line 79, ../sass/templates/_typography.scss */
+/* line 79, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
-/* line 85, ../sass/templates/_typography.scss */
+/* line 85, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
@@ -3641,14 +3642,14 @@ blockquote p {
   line-height: 25px;
 }
 
-/* line 92, ../sass/templates/_typography.scss */
+/* line 92, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 
-/* line 98, ../sass/templates/_typography.scss */
+/* line 98, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
@@ -3656,19 +3657,19 @@ blockquote small:before {
 /*  Add <small> tag for identifying the source. Wrap the name of the source work in <cite>.
 	<small>Someone famous <cite title="Source Title">Source Title</cite></small>
  */
-/* line 106, ../sass/templates/_typography.scss */
+/* line 106, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 cite {
   font-style: normal;
 }
 
 /*  <small>For fine print etc.</small> */
-/* line 111, ../sass/templates/_typography.scss */
+/* line 111, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 small {
   font-size: 85%;
 }
 
 /* Floated, right-aligned blockquote. */
-/* line 116, ../sass/templates/_typography.scss */
+/* line 116, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -3677,23 +3678,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 125, ../sass/templates/_typography.scss */
+/* line 125, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 128, ../sass/templates/_typography.scss */
+/* line 128, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 131, ../sass/templates/_typography.scss */
+/* line 131, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 138, ../sass/templates/_typography.scss */
+/* line 138, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -3702,7 +3703,7 @@ blockquote:after {
 }
 
 /* Present contact information. Use <br> for line breaks */
-/* line 143, ../sass/templates/_typography.scss */
+/* line 143, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -3711,7 +3712,7 @@ address {
 }
 
 /* To display code etc. */
-/* line 152, ../sass/templates/_typography.scss */
+/* line 152, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -3723,7 +3724,7 @@ pre {
   border-radius: 3px;
 }
 
-/* line 161, ../sass/templates/_typography.scss */
+/* line 161, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -3731,7 +3732,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 167, ../sass/templates/_typography.scss */
+/* line 167, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -3750,12 +3751,12 @@ pre {
   border-radius: 4px;
 }
 
-/* line 184, ../sass/templates/_typography.scss */
+/* line 184, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 pre.prettyprint {
   margin-bottom: 20px;
 }
 
-/* line 187, ../sass/templates/_typography.scss */
+/* line 187, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -3763,7 +3764,7 @@ pre code {
   border: 0;
 }
 
-/* line 193, ../sass/templates/_typography.scss */
+/* line 193, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/templates/_typography.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
@@ -3772,7 +3773,7 @@ pre code {
 /**
  * Fonts
  */
-/* line 55, ../sass/barjeel.scss */
+/* line 55, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/barjeel.scss */
 body {
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
@@ -3784,14 +3785,14 @@ body {
 /**
  * Main block
  */
-/* line 68, ../sass/barjeel.scss */
+/* line 68, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 75, ../sass/barjeel.scss */
+/* line 75, /Applications/MAMP/htdocs/wordpress/wp-content/themes/barjeel/sass/barjeel.scss */
 #main {
   display: block;
   float: left;

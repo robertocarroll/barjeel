@@ -90,6 +90,27 @@
 				
 				</h1>
 
+
+				<?php 
+					
+					$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+					
+					if($term->parent > 0)  { ?>	
+
+				<ul class="entry-meta center">	
+					<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
+								
+												<?php if ( $country ) { ?>	
+												
+													<?php echo '<li>'.$country.'</li> '; ?>
+												
+												<?php } ?>	
+										
+											</ul>	
+									<?php	
+										}	
+									 ?>		
+
 				<div class= "artist-detail">	
 					
 					<?php echo category_description(); ?>

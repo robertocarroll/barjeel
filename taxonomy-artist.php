@@ -11,7 +11,7 @@
 
 				<?php if ( $total_posts > 1 ) { ?>	
 
-				<div id="carousel-gallery" class="touchcarousel black-and-white"> 
+				<div id="carousel-gallery" class="touchcarousel minimal-light"> 
 
 					<ul class="touchcarousel-container">			
 
@@ -73,12 +73,6 @@
 				<?php endwhile; ?>
 
 				<?php } ?>	
-
-
-				
-
-
-
 		
 			<?php else : ?>
 
@@ -99,8 +93,7 @@
 				<div class= "artist-detail">	
 					
 					<?php echo category_description(); ?>
-
-					
+			
 				<?php 
 					
 					$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
@@ -136,8 +129,7 @@
 							else 
 							{ 
 			
-							$title        = 'Artists in this country';
-							$show_count   = 1;      // 1 for yes, 0 for no
+							$show_count   = 0;      // 1 for yes, 0 for no
 							$pad_counts   = 1;      // 1 for yes, 0 for no
 							$orderby      = 'name'; 
 							
@@ -146,28 +138,28 @@
 								'taxonomy' => $term->taxonomy,
 								'pad_counts'   => $pad_counts,
 								'orderby'      => $orderby,
-								'title_li' => $title,
+								'title_li' => '',
 								'show_count' => $show_count
 								); 
-							 
-							 
-							 wp_list_categories( $args);
-							 
-							}
-					?>
-					
-		
-				<?php rewind_posts(); ?>
+							 ?>
+						<h2 class="related-title">Artists in this country</h2><div class="artist-list">	
+							<ul class = "nav  nav--stacked">
 
-				</div><!-- .artist-detail -->	
+									<?php 	 wp_list_categories( $args);
+										 
+										}
+									?>
+							</ul></div><!-- .artist-list -->	
 
-				</div><!-- .artist-text -->	
+							<?php rewind_posts(); ?>
+
+						</div><!-- .artist-detail -->	
+
+					</div><!-- .artist-text -->	
 
 				</div><!-- .meta -->	
 					
-					
-					
-					
+									
 				
 				<?php related_posts(); ?>
 		

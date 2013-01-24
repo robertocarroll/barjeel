@@ -9,6 +9,11 @@
 	}	
 
 
+	.page-content {
+		@extend .white;
+		@include gs-span(da, 2, 5, (2, 5));
+	}
+
 	.page-image {
 		@include gs-span(da, 2, 3, (2, 5));
 		

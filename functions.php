@@ -93,6 +93,8 @@ function barjeel_scripts() {
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/javascripts/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
 
 	wp_enqueue_script( 'touchcarousel', get_template_directory_uri() . '/javascripts/jquery.touchcarousel-1.1.min.js', array( 'jquery' ), '20120206', true );
+
+	wp_enqueue_script( 'customselect', get_template_directory_uri() . '/javascripts/customSelect.jquery.min.js', array( 'jquery' ), '20120206', true );
 		
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );
@@ -347,6 +349,7 @@ function the_post_thumbnail_caption() {
 add_action( 'init', 'create_my_taxonomies', 0 );
 
 function create_my_taxonomies() {
+	register_taxonomy( 'recent', 'post', array( 'hierarchical' => false, 'label' => 'Recent acquisitions', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'medium', 'post', array( 'hierarchical' => false, 'label' => 'Medium', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'theme', 'post', array( 'hierarchical' => false, 'label' => 'Theme', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'artist', 'post', array( 'hierarchical' => true, 'label' => 'Artist', 'query_var' => true, 'rewrite' => array('hierarchical' => true ) ) );

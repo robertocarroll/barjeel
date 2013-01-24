@@ -3,6 +3,8 @@
 		<section id="primary" class="site-content">
 			<div id="content" class="container" role="main">
 
+		<?php $exhibition_meta = array (); ?>
+
 			<?php if ( have_posts() ) : ?>
 
 				<?php $total_posts = $wp_query->found_posts; ?>
@@ -11,9 +13,9 @@
 
 				<?php if ( $total_posts > 1 ) { ?>	
 
-				<div id="carousel-gallery" class="touchcarousel minimal-light"> 
+				<div id="carousel-gallery" class="touchcarousel minimal-light"> 	
 
-					<ul class="touchcarousel-container">			
+					<ul class="touchcarousel-container">	
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
@@ -33,10 +35,21 @@
 								
 								<?php } ?>
 							
-									
-							</li><!-- .touchcarousel-item -->			
+									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', true); 
+
+
+									?>
+
+								<?php $exhibition_meta[] = $exhibitions; ?>	
+
+
+							</li><!-- .touchcarousel-item -->
+
+
 
 				<?php endwhile; ?>
+
+
 
 				</ul>
 				
@@ -66,7 +79,12 @@
    									</a>
 								
 								<?php } ?>
-							
+								
+								<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', true); 
+
+								$exhibition_meta [] = $exhibitions;
+
+								?>
 									
 							</div><!-- .featured-image -->			
 
@@ -79,6 +97,8 @@
 				<?php get_template_part( 'no-results', 'archive' ); ?>
 
 			<?php endif; ?>
+
+				
 			
 				<div class="meta white">	
 
@@ -105,11 +125,22 @@
 													<?php echo '<li>'.$country.'</li> '; ?>
 												
 												<?php } ?>	
+
+							<?php	if(!empty($exhibition_meta)) { ?>
+
+												<?php	
+
+												list($value) = $exhibition_meta;
+							  						
+							  							print '<li>'.$value.'</li>'; 
+														
+													?>		
+										<?php } ?>
 										
-											</ul>	
-									<?php	
-										}	
-									 ?>		
+					</ul>	
+				<?php	
+					}	
+				 ?>		
 
 				<div class= "artist-detail">	
 					

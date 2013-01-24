@@ -3,23 +3,56 @@
 \*------------------------------------*/
 	
 	.filter {
-		background: $barjeel-blue;
 		color: white;
 		font-family: $brand-face;
 		height: $base-spacing-unit;
 
 	}
 
-	.dropdown {
-		background: url(../images/arrow.png) no-repeat right $barjeel-lightblue; 
-		border: 0;
-		border-radius: none;
-		color: $barjeel-blue; 
-		font-family: $brand-face;
-		float:right;	
-		height: $base-spacing-unit;
-		padding: 2px 0 0 4px;	
-		-webkit-appearance: none;
-    	-webkit-border-radius: 0px;
+	.filter-title {
+		color: $barjeel-blue;
+		padding-top: 3px;
+		padding-bottom: 3px;
+		padding-#{$dir}: $half-spacing-unit;
+		padding-#{$opdir}: $half-spacing-unit;
 	}
+
+	.sort-by {
+		margin-#{$dir}: -5px;
+	}
+
+	.filter-by {
+		margin-#{$dir}: -5px;
+	}
+
+	.customSelect {
+		color: $barjeel-blue; 
+		font-family: $brand-face;	
+		height: $base-spacing-unit;	
+	}
+
+	.customSelect.changed {
+	/* You can use this if you want a different style after user has made a selection */
+	}
+
+	.customSelect.customSelectFocus {
+	/* You can use this if you want a different style after user has made a selection */
+	}
+	.customSelect.customSelectOpen {
+
+	/* You can use this if you want a different style after user has made a selection */
+	}
+
+	/* We can style the inner box too */
+	.customSelectInner {
+		background: url(../images/arrow.png) no-repeat $opdir $barjeel-lightblue; 
+		padding-#{$dir}: $half-spacing-unit;
+	}
+
+
+
+
+
+
+
 

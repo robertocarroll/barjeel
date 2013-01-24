@@ -31,6 +31,15 @@ jQuery(document).ready(function($){
     });
 
 
+/*! Custom select styling */
+
+jQuery(document).ready(function($){
+
+       $('.sort-by').customSelect();
+
+       $('.filter-by').customSelect();
+
+    });
 
 
 /*! For the alphabetical list */

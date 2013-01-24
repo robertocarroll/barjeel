@@ -43,6 +43,14 @@ Template Name: Home Page
 						<article>	
 
 							<div class="square">&nbsp;</div>
+
+							<a href="<?php the_permalink(); ?>">	
+	 
+								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
+
+								 endif; ?>			
+
+								</a>	
 															
 							<h1 class="gamma bold article-list"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
@@ -51,15 +59,7 @@ Template Name: Home Page
 								if ($dates) { ?>
 								<?php echo '<h2 class="date epsilon bold e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
-									 
-									<a href="<?php the_permalink(); ?>">	
-	 
-								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
-
-								 endif; ?>			
-
-								</a>												
-					
+									 				
 						</article>
 
 					</div>

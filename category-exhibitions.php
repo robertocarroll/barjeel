@@ -32,6 +32,8 @@
 				<?php if( $stickyexhibition_query->have_posts() ) : ?>		
 			
 				<?php while ( $stickyexhibition_query->have_posts() ) : $stickyexhibition_query->the_post(); ?>
+
+				<div class="page-content">
 					
 					<article>
 
@@ -50,7 +52,7 @@
 							</div>	
 										
 
-					<div class="page-text white">
+					<div class="page-text">
 
 						<div class="exhibition-tease">
 
@@ -83,7 +85,8 @@
 					</div>		
 					
 					</article>
-								 
+					
+				</div><!-- .page-content -->				 
 							
 				<?php endwhile; ?>
 

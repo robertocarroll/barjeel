@@ -60,7 +60,7 @@
 
 			<aside>
 
-				<div class="browse">
+				<div class="browse center">
 
 					<h1 class="browse-title">Browse our collection</h1>
 

@@ -7,7 +7,7 @@
  */
 ?>
 
-
+<div class="page-content">
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -23,7 +23,7 @@
 			
 			<?php endif; ?>	
 
-	<div class="page-text white">
+	<div class="page-text">
 
 				<?php $intro = get_post_meta($post->ID, 'Intro', true);
 						//Checking if anything exists for the intro
@@ -41,3 +41,5 @@
 
 </div><!-- .page-text -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+</div><!-- .page-content -->

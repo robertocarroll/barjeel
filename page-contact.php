@@ -14,35 +14,88 @@ Template Name: Contact page
 		/*
 		Global
 		*/
-		var map;
+var map;
 	
-		function initialize() {
-	    	
-			/*
-			Basic Setup
-			*/
-	
-			var latLng = new google.maps.LatLng(25.322311, 55.3762336);
-			
-	    	var myOptions = {
-				panControl: false,
-				zoomControl: false,
-				mapTypeControl: false,
+	function initialize() {
+
+			 // Create an array of styles.
+  var styles = [
+
+  	{
+    stylers: [
+      { gamma: 0.99 }
+    ]
+  },
+    {
+    featureType: "landscape",
+    elementType: "geometry",
+    stylers: [
+      { color: "#ef4022" },
+      { visibility: "on" }
+    ]
+  }, 
+  {
+    featureType: "water",
+    stylers: [
+      { color: "#85b5d5" }
+    ]
+  },
+  {
+    featureType: "road",
+    elementType: "geometry",
+    stylers: [
+      { color: "#949498" }
+    ]
+  }, 
+  {
+    featureType: "poi",
+    elementType: "geometry",
+    stylers: [
+      { color: "#c4c3c4" }
+    ]
+  }, 
+  {
+    featureType: "road",
+    elementType: "labels.text.stroke",
+    stylers: [
+      { color: "#ffffff" }
+    ]
+  }
+  ];
+
+  // Create a new StyledMapType object, passing it the array of styles,
+  // as well as the name to be displayed on the map type control.
+  var styledMap = new google.maps.StyledMapType(styles,
+    {name: "Styled Map"});
+
+  // Create a map object, and include the MapTypeId to add
+  // to the map type control.
+  var mapOptions = {
+			    zoom: 14,
+			    center: new google.maps.LatLng(25.329006, 55.366824),
+			    zoomControlOptions: {
+    style: google.maps.ZoomControlStyle.SMALL
+  },	
+			    mapTypeControl: false,
 				scaleControl: false,
 				streetViewControl: false,
 				overviewMapControl: false,
 				draggable: true,
 				disableDoubleClickZoom: true,     //disable zooming
-				scrollwheel: false,
-	      		zoom: 15,
-	      		center: latLng,
-	      		mapTypeId: google.maps.MapTypeId.SATELLITE //   ROADMAP; SATELLITE; HYBRID; TERRAIN;
-			};
-	    	
-			map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+				scrollwheel: false
+  		};
+  
+
+  var map = new google.maps.Map(document.getElementById('map_canvas'),
+    mapOptions);
+
+  //Associate the styled map with the MapTypeId and set it to display.
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+
 
 			var image = '<?php echo get_template_directory_uri(); ?>/images/custom.png';
-			var myLatLng = new google.maps.LatLng(25.322311, 55.3762336); //add new marker
+			var myLatLng = new google.maps.LatLng(25.329006, 55.366824); //add new marker
 			var barjeelMarker = new google.maps.Marker({
 				      position: myLatLng,
 				      map: map,

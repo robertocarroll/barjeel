@@ -33,7 +33,7 @@
 								
 								<ul class="artwork-meta">	
 									
-									<!-- Exhibitions- from custom field called exhibitions -->
+									<!-- Exhibitions- from custom field called exhibitions
 									
 									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false); ?>
 								
@@ -43,7 +43,7 @@
 														echo '<li>'.$exhibition.'</li> ';
 														} ?>
 												
-												<?php } ?>
+												<?php } ?> -->
 
 
 									<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>

@@ -9,7 +9,23 @@ jQuery(document).ready(function ($) {
       });
     });
 
+/*! For the carousel on the artist page */
 
+jQuery(document).ready(function($){
+
+  $(function(){
+      // bind change event to select
+      $('.filter-by').on('change', function () {
+          var url = $(this).val(); // get selected value
+          if (url) { // require a URL
+              window.location = url; // redirect
+          }
+          return false;
+      });
+    });
+
+
+});
 
 /*! For the carousel on the artist page */
 
@@ -28,7 +44,7 @@ jQuery(document).ready(function($){
       }); 
 
 
-    });
+});
 
 
 /*! Custom select styling */

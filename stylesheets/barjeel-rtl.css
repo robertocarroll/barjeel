@@ -2395,7 +2395,7 @@ label,
   padding-bottom: 6px;
   margin: 0;
   color: gray;
-  line-height: 30px;
+  line-height: 28px;
 }
 
 /* line 17, ../sass/templates/_artwork-single.scss */
@@ -2459,12 +2459,16 @@ label,
 
 /* line 15, ../sass/templates/_contact.scss */
 #map_canvas {
-  min-width: 300px;
   width: 100%;
   height: 400px;
 }
 
-/* line 22, ../sass/templates/_contact.scss */
+/* line 21, ../sass/templates/_contact.scss */
+#map_canvas img {
+  max-width: inherit;
+}
+
+/* line 23, ../sass/templates/_contact.scss */
 .keeptogether {
   display: inline-block;
   width: 100%;
@@ -2562,19 +2566,24 @@ label,
 /* line 7, ../sass/templates/_footer.scss */
 footer[role="contentinfo"] {
   width: 100%;
+  /* Fallback for web browsers that don't support RGBa */
   background: #8acfe6;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
+  /* RGBa with 0.6 opacity */
+  background: rgba(138, 207, 230, 0.5);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#508ACFE6, endColorstr=#508ACFE6);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#508ACFE6, endColorstr=#508ACFE6)";
 }
 
-/* line 15, ../sass/templates/_footer.scss */
+/* line 23, ../sass/templates/_footer.scss */
 .footerwrapper {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 21, ../sass/templates/_footer.scss */
+/* line 29, ../sass/templates/_footer.scss */
 .footer {
   clear: both;
   display: block;
@@ -2628,7 +2637,7 @@ header[role="banner"] {
 
 /* line 15, ../sass/templates/_homepage.scss */
 .main-title, .exhibition-title {
-  line-height: 30px;
+  line-height: 28px;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -2654,7 +2663,7 @@ header[role="banner"] {
 
 /* line 41, ../sass/templates/_homepage.scss */
 .article-list {
-  line-height: 30px;
+  line-height: 28px;
   margin-bottom: 6px;
   text-transform: uppercase;
   padding-top: 12px;

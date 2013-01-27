@@ -51,6 +51,15 @@
 												
 												<?php } ?>
 
+									<?php $medium = rw_get_the_term_list(null, 'medium', true, '', ', ', '');  ?>
+								
+												<?php if ( $medium ) { ?>	
+												
+													<?php echo '<li>'.$medium.'</li> '; ?>
+												
+												<?php } ?>	
+															
+
 									<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
 								
 												<?php if ( $country ) { ?>	
@@ -58,6 +67,9 @@
 													<?php echo '<li>'.$country.'</li> '; ?>
 												
 												<?php } ?>	
+
+													
+
 								</ul>	
 		
 		</div><!-- .meta -->

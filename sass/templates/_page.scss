@@ -29,3 +29,22 @@
 	.entry-content {
 		padding-top: $base-spacing-unit;
 	}
+
+
+	.left-aside-one {
+		@include gs-span(da, 2, 2, (2, 3));
+		@include gs-pad (da, padinfull);
+		padding-top: $base-spacing-unit;
+		padding-bottom: $base-spacing-unit;
+		color: $barjeel-grey;
+
+	}
+
+	.left-aside-two {
+		@include gs-span(da, 3, 3, (2, 3));
+		@include gs-pad (da, padinfull);
+		padding-top: $base-spacing-unit;
+		padding-bottom: $base-spacing-unit;
+		color: $barjeel-grey;
+
+	}

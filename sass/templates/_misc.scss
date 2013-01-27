@@ -33,3 +33,11 @@
   	margin-left: 45%;
   	margin-bottom: $half-spacing-unit;
  }
+
+	.margin-below {
+		margin-bottom: $quarter-spacing-unit;
+	}
+
+	.pad-in {
+		@include gs-pad (da, padinfull);
+	}

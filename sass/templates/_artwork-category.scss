@@ -31,6 +31,36 @@
 	}
 
 
+
+.vignette { 
+	 border-radius: 50%;
+    width:175px;
+    height: 175px;
+ 
+    @include transition-property(box-shadow);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease-in-out);  
+
+      max-width: 100%;
+    /* Part 1: Set a maxium relative to the parent */
+  
+    width: auto\9;
+    /* IE7-8 need help adjusting responsive images */
+  
+    height: auto;
+    /* Part 2: Scale the height according to the width, otherwise you get stretching */
+  
+}
+
+.vignette:hover { 
+  @include box-shadow (rgba($barjeel-blue, 0.3) 0 0 0px $half-spacing-unit inset);
+} 
+
+	img.attachment-cropped-thumb {
+  	z-index: -1;
+ 	 position: relative;
+} 
+
 	.browse {
 		@include gs-span(da, 5, 5, (2, 5));
 		@extend .cf;

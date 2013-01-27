@@ -6,11 +6,15 @@
 									
 								<div class="center round">
 
-								<a href="<?php the_permalink(); ?>">	
+								<a href="<?php the_permalink(); ?>">
+
+								<div class="vignette">	
 								 
 								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
 
-								 endif; ?>						
+								 endif; ?>	
+
+								 </div> <!-- .vignette -->					
 								</a>	
 							
 								<h1 class="artwork-title">

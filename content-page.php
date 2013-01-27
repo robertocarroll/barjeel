@@ -19,9 +19,23 @@
 		
 					<?php the_post_thumbnail ('page-big'); ?>	
 				
-				</div><!-- .page-image -->
+				<div style="clear:left;"></div>
 			
 			<?php endif; ?>	
+
+			<?php $asideone = get_post_meta($post->ID, 'aside-one', true);
+						//Checking if anything exists for the first aside
+						if ($asideone) { ?>
+						<?php echo '<aside class="left-aside-one center round">'.$asideone.'</aside>'; ?>
+					<?php } ?>
+
+			<?php $asidetwo = get_post_meta($post->ID, 'aside-two', true);
+						//Checking if anything exists for the first aside
+						if ($asidetwo) { ?>
+						<?php echo '<aside class="left-aside-two center round">'.$asidetwo.'</aside>'; ?>
+					<?php } ?>	
+
+					</div><!-- .page-image -->	
 
 	<div class="page-text">
 

@@ -366,6 +366,8 @@ function rw_get_the_term_list($id = null, $taxonomy, $parent = true, $before = '
 
 	$html = array();
 
+	if(!empty($terms)) {
+
 	foreach ($terms as $term) {
 
 		if (($parent && 0 == $term->parent) || (!$parent && $term->parent)) {
@@ -377,6 +379,8 @@ function rw_get_the_term_list($id = null, $taxonomy, $parent = true, $before = '
 	}
 
 	return $before . implode($sep, $html) . $after;
+
+	}
 
 }
 

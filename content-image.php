@@ -51,7 +51,7 @@
 												
 												<?php } ?>
 
-									<?php $medium = rw_get_the_term_list(null, 'medium', true, '', ', ', '');  ?>
+									<?php $medium = rw_get_the_term_list(null, 'medium', false, '', ', ', '');  ?>
 								
 												<?php if ( $medium ) { ?>	
 												

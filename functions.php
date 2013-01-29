@@ -125,6 +125,52 @@ function barjeel_widgets_init() {
 		'after_title' => '</h1>',
 	) );
 
+	register_sidebar( array(
+		'name' => __( 'Footer-1', 'barjeel' ),
+		'id' => 'footer-1',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => '</article>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer-2', 'barjeel' ),
+		'id' => 'footer-2',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => '</article>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer-3', 'barjeel' ),
+		'id' => 'footer-3',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => '</article>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer-4', 'barjeel' ),
+		'id' => 'footer-4',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => '</article>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+	register_sidebar( array(
+		'name' => __( 'Footer-5', 'barjeel' ),
+		'id' => 'footer-5',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => '</article>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );
+
+
 }
 add_action( 'widgets_init', 'barjeel_widgets_init' );
 

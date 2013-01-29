@@ -2501,6 +2501,131 @@ img.attachment-cropped-thumb {
   width: 100%;
 }
 
+/* ribbon style */
+/* line 31, ../sass/templates/_contact.scss */
+.ribbon {
+  position: relative;
+}
+
+/* line 35, ../sass/templates/_contact.scss */
+.ribbon-image {
+  border-radius: 50%;
+  position: absolute;
+  top: -50%;
+}
+
+/* line 40, ../sass/templates/_contact.scss */
+.ribbon-wrapper {
+  position: relative;
+  margin-left: 10px;
+  /* @include rotate(-15deg); */
+}
+
+/* line 45, ../sass/templates/_contact.scss */
+.ribbon-front {
+  background-color: #ff3300;
+  height: 36px;
+  width: 224px;
+  position: relative;
+  left: -18px;
+  z-index: 2;
+}
+
+/* line 57, ../sass/templates/_contact.scss */
+.ribbon-front,
+.ribbon-back-left,
+.ribbon-back-right {
+  -webkit-box-shadow: rgba(255, 51, 0, 0.7) 0 0 4px;
+  -moz-box-shadow: rgba(255, 51, 0, 0.7) 0 0 4px;
+  box-shadow: rgba(255, 51, 0, 0.7) 0 0 4px;
+}
+
+/* line 64, ../sass/templates/_contact.scss */
+.ribbon-edge-topleft,
+.ribbon-edge-topright,
+.ribbon-edge-bottomleft,
+.ribbon-edge-bottomright {
+  position: absolute;
+  z-index: 1;
+  border-style: solid;
+  height: 0px;
+  width: 0px;
+}
+
+/* line 77, ../sass/templates/_contact.scss */
+.ribbon-edge-bottomleft,
+.ribbon-edge-bottomright {
+  top: 36px;
+}
+
+/* line 82, ../sass/templates/_contact.scss */
+.ribbon-edge-topleft,
+.ribbon-edge-bottomleft {
+  left: -18px;
+  border-color: transparent #cc2900 transparent transparent;
+}
+
+/* line 87, ../sass/templates/_contact.scss */
+.ribbon-edge-topleft {
+  top: -9px;
+  border-width: 9px 18px 0 0;
+}
+
+/* line 91, ../sass/templates/_contact.scss */
+.ribbon-edge-bottomleft {
+  border-width: 0 18px 0px 0;
+}
+
+/* line 96, ../sass/templates/_contact.scss */
+.ribbon-edge-topright,
+.ribbon-edge-bottomright {
+  left: 188px;
+  border-color: transparent transparent transparent #cc2900;
+}
+
+/* line 101, ../sass/templates/_contact.scss */
+.ribbon-edge-topright {
+  top: -9px;
+  border-width: 9px 0 0 18px;
+}
+
+/* line 105, ../sass/templates/_contact.scss */
+.ribbon-edge-bottomright {
+  border-width: 0 0 0px 18px;
+}
+
+/* line 109, ../sass/templates/_contact.scss */
+.ribbon-back-left {
+  position: absolute;
+  top: -9px;
+  left: 0px;
+  width: 0px;
+  height: 36px;
+  z-index: 0;
+}
+
+/* line 118, ../sass/templates/_contact.scss */
+.ribbon-back-right {
+  position: absolute;
+  top: -9px;
+  right: 0px;
+  width: 0px;
+  height: 36px;
+  z-index: 0;
+}
+
+/* line 128, ../sass/templates/_contact.scss */
+.ribbon-front h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10.5px;
+}
+
+/* line 137, ../sass/templates/_contact.scss */
+.ribbon-front h1 a {
+  color: white;
+}
+
 /*------------------------------------*\
     $Exhibition category 
 \*------------------------------------*/
@@ -2617,6 +2742,56 @@ footer[role="contentinfo"] {
   float: left;
   margin-left: 0;
   width: 100%;
+}
+
+/* line 33, ../sass/templates/_footer.scss */
+.address-footer {
+  padding-top: 21px;
+}
+
+/* line 37, ../sass/templates/_footer.scss */
+.footer-logo {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 14.34887%;
+}
+
+/* line 41, ../sass/templates/_footer.scss */
+.twitter-one {
+  display: block;
+  float: left;
+  margin-left: 16.57193%;
+  margin-right: -100%;
+  width: 19.19919%;
+}
+
+/* line 45, ../sass/templates/_footer.scss */
+.twitter-two {
+  display: block;
+  float: left;
+  margin-left: 37.99419%;
+  margin-right: -100%;
+  width: 19.18656%;
+}
+
+/* line 49, ../sass/templates/_footer.scss */
+.twitter-three {
+  display: block;
+  float: left;
+  margin-left: 59.40381%;
+  margin-right: -100%;
+  width: 19.18656%;
+}
+
+/* line 53, ../sass/templates/_footer.scss */
+.twitter-four {
+  display: block;
+  float: left;
+  margin-left: 80.81344%;
+  margin-right: -100%;
+  width: 19.18656%;
 }
 
 /*------------------------------------*\
@@ -3773,7 +3948,7 @@ p {
 }
 
 /* line 13, ../sass/templates/_typography.scss */
-.bold, .artwork-title, .artist-name, .browse-title, .list-title, .entry-title {
+.bold, .artwork-title, .artist-name, .browse-title, .list-title, .entry-title, .ribbon-front h1 {
   font-style: normal;
   font-weight: 700;
 }
@@ -3791,7 +3966,7 @@ p {
 }
 
 /* line 28, ../sass/templates/_typography.scss */
-.small, .artwork-title, .artist-name, .browse-title, .list-title {
+.small, .artwork-title, .artist-name, .browse-title, .list-title, .ribbon-front h1 {
   font-size: 12px;
   line-height: 14px;
 }

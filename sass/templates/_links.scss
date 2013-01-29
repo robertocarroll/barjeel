@@ -10,12 +10,14 @@
 	a:hover, a:focus {color: $barjeel-red !important; text-decoration: none;} 
 	
 	/*  Link that's been clicked on */
-	a:visited {color: $barjeel-grey;}
+	a:visited {}
 	
 	/*  When the link is being clicked	 */
-	a:active { color: #005580;}
+	a:active { color: $barjeel-red;}
 	
-	p a, p a:visited { line-height: inherit; }
+	p a { color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out); }
+
+	p a:hover, p a:focus {color: $barjeel-link-blue !important; text-decoration: none;} 
 	
 	/*	 
 	   No text-shadow: twitter.com/miketaylr/status/12228805301 
@@ -28,3 +30,11 @@
 	
 	/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 	a:hover, a:active { outline: none; }
+
+
+
+	/*  Exhibition link */
+	.meta-link a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
+	
+	/*  Hover over */	
+	.meta-link a:hover, .meta-link a:focus {color: $barjeel-link-blue !important; text-decoration: none;} 

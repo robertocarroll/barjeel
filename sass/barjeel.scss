@@ -37,14 +37,15 @@
 @import "templates/links.scss";
 @import "templates/lists.scss";
 @import "templates/menu.scss";
-@import "templates/minimal-light-skin.scss";
 @import "templates/misc.scss";
-@import "templates/page.scss";
 @import "templates/navigation.scss";
+@import "templates/page.scss";
 @import "templates/pagination.scss";
+@import "templates/royalslider.scss";
+
 @import "templates/select-box.scss";
-@import "templates/touchcarousel.scss";
 @import "templates/typography.scss";
+@import "templates/rs-default-inverted.scss";
 
 
 
@@ -53,11 +54,13 @@
  */
 
 body {
+  background-image: url(../images/background.jpg);
+  background-repeat: repeat;
+  color: $barjeel-text-grey;
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
   font-weight: 400;
-	background-image: url(../images/background.jpg);
-	background-repeat: repeat;
+	
 }
 
 

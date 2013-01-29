@@ -31,17 +31,16 @@ jQuery(document).ready(function($){
 
 jQuery(document).ready(function($){
 
-  $("#carousel-gallery").touchCarousel({        
-        itemsPerPage: 1,        
-        scrollbar: true,
-        scrollbarAutoHide: false,
-        scrollbarTheme: "dark",       
-        pagingNav: false,
-        snapToItems: true,
-        scrollToLast: true,
-        useWebkit3d: true,        
-        loopItems: false
-      }); 
+  jQuery(document).ready(function($) {
+        $(".royalSlider").royalSlider({
+            autoScaleSliderWidth: 960,
+            autoScaleSliderHeight: 750,
+            keyboardNavEnabled: true,
+            imageAlignCenter: true,
+            arrowsNavAutoHide: true,
+            arrowsNavHideOnTouch: true
+        });  
+    });
 
 
 });

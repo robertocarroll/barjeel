@@ -3,6 +3,7 @@
 \*------------------------------------*/
 	
 	p {
+		color: $barjeel-text-grey;	
 		font-family: "adelle-sans",sans-serif;
 		font-style: normal;
 		font-weight: 400;
@@ -35,6 +36,8 @@
 	}
 
 	.no-padding {margin: 0;}
+
+	.uppercase {text-transform: uppercase;}
 
 	/*  <strong>For emphasizing a snippet of text with important</strong> */
 	strong {

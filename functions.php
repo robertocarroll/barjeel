@@ -92,7 +92,7 @@ function barjeel_scripts() {
 	
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/javascripts/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
 
-	wp_enqueue_script( 'touchcarousel', get_template_directory_uri() . '/javascripts/jquery.touchcarousel-1.1.min.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'touchcarousel', get_template_directory_uri() . '/javascripts/jquery.royalslider.min.js', array( 'jquery' ), '20120206', true );
 
 	wp_enqueue_script( 'customselect', get_template_directory_uri() . '/javascripts/customSelect.jquery.min.js', array( 'jquery' ), '20120206', true );
 		

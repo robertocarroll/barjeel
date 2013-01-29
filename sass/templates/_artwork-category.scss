@@ -51,9 +51,11 @@
     /* Part 2: Scale the height according to the width, otherwise you get stretching */
   
 }
+	
+/* For the circle rollovers  */
 
 .vignette:hover { 
-  @include box-shadow (rgba($barjeel-blue, 0.3) 0 0 0px $half-spacing-unit inset);
+  @include box-shadow (rgba($barjeel-blue, $barjeel-hover-opacity) 0 0 0px $half-spacing-unit inset);
 } 
 
 	img.attachment-cropped-thumb {
@@ -101,7 +103,15 @@
  		content: "";
  	} 	
 
+ 	/* Makes the "see more" blue  */
 
+ 	.menu-item-772 a, .menu-item-775 a {
+ 		color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);
+ 	}
+
+ 	.menu-item-772 a:hover, .menu-item-775 a:hover {
+ 		color: $barjeel-link-blue !important; text-decoration: none;
+ 	} 
 
  	.browse-title {
 		@extend .bold;
@@ -113,11 +123,10 @@
 	}
 
 	.list-title {
-		@extend .light;
+		@extend .bold;
 		@extend .small;
 		padding-bottom: $half-spacing-unit;
 		margin: 0;
 		color: $barjeel-grey;
-		text-transform: uppercase;
 	}
 

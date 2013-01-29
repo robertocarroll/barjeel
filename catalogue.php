@@ -54,7 +54,7 @@
 								
 												<?php if ( $country ) { ?>	
 												
-													<?php echo '<li>'.$country.'</li> '; ?>
+													<?php echo '<li class="meta-link">'.$country.'</li> '; ?>
 												
 												<?php } ?>			
 

@@ -44,20 +44,20 @@ Template Name: Home Page
 
 							<div class="square">&nbsp;</div>
 
-							<a href="<?php the_permalink(); ?>">	
-	 
-								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'cropped-thumb'); 
+							<?php	$fpw_img_tag = MultiPostThumbnails::get_the_post_thumbnail('post', 'feature-image-2', NULL,  'cropped-thumb');	?>
 
-								 endif; ?>			
+							<?php if (!empty($fpw_img_tag)) {
 
-								</a>	
+								echo '<a href="'.get_permalink().'"><div class="vignette-square">'.$fpw_img_tag.'</div></a>';
+							}
+							?>
 															
 							<h1 class="gamma bold article-list"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 							<?php $dates = get_post_meta($post->ID, 'Dates', true);
 								//Checking if anything exists for the dates
 								if ($dates) { ?>
-								<?php echo '<h2 class="date epsilon bold e-date">'.$dates.'</h2>'; ?>
+								<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
 									 				
 						</article>

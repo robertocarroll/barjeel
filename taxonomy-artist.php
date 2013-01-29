@@ -13,14 +13,14 @@
 
 				<?php if ( $total_posts > 1 ) { ?>	
 
-				<div id="carousel-gallery" class="touchcarousel minimal-light"> 	
+				<div class="exhibition-slideshow">
 
-					<ul class="touchcarousel-container">	
+				<div class="royalSlider rsDefaultInv">	
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 						
-							 <li class="touchcarousel-item">
+							 <div class="rsContent">
 		
 									<?php
 									if ( has_post_thumbnail() ){ ?>
@@ -43,18 +43,13 @@
 								<?php $exhibition_meta[] = $exhibitions; ?>	
 
 
-							</li><!-- .touchcarousel-item -->
-
-
+							</div><!-- .rsContent-->
 
 				<?php endwhile; ?>
-
-
-
-				</ul>
 				
 				</div><!-- .carousel-gallery-->
 
+			</div><!-- .slideshow-->
 
 				<?php } ?>	
 
@@ -65,7 +60,7 @@
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 						
-							 <div class="featured-image center grey">
+							 <div class="featured-image center">
 		
 									<?php
 									if ( has_post_thumbnail() ){ ?>
@@ -122,7 +117,7 @@
 								
 												<?php if ( $country ) { ?>	
 												
-													<?php echo '<li>'.$country.'</li> '; ?>
+													<?php echo '<li class="meta-link">'.$country.'</li> '; ?>
 												
 												<?php } ?>	
 
@@ -132,7 +127,7 @@
 
 												list($value) = $exhibition_meta;
 							  						
-							  							print '<li>'.$value.'</li>'; 
+							  							print '<li class="meta-link">'.$value.'</li>'; 
 														
 													?>		
 										<?php } ?>

@@ -860,7 +860,7 @@ pre,
 .media,
 .island,
 .islet {
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   margin-bottom: 1.5rem;
 }
 /* line 28, ../sass/inuit/generic/_shared.scss */
@@ -873,7 +873,7 @@ pre, .islet .form-fields > li, .islet
 .media, .islet
 .island, .islet
 .islet {
-  margin-bottom: 12px;
+  margin-bottom: 10.5px;
   margin-bottom: 0.75rem;
 }
 
@@ -882,7 +882,7 @@ pre, .islet .form-fields > li, .islet
  */
 /* line 38, ../sass/inuit/generic/_shared.scss */
 .landmark {
-  margin-bottom: 48px;
+  margin-bottom: 42px;
   margin-bottom: 3rem;
 }
 
@@ -892,8 +892,8 @@ pre, .islet .form-fields > li, .islet
  */
 /* line 48, ../sass/inuit/generic/_shared.scss */
 hr {
-  margin-bottom: 22px;
-  margin-bottom: 1.375rem;
+  margin-bottom: 19px;
+  margin-bottom: 1.35714rem;
 }
 
 /**
@@ -902,7 +902,7 @@ hr {
  */
 /* line 58, ../sass/inuit/generic/_shared.scss */
 ul, ol, dd {
-  margin-left: 48px;
+  margin-left: 42px;
   margin-left: 3rem;
 }
 
@@ -914,7 +914,7 @@ ul, ol, dd {
 \*------------------------------------*/
 /* line 4, ../sass/inuit/base/_main.scss */
 html {
-  font: 1em/1.5 serif;
+  font: 0.875em/1.5 serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -931,44 +931,44 @@ html {
  */
 /* line 11, ../sass/inuit/base/_headings.scss */
 h1, .alpha {
-  font-size: 32px;
-  font-size: 2rem;
-  line-height: 1.5;
+  font-size: 30px;
+  font-size: 2.14286rem;
+  line-height: 1.4;
 }
 
 /* line 14, ../sass/inuit/base/_headings.scss */
 h2, .beta, .entry-title {
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 1.71429;
+  font-size: 26px;
+  font-size: 1.85714rem;
+  line-height: 1.61538;
 }
 
 /* line 17, ../sass/inuit/base/_headings.scss */
 h3, .gamma {
-  font-size: 26px;
-  font-size: 1.625rem;
-  line-height: 1.84615;
+  font-size: 24px;
+  font-size: 1.71429rem;
+  line-height: 1.75;
 }
 
 /* line 20, ../sass/inuit/base/_headings.scss */
 h4, .delta {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.2;
+  font-size: 18px;
+  font-size: 1.28571rem;
+  line-height: 1.16667;
 }
 
 /* line 23, ../sass/inuit/base/_headings.scss */
 h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list {
-  font-size: 16px;
+  font-size: 14px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 /* line 26, ../sass/inuit/base/_headings.scss */
 h6, .zeta {
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.6;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 1.75;
 }
 
 /**
@@ -993,22 +993,22 @@ hgroup .hN {
 /* line 52, ../sass/inuit/base/_headings.scss */
 .giga {
   font-size: 96px;
-  font-size: 6rem;
-  line-height: 1;
+  font-size: 6.85714rem;
+  line-height: 1.09375;
 }
 
 /* line 55, ../sass/inuit/base/_headings.scss */
 .mega {
   font-size: 72px;
-  font-size: 4.5rem;
-  line-height: 1;
+  font-size: 5.14286rem;
+  line-height: 1.16667;
 }
 
 /* line 58, ../sass/inuit/base/_headings.scss */
 .kilo {
   font-size: 48px;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 3.42857rem;
+  line-height: 1.3125;
 }
 
 /*------------------------------------*\
@@ -1021,7 +1021,7 @@ hgroup .hN {
 /* line 9, ../sass/inuit/base/_paragraphs.scss */
 .lede,
 .lead {
-  font-size: 18px;
+  font-size: 15.75px;
   font-size: 1.125rem;
   line-height: 1.33333;
 }
@@ -1035,16 +1035,16 @@ hgroup .hN {
 /* line 8, ../sass/inuit/base/_smallprint.scss */
 .smallprint,
 .milli {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 1.75;
 }
 
 /* line 11, ../sass/inuit/base/_smallprint.scss */
 .micro, .artwork-meta, .pagination {
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 2;
+  font-size: 10px;
+  font-size: 0.71429rem;
+  line-height: 2.1;
 }
 
 /*------------------------------------*\
@@ -1265,22 +1265,22 @@ img {
 /* line 16, ../sass/inuit/base/_images.scss */
 .img--right {
   float: right;
-  margin-bottom: 24px;
-  margin-left: 24px;
+  margin-bottom: 21px;
+  margin-left: 21px;
 }
 
 /* line 21, ../sass/inuit/base/_images.scss */
 .img--left {
   float: left;
-  margin-right: 24px;
-  margin-bottom: 24px;
+  margin-right: 21px;
+  margin-bottom: 21px;
 }
 
 /* line 26, ../sass/inuit/base/_images.scss */
 .img--center {
   display: block;
   margin-right: auto;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   margin-left: auto;
 }
 
@@ -1292,17 +1292,17 @@ img {
  */
 /* line 40, ../sass/inuit/base/_images.scss */
 .img--short {
-  height: 120px;
+  height: 105px;
 }
 
 /* line 43, ../sass/inuit/base/_images.scss */
 .img--medium {
-  height: 240px;
+  height: 210px;
 }
 
 /* line 46, ../sass/inuit/base/_images.scss */
 .img--tall {
-  height: 360px;
+  height: 315px;
 }
 
 /**
@@ -1399,14 +1399,14 @@ table {
 /* line 62, ../sass/inuit/base/_tables.scss */
 th,
 td {
-  padding: 6px;
+  padding: 5.25px;
   text-align: left;
 }
 @media screen and (min-width: 480px) {
   /* line 62, ../sass/inuit/base/_tables.scss */
   th,
   td {
-    padding: 12px;
+    padding: 10.5px;
   }
 }
 
@@ -1628,7 +1628,7 @@ td {
  */
 /* line 9, ../sass/inuit/base/_forms.scss */
 fieldset {
-  padding: 24px;
+  padding: 21px;
 }
 
 /**
@@ -1893,7 +1893,7 @@ label,
 }
 /* line 92, ../sass/inuit/objects/_nav.scss */
 .nav--block > li > a {
-  padding: 12px;
+  padding: 10.5px;
 }
 
 /**
@@ -1968,13 +1968,13 @@ label,
 
 /* line 27, ../sass/inuit/objects/_pagination.scss */
 .pagination > li {
-  padding: 12px;
+  padding: 10.5px;
 }
 
 /* line 30, ../sass/inuit/objects/_pagination.scss */
 .pagination > li > a {
-  padding: 12px;
-  margin: -12px;
+  padding: 10.5px;
+  margin: -10.5px;
 }
 
 /* line 34, ../sass/inuit/objects/_pagination.scss */
@@ -2012,7 +2012,7 @@ label,
 /* line 22, ../sass/inuit/objects/_media.scss */
 .media__img {
   float: left;
-  margin-right: 24px;
+  margin-right: 21px;
 }
 
 /**
@@ -2021,7 +2021,7 @@ label,
 /* line 29, ../sass/inuit/objects/_media.scss */
 .media__img--rev {
   float: right;
-  margin-left: 24px;
+  margin-left: 21px;
 }
 
 /* line 35, ../sass/inuit/objects/_media.scss */
@@ -2046,12 +2046,12 @@ label,
  */
 /* line 51, ../sass/inuit/objects/_media.scss */
 .islet .media__img {
-  margin-right: 12px;
+  margin-right: 10.5px;
 }
 
 /* line 54, ../sass/inuit/objects/_media.scss */
 .islet .media__img--rev {
-  margin-left: 12px;
+  margin-left: 10.5px;
 }
 
 /*------------------------------------*\
@@ -2071,9 +2071,9 @@ label,
  */
 /* line 16, ../sass/inuit/objects/_marginalia.scss */
 .marginalia {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.71429;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  line-height: 1.75;
 }
 
 /**
@@ -2095,7 +2095,7 @@ label,
   /* line 34, ../sass/inuit/objects/_marginalia.scss */
   .marginalia__body {
     right: 100%;
-    padding-right: 24px;
+    padding-right: 21px;
     text-align: right;
   }
 
@@ -2105,7 +2105,7 @@ label,
   /* line 43, ../sass/inuit/objects/_marginalia.scss */
   .marginalia__body--right {
     left: 100%;
-    padding-left: 24px;
+    padding-left: 21px;
     text-align: left;
   }
 }
@@ -2226,58 +2226,24 @@ label,
 /*------------------------------------*\
     $Artist
 \*------------------------------------*/
-/**
-		* "Free-scroll" gallery
-		**/
-/* line 9, ../sass/templates/_artist.scss */
-#carousel-gallery {
-  width: 100%;
-  margin: 0;
-  padding: 0px 0;
-  background: #999999;
-  overflow: hidden !important;
+/* line 5, ../sass/templates/_artist.scss */
+.royalSlider {
+  width: 100% !important;
+  height: 400px !important;
 }
 
-/* line 16, ../sass/templates/_artist.scss */
-#carousel-gallery .touchcarousel-wrapper {
-  overflow: visible;
-  margin-left: 80px;
+/* line 10, ../sass/templates/_artist.scss */
+.rsContent {
+  text-align: center !important;
 }
 
-/* line 20, ../sass/templates/_artist.scss */
-#carousel-gallery .touchcarousel-item {
-  margin-right: 15px;
-  background: #999999;
-  height: 400px;
-}
-
-/* line 26, ../sass/templates/_artist.scss */
-#carousel-gallery .arrow-icon.left {
-  left: 25px;
-}
-
-/* line 29, ../sass/templates/_artist.scss */
-#carousel-gallery .arrow-icon.right {
-  right: 25px;
-}
-
-/* line 32, ../sass/templates/_artist.scss */
-#carousel-gallery .arrow-holder {
-  width: 60px;
-}
-
-/* line 35, ../sass/templates/_artist.scss */
-#carousel-gallery .scrollbar-holder {
-  bottom: 0px;
-}
-
-/* line 39, ../sass/templates/_artist.scss */
+/* line 13, ../sass/templates/_artist.scss */
 .artist-text {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
-/* line 45, ../sass/templates/_artist.scss */
+/* line 19, ../sass/templates/_artist.scss */
 .artist-detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2291,7 +2257,7 @@ label,
 \*------------------------------------*/
 /* line 5, ../sass/templates/_artwork-category.scss */
 .page-header {
-  padding-bottom: 48px;
+  padding-bottom: 42px;
 }
 
 /* line 10, ../sass/templates/_artwork-category.scss */
@@ -2358,20 +2324,21 @@ label,
   /* Part 2: Scale the height according to the width, otherwise you get stretching */
 }
 
-/* line 55, ../sass/templates/_artwork-category.scss */
+/* For the circle rollovers  */
+/* line 57, ../sass/templates/_artwork-category.scss */
 .vignette:hover {
-  -webkit-box-shadow: rgba(102, 187, 221, 0.3) 0 0 0px 12px inset;
-  -moz-box-shadow: rgba(102, 187, 221, 0.3) 0 0 0px 12px inset;
-  box-shadow: rgba(102, 187, 221, 0.3) 0 0 0px 12px inset;
+  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
+  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
+  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
 }
 
-/* line 59, ../sass/templates/_artwork-category.scss */
+/* line 61, ../sass/templates/_artwork-category.scss */
 img.attachment-cropped-thumb {
   z-index: -1;
   position: relative;
 }
 
-/* line 64, ../sass/templates/_artwork-category.scss */
+/* line 66, ../sass/templates/_artwork-category.scss */
 .browse {
   display: block;
   float: left;
@@ -2380,94 +2347,116 @@ img.attachment-cropped-thumb {
   width: 22.99773%;
 }
 
-/* line 70, ../sass/templates/_artwork-category.scss */
+/* line 72, ../sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
-  padding-top: 12px;
+  padding-top: 10.5px;
   margin: 0;
 }
 
-/* line 78, ../sass/templates/_artwork-category.scss */
+/* line 80, ../sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 90, ../sass/templates/_artwork-category.scss */
+/* line 92, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 96, ../sass/templates/_artwork-category.scss */
+/* line 98, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 100, ../sass/templates/_artwork-category.scss */
+/* line 102, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   content: "";
 }
 
-/* line 106, ../sass/templates/_artwork-category.scss */
+/* Makes the "see more" blue  */
+/* line 108, ../sass/templates/_artwork-category.scss */
+.menu-item-772 a, .menu-item-775 a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 112, ../sass/templates/_artwork-category.scss */
+.menu-item-772 a:hover, .menu-item-775 a:hover {
+  color: #3388aa !important;
+  text-decoration: none;
+}
+
+/* line 116, ../sass/templates/_artwork-category.scss */
 .browse-title {
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   margin: 0;
   color: #66bbdd;
   text-transform: uppercase;
 }
 
-/* line 115, ../sass/templates/_artwork-category.scss */
+/* line 125, ../sass/templates/_artwork-category.scss */
 .list-title {
-  padding-bottom: 12px;
+  padding-bottom: 10.5px;
   margin: 0;
   color: #999999;
-  text-transform: uppercase;
 }
 
 /*------------------------------------*\
     $Artwork single
 \*------------------------------------*/
 /* line 6, ../sass/templates/_artwork-single.scss */
-.entry-title {
-  padding-top: 24px;
-  padding-bottom: 6px;
-  margin: 0;
-  color: #999999;
-  line-height: 28px;
+.featured-image {
+  background: #cccccc;
 }
 
-/* line 17, ../sass/templates/_artwork-single.scss */
+/* line 10, ../sass/templates/_artwork-single.scss */
+.entry-title {
+  padding-top: 21px;
+  padding-bottom: 5.25px;
+  margin: 0;
+  color: #999999;
+  line-height: 26px;
+}
+
+/* line 21, ../sass/templates/_artwork-single.scss */
 .entry-meta {
-  padding-bottom: 24px;
+  padding-bottom: 21px;
   margin-bottom: 0;
 }
 
-/* line 26, ../sass/templates/_artwork-single.scss */
+/* line 30, ../sass/templates/_artwork-single.scss */
 .entry-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 32, ../sass/templates/_artwork-single.scss */
+/* line 36, ../sass/templates/_artwork-single.scss */
 .entry-meta > li:after {
   content: " / ";
 }
 
-/* line 36, ../sass/templates/_artwork-single.scss */
+/* line 40, ../sass/templates/_artwork-single.scss */
 .entry-meta > li:last-child:after {
   content: "";
 }
 
-/* line 40, ../sass/templates/_artwork-single.scss */
+/* line 44, ../sass/templates/_artwork-single.scss */
 .related-title {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10.5px;
+  padding-bottom: 10.5px;
   margin: 0;
   color: #999999;
 }
 
-/* line 49, ../sass/templates/_artwork-single.scss */
+/* line 53, ../sass/templates/_artwork-single.scss */
 #sort-entry {
   display: block;
   float: left;
@@ -2492,7 +2481,7 @@ img.attachment-cropped-thumb {
   -ms-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
-  padding: 24px;
+  padding: 21px;
 }
 
 /* line 15, ../sass/templates/_contact.scss */
@@ -2517,7 +2506,7 @@ img.attachment-cropped-thumb {
 \*------------------------------------*/
 /* line 5, ../sass/templates/_exhibition-category.scss */
 .exhibition-tease {
-  padding-top: 48px;
+  padding-top: 42px;
 }
 
 /*------------------------------------*\
@@ -2543,18 +2532,18 @@ img.attachment-cropped-thumb {
 
 /* line 15, ../sass/templates/_exhibition-single.scss */
 .exhibition-slideshow {
-  padding-bottom: 24px;
-  background: #999999;
+  padding-bottom: 21px;
+  background: #cccccc;
 }
 
 /* line 20, ../sass/templates/_exhibition-single.scss */
 .exhibition-title {
-  padding-top: 48px;
+  padding-top: 42px;
 }
 
 /* line 25, ../sass/templates/_exhibition-single.scss */
 .rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
-  background: none repeat scroll 0 0 #999999 !important;
+  background: none repeat scroll 0 0 #cccccc !important;
 }
 
 /* line 37, ../sass/templates/_exhibition-single.scss */
@@ -2566,7 +2555,7 @@ img.attachment-cropped-thumb {
 .exhibition-meta-list > li:after {
   color: #999999;
   content: " / ";
-  padding-left: 6px;
+  padding-left: 5.25px;
 }
 
 /* line 47, ../sass/templates/_exhibition-single.scss */
@@ -2581,7 +2570,7 @@ img.attachment-cropped-thumb {
   -ms-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
-  padding-bottom: 24px;
+  padding-bottom: 21px;
 }
 
 /* line 57, ../sass/templates/_exhibition-single.scss */
@@ -2595,7 +2584,7 @@ img.attachment-cropped-thumb {
 
 /* line 62, ../sass/templates/_exhibition-single.scss */
 .related-list {
-  padding-bottom: 48px;
+  padding-bottom: 42px;
 }
 
 /*------------------------------------*\
@@ -2644,7 +2633,7 @@ header[role="banner"] {
 
 /* line 9, ../sass/templates/_header.scss */
 .logo {
-  padding: 24px 0 72px 0;
+  padding: 21px 0 63px 0;
 }
 
 /*------------------------------------*\
@@ -2675,23 +2664,23 @@ header[role="banner"] {
 
 /* line 15, ../sass/templates/_homepage.scss */
 .main-title, .exhibition-title {
-  line-height: 28px;
-  margin-bottom: 12px;
+  line-height: 26px;
+  margin-bottom: 10.5px;
   text-transform: uppercase;
 }
 
 /* line 21, ../sass/templates/_homepage.scss */
 .date, .exhibition-meta-list {
   color: #ff3300;
-  line-height: 20px;
-  margin-bottom: 12px;
+  line-height: 18px;
+  margin-bottom: 10.5px;
   text-transform: uppercase;
 }
 
 /* line 28, ../sass/templates/_homepage.scss */
 .e-date {
   color: #66bbdd;
-  margin-bottom: 6px;
+  margin-bottom: 5.25px;
 }
 
 /* line 38, ../sass/templates/_homepage.scss */
@@ -2721,9 +2710,9 @@ header[role="banner"] {
 
 /* line 58, ../sass/templates/_homepage.scss */
 .vignette-large:hover {
-  -webkit-box-shadow: rgba(102, 187, 221, 0.3) 0 0 0px 24px inset;
-  -moz-box-shadow: rgba(102, 187, 221, 0.3) 0 0 0px 24px inset;
-  box-shadow: rgba(102, 187, 221, 0.3) 0 0 0px 24px inset;
+  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
+  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
+  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
 }
 
 /* line 63, ../sass/templates/_homepage.scss */
@@ -2734,15 +2723,15 @@ img.attachment-homepage-thumb {
 
 /* line 68, ../sass/templates/_homepage.scss */
 .article-row {
-  padding-top: 48px;
+  padding-top: 42px;
 }
 
 /* line 72, ../sass/templates/_homepage.scss */
 .article-list {
-  line-height: 28px;
-  margin-bottom: 6px;
+  line-height: 26px;
+  margin-bottom: 5.25px;
   text-transform: uppercase;
-  padding-top: 12px;
+  padding-top: 10.5px;
 }
 
 /* line 79, ../sass/templates/_homepage.scss */
@@ -2972,33 +2961,40 @@ a:hover, a:focus {
 }
 
 /*  Link that's been clicked on */
-/* line 13, ../sass/templates/_links.scss */
-a:visited {
-  color: #999999;
-}
-
 /*  When the link is being clicked	 */
 /* line 16, ../sass/templates/_links.scss */
 a:active {
-  color: #005580;
+  color: #ff3300;
 }
 
 /* line 18, ../sass/templates/_links.scss */
-p a, p a:visited {
-  line-height: inherit;
+p a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 20, ../sass/templates/_links.scss */
+p a:hover, p a:focus {
+  color: #3388aa !important;
+  text-decoration: none;
 }
 
 /*	 
    No text-shadow: twitter.com/miketaylr/status/12228805301 
    Also: highlight colour for selection */
-/* line 23, ../sass/templates/_links.scss */
+/* line 25, ../sass/templates/_links.scss */
 ::-moz-selection {
   background: #ff3300;
   color: #fff;
   text-shadow: none;
 }
 
-/* line 24, ../sass/templates/_links.scss */
+/* line 26, ../sass/templates/_links.scss */
 ::selection {
   background: #ff3300;
   color: #fff;
@@ -3006,15 +3002,34 @@ p a, p a:visited {
 }
 
 /*  j.mp/webkit-tap-highlight-color */
-/* line 27, ../sass/templates/_links.scss */
+/* line 29, ../sass/templates/_links.scss */
 a:link {
   -webkit-tap-highlight-color: #ff3300;
 }
 
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
-/* line 30, ../sass/templates/_links.scss */
+/* line 32, ../sass/templates/_links.scss */
 a:hover, a:active {
   outline: none;
+}
+
+/*  Exhibition link */
+/* line 37, ../sass/templates/_links.scss */
+.meta-link a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/*  Hover over */
+/* line 40, ../sass/templates/_links.scss */
+.meta-link a:hover, .meta-link a:focus {
+  color: #3388aa !important;
+  text-decoration: none;
 }
 
 /*------------------------------------*\
@@ -3152,102 +3167,6 @@ nav[role="navigation"] {
   color: #ff3300 !important;
 }
 
-/******************************************************\
-*
-*  Minimal Light Skin
-*
-*    1. Arrows(direction) navigation
-*    2. Paging navigation
-*
-\******************************************************/
-/******************************************************\
-*
-*  1. Arrows (direction) navigation
-*
-\******************************************************/
-/* line 17, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-icon {
-  width: 23px;
-  height: 28px;
-  margin-top: -14px;
-}
-
-/* line 22, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-icon.left {
-  left: 5px;
-  background: url("sprite.png") no-repeat -6px -7px;
-}
-
-/* line 26, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-icon.right {
-  right: 5px;
-  background: url("sprite.png") no-repeat -173px -7px;
-}
-
-/* line 30, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-holder.disabled {
-  -moz-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-}
-
-/* line 35, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.left {
-  background: url("sprite.png") no-repeat -40px -7px;
-}
-
-/* line 38, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-holder.disabled .arrow-icon.right {
-  background: url("sprite.png") no-repeat -139px -7px;
-}
-
-/* line 41, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-holder {
-  width: 35px;
-  -moz-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-}
-
-/* line 47, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .arrow-holder:hover {
-  -moz-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-}
-
-/******************************************************\
-*
-*  2. Paging navigation
-*
-\******************************************************/
-/* line 58, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .tc-paging-container {
-  margin-top: -22px;
-}
-
-/* line 61, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .tc-paging-item {
-  background: url("sprite.png") no-repeat -95px -4px;
-  width: 16px;
-  height: 16px;
-  -moz-opacity: 0.8;
-  -webkit-opacity: 0.8;
-  opacity: 0.8;
-}
-
-/* line 71, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .tc-paging-item.current {
-  background: url("sprite.png") no-repeat -95px -22px;
-}
-
-/* line 74, ../sass/templates/_minimal-light-skin.scss */
-.touchcarousel.minimal-light .tc-paging-item:hover {
-  -moz-opacity: 1;
-  -webkit-opacity: 1;
-  opacity: 1;
-}
-
 /*------------------------------------*\
     $Misc
 \*------------------------------------*/
@@ -3315,12 +3234,12 @@ nav[role="navigation"] {
   width: 15px;
   height: 15px;
   margin-left: 45%;
-  margin-bottom: 12px;
+  margin-bottom: 10.5px;
 }
 
 /* line 37, ../sass/templates/_misc.scss */
 .margin-below {
-  margin-bottom: 6px;
+  margin-bottom: 5.25px;
 }
 
 /* line 41, ../sass/templates/_misc.scss */
@@ -3333,13 +3252,16 @@ nav[role="navigation"] {
 }
 
 /*------------------------------------*\
+    $Navigation
+\*------------------------------------*/
+/*------------------------------------*\
     $Page
 \*------------------------------------*/
 /* line 5, ../sass/templates/_page.scss */
 .page-intro {
   text-align: right;
-  padding-bottom: 48px;
-  padding-top: 12px;
+  padding-bottom: 42px;
+  padding-top: 10.5px;
 }
 
 /* line 12, ../sass/templates/_page.scss */
@@ -3380,7 +3302,7 @@ nav[role="navigation"] {
 
 /* line 29, ../sass/templates/_page.scss */
 .entry-content {
-  padding-top: 24px;
+  padding-top: 21px;
 }
 
 /* line 34, ../sass/templates/_page.scss */
@@ -3395,8 +3317,8 @@ nav[role="navigation"] {
   box-sizing: border-box;
   padding-left: 2.22222%;
   padding-right: 2.22222%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   color: #999999;
 }
 
@@ -3412,14 +3334,11 @@ nav[role="navigation"] {
   box-sizing: border-box;
   padding-left: 2.22222%;
   padding-right: 2.22222%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 21px;
+  padding-bottom: 21px;
   color: #999999;
 }
 
-/*------------------------------------*\
-    $Navigation
-\*------------------------------------*/
 /*------------------------------------*\
     $Pagination
 \*------------------------------------*/
@@ -3432,17 +3351,356 @@ nav[role="navigation"] {
   width: 100%;
   text-align: justify;
   text-transform: uppercase;
-  margin-top: 24px;
+  margin-top: 21px;
 }
 
 /* line 16, ../sass/templates/_pagination.scss */
 .pagination .page-numbers {
-  padding: 24px;
+  padding: 21px;
 }
 
 /* line 20, ../sass/templates/_pagination.scss */
 .pagination .current {
   color: #ff3300;
+}
+
+/* v1.0.3 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+/* line 3, ../sass/templates/_royalslider.scss */
+.royalSlider {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  direction: ltr;
+  overflow: visible;
+}
+
+/* line 10, ../sass/templates/_royalslider.scss */
+.royalSlider > * {
+  float: left;
+}
+
+/* line 13, ../sass/templates/_royalslider.scss */
+.royalSlider img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  max-width: none;
+}
+
+/* line 22, ../sass/templates/_royalslider.scss */
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+/* line 28, ../sass/templates/_royalslider.scss */
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+  -webkit-transform: none;
+}
+
+/* line 31, ../sass/templates/_royalslider.scss */
+.rsOverflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 40, ../sass/templates/_royalslider.scss */
+.rsVisibleNearbyWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 49, ../sass/templates/_royalslider.scss */
+.rsVisibleNearbyWrap .rsOverflow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* line 55, ../sass/templates/_royalslider.scss */
+.rsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 63, ../sass/templates/_royalslider.scss */
+.rsArrow,
+.rsThumbsArrow {
+  cursor: pointer;
+}
+
+/* line 67, ../sass/templates/_royalslider.scss */
+.rsThumb {
+  float: left;
+  position: relative;
+}
+
+/* line 75, ../sass/templates/_royalslider.scss */
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+
+/* line 82, ../sass/templates/_royalslider.scss */
+.rsHidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  -moz-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  -o-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+}
+
+/* line 92, ../sass/templates/_royalslider.scss */
+.rsGCaption {
+  width: 100%;
+  float: left;
+  text-align: center;
+  z-index: 22;
+}
+
+/* Fullscreen options, very important ^^ */
+/* line 100, ../sass/templates/_royalslider.scss */
+.royalSlider.rsFullscreen {
+  position: fixed !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483647 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+/* line 113, ../sass/templates/_royalslider.scss */
+.royalSlider .rsSlide.rsFakePreloader {
+  opacity: 1 !important;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s;
+  display: none;
+}
+
+/* line 122, ../sass/templates/_royalslider.scss */
+.rsSlide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 134, ../sass/templates/_royalslider.scss */
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+  height: auto;
+}
+
+/* line 138, ../sass/templates/_royalslider.scss */
+.rsContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 144, ../sass/templates/_royalslider.scss */
+.rsPreloader {
+  position: absolute;
+  z-index: 0;
+}
+
+/* line 149, ../sass/templates/_royalslider.scss */
+.rsNav {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* line 154, ../sass/templates/_royalslider.scss */
+.rsNavItem {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 158, ../sass/templates/_royalslider.scss */
+.rsThumbs {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  z-index: 22;
+}
+
+/* line 165, ../sass/templates/_royalslider.scss */
+.rsTabs {
+  float: left;
+  background: none !important;
+}
+
+/* line 170, ../sass/templates/_royalslider.scss */
+.rsTabs,
+.rsThumbs {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 176, ../sass/templates/_royalslider.scss */
+.rsVideoContainer {
+  /*left: 0;
+  top: 0;
+  position: absolute;*/
+  /*width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;*/
+  width: auto;
+  height: auto;
+  line-height: 0;
+  position: relative;
+}
+
+/* line 191, ../sass/templates/_royalslider.scss */
+.rsVideoFrameHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #141414;
+  opacity: 0;
+  -webkit-transition: .3s;
+}
+
+/* line 199, ../sass/templates/_royalslider.scss */
+.rsVideoFrameHolder.rsVideoActive {
+  opacity: 1;
+}
+
+/* line 205, ../sass/templates/_royalslider.scss */
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ios controls over video bug, shifting video */
+/* line 216, ../sass/templates/_royalslider.scss */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 44px;
+}
+
+/* line 224, ../sass/templates/_royalslider.scss */
+.rsABlock,
+.rsSBlock {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 15;
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 231, ../sass/templates/_royalslider.scss */
+.rsABImage {
+  width: 100%;
+  height: auto;
+}
+
+/* line 236, ../sass/templates/_royalslider.scss */
+.grab-cursor {
+  cursor: url(grab.png) 8 8, move;
+}
+
+/* line 240, ../sass/templates/_royalslider.scss */
+.grabbing-cursor {
+  cursor: url(grabbing.png) 8 8, move;
+}
+
+/* line 244, ../sass/templates/_royalslider.scss */
+.rsNoDrag {
+  cursor: auto;
+}
+
+/* line 248, ../sass/templates/_royalslider.scss */
+a.rsLink {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background: url(blank.gif);
+  -webkit-backface-visibility: hidden;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 265, ../sass/templates/_royalslider.scss */
+.abBlackBox {
+  color: #FFF;
+  background: #000;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 15px;
+}
+
+/* line 271, ../sass/templates/_royalslider.scss */
+.abWhiteBox {
+  color: #000;
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 15px;
+}
+
+/* line 277, ../sass/templates/_royalslider.scss */
+.abTextAlignCenter {
+  text-align: center;
 }
 
 /*------------------------------------*\
@@ -3452,7 +3710,7 @@ nav[role="navigation"] {
 .filter {
   color: white;
   font-family: "adelle-sans", sans-serif;
-  height: 24px;
+  height: 21px;
 }
 
 /* line 12, ../sass/templates/_select-box.scss */
@@ -3460,8 +3718,8 @@ nav[role="navigation"] {
   color: #66bbdd;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-right: 12px;
-  padding-left: 12px;
+  padding-right: 10.5px;
+  padding-left: 10.5px;
 }
 
 /* line 20, ../sass/templates/_select-box.scss */
@@ -3478,7 +3736,7 @@ nav[role="navigation"] {
 .customSelect {
   color: #66bbdd;
   font-family: "adelle-sans", sans-serif;
-  height: 24px;
+  height: 21px;
 }
 
 /* line 34, ../sass/templates/_select-box.scss */
@@ -3499,286 +3757,83 @@ nav[role="navigation"] {
 /* We can style the inner box too */
 /* line 47, ../sass/templates/_select-box.scss */
 .customSelectInner {
-  background: url(../images/arrow.png) no-repeat left #d4e2ef;
-  padding-right: 12px;
+  background: url(../images/arrow.png) no-repeat left #cee9f4;
+  padding-right: 10.5px;
 }
 
-/******************************************************\
-*
-*  Base TouchCarousel stylesheet
-*   
-*  Contents:
-*
-*   1. Main containers
-*   2. Carousel items
-*   3. Arrows(direction) navigation
-*   4. Paging navigation
-*   5. Scrollbar
-*   6. Cursors
-*
-\******************************************************/
-/******************************************************\
-*
-*  1. Main containers (carousel size, background)
-*
-\******************************************************/
-/* line 26, ../sass/templates/_touchcarousel.scss */
-.touchcarousel {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  /* style is removed after carousel is inited, use !important if you want to keep it*/
-  overflow: hidden;
-}
-
-/* line 34, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .touchcarousel-container {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  left: 0;
-}
-
-/* line 41, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .touchcarousel-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-
-/******************************************************\
-*
-*  2. Carousel items (item styling, spacing between items)
-*
-\******************************************************/
-/* line 58, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .touchcarousel-item {
-  /* use margin-right for spacing between items */
-  margin: 0 0 0 0;
-  padding: 0;
-  float: left;
-}
-
-/* Last carousel item  */
-/* line 66, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .touchcarousel-item.last {
-  margin-right: 0 !important;
-}
-
-/******************************************************\
-*
-*  3. Arrows(direction) navigation
-*
-\******************************************************/
-/* arrow hitstate and icon holder */
-/* line 81, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .arrow-holder {
-  height: 100%;
-  width: 45px;
-  position: absolute;
-  top: 0;
-  display: block;
-  cursor: pointer;
-  z-index: 25;
-}
-
-/* line 90, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .arrow-holder.left {
-  left: 0;
-}
-
-/* line 93, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .arrow-holder.right {
-  right: 0;
-}
-
-/* arrow icons */
-/* line 98, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .arrow-icon {
-  width: 45px;
-  height: 90px;
-  top: 50%;
-  margin-top: -45px;
-  position: absolute;
-  cursor: pointer;
-}
-
-/* line 109, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .arrow-holder.disabled {
-  cursor: default;
-}
-
-/* line 110, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .arrow-holder.disabled .arrow-icon {
-  cursor: default;
-}
-
-/******************************************************\
-*
-*  4. Paging navigation
-*
-\******************************************************/
-/* line 122, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .tc-paging-container {
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  margin-top: -20px;
-  z-index: 25;
-}
-
-/* line 129, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .tc-paging-centerer {
-  float: left;
-  position: relative;
-  left: 50%;
-}
-
-/* line 134, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .tc-paging-centerer-inside {
-  float: left;
-  position: relative;
-  left: -50%;
-}
-
-/* Paging items */
-/* line 141, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .tc-paging-item {
-  float: left;
-  cursor: pointer;
-  position: relative;
-  display: block;
-  text-indent: -9999px;
-}
-
-/******************************************************\
-*
-*  5. Scrollbar
-*
-\******************************************************/
-/* line 160, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .scrollbar-holder {
-  position: absolute;
-  z-index: 30;
-  left: 6px;
-  right: 6px;
-  bottom: 5px;
-  height: 4px;
-  overflow: hidden;
-}
-
-/* line 169, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .scrollbar {
-  position: absolute;
-  left: 0;
-  height: 4px;
-  bottom: 0px;
-}
-
-/* line 175, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .scrollbar.dark {
-  background-color: #828282;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* line 179, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .scrollbar.light, .touchcarousel .scrollbar.artwork-meta, .touchcarousel .scrollbar.list-title, .touchcarousel .scrollbar.entry-meta, .touchcarousel .scrollbar.related-title, .touchcarousel .scrollbar.pagination {
-  background-color: #d2d2d2;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-/******************************************************\
-*
-*  6. Cursors
-*
-\******************************************************/
-/* IE and Opera use "move", FF uses -moz-grab */
-/* line 195, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .grab-cursor {
-  cursor: url(grab.png) 8 8, move;
-}
-
-/* line 196, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .grabbing-cursor {
-  cursor: url(grabbing.png) 8 8, move;
-}
-
-/* Cursor that used when mouse drag is disabled */
-/* line 199, ../sass/templates/_touchcarousel.scss */
-.touchcarousel .auto-cursor {
-  cursor: auto;
-}
-
-/* Copyright 2011, Dmitry Semenov, http://dimsemenov.com */
 /*------------------------------------*\
     $Typography
 \*------------------------------------*/
 /* line 5, ../sass/templates/_typography.scss */
 p {
+  color: #555555;
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
-/* line 12, ../sass/templates/_typography.scss */
-.bold, .artwork-title, .artist-name, .browse-title, .entry-title {
+/* line 13, ../sass/templates/_typography.scss */
+.bold, .artwork-title, .artist-name, .browse-title, .list-title, .entry-title {
   font-style: normal;
   font-weight: 700;
 }
 
-/* line 17, ../sass/templates/_typography.scss */
-.light, .artwork-meta, .list-title, .entry-meta, .related-title, .pagination {
+/* line 18, ../sass/templates/_typography.scss */
+.light, .artwork-meta, .entry-meta, .related-title, .pagination {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 22, ../sass/templates/_typography.scss */
-.light p, .artwork-meta p, .list-title p, .entry-meta p, .related-title p, .pagination p {
+/* line 23, ../sass/templates/_typography.scss */
+.light p, .artwork-meta p, .entry-meta p, .related-title p, .pagination p {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 27, ../sass/templates/_typography.scss */
+/* line 28, ../sass/templates/_typography.scss */
 .small, .artwork-title, .artist-name, .browse-title, .list-title {
-  font-size: 14px;
-  line-height: 16px;
-}
-
-/* line 32, ../sass/templates/_typography.scss */
-.micro, .artwork-meta, .pagination {
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
 }
 
-/* line 37, ../sass/templates/_typography.scss */
+/* line 33, ../sass/templates/_typography.scss */
+.micro, .artwork-meta, .pagination {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+/* line 38, ../sass/templates/_typography.scss */
 .no-padding {
   margin: 0;
 }
 
-/*  <strong>For emphasizing a snippet of text with important</strong> */
 /* line 40, ../sass/templates/_typography.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*  <strong>For emphasizing a snippet of text with important</strong> */
+/* line 43, ../sass/templates/_typography.scss */
 strong {
   font-style: normal;
   font-weight: 700;
 }
 
 /*  <em>For emphasizing a snippet of text with stress</em> */
-/* line 46, ../sass/templates/_typography.scss */
+/* line 49, ../sass/templates/_typography.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
 
 /*  Class for muted text */
-/* line 52, ../sass/templates/_typography.scss */
+/* line 55, ../sass/templates/_typography.scss */
 .muted {
   color: #999999;
 }
 
 /*  Defines a thematic change in the content */
-/* line 56, ../sass/templates/_typography.scss */
+/* line 59, ../sass/templates/_typography.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -3792,27 +3847,27 @@ providing additional context on hover.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 */
-/* line 70, ../sass/templates/_typography.scss */
+/* line 73, ../sass/templates/_typography.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 74, ../sass/templates/_typography.scss */
+/* line 77, ../sass/templates/_typography.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
 /*  For quoting blocks of content from another source within your document */
-/* line 80, ../sass/templates/_typography.scss */
+/* line 83, ../sass/templates/_typography.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
-/* line 86, ../sass/templates/_typography.scss */
+/* line 89, ../sass/templates/_typography.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
@@ -3820,14 +3875,14 @@ blockquote p {
   line-height: 25px;
 }
 
-/* line 93, ../sass/templates/_typography.scss */
+/* line 96, ../sass/templates/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 
-/* line 99, ../sass/templates/_typography.scss */
+/* line 102, ../sass/templates/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
@@ -3835,19 +3890,19 @@ blockquote small:before {
 /*  Add <small> tag for identifying the source. Wrap the name of the source work in <cite>.
 	<small>Someone famous <cite title="Source Title">Source Title</cite></small>
  */
-/* line 107, ../sass/templates/_typography.scss */
+/* line 110, ../sass/templates/_typography.scss */
 cite {
   font-style: normal;
 }
 
 /*  <small>For fine print etc.</small> */
-/* line 112, ../sass/templates/_typography.scss */
+/* line 115, ../sass/templates/_typography.scss */
 small {
   font-size: 85%;
 }
 
 /* Floated, right-aligned blockquote. */
-/* line 117, ../sass/templates/_typography.scss */
+/* line 120, ../sass/templates/_typography.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -3856,23 +3911,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 126, ../sass/templates/_typography.scss */
+/* line 129, ../sass/templates/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 129, ../sass/templates/_typography.scss */
+/* line 132, ../sass/templates/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 132, ../sass/templates/_typography.scss */
+/* line 135, ../sass/templates/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 139, ../sass/templates/_typography.scss */
+/* line 142, ../sass/templates/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -3881,7 +3936,7 @@ blockquote:after {
 }
 
 /* Present contact information. Use <br> for line breaks */
-/* line 144, ../sass/templates/_typography.scss */
+/* line 147, ../sass/templates/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -3890,7 +3945,7 @@ address {
 }
 
 /* To display code etc. */
-/* line 153, ../sass/templates/_typography.scss */
+/* line 156, ../sass/templates/_typography.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -3902,7 +3957,7 @@ pre {
   border-radius: 3px;
 }
 
-/* line 162, ../sass/templates/_typography.scss */
+/* line 165, ../sass/templates/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -3910,7 +3965,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 168, ../sass/templates/_typography.scss */
+/* line 171, ../sass/templates/_typography.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -3929,12 +3984,12 @@ pre {
   border-radius: 4px;
 }
 
-/* line 185, ../sass/templates/_typography.scss */
+/* line 188, ../sass/templates/_typography.scss */
 pre.prettyprint {
   margin-bottom: 20px;
 }
 
-/* line 188, ../sass/templates/_typography.scss */
+/* line 191, ../sass/templates/_typography.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -3942,41 +3997,623 @@ pre code {
   border: 0;
 }
 
-/* line 194, ../sass/templates/_typography.scss */
+/* line 197, ../sass/templates/_typography.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
 }
 
+/******************************
+*
+*  RoyalSlider Default Inverted Skin 
+*
+*    1. Arrows 
+*    2. Bullets
+*    3. Thumbnails
+*    4. Tabs
+*    5. Fullscreen button
+*    6. Play/close video button
+*    7. Preloader
+*    8. Caption
+*    
+*  Sprite: 'rs-default-inverted.png'
+*  Feel free to edit anything
+*  If you don't some part - just delete it
+* 
+******************************/
+/* Background */
+/* line 26, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv,
+.rsDefaultInv .rsOverflow,
+.rsDefaultInv .rsSlide,
+.rsDefaultInv .rsVideoFrameHolder,
+.rsDefaultInv .rsThumbs {
+  background: #EEE;
+  color: #222;
+}
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+/* line 38, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsArrow {
+  height: 100%;
+  width: 44px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 21;
+}
+
+/* line 46, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsVer .rsArrow {
+  width: 100%;
+  height: 44px;
+}
+
+/* line 51, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsVer .rsArrowLeft {
+  top: 0;
+  left: 0;
+}
+
+/* line 52, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsVer .rsArrowRight {
+  bottom: 0;
+  left: 0;
+}
+
+/* line 54, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsHor .rsArrowLeft {
+  left: 0;
+  top: 0;
+}
+
+/* line 55, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsHor .rsArrowRight {
+  right: 0;
+  top: 0;
+}
+
+/* line 57, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsArrowIcn {
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+  position: absolute;
+  cursor: pointer;
+  background: url("rs-default-inverted.png");
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.75);
+  *background-color: #FFF;
+  border-radius: 2px;
+}
+
+/* line 75, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsArrowIcn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 79, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsHor .rsArrowLeft .rsArrowIcn {
+  background-position: -64px -32px;
+}
+
+/* line 80, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsHor .rsArrowRight .rsArrowIcn {
+  background-position: -64px -64px;
+}
+
+/* line 82, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsVer .rsArrowLeft .rsArrowIcn {
+  background-position: -96px -32px;
+}
+
+/* line 83, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsVer .rsArrowRight .rsArrowIcn {
+  background-position: -96px -64px;
+}
+
+/* line 85, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsArrowDisabled .rsArrowIcn {
+  filter: alpha(opacity=20);
+  opacity: .2;
+  *display: none;
+}
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+/* line 94, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsBullets {
+  position: relative;
+  z-index: 35;
+  padding-top: 4px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 5px;
+  overflow: hidden;
+}
+
+/* line 106, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsBullet {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 6px;
+}
+
+/* line 114, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsBullet span {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #BBB;
+}
+
+/* line 121, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsBullet.rsNavSelected span {
+  background-color: #000;
+}
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+/* line 135, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumbsHor {
+  width: 100%;
+  height: auto;
+}
+
+/* line 139, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumbsVer {
+  width: 96px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 146, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsHor .rsThumbsContainer {
+  position: relative;
+  height: 100%;
+}
+
+/* line 150, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsVer .rsThumbsContainer {
+  position: relative;
+  width: 100%;
+}
+
+/* line 154, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumb {
+  float: left;
+  overflow: hidden;
+  width: 96px;
+  height: 72px;
+}
+
+/* line 160, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumb img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 164, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumb.rsNavSelected {
+  background: #FFF;
+}
+
+/* line 167, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumb.rsNavSelected img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 171, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTmb {
+  display: block;
+}
+
+/* Thumbnails with text */
+/* line 176, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTmb h5 {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+/* line 182, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTmb span {
+  color: #DDD;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* Thumbnails arrow icons */
+/* line 193, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumbsArrow {
+  height: 100%;
+  width: 20px;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 21;
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+/* line 203, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumbsArrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* line 206, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsVer .rsThumbsArrow {
+  width: 100%;
+  height: 20px;
+}
+
+/* line 210, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsVer .rsThumbsArrowLeft {
+  top: 0;
+  left: 0;
+}
+
+/* line 211, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsVer .rsThumbsArrowRight {
+  bottom: 0;
+  left: 0;
+}
+
+/* line 213, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsHor .rsThumbsArrowLeft {
+  left: 0;
+  top: 0;
+}
+
+/* line 214, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsHor .rsThumbsArrowRight {
+  right: 0;
+  top: 0;
+}
+
+/* line 216, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumbsArrowIcn {
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 50%;
+  margin-top: -8px;
+  margin-left: -8px;
+  position: absolute;
+  cursor: pointer;
+  background: url("rs-default-inverted.png");
+}
+
+/* line 228, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn {
+  background-position: -128px -32px;
+}
+
+/* line 229, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn {
+  background-position: -128px -48px;
+}
+
+/* line 231, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn {
+  background-position: -144px -32px;
+}
+
+/* line 232, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn {
+  background-position: -144px -48px;
+}
+
+/* line 234, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsThumbsArrowDisabled {
+  display: none !important;
+}
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  /* line 238, ../sass/templates/_rs-default-inverted.scss */
+  .rsDefaultInv .rsThumb {
+    width: 59px;
+    height: 44px;
+  }
+
+  /* line 242, ../sass/templates/_rs-default-inverted.scss */
+  .rsDefaultInv .rsThumbsHor {
+    height: 44px;
+  }
+
+  /* line 245, ../sass/templates/_rs-default-inverted.scss */
+  .rsDefaultInv .rsThumbsVer {
+    width: 59px;
+  }
+}
+/***************
+*
+*  4. Tabs
+*
+****************/
+/* line 259, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTabs {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 12px;
+  position: relative;
+}
+
+/* line 266, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTab {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  height: auto;
+  width: auto;
+  color: #333;
+  padding: 5px 13px 6px;
+  min-width: 72px;
+  border: 1px solid #D9D9DD;
+  border-right: 1px solid #f5f5f5;
+  text-decoration: none;
+  background-color: #FFF;
+  background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4);
+  background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4);
+  background-image: linear-gradient(to bottom, #fefefe, #f4f4f4);
+  -webkit-box-shadow: inset 1px 0 0 #fff;
+  box-shadow: inset 1px 0 0 #fff;
+  *display: inline;
+  *zoom: 1;
+}
+
+/* line 290, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTab:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* line 296, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTab:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-right: 1px solid #cfcfcf;
+}
+
+/* line 304, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTab:active {
+  border: 1px solid #D9D9DD;
+  background-color: #f4f4f4;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 309, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsTab.rsNavSelected {
+  color: #FFF;
+  border: 1px solid #999;
+  text-shadow: 1px 1px #838383;
+  box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+  background: #ACACAC;
+  background-image: -webkit-linear-gradient(top, #acacac, #bbbbbb);
+  background-image: -moz-llinear-gradient(top, #acacac, #bbbbbb);
+  background-image: linear-gradient(to bottom, #acacac, #bbbbbb);
+}
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+/* line 330, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsFullscreenBtn {
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  z-index: 22;
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+/* line 341, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsFullscreenIcn {
+  display: block;
+  margin: 6px;
+  width: 32px;
+  height: 32px;
+  background: url("rs-default-inverted.png") 0 0;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.75);
+  *background-color: #FFF;
+  border-radius: 2px;
+}
+
+/* line 354, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsFullscreenIcn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 357, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv.rsFullscreen .rsFullscreenIcn {
+  background-position: -32px 0;
+}
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+/* line 371, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsPlayBtn {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+  width: 64px;
+  height: 64px;
+  margin-left: -32px;
+  margin-top: -32px;
+  cursor: pointer;
+}
+
+/* line 379, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsPlayBtnIcon {
+  width: 64px;
+  display: block;
+  height: 64px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+  background: url(rs-default-inverted.png) no-repeat 0 -32px;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.75);
+  *background-color: #FFF;
+}
+
+/* line 395, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsPlayBtn:hover .rsPlayBtnIcon {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* line 398, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsBtnCenterer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 405, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsCloseVideoBtn {
+  right: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  z-index: 500;
+  position: absolute;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+/* line 417, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsCloseVideoBtn.rsiOSBtn {
+  top: -38px;
+  right: -6px;
+}
+
+/* line 422, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsCloseVideoIcn {
+  margin: 6px;
+  width: 32px;
+  height: 32px;
+  background: url("rs-default-inverted.png") -64px 0;
+  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.75);
+  *background-color: #FFF;
+}
+
+/* line 431, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsCloseVideoIcn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+/* line 443, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsPreloader {
+  width: 20px;
+  height: 20px;
+  background-image: url(../preloaders/preloader.gif);
+  left: 50%;
+  top: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+/* line 462, ../sass/templates/_rs-default-inverted.scss */
+.rsDefaultInv .rsGCaption {
+  position: absolute;
+  float: none;
+  bottom: 6px;
+  left: 6px;
+  text-align: left;
+  background: #FFF;
+  background: rgba(255, 255, 255, 0.75);
+  color: #000;
+  padding: 2px 8px;
+  width: auto;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
 /**
  * Fonts
  */
-/* line 55, ../sass/barjeel.scss */
+/* line 56, ../sass/barjeel.scss */
 body {
+  background-image: url(../images/background.jpg);
+  background-repeat: repeat;
+  color: #555555;
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
   font-weight: 400;
-  background-image: url(../images/background.jpg);
-  background-repeat: repeat;
 }
 
 /**
  * Main block
  */
-/* line 68, ../sass/barjeel.scss */
+/* line 71, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 75, ../sass/barjeel.scss */
+/* line 78, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;
   margin-left: 16.56566%;
   margin-right: -100%;
   width: 83.39646%;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }

@@ -9,9 +9,9 @@
 		
 	<div class="entry-content">
 		
-		<div class="featured-image center grey">
-
 			<!-- Gets the featured image -->
+
+			<div class="featured-image center">
 				
 			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 		
@@ -31,8 +31,12 @@
 
 		<h1 class="entry-title">
 
-			<?php the_title(); ?> - 
+		<span class="uppercase">
 
+			<?php the_title(); ?> - 	
+		
+		</span>
+			
 			<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
 
 		</h1>	
@@ -46,7 +50,7 @@
 												<?php if ( $exhibitions ) { ?>	
 												
 													<?php foreach($exhibitions as $exhibition) {
-														echo '<li>'.$exhibition.'</li> ';
+														echo '<li class="meta-link">'.$exhibition.'</li> ';
 														} ?>
 												
 												<?php } ?>
@@ -55,7 +59,7 @@
 								
 												<?php if ( $medium ) { ?>	
 												
-													<?php echo '<li>'.$medium.'</li> '; ?>
+													<?php echo '<li class="meta-link">'.$medium.'</li> '; ?>
 												
 												<?php } ?>	
 															
@@ -64,7 +68,7 @@
 								
 												<?php if ( $country ) { ?>	
 												
-													<?php echo '<li>'.$country.'</li> '; ?>
+													<?php echo '<li class="meta-link">'.$country.'</li> '; ?>
 												
 												<?php } ?>	
 

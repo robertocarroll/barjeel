@@ -2,6 +2,10 @@
     $Artwork single
 \*------------------------------------*/
 
+	
+	.featured-image {
+		background: lighten($barjeel-grey, 20%);
+	}
 
 	.entry-title {
 		@extend .bold;

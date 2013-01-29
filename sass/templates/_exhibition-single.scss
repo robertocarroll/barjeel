@@ -14,7 +14,7 @@
 
 .exhibition-slideshow {
  	padding-bottom: $base-spacing-unit;	
- 	background: $barjeel-grey;
+ 	background: lighten($barjeel-grey, 20%);
 }
 
 .exhibition-title { 
@@ -23,7 +23,7 @@
 }
 
 .rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
-    background: none repeat scroll 0 0 $barjeel-grey !important;
+    background: none repeat scroll 0 0 lighten($barjeel-grey, 20%) !important;
 }
 
 

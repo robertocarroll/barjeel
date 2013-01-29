@@ -119,7 +119,23 @@
 						<div class="related-list <?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">	
 
 							<div class="square">&nbsp;</div>
-															
+
+							<?php	
+
+									echo '<a href="' . get_permalink( $related->ID ) . '">';
+
+								?>
+
+								<div class="vignette-square">
+	 
+								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', $related->ID,  'cropped-thumb'); 
+
+								 endif; ?>		
+
+								 </div>	
+
+								</a>
+
 							<h1 class="gamma bold article-list">
 
 								<?php	
@@ -135,15 +151,7 @@
 								if ($dates) { ?>
 								<?php echo '<h2 class="date epsilon bold e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
-							
-
-								<a href="<?php the_permalink(); ?>">	
-	 
-								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', $related->ID,  'cropped-thumb'); 
-
-								 endif; ?>			
-
-								</a>												
+										
 					
 						</article>
 								

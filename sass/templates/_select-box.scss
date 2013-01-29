@@ -45,7 +45,7 @@
 
 	/* We can style the inner box too */
 	.customSelectInner {
-		background: url(../images/arrow.png) no-repeat $opdir $barjeel-lightblue; 
+		background: url(../images/arrow.png) no-repeat $opdir lighten($barjeel-blue, 25%); 
 		padding-#{$dir}: $half-spacing-unit;
 	}
 

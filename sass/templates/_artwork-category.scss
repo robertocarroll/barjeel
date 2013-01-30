@@ -7,17 +7,12 @@
 		padding-bottom: $base-spacing-unit * 2;
 	}
 
-	.filter-one {	
-		@include gs-span(da, 2, 2, (2, 5));
+	.collection-meta {	
+		@include gs-span(da, 2, 4, (2, 5));
+		padding-bottom: $base-spacing-unit * 2;
 	}
 
-	.filter-two {
-		@include gs-span(da, 3, 4, (2, 5));
-	}	
-
-	.filter-title {
-		padding-left: 8px;
-	}
+	
 
 
 	#sort {

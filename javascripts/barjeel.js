@@ -9,23 +9,7 @@ jQuery(document).ready(function ($) {
       });
     });
 
-/*! For the carousel on the artist page */
 
-jQuery(document).ready(function($){
-
-  $(function(){
-      // bind change event to select
-      $('.filter-by').on('change', function () {
-          var url = $(this).val(); // get selected value
-          if (url) { // require a URL
-              window.location = url; // redirect
-          }
-          return false;
-      });
-    });
-
-
-});
 
 /*! For the carousel on the artist page */
 
@@ -44,6 +28,26 @@ jQuery(document).ready(function($){
 
 
 });
+
+/*! Sort box on collection page */
+
+jQuery(document).ready(function($){
+
+  $(window).load(function(){
+
+$('.sort-by').on('change', function () {
+      
+      var url = $(this).val(); // get selected value
+       
+          if (url) { // require a URL
+              window.location = '?o='+url; // redirect
+          }
+          
+      });
+
+});
+});
+
 
 
 /*! Custom select styling */

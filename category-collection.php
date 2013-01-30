@@ -3,10 +3,10 @@
 		<section id="primary" class="site-content">
 			<div id="content" class="container" role="main">
 
-				<?php if ( have_posts() ) : ?>
 
-			<?php
-			
+
+				<?php
+		
 				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
 
 				$category = get_the_category();
@@ -21,23 +21,89 @@
 
 					if ($total_pages > 1) {
 
-						echo  '<h2 class="epsilon light gray"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
+						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
 
 						}
 
 					else {
 
-						echo  '<h2 class="epsilon light gray"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2>';
+						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2>';
 					}	
 				}	
 
 				else {
 
-					echo '<h2 class="epsilon light gray">We have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
+					echo '<div class="collection-meta"><h2 class="epsilon light gray inline">We currently have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
 
 				}
 			
-			?>		
+			?>
+
+				<?php
+
+					
+
+					if( isset($_GET['o']) && $_GET['o'] != '')
+					          {
+					              $order = $_GET['o'];
+					              switch($order)
+					              {
+					                case 'date-asc': $orderby = 'order=ASC';
+					                            $msg = 'Date Ascending';
+					                              break;
+					                           
+					                case 'date-desc': $orderby = 'order=DESC';
+					                            $msg = 'Date Descending(default)';
+					                              break;
+					                           
+					                case 'date-mod': $orderby = 'orderby=modified';
+					                                $msg = 'Date Modified';
+					                               break;
+					 
+					                case 'title-asc': $orderby = 'orderby=title&order=ASC';
+					                                $msg = 'Title A-Z';
+					                                break;
+					                             
+					                case 'title-desc': $orderby = 'orderby=title&order=DESC';
+					                                $msg = 'Title Z-A';
+					                                break;
+					                             
+					                
+					              }
+					          }
+					          else
+					          {
+					              $orderby = 'order=DESC';
+					              $msg = 'Date Descending (default)';
+					          }
+					?> 
+
+				<div class="sort-collection">
+
+				<span class="filter-title">Sort by</span>
+
+				<select class="sort-by">
+
+		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>Date Desc</option>
+		            <option value="date-asc" <?php echo ($order == 'date-asc')? 'selected="selected"':''; ?>>Date Asc</option>
+		            <option value="date-mod" <?php echo ($order == 'date-mod')? 'selected="selected"':''; ?>>Date Modified</option>
+		            <option value="title-desc" <?php echo ($order == 'title-desc')? 'selected="selected"':''; ?>>Title Desc.</option>
+		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>Title Asc.</option>
+		   
+		        </select>
+
+		        </div><!-- sort-collection -->	
+
+		        
+
+		    </div><!-- collection-meta -->	
+
+		    <div style="clear:left;"></div>
+
+		      <?php  global $query_string;
+					query_posts( $query_string. '&'.$orderby ); ?>	
+   
+				<?php if ( have_posts() ) : ?>
 					
 				</header>
 	
@@ -81,6 +147,9 @@
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
 					
 					<?php } ?>
+
+
+				
 
 			<?php else : ?>
 

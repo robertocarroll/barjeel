@@ -17,8 +17,9 @@
 		padding-#{$opdir}: $half-spacing-unit;
 	}
 
-	.sort-by {
-		margin-#{$dir}: -5px;
+	.sort-collection {
+		float: $opdir;
+		
 	}
 
 	.filter-by {

@@ -1041,7 +1041,7 @@ hgroup .hN {
 }
 
 /* line 11, ../sass/inuit/base/_smallprint.scss */
-.micro, .artwork-meta, .pagination {
+.micro, .artwork-meta, .address-footer, .copyright, .pagination {
   font-size: 10px;
   font-size: 0.71429rem;
   line-height: 2.1;
@@ -2261,29 +2261,16 @@ label,
 }
 
 /* line 10, ../sass/templates/_artwork-category.scss */
-.filter-one {
+.collection-meta {
   display: block;
   float: left;
   margin-left: 0%;
   margin-right: -100%;
-  width: 23.01287%;
-}
-
-/* line 14, ../sass/templates/_artwork-category.scss */
-.filter-two {
-  display: block;
-  float: left;
-  margin-left: 25.67752%;
-  margin-right: -100%;
-  width: 48.66011%;
+  width: 74.33762%;
+  padding-bottom: 42px;
 }
 
 /* line 18, ../sass/templates/_artwork-category.scss */
-.filter-title {
-  padding-left: 8px;
-}
-
-/* line 23, ../sass/templates/_artwork-category.scss */
 #sort {
   display: block;
   float: left;
@@ -2293,13 +2280,13 @@ label,
   display: none;
 }
 
-/* line 28, ../sass/templates/_artwork-category.scss */
+/* line 23, ../sass/templates/_artwork-category.scss */
 .box-ms {
   padding-right: 4.44444%;
   width: 211px;
 }
 
-/* line 35, ../sass/templates/_artwork-category.scss */
+/* line 30, ../sass/templates/_artwork-category.scss */
 .vignette {
   border-radius: 50%;
   width: 175px;
@@ -2325,20 +2312,20 @@ label,
 }
 
 /* For the circle rollovers  */
-/* line 57, ../sass/templates/_artwork-category.scss */
+/* line 52, ../sass/templates/_artwork-category.scss */
 .vignette:hover {
   -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
   -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
   box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
 }
 
-/* line 61, ../sass/templates/_artwork-category.scss */
+/* line 56, ../sass/templates/_artwork-category.scss */
 img.attachment-cropped-thumb {
   z-index: -1;
   position: relative;
 }
 
-/* line 66, ../sass/templates/_artwork-category.scss */
+/* line 61, ../sass/templates/_artwork-category.scss */
 .browse {
   display: block;
   float: left;
@@ -2347,36 +2334,36 @@ img.attachment-cropped-thumb {
   width: 22.99773%;
 }
 
-/* line 72, ../sass/templates/_artwork-category.scss */
+/* line 67, ../sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
   padding-top: 10.5px;
   margin: 0;
 }
 
-/* line 80, ../sass/templates/_artwork-category.scss */
+/* line 75, ../sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 92, ../sass/templates/_artwork-category.scss */
+/* line 87, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 98, ../sass/templates/_artwork-category.scss */
+/* line 93, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 102, ../sass/templates/_artwork-category.scss */
+/* line 97, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   content: "";
 }
 
 /* Makes the "see more" blue  */
-/* line 108, ../sass/templates/_artwork-category.scss */
+/* line 103, ../sass/templates/_artwork-category.scss */
 .menu-item-772 a, .menu-item-775 a {
   color: #66bbdd;
   text-decoration: none;
@@ -2387,13 +2374,13 @@ img.attachment-cropped-thumb {
   transition: color 0.5s ease-out;
 }
 
-/* line 112, ../sass/templates/_artwork-category.scss */
+/* line 107, ../sass/templates/_artwork-category.scss */
 .menu-item-772 a:hover, .menu-item-775 a:hover {
   color: #3388aa !important;
   text-decoration: none;
 }
 
-/* line 116, ../sass/templates/_artwork-category.scss */
+/* line 111, ../sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 21px;
   margin: 0;
@@ -2401,7 +2388,7 @@ img.attachment-cropped-thumb {
   text-transform: uppercase;
 }
 
-/* line 125, ../sass/templates/_artwork-category.scss */
+/* line 120, ../sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 10.5px;
   margin: 0;
@@ -2749,7 +2736,7 @@ footer[role="contentinfo"] {
   padding-top: 21px;
 }
 
-/* line 37, ../sass/templates/_footer.scss */
+/* line 42, ../sass/templates/_footer.scss */
 .footer-logo {
   display: block;
   float: left;
@@ -2758,7 +2745,7 @@ footer[role="contentinfo"] {
   width: 14.34887%;
 }
 
-/* line 41, ../sass/templates/_footer.scss */
+/* line 46, ../sass/templates/_footer.scss */
 .twitter-one {
   display: block;
   float: left;
@@ -2767,7 +2754,7 @@ footer[role="contentinfo"] {
   width: 19.19919%;
 }
 
-/* line 45, ../sass/templates/_footer.scss */
+/* line 50, ../sass/templates/_footer.scss */
 .twitter-two {
   display: block;
   float: left;
@@ -2776,7 +2763,7 @@ footer[role="contentinfo"] {
   width: 19.18656%;
 }
 
-/* line 49, ../sass/templates/_footer.scss */
+/* line 54, ../sass/templates/_footer.scss */
 .twitter-three {
   display: block;
   float: left;
@@ -2785,7 +2772,7 @@ footer[role="contentinfo"] {
   width: 19.18656%;
 }
 
-/* line 53, ../sass/templates/_footer.scss */
+/* line 58, ../sass/templates/_footer.scss */
 .twitter-four {
   display: block;
   float: left;
@@ -3405,6 +3392,11 @@ nav[role="navigation"] {
 }
 
 /* line 30, ../sass/templates/_misc.scss */
+.inline {
+  display: inline;
+}
+
+/* line 32, ../sass/templates/_misc.scss */
 .square {
   width: 15px;
   height: 15px;
@@ -3412,17 +3404,17 @@ nav[role="navigation"] {
   margin-bottom: 10.5px;
 }
 
-/* line 37, ../sass/templates/_misc.scss */
+/* line 39, ../sass/templates/_misc.scss */
 .padding-top {
   padding-top: 10.5px;
 }
 
-/* line 41, ../sass/templates/_misc.scss */
+/* line 43, ../sass/templates/_misc.scss */
 .margin-below {
   margin-bottom: 5.25px;
 }
 
-/* line 45, ../sass/templates/_misc.scss */
+/* line 47, ../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3903,39 +3895,39 @@ a.rsLink {
 }
 
 /* line 20, ../sass/templates/_select-box.scss */
-.sort-by {
-  margin-right: -5px;
+.sort-collection {
+  float: left;
 }
 
-/* line 24, ../sass/templates/_select-box.scss */
+/* line 25, ../sass/templates/_select-box.scss */
 .filter-by {
   margin-right: -5px;
 }
 
-/* line 28, ../sass/templates/_select-box.scss */
+/* line 29, ../sass/templates/_select-box.scss */
 .customSelect {
   color: #66bbdd;
   font-family: "adelle-sans", sans-serif;
   height: 21px;
 }
 
-/* line 34, ../sass/templates/_select-box.scss */
+/* line 35, ../sass/templates/_select-box.scss */
 .customSelect.changed {
   /* You can use this if you want a different style after user has made a selection */
 }
 
-/* line 38, ../sass/templates/_select-box.scss */
+/* line 39, ../sass/templates/_select-box.scss */
 .customSelect.customSelectFocus {
   /* You can use this if you want a different style after user has made a selection */
 }
 
-/* line 41, ../sass/templates/_select-box.scss */
+/* line 42, ../sass/templates/_select-box.scss */
 .customSelect.customSelectOpen {
   /* You can use this if you want a different style after user has made a selection */
 }
 
 /* We can style the inner box too */
-/* line 47, ../sass/templates/_select-box.scss */
+/* line 48, ../sass/templates/_select-box.scss */
 .customSelectInner {
   background: url(../images/arrow.png) no-repeat left #cee9f4;
   padding-right: 10.5px;
@@ -3977,7 +3969,7 @@ p {
 }
 
 /* line 33, ../sass/templates/_typography.scss */
-.micro, .artwork-meta, .pagination {
+.micro, .artwork-meta, .address-footer, .copyright, .pagination {
   font-size: 10px;
   line-height: 14px;
 }

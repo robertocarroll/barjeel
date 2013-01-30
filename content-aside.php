@@ -198,8 +198,8 @@
 				
 				<?php if( $artwork_query->have_posts() ) : ?>
 				
-				<h2 class="related-title">Artwork from <?php the_title(); ?> </h2>
-				
+				<h2 class="related-title">Artwork from <?php the_title(); ?> </h2> 
+		
 				<div id="sort">
 				
 				<?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>

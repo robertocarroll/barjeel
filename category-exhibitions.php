@@ -137,9 +137,11 @@
 
 					</div>
 
+					<?php if ($barjeel_styles_count%4 == 1) echo '<div style="clear:both;"></div>';?>
+
 				<?php endwhile; ?>
 
-			</div><!-- .article-row -->
+				</div><!-- .article-row -->
 
 				<div style="clear:both;"></div>
 				

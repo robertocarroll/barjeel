@@ -395,7 +395,7 @@ function the_post_thumbnail_caption() {
 add_action( 'init', 'create_my_taxonomies', 0 );
 
 function create_my_taxonomies() {
-	register_taxonomy( 'recent', 'post', array( 'hierarchical' => false, 'label' => 'Recent acquisitions', 'query_var' => true, 'rewrite' => true ) );
+	register_taxonomy( 'acquired', 'post', array( 'hierarchical' => false, 'label' => 'Acquired', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'medium', 'post', array( 'hierarchical' => false, 'label' => 'Medium', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'theme', 'post', array( 'hierarchical' => false, 'label' => 'Theme', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'artist', 'post', array( 'hierarchical' => true, 'label' => 'Artist', 'query_var' => true, 'rewrite' => array('hierarchical' => true ) ) );
@@ -570,6 +570,8 @@ function be_post_type_connections() {
 		'title' => array( 'to' => 'All Connections', 'from' => 'Related Articles' )
 	) );
 }
+
+
 
 
 ?>

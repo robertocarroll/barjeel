@@ -3413,11 +3413,16 @@ nav[role="navigation"] {
 }
 
 /* line 37, ../sass/templates/_misc.scss */
+.padding-top {
+  padding-top: 10.5px;
+}
+
+/* line 41, ../sass/templates/_misc.scss */
 .margin-below {
   margin-bottom: 5.25px;
 }
 
-/* line 41, ../sass/templates/_misc.scss */
+/* line 45, ../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

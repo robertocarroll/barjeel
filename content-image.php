@@ -80,7 +80,9 @@
 	
 
 			<?php related_posts(); ?>
-		
+			
+
+			<h2 class="epsilon light gray padding-top">See nothing you like? <a href="wordpress/random">Why not take a chance?</a></h2>
 
 		<?php setPostViews(get_the_ID()); ?>
 		

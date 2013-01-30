@@ -3,45 +3,41 @@
 		<section id="primary" class="site-content">
 			<div id="content" class="container" role="main">
 
-			<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : ?>
 
-				<header class="page-header">
-					
-					<div class="filter filter-one lighter"> 		
-							
-							<span class="filter-title">Sort by</span>	
+			<?php
+			
+				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
 
-							<select class="dropdown sort-by">
-							  <option value="original-order">Date</a></option>
-							  <option value="random">Random</a></option>
-							  <option value="title">Title</a></option>
-							  <option value="artist">Artist</a></option>
-							</select>
+				$category = get_the_category();
 
-					</div>  <!-- .filter -->
+				$total_posts = (int) $wp_query->found_posts;
 
-					<div class="filter filter-two lighter"> 	
-						
-							<span class="filter-title">Filter by</span>	
+				$current_page = ( get_query_var('paged') && get_query_var('paged') > 1 ) ? get_query_var('paged') : 1;
 
-							<?php
-									$items = wp_get_nav_menu_items('filter');
+				$total_pages = (int) $wp_query->max_num_pages;
 
-									 echo "<select class='dropdown filter-by'>";
+				if ( is_tax() ) {
 
-									echo "<option value='/collection'>All work</option>";
+					if ($total_pages > 1) {
 
-									 foreach ($items as $list)
-									 	{
-									 		
-											echo "<option value=".$list->url.">".$list->title."</option>";
-									 }
+						echo  '<h2 class="epsilon light gray"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
 
-								 echo "</select>";
-								 
-								 ?>
+						}
 
-					</div>  <!-- .filter -->
+					else {
+
+						echo  '<h2 class="epsilon light gray"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2>';
+					}	
+				}	
+
+				else {
+
+					echo '<h2 class="epsilon light gray">We have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
+
+				}
+			
+			?>		
 					
 				</header>
 	
@@ -72,6 +68,10 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'country', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?> 
 
+					<h2 class="list-title"><?php echo mf_get_menu_name('filter'); ?></h2>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'filter', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?>
+				
 				</div> <!-- browse -->	
 
 			</aside>

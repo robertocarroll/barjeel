@@ -19,6 +19,7 @@
 
 	.sort-collection {
 		float: $opdir;
+
 		
 	}
 
@@ -47,7 +48,8 @@
 	/* We can style the inner box too */
 	.customSelectInner {
 		background: url(../images/arrow.png) no-repeat $opdir lighten($barjeel-blue, 25%); 
-		padding-#{$dir}: $half-spacing-unit;
+		padding-#{$dir}: $quarter-spacing-unit;
+		padding-#{$opdir}: $quarter-spacing-unit;
 	}
 
 

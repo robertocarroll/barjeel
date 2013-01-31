@@ -9,11 +9,12 @@
 		
 	<div class="entry-content">
 		
+							
+			<?php if (has_post_thumbnail( $post->ID ) ): ?>
+
 			<!-- Gets the featured image -->
 
 			<div class="featured-image center">
-				
-			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 		
 				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'collection-big' ); ?>	
 

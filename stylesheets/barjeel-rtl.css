@@ -3899,38 +3899,39 @@ a.rsLink {
   float: left;
 }
 
-/* line 25, ../sass/templates/_select-box.scss */
+/* line 26, ../sass/templates/_select-box.scss */
 .filter-by {
   margin-right: -5px;
 }
 
-/* line 29, ../sass/templates/_select-box.scss */
+/* line 30, ../sass/templates/_select-box.scss */
 .customSelect {
   color: #66bbdd;
   font-family: "adelle-sans", sans-serif;
   height: 21px;
 }
 
-/* line 35, ../sass/templates/_select-box.scss */
+/* line 36, ../sass/templates/_select-box.scss */
 .customSelect.changed {
   /* You can use this if you want a different style after user has made a selection */
 }
 
-/* line 39, ../sass/templates/_select-box.scss */
+/* line 40, ../sass/templates/_select-box.scss */
 .customSelect.customSelectFocus {
   /* You can use this if you want a different style after user has made a selection */
 }
 
-/* line 42, ../sass/templates/_select-box.scss */
+/* line 43, ../sass/templates/_select-box.scss */
 .customSelect.customSelectOpen {
   /* You can use this if you want a different style after user has made a selection */
 }
 
 /* We can style the inner box too */
-/* line 48, ../sass/templates/_select-box.scss */
+/* line 49, ../sass/templates/_select-box.scss */
 .customSelectInner {
   background: url(../images/arrow.png) no-repeat left #cee9f4;
-  padding-right: 10.5px;
+  padding-right: 5.25px;
+  padding-left: 5.25px;
 }
 
 /*------------------------------------*\

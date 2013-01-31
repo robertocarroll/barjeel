@@ -21,13 +21,13 @@
 
 					if ($total_pages > 1) {
 
-						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
+						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2></div>' ;
 
 						}
 
 					else {
 
-						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2>';
+						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2></div>';
 					}	
 				}	
 
@@ -35,13 +35,9 @@
 
 					echo '<div class="collection-meta"><h2 class="epsilon light gray inline">We currently have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
 
-				}
-			
-			?>
+				 ?>	
 
-				<?php
-
-					
+				<?php	
 
 					if( isset($_GET['o']) && $_GET['o'] != '')
 					          {
@@ -55,10 +51,7 @@
 					                case 'date-desc': $orderby = 'order=DESC';
 					                            $msg = 'Date Descending(default)';
 					                              break;
-					                           
-					                case 'date-mod': $orderby = 'orderby=modified';
-					                                $msg = 'Date Modified';
-					                               break;
+			
 					 
 					                case 'title-asc': $orderby = 'orderby=title&order=ASC';
 					                                $msg = 'Title A-Z';
@@ -84,11 +77,10 @@
 
 				<select class="sort-by">
 
-		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>Date Desc</option>
-		            <option value="date-asc" <?php echo ($order == 'date-asc')? 'selected="selected"':''; ?>>Date Asc</option>
-		            <option value="date-mod" <?php echo ($order == 'date-mod')? 'selected="selected"':''; ?>>Date Modified</option>
-		            <option value="title-desc" <?php echo ($order == 'title-desc')? 'selected="selected"':''; ?>>Title Desc.</option>
-		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>Title Asc.</option>
+		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Recently added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+		            <option value="date-asc" <?php echo ($order == 'date-asc')? 'selected="selected"':''; ?>>&nbsp;Oldest first&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+		            <option value="title-desc" <?php echo ($order == 'title-desc')? 'selected="selected"':''; ?>>&nbsp;Title A to Z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title Z to A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		   
 		        </select>
 
@@ -97,6 +89,10 @@
 		        
 
 		    </div><!-- collection-meta -->	
+
+		    <?php	}
+			
+			?>
 
 		    <div style="clear:left;"></div>
 

@@ -1,6 +1,36 @@
 /*------------------------------------*\
     $Typography
 \*------------------------------------*/
+
+	/*  Responsive bits to modify Innuit sizes */
+
+	h1,.alpha{
+
+		@include respond-to(tablet) { @include font-size($h1-size +3); }	
+    
+	}
+
+	h2,.beta{
+		@include respond-to(tablet) { @include font-size($h2-size +3); }
+	 
+	}
+	
+	h3,.gamma{
+	    @include respond-to(tablet) { @include font-size($h3-size +3); }
+	}
+	
+	h4,.delta{
+	    @include respond-to(tablet) { @include font-size($h4-size +2); }
+	}
+	
+	h5,.epsilon{
+	    @include respond-to(tablet) { @include font-size($h5-size +2); }
+	}
+	
+	h6,.zeta{
+	    @include respond-to(tablet) { @include font-size($h6-size +2); }
+	}
+
 	
 	p {
 		color: $barjeel-text-grey;	
@@ -28,6 +58,8 @@
 	.small {
 		font-size: $milli-size;
 		line-height: $lowest-line-height;
+
+		 
 	}
 
 	.micro {

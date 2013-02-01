@@ -4,18 +4,24 @@
 
 .main-image {
   @include gs-span(da, 2, 4, (2, 5));
+
+  @include respond-to(tablet) { @include gs-span(t, 2, 4, (2, 4));}
 }
 
 .headline {
   @include gs-span(da, 5, 5, (2, 5));
    @include gs-float(da, $opdir);
    text-align: $opdir;
+
 }
 
 .main-title { 
   line-height: $mid-line-height;
   margin-bottom: $half-spacing-unit;
   text-transform: uppercase;
+
+   
+
 }
 
 .date {
@@ -28,6 +34,7 @@
 .e-date {
   color: $barjeel-blue;
   margin-bottom: $quarter-spacing-unit;
+
 }
 
 .widget_featured_post_widget { 

@@ -23,6 +23,8 @@
 	.box-ms {
 		padding-right: #{2*gs-gutter(da) + '%'};
 		width: 211px; 
+
+		@include respond-to(tablet) { width: 190px; }
 	}
 
 

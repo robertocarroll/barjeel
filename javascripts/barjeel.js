@@ -1,12 +1,34 @@
+
+/*! For finding the current browser width */
+
+
+var current_width;
+var isotope_columns = null;
+
+jQuery(document).ready(function($){
+
+      current_width = $(window).width(); 
+    
+  });
+
+ 
+
+
 /*! For the magnifying glass on the artwork */
 
 jQuery(document).ready(function ($) {
+
+ if(current_width > 768){
+
       $('.imagezoom').okzoom({
         scaleWidth: 1200,
         backgroundRepeat: "repeat",
         width: 200,
         height: 200
       });
+
+       }
+
     });
 
 
@@ -127,23 +149,39 @@ $(window).smartresize(function(){
 /*! For the isotope layout on the artwork page */
 
 jQuery(document).ready(function($){
-
-    var $container = $('#sort');
     
+    var $container = $('#sort');
+
+     $(window).resize(function(){  
+        var current_width = $(window).width();
+    });
+
+
+
+      if(current_width < 1068){
+
+        isotope_columns = 2;
+      }
+
+      else {isotope_columns = 3;}
+
+    
+
     $container.imagesLoaded( function(){
 
         $container.show();
-
+     
           $container.isotope({
        	      resizable: false, // disable normal resizing
               itemSelector : '.box-ms',
       	       layoutMode : 'masonry',
              masonry: {
-            columnWidth: $container.width() / 3 
+            columnWidth: $container.width() / isotope_columns 
           },
       	
           animationEngine : 'best-available'
         });
+
 
 });
 
@@ -151,10 +189,22 @@ jQuery(document).ready(function($){
 
 // update columnWidth on window resize
 $(window).smartresize(function(){
+
+  var current_width = $(window).width();
+
+    if(current_width < 1068){
+
+        isotope_columns = 2;
+      }
+
+      else {isotope_columns = 3;}
+
   $container.isotope({
     // update columnWidth to a percentage of container width
-    masonry: { columnWidth: $container.width() / 3 }
+    masonry: { columnWidth: $container.width() / isotope_columns }
   });
+
+
 });
 
 

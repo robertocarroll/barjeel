@@ -44,6 +44,10 @@ $lap-start:         481px!default;
 $desk-start:        1024px!default;
 
 
+$break-mobile: 320px;
+$break-tablet: 768px;
+$break-desktop: 990px;
+
 /**
  * Font-sizes (in pixels). Refer to relevant sections for their implementations.
  */
@@ -67,6 +71,8 @@ $mid-line-height:  26px!default;
 $less-line-height:  18px!default;
 $lowest-line-height:  14px!default;
 
+
+$ipad-adjustment:        3;
 
 
 /**

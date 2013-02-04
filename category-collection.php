@@ -47,21 +47,11 @@
 					                case 'date-asc': $orderby = 'order=ASC';
 					                            $msg = 'Date Ascending';
 					                              break;
-					                           
-					                case 'date-desc': $orderby = 'order=DESC';
-					                            $msg = 'Date Descending(default)';
-					                              break;
-			
-					 
+					                          
 					                case 'title-asc': $orderby = 'orderby=title&order=ASC';
 					                                $msg = 'Title A-Z';
 					                                break;
 					                             
-					                case 'title-desc': $orderby = 'orderby=title&order=DESC';
-					                                $msg = 'Title Z-A';
-					                                break;
-					                             
-					                
 					              }
 					          }
 					          else
@@ -78,9 +68,7 @@
 				<select class="sort-by">
 
 		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Recently added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		            <option value="date-asc" <?php echo ($order == 'date-asc')? 'selected="selected"':''; ?>>&nbsp;Oldest first&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title A to Z&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		            <option value="title-desc" <?php echo ($order == 'title-desc')? 'selected="selected"':''; ?>>&nbsp;Title Z to A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		           
 		   
 		        </select>

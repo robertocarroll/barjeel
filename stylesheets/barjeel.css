@@ -2826,28 +2826,37 @@ header[role="banner"] {
   }
 }
 
-/* line 11, ../sass/templates/_homepage.scss */
+/* line 15, ../sass/templates/_homepage.scss */
 .headline {
   display: block;
   float: left;
   margin-left: 77.00227%;
   margin-right: -100%;
   width: 22.99773%;
-  clear: none;
-  float: right;
-  margin-right: 0;
-  margin-left: 2.22222%;
   text-align: right;
 }
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  /* line 15, ../sass/templates/_homepage.scss */
+  .headline {
+    display: block;
+    float: left;
+    margin-left: 0%;
+    margin-right: -100%;
+    width: 74.33762%;
+    clear: both;
+    padding-top: 21px;
+    text-align: left;
+  }
+}
 
-/* line 18, ../sass/templates/_homepage.scss */
+/* line 28, ../sass/templates/_homepage.scss */
 .main-title, .exhibition-title {
   line-height: 26px;
   margin-bottom: 10.5px;
   text-transform: uppercase;
 }
 
-/* line 27, ../sass/templates/_homepage.scss */
+/* line 34, ../sass/templates/_homepage.scss */
 .date, .exhibition-meta-list {
   color: #ff3300;
   line-height: 18px;
@@ -2855,13 +2864,13 @@ header[role="banner"] {
   text-transform: uppercase;
 }
 
-/* line 34, ../sass/templates/_homepage.scss */
+/* line 41, ../sass/templates/_homepage.scss */
 .e-date {
   color: #66bbdd;
   margin-bottom: 5.25px;
 }
 
-/* line 45, ../sass/templates/_homepage.scss */
+/* line 52, ../sass/templates/_homepage.scss */
 .vignette-large {
   border-radius: 50%;
   width: 745px;
@@ -2886,25 +2895,25 @@ header[role="banner"] {
   /* Part 2: Scale the height according to the width, otherwise you get stretching */
 }
 
-/* line 65, ../sass/templates/_homepage.scss */
+/* line 72, ../sass/templates/_homepage.scss */
 .vignette-large:hover {
   -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
   -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
   box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
 }
 
-/* line 70, ../sass/templates/_homepage.scss */
+/* line 77, ../sass/templates/_homepage.scss */
 img.attachment-homepage-thumb {
   z-index: -1;
   position: relative;
 }
 
-/* line 75, ../sass/templates/_homepage.scss */
+/* line 82, ../sass/templates/_homepage.scss */
 .article-row {
   padding-top: 42px;
 }
 
-/* line 79, ../sass/templates/_homepage.scss */
+/* line 86, ../sass/templates/_homepage.scss */
 .article-list {
   line-height: 26px;
   margin-bottom: 5.25px;
@@ -2912,13 +2921,13 @@ img.attachment-homepage-thumb {
   padding-top: 10.5px;
 }
 
-/* line 86, ../sass/templates/_homepage.scss */
+/* line 93, ../sass/templates/_homepage.scss */
 .article-one {
   color: #ff3300;
   text-align: center;
 }
 
-/* line 91, ../sass/templates/_homepage.scss */
+/* line 98, ../sass/templates/_homepage.scss */
 .column-one {
   display: block;
   float: left;
@@ -2926,14 +2935,24 @@ img.attachment-homepage-thumb {
   margin-right: -100%;
   width: 23.01287%;
 }
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  /* line 98, ../sass/templates/_homepage.scss */
+  .column-one {
+    display: block;
+    float: left;
+    margin-left: 0%;
+    margin-right: -100%;
+    width: 48.67525%;
+  }
+}
 
-/* line 95, ../sass/templates/_homepage.scss */
+/* line 104, ../sass/templates/_homepage.scss */
 .article-two {
   color: #66bbdd;
   text-align: center;
 }
 
-/* line 100, ../sass/templates/_homepage.scss */
+/* line 109, ../sass/templates/_homepage.scss */
 .column-two {
   display: block;
   float: left;
@@ -2941,14 +2960,24 @@ img.attachment-homepage-thumb {
   margin-right: -100%;
   width: 22.99773%;
 }
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  /* line 109, ../sass/templates/_homepage.scss */
+  .column-two {
+    display: block;
+    float: left;
+    margin-left: 51.33989%;
+    margin-right: -100%;
+    width: 48.66011%;
+  }
+}
 
-/* line 104, ../sass/templates/_homepage.scss */
+/* line 122, ../sass/templates/_homepage.scss */
 .article-three {
   color: #ff3300;
   text-align: center;
 }
 
-/* line 109, ../sass/templates/_homepage.scss */
+/* line 128, ../sass/templates/_homepage.scss */
 .column-three {
   display: block;
   float: left;
@@ -2956,14 +2985,26 @@ img.attachment-homepage-thumb {
   margin-right: -100%;
   width: 22.99773%;
 }
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  /* line 128, ../sass/templates/_homepage.scss */
+  .column-three {
+    display: block;
+    float: left;
+    margin-left: 0%;
+    margin-right: -100%;
+    width: 48.67525%;
+    clear: both;
+    padding-top: 21px;
+  }
+}
 
-/* line 113, ../sass/templates/_homepage.scss */
+/* line 138, ../sass/templates/_homepage.scss */
 .article-four {
   color: #66bbdd;
   text-align: center;
 }
 
-/* line 119, ../sass/templates/_homepage.scss */
+/* line 144, ../sass/templates/_homepage.scss */
 .column-four {
   display: block;
   float: left;
@@ -2971,33 +3012,44 @@ img.attachment-homepage-thumb {
   margin-right: -100%;
   width: 22.99773%;
 }
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  /* line 144, ../sass/templates/_homepage.scss */
+  .column-four {
+    display: block;
+    float: left;
+    margin-left: 51.33989%;
+    margin-right: -100%;
+    width: 48.66011%;
+    padding-top: 21px;
+  }
+}
 
-/* line 123, ../sass/templates/_homepage.scss */
+/* line 153, ../sass/templates/_homepage.scss */
 .article-one .square {
   background-color: #ff3300;
 }
 
-/* line 128, ../sass/templates/_homepage.scss */
+/* line 158, ../sass/templates/_homepage.scss */
 .article-two .square {
   background-color: #66bbdd;
 }
 
-/* line 133, ../sass/templates/_homepage.scss */
+/* line 163, ../sass/templates/_homepage.scss */
 .article-three .square {
   background-color: #ff3300;
 }
 
-/* line 138, ../sass/templates/_homepage.scss */
+/* line 168, ../sass/templates/_homepage.scss */
 .article-four .square {
   background-color: #66bbdd;
 }
 
-/* line 143, ../sass/templates/_homepage.scss */
+/* line 173, ../sass/templates/_homepage.scss */
 .article-one .e-date {
   color: #ff3300;
 }
 
-/* line 148, ../sass/templates/_homepage.scss */
+/* line 178, ../sass/templates/_homepage.scss */
 .article-three .e-date {
   color: #ff3300;
 }

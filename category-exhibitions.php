@@ -6,14 +6,18 @@
 
 			<?php
 
+				/* An array to store the ID of the sticky post at the page  */
+
+				$not_id = array();
+
 				/* Get all sticky posts */
-				$sticky = get_option( 'sticky_posts' );
+				$sticky = get_option( 'sticky_posts' );		
 
 				/* Sort the stickies with the newest ones at the top */
 				rsort( $sticky );
 
 				/* Get the 5 newest stickies (change 5 for a different number) */
-				$sticky = array_slice( $sticky, 0, 1 );
+				$sticky = array_slice( $sticky, 0, 5 );
 
 				$stickyexhibition = array(
 					'posts_per_page' => 1,
@@ -28,7 +32,7 @@
 				<?php $stickyexhibition_query = new WP_Query( $stickyexhibition ); ?>
 				
 				<?php /* Start the Loop */ ?>
-				
+			
 				<?php if( $stickyexhibition_query->have_posts() ) : ?>		
 			
 				<?php while ( $stickyexhibition_query->have_posts() ) : $stickyexhibition_query->the_post(); ?>
@@ -36,6 +40,8 @@
 				<div class="page-content">
 					
 					<article>
+
+					<?php $not_id = get_the_ID(); ?>
 
 						<!-- Gets the cropped image -->
 				
@@ -105,8 +111,10 @@
 			?>	
 
 		<?php 
+
+			/* Exclude the post which is shown at the top of the page using the $not_in array  */	
 													
-			query_posts(array("post__not_in" =>get_option("sticky_posts"), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 8)); ?>
+			query_posts(array("post__not_in" =>array($not_id), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 8)); ?>
 				
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>

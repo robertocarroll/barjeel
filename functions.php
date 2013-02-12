@@ -572,6 +572,64 @@ function be_post_type_connections() {
 }
 
 
+/**
+ * Update custom field with taxonomy *
+ * 
+ * 
+ */
+
+
+add_action('save_post', 'save_my_metadata');
+
+function save_my_metadata()
+{
+	
+	$id = empty($id) ? get_the_ID() : $id;
+
+	if ( in_category( 'collection', $id )) {
+
+	$taxonomy_name = 'artist'; 
+
+	$parent_taxonomies = get_terms( $taxonomy_name, array( 'parent' => 0, 'hide_empty' => 0  ) ); // get parent taxonomies for artist
+
+	
+	$parent_terms = array();
+
+	 foreach ( $parent_taxonomies as $term ) 
+     {
+		$parent_terms [] = $term->name; // get the names for the artist parent taxonomies
+
+     }
+
+
+	$terms = get_the_terms( $post->ID, $taxonomy_name );	// get the terms in artist taxonomy for this post
+
+	$artist_taxonomies = array();	
+     
+     foreach ( $terms as $term ) 
+     {
+		$artist_taxonomies [] = $term->name;
+
+     }
+
+     	$result = array_diff($artist_taxonomies, $parent_terms); // remove the parent terms
+
+     	foreach ($result as $key => $value) {
+    		
+    		$value = trim($value);
+		   
+		    if (!empty($value))
+		       $artist_name = $value;  
+		    
+			}
+
+        delete_post_meta($id, 'artist');
+        update_post_meta($id, 'artist', $artist_name);  
+     
+
+       } 
+    }
+
 
 
 ?>

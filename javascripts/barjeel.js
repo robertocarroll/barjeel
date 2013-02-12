@@ -8,10 +8,15 @@ var isotope_columns = null;
 jQuery(document).ready(function($){
 
       current_width = $(window).width(); 
+      $('.attachment-homepage-thumb').width('100%');
+      $('.attachment-homepage-thumb').height('auto');
     
   });
 
  
+
+
+
 
 
 /*! For the magnifying glass on the artwork */

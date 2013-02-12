@@ -25,8 +25,8 @@
 	::-moz-selection{ background: $barjeel-red; color:#fff; text-shadow: none; }
 	::selection { background:$barjeel-red; color:#fff; text-shadow: none; } 
 	
-	/*  j.mp/webkit-tap-highlight-color */
-	a:link { -webkit-tap-highlight-color: $barjeel-red; } 
+	/*  j.mp/webkit-tap-highlight-color 
+	a:link { -webkit-tap-highlight-color: $barjeel-red; } */
 	
 	/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 	a:hover, a:active { outline: none; }
@@ -36,5 +36,5 @@
 	/*  Exhibition link */
 	.meta-link a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 	
-	/*  Hover over */	
-	.meta-link a:hover, .meta-link a:focus {color: $barjeel-link-blue !important; text-decoration: none;} 
+	/*  Hover over 	
+	.meta-link a:hover, .meta-link a:focus {color: $barjeel-link-blue !important; text-decoration: none;} */

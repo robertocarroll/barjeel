@@ -51,6 +51,10 @@
 					                case 'title-asc': $orderby = 'orderby=title&order=ASC';
 					                                $msg = 'Title A-Z';
 					                                break;
+
+					                case 'artist-asc': $orderby = 'meta_key=artist&orderby=meta_value&order=ASC';
+					                                $msg = 'Artist A-Z';
+					                                break;                
 					                             
 					              }
 					          }
@@ -69,6 +73,7 @@
 
 		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Recently added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+		            <option value="artist-asc" <?php echo ($order == 'artist-asc')? 'selected="selected"':''; ?>>&nbsp;Artist (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		           
 		   
 		        </select>

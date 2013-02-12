@@ -16,6 +16,16 @@
   @include gs-span(da, 5, 5, (2, 5));
    text-align: $opdir;
 
+
+
+   @include respond-to(bigscreen) { 
+    @include gs-span(da, 4, 5, (2, 5));
+    @include gs-pad(da, padinfull);
+    background: white;
+
+    }
+
+
    @include respond-to(tablet) { 
     @include gs-span(da, 2, 4, (2, 5));
     clear:both;
@@ -29,6 +39,11 @@
   line-height: $mid-line-height;
   margin-bottom: $half-spacing-unit;
   text-transform: uppercase;
+
+  @include respond-to(bigscreen) { 
+    margin-top: $base-spacing-unit;
+    }
+
 }
 
 .date {
@@ -51,8 +66,8 @@
 
 .vignette-large {
     border-radius: 50%;
-    width:745px;
-    height: 745px;
+    width: 100%;
+    height: auto;
  
     @include transition-property(box-shadow);
     @include transition-duration(0.2s);
@@ -78,6 +93,24 @@
   z-index: -1;
   position: relative;
 } 
+
+/* For the video homepage */
+
+.videoWrapper {
+ position: relative;
+ padding-bottom: 56.25%; /* 16:9 */
+ height: 0;
+
+}
+
+.videoWrapper iframe {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ 
+}
 
 .article-row {
   padding-top: 2 * $base-spacing-unit;  

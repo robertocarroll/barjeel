@@ -20,48 +20,68 @@ var map;
 
 			 // Create an array of styles.
   var styles = [
-
-  	{
-    stylers: [
-      { gamma: 0.99 }
-    ]
-  },
-    {
-    featureType: "landscape",
-    elementType: "geometry",
-    stylers: [
-      { color: "#ef4022" },
-      { visibility: "on" }
-    ]
-  }, 
   {
     featureType: "water",
+    elementType: "geometry",
     stylers: [
-      { color: "#85b5d5" }
+      { color: "#86b4d6" }
     ]
-  },
-  {
+  },{
     featureType: "road",
     elementType: "geometry",
     stylers: [
-      { color: "#949498" }
+      { color: "#939494" }
     ]
-  }, 
-  {
+  },{
+    featureType: "administrative",
+    stylers: [
+      { color: "#aeaeae" }
+    ]
+  },{
     featureType: "poi",
     elementType: "geometry",
     stylers: [
-      { color: "#c4c3c4" }
+      { color: "#c6c5c1" }
     ]
-  }, 
-  {
+  },{
     featureType: "road",
     elementType: "labels.text.stroke",
     stylers: [
       { color: "#ffffff" }
     ]
+  },{
+    featureType: "administrative",
+    elementType: "labels.text.fill",
+    stylers: [
+      { color: "#ef4123" }
+    ]
+  },{
+    featureType: "road",
+    elementType: "labels.text.fill",
+    stylers: [
+      { color: "#373737" }
+    ]
+  },{
+    featureType: "administrative",
+    elementType: "labels.text.stroke",
+    stylers: [
+      { color: "#ffffff" }
+    ]
+  },{
+    featureType: "landscape",
+    elementType: "geometry",
+    stylers: [
+      { color: "#e6e6e6" }
+    ]
+  },{
+    featureType: "road.arterial",
+    elementType: "labels.icon",
+    stylers: [
+      { color: "#ffffff" },
+      { "visibility": "off" }
+    ]
   }
-  ];
+];
 
   // Create a new StyledMapType object, passing it the array of styles,
   // as well as the name to be displayed on the map type control.

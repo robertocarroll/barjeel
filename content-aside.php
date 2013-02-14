@@ -57,23 +57,7 @@
 		
 		</div><!-- .exhibition-main-text -->	
 
-		<!-- Artists - from custom field called artists -->
 		
-	<?php $artists = get_post_meta($post->ID, 'artists', false); ?>
-	
-	<?php if ( $artists ) { ?>	
-
-	<h2 class="related-title">Artists in <?php the_title(); ?> </h2>
-
-	<div class="artist-list">
-	
-		<ul class = "nav  nav--stacked">
-			<?php foreach($artists as $artist) {
-				echo '<li>'.$artist.'</li>';
-				} ?>
-		</ul>
-
-	</div><!-- .artist-list -->	
 
 </div><!-- .white -->	
 

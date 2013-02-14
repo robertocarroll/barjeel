@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    $News-category
+\*------------------------------------*/
+	
+	.news-item {
+		margin-bottom: $base-spacing-unit;
+		@include gs-span(da, 2, 4, (2, 5));
+		@extend .white;
+
+	}
+
+
+	.news-image {
+		@include gs-span(da, 2, 2, (2, 4));
+		
+	}
+
+	.news-text {
+		@include gs-span(da, 3, 4, (2, 4));		
+		@extend .cf;
+		padding-top: $half-spacing-unit;
+		position: relative;
+	}
+
+
+	.entry-meta-news {
+   		position: absolute;
+   		bottom: 0;
+   		right: 0;
+	}

@@ -125,7 +125,7 @@
 
 				<div class= "artist-text">	
 
-				<div class= "center">	
+				<div class= "center margin-below-half">	
 
 				<h1 class="alpha bold artist-title gray">
 	

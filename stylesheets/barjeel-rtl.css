@@ -825,16 +825,16 @@ textarea:focus {
  * and over in your markup.
  */
 /* line 9, ../sass/inuit/generic/_clearfix.scss */
-.cf, .nav, .artwork-meta, .entry-meta, .exhibition-meta-list, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, .article-four, .page-text, #page {
+.cf, .nav, .artwork-meta, .entry-meta, .exhibition-meta-list, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, .article-four, .news-text, .page-text, #page {
   zoom: 1;
 }
 /* line 13, ../sass/inuit/generic/_clearfix.scss */
-.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .exhibition-meta-list:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .article-four:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
+.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .exhibition-meta-list:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .article-four:before, .news-text:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .news-text:after, .page-text:after, #page:after {
   content: " ";
   display: table;
 }
 /* line 18, ../sass/inuit/generic/_clearfix.scss */
-.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .page-text:after, #page:after {
+.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .news-text:after, .page-text:after, #page:after {
   clear: both;
 }
 
@@ -2244,7 +2244,7 @@ label,
 
 /* line 18, ../sass/templates/_artist.scss */
 .artist-text {
-  padding-top: 24px;
+  padding-top: 36px;
   padding-bottom: 24px;
 }
 
@@ -3375,6 +3375,17 @@ h2.entry-title a {
   transition: color 0.5s ease-out;
 }
 
+/* line 41, ../sass/templates/_links.scss */
+.royalCaptionItem a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
 /*  Hover over 	
 .meta-link a:hover, .meta-link a:focus {color: $barjeel-link-blue !important; text-decoration: none;} */
 /*------------------------------------*\
@@ -3545,7 +3556,7 @@ nav[role="navigation"] {
 }
 
 /* line 18, ../sass/templates/_misc.scss */
-.white, .page-content {
+.white, .news-item, .page-content {
   background: white;
 }
 
@@ -3603,12 +3614,57 @@ nav[role="navigation"] {
 }
 
 /* line 51, ../sass/templates/_misc.scss */
+.margin-below-half {
+  margin-bottom: 12px;
+}
+
+/* line 55, ../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 2.22222%;
   padding-right: 2.22222%;
+}
+
+/*------------------------------------*\
+    $News-category
+\*------------------------------------*/
+/* line 5, ../sass/templates/_news-category.scss */
+.news-item {
+  margin-bottom: 24px;
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 74.33762%;
+}
+
+/* line 13, ../sass/templates/_news-category.scss */
+.news-image {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 30.95723%;
+}
+
+/* line 18, ../sass/templates/_news-category.scss */
+.news-text {
+  display: block;
+  float: left;
+  margin-left: 34.54175%;
+  margin-right: -100%;
+  width: 65.45825%;
+  padding-top: 12px;
+  position: relative;
+}
+
+/* line 26, ../sass/templates/_news-category.scss */
+.entry-meta-news {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /*------------------------------------*\

@@ -16,13 +16,14 @@
 }
 
 .artist-text {
-	padding-top: $base-spacing-unit;
+	padding-top: $half-spacing-unit*3;
 	padding-bottom: $base-spacing-unit;
 }
 
 
 .artist-detail {
 	@include gs-pad(da, padinfull);
+	
 }
 
 

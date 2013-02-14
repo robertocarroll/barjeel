@@ -48,6 +48,10 @@
 		margin-bottom: $quarter-spacing-unit;
 	}
 
+	.margin-below-half {
+		margin-bottom: $half-spacing-unit;
+	}
+
 	.pad-in {
 		@include gs-pad (da, padinfull);
 	}

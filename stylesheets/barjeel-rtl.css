@@ -860,7 +860,7 @@ pre,
 .media,
 .island,
 .islet {
-  margin-bottom: 21px;
+  margin-bottom: 24px;
   margin-bottom: 1.5rem;
 }
 /* line 28, ../sass/inuit/generic/_shared.scss */
@@ -873,7 +873,7 @@ pre, .islet .form-fields > li, .islet
 .media, .islet
 .island, .islet
 .islet {
-  margin-bottom: 10.5px;
+  margin-bottom: 12px;
   margin-bottom: 0.75rem;
 }
 
@@ -882,7 +882,7 @@ pre, .islet .form-fields > li, .islet
  */
 /* line 38, ../sass/inuit/generic/_shared.scss */
 .landmark {
-  margin-bottom: 42px;
+  margin-bottom: 48px;
   margin-bottom: 3rem;
 }
 
@@ -892,8 +892,8 @@ pre, .islet .form-fields > li, .islet
  */
 /* line 48, ../sass/inuit/generic/_shared.scss */
 hr {
-  margin-bottom: 19px;
-  margin-bottom: 1.35714rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 
 /**
@@ -902,7 +902,7 @@ hr {
  */
 /* line 58, ../sass/inuit/generic/_shared.scss */
 ul, ol, dd {
-  margin-left: 42px;
+  margin-left: 48px;
   margin-left: 3rem;
 }
 
@@ -914,7 +914,7 @@ ul, ol, dd {
 \*------------------------------------*/
 /* line 4, ../sass/inuit/base/_main.scss */
 html {
-  font: 0.875em/1.5 serif;
+  font: 1em/1.5 serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -931,44 +931,44 @@ html {
  */
 /* line 11, ../sass/inuit/base/_headings.scss */
 h1, .alpha {
-  font-size: 30px;
-  font-size: 2.14286rem;
-  line-height: 1.4;
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
 }
 
 /* line 14, ../sass/inuit/base/_headings.scss */
 h2, .beta, .entry-title {
-  font-size: 26px;
-  font-size: 1.85714rem;
-  line-height: 1.61538;
+  font-size: 28px;
+  font-size: 1.75rem;
+  line-height: 1.71429;
 }
 
 /* line 17, ../sass/inuit/base/_headings.scss */
 h3, .gamma {
-  font-size: 24px;
-  font-size: 1.71429rem;
-  line-height: 1.75;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.84615;
 }
 
 /* line 20, ../sass/inuit/base/_headings.scss */
 h4, .delta {
   font-size: 18px;
-  font-size: 1.28571rem;
-  line-height: 1.16667;
+  font-size: 1.125rem;
+  line-height: 1.33333;
 }
 
 /* line 23, ../sass/inuit/base/_headings.scss */
 h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list {
-  font-size: 14px;
+  font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 /* line 26, ../sass/inuit/base/_headings.scss */
 h6, .zeta {
-  font-size: 12px;
-  font-size: 0.85714rem;
-  line-height: 1.75;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
 }
 
 /**
@@ -993,22 +993,22 @@ hgroup .hN {
 /* line 52, ../sass/inuit/base/_headings.scss */
 .giga {
   font-size: 96px;
-  font-size: 6.85714rem;
-  line-height: 1.09375;
+  font-size: 6rem;
+  line-height: 1;
 }
 
 /* line 55, ../sass/inuit/base/_headings.scss */
 .mega {
   font-size: 72px;
-  font-size: 5.14286rem;
-  line-height: 1.16667;
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 /* line 58, ../sass/inuit/base/_headings.scss */
 .kilo {
   font-size: 48px;
-  font-size: 3.42857rem;
-  line-height: 1.3125;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 /*------------------------------------*\
@@ -1021,7 +1021,7 @@ hgroup .hN {
 /* line 9, ../sass/inuit/base/_paragraphs.scss */
 .lede,
 .lead {
-  font-size: 15.75px;
+  font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333;
 }
@@ -1035,16 +1035,16 @@ hgroup .hN {
 /* line 8, ../sass/inuit/base/_smallprint.scss */
 .smallprint,
 .milli {
-  font-size: 12px;
-  font-size: 0.85714rem;
-  line-height: 1.75;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
 }
 
 /* line 11, ../sass/inuit/base/_smallprint.scss */
 .micro, .artwork-meta, .address-footer, .copyright, .pagination {
-  font-size: 10px;
-  font-size: 0.71429rem;
-  line-height: 2.1;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
 }
 
 /*------------------------------------*\
@@ -1265,22 +1265,22 @@ img {
 /* line 16, ../sass/inuit/base/_images.scss */
 .img--right {
   float: right;
-  margin-bottom: 21px;
-  margin-left: 21px;
+  margin-bottom: 24px;
+  margin-left: 24px;
 }
 
 /* line 21, ../sass/inuit/base/_images.scss */
 .img--left {
   float: left;
-  margin-right: 21px;
-  margin-bottom: 21px;
+  margin-right: 24px;
+  margin-bottom: 24px;
 }
 
 /* line 26, ../sass/inuit/base/_images.scss */
 .img--center {
   display: block;
   margin-right: auto;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
   margin-left: auto;
 }
 
@@ -1292,17 +1292,17 @@ img {
  */
 /* line 40, ../sass/inuit/base/_images.scss */
 .img--short {
-  height: 105px;
+  height: 120px;
 }
 
 /* line 43, ../sass/inuit/base/_images.scss */
 .img--medium {
-  height: 210px;
+  height: 240px;
 }
 
 /* line 46, ../sass/inuit/base/_images.scss */
 .img--tall {
-  height: 315px;
+  height: 360px;
 }
 
 /**
@@ -1399,14 +1399,14 @@ table {
 /* line 62, ../sass/inuit/base/_tables.scss */
 th,
 td {
-  padding: 5.25px;
+  padding: 6px;
   text-align: left;
 }
 @media screen and (min-width: 480px) {
   /* line 62, ../sass/inuit/base/_tables.scss */
   th,
   td {
-    padding: 10.5px;
+    padding: 12px;
   }
 }
 
@@ -1628,7 +1628,7 @@ td {
  */
 /* line 9, ../sass/inuit/base/_forms.scss */
 fieldset {
-  padding: 21px;
+  padding: 24px;
 }
 
 /**
@@ -1893,7 +1893,7 @@ label,
 }
 /* line 92, ../sass/inuit/objects/_nav.scss */
 .nav--block > li > a {
-  padding: 10.5px;
+  padding: 12px;
 }
 
 /**
@@ -1968,13 +1968,13 @@ label,
 
 /* line 27, ../sass/inuit/objects/_pagination.scss */
 .pagination > li {
-  padding: 10.5px;
+  padding: 12px;
 }
 
 /* line 30, ../sass/inuit/objects/_pagination.scss */
 .pagination > li > a {
-  padding: 10.5px;
-  margin: -10.5px;
+  padding: 12px;
+  margin: -12px;
 }
 
 /* line 34, ../sass/inuit/objects/_pagination.scss */
@@ -2012,7 +2012,7 @@ label,
 /* line 22, ../sass/inuit/objects/_media.scss */
 .media__img {
   float: left;
-  margin-right: 21px;
+  margin-right: 24px;
 }
 
 /**
@@ -2021,7 +2021,7 @@ label,
 /* line 29, ../sass/inuit/objects/_media.scss */
 .media__img--rev {
   float: right;
-  margin-left: 21px;
+  margin-left: 24px;
 }
 
 /* line 35, ../sass/inuit/objects/_media.scss */
@@ -2046,12 +2046,12 @@ label,
  */
 /* line 51, ../sass/inuit/objects/_media.scss */
 .islet .media__img {
-  margin-right: 10.5px;
+  margin-right: 12px;
 }
 
 /* line 54, ../sass/inuit/objects/_media.scss */
 .islet .media__img--rev {
-  margin-left: 10.5px;
+  margin-left: 12px;
 }
 
 /*------------------------------------*\
@@ -2071,9 +2071,9 @@ label,
  */
 /* line 16, ../sass/inuit/objects/_marginalia.scss */
 .marginalia {
-  font-size: 12px;
-  font-size: 0.85714rem;
-  line-height: 1.75;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.71429;
 }
 
 /**
@@ -2095,7 +2095,7 @@ label,
   /* line 34, ../sass/inuit/objects/_marginalia.scss */
   .marginalia__body {
     right: 100%;
-    padding-right: 21px;
+    padding-right: 24px;
     text-align: right;
   }
 
@@ -2105,7 +2105,7 @@ label,
   /* line 43, ../sass/inuit/objects/_marginalia.scss */
   .marginalia__body--right {
     left: 100%;
-    padding-left: 21px;
+    padding-left: 24px;
     text-align: left;
   }
 }
@@ -2239,8 +2239,8 @@ label,
 
 /* line 13, ../sass/templates/_artist.scss */
 .artist-text {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* line 19, ../sass/templates/_artist.scss */
@@ -2257,7 +2257,7 @@ label,
 \*------------------------------------*/
 /* line 5, ../sass/templates/_artwork-category.scss */
 .page-header {
-  padding-bottom: 42px;
+  padding-bottom: 48px;
 }
 
 /* line 10, ../sass/templates/_artwork-category.scss */
@@ -2267,7 +2267,7 @@ label,
   margin-left: 0%;
   margin-right: -100%;
   width: 74.33762%;
-  padding-bottom: 42px;
+  padding-bottom: 48px;
 }
 
 /* line 18, ../sass/templates/_artwork-category.scss */
@@ -2320,9 +2320,9 @@ label,
 /* For the circle rollovers  */
 /* line 54, ../sass/templates/_artwork-category.scss */
 .vignette:hover {
-  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
-  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
-  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 10.5px inset;
+  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
 }
 
 /* line 58, ../sass/templates/_artwork-category.scss */
@@ -2342,7 +2342,7 @@ img.attachment-cropped-thumb {
 
 /* line 69, ../sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
-  padding-top: 10.5px;
+  padding-top: 12px;
   margin: 0;
 }
 
@@ -2388,7 +2388,7 @@ img.attachment-cropped-thumb {
 
 /* line 112, ../sass/templates/_artwork-category.scss */
 .browse-title {
-  padding-bottom: 21px;
+  padding-bottom: 24px;
   margin: 0;
   color: #66bbdd;
   text-transform: uppercase;
@@ -2396,7 +2396,7 @@ img.attachment-cropped-thumb {
 
 /* line 121, ../sass/templates/_artwork-category.scss */
 .list-title {
-  padding-bottom: 10.5px;
+  padding-bottom: 12px;
   margin: 0;
   color: #999999;
 }
@@ -2411,16 +2411,16 @@ img.attachment-cropped-thumb {
 
 /* line 10, ../sass/templates/_artwork-single.scss */
 .entry-title {
-  padding-top: 21px;
-  padding-bottom: 5.25px;
+  padding-top: 24px;
+  padding-bottom: 6px;
   margin: 0;
   color: #999999;
-  line-height: 26px;
+  line-height: 24px;
 }
 
 /* line 21, ../sass/templates/_artwork-single.scss */
 .entry-meta {
-  padding-bottom: 21px;
+  padding-bottom: 24px;
   margin-bottom: 0;
 }
 
@@ -2443,8 +2443,8 @@ img.attachment-cropped-thumb {
 
 /* line 44, ../sass/templates/_artwork-single.scss */
 .related-title {
-  padding-top: 10.5px;
-  padding-bottom: 10.5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin: 0;
   color: #999999;
 }
@@ -2474,7 +2474,7 @@ img.attachment-cropped-thumb {
   -ms-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
-  padding: 21px;
+  padding: 24px;
 }
 
 /* line 15, ../sass/templates/_contact.scss */
@@ -2611,7 +2611,7 @@ img.attachment-cropped-thumb {
 .ribbon-front h1 {
   text-align: center;
   text-transform: uppercase;
-  padding: 10.5px;
+  padding: 12px;
 }
 
 /* line 137, ../sass/templates/_contact.scss */
@@ -2620,11 +2620,24 @@ img.attachment-cropped-thumb {
 }
 
 /*------------------------------------*\
+    $EducationPage
+\*------------------------------------*/
+/* line 5, ../sass/templates/_education-page.scss */
+.education-main-text {
+  padding-top: 24px;
+}
+
+/* line 10, ../sass/templates/_education-page.scss */
+.aside-right {
+  padding-bottom: 24px;
+}
+
+/*------------------------------------*\
     $Exhibition category 
 \*------------------------------------*/
 /* line 5, ../sass/templates/_exhibition-category.scss */
 .exhibition-tease {
-  padding-top: 42px;
+  padding-top: 48px;
 }
 
 /*------------------------------------*\
@@ -2650,48 +2663,53 @@ img.attachment-cropped-thumb {
 
 /* line 15, ../sass/templates/_exhibition-single.scss */
 .exhibition-slideshow {
-  padding-bottom: 21px;
+  padding-bottom: 24px;
   background: #cccccc;
 }
 
 /* line 20, ../sass/templates/_exhibition-single.scss */
 .exhibition-title {
-  padding-top: 42px;
+  padding-top: 48px;
 }
 
 /* line 25, ../sass/templates/_exhibition-single.scss */
+.exhibition-main-text {
+  padding-bottom: 24px;
+}
+
+/* line 29, ../sass/templates/_exhibition-single.scss */
 .rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
   background: none repeat scroll 0 0 #cccccc !important;
 }
 
-/* line 37, ../sass/templates/_exhibition-single.scss */
+/* line 41, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:first-child {
   color: #66bbdd;
 }
 
-/* line 41, ../sass/templates/_exhibition-single.scss */
+/* line 45, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:after {
   color: #999999;
   content: " / ";
-  padding-left: 5.25px;
+  padding-left: 6px;
 }
 
-/* line 47, ../sass/templates/_exhibition-single.scss */
+/* line 51, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:last-child:after {
   content: "";
 }
 
-/* line 52, ../sass/templates/_exhibition-single.scss */
+/* line 56, ../sass/templates/_exhibition-single.scss */
 .artist-list {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -ms-column-count: 3;
   -o-column-count: 3;
   column-count: 3;
-  padding-bottom: 21px;
+  padding-bottom: 24px;
 }
 
-/* line 57, ../sass/templates/_exhibition-single.scss */
+/* line 61, ../sass/templates/_exhibition-single.scss */
 .related-posts {
   display: block;
   float: left;
@@ -2700,9 +2718,9 @@ img.attachment-cropped-thumb {
   width: 22.99773%;
 }
 
-/* line 62, ../sass/templates/_exhibition-single.scss */
+/* line 66, ../sass/templates/_exhibition-single.scss */
 .related-list {
-  padding-bottom: 42px;
+  padding-bottom: 24px;
 }
 
 /*------------------------------------*\
@@ -2739,7 +2757,7 @@ footer[role="contentinfo"] {
 
 /* line 33, ../sass/templates/_footer.scss */
 .address-footer {
-  padding-top: 21px;
+  padding-top: 24px;
 }
 
 /* line 42, ../sass/templates/_footer.scss */
@@ -2801,7 +2819,7 @@ header[role="banner"] {
 
 /* line 9, ../sass/templates/_header.scss */
 .logo {
-  padding: 21px 0 63px 0;
+  padding: 24px 0 72px 0;
 }
 
 /*------------------------------------*\
@@ -2860,36 +2878,36 @@ header[role="banner"] {
     margin-right: -100%;
     width: 74.33762%;
     clear: both;
-    padding-top: 21px;
+    padding-top: 24px;
     text-align: right;
   }
 }
 
 /* line 38, ../sass/templates/_homepage.scss */
 .main-title, .exhibition-title {
-  line-height: 26px;
-  margin-bottom: 10.5px;
+  line-height: 24px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 1300px) {
   /* line 38, ../sass/templates/_homepage.scss */
   .main-title, .exhibition-title {
-    margin-top: 21px;
+    margin-top: 24px;
   }
 }
 
 /* line 49, ../sass/templates/_homepage.scss */
 .date, .exhibition-meta-list {
   color: #ff3300;
-  line-height: 18px;
-  margin-bottom: 10.5px;
+  line-height: 20px;
+  margin-bottom: 12px;
   text-transform: uppercase;
 }
 
 /* line 56, ../sass/templates/_homepage.scss */
 .e-date {
   color: #66bbdd;
-  margin-bottom: 5.25px;
+  margin-bottom: 6px;
 }
 
 /* line 67, ../sass/templates/_homepage.scss */
@@ -2919,9 +2937,9 @@ header[role="banner"] {
 
 /* line 87, ../sass/templates/_homepage.scss */
 .vignette-large:hover {
-  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
-  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
-  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 21px inset;
+  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 24px inset;
+  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 24px inset;
+  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 24px inset;
 }
 
 /* line 92, ../sass/templates/_homepage.scss */
@@ -2937,9 +2955,10 @@ img.attachment-homepage-thumb {
   padding-bottom: 56.25%;
   /* 16:9 */
   height: 0;
+  margin-bottom: 24px;
 }
 
-/* line 106, ../sass/templates/_homepage.scss */
+/* line 107, ../sass/templates/_homepage.scss */
 .videoWrapper iframe {
   position: absolute;
   top: 0;
@@ -2948,26 +2967,26 @@ img.attachment-homepage-thumb {
   height: 100%;
 }
 
-/* line 115, ../sass/templates/_homepage.scss */
+/* line 116, ../sass/templates/_homepage.scss */
 .article-row {
-  padding-top: 42px;
+  padding-top: 48px;
 }
 
-/* line 119, ../sass/templates/_homepage.scss */
+/* line 120, ../sass/templates/_homepage.scss */
 .article-list {
-  line-height: 26px;
-  margin-bottom: 5.25px;
+  line-height: 24px;
+  margin-bottom: 6px;
   text-transform: uppercase;
-  padding-top: 10.5px;
+  padding-top: 12px;
 }
 
-/* line 126, ../sass/templates/_homepage.scss */
+/* line 127, ../sass/templates/_homepage.scss */
 .article-one {
   color: #ff3300;
   text-align: center;
 }
 
-/* line 131, ../sass/templates/_homepage.scss */
+/* line 132, ../sass/templates/_homepage.scss */
 .column-one {
   display: block;
   float: left;
@@ -2976,7 +2995,7 @@ img.attachment-homepage-thumb {
   width: 23.01287%;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 131, ../sass/templates/_homepage.scss */
+  /* line 132, ../sass/templates/_homepage.scss */
   .column-one {
     display: block;
     float: left;
@@ -2986,13 +3005,13 @@ img.attachment-homepage-thumb {
   }
 }
 
-/* line 137, ../sass/templates/_homepage.scss */
+/* line 138, ../sass/templates/_homepage.scss */
 .article-two {
   color: #66bbdd;
   text-align: center;
 }
 
-/* line 142, ../sass/templates/_homepage.scss */
+/* line 143, ../sass/templates/_homepage.scss */
 .column-two {
   display: block;
   float: left;
@@ -3001,7 +3020,7 @@ img.attachment-homepage-thumb {
   width: 22.99773%;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 142, ../sass/templates/_homepage.scss */
+  /* line 143, ../sass/templates/_homepage.scss */
   .column-two {
     display: block;
     float: left;
@@ -3011,13 +3030,13 @@ img.attachment-homepage-thumb {
   }
 }
 
-/* line 155, ../sass/templates/_homepage.scss */
+/* line 156, ../sass/templates/_homepage.scss */
 .article-three {
   color: #ff3300;
   text-align: center;
 }
 
-/* line 161, ../sass/templates/_homepage.scss */
+/* line 162, ../sass/templates/_homepage.scss */
 .column-three {
   display: block;
   float: left;
@@ -3026,7 +3045,7 @@ img.attachment-homepage-thumb {
   width: 22.99773%;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 161, ../sass/templates/_homepage.scss */
+  /* line 162, ../sass/templates/_homepage.scss */
   .column-three {
     display: block;
     float: left;
@@ -3034,17 +3053,17 @@ img.attachment-homepage-thumb {
     margin-right: -100%;
     width: 48.67525%;
     clear: both;
-    padding-top: 21px;
+    padding-top: 24px;
   }
 }
 
-/* line 171, ../sass/templates/_homepage.scss */
+/* line 172, ../sass/templates/_homepage.scss */
 .article-four {
   color: #66bbdd;
   text-align: center;
 }
 
-/* line 177, ../sass/templates/_homepage.scss */
+/* line 178, ../sass/templates/_homepage.scss */
 .column-four {
   display: block;
   float: left;
@@ -3053,43 +3072,43 @@ img.attachment-homepage-thumb {
   width: 22.99773%;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 177, ../sass/templates/_homepage.scss */
+  /* line 178, ../sass/templates/_homepage.scss */
   .column-four {
     display: block;
     float: left;
     margin-left: 51.33989%;
     margin-right: -100%;
     width: 48.66011%;
-    padding-top: 21px;
+    padding-top: 24px;
   }
 }
 
-/* line 186, ../sass/templates/_homepage.scss */
+/* line 187, ../sass/templates/_homepage.scss */
 .article-one .square {
   background-color: #ff3300;
 }
 
-/* line 191, ../sass/templates/_homepage.scss */
+/* line 192, ../sass/templates/_homepage.scss */
 .article-two .square {
   background-color: #66bbdd;
 }
 
-/* line 196, ../sass/templates/_homepage.scss */
+/* line 197, ../sass/templates/_homepage.scss */
 .article-three .square {
   background-color: #ff3300;
 }
 
-/* line 201, ../sass/templates/_homepage.scss */
+/* line 202, ../sass/templates/_homepage.scss */
 .article-four .square {
   background-color: #66bbdd;
 }
 
-/* line 206, ../sass/templates/_homepage.scss */
+/* line 207, ../sass/templates/_homepage.scss */
 .article-one .e-date {
   color: #ff3300;
 }
 
-/* line 211, ../sass/templates/_homepage.scss */
+/* line 212, ../sass/templates/_homepage.scss */
 .article-three .e-date {
   color: #ff3300;
 }
@@ -3136,18 +3155,50 @@ img {
   border-radius: 500px;
 }
 
+/* line 43, ../sass/templates/_images.scss */
+.vignette-square {
+  width: 80%;
+  height: auto;
+  margin-right: 10%;
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+}
+
+/* line 65, ../sass/templates/_images.scss */
+.vignette-square:hover {
+  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+}
+
 /* Second thumbnail has a strange width. This setting overrides it.  */
-/* line 44, ../sass/templates/_images.scss */
+/* line 73, ../sass/templates/_images.scss */
 .round img {
   border-radius: 50%;
 }
 
-/* line 48, ../sass/templates/_images.scss */
+/* line 77, ../sass/templates/_images.scss */
 .attachment-cropped-thumb {
   width: 170px !important;
 }
 
-/* line 59, ../sass/templates/_images.scss */
+/* line 88, ../sass/templates/_images.scss */
 .attachment-homepage-thumb {
   border-radius: 50%;
   -webkit-transition-property: box-shadow;
@@ -3500,20 +3551,25 @@ nav[role="navigation"] {
   width: 15px;
   height: 15px;
   margin-left: 45%;
-  margin-bottom: 10.5px;
+  margin-bottom: 12px;
 }
 
 /* line 39, ../sass/templates/_misc.scss */
 .padding-top {
-  padding-top: 10.5px;
+  padding-top: 12px;
 }
 
 /* line 43, ../sass/templates/_misc.scss */
-.margin-below {
-  margin-bottom: 5.25px;
+.no-margin-below {
+  margin-bottom: 0;
 }
 
 /* line 47, ../sass/templates/_misc.scss */
+.margin-below {
+  margin-bottom: 6px;
+}
+
+/* line 51, ../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -3531,8 +3587,8 @@ nav[role="navigation"] {
 /* line 5, ../sass/templates/_page.scss */
 .page-intro {
   text-align: right;
-  padding-bottom: 42px;
-  padding-top: 10.5px;
+  padding-bottom: 48px;
+  padding-top: 12px;
 }
 
 /* line 12, ../sass/templates/_page.scss */
@@ -3573,7 +3629,7 @@ nav[role="navigation"] {
 
 /* line 29, ../sass/templates/_page.scss */
 .entry-content {
-  padding-top: 21px;
+  padding-top: 24px;
 }
 
 /* line 34, ../sass/templates/_page.scss */
@@ -3588,8 +3644,8 @@ nav[role="navigation"] {
   box-sizing: border-box;
   padding-left: 2.22222%;
   padding-right: 2.22222%;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #999999;
 }
 
@@ -3605,8 +3661,8 @@ nav[role="navigation"] {
   box-sizing: border-box;
   padding-left: 2.22222%;
   padding-right: 2.22222%;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #999999;
 }
 
@@ -3622,12 +3678,12 @@ nav[role="navigation"] {
   width: 100%;
   text-align: justify;
   text-transform: uppercase;
-  margin-top: 21px;
+  margin-top: 24px;
 }
 
 /* line 16, ../sass/templates/_pagination.scss */
 .pagination .page-numbers {
-  padding: 21px;
+  padding: 24px;
 }
 
 /* line 20, ../sass/templates/_pagination.scss */
@@ -3981,7 +4037,7 @@ a.rsLink {
 .filter {
   color: white;
   font-family: "adelle-sans", sans-serif;
-  height: 21px;
+  height: 24px;
 }
 
 /* line 12, ../sass/templates/_select-box.scss */
@@ -3989,8 +4045,8 @@ a.rsLink {
   color: #66bbdd;
   padding-top: 3px;
   padding-bottom: 3px;
-  padding-right: 10.5px;
-  padding-left: 10.5px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 /* line 20, ../sass/templates/_select-box.scss */
@@ -4007,7 +4063,7 @@ a.rsLink {
 .customSelect {
   color: #66bbdd;
   font-family: "adelle-sans", sans-serif;
-  height: 21px;
+  height: 24px;
 }
 
 /* line 36, ../sass/templates/_select-box.scss */
@@ -4029,8 +4085,8 @@ a.rsLink {
 /* line 49, ../sass/templates/_select-box.scss */
 .customSelectInner {
   background: url(../images/arrow.png) no-repeat left #cee9f4;
-  padding-right: 5.25px;
-  padding-left: 5.25px;
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
 /*------------------------------------*\
@@ -4040,36 +4096,36 @@ a.rsLink {
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 7, ../sass/templates/_typography.scss */
   h1, .alpha {
-    font-size: 33px;
-    font-size: 2.35714rem;
-    line-height: 1.27273;
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 1.5;
   }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 13, ../sass/templates/_typography.scss */
   h2, .beta, .entry-title {
-    font-size: 29px;
-    font-size: 2.07143rem;
-    line-height: 1.44828;
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 1.71429;
   }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 18, ../sass/templates/_typography.scss */
   h3, .gamma {
-    font-size: 27px;
-    font-size: 1.92857rem;
-    line-height: 1.55556;
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 1.84615;
   }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 22, ../sass/templates/_typography.scss */
   h4, .delta {
-    font-size: 20px;
-    font-size: 1.42857rem;
-    line-height: 1.05;
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.33333;
   }
 }
 
@@ -4077,8 +4133,8 @@ a.rsLink {
   /* line 26, ../sass/templates/_typography.scss */
   h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list {
     font-size: 16px;
-    font-size: 1.14286rem;
-    line-height: 1.3125;
+    font-size: 1rem;
+    line-height: 1.5;
   }
 }
 
@@ -4086,8 +4142,8 @@ a.rsLink {
   /* line 30, ../sass/templates/_typography.scss */
   h6, .zeta {
     font-size: 14px;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.875rem;
+    line-height: 1.71429;
   }
 }
 
@@ -4119,14 +4175,14 @@ p {
 
 /* line 58, ../sass/templates/_typography.scss */
 .small, .artwork-title, .artist-name, .browse-title, .list-title, .ribbon-front h1 {
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 /* line 65, ../sass/templates/_typography.scss */
 .micro, .artwork-meta, .address-footer, .copyright, .pagination {
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 /* line 70, ../sass/templates/_typography.scss */
@@ -4914,7 +4970,7 @@ pre code {
 /**
  * Fonts
  */
-/* line 56, ../sass/barjeel.scss */
+/* line 57, ../sass/barjeel.scss */
 body {
   background-image: url(../images/background.jpg);
   background-repeat: repeat;
@@ -4927,20 +4983,30 @@ body {
 /**
  * Main block
  */
-/* line 71, ../sass/barjeel.scss */
+/* line 72, ../sass/barjeel.scss */
 #page {
   margin: 0 auto;
   width: 90%;
   float: none;
 }
 
-/* line 78, ../sass/barjeel.scss */
+/* line 79, ../sass/barjeel.scss */
 #main {
   display: block;
   float: left;
   margin-left: 16.56566%;
   margin-right: -100%;
   width: 83.39646%;
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* line 85, ../sass/barjeel.scss */
+.standalone-tweet {
+  background: transparent !important;
+}
+
+/* line 89, ../sass/barjeel.scss */
+.standalone-tweet.var-narrow .subject .e-entry-title {
+  font-size: 14px !important;
 }

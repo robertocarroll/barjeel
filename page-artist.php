@@ -9,6 +9,10 @@ http://wpquestions.com/question/show/id/3864
 
 <?php get_header(); ?>
 
+<div class="pad-in white">
+
+	<div class="entry-content">
+
 <?php
 
 $args = array('hide_empty' => 1, 'orderby' => 'name');
@@ -38,5 +42,9 @@ if($terms) :
 endif;
 
 ?>
+
+</div><!-- .entry-content -->
+
+</div><!-- .pad-in -->
 
 <?php get_footer(); ?>

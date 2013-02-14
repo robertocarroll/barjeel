@@ -11,6 +11,11 @@ http://wordpress.stackexchange.com/questions/24794/get-the-the-top-level-parent-
 
 <?php get_header(); ?>
 
+
+<div class="pad-in white">
+
+	<div class="entry-content">
+
 <?php 
 //list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
 
@@ -35,5 +40,9 @@ $args = array(
 <ul>
 <?php wp_list_categories( $args ); ?>
 </ul>
+
+</div><!-- .entry-content -->
+
+</div><!-- .pad-in -->
 
 <?php get_footer(); ?>

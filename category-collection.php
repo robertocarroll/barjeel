@@ -21,19 +21,19 @@
 
 					if ($total_pages > 1) {
 
-						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2></div>' ;
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2></div>' ;
 
 						}
 
 					else {
 
-						echo  '<div class="collection-meta"><h2 class="epsilon light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2></div>';
+						echo  '<div class="collection-meta"><h2 class="zetalight gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2></div>';
 					}	
 				}	
 
 				else {
 
-					echo '<div class="collection-meta"><h2 class="epsilon light gray inline">We currently have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
+					echo '<div class="collection-meta"><h2 class="zeta light gray inline">We currently have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
 
 				 ?>	
 
@@ -71,7 +71,7 @@
 
 				<select class="sort-by">
 
-		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Recently added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Date of artwork&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="artist-asc" <?php echo ($order == 'artist-asc')? 'selected="selected"':''; ?>>&nbsp;Artist (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		           

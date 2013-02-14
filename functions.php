@@ -401,6 +401,8 @@ function create_my_taxonomies() {
 	register_taxonomy( 'artist', 'post', array( 'hierarchical' => true, 'label' => 'Artist', 'query_var' => true, 'rewrite' => array('hierarchical' => true ) ) );
 	register_taxonomy( 'movement', 'post', array( 'hierarchical' => false, 'label' => 'Movement', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'exhibition', 'post', array( 'hierarchical' => false, 'label' => 'Exhibition', 'query_var' => true, 'rewrite' => true ) );
+	register_taxonomy( 'bornin', 'post', array( 'hierarchical' => false, 'label' => 'Born in', 'query_var' => true, 'rewrite' => true ) );
+	register_taxonomy( 'news', 'post', array( 'hierarchical' => false, 'label' => 'News', 'query_var' => true, 'rewrite' => true ) );
 }
 
 

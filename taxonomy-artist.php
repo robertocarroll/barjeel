@@ -15,7 +15,7 @@
 
 				<div class="exhibition-slideshow">
 
-				<div class="royalSlider rsDefaultInv">	
+					<div class="royalSlider rsDefaultInv">	
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
@@ -32,7 +32,9 @@
 									 <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
    									
    									</a>
-								
+
+		   			
+										
 								<?php } ?>
 							
 									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', true); 
@@ -42,8 +44,24 @@
 
 								<?php $exhibition_meta[] = $exhibitions; ?>	
 
+									<div class="rsGCaption">
+
+							   			<div class="royalCaptionItem" data-show-effect="fade movetop">
+
+											<?php echo the_title_attribute(); ?> by
+
+											<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+
+										</div>		
+
+									</div>
+
+
 
 							</div><!-- .rsContent-->
+
+
+					
 
 				<?php endwhile; ?>
 				
@@ -72,6 +90,14 @@
 									 <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
    									
    									</a>
+
+   								<div class="light-italic white zeta">
+
+	   								<?php echo the_title_attribute(); ?> by
+
+									<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+
+								</div>	
 								
 								<?php } ?>
 								
@@ -99,7 +125,9 @@
 
 				<div class= "artist-text">	
 
-				<h1 class="alpha bold main-title center gray">
+				<div class= "center">	
+
+				<h1 class="alpha bold artist-title gray">
 	
 					<?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
 				
@@ -112,16 +140,18 @@
 					
 					if($term->parent > 0)  { ?>	
 
-				<ul class="entry-meta center">	
+				<ul class="entry-meta">	
 					<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
 								
 												<?php if ( $country ) { ?>	
 												
-													<?php echo '<li class="meta-link">'.$country.'</li> '; ?>
+													<?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
 												
 												<?php } ?>	
 
 							<?php	if(!empty($exhibition_meta)) { ?>
+
+											Exhibition:
 
 												<?php	
 
@@ -131,11 +161,21 @@
 														
 													?>		
 										<?php } ?>
+
+							<?php $bornin = get_the_term_list( get_the_ID(), 'bornin') ?>	
+
+										<?php if ( $bornin ) { ?>	
+												
+													<?php echo '<li class="meta-link">Born in: '.$bornin.'</li> '; ?>
+												
+												<?php } ?>				
 										
 					</ul>	
 				<?php	
 					}	
 				 ?>		
+
+				</div>
 
 				<div class= "artist-detail">	
 					

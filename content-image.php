@@ -30,52 +30,86 @@
 
 		<div class="meta white center">	
 
-		<h1 class="entry-title">
+			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 
-		<span class="uppercase">
+			<div class="light-italic gray zeta">
 
-			<?php the_title(); ?> - 	
+				<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+
+			</div>	
+
+			<?php endif; ?>		
+
+		<div class="title-area">	
+
+		<h1 class="entry-title uppercase">
+
+			<?php the_title(); ?> 	
+
+		</h1>
 		
-		</span>
-			
-			<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+		<ul class="entry-meta">		
 
-		</h1>	
-		
-			<ul class="entry-meta">	
-									
-									<!-- Exhibitions- from custom field called exhibitions -->
+						<?php $medium = get_the_term_list( get_the_ID(), 'medium') ?>	
+
+										<?php if ( $medium ) { ?>	
+												
+													<?php echo '<li class="meta-link">Medium: '.$medium.'</li> '; ?>
+												
+												<?php } ?>	
+				
+
+				<!-- Exhibitions- from custom field called exhibitions -->
 									
 									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false); ?>
 								
 												<?php if ( $exhibitions ) { ?>	
+
+												Exhibition:
 												
 													<?php foreach($exhibitions as $exhibition) {
 														echo '<li class="meta-link">'.$exhibition.'</li> ';
 														} ?>
 												
-												<?php } ?>
+												<?php } ?>									
 
-									<?php $medium = rw_get_the_term_list(null, 'medium', false, '', ', ', '');  ?>
-								
-												<?php if ( $medium ) { ?>	
-												
-													<?php echo '<li class="meta-link">'.$medium.'</li> '; ?>
-												
-												<?php } ?>	
-															
+
+		</ul>		
+
+		</div>									
+
+		<div class="artist-area">
+
+		<h2 class="entry-title">
+			
+			<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+
+		</h2>	
+		
+			<ul class="entry-meta">	
+									
 
 									<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
 								
 												<?php if ( $country ) { ?>	
 												
-													<?php echo '<li class="meta-link">'.$country.'</li> '; ?>
+													<?php echo '<li class="meta-link">Origin: '.$country.'</li> '; ?>
 												
 												<?php } ?>	
+
+									<?php $bornin = get_the_term_list( get_the_ID(), 'bornin') ?>	
+
+										<?php if ( $bornin ) { ?>	
+												
+													<?php echo '<li class="meta-link">Born in: '.$bornin.'</li> '; ?>
+												
+												<?php } ?>		
 
 													
 
 								</ul>	
+
+				</div>					
 		
 		</div><!-- .meta -->
 	

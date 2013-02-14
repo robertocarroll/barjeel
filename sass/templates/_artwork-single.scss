@@ -10,36 +10,48 @@
 	.entry-title {
 		@extend .bold;
 		@extend .beta;
-		padding-top: $base-spacing-unit;
+		padding-top: $quarter-spacing-unit;
 		padding-bottom: $quarter-spacing-unit;
 		margin: 0;
 		color: $barjeel-grey;
 		line-height: $mid-line-height;
+	
 	}
 
+
+	h1.entry-title, ul.entry-meta, h2.entry-title, h1.main-title  {
+		display: inline-block;
+    	vertical-align: bottom;
+    }
 
 	.entry-meta {
 		@extend .epsilon;
-		@extend .light;
 		@extend .nav;
-		padding-bottom: $base-spacing-unit;
 		margin-bottom: 0;
+		padding-bottom: 2px;
+		
 	}
 
+	.title-area {padding-top: $half-spacing-unit;}
 
 	.entry-meta > li {
 		padding: 0;
 		margin: 0;
-		text-transform: uppercase;
+
 	}
+
+	.entry-meta > li:first-child:before, .entry-meta > li:after  {
+ 		content: "•";
+ 		padding-left: $quarter-spacing-unit;
+ 		padding-right: $quarter-spacing-unit;
+ 	} 
  		
- 	.entry-meta > li:after {
- 		content: " / ";
- 	} 	
 	
 	.entry-meta > li:last-child:after {
  		content: "";
  	} 	
+
+ 	.artist-area {padding-bottom: $base-spacing-unit;}
 
  	.related-title {
 		@extend .light;

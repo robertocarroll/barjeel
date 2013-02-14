@@ -10,6 +10,11 @@
 .rsContent {text-align: center !important; }
 
 
+.artist-title {
+	@extend .main-title;
+	margin-bottom: $quarter-spacing-unit !important;
+}
+
 .artist-text {
 	padding-top: $base-spacing-unit;
 	padding-bottom: $base-spacing-unit;

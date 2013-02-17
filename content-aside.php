@@ -7,63 +7,59 @@
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="exhibition-main">
+		<div class="exhibition-main">
 
-		<?php
-						$royal_slideshow = get_post_meta($post->ID, 'slideshow', true);
-						if ($royal_slideshow)
-						{
+			<?php
+				$royal_slideshow = get_post_meta($post->ID, 'slideshow', true);
+				if ($royal_slideshow)
+				{
+				
+			?>
+
+				<?php echo '<div class="exhibition-slideshow">' ?>
+
+					<?php echo get_new_royalslider($royal_slideshow); ?>
+
+				<?php echo '</div>' ?>
+
+				<?php } ?>
 						
-					?>
+		<div class="exhibition-text white">						
 
-						<?php echo '<div class="exhibition-slideshow">' ?>
-	
-							<?php echo get_new_royalslider($royal_slideshow); ?>
+					<h1 class="alpha bold exhibition-title gray"><?php the_title(); ?></h1>
 
-						<?php echo '</div>' ?>
+								<?php $dates = get_post_meta($post->ID, 'Dates', true); ?>	
 
-						<?php } ?>
-								
-	<div class="exhibition-text white">						
+								<?php $location = get_post_meta($post->ID, 'Location', true); ?>	
 
-		<h1 class="alpha bold exhibition-title gray"><?php the_title(); ?></h1>
+								<?php $exhibition_meta = array ($dates, $location) ?>
 
-					<?php $dates = get_post_meta($post->ID, 'Dates', true); ?>	
+								<?php	if(!empty($exhibition_meta)) { ?>
 
-					<?php $location = get_post_meta($post->ID, 'Location', true); ?>	
+									<?php echo '<ul class="exhibition-meta-list">' ?>	
 
-					<?php $exhibition_meta = array ($dates, $location) ?>
+									<?php	
 
-					<?php	if(!empty($exhibition_meta)) { ?>
-
-						<?php echo '<ul class="exhibition-meta-list">' ?>	
-
-						<?php	
-
-							foreach($exhibition_meta as $value) {
-  							print '<li>'.$value.'</li>'; ;
-							}
-						?>		
-	
-						<?php echo '</ul>' ?>	
-						<?php } ?>
+										foreach($exhibition_meta as $value) {
+			  							print '<li>'.$value.'</li>'; ;
+										}
+									?>		
+				
+									<?php echo '</ul>' ?>	
+									<?php } ?>
 
 	
-		<div class="exhibition-main-text">
+					<div class="exhibition-main-text">
 
-			<?php the_content(); ?>
-		
-		</div><!-- .exhibition-main-text -->	
+						<?php the_content(); ?>
+					
+					</div><!-- .exhibition-main-text -->	
 
-		
+			</div><!-- .white -->	
 
-</div><!-- .white -->	
-
-</div><!-- .exhibition-text -->
-
-	<?php } ?>
+		</div><!-- .exhibition-main -->
 
 	</article><!-- #post-<?php the_ID(); ?> -->
 
@@ -90,7 +86,7 @@
 					global $post;
 					if( isset( $post->connected ) && !empty( $post->connected ) ):
 
-						echo '<div class="related-posts">'; 			
+		echo '<div class="related-posts">'; 			
 						
 						$count = 1;
 						
@@ -98,37 +94,25 @@
 							
 							if( $count < 4 ) {	?>
 
-						<article>	
+				<article>	
 
-						<div class="related-list <?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">	
+					<div class="related-list <?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">	
 
 							<div class="square">&nbsp;</div>
 
-							<?php	
+							<?php echo '<a href="' . get_permalink( $related->ID ) . '">'; ?>
 
-									echo '<a href="' . get_permalink( $related->ID ) . '">';
+									<div class="vignette-square">
+			 
+										 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', $related->ID,  'cropped-thumb'); 
 
-								?>
+										 endif; ?>		
 
-								<div class="vignette-square">
-	 
-								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', $related->ID,  'cropped-thumb'); 
-
-								 endif; ?>		
-
-								 </div>	
+									</div>	
 
 								</a>
 
-							<h1 class="gamma bold article-list">
-
-								<?php	
-
-									echo '<a href="' . get_permalink( $related->ID ) . '">' . $related->post_title . '</a>';
-
-								?>	
-
-							</h1>
+							<h1 class="gamma bold article-list"><?php echo '<a href="' . get_permalink( $related->ID ) . '">' . $related->post_title . '</a>'; ?></h1>
 
 							<?php $dates = get_post_meta($related->ID, 'Dates', true);
 								//Checking if anything exists for the dates
@@ -136,8 +120,9 @@
 								<?php echo '<h2 class="date epsilon bold e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
 										
-					
-						</article>
+					</div>	
+
+				</article>
 								
 
 						<?php		
@@ -146,23 +131,21 @@
 
 							}
 						endforeach;
-					
-						echo '</div>';
 
-					echo '</div>';	
+		echo '</div>';	
 					
 					endif;
 
 
-?>
+?>	
 
-	<div style="clear:both;"></div>
-	
+<div style="clear: both; font-size: 1px; line-height: 0px;"> &nbsp;</div>
 
 <!-- Artwork - looks for posts with a category collection and a taxonomy exhibition -->
 		
 		<?php global $post;
 			$artwork['tax_query'] = array(
+				'nopaging' => 'true',
 				array(
 					'taxonomy' => 'category',
 					'terms' => array('collection'),
@@ -175,6 +158,8 @@
 				),
 			);
 			?>
+
+			<div class="related-artwork">
 			
 				<?php $artwork_query = new WP_Query( $artwork ); ?>
 				
@@ -197,6 +182,8 @@
 				<?php endif; ?>	
 				
 				<?php /* Reset query */ wp_reset_postdata(); ?>
+
+			</div>	
 
 
 

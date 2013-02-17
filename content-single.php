@@ -6,34 +6,54 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-		
-	<div class="entry-content">
-		
-		<div class="featured-image center">
-		<?php
-			if ( has_post_thumbnail() ){ ?>
-				<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
-				<?php the_post_thumbnail('collection-big'); ?>
+			
+			<div class="news-main">	
+					
+					<?php
+						if ( has_post_thumbnail() ){ ?>
+						<div class="featured-image center">
+							<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
+							<?php the_post_thumbnail('collection-big'); ?>
+						</div><!-- .featured-image -->				
+							<?php } ?>
+					
+
+					<div class="news-entry white">	
+
+						<?php if ( has_post_thumbnail() ) {?>
+
+							<div class="light-italic gray zeta">
+
+								<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+
+							</div>	
+
+							<?php } ?>
+
+							
+						<h1 class="alpha bold exhibition-title gray"><?php the_title(); ?></h1>
+
+						<h2 class="date epsilon e-date"><?php the_time('j F Y'); ?></h2>
 						
-				<?php } ?>
-		</div><!-- .featured-image -->	
+						<?php the_content(); ?>
+
+						<ul class="light uppercase meta-news nav">		
+
+								<?php echo get_the_term_list( get_the_ID(), 'news-themes', '<li class="meta-link">', '</li><li class="meta-link">', '</li>') ?>	
+
+									</ul>		
+
+					</div><!-- .news-text -->
 		
-		<div class="meta">
-		
-		<ul>
-		
-		<li><?php echo rw_get_the_term_list(null, 'artist', false, 'Artist: ', ', ', ''); ?></li>
-		
-		<li><?php echo rw_get_the_term_list(null, 'artist', true, 'Country: ', ', ', ''); ?></li>
-	
-		<li><?php echo get_the_term_list( get_the_ID(), 'theme', "Theme: " ) ?></li>
-		
-		</div><!-- .meta -->
-	
-		<?php the_content(); ?>
-		
-	</div><!-- .entry-content -->
+	</div><!-- .news-main -->
+
 
 </article><!-- #post-<?php the_ID(); ?> -->
+
+
+	<div class="nextprevious">
+		<ul>
+			<li class="prev"><?php previous_post_link('%link', '<div class="previousproject">Previous post</div>', TRUE); ?></li>
+			<li class="next"><?php next_post_link('%link', '<div class="nextproject">Next post</div>', TRUE); ?> </li>
+		</ul>
+	</div>

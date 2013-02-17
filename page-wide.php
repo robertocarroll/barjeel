@@ -13,7 +13,7 @@ Template Name: Full width page
 
 	<div class="pad-in">
 
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h1 class="entry-title padding-top-most"><?php the_title(); ?></h1>
 	
 	<div class="entry-content">
 		

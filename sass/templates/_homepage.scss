@@ -129,28 +129,12 @@
   text-align: center;
 }
 
-.column-one {   
-  @include gs-span(da, 2, 2, (2, 5));
 
-  @include respond-to(tablet) { @include gs-span(da, 2, 3, (2, 5));}
-  }
 
 .article-two {
   color: $barjeel-blue;
   text-align: center;
 }
-
-.column-two {
-  @include gs-span(da, 3, 3, (2, 5));
-  @include respond-to(tablet) { 
-
-      @include gs-span(da, 4, 5, (2, 5));
-
-
-    }
-  }
-
-
 
 
 .article-three {
@@ -159,30 +143,12 @@
 }
 
 
-.column-three {
-  @include gs-span(da, 4, 4, (2, 5));
-  
-  @include respond-to(tablet) { 
-    @include gs-span(da, 2, 3, (2, 5));
-    clear:both;
-    padding-top: $base-spacing-unit;
-    }
-  }
-
 .article-four {
   color: $barjeel-blue;
   text-align: center;
   @extend .cf
 }
 
-.column-four {
-  @include gs-span(da, 5, 5, (2, 5));
- 
-  @include respond-to(tablet) {
-    @include gs-span(da, 4, 5, (2, 5));
-    padding-top: $base-spacing-unit;
-  }
-}
 
 .article-one .square {
 	background-color: $barjeel-red;

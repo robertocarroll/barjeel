@@ -7,6 +7,11 @@
 		background: lighten($barjeel-grey, 20%);
 	}
 
+	.videoWrapperimage {
+		@extend .videoWrapper;
+		margin-bottom: 0 !important;
+	}
+
 	.entry-title {
 		@extend .bold;
 		@extend .beta;
@@ -29,6 +34,7 @@
 		@extend .nav;
 		margin-bottom: 0;
 		padding-bottom: 2px;
+		color: $barjeel-grey;
 		
 	}
 
@@ -37,6 +43,7 @@
 	.entry-meta > li {
 		padding: 0;
 		margin: 0;
+		
 
 	}
 
@@ -65,4 +72,23 @@
 	#sort-entry {
 		@include gs-span(da, 2, 5, (2, 5));
 		display: none;
+	}
+
+	.next-previous {
+		font-size: $micro-size;
+	}
+
+	nav.next-previous ul li {
+    	margin-right: $half-spacing-unit;
+	}
+
+
+	nav.next-previous ul li:after {
+    	content: "•";
+    	margin-left: $half-spacing-unit;
+	}
+
+	nav.next-previous ul li:last-child:after {
+    	content: "";
+    	margin-left: 0;
 	}

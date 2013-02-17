@@ -27,7 +27,7 @@
 
 					else {
 
-						echo  '<div class="collection-meta"><h2 class="zetalight gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2></div>';
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2></div>';
 					}	
 				}	
 

@@ -403,7 +403,7 @@ function create_my_taxonomies() {
 	register_taxonomy( 'movement', 'post', array( 'hierarchical' => false, 'label' => 'Movement', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'exhibition', 'post', array( 'hierarchical' => false, 'label' => 'Exhibition', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'bornin', 'post', array( 'hierarchical' => false, 'label' => 'Born in', 'query_var' => true, 'rewrite' => true ) );
-	register_taxonomy( 'news', 'post', array( 'hierarchical' => false, 'label' => 'News', 'query_var' => true, 'rewrite' => true ) );
+	register_taxonomy( 'news-themes', 'post', array( 'hierarchical' => false, 'label' => 'News themes', 'query_var' => true, 'rewrite' => true ) );
 }
 
 
@@ -631,7 +631,32 @@ function save_my_metadata()
      
 
        } 
+
+
     }
+
+/**
+ * Update custom field with taxonomy *
+ * 
+ * 
+ */
+
+// check for a certain meta key on the current post and add a body class if meta value exists
+	
+add_filter('post_class','barjeel_custom_field_post_class');
+ 
+function barjeel_custom_field_post_class( $classes ) {
+ 
+	if ( get_post_meta( get_the_ID(), 'video', true ) ) {
+		
+		$classes[] = 'video-thumb';
+		
+	}
+	
+	// return the $classes array
+	return $classes;
+ 
+}
 
 
 

@@ -14,7 +14,7 @@
 
 .exhibition-slideshow {
  	padding-bottom: $base-spacing-unit;	
- 	background: lighten($barjeel-grey, 20%);
+ 	background: white;
 }
 
 .exhibition-title { 
@@ -64,6 +64,11 @@
 }
 
 .related-list {
-
 	padding-bottom: $base-spacing-unit;
+}
+
+.related-artwork {
+  clear: both;
+  @extend .cf;
+  overflow: hidden;
 }

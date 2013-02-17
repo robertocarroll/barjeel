@@ -46,7 +46,7 @@
 
 									<div class="rsGCaption">
 
-							   			<div class="royalCaptionItem" data-show-effect="fade movetop">
+							   			<div class="royalCaptionItem" >
 
 											<?php echo the_title_attribute(); ?> by
 

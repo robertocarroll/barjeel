@@ -8,7 +8,30 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		
 	<div class="entry-content">
+
+		<?php $has_video = false;  ?>
+
+		<?php
 		
+			// Get the video URL and put it in the $video variable
+			$video = get_post_meta($post->ID, 'video', true);
+			
+			// Check if there is in fact a video URL
+		
+			if ($video) {
+
+				$has_video = true;
+
+				echo '<div class="videoWrapperimage">';
+				// Echo the embed code via oEmbed
+				
+				echo '<iframe width="100%" height="auto" src="http://player.vimeo.com/video/' . $video . '?title=0&byline=0&portrait=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+
+				echo '</div>';
+			}
+		?>		
+		
+			<?php if (!$has_video) { ?>
 							
 			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 
@@ -26,9 +49,13 @@
 				</div><!-- .featured-image -->	
 			
 			<?php endif; ?>		
+
+			<?php } ?>
 		
 
 		<div class="meta white center">	
+
+			<!-- Gets the caption for the featured image -->
 
 			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 
@@ -65,7 +92,7 @@
 								
 												<?php if ( $exhibitions ) { ?>	
 
-												Exhibition:
+												<span class="meta-link">Exhibition:</span>
 												
 													<?php foreach($exhibitions as $exhibition) {
 														echo '<li class="meta-link">'.$exhibition.'</li> ';
@@ -112,12 +139,22 @@
 				</div>					
 		
 		</div><!-- .meta -->
-	
 
-			<?php related_posts(); ?>
-			
+		<nav class="next-previous">
 
-			<h2 class="epsilon light gray padding-top">See nothing you like? <a href="wordpress/random">Why not take a chance?</a></h2>
+		<ul class="nav center padding-top uppercase">
+
+			<li><?php previous_post_link('%link', 'Previous artwork', TRUE); ?> </li>
+
+			<li><a href="/random">Random</a></li>
+
+			<li><?php next_post_link('%link', 'Next artwork', TRUE); ?></li>
+
+		 </ul>
+
+		</nav>
+
+			<?php related_posts(); ?>		
 
 		<?php setPostViews(get_the_ID()); ?>
 		

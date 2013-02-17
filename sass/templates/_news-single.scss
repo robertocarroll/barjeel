@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    $News-single
+\*------------------------------------*/
+	
+.news-main {
+  @include gs-span(da, 2, 4, (2, 5));
+
+}
+
+.news-entry {
+  	@include gs-pad (da, padinfull);
+  	padding-bottom: $base-spacing-unit;	
+
+}
+
+.nextprevious {
+  	@include gs-span(da, 5, 5, (2, 5));
+  	@extend .light;
+	@extend .micro;
+	text-transform: uppercase;
+
+}
+
+.related-posts-news {
+  @include gs-span(da, 2, 4, (2, 5));
+
+}			
+ 

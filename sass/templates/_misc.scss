@@ -17,13 +17,19 @@
 
 	.white {background: white;}
 
+	.white-text {color: white;}
+
 	.grey {background: $barjeel-grey;}
 
 	.gray {color: $barjeel-grey;}
 
 	.red {color: $barjeel-red;}
 
+	.red-back {background: $barjeel-red;}
+
 	.blue {color: $barjeel-blue;}
+
+	.blue-back {background: $barjeel-blue;}	
 
 	.outline {outline: 1px solid #99999a; }
 
@@ -38,6 +44,14 @@
 
  	.padding-top {
 		padding-top: $half-spacing-unit;
+	}
+
+	.padding-top-most {
+		padding-top: $base-spacing-unit;
+	}
+
+	.padding-bottom {
+		padding-top: $base-spacing-unit;
 	}
 
 	.no-margin-below {
@@ -55,3 +69,56 @@
 	.pad-in {
 		@include gs-pad (da, padinfull);
 	}
+
+	.border-side {
+		border-#{$opdir}: 1px solid $barjeel-blue;
+	}
+
+	.column-one {   
+  @include gs-span(da, 2, 2, (2, 5));
+
+  @include respond-to(tablet) { 
+  	@include gs-span(da, 2, 3, (2, 5));
+
+  	}
+  }
+
+	.column-two {
+  @include gs-span(da, 3, 3, (2, 5));
+  @include respond-to(tablet) { 
+
+      @include gs-span(da, 4, 5, (2, 5));
+
+
+    }
+  }
+
+	.column-three {
+  @include gs-span(da, 4, 4, (2, 5));
+  
+  @include respond-to(tablet) { 
+    @include gs-span(da, 2, 3, (2, 5));
+    clear:both;
+    padding-top: $base-spacing-unit;
+    }
+  }
+
+
+	.column-four {
+  @include gs-span(da, 5, 5, (2, 5));
+ 
+  @include respond-to(tablet) {
+    @include gs-span(da, 4, 5, (2, 5));
+    padding-top: $base-spacing-unit;
+  }
+}
+
+	.column-one-two {
+ 	 @include gs-span(da, 2, 3, (2, 5));
+ 
+  }
+
+  .column-three-four {
+ 	 @include gs-span(da, 4, 5, (2, 5));
+ 
+  }

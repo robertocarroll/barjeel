@@ -40,6 +40,7 @@
 @import "templates/menu.scss";
 @import "templates/misc.scss";
 @import "templates/news-category.scss";
+@import "templates/news-single.scss";
 @import "templates/navigation.scss";
 @import "templates/page.scss";
 @import "templates/pagination.scss";
@@ -82,11 +83,4 @@ body {
   padding-bottom: $base-spacing-unit * 2;
 }
 
-.standalone-tweet {
-    background: transparent !important;
-}
 
-.standalone-tweet.var-narrow .subject .e-entry-title {
-    font-size: 14px !important;
-   
-}

@@ -12,6 +12,7 @@
 	.page-content {
 		@extend .white;
 		@include gs-span(da, 2, 5, (2, 5));
+		padding-bottom: $base-spacing-unit;
 	}
 
 	.page-image {
@@ -47,4 +48,29 @@
 		padding-bottom: $base-spacing-unit;
 		color: $barjeel-grey;
 
+	}
+
+	.colour-title {
+		@extend .delta;
+		@extend .bold;
+		@extend .white-text;
+		padding-top: $quarter-spacing-unit;
+		padding-bottom: $quarter-spacing-unit;
+		padding-left: $half-spacing-unit;
+		padding-right: $half-spacing-unit;
+	}
+
+	.visit-table  { 
+   		margin-bottom: $base-spacing-unit*2;
+	}
+
+	.visit-table th, td {
+   		padding:$quarter-spacing-unit;
+ 
+	}
+
+	.visit-guide {
+		padding-top: $base-spacing-unit;
+		padding-bottom: $half-spacing-unit;
+		border-top: 1px solid $barjeel-blue;
 	}

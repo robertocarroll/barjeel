@@ -14,7 +14,21 @@
 						?>
 				</h1>	
 
+				<?php
+						//list terms in a given taxonomy
+						$taxonomy = 'news-themes';
+						$tax_terms = get_terms($taxonomy);
+				?>
+						<ul class="nav meta-news">
+							<?php
+							foreach ($tax_terms as $tax_term) {
+							echo '<li class="meta-link">' . '<a href="' . esc_attr(get_term_link($tax_term, $taxonomy)) . '" title="' . sprintf( __( "View all posts in %s" ), $tax_term->name ) . '" ' . '>' . $tax_term->name.'</a></li>';
+							}
+							?>							
+						</ul>
 
+				<div>
+		
 				<?php rewind_posts(); ?>
 			
 			
@@ -47,27 +61,17 @@
 
 									<h1 class="gamma bold"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
-
-									<ul class="entry-meta-news">		
-
-						<?php $news= get_the_term_list( get_the_ID(), 'news') ?>	
-
-										<?php if ( $news ) { ?>	
-												
-													<?php echo '<li class="meta-link">'.$news.'</li> '; ?>
-												
-												<?php } ?>	
-
-									</ul			
-
-
 							</div>
+									
+									<ul class="entry-meta-news light uppercase meta-news nav">		
+
+								<?php echo get_the_term_list( get_the_ID(), 'news-themes', '<li class="meta-link">', '</li><li class="meta-link">', '</li>') ?>	
+
+									</ul>						
 
 							</div>
 
 						</article>
-
-						
 
 							<div style="clear:both;"></div>
 							

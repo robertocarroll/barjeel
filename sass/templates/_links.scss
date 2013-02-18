@@ -34,7 +34,7 @@
 
 
 	/*  Exhibition link */
-	.meta-link a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
+	.meta-link a, .entry-meta a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 
 	h2.entry-title a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 

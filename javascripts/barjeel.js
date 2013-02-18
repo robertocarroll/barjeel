@@ -52,9 +52,9 @@ jQuery(document).ready(function($){
             arrowsNavHideOnTouch: true
         });  
     });
-
-
 });
+
+
 
 /*! Sort box on collection page */
 

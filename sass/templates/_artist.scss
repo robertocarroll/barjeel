@@ -9,9 +9,13 @@
 
 .rsContent {text-align: center !important; }
 
+.slideshow-video-thumb {
+  height: 400px !important;
+}
 
 .artist-title {
 	@extend .main-title;
+	line-height: $mid-line-height !important;
 	margin-bottom: $quarter-spacing-unit !important;
 }
 
@@ -26,4 +30,9 @@
 	
 }
 
+.video-thumb-slider  { 
+	   display: block;
+	   background: url(../images/icon-video.gif) no-repeat;
+	   z-index:200; 
 
+	}

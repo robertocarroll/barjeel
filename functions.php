@@ -211,6 +211,7 @@ if ( function_exists( 'add_image_size' ) ) {
   	add_image_size('news-cropped-thumb', 220, 220, true);
   	add_image_size('cropped-thumb', 170, 170, true);
   	add_image_size('homepage-thumb', 745, 745, true);
+  		add_image_size('slider-thumb', 400, 400, true);
 }
 
 

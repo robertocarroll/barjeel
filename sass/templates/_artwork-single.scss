@@ -44,7 +44,6 @@
 		padding: 0;
 		margin: 0;
 		
-
 	}
 
 	.entry-meta > li:first-child:before, .entry-meta > li:after  {
@@ -52,7 +51,13 @@
  		padding-left: $quarter-spacing-unit;
  		padding-right: $quarter-spacing-unit;
  	} 
- 		
+ 	
+
+ 	.meta-exhibition:after {
+ 		content: "" !important;
+ 		padding-right: 0 !important;
+ 	} 	
+	
 	
 	.entry-meta > li:last-child:after {
  		content: "";

@@ -92,11 +92,9 @@
 								
 												<?php if ( $exhibitions ) { ?>	
 
-												<span class="meta-link">Exhibition:</span>
+												<li class="meta-link meta-exhibition">Exhibition:</li>
 												
-													<?php foreach($exhibitions as $exhibition) {
-														echo '<li class="meta-link">'.$exhibition.'</li> ';
-														} ?>
+												<?php echo implode(', ', $exhibitions); ?>
 												
 												<?php } ?>									
 

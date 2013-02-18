@@ -7,6 +7,9 @@
 	direction: ltr;
 	overflow: visible;
 }
+
+
+
 .royalSlider > * {
 	float: left;
 }
@@ -222,8 +225,8 @@
 
 .rsABlock,
 .rsSBlock {
-	left: 0;
-	top: 0;
+	bottom: 0 !important;
+    left: 50% !important;
 	position: absolute;
 	z-index: 15;
 	-webkit-backface-visibility: hidden;

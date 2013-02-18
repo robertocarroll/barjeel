@@ -19,34 +19,64 @@
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
+
+						 <?php $has_video = false;  ?>
 						
 							 <div class="rsContent">
+
+							 		<?php $video = get_post_meta($post->ID, 'video', true); 
+
+							   			if ($video) {
+
+											$has_video = true;	?>	
+
+											<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+
+										<?php				
+				
+								 if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'slider-thumb'); 
+
+								 	endif; 										
+									
+									?>
+										</a>
+											<?php	
+												}	
+
+							   				?>
 		
 									<?php
-									if ( has_post_thumbnail() ){ ?>
+
+									if (!$has_video&&has_post_thumbnail() ){ ?>
 
 									<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
 
 									<?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'carousel-gallery' ); ?>	
 				
-									 <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
+									 <img src="<?php echo $thumbnail['0']; ?>"alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
    									
    									</a>
 
 		   			
 										
 								<?php } ?>
-							
-									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', true); 
 
-
-									?>
+								<?php /* Get the exhibition of the post and add it to the array */ ?>
+													
+								<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', true); ?>
 
 								<?php $exhibition_meta[] = $exhibitions; ?>	
 
-									<div class="rsGCaption">
+									<div class="rsABlock" data-move-effect="bottom">
 
 							   			<div class="royalCaptionItem" >
+
+							   				<?php if ($video) {
+
+											$has_video = true;
+														
+												echo '<div class="video-thumb-slider">&nbsp;</div>'; } ?>
+
 
 											<?php echo the_title_attribute(); ?> by
 
@@ -75,8 +105,31 @@
 
 				<?php if ( $total_posts == 1 ) { ?>	
 
+				<?php $has_video = false;  ?>
+
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
+
+						<?php
+		
+			// Get the video URL and put it in the $video variable
+			$video = get_post_meta($post->ID, 'video', true);
+			
+			// Check if there is in fact a video URL
+		
+			if ($video) {
+
+				$has_video = true;
+
+				echo '<div class="videoWrapperimage">';
+				// Echo the embed code via oEmbed
+				
+				echo '<iframe width="100%" height="auto" src="http://player.vimeo.com/video/' . $video . '?title=0&byline=0&portrait=0" frameborder="0" ></iframe>';
+
+				echo '</div>';
+			}
+		?>	
+		<?php if (!$has_video) { ?>
 						
 							 <div class="featured-image center">
 		
@@ -90,6 +143,8 @@
 									 <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
    									
    									</a>
+
+   									<?php } ?>
 
    								<div class="light-italic white zeta">
 

@@ -30,6 +30,15 @@
 }
 
 
+
+@mixin old-ie {
+    // Only use this content if we're dealing with old IE
+    @if $old-ie {
+        @content;
+    }
+}
+
+
 //--------------------------------
 // Photoshop Drop Shadow - http://heygrady.com/blog/2011/08/06/recreating-photoshop-drop-shadows-in-css3-and-compass/
 

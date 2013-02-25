@@ -76,6 +76,7 @@
 
 	.column-one {   
   @include gs-span(da, 2, 2, (2, 5));
+  clear: both;
 
   @include respond-to(tablet) { 
   	@include gs-span(da, 2, 3, (2, 5));

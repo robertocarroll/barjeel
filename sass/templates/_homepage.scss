@@ -16,16 +16,6 @@
   @include gs-span(da, 5, 5, (2, 5));
    text-align: $opdir;
 
-
-
-   @include respond-to(bigscreen) { 
-    @include gs-span(da, 4, 5, (2, 5));
-    @include gs-pad(da, padinfull);
-    background: white;
-
-    }
-
-
    @include respond-to(tablet) { 
     @include gs-span(da, 2, 4, (2, 5));
     clear:both;

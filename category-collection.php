@@ -3,8 +3,6 @@
 		<section id="primary" class="site-content">
 			<div id="content" class="container" role="main">
 
-
-
 				<?php
 		
 				$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); 
@@ -19,21 +17,13 @@
 
 				if ( is_tax() ) {
 
-					if ($total_pages > 1) {
-
-						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2></div>' ;
-
-						}
-
-					else {
-
-						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in our collection</h2></div>';
-					}	
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in this category</h2></div>';
+						
 				}	
 
 				else {
 
-					echo '<div class="collection-meta"><h2 class="zeta light gray inline">We currently have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
+					echo '<div class="collection-meta"><div class="collection-details center"><h2 class="zeta light gray inline">We currently have ' .$total_posts. ' artworks in our collection</h2></div>' ;
 
 				 ?>	
 
@@ -65,22 +55,22 @@
 					          }
 					?> 
 
-				<div class="sort-collection">
+				<div class="filter-sort-menu">
 
-				<span class="filter-title">Sort by</span>
+					<span class="list-title uppercase small top-menu"><?php echo mf_get_menu_name('sort'); ?></span>
 
-				<select class="sort-by">
+					<?php wp_nav_menu( array( 'theme_location' => 'sort', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu') ); ?>	    
 
-		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Date of artwork&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		            <option value="artist-asc" <?php echo ($order == 'artist-asc')? 'selected="selected"':''; ?>>&nbsp;Artist (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		           
-		   
-		        </select>
+				 </div><!-- filter-sort-menu -->	
 
-		        </div><!-- sort-collection -->	
+			<div class="filter-sort-menu">
 
-		        
+		        <span class="list-title uppercase small top-menu"><?php echo mf_get_menu_name('filter'); ?></span>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'filter', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu') ); ?>
+
+			 </div><!-- filter-sort-menu -->		
+				
 
 		    </div><!-- collection-meta -->	
 
@@ -124,9 +114,7 @@
 
 					<?php wp_nav_menu( array( 'theme_location' => 'country', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?> 
 
-					<h2 class="list-title"><?php echo mf_get_menu_name('filter'); ?></h2>
-
-					<?php wp_nav_menu( array( 'theme_location' => 'filter', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?>
+					
 				
 				</div> <!-- browse -->	
 

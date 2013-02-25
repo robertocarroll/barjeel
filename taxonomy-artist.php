@@ -80,7 +80,11 @@
 
 											<?php echo the_title_attribute(); ?> by
 
-											<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+											<?php $artist_name = rw_get_the_term_list(null, 'artist', false, '', ', ', '');
+
+											$artist_name = strip_tags( $artist_name );
+
+											echo $artist_name; ?>
 
 										</div>		
 

@@ -9,7 +9,7 @@ footer[role="contentinfo"] {
 		@extend .cf;
 
 		/* Fallback for web browsers that don't support RGBa */
-		background: $barjeel-blue;
+		background: lighten($barjeel-grey, 25%);
 		/* RGBa with 0.6 opacity */
 		background: rgba(138, 207, 230, 0.5);
 		/* For IE 5.5 - 7*/

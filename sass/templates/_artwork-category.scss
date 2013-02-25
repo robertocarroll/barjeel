@@ -8,11 +8,23 @@
 	}
 
 	.collection-meta {	
-		@include gs-span(da, 2, 4, (2, 5));
-		padding-bottom: $base-spacing-unit * 2;
+		@include gs-span(da, 2, 5, (2, 5));
+		padding-bottom: $half-spacing-unit;
 	}
 
-	
+	.collection-details {	
+		@include gs-span(da, 5, 5, (2, 5));
+
+	}
+
+	.collection-details h2 {	
+		line-height: 6px;
+	}
+
+	.top-menu {
+		display: inline-block;
+		margin-bottom: 0;
+	}
 
 
 	#sort {
@@ -31,8 +43,8 @@
 
 .vignette { 
 	 border-radius: 50%;
-    width:175px;
-    height: 175px;
+    width:172px;
+    height: 172px;
  
     @include transition-property(box-shadow);
     @include transition-duration(0.2s);
@@ -108,6 +120,10 @@
  	.menu-item-772 a:hover, .menu-item-775 a:hover {
  		color: $barjeel-link-blue !important; text-decoration: none;
  	} 
+
+ 	#menu-by-artist > li, #menu-by-country > li {
+ 		margin-bottom: $quarter-spacing-unit;
+ 	}
 
  	.browse-title {
 		@extend .bold;

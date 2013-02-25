@@ -112,6 +112,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * Direction ltr / rtl
  */
 /**
+ * To create an IE8 sheet - http://jakearchibald.github.com/sass-ie/
+ */
+/**
  * inuit.css will work these next ones out for you.
  *
  * Assign our `$base-line-height` to a new spacing var for more transparency.
@@ -2284,11 +2287,31 @@ label,
   float: left;
   margin-left: 0%;
   margin-right: -100%;
-  width: 74.33762%;
-  padding-bottom: 48px;
+  width: 100%;
+  padding-bottom: 12px;
 }
 
-/* line 18, ../sass/templates/_artwork-category.scss */
+/* line 15, ../sass/templates/_artwork-category.scss */
+.collection-details {
+  display: block;
+  float: left;
+  margin-left: 77.00227%;
+  margin-right: -100%;
+  width: 22.99773%;
+}
+
+/* line 20, ../sass/templates/_artwork-category.scss */
+.collection-details h2 {
+  line-height: 6px;
+}
+
+/* line 24, ../sass/templates/_artwork-category.scss */
+.top-menu {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* line 30, ../sass/templates/_artwork-category.scss */
 #sort {
   display: block;
   float: left;
@@ -2298,23 +2321,23 @@ label,
   display: none;
 }
 
-/* line 23, ../sass/templates/_artwork-category.scss */
+/* line 35, ../sass/templates/_artwork-category.scss */
 .box-ms {
   padding-right: 4.44444%;
   width: 211px;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 23, ../sass/templates/_artwork-category.scss */
+  /* line 35, ../sass/templates/_artwork-category.scss */
   .box-ms {
     width: 190px;
   }
 }
 
-/* line 32, ../sass/templates/_artwork-category.scss */
+/* line 44, ../sass/templates/_artwork-category.scss */
 .vignette {
   border-radius: 50%;
-  width: 175px;
-  height: 175px;
+  width: 172px;
+  height: 172px;
   -webkit-transition-property: box-shadow;
   -moz-transition-property: box-shadow;
   -o-transition-property: box-shadow;
@@ -2336,20 +2359,20 @@ label,
 }
 
 /* For the circle rollovers  */
-/* line 54, ../sass/templates/_artwork-category.scss */
+/* line 66, ../sass/templates/_artwork-category.scss */
 .vignette:hover {
   -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
   -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
   box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
 }
 
-/* line 58, ../sass/templates/_artwork-category.scss */
+/* line 70, ../sass/templates/_artwork-category.scss */
 img.attachment-cropped-thumb {
   z-index: -1;
   position: relative;
 }
 
-/* line 63, ../sass/templates/_artwork-category.scss */
+/* line 75, ../sass/templates/_artwork-category.scss */
 .browse {
   display: block;
   float: left;
@@ -2358,36 +2381,36 @@ img.attachment-cropped-thumb {
   width: 22.99773%;
 }
 
-/* line 69, ../sass/templates/_artwork-category.scss */
+/* line 81, ../sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
   padding-top: 12px;
   margin: 0;
 }
 
-/* line 77, ../sass/templates/_artwork-category.scss */
+/* line 89, ../sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 88, ../sass/templates/_artwork-category.scss */
+/* line 100, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 94, ../sass/templates/_artwork-category.scss */
+/* line 106, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 98, ../sass/templates/_artwork-category.scss */
+/* line 110, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   content: "";
 }
 
 /* Makes the "see more" blue  */
-/* line 104, ../sass/templates/_artwork-category.scss */
+/* line 116, ../sass/templates/_artwork-category.scss */
 .menu-item-772 a, .menu-item-775 a {
   color: #66bbdd;
   text-decoration: none;
@@ -2398,13 +2421,18 @@ img.attachment-cropped-thumb {
   transition: color 0.5s ease-out;
 }
 
-/* line 108, ../sass/templates/_artwork-category.scss */
+/* line 120, ../sass/templates/_artwork-category.scss */
 .menu-item-772 a:hover, .menu-item-775 a:hover {
   color: #3388aa !important;
   text-decoration: none;
 }
 
-/* line 112, ../sass/templates/_artwork-category.scss */
+/* line 124, ../sass/templates/_artwork-category.scss */
+#menu-by-artist > li, #menu-by-country > li {
+  margin-bottom: 6px;
+}
+
+/* line 128, ../sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 24px;
   margin: 0;
@@ -2412,14 +2440,14 @@ img.attachment-cropped-thumb {
   text-transform: uppercase;
 }
 
-/* line 121, ../sass/templates/_artwork-category.scss */
+/* line 137, ../sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 12px;
   margin: 0;
   color: #999999;
 }
 
-/* line 129, ../sass/templates/_artwork-category.scss */
+/* line 145, ../sass/templates/_artwork-category.scss */
 .video-thumb {
   display: block;
   background: url(../images/icon-video.png) no-repeat;
@@ -2482,7 +2510,7 @@ h1.entry-title, ul.entry-meta, h2.entry-title, h1.main-title, h1.artist-title, h
 /* line 56, ../sass/templates/_artwork-single.scss */
 .meta-exhibition:after {
   content: "" !important;
-  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 /* line 62, ../sass/templates/_artwork-single.scss */
@@ -2812,7 +2840,7 @@ nav.next-previous ul li:last-child:after {
 footer[role="contentinfo"] {
   width: 100%;
   /* Fallback for web browsers that don't support RGBa */
-  background: #66bbdd;
+  background: #d9d9d9;
   /* RGBa with 0.6 opacity */
   background: rgba(138, 207, 230, 0.5);
   /* For IE 5.5 - 7*/
@@ -2935,22 +2963,6 @@ header[role="banner"] {
   width: 22.99773%;
   text-align: left;
 }
-@media only screen and (min-width: 1300px) {
-  /* line 15, ../sass/templates/_homepage.scss */
-  .headline {
-    display: block;
-    float: left;
-    margin-left: 51.33989%;
-    margin-right: -100%;
-    width: 48.66011%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 2.22222%;
-    padding-right: 2.22222%;
-    background: white;
-  }
-}
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 15, ../sass/templates/_homepage.scss */
   .headline {
@@ -2965,20 +2977,20 @@ header[role="banner"] {
   }
 }
 
-/* line 38, ../sass/templates/_homepage.scss */
+/* line 28, ../sass/templates/_homepage.scss */
 .main-title, .artist-title, .exhibition-title {
   line-height: 32px;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 1300px) {
-  /* line 38, ../sass/templates/_homepage.scss */
+  /* line 28, ../sass/templates/_homepage.scss */
   .main-title, .artist-title, .exhibition-title {
     margin-top: 24px;
   }
 }
 
-/* line 49, ../sass/templates/_homepage.scss */
+/* line 39, ../sass/templates/_homepage.scss */
 .date, .exhibition-meta-list {
   color: #ff3300;
   line-height: 20px;
@@ -2986,13 +2998,13 @@ header[role="banner"] {
   text-transform: uppercase;
 }
 
-/* line 56, ../sass/templates/_homepage.scss */
+/* line 46, ../sass/templates/_homepage.scss */
 .e-date {
   color: #66bbdd;
   margin-bottom: 6px;
 }
 
-/* line 67, ../sass/templates/_homepage.scss */
+/* line 57, ../sass/templates/_homepage.scss */
 .vignette-large {
   border-radius: 50%;
   width: 100%;
@@ -3017,21 +3029,21 @@ header[role="banner"] {
   /* Part 2: Scale the height according to the width, otherwise you get stretching */
 }
 
-/* line 87, ../sass/templates/_homepage.scss */
+/* line 77, ../sass/templates/_homepage.scss */
 .vignette-large:hover {
   -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 24px inset;
   -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 24px inset;
   box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 24px inset;
 }
 
-/* line 92, ../sass/templates/_homepage.scss */
+/* line 82, ../sass/templates/_homepage.scss */
 img.attachment-homepage-thumb {
   z-index: -1;
   position: relative;
 }
 
 /* For the video homepage */
-/* line 99, ../sass/templates/_homepage.scss */
+/* line 89, ../sass/templates/_homepage.scss */
 .videoWrapper, .videoWrapperimage {
   position: relative;
   padding-bottom: 56.25%;
@@ -3040,7 +3052,7 @@ img.attachment-homepage-thumb {
   margin-bottom: 24px;
 }
 
-/* line 107, ../sass/templates/_homepage.scss */
+/* line 97, ../sass/templates/_homepage.scss */
 .videoWrapper iframe, .videoWrapperimage iframe {
   position: absolute;
   top: 0;
@@ -3049,12 +3061,12 @@ img.attachment-homepage-thumb {
   height: 100%;
 }
 
-/* line 116, ../sass/templates/_homepage.scss */
+/* line 106, ../sass/templates/_homepage.scss */
 .article-row {
   padding-top: 48px;
 }
 
-/* line 120, ../sass/templates/_homepage.scss */
+/* line 110, ../sass/templates/_homepage.scss */
 .article-list {
   line-height: 24px;
   margin-bottom: 6px;
@@ -3062,56 +3074,56 @@ img.attachment-homepage-thumb {
   padding-top: 12px;
 }
 
-/* line 127, ../sass/templates/_homepage.scss */
+/* line 117, ../sass/templates/_homepage.scss */
 .article-one {
   color: #ff3300;
   text-align: center;
 }
 
-/* line 134, ../sass/templates/_homepage.scss */
+/* line 124, ../sass/templates/_homepage.scss */
 .article-two {
   color: #66bbdd;
   text-align: center;
 }
 
-/* line 140, ../sass/templates/_homepage.scss */
+/* line 130, ../sass/templates/_homepage.scss */
 .article-three {
   color: #ff3300;
   text-align: center;
 }
 
-/* line 146, ../sass/templates/_homepage.scss */
+/* line 136, ../sass/templates/_homepage.scss */
 .article-four {
   color: #66bbdd;
   text-align: center;
 }
 
-/* line 153, ../sass/templates/_homepage.scss */
+/* line 143, ../sass/templates/_homepage.scss */
 .article-one .square {
   background-color: #ff3300;
 }
 
-/* line 158, ../sass/templates/_homepage.scss */
+/* line 148, ../sass/templates/_homepage.scss */
 .article-two .square {
   background-color: #66bbdd;
 }
 
-/* line 163, ../sass/templates/_homepage.scss */
+/* line 153, ../sass/templates/_homepage.scss */
 .article-three .square {
   background-color: #ff3300;
 }
 
-/* line 168, ../sass/templates/_homepage.scss */
+/* line 158, ../sass/templates/_homepage.scss */
 .article-four .square {
   background-color: #66bbdd;
 }
 
-/* line 173, ../sass/templates/_homepage.scss */
+/* line 163, ../sass/templates/_homepage.scss */
 .article-one .e-date {
   color: #ff3300;
 }
 
-/* line 178, ../sass/templates/_homepage.scss */
+/* line 168, ../sass/templates/_homepage.scss */
 .article-three .e-date {
   color: #ff3300;
 }
@@ -3362,6 +3374,28 @@ h2.entry-title a {
 }
 
 /* line 41, ../sass/templates/_links.scss */
+.left-aside-one h3 a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 43, ../sass/templates/_links.scss */
+.page-intro a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 45, ../sass/templates/_links.scss */
 .royalCaptionItem a {
   color: #66bbdd;
   text-decoration: none;
@@ -3650,6 +3684,7 @@ nav[role="navigation"] {
   margin-left: 0%;
   margin-right: -100%;
   width: 23.01287%;
+  clear: both;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 77, ../sass/templates/_misc.scss */
@@ -3662,7 +3697,7 @@ nav[role="navigation"] {
   }
 }
 
-/* line 86, ../sass/templates/_misc.scss */
+/* line 87, ../sass/templates/_misc.scss */
 .column-two {
   display: block;
   float: left;
@@ -3671,7 +3706,7 @@ nav[role="navigation"] {
   width: 22.99773%;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 86, ../sass/templates/_misc.scss */
+  /* line 87, ../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -3681,7 +3716,7 @@ nav[role="navigation"] {
   }
 }
 
-/* line 96, ../sass/templates/_misc.scss */
+/* line 97, ../sass/templates/_misc.scss */
 .column-three {
   display: block;
   float: left;
@@ -3690,7 +3725,7 @@ nav[role="navigation"] {
   width: 22.99773%;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 96, ../sass/templates/_misc.scss */
+  /* line 97, ../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -3702,7 +3737,7 @@ nav[role="navigation"] {
   }
 }
 
-/* line 107, ../sass/templates/_misc.scss */
+/* line 108, ../sass/templates/_misc.scss */
 .column-four {
   display: block;
   float: left;
@@ -3711,7 +3746,7 @@ nav[role="navigation"] {
   width: 22.99773%;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 107, ../sass/templates/_misc.scss */
+  /* line 108, ../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -3722,7 +3757,7 @@ nav[role="navigation"] {
   }
 }
 
-/* line 116, ../sass/templates/_misc.scss */
+/* line 117, ../sass/templates/_misc.scss */
 .column-one-two {
   display: block;
   float: left;
@@ -3731,7 +3766,7 @@ nav[role="navigation"] {
   width: 48.67525%;
 }
 
-/* line 121, ../sass/templates/_misc.scss */
+/* line 122, ../sass/templates/_misc.scss */
 .column-three-four {
   display: block;
   float: left;
@@ -3837,7 +3872,7 @@ nav[role="navigation"] {
 /* line 5, ../sass/templates/_page.scss */
 .page-intro {
   text-align: right;
-  padding-bottom: 48px;
+  padding-bottom: 24px;
   padding-top: 12px;
 }
 
@@ -3897,7 +3932,7 @@ nav[role="navigation"] {
   padding-right: 2.22222%;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #999999;
+  color: #555555;
 }
 
 /* line 44, ../sass/templates/_page.scss */
@@ -3914,7 +3949,7 @@ nav[role="navigation"] {
   padding-right: 2.22222%;
   padding-top: 24px;
   padding-bottom: 24px;
-  color: #999999;
+  color: #555555;
 }
 
 /* line 53, ../sass/templates/_page.scss */

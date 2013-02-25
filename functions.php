@@ -50,6 +50,7 @@ function barjeel_setup() {
 		'primary' => __( 'Primary Menu', 'barjeel' ),
 		'artist' => __( 'Artist Menu', 'barjeel' ),
 		'filter' => __( 'Filter Menu', 'barjeel' ),
+		'sort' => __( 'Sort Menu', 'barjeel' ),
 		'country' => __( 'Country Menu', 'barjeel' )
 	) );
 
@@ -76,6 +77,21 @@ add_action( 'after_setup_theme', 'barjeel_setup' );
 
   }
 add_action('wp_enqueue_scripts', 'barjeel_css_loader');
+
+add_action( 'wp_enqueue_scripts', 'child_add_ie8_style_sheet', 200 );
+/**
+ * Enqueue a IE-specific style sheet.
+ *
+ * Add a style sheet for everyone, then mark it as conditional to IE7 or below.
+ *
+ * @author Gary Jones
+ * @link   http://code.garyjones.co.uk/enqueued-style-sheet-extras/
+ */
+function child_add_ie8_style_sheet() {
+	global $wp_styles;	
+	wp_enqueue_style( 'child-ie8', get_stylesheet_directory_uri() . '/barjeel-old-ie.css', array(), '1.0' );
+	$wp_styles->add_data( 'child-ie8', 'conditional', 'lte IE 8' );
+}
  
  
 ################################################################################
@@ -94,8 +110,6 @@ function barjeel_scripts() {
 
 	wp_enqueue_script( 'touchcarousel', get_template_directory_uri() . '/javascripts/jquery.royalslider.min.js', array( 'jquery' ), '20120206', true );
 
-	wp_enqueue_script( 'customselect', get_template_directory_uri() . '/javascripts/customSelect.jquery.min.js', array( 'jquery' ), '20120206', true );
-		
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );
 

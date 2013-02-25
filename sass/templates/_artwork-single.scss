@@ -55,7 +55,7 @@
 
  	.meta-exhibition:after {
  		content: "" !important;
- 		padding-right: 0 !important;
+ 		padding-#{$opdir}: 0 !important;
  	} 	
 	
 	

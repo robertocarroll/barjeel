@@ -22,7 +22,7 @@
 									<a href="<?php the_permalink(); ?>">
 
 									<?php $title = get_the_title(); 
-									echo mb_strimwidth($title, 0, 25, '...'); 
+									echo mb_strimwidth($title, 0, 20, '...'); 
 									?>
 								
 									</a> 

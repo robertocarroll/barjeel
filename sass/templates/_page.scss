@@ -12,7 +12,7 @@
 	.page-content {
 		@extend .white;
 		@include gs-span(da, 2, 5, (2, 5));
-		padding-bottom: $base-spacing-unit;
+		
 	}
 
 	.page-image {

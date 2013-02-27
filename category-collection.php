@@ -17,21 +17,12 @@
 
 				if ( is_tax() ) {
 
-					if ($total_pages > 1) {
-
-						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in this category and this is page ' .$current_page. ' of ' .$total_pages. '</h2></div>' ;
-
-						}
-
-					else {
-
-						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red">' .$term->name. '</span> - we have ' .$term->count. ' artworks in this category</h2></div>';
-					}	
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase"> ' .$term->count. ' artworks</span> in this category</h2></div>';			
 				}	
 
 				else {
 
-					echo '<div class="collection-meta"><h2 class="zeta light gray inline">We currently have ' .$total_posts. ' artworks in our collection and this is page ' .$current_page. ' of ' .$total_pages. '</h2>' ;
+					echo '<div class="collection-meta"><div class="collection-details center"><h2 class="zeta light gray inline">We currently have <span class="bold uppercase">' .$total_posts. ' artworks</span> in our online collection</h2></div>' ;
 
 				 ?>	
 
@@ -63,21 +54,31 @@
 					          }
 					?> 
 
+					
+
 				<div class="sort-collection">
 
-				<span class="filter-title">Sort by</span>
+				<span class="list-title uppercase small top-menu">Sort by</span>
 
-				<select class="sort-by">
+				<select class="sort-by ">
 
 		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Date of artwork&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="artist-asc" <?php echo ($order == 'artist-asc')? 'selected="selected"':''; ?>>&nbsp;Artist (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		           
-		   
+		              
 		        </select>
 
-		        </div><!-- sort-collection -->	
+		       
 
+		        <div class="filter-sort-menu">
+
+		        <span class="list-title uppercase small top-menu"><?php echo mf_get_menu_name('filter'); ?></span>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'filter', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu') ); ?>
+
+			 </div><!-- filter-sort-menu -->	
+
+			  </div><!-- sort-collection -->	
 		        
 
 		    </div><!-- collection-meta -->	

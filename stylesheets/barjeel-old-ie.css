@@ -2298,20 +2298,49 @@ label,
   margin-left: 77.00227%;
   margin-right: -100%;
   width: 22.99773%;
+  padding-bottom: 12px;
 }
 
-/* line 20, ../sass/templates/_artwork-category.scss */
+/* line 21, ../sass/templates/_artwork-category.scss */
+.sort-collection {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 74.33762%;
+}
+
+/* line 26, ../sass/templates/_artwork-category.scss */
+.filter-sort-menu {
+  padding-bottom: 6px;
+}
+
+/* line 30, ../sass/templates/_artwork-category.scss */
 .collection-details h2 {
   line-height: 6px;
 }
 
-/* line 24, ../sass/templates/_artwork-category.scss */
+/* line 34, ../sass/templates/_artwork-category.scss */
 .top-menu {
   display: inline-block;
   margin-bottom: 0;
+  padding-right: 6px;
 }
 
-/* line 30, ../sass/templates/_artwork-category.scss */
+/* line 41, ../sass/templates/_artwork-category.scss */
+.top-menu > li:after {
+  content: "/";
+  color: #999999;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* line 48, ../sass/templates/_artwork-category.scss */
+.top-menu > li:last-child:after {
+  content: "";
+}
+
+/* line 52, ../sass/templates/_artwork-category.scss */
 #sort {
   display: block;
   float: left;
@@ -2321,19 +2350,19 @@ label,
   display: none;
 }
 
-/* line 35, ../sass/templates/_artwork-category.scss */
+/* line 57, ../sass/templates/_artwork-category.scss */
 .box-ms {
   padding-right: 4.44444%;
   width: 211px;
 }
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-  /* line 35, ../sass/templates/_artwork-category.scss */
+  /* line 57, ../sass/templates/_artwork-category.scss */
   .box-ms {
     width: 190px;
   }
 }
 
-/* line 44, ../sass/templates/_artwork-category.scss */
+/* line 66, ../sass/templates/_artwork-category.scss */
 .vignette {
   border-radius: 50%;
   width: 172px;
@@ -2359,20 +2388,20 @@ label,
 }
 
 /* For the circle rollovers  */
-/* line 66, ../sass/templates/_artwork-category.scss */
+/* line 88, ../sass/templates/_artwork-category.scss */
 .vignette:hover {
   -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
   -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
   box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
 }
 
-/* line 70, ../sass/templates/_artwork-category.scss */
+/* line 92, ../sass/templates/_artwork-category.scss */
 img.attachment-cropped-thumb {
   z-index: -1;
   position: relative;
 }
 
-/* line 75, ../sass/templates/_artwork-category.scss */
+/* line 97, ../sass/templates/_artwork-category.scss */
 .browse {
   display: block;
   float: left;
@@ -2381,36 +2410,36 @@ img.attachment-cropped-thumb {
   width: 22.99773%;
 }
 
-/* line 81, ../sass/templates/_artwork-category.scss */
+/* line 103, ../sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
   padding-top: 12px;
   margin: 0;
 }
 
-/* line 89, ../sass/templates/_artwork-category.scss */
+/* line 111, ../sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 100, ../sass/templates/_artwork-category.scss */
+/* line 122, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 106, ../sass/templates/_artwork-category.scss */
+/* line 128, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 110, ../sass/templates/_artwork-category.scss */
+/* line 132, ../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   content: "";
 }
 
 /* Makes the "see more" blue  */
-/* line 116, ../sass/templates/_artwork-category.scss */
+/* line 138, ../sass/templates/_artwork-category.scss */
 .menu-item-772 a, .menu-item-775 a {
   color: #66bbdd;
   text-decoration: none;
@@ -2421,18 +2450,18 @@ img.attachment-cropped-thumb {
   transition: color 0.5s ease-out;
 }
 
-/* line 120, ../sass/templates/_artwork-category.scss */
+/* line 142, ../sass/templates/_artwork-category.scss */
 .menu-item-772 a:hover, .menu-item-775 a:hover {
   color: #3388aa !important;
   text-decoration: none;
 }
 
-/* line 124, ../sass/templates/_artwork-category.scss */
+/* line 146, ../sass/templates/_artwork-category.scss */
 #menu-by-artist > li, #menu-by-country > li {
   margin-bottom: 6px;
 }
 
-/* line 128, ../sass/templates/_artwork-category.scss */
+/* line 150, ../sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 24px;
   margin: 0;
@@ -2440,14 +2469,14 @@ img.attachment-cropped-thumb {
   text-transform: uppercase;
 }
 
-/* line 137, ../sass/templates/_artwork-category.scss */
+/* line 159, ../sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 12px;
   margin: 0;
   color: #999999;
 }
 
-/* line 145, ../sass/templates/_artwork-category.scss */
+/* line 167, ../sass/templates/_artwork-category.scss */
 .video-thumb {
   display: block;
   background: url(../images/icon-video.png) no-repeat;
@@ -3396,6 +3425,17 @@ h2.entry-title a {
 }
 
 /* line 45, ../sass/templates/_links.scss */
+.top-menu li a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 47, ../sass/templates/_links.scss */
 .royalCaptionItem a {
   color: #66bbdd;
   text-decoration: none;
@@ -4360,16 +4400,17 @@ a.rsLink {
 }
 
 /* line 20, ../sass/templates/_select-box.scss */
-.sort-collection {
-  float: right;
+.sort-by {
+  text-align: left;
+  display: none;
 }
 
-/* line 26, ../sass/templates/_select-box.scss */
+/* line 25, ../sass/templates/_select-box.scss */
 .filter-by {
   margin-left: -5px;
 }
 
-/* line 30, ../sass/templates/_select-box.scss */
+/* line 29, ../sass/templates/_select-box.scss */
 .customSelect {
   color: #66bbdd;
   font-family: "adelle-sans", sans-serif;
@@ -4397,6 +4438,8 @@ a.rsLink {
   background: url(../images/arrow.png) no-repeat right #cee9f4;
   padding-left: 6px;
   padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 /*------------------------------------*\
@@ -4478,19 +4521,19 @@ p {
 }
 
 /* line 53, ../sass/templates/_typography.scss */
-.light, .related-title, .nextprevious, .pagination {
+.light, .related-title, .nextprevious, .pagination, .customSelectInner {
   font-style: normal;
   font-weight: 300;
 }
 
 /* line 58, ../sass/templates/_typography.scss */
-.light p, .related-title p, .nextprevious p, .pagination p {
+.light p, .related-title p, .nextprevious p, .pagination p, .customSelectInner p {
   font-style: normal;
   font-weight: 300;
 }
 
 /* line 63, ../sass/templates/_typography.scss */
-.small, .artwork-title, .artist-name, .browse-title, .list-title, .ribbon-front h1 {
+.small, .artwork-title, .artist-name, .browse-title, .list-title, .ribbon-front h1, .customSelectInner {
   font-size: 14px;
   line-height: 16px;
 }
@@ -4507,7 +4550,7 @@ p {
 }
 
 /* line 77, ../sass/templates/_typography.scss */
-.uppercase {
+.uppercase, .customSelectInner {
   text-transform: uppercase;
 }
 

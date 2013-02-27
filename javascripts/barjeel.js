@@ -42,7 +42,16 @@ jQuery(document).ready(function($){
 
        $('.sort-by').customSelect();
 
+/*! Fade in the sort dropdown */
+
+     $(window).load(function(){
+     
+      $(".sort-by").fadeIn("slow");
     });
+
+    });
+
+
 
 
 

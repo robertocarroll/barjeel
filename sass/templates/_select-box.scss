@@ -17,11 +17,10 @@
 		padding-#{$opdir}: $half-spacing-unit;
 	}
 
-	.sort-collection {
-		float: $opdir;
-
-		
-	}
+	.sort-by {
+		text-align: $dir;
+		display: none;
+	}	
 
 	.filter-by {
 		margin-#{$dir}: -5px;
@@ -30,7 +29,8 @@
 	.customSelect {
 		color: $barjeel-blue; 
 		font-family: $brand-face;	
-		height: $base-spacing-unit;	
+		height: $base-spacing-unit;
+
 	}
 
 	.customSelect.changed {
@@ -50,6 +50,11 @@
 		background: url(../images/arrow.png) no-repeat $opdir lighten($barjeel-blue, 25%); 
 		padding-#{$dir}: $quarter-spacing-unit;
 		padding-#{$opdir}: $quarter-spacing-unit;
+		@extend .uppercase;
+		@extend .small;
+		@extend .light;
+		padding-top: 4px;
+		padding-bottom: 4px;
 	}
 
 

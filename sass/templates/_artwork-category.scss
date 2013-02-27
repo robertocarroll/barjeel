@@ -14,7 +14,17 @@
 
 	.collection-details {	
 		@include gs-span(da, 5, 5, (2, 5));
+		padding-bottom: $half-spacing-unit;
 
+	}
+
+	.sort-collection {	
+		@include gs-span(da, 2, 4, (2, 5));
+	
+	}
+
+	.filter-sort-menu {
+		padding-bottom: $quarter-spacing-unit;
 	}
 
 	.collection-details h2 {	
@@ -24,8 +34,20 @@
 	.top-menu {
 		display: inline-block;
 		margin-bottom: 0;
+		padding-#{$opdir}: $quarter-spacing-unit;
 	}
 
+
+	.top-menu > li:after  {
+ 		content: "/";
+ 		color: $barjeel-grey;
+ 		padding-left: $quarter-spacing-unit;
+ 		padding-right: $quarter-spacing-unit;
+ 	} 
+
+	.top-menu > li:last-child:after {
+ 		content: "";
+ 	} 
 
 	#sort {
 		@include gs-span(da, 2, 4, (2, 5));

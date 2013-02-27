@@ -110,6 +110,8 @@ function barjeel_scripts() {
 
 	wp_enqueue_script( 'touchcarousel', get_template_directory_uri() . '/javascripts/jquery.royalslider.min.js', array( 'jquery' ), '20120206', true );
 
+	wp_enqueue_script( 'customselect', get_template_directory_uri() . '/javascripts/customSelect.jquery.min.js', array( 'jquery' ), '20120206', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );
 

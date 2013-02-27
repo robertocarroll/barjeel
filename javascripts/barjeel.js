@@ -15,6 +15,34 @@ jQuery(document).ready(function($){
 
  
 
+/*! Sort box on collection page */
+
+jQuery(document).ready(function($){
+
+  $(window).load(function(){
+
+$('.sort-by').on('change', function () {
+      
+      var url = $(this).val(); // get selected value
+       
+          if (url) { // require a URL
+              window.location = '?o='+url; // redirect
+          }
+          
+      });
+
+});
+});
+
+
+
+/*! Custom select styling */
+
+jQuery(document).ready(function($){
+
+       $('.sort-by').customSelect();
+
+    });
 
 
 

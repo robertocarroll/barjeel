@@ -42,7 +42,6 @@
 
 
 <?php wp_head(); ?>
-
 </head>
 
 <!-- Header starts here -->

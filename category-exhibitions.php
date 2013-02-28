@@ -1,104 +1,19 @@
 <?php get_header(); ?>
-		
 
 		<section id="primary" class="site-content">
 			<div id="content" class="container" role="main">
 
-			<?php
+				<?php 
 
-				/* An array to store the ID of the sticky post at the page  */
-
-				$not_id = array();
-
-				/* Get all sticky posts */
-				$sticky = get_option( 'sticky_posts' );		
-
-				/* Sort the stickies with the newest ones at the top */
-				rsort( $sticky );
-
-				/* Get the 5 newest stickies (change 5 for a different number) */
-				$sticky = array_slice( $sticky, 0, 5 );
-
-				$stickyexhibition = array(
-					'posts_per_page' => 1,
-					'post__in'  => $sticky,
-					'ignore_sticky_posts' => 1,
-					'category_name' => 'exhibitions'
-				);
 				
-			 ?>
-				
-	
-				<?php $stickyexhibition_query = new WP_Query( $stickyexhibition ); ?>
-				
-				<?php /* Start the Loop */ ?>
-			
-				<?php if( $stickyexhibition_query->have_posts() ) : ?>		
-			
-				<?php while ( $stickyexhibition_query->have_posts() ) : $stickyexhibition_query->the_post(); ?>
+					 // Custom widget Area Start
+					 if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Exhibition-main') ) : ?>
 
-				<div class="page-content">
-					
-					<article>
+					<?php endif;
+					// Custom widget Area End	
 
-					<?php $not_id = get_the_ID(); ?>
 
-						<!-- Gets the cropped image -->
-				
-							<div class="page-image">	
-
-								<a href="<?php the_permalink(); ?>">	
-	 
-								 <?php if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'page-big'); 
-
-								 endif; ?>			
-
-								</a>	
-
-							</div>	
-										
-
-					<div class="page-text">
-
-						<div class="exhibition-tease">
-
-						<?php $status = get_post_meta($post->ID, 'Status', true);
-						//Checking if anything exists for the intro
-						if ($status) { ?>
-						<?php echo '<h2 class="date epsilon">'.$status.'</h2>'; ?>
-					<?php } ?>		
-			
-						<h1 class="alpha bold main-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-
-						<?php $dates = get_post_meta($post->ID, 'Dates', true);
-						//Checking if anything exists for the dates
-						if ($dates) { ?>
-						<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
-					<?php } ?>	
-
-					<?php $location = get_post_meta($post->ID, 'Location', true);
-						//Checking if anything exists for the location
-						if ($location) { ?>
-						<?php echo '<h2 class="date epsilon">'.$location.'</h2>'; ?>
-					<?php } ?>	
-
-						<div class="light">
-							<?php the_excerpt(); ?>
-						</div>	
-						
-						</div>
-
-					</div>		
-					
-					</article>
-					
-				</div><!-- .page-content -->				 
-							
-				<?php endwhile; ?>
-
-				<?php endif; ?>	
-				
-				<?php /* Reset query */ wp_reset_postdata(); ?>
+				?>	
 
 				<div style="clear:both;"></div>
 
@@ -114,7 +29,7 @@
 
 			/* Exclude the post which is shown at the top of the page using the $not_in array  */	
 													
-			query_posts(array("post__not_in" =>array($not_id), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 8)); ?>
+			query_posts(array('tag__not_in'	=> array(get_tag_id_by_name('exclude')), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 8)); ?>
 				
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
@@ -164,6 +79,8 @@
 				<?php endif; ?>			
 
 		<?php wp_reset_query(); ?>
+
+
 
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->

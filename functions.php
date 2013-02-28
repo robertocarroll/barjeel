@@ -108,7 +108,7 @@ function barjeel_scripts() {
 	
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/javascripts/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
 
-	wp_enqueue_script( 'touchcarousel', get_template_directory_uri() . '/javascripts/jquery.royalslider.min.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/javascripts/jquery.royalslider.min.js', array( 'jquery' ), '20120206', true );
 
 	wp_enqueue_script( 'customselect', get_template_directory_uri() . '/javascripts/customSelect.jquery.min.js', array( 'jquery' ), '20120206', true );
 
@@ -187,6 +187,15 @@ function barjeel_widgets_init() {
 	) );
 
 
+	register_sidebar( array(
+		'name' => __( 'Exhibition-main', 'barjeel' ),
+		'id' => 'exhibitionpage',
+		'before_widget' => '<article id="%1$s" class="widget %2$s">',
+		'after_widget' => '</article>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '</h1>',
+	) );	
+
 }
 add_action( 'widgets_init', 'barjeel_widgets_init' );
 
@@ -208,6 +217,17 @@ if (class_exists('MultiPostThumbnails')) {
 
     };
 
+
+/*
+| -------------------------------------------------------------------
+| Get tag name from id (to exclude post) http://wp-snippets.com/exclude-posts-with-certain-tag-from-loop/
+| -------------------------------------------------------------------
+| */
+
+function get_tag_id_by_name($tag_name) {
+	global $wpdb;
+	return $wpdb->get_var("SELECT term_id FROM ".$wpdb->terms." WHERE `name` =  '".$tag_name."'");
+}
 
 /*
 | -------------------------------------------------------------------

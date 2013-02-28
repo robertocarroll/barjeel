@@ -30,9 +30,12 @@ footer[role="contentinfo"] {
   @include gs-span(da, all);  
 }
 
+
+
 .address-footer {
 	padding-top: $base-spacing-unit;
 	@extend .micro;
+	word-wrap: break-word; 
 }	
 
 .copyright {

@@ -258,7 +258,7 @@
 
  								else {
 
-								echo '<h2 class="related-title">Related artists</h2><div class="artist-list"><ul class = "nav  nav--stacked">';
+								echo '<h2 class="related-title">Related artists by country</h2><div class="artist-list"><ul class = "nav  nav--stacked">';
 
 								foreach ($termchildren as $child) {
 									

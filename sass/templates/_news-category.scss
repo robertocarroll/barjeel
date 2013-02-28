@@ -6,7 +6,7 @@
 		margin-bottom: $base-spacing-unit;
 		@include gs-span(da, 2, 4, (2, 5));
 		@extend .white;
-		position: relative;
+		clear: both;
 
 	}
 
@@ -23,15 +23,13 @@
 	}
 
 
-	.entry-meta-news {
-		margin: 0;
-		position: absolute; 
-		padding-#{$opdir}: $quarter-spacing-unit;
-    	bottom: 4%;
-    	left: 35%; 
-	}
+	.meta-news > li:after  {
+ 		content: "/";
+ 		color: $barjeel-grey;
+ 		padding-left: $quarter-spacing-unit;
+ 		padding-right: $quarter-spacing-unit;
+ 	} 
 
-	.meta-news > li{
-		padding-#{$opdir}: $quarter-spacing-unit;
-   
-	}
+	.meta-news > li:last-child:after {
+ 		content: "";
+ 	} 

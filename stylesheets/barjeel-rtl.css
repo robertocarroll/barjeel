@@ -2894,12 +2894,13 @@ footer[role="contentinfo"] {
   width: 100%;
 }
 
-/* line 33, ../sass/templates/_footer.scss */
+/* line 35, ../sass/templates/_footer.scss */
 .address-footer {
   padding-top: 24px;
+  word-wrap: break-word;
 }
 
-/* line 42, ../sass/templates/_footer.scss */
+/* line 45, ../sass/templates/_footer.scss */
 .footer-logo {
   display: block;
   float: left;
@@ -2908,7 +2909,7 @@ footer[role="contentinfo"] {
   width: 14.34887%;
 }
 
-/* line 46, ../sass/templates/_footer.scss */
+/* line 49, ../sass/templates/_footer.scss */
 .twitter-one {
   display: block;
   float: left;
@@ -2917,7 +2918,7 @@ footer[role="contentinfo"] {
   width: 19.19919%;
 }
 
-/* line 50, ../sass/templates/_footer.scss */
+/* line 53, ../sass/templates/_footer.scss */
 .twitter-two {
   display: block;
   float: left;
@@ -2926,7 +2927,7 @@ footer[role="contentinfo"] {
   width: 19.18656%;
 }
 
-/* line 54, ../sass/templates/_footer.scss */
+/* line 57, ../sass/templates/_footer.scss */
 .twitter-three {
   display: block;
   float: left;
@@ -2935,7 +2936,7 @@ footer[role="contentinfo"] {
   width: 19.18656%;
 }
 
-/* line 58, ../sass/templates/_footer.scss */
+/* line 61, ../sass/templates/_footer.scss */
 .twitter-four {
   display: block;
   float: left;
@@ -3436,6 +3437,17 @@ h2.entry-title a {
 }
 
 /* line 47, ../sass/templates/_links.scss */
+.artist-list li a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 49, ../sass/templates/_links.scss */
 .royalCaptionItem a {
   color: #66bbdd;
   text-decoration: none;
@@ -3826,7 +3838,7 @@ nav[role="navigation"] {
   margin-left: 0%;
   margin-right: -100%;
   width: 74.33762%;
-  position: relative;
+  clear: both;
 }
 
 /* line 14, ../sass/templates/_news-category.scss */
@@ -3849,17 +3861,16 @@ nav[role="navigation"] {
 }
 
 /* line 26, ../sass/templates/_news-category.scss */
-.entry-meta-news {
-  margin: 0;
-  position: absolute;
+.meta-news > li:after {
+  content: "/";
+  color: #999999;
   padding-left: 6px;
-  bottom: 4%;
-  left: 35%;
+  padding-right: 6px;
 }
 
-/* line 34, ../sass/templates/_news-category.scss */
-.meta-news > li {
-  padding-left: 6px;
+/* line 33, ../sass/templates/_news-category.scss */
+.meta-news > li:last-child:after {
+  content: "";
 }
 
 /*------------------------------------*\
@@ -3895,6 +3906,12 @@ nav[role="navigation"] {
 }
 
 /* line 24, ../sass/templates/_news-single.scss */
+.related-news {
+  clear: both;
+  padding-top: 24px;
+}
+
+/* line 30, ../sass/templates/_news-single.scss */
 .related-posts-news {
   display: block;
   float: left;

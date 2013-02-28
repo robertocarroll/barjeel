@@ -22,7 +22,7 @@
 
 						<?php if ( has_post_thumbnail() ) {?>
 
-							<div class="light-italic gray zeta">
+							<div class="light-italic gray zeta center">
 
 								<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
 
@@ -50,6 +50,11 @@
 
 </article><!-- #post-<?php the_ID(); ?> -->
 
+	<div class="related-news">
+	
+		<?php related_posts();?>
+
+	</div>	
 
 	<div class="nextprevious">
 		<ul>

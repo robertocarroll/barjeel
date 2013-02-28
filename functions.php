@@ -534,6 +534,7 @@ function base_pagination() {
 		'total' => $wp_query->max_num_pages,
 		'prev_text'    => __('Previous'),
 		'next_text'    => __('Next'),
+		'end_size' => 4,
 		'mid_size' => 2
 	) );
  
@@ -696,5 +697,27 @@ function barjeel_custom_field_post_class( $classes ) {
 }
 
 
+/**
+ * These filters limit the categories on the related posts Yarpp *
+ * 
+ * 
+ */
+
+function only_news_cat($query) {
+
+	$query->set('category_name', 'News');
+
+	return $query;
+
+}
+
+
+function only_collection_cat($query) {
+
+	$query->set('category_name', 'Collection');
+
+	return $query;
+
+}
 
 ?>

@@ -1044,7 +1044,7 @@ hgroup .hN {
 }
 
 /* line 11, ../sass/inuit/base/_smallprint.scss */
-.micro, .artwork-meta, .address-footer, .copyright, .nextprevious, .pagination {
+.micro, .artwork-meta, .catalogue-caption, .address-footer, .copyright, .nextprevious, .pagination {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 2;
@@ -2800,44 +2800,56 @@ nav.next-previous ul li:last-child:after {
 }
 
 /* line 15, ../sass/templates/_exhibition-single.scss */
+.catalogue {
+  float: right;
+  padding-left: 24px;
+  padding-top: 6px;
+}
+
+/* line 21, ../sass/templates/_exhibition-single.scss */
+.catalogue-caption {
+  padding-top: 6px;
+}
+
+/* line 28, ../sass/templates/_exhibition-single.scss */
 .exhibition-slideshow {
   padding-bottom: 24px;
   background: white;
 }
 
-/* line 20, ../sass/templates/_exhibition-single.scss */
+/* line 33, ../sass/templates/_exhibition-single.scss */
 .exhibition-title {
   padding-top: 48px;
 }
 
-/* line 25, ../sass/templates/_exhibition-single.scss */
+/* line 38, ../sass/templates/_exhibition-single.scss */
 .exhibition-main-text {
   padding-bottom: 24px;
 }
 
-/* line 29, ../sass/templates/_exhibition-single.scss */
+/* line 42, ../sass/templates/_exhibition-single.scss */
 .rsDefaultInv, .rsDefaultInv .rsOverflow, .rsDefaultInv .rsSlide, .rsDefaultInv .rsVideoFrameHolder, .rsDefaultInv .rsThumbs {
   background: none repeat scroll 0 0 #cccccc !important;
 }
 
-/* line 41, ../sass/templates/_exhibition-single.scss */
+/* line 54, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:first-child {
   color: #66bbdd;
 }
 
-/* line 45, ../sass/templates/_exhibition-single.scss */
+/* line 58, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:after {
   color: #999999;
   content: " / ";
   padding-left: 6px;
 }
 
-/* line 51, ../sass/templates/_exhibition-single.scss */
+/* line 64, ../sass/templates/_exhibition-single.scss */
 .exhibition-meta-list > li:last-child:after {
   content: "";
 }
 
-/* line 56, ../sass/templates/_exhibition-single.scss */
+/* line 69, ../sass/templates/_exhibition-single.scss */
 .artist-list {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -2847,7 +2859,7 @@ nav.next-previous ul li:last-child:after {
   padding-bottom: 24px;
 }
 
-/* line 61, ../sass/templates/_exhibition-single.scss */
+/* line 74, ../sass/templates/_exhibition-single.scss */
 .related-posts {
   display: block;
   float: left;
@@ -2856,12 +2868,12 @@ nav.next-previous ul li:last-child:after {
   width: 22.99773%;
 }
 
-/* line 66, ../sass/templates/_exhibition-single.scss */
+/* line 79, ../sass/templates/_exhibition-single.scss */
 .related-list {
   padding-bottom: 24px;
 }
 
-/* line 70, ../sass/templates/_exhibition-single.scss */
+/* line 83, ../sass/templates/_exhibition-single.scss */
 .related-artwork {
   clear: both;
   overflow: hidden;
@@ -3274,6 +3286,42 @@ img {
   transition-timing-function: ease-in;
 }
 
+/* line 104, ../sass/templates/_images.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+/* line 105, ../sass/templates/_images.scss */
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+/* line 106, ../sass/templates/_images.scss */
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 107, ../sass/templates/_images.scss */
+.alignright {
+  float: right;
+}
+
+/* line 108, ../sass/templates/_images.scss */
+.alignleft {
+  float: left;
+}
+
+/* line 109, ../sass/templates/_images.scss */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*------------------------------------*\
     $Isotope
 \*------------------------------------*/
@@ -3413,7 +3461,7 @@ h2.entry-title a {
 }
 
 /* line 41, ../sass/templates/_links.scss */
-.left-aside-one h3 a {
+.catalogue-caption a {
   color: #66bbdd;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
@@ -3424,7 +3472,7 @@ h2.entry-title a {
 }
 
 /* line 43, ../sass/templates/_links.scss */
-.page-intro a {
+.left-aside-one h3 a {
   color: #66bbdd;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
@@ -3435,7 +3483,7 @@ h2.entry-title a {
 }
 
 /* line 45, ../sass/templates/_links.scss */
-.top-menu li a {
+.page-intro a {
   color: #66bbdd;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
@@ -3446,7 +3494,7 @@ h2.entry-title a {
 }
 
 /* line 47, ../sass/templates/_links.scss */
-.artist-list li a {
+.top-menu li a {
   color: #66bbdd;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
@@ -3457,6 +3505,17 @@ h2.entry-title a {
 }
 
 /* line 49, ../sass/templates/_links.scss */
+.artist-list li a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 51, ../sass/templates/_links.scss */
 .royalCaptionItem a {
   color: #66bbdd;
   text-decoration: none;
@@ -3706,7 +3765,7 @@ nav[role="navigation"] {
 
 /* line 53, ../sass/templates/_misc.scss */
 .padding-bottom {
-  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* line 57, ../sass/templates/_misc.scss */
@@ -4566,7 +4625,7 @@ p {
 }
 
 /* line 70, ../sass/templates/_typography.scss */
-.micro, .artwork-meta, .address-footer, .copyright, .nextprevious, .pagination {
+.micro, .artwork-meta, .catalogue-caption, .address-footer, .copyright, .nextprevious, .pagination {
   font-size: 12px;
   line-height: 16px;
 }
@@ -4577,7 +4636,7 @@ p {
 }
 
 /* line 77, ../sass/templates/_typography.scss */
-.uppercase, .customSelectInner {
+.uppercase, .catalogue-caption, .customSelectInner {
   text-transform: uppercase;
 }
 

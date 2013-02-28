@@ -12,6 +12,19 @@
 
 }
 
+.catalogue {
+  float: $dir;
+  padding-#{$opdir}: $base-spacing-unit;
+  padding-top: $quarter-spacing-unit;
+}
+
+.catalogue-caption {
+  @extend .micro;
+  @extend .uppercase;
+  padding-top: $quarter-spacing-unit;
+}
+
+
 .exhibition-slideshow {
  	padding-bottom: $base-spacing-unit;	
  	background: white;

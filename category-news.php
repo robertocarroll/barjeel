@@ -18,6 +18,7 @@
 						//list terms in a given taxonomy
 						$taxonomy = 'news-themes';
 						$tax_terms = get_terms($taxonomy);
+
 				?>
 
 				<span class="list-title uppercase small top-menu">Categories</span>

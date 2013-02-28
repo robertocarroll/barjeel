@@ -828,16 +828,16 @@ textarea:focus {
  * and over in your markup.
  */
 /* line 9, ../sass/inuit/generic/_clearfix.scss */
-.cf, .nav, .artwork-meta, .entry-meta, .exhibition-meta-list, .media, .page-header, .browse, .full-page, .related-artwork, footer[role="contentinfo"], .widget_featured_post_widget, .article-four, .news-text, .page-text, #page {
+.cf, .nav, .artwork-meta, .entry-meta, .exhibition-meta-list, .media, .page-header, .browse, .full-page, .related-artwork, footer[role="contentinfo"], .widget_featured_post_widget, .news-text, .page-text, #page {
   zoom: 1;
 }
 /* line 13, ../sass/inuit/generic/_clearfix.scss */
-.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .exhibition-meta-list:before, .media:before, .page-header:before, .browse:before, .full-page:before, .related-artwork:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .article-four:before, .news-text:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, .related-artwork:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .news-text:after, .page-text:after, #page:after {
+.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .exhibition-meta-list:before, .media:before, .page-header:before, .browse:before, .full-page:before, .related-artwork:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .news-text:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, .related-artwork:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .news-text:after, .page-text:after, #page:after {
   content: " ";
   display: table;
 }
 /* line 18, ../sass/inuit/generic/_clearfix.scss */
-.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, .related-artwork:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .article-four:after, .news-text:after, .page-text:after, #page:after {
+.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .exhibition-meta-list:after, .media:after, .page-header:after, .browse:after, .full-page:after, .related-artwork:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .news-text:after, .page-text:after, #page:after {
   clear: both;
 }
 
@@ -2773,6 +2773,11 @@ nav.next-previous ul li:last-child:after {
   padding-top: 48px;
 }
 
+/* line 9, ../sass/templates/_exhibition-category.scss */
+.page-content-exhibitions {
+  padding-bottom: 0 !important;
+}
+
 /*------------------------------------*\
     $Exhibition single
 \*------------------------------------*/
@@ -3093,7 +3098,7 @@ img.attachment-homepage-thumb {
 
 /* line 106, ../sass/templates/_homepage.scss */
 .article-row {
-  padding-top: 48px;
+  padding-top: 24px;
 }
 
 /* line 110, ../sass/templates/_homepage.scss */
@@ -3108,52 +3113,56 @@ img.attachment-homepage-thumb {
 .article-one {
   color: #ff3300;
   text-align: center;
+  padding-top: 24px;
 }
 
-/* line 124, ../sass/templates/_homepage.scss */
+/* line 125, ../sass/templates/_homepage.scss */
 .article-two {
   color: #66bbdd;
   text-align: center;
+  padding-top: 24px;
 }
 
-/* line 130, ../sass/templates/_homepage.scss */
+/* line 132, ../sass/templates/_homepage.scss */
 .article-three {
   color: #ff3300;
   text-align: center;
+  padding-top: 24px;
 }
 
-/* line 136, ../sass/templates/_homepage.scss */
+/* line 139, ../sass/templates/_homepage.scss */
 .article-four {
   color: #66bbdd;
   text-align: center;
+  padding-top: 24px;
 }
 
-/* line 143, ../sass/templates/_homepage.scss */
+/* line 146, ../sass/templates/_homepage.scss */
 .article-one .square {
   background-color: #ff3300;
 }
 
-/* line 148, ../sass/templates/_homepage.scss */
+/* line 151, ../sass/templates/_homepage.scss */
 .article-two .square {
   background-color: #66bbdd;
 }
 
-/* line 153, ../sass/templates/_homepage.scss */
+/* line 156, ../sass/templates/_homepage.scss */
 .article-three .square {
   background-color: #ff3300;
 }
 
-/* line 158, ../sass/templates/_homepage.scss */
+/* line 161, ../sass/templates/_homepage.scss */
 .article-four .square {
   background-color: #66bbdd;
 }
 
-/* line 163, ../sass/templates/_homepage.scss */
+/* line 166, ../sass/templates/_homepage.scss */
 .article-one .e-date {
   color: #ff3300;
 }
 
-/* line 168, ../sass/templates/_homepage.scss */
+/* line 171, ../sass/templates/_homepage.scss */
 .article-three .e-date {
   color: #ff3300;
 }
@@ -3628,7 +3637,7 @@ nav[role="navigation"] {
 }
 
 /* line 18, ../sass/templates/_misc.scss */
-.white, .news-item, .page-content {
+.white, .news-item, .page-content, .page-content-exhibitions {
   background: white;
 }
 
@@ -3934,12 +3943,13 @@ nav[role="navigation"] {
 }
 
 /* line 12, ../sass/templates/_page.scss */
-.page-content {
+.page-content, .page-content-exhibitions {
   display: block;
   float: left;
   margin-left: 0%;
   margin-right: -100%;
   width: 100%;
+  padding-bottom: 24px;
 }
 
 /* line 18, ../sass/templates/_page.scss */

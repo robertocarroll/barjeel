@@ -23,13 +23,18 @@
 	}
 
 
-	.meta-news > li:after  {
+	.meta-news > li:after, li.cat-item:after  {
  		content: "/";
  		color: $barjeel-grey;
  		padding-left: $quarter-spacing-unit;
  		padding-right: $quarter-spacing-unit;
  	} 
 
-	.meta-news > li:last-child:after {
+	.meta-news > li:last-child:after, li.cat-item:last-child:after {
  		content: "";
  	} 
+
+ 	li.current-cat a {
+ 	 	color: $barjeel-red;
+
+ 	 }

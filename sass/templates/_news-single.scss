@@ -4,6 +4,7 @@
 	
 .news-main {
   @include gs-span(da, 2, 4, (2, 5));
+  clear:both;
 
 }
 
@@ -13,13 +14,6 @@
 
 }
 
-.nextprevious {
-  	@include gs-span(da, 5, 5, (2, 5));
-  	@extend .light;
-	@extend .micro;
-	text-transform: uppercase;
-
-}
 
 .related-news {
   clear:both;

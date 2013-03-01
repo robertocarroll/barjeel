@@ -5,6 +5,17 @@
  */
 ?>
 
+
+	<nav class="next-previous column-two-three-four">
+
+		<ul class="nav uppercase no-margin-below">
+			<li class="previous"><?php previous_post_link('%link', '<div class="previousproject">Previous post</div>', TRUE); ?></li>
+			<li class="next"><?php next_post_link('%link', '<div class="nextproject">Next post</div>', TRUE); ?> </li>
+		 </ul>
+
+	</nav>
+
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 			<div class="news-main">	
@@ -56,9 +67,4 @@
 
 	</div>	
 
-	<div class="nextprevious">
-		<ul>
-			<li class="prev"><?php previous_post_link('%link', '<div class="previousproject">Previous post</div>', TRUE); ?></li>
-			<li class="next"><?php next_post_link('%link', '<div class="nextproject">Next post</div>', TRUE); ?> </li>
-		</ul>
-	</div>
+	

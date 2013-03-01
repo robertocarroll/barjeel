@@ -128,3 +128,8 @@
  	 @include gs-span(da, 4, 5, (2, 5));
  
   }
+
+  .column-two-three-four {
+ 	 @include gs-span(da, 2, 4, (2, 5));
+ 
+  }

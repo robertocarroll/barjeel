@@ -1044,7 +1044,7 @@ hgroup .hN {
 }
 
 /* line 11, ../sass/inuit/base/_smallprint.scss */
-.micro, .artwork-meta, .catalogue-caption, .address-footer, .copyright, .nextprevious, .pagination {
+.micro, .artwork-meta, .catalogue-caption, .address-footer, .copyright, .pagination {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 2;
@@ -2576,25 +2576,25 @@ h1.entry-title, ul.entry-meta, h2.entry-title, h1.main-title, h1.artist-title, h
   text-align: center;
 }
 
-/* line 87, ../sass/templates/_artwork-single.scss */
+/* line 88, ../sass/templates/_artwork-single.scss */
 nav.next-previous ul li {
   margin-left: 12px;
   margin-bottom: 6px;
 }
 
-/* line 93, ../sass/templates/_artwork-single.scss */
+/* line 94, ../sass/templates/_artwork-single.scss */
 nav.next-previous ul li.previous {
   float: right;
 }
 
-/* line 97, ../sass/templates/_artwork-single.scss */
+/* line 99, ../sass/templates/_artwork-single.scss */
 nav.next-previous ul li.next {
   float: left;
   text-align: left;
   margin-left: 0;
 }
 
-/* line 103, ../sass/templates/_artwork-single.scss */
+/* line 105, ../sass/templates/_artwork-single.scss */
 .random {
   @extent .center;
 }
@@ -2765,9 +2765,10 @@ nav.next-previous ul li.next {
 /* line 5, ../sass/templates/_education-page.scss */
 .education-main-text {
   padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-/* line 10, ../sass/templates/_education-page.scss */
+/* line 11, ../sass/templates/_education-page.scss */
 .aside-right {
   padding-bottom: 24px;
 }
@@ -3558,7 +3559,7 @@ nav.next-previous ul li a {
 }
 
 /* line 57, ../sass/templates/_links.scss */
-.random a:hover, a:focus {
+.random a:hover {
   color: #66bbdd !important;
   text-decoration: none;
   background: white;
@@ -3942,6 +3943,15 @@ nav[role="navigation"] {
   width: 48.66011%;
 }
 
+/* line 132, ../sass/templates/_misc.scss */
+.column-two-three-four {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 74.33762%;
+}
+
 /*------------------------------------*\
     $News-category
 \*------------------------------------*/
@@ -3976,7 +3986,7 @@ nav[role="navigation"] {
 }
 
 /* line 26, ../sass/templates/_news-category.scss */
-.meta-news > li:after {
+.meta-news > li:after, li.cat-item:after {
   content: "/";
   color: #999999;
   padding-left: 6px;
@@ -3984,8 +3994,13 @@ nav[role="navigation"] {
 }
 
 /* line 33, ../sass/templates/_news-category.scss */
-.meta-news > li:last-child:after {
+.meta-news > li:last-child:after, li.cat-item:last-child:after {
   content: "";
+}
+
+/* line 37, ../sass/templates/_news-category.scss */
+li.current-cat a {
+  color: #ff3300;
 }
 
 /*------------------------------------*\
@@ -3998,9 +4013,10 @@ nav[role="navigation"] {
   margin-left: 0%;
   margin-right: -100%;
   width: 74.33762%;
+  clear: both;
 }
 
-/* line 10, ../sass/templates/_news-single.scss */
+/* line 11, ../sass/templates/_news-single.scss */
 .news-entry {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -4010,23 +4026,13 @@ nav[role="navigation"] {
   padding-bottom: 24px;
 }
 
-/* line 16, ../sass/templates/_news-single.scss */
-.nextprevious {
-  display: block;
-  float: left;
-  margin-left: 77.00227%;
-  margin-right: -100%;
-  width: 22.99773%;
-  text-transform: uppercase;
-}
-
-/* line 24, ../sass/templates/_news-single.scss */
+/* line 18, ../sass/templates/_news-single.scss */
 .related-news {
   clear: both;
   padding-top: 24px;
 }
 
-/* line 30, ../sass/templates/_news-single.scss */
+/* line 24, ../sass/templates/_news-single.scss */
 .related-posts-news {
   display: block;
   float: left;
@@ -4654,13 +4660,13 @@ p {
 }
 
 /* line 53, ../sass/templates/_typography.scss */
-.light, .related-title, .nextprevious, .pagination, .customSelectInner {
+.light, .related-title, .pagination, .customSelectInner {
   font-style: normal;
   font-weight: 300;
 }
 
 /* line 58, ../sass/templates/_typography.scss */
-.light p, .related-title p, .nextprevious p, .pagination p, .customSelectInner p {
+.light p, .related-title p, .pagination p, .customSelectInner p {
   font-style: normal;
   font-weight: 300;
 }
@@ -4672,7 +4678,7 @@ p {
 }
 
 /* line 70, ../sass/templates/_typography.scss */
-.micro, .artwork-meta, .catalogue-caption, .address-footer, .copyright, .nextprevious, .pagination {
+.micro, .artwork-meta, .catalogue-caption, .address-footer, .copyright, .pagination {
   font-size: 12px;
   line-height: 16px;
 }

@@ -14,21 +14,29 @@
 						?>
 				</h1>	
 
-				<?php
-						//list terms in a given taxonomy
-						$taxonomy = 'news-themes';
-						$tax_terms = get_terms($taxonomy);
+						<?php 
 
-				?>
+							$taxonomy     = 'news-themes';
+							$orderby      = 'name'; 
+							$show_count   = 0;      // 1 for yes, 0 for no
+							$pad_counts   = 0;      // 1 for yes, 0 for no
+							$hierarchical = 0;      // 1 for yes, 0 for no
+							$title        = '';
 
-				<span class="list-title uppercase small top-menu">Categories</span>
-						<ul class="nav light uppercase small top-menu">
-							<?php
-							foreach ($tax_terms as $tax_term) {
-							echo '<li class="meta-link">' . '<a href="' . esc_attr(get_term_link($tax_term, $taxonomy)) . '" title="' . sprintf( __( "View all posts in %s" ), $tax_term->name ) . '" ' . '>' . $tax_term->name.'</a></li>';
-							}
-							?>							
-						</ul>
+							$args = array(
+							  'taxonomy'     => $taxonomy,
+							  'orderby'      => $orderby,
+							  'show_count'   => $show_count,
+							  'pad_counts'   => $pad_counts,
+							  'hierarchical' => $hierarchical,
+							  'title_li'     => $title
+							);
+							?>
+							<span class="list-title uppercase small top-menu">Categories</span>
+
+							<ul class="nav light uppercase small top-menu">
+								<?php wp_list_categories( $args ); ?>
+							</ul>
 
 				<div>
 		

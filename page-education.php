@@ -11,7 +11,7 @@ Template Name: Education page
 
 	<div class="exhibition-main">
 
-		<div class="exhibition-text white">						
+		<div class="exhibition-text white padding-top-most">						
 
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 

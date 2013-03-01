@@ -17,7 +17,7 @@
 	
 	p a { color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out); }
 
-	p a:hover, p a:focus {color: $barjeel-link-blue !important; text-decoration: none;} 
+	p a:hover, p a:focus {color: $barjeel-link-blue ; text-decoration: none;} 
 	
 	/*	 
 	   No text-shadow: twitter.com/miketaylr/status/12228805301 
@@ -49,6 +49,12 @@
 	.artist-list li a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 
 	.royalCaptionItem a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
+
+	nav.next-previous ul li a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
+
+	.random a {color: white !important; text-decoration: none; @include transition(color, 0.5s, ease-out); padding-left: $quarter-spacing-unit; padding-right: $quarter-spacing-unit;}
+
+	.random a:hover, a:focus {color: $barjeel-blue !important; text-decoration: none; background: white;} 
 	
 	/*  Hover over 	
 	.meta-link a:hover, .meta-link a:focus {color: $barjeel-link-blue !important; text-decoration: none;} */

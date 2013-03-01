@@ -5,9 +5,23 @@
  */
 ?>
 
+<nav class="next-previous">
+
+		<ul class="nav uppercase no-margin-below">
+
+			<li class="previous"><?php previous_post_link('%link', 'Previous artwork', TRUE); ?> </li>
+
+			<li class="random"><a href="/random">Random</a></li>
+
+			<li class="next"><?php next_post_link('%link', 'Next artwork', TRUE); ?></li>
+
+		 </ul>
+
+		</nav>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		
-	<div class="entry-content">
+
+	<div class="entry-content-article">
 
 		<?php $has_video = false;  ?>
 
@@ -137,20 +151,6 @@
 				</div>					
 		
 		</div><!-- .meta -->
-
-		<nav class="next-previous">
-
-		<ul class="nav center padding-top uppercase">
-
-			<li><?php previous_post_link('%link', 'Previous artwork', TRUE); ?> </li>
-
-			<li><a href="/random">Random</a></li>
-
-			<li><?php next_post_link('%link', 'Next artwork', TRUE); ?></li>
-
-		 </ul>
-
-		</nav>
 
 			<?php related_posts(); ?>		
 

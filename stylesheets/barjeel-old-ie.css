@@ -2573,23 +2573,30 @@ h1.entry-title, ul.entry-meta, h2.entry-title, h1.main-title, h1.artist-title, h
 /* line 82, ../sass/templates/_artwork-single.scss */
 .next-previous {
   font-size: 12px;
+  text-align: center;
 }
 
-/* line 86, ../sass/templates/_artwork-single.scss */
+/* line 87, ../sass/templates/_artwork-single.scss */
 nav.next-previous ul li {
   margin-right: 12px;
+  margin-bottom: 6px;
 }
 
-/* line 91, ../sass/templates/_artwork-single.scss */
-nav.next-previous ul li:after {
-  content: "•";
-  margin-left: 12px;
+/* line 93, ../sass/templates/_artwork-single.scss */
+nav.next-previous ul li.previous {
+  float: left;
 }
 
-/* line 96, ../sass/templates/_artwork-single.scss */
-nav.next-previous ul li:last-child:after {
-  content: "";
-  margin-left: 0;
+/* line 97, ../sass/templates/_artwork-single.scss */
+nav.next-previous ul li.next {
+  float: right;
+  text-align: right;
+  margin-right: 0;
+}
+
+/* line 103, ../sass/templates/_artwork-single.scss */
+.random {
+  @extent .center;
 }
 
 /*------------------------------------*\
@@ -3408,7 +3415,7 @@ p a {
 
 /* line 20, ../sass/templates/_links.scss */
 p a:hover, p a:focus {
-  color: #3388aa !important;
+  color: #3388aa;
   text-decoration: none;
 }
 
@@ -3524,6 +3531,37 @@ h2.entry-title a {
   -ms-transition: color 0.5s ease-out;
   -o-transition: color 0.5s ease-out;
   transition: color 0.5s ease-out;
+}
+
+/* line 53, ../sass/templates/_links.scss */
+nav.next-previous ul li a {
+  color: #66bbdd;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 55, ../sass/templates/_links.scss */
+.random a {
+  color: white !important;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+/* line 57, ../sass/templates/_links.scss */
+.random a:hover, a:focus {
+  color: #66bbdd !important;
+  text-decoration: none;
+  background: white;
 }
 
 /*  Hover over 	
@@ -3731,7 +3769,7 @@ nav[role="navigation"] {
 }
 
 /* line 32, ../sass/templates/_misc.scss */
-.blue-back {
+.blue-back, .random {
   background: #66bbdd;
 }
 
@@ -3887,6 +3925,15 @@ nav[role="navigation"] {
 }
 
 /* line 122, ../sass/templates/_misc.scss */
+.column-two-three {
+  display: block;
+  float: left;
+  margin-left: 25.67752%;
+  margin-right: -100%;
+  width: 48.66011%;
+}
+
+/* line 127, ../sass/templates/_misc.scss */
 .column-three-four {
   display: block;
   float: left;

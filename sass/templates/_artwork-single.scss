@@ -81,19 +81,28 @@
 
 	.next-previous {
 		font-size: $micro-size;
+		text-align: center;
 	}
 
 	nav.next-previous ul li {
-    	margin-right: $half-spacing-unit;
+    	margin-#{$opdir}: $half-spacing-unit;
+    	margin-bottom: $quarter-spacing-unit;
+
 	}
 
-
-	nav.next-previous ul li:after {
-    	content: "•";
-    	margin-left: $half-spacing-unit;
+	nav.next-previous ul li.previous {
+		float: $dir;
 	}
 
-	nav.next-previous ul li:last-child:after {
-    	content: "";
-    	margin-left: 0;
+	nav.next-previous ul li.next {
+		float: $opdir;
+		text-align: $opdir;
+		margin-#{$opdir}: 0;
 	}
+
+	.random {
+		@extend .blue-back;
+		@extent .center;
+		
+	}
+	

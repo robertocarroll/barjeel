@@ -13,12 +13,8 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-				<header class="page-header">
-					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'barjeel' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<?php barjeel_content_nav( 'nav-above' ); ?>
-
+					<h2 class="zeta light gray margin-bottom"><?php $key = wp_specialchars($s, 1); echo 'Your search for <span class="bold uppercase">' . $key . ' </span>received ' . $wp_query->found_posts . ' results'; ?></h2>
+		
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -26,7 +22,11 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php barjeel_content_nav( 'nav-below' ); ?>
+				<div style="clear:both;"></div>
+				
+				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
+					
+					<?php } ?>
 
 			<?php else : ?>
 
@@ -37,5 +37,5 @@ get_header(); ?>
 			</div><!-- #content .site-content -->
 		</section><!-- #primary .content-area -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

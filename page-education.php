@@ -67,8 +67,8 @@ Template Name: Education page
 			<?php
 				$args = array(
 					'posts_per_page' => 3,
-					'category_name' => 'press',
-					 'tag' => 'education',
+					'category_name' => 'news',
+					 'news-themes' => 'education',
 					'ignore_sticky_posts' => 1,
 				);
 				

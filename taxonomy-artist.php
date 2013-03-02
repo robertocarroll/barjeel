@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 		<section id="primary" class="site-content">
+	
+
 			<div id="content" class="container" role="main">
 
 		<?php $exhibition_meta = array (); ?>
@@ -22,7 +24,7 @@
 
 						 <?php $has_video = false;  ?>
 						
-							 <div class="rsContent">
+							<div class="rsContent">
 
 							 		<?php $video = get_post_meta($post->ID, 'video', true); 
 
@@ -34,7 +36,7 @@
 
 										<?php				
 				
-								 if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'slider-thumb'); 
+								 		if (class_exists('MultiPostThumbnails')) : MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'feature-image-2', NULL,  'slider-thumb'); 
 
 								 	endif; 										
 									
@@ -55,10 +57,8 @@
 				
 									 <img src="<?php echo $thumbnail['0']; ?>"alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
    									
-   									</a>
-
-		   			
-										
+   									</a>		
+							
 								<?php } ?>
 
 								<?php /* Get the exhibition of the post and add it to the array */ ?>
@@ -69,7 +69,7 @@
 
 									<div class="rsABlock" data-move-effect="bottom">
 
-							   			<div class="royalCaptionItem" >
+							   			<div class="royalCaptionItem">
 
 							   				<?php if ($video) {
 
@@ -86,28 +86,23 @@
 
 											echo $artist_name; ?>
 
-										</div>		
+										</div>	<!-- .royalCaptionItem->	
 
-									</div>
+									</div><!-- .rsABlock-->
 
-
-
-							</div><!-- .rsContent-->
-
-
-					
+						</div><!-- .rsContent-->				
 
 				<?php endwhile; ?>
 				
-				</div><!-- .carousel-gallery-->
+				</div><!-- .royalSlider -->
 
-			</div><!-- .slideshow-->
+			</div><!-- .exhibition-slideshow-->
 
 				<?php } ?>	
 
 				<?php /* Do this if there's only one image */ ?>	
 
-				<?php if ( $total_posts == 1 ) { ?>	
+			<?php if ( $total_posts == 1 ) { ?>	
 
 				<?php $has_video = false;  ?>
 
@@ -135,7 +130,7 @@
 		?>	
 		<?php if (!$has_video) { ?>
 						
-							 <div class="featured-image center">
+				<div class="featured-image center">
 		
 									<?php
 									if ( has_post_thumbnail() ){ ?>
@@ -157,6 +152,8 @@
 									<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
 
 								</div>	
+
+							</div><!-- .featured-image -->		
 								
 								<?php } ?>
 								
@@ -166,8 +163,6 @@
 
 								?>
 									
-							</div><!-- .featured-image -->			
-
 				<?php endwhile; ?>
 
 				<?php } ?>	
@@ -177,21 +172,14 @@
 				<?php get_template_part( 'no-results', 'archive' ); ?>
 
 			<?php endif; ?>
-
-				
-			
+	
 				<div class="meta white">	
 
-				<div class= "artist-text">	
+					<div class= "artist-text">	
 
-				<div class= "center margin-below-half">	
+						<div class= "center margin-below-half">	
 
-				<h1 class="alpha bold artist-title gray">
-	
-					<?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?>
-				
-				</h1>
-
+							<h1 class="alpha bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
 				<?php 
 					
@@ -295,7 +283,9 @@
 										 
 										}
 									?>
-							</ul></div><!-- .artist-list -->	
+							</ul>
+
+						</div><!-- .artist-list -->	
 
 							<?php rewind_posts(); ?>
 
@@ -305,10 +295,7 @@
 
 				</div><!-- .meta -->	
 					
-									
-				
 				<?php related_posts(); ?>
-		
 
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->

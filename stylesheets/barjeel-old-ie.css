@@ -947,7 +947,7 @@ h2, .beta, .entry-title {
 }
 
 /* line 17, ../sass/inuit/base/_headings.scss */
-h3, .gamma {
+h3, .gamma, .search-title {
   font-size: 26px;
   font-size: 1.625rem;
   line-height: 1.84615;
@@ -961,7 +961,7 @@ h4, .delta, .colour-title {
 }
 
 /* line 23, ../sass/inuit/base/_headings.scss */
-h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list {
+h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list, #s, .widget-title {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -2257,7 +2257,22 @@ label,
   padding-bottom: 24px;
 }
 
-/* line 28, ../sass/templates/_artist.scss */
+/* line 27, ../sass/templates/_artist.scss */
+.related-art-artist {
+  display: block;
+  float: left;
+  margin-left: 16.57193%;
+  margin-right: -100%;
+  width: 83.42807%;
+  clear: both;
+}
+
+/* line 32, ../sass/templates/_artist.scss */
+.artist-list ul li:after {
+  content: "";
+}
+
+/* line 36, ../sass/templates/_artist.scss */
 .artist-detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2266,7 +2281,7 @@ label,
   padding-right: 2.22222%;
 }
 
-/* line 33, ../sass/templates/_artist.scss */
+/* line 41, ../sass/templates/_artist.scss */
 .video-thumb-slider {
   display: block;
   background: url(../images/icon-video.gif) no-repeat;
@@ -2985,6 +3000,32 @@ header[role="banner"] {
 /* line 9, ../sass/templates/_header.scss */
 .logo {
   padding: 24px 0 72px 0;
+}
+
+/* line 12, ../sass/templates/_header.scss */
+#s {
+  border: 1px solid #999999;
+  border-radius: 4px 4px 4px 4px;
+  color: #555555;
+  max-width: 165px;
+  padding: 4px;
+}
+
+/* line 22, ../sass/templates/_header.scss */
+#search-3 {
+  padding-bottom: 24px;
+}
+
+/* line 26, ../sass/templates/_header.scss */
+.widget-title {
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 6px;
+}
+
+/* line 35, ../sass/templates/_header.scss */
+.search-terms {
+  color: #ff3300;
 }
 
 /*------------------------------------*\
@@ -3813,7 +3854,7 @@ nav[role="navigation"] {
 }
 
 /* line 61, ../sass/templates/_misc.scss */
-.margin-below {
+.margin-below, .search-title {
   margin-bottom: 6px;
 }
 
@@ -4001,6 +4042,16 @@ nav[role="navigation"] {
 /* line 37, ../sass/templates/_news-category.scss */
 li.current-cat a {
   color: #ff3300;
+}
+
+/* line 42, ../sass/templates/_news-category.scss */
+.search-title {
+  line-height: 32px;
+}
+
+/* line 49, ../sass/templates/_news-category.scss */
+.permalink {
+  word-wrap: break-word;
 }
 
 /*------------------------------------*\
@@ -4605,7 +4656,7 @@ a.rsLink {
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 18, ../sass/templates/_typography.scss */
-  h3, .gamma {
+  h3, .gamma, .search-title {
     font-size: 26px;
     font-size: 1.625rem;
     line-height: 1.84615;
@@ -4623,7 +4674,7 @@ a.rsLink {
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
   /* line 26, ../sass/templates/_typography.scss */
-  h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list {
+  h5, .epsilon, .entry-meta, .related-title, .exhibition-meta-list, #s, .widget-title {
     font-size: 16px;
     font-size: 1rem;
     line-height: 1.5;
@@ -4648,7 +4699,7 @@ p {
 }
 
 /* line 43, ../sass/templates/_typography.scss */
-.bold, .artwork-title, .artist-name, .browse-title, .list-title, .entry-title, .ribbon-front h1, .colour-title {
+.bold, .artwork-title, .artist-name, .browse-title, .list-title, .entry-title, .ribbon-front h1, .widget-title, .search-title, .colour-title {
   font-style: normal;
   font-weight: 700;
 }

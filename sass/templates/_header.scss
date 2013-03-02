@@ -9,5 +9,34 @@ header[role="banner"] {
 .logo {padding: $base-spacing-unit 0 ($base-spacing-unit*3) 0;}
 
 
+#s { 
+	border: 1px solid $barjeel-grey;
+    border-radius: 4px 4px 4px 4px;
+    color: $barjeel-text-grey;
+    max-width: 165px;
+    padding: 4px;
+    @extend .epsilon;
+
+}
+
+#search-3 {
+	padding-bottom: $base-spacing-unit;
+}
+
+.widget-title {
+	text-transform: uppercase;
+	color: $barjeel-grey;
+	@extend .epsilon;
+	@extend .bold;
+	margin-bottom: $quarter-spacing-unit;
+
+}
+
+.search-terms {
+	color: $barjeel-red;
+
+}
+
+
 
 

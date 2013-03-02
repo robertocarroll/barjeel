@@ -38,3 +38,14 @@
  	 	color: $barjeel-red;
 
  	 }
+
+ 	 .search-title {
+ 	 	@extend .gamma;
+ 	 	@extend .bold;
+ 	 	@extend .margin-below;
+ 	 	line-height: $big-line-height;
+ 	 }
+
+ 	 .permalink {
+		word-wrap: break-word; 
+	}	

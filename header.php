@@ -68,6 +68,9 @@
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class'      => 'nav  nav--stacked bold') ); ?>
 		</nav>
+
+		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('search') ) : ?> <?php endif; ?>
+
 	</header>
 
 <!-- End Header -->

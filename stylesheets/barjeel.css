@@ -2258,21 +2258,11 @@ label,
 }
 
 /* line 27, ../sass/templates/_artist.scss */
-.related-art-artist {
-  display: block;
-  float: left;
-  margin-left: 16.57193%;
-  margin-right: -100%;
-  width: 83.42807%;
-  clear: both;
-}
-
-/* line 32, ../sass/templates/_artist.scss */
 .artist-list ul li:after {
   content: "";
 }
 
-/* line 36, ../sass/templates/_artist.scss */
+/* line 31, ../sass/templates/_artist.scss */
 .artist-detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2281,7 +2271,7 @@ label,
   padding-right: 2.22222%;
 }
 
-/* line 41, ../sass/templates/_artist.scss */
+/* line 36, ../sass/templates/_artist.scss */
 .video-thumb-slider {
   display: block;
   background: url(../images/icon-video.gif) no-repeat;
@@ -2612,6 +2602,12 @@ nav.next-previous ul li.next {
 /* line 105, ../sass/templates/_artwork-single.scss */
 .random {
   @extent .center;
+}
+
+/* line 111, ../sass/templates/_artwork-single.scss */
+.no-link {
+  text-decoration: line-through;
+  color: #d9d9d9;
 }
 
 /*------------------------------------*\

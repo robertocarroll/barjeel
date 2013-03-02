@@ -24,11 +24,6 @@
 	padding-bottom: $base-spacing-unit;
 }
 
-.related-art-artist {
-	@include gs-span(da, 2, 5, (1, 5));
-	clear:both;
-}
-
 .artist-list ul li:after{
 	content: "";
 }

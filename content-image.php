@@ -13,7 +13,22 @@
 
 			<li class="random"><a href="/random">Random</a></li>
 
-			<li class="next"><?php next_post_link('%link', 'Next artwork', TRUE); ?></li>
+			<li class="next"><?php 
+
+					if ( get_next_post() ) {
+
+						next_post_link('%link', 'Next artwork', TRUE); 
+					}
+
+					else {
+
+						echo '<div class="no-link">Next artwork</div>';
+					}
+
+					?>
+
+			</li>
+
 
 		 </ul>
 

@@ -13,9 +13,11 @@ header[role="banner"] {
 	border: 1px solid $barjeel-grey;
     border-radius: 4px 4px 4px 4px;
     color: $barjeel-text-grey;
-    max-width: 165px;
-    padding: 4px;
-    @extend .epsilon;
+    max-width: 180px;
+    padding: 1px;
+    padding-#{$dir}: 2px;
+    @extend .zeta;
+    width: 90%;
 
 }
 

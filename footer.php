@@ -34,6 +34,7 @@
 
 		</div><!-- .logo -->
 
+	<div class="twitter-wrapper">	
 
 	<div class="twitter-one">
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-1') ) : ?>
@@ -71,8 +72,7 @@
 
 		</div><!-- .twitter-four -->
 
-		<div style="clear:both;"></div>
-
+	</div><!-- .twitter-wrapper -->
 
 		<p class="copyright"><?php echo barjeel_copyright(); ?> <?php bloginfo('name'); ?></p>
 

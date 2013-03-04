@@ -55,6 +55,3 @@
 	.random a {color: white !important; text-decoration: none; @include transition(color, 0.5s, ease-out); padding-left: $quarter-spacing-unit; padding-right: $quarter-spacing-unit;}
 
 	.random a:hover {color: $barjeel-blue !important; text-decoration: none; background: white;} 
-	
-	/*  Hover over 	
-	.meta-link a:hover, .meta-link a:focus {color: $barjeel-link-blue !important; text-decoration: none;} */

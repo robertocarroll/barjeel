@@ -2,8 +2,6 @@
 		
 		<section id="primary" class="site-content">
 			<div id="content" class="container" role="main">	
-
-
    
 				<?php if ( have_posts() ) : ?>
 					
@@ -37,8 +35,6 @@
 							<ul class="nav light uppercase small top-menu">
 								<?php wp_list_categories( $args ); ?>
 							</ul>
-
-				<div>
 		
 				<?php rewind_posts(); ?>
 			
@@ -60,6 +56,62 @@
 				<?php get_template_part( 'no-results', 'archive' ); ?>
 
 			<?php endif; ?>
+
+			<?php wp_reset_query(); ?>  
+
+				<!-- Related posts - news with the tag featured -->
+
+
+			<?php
+			    $barjeel_style_classes = array('article-one','article-two','article-three', 'article-four');
+			    $barjeel_styles_count = count($barjeel_style_classes);
+			    $barjeel_style_index = 0;
+			?>
+			
+			<div class="related-posts">
+
+			<?php
+				$args = array(
+					'posts_per_page' => 4,
+					'post__in'  => get_option( 'sticky_posts' ),
+					'ignore_sticky_posts' => 1,
+				);
+				
+				query_posts( $args ); ?>
+					
+					<?php while (have_posts()) : the_post(); ?>
+							
+					<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">		
+
+						<article>	
+
+							<div class="square">&nbsp;</div>
+
+							<?php	$fpw_img_tag = MultiPostThumbnails::get_the_post_thumbnail('post', 'feature-image-2', NULL,  'cropped-thumb');	?>
+
+							<?php if (!empty($fpw_img_tag)) {
+
+								echo '<a href="'.get_permalink().'"><div class="vignette-square">'.$fpw_img_tag.'</div></a>';
+							}
+							?>
+															
+							<h1 class="gamma bold article-list"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+							<?php $dates = get_post_meta($post->ID, 'Dates', true);
+								//Checking if anything exists for the dates
+								if ($dates) { ?>
+								<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
+							<?php } ?>
+									 				
+						</article>
+
+					</div>
+						
+					<?php endwhile; ?>
+
+				</div><!-- #related -->
+
+					<?php wp_reset_query(); ?>  
 
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->

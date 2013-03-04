@@ -41,6 +41,9 @@
   	margin-left: 45%;
   	margin-bottom: $half-spacing-unit;
  }
+ 	.word-wrap {
+ 		word-wrap: break-word; 
+ 	}
 
  	.padding-top {
 		padding-top: $half-spacing-unit;

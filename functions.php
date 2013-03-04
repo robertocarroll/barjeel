@@ -51,6 +51,8 @@ function barjeel_setup() {
 		'artist' => __( 'Artist Menu', 'barjeel' ),
 		'filter' => __( 'Filter Menu', 'barjeel' ),
 		'sort' => __( 'Sort Menu', 'barjeel' ),
+		'medium' => __( 'Medium Menu', 'barjeel' ),
+		'news' => __( 'News Menu', 'barjeel' ),
 		'country' => __( 'Country Menu', 'barjeel' )
 	) );
 

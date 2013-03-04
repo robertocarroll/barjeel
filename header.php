@@ -27,9 +27,15 @@
 <!-- Favicons and Apple Touch icons
 	================================================== -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
-	<link rel="apple-touch-icon" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/images/apple-touch-icon-114x114.png">
+	
+	<!-- Standard iPhone --> 
+	<link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/images/b-114.png" />
+	<!-- Retina iPhone --> 
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/images/b-114.png"  />
+	<!-- Standard iPad --> 
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/images/b-144.png" />
+	<!-- Retina iPad --> 
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/images/b-144.png"  />
 
 <!-- Typekit
 	================================================== -->

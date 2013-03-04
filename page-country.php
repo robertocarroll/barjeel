@@ -37,8 +37,8 @@ $args = array(
 );
 ?>
 
-<ul>
-<?php wp_list_categories( $args ); ?>
+<ul class="country-list">
+	<?php wp_list_categories( $args ); ?>
 </ul>
 
 </div><!-- .entry-content -->

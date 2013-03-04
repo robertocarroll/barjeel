@@ -17,7 +17,7 @@
 								 </div> <!-- .vignette -->					
 								</a>	
 							
-								<h1 class="artwork-title uppercase">
+								<h1 class="artwork-title uppercase bold-italic">
 
 									<a href="<?php the_permalink(); ?>">
 

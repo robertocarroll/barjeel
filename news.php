@@ -17,11 +17,11 @@
 			</div>	
 
 			
-			<div class="news-text">
+			<div class="news-text pad-in">
 
-					<h2 class="epsilon date no-margin-below"><?php the_time('j F Y'); ?></h3>
+					<h2 class="zeta date margin-below-half gray"><?php the_time('j F Y'); ?></h3>
 
-					<h1 class="gamma bold"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>		
+					<h1 class="gamma bold big-line"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>		
 					
 					<ul class="entry-meta-news light uppercase meta-news nav">		
 

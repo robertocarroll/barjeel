@@ -9,13 +9,33 @@
 
 		<ul class="nav uppercase no-margin-below">
 
-			<li class="previous"><?php previous_post_link('%link', 'Previous artwork', TRUE); ?> </li>
+			<li class="previous">
+
+				<?php 
+
+					$prev_post = get_previous_post(true);
+
+					if  (!empty( $prev_post )) {
+
+						previous_post_link('%link', 'Previous artwork', TRUE);
+					}
+
+					else {
+
+						echo '<div class="no-link">Previous artwork</div>';
+					}
+
+					?>
+
+			</li>
 
 			<li class="random"><a href="/random">Random</a></li>
 
 			<li class="next"><?php 
 
-					if ( get_next_post() ) {
+					$next_post = get_next_post(true);
+
+					if  (!empty( $next_post )) {
 
 						next_post_link('%link', 'Next artwork', TRUE); 
 					}
@@ -98,7 +118,7 @@
 
 		<div class="title-area">	
 
-		<h1 class="entry-title uppercase">
+		<h1 class="entry-title uppercase bold-italic">
 
 			<?php the_title(); ?> 	
 

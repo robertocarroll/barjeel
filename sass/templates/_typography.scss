@@ -40,10 +40,29 @@
 
 	}
 
+	.mid-line {
+		line-height: $mid-line-height;
+
+	}
+
+	.big-line {
+		line-height: $big-line-height;
+
+	}
+
+	.italic { 
+		font-style: italic;
+	}
+
 	.bold { 
 		font-style: normal;
 		font-weight: 700;
 	}
+
+	.bold-italic { 	
+		font-style: italic;
+		font-weight: 700;
+	}	
 
 	.light-italic {
 		font-style: italic;

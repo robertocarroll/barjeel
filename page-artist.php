@@ -9,7 +9,7 @@ http://wpquestions.com/question/show/id/3864
 
 <?php get_header(); ?>
 
-<div class="pad-in white">
+<div class="pad-in white padding-bottom">
 
 	<div class="entry-content">
 

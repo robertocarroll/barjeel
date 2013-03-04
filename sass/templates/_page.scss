@@ -9,6 +9,11 @@
 	}	
 
 
+	.country-list > li.cat-item:after, .children > li.cat-item:after  {
+ 		content: "";
+
+ 	}	
+
 	.page-content {
 		@extend .white;
 		@include gs-span(da, 2, 5, (2, 5));

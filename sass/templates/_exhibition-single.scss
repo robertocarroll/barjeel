@@ -4,6 +4,7 @@
 
 .exhibition-main {
   @include gs-span(da, 2, 4, (2, 5));
+  clear:both;
 
 }
 
@@ -82,6 +83,5 @@
 
 .related-artwork {
   clear: both;
-  @extend .cf;
   overflow: hidden;
 }

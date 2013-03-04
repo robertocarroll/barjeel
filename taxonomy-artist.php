@@ -2,7 +2,6 @@
 
 		<section id="primary" class="site-content">
 	
-
 			<div id="content" class="container" role="main">
 
 		<?php $exhibition_meta = array (); ?>
@@ -15,16 +14,16 @@
 
 				<?php if ( $total_posts > 1 ) { ?>	
 
-				<div class="exhibition-slideshow">
+		<div class="exhibition-slideshow">
 
-					<div class="royalSlider rsDefaultInv">	
+			<div class="royalSlider rsDefaultInv">	
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 
 						 <?php $has_video = false;  ?>
 						
-							<div class="rsContent">
+						<div class="rsContent">
 
 							 		<?php $video = get_post_meta($post->ID, 'video', true); 
 
@@ -86,17 +85,17 @@
 
 											echo $artist_name; ?>
 
-										</div>	<!-- .royalCaptionItem->	
+										</div>	<!-- .royalCaptionItem-->	
 
-									</div><!-- .rsABlock-->
+									</div> <!--.rsABlock-->
 
 						</div><!-- .rsContent-->				
 
 				<?php endwhile; ?>
 				
-				</div><!-- .royalSlider -->
+			</div><!-- .royalSlider -->
 
-			</div><!-- .exhibition-slideshow-->
+		</div><!-- .exhibition-slideshow-->
 
 				<?php } ?>	
 
@@ -149,7 +148,11 @@
 
 	   								<?php echo the_title_attribute(); ?> by
 
-									<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+									<?php $artist_name = rw_get_the_term_list(null, 'artist', false, '', ', ', '');
+
+											$artist_name = strip_tags( $artist_name );
+
+											echo $artist_name;  ?>
 
 								</div>	
 

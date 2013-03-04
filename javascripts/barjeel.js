@@ -47,6 +47,8 @@ jQuery(document).ready(function($){
      $(window).load(function(){
      
       $(".sort-by").fadeIn("slow");
+
+
     });
 
 

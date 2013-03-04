@@ -23,6 +23,10 @@
 	}
 
 
+	.meta-news {
+		@extend .zeta;
+	}
+
 	.meta-news > li:after, li.cat-item:after  {
  		content: "/";
  		color: $barjeel-grey;

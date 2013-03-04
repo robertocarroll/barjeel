@@ -22,7 +22,7 @@
 
 				else {
 
-					echo '<div class="collection-meta"><div class="collection-details center"><h2 class="zeta light gray inline">We currently have <span class="bold uppercase">' .$total_posts. ' artworks</span> in our online collection</h2></div>' ;
+					echo '<div class="collection-meta"><div class="collection-details center"><h2 class="zeta light gray inline">We have <span class="bold uppercase blue">' .$total_posts. '</span> artworks<br>in our online collection</h2></div>' ;
 
 				 ?>	
 
@@ -122,6 +122,10 @@
 					<h2 class="list-title"><?php echo mf_get_menu_name('country'); ?></h2>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'country', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?> 
+
+					<h2 class="list-title"><?php echo mf_get_menu_name('medium'); ?></h2>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'medium', 'container' => '', 'menu_class'      => 'nav  nav--stacked light small') ); ?> 
 
 					
 				

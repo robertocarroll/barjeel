@@ -12,29 +12,13 @@
 						?>
 				</h1>	
 
-						<?php 
+				<div class="filter-sort-menu">
 
-							$taxonomy     = 'news-themes';
-							$orderby      = 'name'; 
-							$show_count   = 0;      // 1 for yes, 0 for no
-							$pad_counts   = 0;      // 1 for yes, 0 for no
-							$hierarchical = 0;      // 1 for yes, 0 for no
-							$title        = '';
+		        <span class="list-title uppercase small top-menu">Categories</span>
 
-							$args = array(
-							  'taxonomy'     => $taxonomy,
-							  'orderby'      => $orderby,
-							  'show_count'   => $show_count,
-							  'pad_counts'   => $pad_counts,
-							  'hierarchical' => $hierarchical,
-							  'title_li'     => $title
-							);
-							?>
-							<span class="list-title uppercase small top-menu">Categories</span>
+					<?php wp_nav_menu( array( 'theme_location' => 'news', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu') ); ?>
 
-							<ul class="nav light uppercase small top-menu">
-								<?php wp_list_categories( $args ); ?>
-							</ul>
+			 </div><!-- filter-sort-menu -->	
 		
 				<?php rewind_posts(); ?>
 

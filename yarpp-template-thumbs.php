@@ -32,6 +32,8 @@ Related Thumbnails
 <?php add_filter('posts_where', 'only_news_cat'); ?>
 
 <?php if ($related_query->have_posts()):?>
+
+	<div class="news-list">
 	
 	<h2 class="related-title">Related news</h2>
 
@@ -40,6 +42,8 @@ Related Thumbnails
 			<?php get_template_part('news');?> 
 
 		<?php endwhile; ?>
+
+		</div><!-- .news-list -->	
 	
 <?php endif; ?>
 

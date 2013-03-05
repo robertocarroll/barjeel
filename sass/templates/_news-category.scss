@@ -2,9 +2,15 @@
     $News-category
 \*------------------------------------*/
 	
+	.news-list {
+		@include gs-span(da, 2, 4, (2, 5));
+		clear: both;
+
+	}
+
 	.news-item {
 		margin-bottom: $base-spacing-unit;
-		@include gs-span(da, 2, 4, (2, 5));
+		@include gs-span(da, 2, 4, (2, 4));
 		@extend .white;
 		clear: both;
 

@@ -17,7 +17,7 @@
 
 				if ( is_tax() ) {
 
-						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase"> ' .$term->count. ' artworks</span> in this category</h2></div>';			
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase blue"> ' .$term->count. '</span> artworks in this category</h2></div>';			
 				}	
 
 				else {

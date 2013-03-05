@@ -37,19 +37,25 @@
 							</ul>
 		
 				<?php rewind_posts(); ?>
+
+				<div style="clear:both"></div>
 			
 			
 					<?php /* Start the Loop */ ?>
 					
-						<?php while ( have_posts() ) : the_post(); ?>						
-
-						<?php get_template_part('news');?> 
+				<div class="news-list">
+					
+						<?php while ( have_posts() ) : the_post(); ?>				
+						
+							<?php get_template_part('news');?> 
 							
-						<?php endwhile; ?>
+						<?php endwhile; ?>				
 								
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
 					
 					<?php } ?>
+
+				</div><!-- .news-list -->	
 
 			<?php else : ?>
 
@@ -73,7 +79,7 @@
 			<?php
 				$args = array(
 					'posts_per_page' => 4,
-					'post__in'  => get_option( 'sticky_posts' ),
+					'tag' => 'news-featured',
 					'ignore_sticky_posts' => 1,
 				);
 				

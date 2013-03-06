@@ -8,6 +8,12 @@
 		@include column-count(3);
 		@extend .cf;
 		padding: $base-spacing-unit;
+
+		@include respond-to(mobile) { 
+	     @include gs-pad (m, padinfull);
+	     @include gs-span(m, all);
+	     @include column-count(2);
+	    }
 	}
 
 

@@ -10,6 +10,10 @@
 		@extend .micro;
 		text-transform: uppercase;
 		margin-top: $base-spacing-unit;
+
+		@include respond-to(mobile) { 	
+		line-height: $big-line-height;
+	}
 	}	
 
 

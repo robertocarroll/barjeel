@@ -1,4 +1,15 @@
 
+if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+  var viewportmeta = document.querySelector('meta[name="viewport"]');
+  if (viewportmeta) {
+    viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0';
+    document.body.addEventListener('gesturestart', function() {
+      viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+    }, false);
+  }
+}
+
+
 /*! For finding the current browser width */
 
 
@@ -40,17 +51,17 @@ $('.sort-by').on('change', function () {
 
 jQuery(document).ready(function($){
 
-       $('.sort-by').customSelect();
+     $('.sort-by').customSelect();
 
-/*! Fade in the sort dropdown */
+      /*! Fade in the sort dropdown */
 
-     $(window).load(function(){
-     
-      $(".sort-by").fadeIn("slow");
+     $(window).load(function(){ 
 
+        $(".sort-by").fadeIn("slow"); 
 
-    });
+        $(".sort-by").css("display","inline");
 
+      });
 
 
     });
@@ -245,16 +256,6 @@ $('.sort-by').change(function(){
 
 });
 
-/* this is for the hover on the category page
-
-jQuery(document).ready(function($){
-    $(".category-collection").hover(
-        function() { $(this).addClass("hover"); },
-        function() { $(this).removeClass("hover"); }
-    );
-});
-
-*/
 
 
 

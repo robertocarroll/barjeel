@@ -26,10 +26,12 @@
 @import "templates/artist.scss";
 @import "templates/artwork-category.scss";
 @import "templates/artwork-single.scss";
+@import "templates/buttons.scss";
 @import "templates/contact.scss";
 @import "templates/education-page.scss";
 @import "templates/exhibition-category.scss";
 @import "templates/exhibition-single.scss";
+@import "templates/forms.scss";
 @import "templates/footer.scss";
 @import "templates/header.scss";
 @import "templates/homepage.scss";
@@ -81,6 +83,12 @@ body {
   @include gs-span(da, 2, 5);
   padding-top: $base-spacing-unit * 2;
   padding-bottom: $base-spacing-unit * 2;
+
+    @include respond-to(mobile) { 
+      clear:both;
+      @include gs-span(m, all);
+       padding-top: 0;
+    }
 }
 
 

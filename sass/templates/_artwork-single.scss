@@ -100,11 +100,22 @@
 		float: $opdir;
 		text-align: $opdir;
 		margin-#{$opdir}: 0;
+
+		@include respond-to(mobile) { 	
+		float: $dir;
+	}
+
 	}
 
 	.random {
 		@extend .blue-back;
 		@extent .center;
+
+		@include respond-to(mobile) { 	
+		text-align: $opdir;
+		margin-#{$opdir}: 0;
+		float: $opdir;
+	}
 		
 	}
 

@@ -39,8 +39,10 @@ footer[role="contentinfo"] {
 	@extend .small;
 	padding-bottom: $half-spacing-unit;
 	color: lighten($barjeel-text-grey, 5%);
-	background: white;
 	padding-#{$opdir}: $half-spacing-unit;
+	word-wrap:break-word;
+	background: url(../images/embed-icon.png) white no-repeat top right;
+	
 }
 
 .twitter-tweet p {
@@ -48,8 +50,6 @@ footer[role="contentinfo"] {
 	padding-top: $half-spacing-unit;
 	padding-bottom: $half-spacing-unit;
 	
-
-
 }
 
 #menu-footer-menu {
@@ -65,6 +65,10 @@ footer[role="contentinfo"] {
 	padding-top: $base-spacing-unit;
 	@extend .micro;
 	word-wrap: break-word; 
+
+	@include respond-to(mobile) { 
+      padding-top: 0;    
+  } 
 }	
 
 #text-8 {
@@ -75,37 +79,97 @@ footer[role="contentinfo"] {
 	padding-top: $base-spacing-unit;
 }
 
+.address-footer {
+	min-width: 163px;
+
+	@include respond-to(mobile) { 
+      float: $opdir;
+    } 
+}
+
 .copyright {
 	@extend .micro;
 	clear:both;
 	padding-top: $base-spacing-unit;
+
+	@include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    } 
 }
 
 .footer-logo {
   @include gs-span(da, 1);
+
+  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+    } 
 }
 
 .twitter-wrapper {
   @include gs-span(da, 2, 5);
   padding-top: 2*$base-spacing-unit;
+
+  @include respond-to(mobile) { 
+  	@include gs-span(m, all);
+      clear: both;
+      padding-top: $quarter-spacing-unit;
+    } 
+
  } 
 
 
 .twitter-one {
   @include gs-span(da, 2, 2, (2, 5));
+
+   @include respond-to(tablet) { 
+   	@include gs-span(da, 2, 3, (2, 5));	
+   }
+
+  	@include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+    } 
+  
 }
 
 .twitter-two {
   @include gs-span(da, 3, 3, (2, 5));
+
+  @include respond-to(tablet) { 
+   	@include gs-span(da, 4, 5, (2, 5));	
+   }
+
+  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+    } 
 }
 
 .twitter-three {
   @include gs-span(da, 4, 4, (2, 5));
+
+  @include respond-to(tablet) { 
+  	clear: both;
+   	@include gs-span(da, 2, 3, (2, 5));	
+   }
+
+  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+    } 
 }
 
 .twitter-four {
   @include gs-span(da, 5, 5, (2, 5));
   text-align: $opdir;
+
+  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    } 
 }
 
 .facebook {		
@@ -114,8 +178,8 @@ footer[role="contentinfo"] {
 	text-indent: -9999px;
 	background: url(../images/social-sprites.png) no-repeat top left;
 	background-position: 0 0;  
-	width: 56px; 
-	height: 56px;
+	width: 40px; 
+	height: 40px;
 }
 
 .facebook span {
@@ -124,7 +188,7 @@ footer[role="contentinfo"] {
 	background: url(../images/social-sprites.png) no-repeat top left;
 	opacity: 0;
 	@include transition(opacity, 0.5s, ease-out);
-	background-position: 0 -106px;
+	background-position: 0 -90px; 
 }	
 
 .facebook:hover span {
@@ -136,9 +200,9 @@ footer[role="contentinfo"] {
 	position: relative;
 	text-indent: -9999px;
 	background: url(../images/social-sprites.png) no-repeat top left;
-	background-position: 0 -318px; 
-	width: 56px; 
-	height: 56px;
+	 background-position: 0 -360px; 
+	width: 40px; 
+	height: 40px;
 }
 
 .twitter span {
@@ -147,9 +211,32 @@ footer[role="contentinfo"] {
 	background: url(../images/social-sprites.png) no-repeat top left;
 	opacity: 0;
 	@include transition(opacity, 0.5s, ease-out);
-	background-position: 0 -212px; 
+	background-position: 0 -450px; 
 }	
 
 .twitter:hover span {
+	opacity: 1;
+}
+
+.rss {		
+	display: inline-block;
+	position: relative;
+	text-indent: -9999px;
+	background: url(../images/social-sprites.png) no-repeat top left;
+	 background-position: 0 -180px;
+	width: 40px; 
+	height: 40px;
+}
+
+.rss span {
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+	background: url(../images/social-sprites.png) no-repeat top left;
+	opacity: 0;
+	@include transition(opacity, 0.5s, ease-out);
+	background-position: 0 -270px; 
+}	
+
+.rss:hover span {
 	opacity: 1;
 }

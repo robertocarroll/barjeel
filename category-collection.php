@@ -54,13 +54,19 @@
 					          }
 					?> 
 
-					
+				 <div class="filter-sort-menu">
+
+		        <span class="list-title uppercase small filter-title"><?php echo mf_get_menu_name('filter'); ?></span>
+
+					<?php wp_nav_menu( array( 'theme_location' => 'filter', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu filter-collection') ); ?>
+
+			 </div><!-- filter-sort-menu -->		
 
 				<div class="sort-collection">
 
 				<span class="list-title uppercase small top-menu">Sort by</span>
 
-				<select class="sort-by ">
+				<select class="sort-by">
 
 		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
@@ -68,18 +74,7 @@
 		              
 		        </select>
 
-		       
-
-		        <div class="filter-sort-menu">
-
-		        <span class="list-title uppercase small top-menu"><?php echo mf_get_menu_name('filter'); ?></span>
-
-					<?php wp_nav_menu( array( 'theme_location' => 'filter', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu') ); ?>
-
-			 </div><!-- filter-sort-menu -->	
-
-			  </div><!-- sort-collection -->	
-		        
+		       </div><!-- sort-collection -->	
 
 		    </div><!-- collection-meta -->	
 

@@ -9,6 +9,10 @@
     @include gs-span(da, 2, 5, (2, 5));
     
     }
+
+    @include respond-to(mobile) { 
+      @include gs-span(m, all);
+    }
   
 }
 
@@ -17,11 +21,21 @@
    text-align: $opdir;
 
    @include respond-to(tablet) { 
-    @include gs-span(da, 2, 4, (2, 5));
+    @include gs-span(da, 2, 5, (2, 5));
     clear:both;
     padding-top: $base-spacing-unit;
-    text-align: $dir;
+    text-align: center;
+    @include gs-pad(da, padinfull);
     }
+
+   @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      padding-top: $base-spacing-unit;
+      clear:both;
+      text-align: center;
+      @include gs-pad(m, padinfull);
+
+    } 
 
 }
 
@@ -104,7 +118,11 @@
 }
 
 .article-row {
-  padding-top: $base-spacing-unit;  
+  padding-top: $base-spacing-unit; 
+
+   @include respond-to(mobile) { 
+      padding-top: 0; 
+    } 
 }
 
 .article-list { 

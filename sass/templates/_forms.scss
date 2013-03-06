@@ -1,0 +1,85 @@
+/* #Forms
+================================================== */
+
+	form {
+		margin-bottom: 20px; }
+	fieldset {
+		margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #999999;
+		padding: 6px 4px;
+		outline: none;
+		@include border-radius(4px);
+		color: $barjeel-grey;
+		margin: 0;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 20px;
+		background: #fff; 
+	}
+	
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); 
+
+	}
+	
+	textarea {
+		min-height: 60px; }
+	label,
+	legend {
+		display: block;
+		font-weight: normal;
+	 }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		color: #444; 
+	}
+
+/* css for putting contact labels in forms */
+
+.input-contact {
+  margin: 5px 0;
+  background: white;
+  float: left;
+  clear: both;
+}
+.input-contact span {
+  position: absolute;
+  padding: 5px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+  color: #999;
+}
+.input-contact input, .input-contact textarea, .input-contact select {
+  position: relative;
+  margin: 0;
+  border-width: 1px;
+  padding: 6px;
+  background: transparent;
+  font: inherit;
+}
+/* Hack to remove Safari's extra padding. Remove if you don't care about pixel-perfection. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .input-contact input, .input-contact textarea, .input-contact select { padding: 4px; }
+}
+
+
+

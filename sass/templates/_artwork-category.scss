@@ -16,15 +16,60 @@
 		@include gs-span(da, 5, 5, (2, 5));
 		padding-bottom: $half-spacing-unit;
 
+		  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    	} 
+
 	}
 
 	.sort-collection {	
-		@include gs-span(da, 2, 4, (2, 5));
-	
+		@include gs-span(da, 3, 4, (2, 5));
+		text-align:$opdir;
+
+
+		  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    	} 
 	}
 
+	.filter-collection {		
+			display: inline;
+		}
+
+	.filter-collection > li {
+		margin-bottom:0;
+
+		
+	}
+
+	.filter-title {
+		float: $dir;
+
+		  @include respond-to(mobile) { 
+		  	float: none;
+      text-align: center;
+    	} 	
+	}
+
+
+	.sort-title {
+		float:$dir;
+	}
+
+
 	.filter-sort-menu {
+		@include gs-span(da, 2, 3, (2, 5));
 		padding-bottom: $quarter-spacing-unit;
+
+		  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    	} 
 	}
 
 	.collection-details h2 {	
@@ -50,8 +95,25 @@
  	} 
 
 	#sort {
+
+		@include respond-to(desktop) { 	
 		@include gs-span(da, 2, 4, (2, 5));
 		display: none;
+		clear:left;
+	}
+
+	@include respond-to(tablet) { 	
+		@include gs-span(da, 2, 4, (2, 5));
+		display: none;
+		clear:left;
+	}	
+
+		@include respond-to(mobile) { 
+      @include gs-span(m, all);
+      
+    	} 
+
+
 	}
 	
 	.box-ms {
@@ -59,6 +121,8 @@
 		width: 211px; 
 
 		@include respond-to(tablet) { width: 190px; }
+
+		 @include respond-to(mobile) { width: 175px; }
 	}
 
 
@@ -97,6 +161,18 @@
 	.browse {
 		@include gs-span(da, 5, 5, (2, 5));
 		@extend .cf;
+
+		  @include respond-to(tablet) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    } 
+
+		  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    	} 
 	}	
 
 

@@ -9,17 +9,10 @@
 
 	}
 
-	.filter-title {
-		color: $barjeel-blue;
-		padding-top: 3px;
-		padding-bottom: 3px;
-		padding-#{$dir}: $half-spacing-unit;
-		padding-#{$opdir}: $half-spacing-unit;
-	}
-
 	.sort-by {
-		text-align: $dir;
 		display: none;
+		width: 142px;
+		text-align: $dir;		
 	}	
 
 	.filter-by {

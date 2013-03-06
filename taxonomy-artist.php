@@ -182,7 +182,7 @@
 
 						<div class= "center margin-below-half">	
 
-							<h1 class="alpha bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+							<h1 class="epsilon bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
 				<?php 
 					
@@ -190,7 +190,7 @@
 					
 					if($term->parent > 0)  { ?>	
 
-				<ul class="entry-meta">	
+				<ul class="entry-meta-artist">	
 					<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
 								
 												<?php if ( $country ) { ?>	

@@ -6,10 +6,18 @@
   @include gs-span(da, 2, 4, (2, 5));
   clear:both;
 
+    @include respond-to(mobile) { 
+    @include gs-span(m, all);
+    }
+
 }
 
 .exhibition-text {
   @include gs-pad (da, padinfull);
+
+   @include respond-to(mobile) { 
+     @include gs-pad (m, padinfull);
+    }
 
 }
 
@@ -34,6 +42,10 @@
 .exhibition-title { 
   @extend .main-title;
   padding-top: $base-spacing-unit * 2;
+
+  @include respond-to(mobile) { 
+     padding-top: $half-spacing-unit;
+    }
 }
 
 .exhibition-main-text { 
@@ -74,6 +86,13 @@
 
 .related-posts {
   @include gs-span(da, 5, 5, (2, 5));
+
+  @include respond-to(mobile) { 
+    @include gs-span(m, all);
+     clear:both;
+     padding-top: $base-spacing-unit;
+     text-align: center;
+    }
  
 }
 

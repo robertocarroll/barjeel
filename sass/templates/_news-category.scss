@@ -6,6 +6,12 @@
 		@include gs-span(da, 2, 4, (2, 5));
 		clear: both;
 
+		@include respond-to(mobile) { 
+    @include gs-span(m, all);
+    clear: both;
+ 
+    }
+
 	}
 
 	.news-item {
@@ -14,11 +20,24 @@
 		@extend .white;
 		clear: both;
 
+		@include respond-to(mobile) { 
+    @include gs-span(m, all);
+    clear: both;
+ 
+    }
+
 	}
 
 
 	.news-image {
 		@include gs-span(da, 2, 2, (2, 4));
+
+		@include respond-to(mobile) { 
+    @include gs-span(m, all);
+    clear: both;
+
+ 
+    }
 		
 	}
 
@@ -26,6 +45,12 @@
 		@include gs-span(da, 3, 4, (2, 4));		
 		@extend .cf;
 		padding-top: $half-spacing-unit;
+
+		@include respond-to(mobile) { 
+    @include gs-span(m, all);
+    clear: both;
+ 
+    }
 	}
 
 

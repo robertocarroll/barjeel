@@ -7,6 +7,11 @@
   height: 400px !important;
 }
 
+.entry-meta-artist {
+	@extend .entry-meta;
+	padding-bottom: 6px !important;
+}
+
 .rsContent {text-align: center !important; }
 
 .slideshow-video-thumb {

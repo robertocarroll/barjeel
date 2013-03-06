@@ -5,7 +5,12 @@
 	.page-intro {
 		text-align: right;
 		padding-bottom: $base-spacing-unit;
-		padding-top: $half-spacing-unit;	
+		padding-top: $half-spacing-unit;
+
+		@include respond-to(mobile) { 
+      		padding-bottom: 0;
+      		text-align: center;
+	    } 	
 	}	
 
 
@@ -22,6 +27,11 @@
 
 	.page-image {
 		@include gs-span(da, 2, 3, (2, 5));
+
+	@include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+    } 
 		
 	}
 
@@ -30,10 +40,20 @@
 		@include gs-pad (da, padinfull);
 		@include gs-pad (da, padfull);
 		@extend .cf;
+
+	@include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+    } 
 	}
 
 	.entry-content {
 		padding-top: $base-spacing-unit;
+
+	@include respond-to(mobile) { 
+      padding-#{$dir}: $half-spacing-unit;
+    } 	
+
 	}
 
 
@@ -70,7 +90,7 @@
 	}
 
 	.visit-table th, td {
-   		padding:$quarter-spacing-unit;
+   		padding:1px;
  
 	}
 

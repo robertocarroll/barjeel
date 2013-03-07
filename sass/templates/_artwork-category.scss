@@ -96,17 +96,10 @@
 
 	#sort {
 
-		@include respond-to(desktop) { 	
-		@include gs-span(da, 2, 4, (2, 5));
-		display: none;
-		clear:left;
-	}
 
-	@include respond-to(tablet) { 	
 		@include gs-span(da, 2, 4, (2, 5));
 		display: none;
 		clear:left;
-	}	
 
 		@include respond-to(mobile) { 
       @include gs-span(m, all);
@@ -161,12 +154,6 @@
 	.browse {
 		@include gs-span(da, 5, 5, (2, 5));
 		@extend .cf;
-
-		  @include respond-to(tablet) { 
-      @include gs-span(m, all);
-      clear: both;
-      text-align: center;
-    } 
 
 		  @include respond-to(mobile) { 
       @include gs-span(m, all);

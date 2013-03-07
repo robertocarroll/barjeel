@@ -84,6 +84,11 @@ body {
   padding-top: $base-spacing-unit * 2;
   padding-bottom: $base-spacing-unit * 2;
 
+  @include respond-to(tablet) { 
+      padding-#{$dir}: $base-spacing-unit; 
+      
+      } 
+
     @include respond-to(mobile) { 
       clear:both;
       @include gs-span(m, all);

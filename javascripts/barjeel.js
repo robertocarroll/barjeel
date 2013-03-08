@@ -22,9 +22,16 @@ jQuery(document).ready(function($){
       $('.attachment-homepage-thumb').width('100%');
       $('.attachment-homepage-thumb').height('auto');
     
+      $('#input_1_7:contains(" : ")').html(function(index,oldhtml) {
+    return oldhtml.replace(' : ','');
+});
+
   });
 
  
+
+
+
 
 /*! Sort box on collection page */
 

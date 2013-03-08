@@ -115,7 +115,7 @@ var map;
 
 
 			var image = '<?php echo get_template_directory_uri(); ?>/images/custom.png';
-			var myLatLng = new google.maps.LatLng(25.329006, 55.366824); //add new marker
+			var myLatLng = new google.maps.LatLng(25.322311,55.376234); //add new marker
 			var barjeelMarker = new google.maps.Marker({
 				      position: myLatLng,
 				      map: map,

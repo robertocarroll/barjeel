@@ -5,14 +5,14 @@
    
 				<?php if ( have_posts() ) : ?>
 					
-				<h1 class="gamma bold gray">
+				<h1 class="entry-title-page margin-below-half">
 						<?php
 								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 
 						?>
 				</h1>	
 
-				<div class="filter-sort-menu">
+				<div class="filter-sort-menu-wide">
 
 		        <span class="list-title uppercase small top-menu">Categories</span>
 

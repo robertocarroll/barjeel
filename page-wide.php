@@ -11,9 +11,9 @@ Template Name: Full width page
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div class="pad-in">
+	<div class="pad-in padding-top-most">
 
-		<h1 class="entry-title padding-top-most"><?php the_title(); ?></h1>
+		<h1 class="entry-title-page no-margin-below"><?php the_title(); ?></h1>
 	
 	<div class="entry-content">
 		

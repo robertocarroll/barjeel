@@ -52,6 +52,27 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			
 			<div class="news-main">	
+
+				<?php
+				$royal_slideshow = get_post_meta($post->ID, 'slideshow', true);
+				if ($royal_slideshow)
+				{
+				
+			?>
+
+				<?php echo '<div class="exhibition-slideshow">' ?>
+
+					<?php echo get_new_royalslider($royal_slideshow); ?>
+
+				<?php echo '</div>' ?>
+
+				<?php } 
+
+				else {
+
+				?>
+
+
 					
 					<?php
 						if ( has_post_thumbnail() ){ ?>
@@ -59,12 +80,19 @@
 							<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
 							<?php the_post_thumbnail('collection-big'); ?>
 						</div><!-- .featured-image -->				
-							<?php } ?>
+							<?php } 
+
+					}		?>
 					
 
 					<div class="news-entry white">	
 
-						<?php if ( has_post_thumbnail() ) {?>
+						<?php if (!$royal_slideshow)
+							
+						{
+ 
+
+						 if ( has_post_thumbnail() ) {?>
 
 							<div class="light-italic gray zeta center">
 
@@ -72,11 +100,13 @@
 
 							</div>	
 
-							<?php } ?>
+							<?php } 
+
+						}	?>
 
 						<h2 class="date zeta exhibition-title e-date"><?php the_time('j F Y'); ?></h2>	
 							
-						<h1 class="alpha bold gray margin-below"><?php the_title(); ?></h1>					
+						<h1 class="entry-title-page margin-below-half"><?php the_title(); ?></h1>					
 						
 						<?php the_content(); ?>
 

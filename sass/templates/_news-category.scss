@@ -2,6 +2,17 @@
     $News-category
 \*------------------------------------*/
 	
+	.filter-sort-menu-wide {
+		@include gs-span(da, 2, 4, (2, 5));
+		padding-bottom: $quarter-spacing-unit;
+
+		  @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+    	} 
+	}
+
 	.news-list {
 		@include gs-span(da, 2, 4, (2, 5));
 		clear: both;

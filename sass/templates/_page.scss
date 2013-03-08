@@ -13,6 +13,19 @@
 	    } 	
 	}	
 
+	.entry-title-page {
+		@extend .bold;
+		@extend .alpha;
+		padding-top: $quarter-spacing-unit;
+		padding-bottom: $quarter-spacing-unit;
+		color: $barjeel-grey;
+		line-height: $big-line-height;
+
+		@include respond-to(mobile) { 
+	     text-align: center;
+    	}
+	}
+
 
 	.country-list > li.cat-item:after, .children > li.cat-item:after  {
  		content: "";

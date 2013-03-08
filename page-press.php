@@ -11,9 +11,30 @@ Template Name: Press page
 
 	<div class="exhibition-main">
 
-		<div class="exhibition-text white padding-top-most">						
+		<?php
+						if ( has_post_thumbnail() ){ ?>
+						<div class="featured-image center">
+							<?php $thumbID = get_post_thumbnail_id($post->ID); ?>
+							<?php the_post_thumbnail('collection-big'); ?>
+						</div><!-- .featured-image -->				
+							<?php } 
 
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+						?>
+
+		<div class="exhibition-text white">	
+
+			<?php 
+			if ( has_post_thumbnail() ) {?>
+
+							<div class="light-italic gray zeta center">
+
+								<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
+
+							</div>	
+
+						<?php	} ?>					
+
+			<h1 class="entry-title-page no-margin-below "><?php the_title(); ?></h1>
 
 				<div class="education-main-text">
 

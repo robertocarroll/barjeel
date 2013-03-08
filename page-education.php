@@ -13,7 +13,7 @@ Template Name: Education page
 
 		<div class="exhibition-text white padding-top-most">						
 
-			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<h1 class="entry-title-page no-margin-below"><?php the_title(); ?></h1>
 
 				<div class="education-main-text">
 

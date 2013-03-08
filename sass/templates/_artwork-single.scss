@@ -14,7 +14,7 @@
 
 	.entry-title {
 		@extend .bold;
-		@extend .beta;
+		@extend .epsilon;
 		padding-top: $quarter-spacing-unit;
 		padding-bottom: $quarter-spacing-unit;
 		margin: 0;
@@ -33,7 +33,7 @@
 		@extend .epsilon;
 		@extend .nav;
 		margin-bottom: 0;
-		padding-bottom: 2px;
+		padding-bottom: 6px;
 		color: $barjeel-grey;
 		
 	}

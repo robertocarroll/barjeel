@@ -81,5 +81,11 @@
     .input-contact input, .input-contact textarea, .input-contact select { padding: 4px; }
 }
 
+.gfield_label {
+	font-style: normal;
+	font-weight: 300 !important;
+}
 
-
+#input_1_1_3, #input_1_1_6, #input_1_7_1, #input_1_7_2 {
+	margin-bottom: $quarter-spacing-unit;
+}

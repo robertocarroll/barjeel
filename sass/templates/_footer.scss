@@ -41,7 +41,7 @@ footer[role="contentinfo"] {
 	color: lighten($barjeel-text-grey, 5%);
 	padding-#{$opdir}: $half-spacing-unit;
 	word-wrap:break-word;
-	background: url(../images/embed-icon.png) white no-repeat top right;
+	background: white;
 	
 }
 
@@ -80,7 +80,6 @@ footer[role="contentinfo"] {
 }
 
 .address-footer {
-	min-width: 163px;
 
 	@include respond-to(mobile) { 
       float: $opdir;

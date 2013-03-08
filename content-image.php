@@ -108,7 +108,7 @@
 
 			<?php if (has_post_thumbnail( $post->ID ) ): ?>
 
-			<div class="light-italic gray zeta">
+			<div class="light-italic gray micro">
 
 				<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
 

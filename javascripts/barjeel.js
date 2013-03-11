@@ -85,7 +85,7 @@ jQuery(document).ready(function ($) {
  if(current_width > 768){
 
       $('.imagezoom').okzoom({
-        scaleWidth: 1200,
+        scaleWidth: 1000,
         backgroundRepeat: "repeat",
         width: 200,
         height: 200

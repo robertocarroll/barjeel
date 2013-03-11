@@ -30,7 +30,7 @@ get_header(); ?>
 	<script>
 
  jQuery(document).ready(function ($) {
-      $.backstretch("http://localhost:8888/wordpress/assets/Ahmad-Askalany_Hens-1500x1056.jpg");
+      $.backstretch("/wordpress/wp-content/uploads/2012/11/Ahmad-Askalany_Hens-1500x1056.jpg");
     });
 	
     

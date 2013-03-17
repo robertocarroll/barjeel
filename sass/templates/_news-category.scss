@@ -44,11 +44,8 @@
 		@include gs-span(da, 2, 2, (2, 4));
 
 		@include respond-to(mobile) { 
-    @include gs-span(m, all);
-    clear: both;
-
- 
-    }
+		    @include gs-span(m, 1);
+	    }
 		
 	}
 
@@ -58,10 +55,9 @@
 		padding-top: $half-spacing-unit;
 
 		@include respond-to(mobile) { 
-    @include gs-span(m, all);
-    clear: both;
- 
-    }
+   			@include gs-span(m, all);
+   			clear: both;
+ 	    }
 	}
 
 

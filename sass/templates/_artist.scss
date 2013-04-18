@@ -5,6 +5,11 @@
 .royalSlider {
   width: 100% !important;
   height: 400px !important;
+
+   @include respond-to(mobile) { 
+      height: 300px !important;
+    }
+
 }
 
 .entry-meta-artist {

@@ -59,7 +59,7 @@
 	
 	
 	.entry-meta > li:last-child:after {
- 		content: "";
+ 		display: none;
  	} 	
 
  	.artist-area {padding-bottom: $base-spacing-unit;}

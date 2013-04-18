@@ -91,7 +91,7 @@
  	} 
 
 	.top-menu > li:last-child:after {
- 		content: "";
+ 		display: none;
  	} 
 
 	#sort {
@@ -193,7 +193,7 @@
  	} 	
 	
 	.artwork-meta > li:last-child:after {
- 		content: "";
+ 		display: none;
  	} 	
 
  	/* Makes the "see more" blue  */

@@ -73,7 +73,7 @@
  	} 
 
 	.meta-news > li:last-child:after, li.cat-item:last-child:after {
- 		content: "";
+ 		display: none;
  	} 
 
  	li.current-cat a {

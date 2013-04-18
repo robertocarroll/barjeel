@@ -52,8 +52,8 @@
 
 									<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
 								
-												<?php if ( $country ) { ?>	
-												
+												<?php if ( $country ) { ?>
+
 													<?php echo '<li class="meta-link">'.$country.'</li> '; ?>
 												
 												<?php } ?>			

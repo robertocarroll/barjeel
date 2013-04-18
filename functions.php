@@ -469,7 +469,10 @@ function rw_get_the_term_list($id = null, $taxonomy, $parent = true, $before = '
 
 		if (($parent && 0 == $term->parent) || (!$parent && $term->parent)) {
 
-			$html[] = '<a href="' . get_term_link($term, $taxonomy) . '">' . $term->name . '</a>';
+			$term_name = $term->name;
+			$term_short = mb_strimwidth($term_name, 0, 20, '...');
+
+			$html[] = '<a href="' . get_term_link($term, $taxonomy) . '">' . $term_short . '</a>';
 
 		}
 

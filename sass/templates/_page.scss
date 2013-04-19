@@ -26,6 +26,9 @@
     	}
 	}
 
+	.country-list {
+		padding-bottom: $base-spacing-unit;
+	}
 
 	.country-list > li.cat-item:after, .children > li.cat-item:after  {
  		display: none;

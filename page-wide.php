@@ -11,6 +11,8 @@ Template Name: Full width page
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php while ( have_posts() ) : the_post(); ?>
+
 	<div class="pad-in padding-top-most">
 
 		<h1 class="entry-title-page no-margin-below"><?php the_title(); ?></h1>
@@ -21,8 +23,9 @@ Template Name: Full width page
 		
 	</div><!-- .entry-content -->
 
-
 	</div><!-- .pad-in -->
+
+	<?php endwhile; // end of the loop. ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
 

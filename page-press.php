@@ -9,6 +9,8 @@ Template Name: Press page
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php while ( have_posts() ) : the_post(); ?>
+
 	<div class="exhibition-main">
 
 		<?php
@@ -46,6 +48,7 @@ Template Name: Press page
 
 </div><!-- .exhibition-main -->
 
+<?php endwhile; // end of the loop. ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
 

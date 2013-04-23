@@ -7,6 +7,8 @@ Template Name: Page - no title
 
 <?php get_header(); ?>
 
+<?php while ( have_posts() ) : the_post(); ?>
+
 <div class="page-content">
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -55,5 +57,7 @@ Template Name: Page - no title
 </article><!-- #post-<?php the_ID(); ?> -->
 
 </div><!-- .page-content -->
+
+<?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>

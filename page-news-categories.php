@@ -14,6 +14,8 @@ http://wordpress.stackexchange.com/questions/24794/get-the-the-top-level-parent-
 
 <div class="pad-in white">
 
+	<h1 class="entry-title"><?php the_title(); ?></h1>
+
 	<div class="entry-content">
 
 <?php 

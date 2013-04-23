@@ -135,11 +135,14 @@ var map;
 
 		<div id="map_canvas" ></div>	
 
-	<div class="full-page white">			
+	<div class="full-page white">	
 
-	<?php the_content(); ?>	
+    <?php while ( have_posts() ) : the_post(); ?>
 
-	
+	     <?php the_content(); ?>	
+
+	 <?php endwhile; // end of the loop. ?>
+
 	</div><!-- .full-page -->
 		
 <?php get_footer(); ?>

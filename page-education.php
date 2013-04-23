@@ -9,6 +9,8 @@ Template Name: Education page
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php while ( have_posts() ) : the_post(); ?>
+
 	<div class="exhibition-main">
 
 		<div class="exhibition-text white padding-top-most">						
@@ -25,6 +27,7 @@ Template Name: Education page
 
 </div><!-- .exhibition-main -->
 
+<?php endwhile; // end of the loop. ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
 

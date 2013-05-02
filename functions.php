@@ -641,12 +641,13 @@ function save_my_metadata()
 	
 	$id = empty($id) ? get_the_ID() : $id;
 
-	if ( in_category( 'collection', $id )) {
+	if ( in_category( 'collection', $id )) 
+
+{
 
 	$taxonomy_name = 'artist'; 
 
 	$parent_taxonomies = get_terms( $taxonomy_name, array( 'parent' => 0, 'hide_empty' => 0  ) ); // get parent taxonomies for artist
-
 	
 	$parent_terms = array();
 
@@ -655,7 +656,6 @@ function save_my_metadata()
 		$parent_terms [] = $term->name; // get the names for the artist parent taxonomies
 
      }
-
 
 	$terms = get_the_terms( $post->ID, $taxonomy_name );	// get the terms in artist taxonomy for this post
 
@@ -669,23 +669,38 @@ function save_my_metadata()
 
      	$result = array_diff($artist_taxonomies, $parent_terms); // remove the parent terms
 
-     	foreach ($result as $key => $value) {
-    		
-    		$value = trim($value);
-		   
-		    if (!empty($value))
-		       $artist_name = $value;  
-		    
-			}
+		     	foreach ($result as $key => $value) {
+		    		
+		    		$value = trim($value);
+				   
+				    if (!empty($value))
+				       $artist_name = $value;  
+				    
+					}
+
+
+			$result_countries = array_intersect($artist_taxonomies, $parent_terms); // remove the parent terms
+
+		     	foreach ($result_countries as $key => $value) {
+		    		
+		    		$value = trim($value);
+				   
+				    if (!empty($value))
+				       $country_name = $value;  
+				    
+					}			
 
         delete_post_meta($id, 'artist');
-        update_post_meta($id, 'artist', $artist_name);  
-     
+        update_post_meta($id, 'artist', $artist_name); 
 
-       } 
+       
+        delete_post_meta($id, 'country');
+        update_post_meta($id, 'country', $country_name);  
+     	
 
+       } //close if category
 
-    }
+} //close save_metadata
 
 /**
  * Update custom field with taxonomy *

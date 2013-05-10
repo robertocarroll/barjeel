@@ -88,7 +88,9 @@
   	}
 
    @include respond-to(mobile) { 
-      @include gs-span(m, 1, 1);
+      @include gs-span(m, 1, 2);
+    clear:both;
+    padding-top: $half-spacing-unit; 
     }	
 
   }
@@ -102,7 +104,9 @@
     }
 
    @include respond-to(mobile) { 
-      @include gs-span(m, 2, 2);
+      @include gs-span(m, 1, 2);
+    clear:both;
+    padding-top: $half-spacing-unit; 
     }	 
 
   }
@@ -117,8 +121,8 @@
     }
 
     @include respond-to(mobile) { 
-      @include gs-span(m, 1, 1);
-     clear:both;
+      @include gs-span(m, 1, 2);
+    clear:both;
     padding-top: $half-spacing-unit; 
 
     }	
@@ -134,7 +138,8 @@
   }
 
   @include respond-to(mobile) { 
-      @include gs-span(m, 2, 2);
+      @include gs-span(m, 1, 2);
+    clear:both;
     padding-top: $half-spacing-unit; 
 
     }

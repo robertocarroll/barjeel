@@ -19,12 +19,24 @@
 			    $barjeel_styles_count = count($barjeel_style_classes);
 			    $barjeel_style_index = 0;
 			?>	
+		
+			<?php
 
-		<?php 
+			/* Exclude the post which is shown at the top of the page using the $not_in array  
 
-			/* Exclude the post which is shown at the top of the page using the $not_in array  */	
+				$paged = (get_query_var('page')) ? get_query_var('page') : 1;
+				$args = array(
+				  'posts_per_page' => 8,
+				  'category_name' => 'exhibitions',
+					'tag__not_in'	=> array(get_tag_id_by_name('exclude')),
+				  'paged' => $paged
+				  );
+
+				query_posts($args); */
+
+			
+				?>
 													
-			query_posts(array('tag__not_in'	=> array(get_tag_id_by_name('exclude')), 'category_name' => 'exhibitions', 'paged' => get_query_var('paged'), 'posts_per_page' => 8)); ?>
 				
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
@@ -59,15 +71,18 @@
 
 	</div><!-- .article-row -->
 
+				
+					<div style="clear:both;"></div>
+				
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
-					<div class="navigation clearfix">
-						<div class="alignleft"><?php next_posts_link('&laquo; Previous Entries') ?></div>
-						<div class="alignright"><?php previous_posts_link('Next Entries &raquo;') ?></div>
-					</div>
-					<?php } ?>
-				
-				
-				<?php endif; ?>			
+					
+					<?php } ?>		
+
+			<?php else : ?>
+
+				<?php get_template_part( 'no-results', 'archive' ); ?>
+
+			<?php endif; ?>		
 
 		<?php wp_reset_query(); ?>
 

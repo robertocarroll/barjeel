@@ -19,25 +19,8 @@
 			    $barjeel_styles_count = count($barjeel_style_classes);
 			    $barjeel_style_index = 0;
 			?>	
-		
-			<?php
 
-			/* Exclude the post which is shown at the top of the page using the $not_in array  
-
-				$paged = (get_query_var('page')) ? get_query_var('page') : 1;
-				$args = array(
-				  'posts_per_page' => 8,
-				  'category_name' => 'exhibitions',
-					'tag__not_in'	=> array(get_tag_id_by_name('exclude')),
-				  'paged' => $paged
-				  );
-
-				query_posts($args); */
-
-			
-				?>
-													
-				
+																
 				<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 

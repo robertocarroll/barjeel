@@ -102,17 +102,10 @@ function child_add_ie8_style_sheet() {
  
 function barjeel_scripts() {
 
-	wp_enqueue_script( 'okzoom', get_template_directory_uri() . '/javascripts/okzoom.js', array( 'jquery' ), '20120206', true );
+	wp_enqueue_script( 'okzoom', get_template_directory_uri() . '/javascripts/build/okzoom.js', array( 'jquery' ), '20120206', true );
+
+	wp_enqueue_script( 'barjeel', get_template_directory_uri() . '/javascripts/build/barjeel.min.js', array( 'jquery' ), '20120206', true );
 	
-	wp_enqueue_script( 'barjeel', get_template_directory_uri() . '/javascripts/barjeel.js', array( 'jquery' ), '20120206', true );
-
-	wp_enqueue_script( 'backstretch', get_template_directory_uri() . '/javascripts/jquery.backstretch.min.js', array( 'jquery' ), '20120206', true );
-	
-	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/javascripts/jquery.isotope.min.js', array( 'jquery' ), '20120206', true );
-
-	wp_enqueue_script( 'royalslider', get_template_directory_uri() . '/javascripts/jquery.royalslider.min.js', array( 'jquery' ), '20120206', true );
-
-	wp_enqueue_script( 'customselect', get_template_directory_uri() . '/javascripts/customSelect.jquery.min.js', array( 'jquery' ), '20120206', true );
 
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );

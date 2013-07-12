@@ -9,6 +9,8 @@
 
 				$category = get_the_category();
 
+				$the_tax = get_query_var( 'taxonomy' );
+
 				$total_posts = (int) $wp_query->found_posts;
 
 				$current_page = ( get_query_var('paged') && get_query_var('paged') > 1 ) ? get_query_var('paged') : 1;
@@ -17,7 +19,16 @@
 
 				if ( is_tax() ) {
 
-						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase blue"> ' .$term->count. '</span> artworks in this category</h2></div>';			
+					if ($term->count == 1) 
+					{
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase blue"> ' .$term->count. '</span> artwork in this category</h2></div>';			
+					}
+
+					else 
+					{
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase blue"> ' .$term->count. '</span> artworks in this category</h2></div>';
+					}
+
 				}	
 
 				else {
@@ -26,35 +37,40 @@
 
 				 ?>	
 
-				<?php	
+				 <?php	
 
 					if( isset($_GET['o']) && $_GET['o'] != '')
 					          {
 					              $order = $_GET['o'];
 					              switch($order)
 					              {
-					                case 'date-asc': $orderby = 'order=ASC';
-					                            $msg = 'Date Ascending';
+					                case 'date-desc': $orderby = "date";
+					                            $msg = 'Date Descending';
+					                            $order_set = 'DESC';
 					                              break;
 					                          
-					                case 'title-asc': $orderby = 'orderby=title&order=ASC';
+					                case 'title-asc': $orderby = "title";
 					                                $msg = 'Title A-Z';
+					                                $order_set = 'ASC';
 					                                break;
 
-					                case 'artist-asc': $orderby = 'meta_key=artist&orderby=meta_value&order=ASC';
-					                                $msg = 'Artist A-Z';
+					                case 'artist-asc': $orderby = "meta_value";
+					                					$meta_key = "artist";
+					                					$order_set = 'ASC';
+						                                $msg = 'Artist A-Z';
 					                                break;                
 					                             
 					              }
 					          }
 					          else
 					          {
-					              $orderby = 'order=DESC';
+					              $orderby = "date";
 					              $msg = 'Date Descending (default)';
 					          }
-					?> 
+					?> 	
 
-				 <div class="filter-sort-menu">
+
+			<div class="filter-sort-menu">
 
 		        <span class="list-title uppercase small filter-title"><?php echo mf_get_menu_name('filter'); ?></span>
 
@@ -84,19 +100,52 @@
 
 		    <div style="clear:left;"></div>
 
-		      <?php  global $query_string;
-					query_posts( $query_string. '&'.$orderby ); ?>	
+		    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+
+		      <?php 
+
+		      if ( is_tax() ) {
+
+		      $args = array(
+
+		      	'tax_query' => array(
+						array(
+							'taxonomy' => $the_tax,
+						     'field' => 'slug',
+							'terms' => $term->name
+
+						)
+					), 'paged' => $paged 
+
+		      				 );
+
+		  }	
+
+		  else {
+
+		  	$args = array(
+		      	'category_name' => 'collection',
+			 	'orderby' => "$orderby",
+			 	'meta_key' => "$meta_key",
+			   'order' => "$order_set",
+			   'paged' => $paged 
+			 );
+
+		  }
+
+
+		      $query = new WP_Query( $args );
+
+		      ?>	
    
-				<?php if ( have_posts() ) : ?>
+				<?php if($query->have_posts()) : ?>
 					
 				</header>
-	
-				<?php rewind_posts(); ?>
 			
 				<div id="sort">
 					<?php /* Start the Loop */ ?>
 					
-						<?php while ( have_posts() ) : the_post(); ?>
+						<?php while($query->have_posts()) : $query->the_post() ?>
 		
 							<?php get_template_part('catalogue'); ?>
 					
@@ -129,19 +178,17 @@
 			</aside>
 
 					<div style="clear:both;"></div>
-				
-				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
-					
-					<?php } ?>
 
+					<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
 
-				
+					<?php } ?> 
 
-			<?php else : ?>
+					<?php else : ?>
 
 				<?php get_template_part( 'no-results', 'archive' ); ?>
 
 			<?php endif; ?>
+
 
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->

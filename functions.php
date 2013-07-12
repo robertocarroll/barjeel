@@ -554,6 +554,7 @@ function base_pagination() {
 }
 
 
+
 /**
  * Don't load css for the language switcher - WPML *
  * 

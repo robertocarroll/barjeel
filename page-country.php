@@ -11,8 +11,12 @@ http://wordpress.stackexchange.com/questions/24794/get-the-the-top-level-parent-
 
 <?php get_header(); ?>
 
+<?php while ( have_posts() ) : the_post(); ?>
 
-<div class="pad-in white">
+
+<div class="pad-in white padding-bottom padding-top-most">
+
+	<h1 class="entry-title-page no-margin-below padding-top-most"><?php the_title(); ?></h1>
 
 	<div class="entry-content">
 
@@ -44,5 +48,7 @@ $args = array(
 </div><!-- .entry-content -->
 
 </div><!-- .pad-in -->
+
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

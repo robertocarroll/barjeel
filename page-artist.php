@@ -9,7 +9,11 @@ http://wpquestions.com/question/show/id/3864
 
 <?php get_header(); ?>
 
-<div class="pad-in white padding-bottom">
+<?php while ( have_posts() ) : the_post(); ?>
+
+<div class="pad-in white padding-bottom padding-top-most">
+
+	<h1 class="entry-title-page no-margin-below padding-top-most"><?php the_title(); ?></h1>
 
 	<div class="entry-content">
 
@@ -21,7 +25,7 @@ $terms = get_terms('artist', $args);
 
 if($terms) :
 
-	$output .= '<ul id="list">';
+	$output .= '<ul id="list" class="country-list">';
 
     foreach($terms as $term) :	
 
@@ -46,5 +50,7 @@ endif;
 </div><!-- .entry-content -->
 
 </div><!-- .pad-in -->
+
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

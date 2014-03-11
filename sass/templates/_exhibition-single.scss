@@ -25,6 +25,8 @@
   float: $dir;
   padding-#{$opdir}: $base-spacing-unit;
   padding-top: $quarter-spacing-unit;
+  padding-bottom: $base-spacing-unit;
+  text-align: center;
 }
 
 .catalogue-caption {

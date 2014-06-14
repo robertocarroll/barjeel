@@ -63,12 +63,11 @@
 
 	.filter-sort-menu {
 		@include gs-span(da, 2, 3, (2, 5));
-		padding-bottom: $quarter-spacing-unit;
+		padding-bottom: $quarter-spacing-unit; 
 
 		  @include respond-to(mobile) { 
       @include gs-span(m, all);
-      clear: both;
-      text-align: center;
+      display: none;
     	} 
 	}
 

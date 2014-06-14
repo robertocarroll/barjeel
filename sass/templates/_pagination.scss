@@ -4,7 +4,7 @@
 
 
 .pagination {
-		@include gs-span(da, 2, 5, (2, 5));
+		width: 68%;
 		height: 36px;
 	  margin: 18px 0;
 		@extend .light;

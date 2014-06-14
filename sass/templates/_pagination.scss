@@ -5,22 +5,67 @@
 
 .pagination {
 		@include gs-span(da, 2, 5, (2, 5));
-		text-align: justify;
+		height: 36px;
+	  margin: 18px 0;
 		@extend .light;
 		@extend .micro;
 		text-transform: uppercase;
-		margin-top: $base-spacing-unit;
 
-		@include respond-to(mobile) { 	
-		line-height: $big-line-height;
-	}
+		@include respond-to(tablet) { 
+			@include gs-span(ta, all);	
+			line-height: $big-line-height;
+		}
+
+		@include respond-to(mobile) { 
+			@include gs-span(ma, all);	
+			line-height: $big-line-height;
+		}
 	}	
 
+.pagination a, .pagination .current, .page-numbers {
+  padding: 0 14px;
+  line-height: 34px;
+  text-decoration: none;
+  border-left-width: 0;
+  font-weight: 700;
 
-.pagination .page-numbers {
+  @include respond-to(mobile) { 	
+		padding: 0 10px;
+	}
+}
+
+
+.pagination {
 	padding: $base-spacing-unit;
 
+	@include respond-to(tablet) { 	
+		padding: $half-spacing-unit;
+	}
+
+	@include respond-to(mobile) { 	
+		padding: $half-spacing-unit;
+	}
+
 }
+
+.prev, .next {
+	font-size: 16px;
+	font-weight: 700;
+
+	@include respond-to(mobile) { 	
+		font-size: 12px;
+	}
+
+}
+
+.pagination .dots {
+	padding: 2px;
+	font-size: 8px;
+	line-height: 34px;
+  text-decoration: none;
+  font-weight: normal;
+}
+
 .pagination .current {
 	color: $barjeel-red;
 }

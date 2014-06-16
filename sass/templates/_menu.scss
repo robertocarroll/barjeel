@@ -34,3 +34,21 @@ nav[role="navigation"] {
     background-image: url("../images/background.jpg") !important;
     background-repeat: repeat;
 }
+
+#jPanelMenu-menu {
+  background: $barjeel-blue;
+  text-align: center;
+  padding-top: $base-spacing-unit;
+  text-transform: uppercase;
+}
+
+#jPanelMenu-menu li {
+   border-bottom: 1px solid #fff;
+}
+ 
+#jPanelMenu-menu a {
+  color: white;
+  padding: $half-spacing-unit;
+  padding-bottom: 6px;
+  padding-top: 1px;
+}

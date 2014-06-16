@@ -29,7 +29,38 @@ jQuery(document).ready(function($){
 
 
 
+jQuery(document).ready(function($){
 
+var jPM = $.jPanelMenu({
+    menu: '#menu-main',
+    trigger: '.menu-trigger',
+    direction: 'right',
+    openPosition: '90%'
+});
+
+var jRes = jRespond([
+    {
+        label: 'small',
+        enter: 0,
+        exit: 600
+    },{
+        label: 'large',
+        enter: 600,
+        exit: 10000
+    }
+]);
+
+jRes.addFunc({
+    breakpoint: 'small',
+    enter: function() {
+        jPM.on();
+
+    },
+    exit: function() {
+        jPM.off();
+    }
+});     
+});
 
 
 

@@ -36,11 +36,13 @@
 	.inline {display: inline; }
 
 	.square {
-	width: 15px;
-	height: 15px;
-  	margin-left: 45%;
-  	margin-bottom: $half-spacing-unit;
+	   width: 15px;
+	   height: 15px;
+  	 margin-left: auto;
+     margin-right: auto;  
+  	 margin-bottom: $half-spacing-unit;
  }
+ 
  	.word-wrap {
  		word-wrap: break-word; 
  	}

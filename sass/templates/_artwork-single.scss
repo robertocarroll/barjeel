@@ -99,6 +99,8 @@
 		float: $opdir;
 		text-align: $opdir;
 		margin-#{$opdir}: 0;
+		font-weight: 400;
+		font-size: $micro-size;
 
 		@include respond-to(mobile) { 	
 		float: $dir;

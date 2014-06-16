@@ -29,6 +29,10 @@ jQuery(document).ready(function($){
 
 
 
+
+
+
+
 /*! Sort box on collection page */
 
 jQuery(document).ready(function($){

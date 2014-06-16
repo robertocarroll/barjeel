@@ -100,6 +100,7 @@ footer[role="contentinfo"] {
 
 .footer-logo {
   @include gs-span(da, 1);
+  padding: $base-spacing-unit 0 ($base-spacing-unit*3) 0;
 
   @include respond-to(mobile) { 
       @include gs-span(m, all);
@@ -114,6 +115,7 @@ footer[role="contentinfo"] {
   	@include gs-span(m, all);
       clear: both;
       padding-top: $quarter-spacing-unit;
+      text-align: center;
     } 
 
  } 

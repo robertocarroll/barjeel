@@ -20,7 +20,7 @@
 
 	<div class="footer">	
 			
-		<div class="logo footer-logo">	
+		<div class="footer-logo">	
 			<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><img src="<?php bloginfo('template_directory'); ?>/images/logofooter.png" alt="<?php bloginfo('name'); ?>" /></a>
 		
 		<div class="address-footer">

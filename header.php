@@ -62,9 +62,11 @@
 		
 		<!-- First comes the logo -->
 
-		<div class="logo">	
-			<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="<?php bloginfo('name'); ?>" /></a>
+		<div class="logo-wrapper">
+			<div class="logo">	
+			<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"></a>
 		</div><!-- .logo -->
+	</div><!-- .logo-wrapper -->
 
 		<!-- Then the navigation -->		
 			

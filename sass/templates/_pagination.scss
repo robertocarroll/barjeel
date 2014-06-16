@@ -30,10 +30,10 @@
   font-weight: 700;
 
   @include respond-to(mobile) { 	
-		padding: 0 10px;
+		padding: 0 7px;
 	}
-}
 
+}
 
 .pagination {
 	padding: $base-spacing-unit;
@@ -53,7 +53,7 @@
 	font-weight: 700;
 
 	@include respond-to(mobile) { 	
-		font-size: 12px;
+		font-size: 14     px;
 	}
 
 }
@@ -64,6 +64,11 @@
 	line-height: 34px;
   text-decoration: none;
   font-weight: normal;
+
+  @include respond-to(mobile) {   
+    font-size: 6px;
+    padding: 0;
+  }
 }
 
 .pagination .current {

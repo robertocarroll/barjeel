@@ -33,8 +33,8 @@
 
 		@include respond-to(mobile) { 
     @include gs-span(m, all);
-    clear: both;
- 
+      clear: both;
+      text-align: center;  
     }
 
 	}
@@ -44,7 +44,8 @@
 		@include gs-span(da, 2, 2, (2, 4));
 
 		@include respond-to(mobile) { 
-		    @include gs-span(m, 1);
+		    @include gs-span(m, all);
+        text-align: center; 
 	    }
 		
 	}

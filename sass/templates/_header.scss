@@ -13,6 +13,12 @@ header[role="banner"] {
 
 .logo-wrapper {
      padding: $base-spacing-unit 0 ($base-spacing-unit*3) 0;
+
+     @include respond-to(mobile) { 
+        @include gs-span(m, 1, 1);
+        padding-bottom: $base-spacing-unit;
+        padding-top: $half-spacing-unit;
+    }
 }
 
 .logo {

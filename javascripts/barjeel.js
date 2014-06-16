@@ -35,7 +35,7 @@ var jPM = $.jPanelMenu({
     menu: '#menu-main',
     trigger: '.menu-trigger',
     direction: 'right',
-    openPosition: '90%'
+    openPosition: '80%'
 });
 
 var jRes = jRespond([

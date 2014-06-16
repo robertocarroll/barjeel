@@ -63,14 +63,15 @@
 		<!-- First comes the logo -->
 
 		<div class="logo-wrapper">
-			<div class="logo">	
-			<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"></a>
-		</div><!-- .logo -->
+			
+			<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><div class="logo"></div><!-- .logo -->	</a>
+		
 	</div><!-- .logo-wrapper -->
 
 		<!-- Then the navigation -->		
 			
 		<nav role="navigation">
+			<a href="#menu" class="menu-trigger"><i class="icon-list-ul icon-2x">menu</i></a>
 			<h1 class="assistive-text"><?php _e( 'Menu', 'barjeel' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'barjeel' ); ?>"><?php _e( 'Skip to content', 'barjeel' ); ?></a></div>
 

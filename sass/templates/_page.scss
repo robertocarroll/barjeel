@@ -48,6 +48,7 @@
 	@include respond-to(mobile) { 
       @include gs-span(m, all);
       clear: both;
+      text-align: center;
     } 
 		
 	}

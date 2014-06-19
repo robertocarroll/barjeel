@@ -153,7 +153,9 @@
 				
 				</div><!-- sort -->	
 
-			<aside>
+			</div>
+
+			<aside class="browse-wrapper">
 
 				<div class="browse center">
 
@@ -177,7 +179,7 @@
 
 			</aside>
 
-					<div style="clear:both;"></div>
+			<div class="pagination-wrapper">
 
 					<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
 
@@ -189,6 +191,7 @@
 
 			<?php endif; ?>
 
+			</div>
 
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->

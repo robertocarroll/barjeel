@@ -35,32 +35,88 @@ var jPM = $.jPanelMenu({
     menu: '#menu-main',
     trigger: '.menu-trigger',
     direction: 'right',
-    openPosition: '80%'
+    openPosition: '100%'
 });
+
+var closeBtn = false;
+var paginationMove = false;
+
+function addCloseBtn () {
+  $(document).on("click", ".menu-trigger", function (e) {
+    $( "#jPanelMenu-menu" ).prepend( "<div class='menu-close' id='close-menu'></div>" );
+  });
+
+  closeBtn = true;
+}
+
+addCloseBtn();
+
+$(document).on("click", "#close-menu", function (e) {
+        jPM.close();
+        $( "#close-menu" ).remove();
+        e.preventDefault();
+    });
+
+
+function movePagination () {
+
+  var pagination = $(".pagination-wrapper"); 
+  $(pagination).remove();
+  $(pagination).insertAfter( "#content" );
+  paginationMove = true;
+
+}
+
+function movePaginationBack () {
+
+  var pagination = $(".pagination-wrapper"); 
+  $(pagination).remove();
+  $(pagination).insertAfter( ".browse-wrapper" );
+  paginationMove = false;
+
+}
+
+
+
 
 var jRes = jRespond([
     {
         label: 'small',
         enter: 0,
-        exit: 600
+        exit: 695
+
     },{
         label: 'large',
-        enter: 600,
+        enter: 695,
         exit: 10000
     }
 ]);
 
 jRes.addFunc({
-    breakpoint: 'small',
-    enter: function() {
-        jPM.on();
+      breakpoint: 'small',
+      enter: function() {
+          jPM.on();
 
-    },
-    exit: function() {
-        jPM.off();
-    }
-});     
+        if(!closeBtn){
+          addCloseBtn();
+        }
+
+        if(!paginationMove){
+          movePagination();
+        }
+
+      },
+      exit: function() {
+          jPM.off();
+          closeBtn = false;
+
+          if(paginationMove){
+          movePaginationBack();
+        }
+      }
+  });     
 });
+
 
 
 
@@ -221,8 +277,6 @@ jQuery(document).ready(function($){
         });
 
 });
-
-
 
 // update columnWidth on window resize
 $(window).smartresize(function(){

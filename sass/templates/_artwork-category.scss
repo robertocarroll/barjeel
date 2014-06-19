@@ -95,17 +95,12 @@
 
 	#sort {
 
-
 		@include gs-span(da, 2, 4, (2, 5));
-		display: none;
 		clear:left;
 
 		@include respond-to(mobile) { 
-      @include gs-span(m, all);
-      
+        @include gs-span(m, all);     
     	} 
-
-
 	}
 	
 	.box-ms {
@@ -158,7 +153,6 @@
       @include gs-span(m, all);
       clear: both;
       text-align: center;
-      display: none;
     	} 
 	}	
 

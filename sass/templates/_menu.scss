@@ -42,13 +42,45 @@ nav[role="navigation"] {
   text-transform: uppercase;
 }
 
+#jPanelMenu-menu li:nth-child(2) {
+  border-top: 1px solid #fff;
+  padding-top: 6px;
+}
+
 #jPanelMenu-menu li {
    border-bottom: 1px solid #fff;
+   margin-bottom: 6px;
 }
- 
+
 #jPanelMenu-menu a {
   color: white;
   padding: $half-spacing-unit;
   padding-bottom: 6px;
   padding-top: 1px;
+}
+
+.menu-trigger {
+  background: url("../images/mobile-buttons.png") no-repeat;
+  background-position: 0px -120px;
+  float: right;
+  height: 50px;
+  width: 50px;
+}
+
+a:hover.menu-trigger {
+  background-position: 0px -180px;
+}
+
+.menu-close {
+  background: url("../images/mobile-buttons.png") no-repeat;
+  background-position: 0px 0px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 24px;
+  margin-left: 10%;
+}
+
+.menu-close:hover {
+  background-position: 0px -60px;
+  cursor: pointer; 
 }

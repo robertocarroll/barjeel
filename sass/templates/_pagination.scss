@@ -3,24 +3,34 @@
 \*------------------------------------*/
 
 
+.pagination-wrapper {
+
+  @include gs-span(da, 2, 4, (2, 5));
+    clear: both;
+
+    @include respond-to(tablet) { 
+      @include gs-span(ta, all);  
+      line-height: $big-line-height;
+      clear:left;
+      padding-bottom: 2*($base-spacing-unit);
+    }
+
+    @include respond-to(mobile) { 
+      @include gs-span(ma, all);  
+      line-height: $big-line-height;
+      clear:left;
+      padding-bottom: 2*($base-spacing-unit);
+    }
+
+}
+
 .pagination {
-		width: 68%;
 		height: 36px;
 	  margin: 18px 0;
 		@extend .light;
 		@extend .micro;
 		text-transform: uppercase;
-
-		@include respond-to(tablet) { 
-			@include gs-span(ta, all);	
-			line-height: $big-line-height;
-		}
-
-		@include respond-to(mobile) { 
-			@include gs-span(ma, all);	
-			line-height: $big-line-height;
-		}
-	}	
+}	
 
 .pagination a, .pagination .current, .page-numbers {
   padding: 0 14px;

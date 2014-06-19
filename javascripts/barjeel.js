@@ -53,7 +53,11 @@ addCloseBtn();
 
 $(document).on("click", "#close-menu", function (e) {
         jPM.close();
-        $( "#close-menu" ).remove();
+
+        jPM.afterClose () {
+          $( "#close-menu" ).remove();
+        }
+        
         e.preventDefault();
     });
 

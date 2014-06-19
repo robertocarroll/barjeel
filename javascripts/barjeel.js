@@ -76,9 +76,6 @@ function movePaginationBack () {
 
 }
 
-
-
-
 var jRes = jRespond([
     {
         label: 'small',
@@ -96,6 +93,7 @@ jRes.addFunc({
       breakpoint: 'small',
       enter: function() {
           jPM.on();
+          $('.menu-trigger').click(function(){});
 
         if(!closeBtn){
           addCloseBtn();

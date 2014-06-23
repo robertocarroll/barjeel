@@ -32,24 +32,9 @@
 								<h2 class="artist-name">	
 									<?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
 								</h2>
-
-								
-								
+						
 								<ul class="artwork-meta">	
-									
-									<!-- Exhibitions- from custom field called exhibitions
-									
-									<?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false); ?>
-								
-												<?php if ( $exhibitions ) { ?>	
-												
-													<?php foreach($exhibitions as $exhibition) {
-														echo '<li>'.$exhibition.'</li> ';
-														} ?>
-												
-												<?php } ?> -->
-
-
+		
 									<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
 								
 												<?php if ( $country ) { ?>

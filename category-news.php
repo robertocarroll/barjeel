@@ -12,6 +12,8 @@
 						?>
 				</h1>	
 
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('news-description') ) : ?> <?php endif; ?>
+
 				<div class="filter-sort-menu-wide">
 
 		        <span class="list-title uppercase small top-menu">Categories</span>

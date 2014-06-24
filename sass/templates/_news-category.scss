@@ -25,6 +25,20 @@
 
 	}
 
+.category-description {
+  @extend .zeta; 
+  @extend .light; 
+  @extend .gray;
+
+  @include respond-to(mobile) { 
+    text-align: center;
+
+    }
+
+}
+
+
+
 	.news-item {
 		margin-bottom: $base-spacing-unit;
 		@include gs-span(da, 2, 4, (2, 4));

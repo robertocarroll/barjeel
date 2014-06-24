@@ -192,13 +192,22 @@ function barjeel_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Search', 'barjeel' ),
-		'id' => 'search',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget' => '</section>',
-		'before_title' => '<h1 class="widget-title">',
-		'after_title' => '</h1>',
-	) );	
+    'name' => __( 'Search', 'barjeel' ),
+    'id' => 'search',
+    'before_widget' => '<section id="%1$s" class="widget %2$s">',
+    'after_widget' => '</section>',
+    'before_title' => '<h1 class="widget-title">',
+    'after_title' => '</h1>',
+  ) );  
+
+  register_sidebar( array(
+    'name' => __( 'News-description', 'barjeel' ),
+    'id' => 'news-description',
+    'before_widget' => '<h2 class="category-description">',
+    'after_widget' => '</h2>',
+    'before_title' => '<h1 class="widget-title">',
+    'after_title' => '</h1>',
+  ) ); 
 
 }
 add_action( 'widgets_init', 'barjeel_widgets_init' );

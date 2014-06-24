@@ -7,6 +7,10 @@
 		background: lighten($barjeel-grey, 20%);
 	}
 
+	.featured-image-non-arab {
+		background: white;
+	}
+
 	.videoWrapperimage {
 		@extend .videoWrapper;
 		margin-bottom: 0 !important;

@@ -85,7 +85,7 @@
 
 			<!-- Gets the featured image -->
 
-			<div class="featured-image center">
+			<div class="featured-image-non-arab center">
 		
 				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'collection-big' ); ?>	
 

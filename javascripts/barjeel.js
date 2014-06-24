@@ -54,13 +54,10 @@ addCloseBtn();
 $(document).on("click", "#close-menu", function (e) {
         jPM.close();
 
-        jPM.afterClose () {
-          $( "#close-menu" ).remove();
-        }
+        $( "#close-menu" ).remove();
         
         e.preventDefault();
     });
-
 
 function movePagination () {
 

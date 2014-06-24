@@ -637,7 +637,7 @@ function save_my_metadata()
 	
 	$id = empty($id) ? get_the_ID() : $id;
 
-	if ( in_category( 'collection', $id )) 
+	if ( in_category( 'collection', $id ) || in_category( 'non-arab-art', $id )) 
 
 {
 

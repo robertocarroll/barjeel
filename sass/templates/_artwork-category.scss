@@ -7,10 +7,25 @@
 		padding-bottom: $base-spacing-unit * 2;
 	}
 
+  .collection-non-arab-art {  
+    @include gs-span(da, 2, 4, (2, 5));
+
+    @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+      } 
+  }
+
 	.collection-meta {	
 		@include gs-span(da, 2, 5, (2, 5));
 		padding-bottom: $half-spacing-unit;
 	}
+
+  .collection-meta-non-arab {  
+    padding-bottom: $half-spacing-unit;
+  }
+
 
 	.collection-details {	
 		@include gs-span(da, 5, 5, (2, 5));
@@ -28,13 +43,25 @@
 		@include gs-span(da, 3, 4, (2, 5));
 		text-align:$opdir;
 
-
 		  @include respond-to(mobile) { 
       @include gs-span(m, all);
       clear: both;
       text-align: center;
     	} 
 	}
+
+  .sort-collection-non-arab {  
+    @include gs-span(da, 3, 4, (2, 4));
+    text-align:$opdir;
+    clear:both;
+    padding-bottom: $base-spacing-unit;
+
+      @include respond-to(mobile) { 
+      @include gs-span(m, all);
+      clear: both;
+      text-align: center;
+      } 
+  }
 
 	.filter-collection {		
 			display: inline;
@@ -43,7 +70,6 @@
 	.filter-collection > li {
 		margin-bottom:0;
 
-		
 	}
 
 	.filter-title {
@@ -103,15 +129,26 @@
     	} 
 	}
 	
-	.box-ms {
-		padding-right: #{2*gs-gutter(da) + '%'};
-		width: 211px; 
+.artwork-list {
+  clear: left;
+}
 
-		@include respond-to(tablet) { width: 190px; }
+.category-non-arab-art {
+  padding-bottom: 2*$base-spacing-unit;
+}
 
-		 @include respond-to(mobile) { width: 135px; }
-	}
+.thumbnail-image-non-arab {
+    background: white;
+  }
 
+.box-ms {
+	padding-right: #{2*gs-gutter(da) + '%'};
+	width: 211px; 
+
+	@include respond-to(tablet) { width: 190px; }
+
+	 @include respond-to(mobile) { width: 135px; }
+}
 
 
 .vignette { 

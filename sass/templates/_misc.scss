@@ -59,6 +59,10 @@
 		padding-bottom: $base-spacing-unit;
 	}
 
+  .padding-bottom-half {
+    padding-bottom: $half-spacing-unit;
+  }
+
 	.no-margin-below {
 		margin-bottom: 0;
 	}

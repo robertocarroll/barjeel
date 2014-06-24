@@ -41,7 +41,7 @@ function barjeel_setup() {
 	 * Enable support for Post Types
 	 */
 	
-	add_theme_support( 'post-formats', array( 'aside', 'image' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'link' ) );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.
@@ -502,6 +502,7 @@ function rename_post_formats( $safe_text ) {
     if ( $safe_text == 'Aside' )
         return 'Exhibitions';
     return $safe_text;
+
 }
 add_filter( 'esc_html', 'rename_post_formats' );
 //rename Aside in posts list table
@@ -514,6 +515,7 @@ function live_rename_formats() {
                 if ( jQuery(this).text() == "Aside" )
                     jQuery(this).text("Exhibitions");
             });
+
         });
         </script>
 <?php }
@@ -635,7 +637,7 @@ function save_my_metadata()
 	
 	$id = empty($id) ? get_the_ID() : $id;
 
-	if ( in_category( 'collection', $id )) 
+	if ( in_category( 'collection', $id ) || in_category( 'non-arab-art', $id )) 
 
 {
 

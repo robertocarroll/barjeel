@@ -121,13 +121,9 @@
 									
 													<div class="thumbnail-image-non-arab center">
 
-														<a href="<?php the_permalink(); ?>">
-
 														 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'collection-big' ); ?>	
 
 														 <?php if ($image) { ?> <img src="<?php echo $image[0]; ?>" ><?php }	?> 
-
-														</a>	
 
 													</div><!-- close featured image --> 
 
@@ -135,9 +131,9 @@
 							
 											<h1 class="artwork-title uppercase bold-italic">
 
-												<a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); 
+												<?php $title = get_the_title(); 
 												echo mb_strimwidth($title, 0, 20, '...'); 
-												?></a> 
+												?>
 
 											</h1>	
 

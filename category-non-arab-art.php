@@ -132,7 +132,7 @@
 											<h1 class="artwork-title uppercase bold-italic">
 
 												<?php $title = get_the_title(); 
-												echo mb_strimwidth($title, 0, 20, '...'); 
+												echo mb_strimwidth($title, 0, 40, '...'); 
 												?>
 
 											</h1>	

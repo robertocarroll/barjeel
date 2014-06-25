@@ -454,6 +454,7 @@ function create_my_taxonomies() {
 	register_taxonomy( 'exhibition', 'post', array( 'hierarchical' => false, 'label' => 'Exhibition', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'bornin', 'post', array( 'hierarchical' => false, 'label' => 'Born in', 'query_var' => true, 'rewrite' => true ) );
 	register_taxonomy( 'news-themes', 'post', array( 'hierarchical' => false, 'label' => 'News themes', 'query_var' => true, 'rewrite' => true ) );
+  register_taxonomy( 'non-arab-artist', 'post', array( 'hierarchical' => true, 'label' => 'Non Arab Artist', 'query_var' => true, 'rewrite' => array('hierarchical' => true ) ) );
 }
 
 
@@ -646,7 +647,7 @@ function save_my_metadata()
 	
 	$id = empty($id) ? get_the_ID() : $id;
 
-	if ( in_category( 'collection', $id ) || in_category( 'non-arab-art', $id )) 
+	if ( in_category( 'collection', $id )) 
 
 {
 
@@ -707,11 +708,78 @@ function save_my_metadata()
 
 } //close save_metadata
 
-/**
- * Update custom field with taxonomy *
- * 
- * 
- */
+
+
+add_action('save_post', 'save_my_metadata_non_arab');
+
+function save_my_metadata_non_arab()
+{
+  
+  $id = empty($id) ? get_the_ID() : $id;
+
+  if ( in_category( 'non-arab-art', $id )) 
+
+{
+
+  $taxonomy_name = 'non-arab-artist'; 
+
+  $parent_taxonomies = get_terms( $taxonomy_name, array( 'parent' => 0, 'hide_empty' => 0  ) ); // get parent taxonomies for artist
+  
+  $parent_terms = array();
+
+   foreach ( $parent_taxonomies as $term ) 
+     {
+    $parent_terms [] = $term->name; // get the names for the artist parent taxonomies
+
+     }
+
+  $terms = get_the_terms( $post->ID, $taxonomy_name );  // get the terms in artist taxonomy for this post
+
+  $artist_taxonomies = array(); 
+     
+     foreach ( $terms as $term ) 
+     {
+    $artist_taxonomies [] = $term->name;
+
+     }
+
+      $result = array_diff($artist_taxonomies, $parent_terms); // remove the parent terms
+
+          foreach ($result as $key => $value) {
+            
+            $value = trim($value);
+           
+            if (!empty($value))
+               $artist_name = $value;  
+            
+          }
+
+
+      $result_countries = array_intersect($artist_taxonomies, $parent_terms); // remove the parent terms
+
+          foreach ($result_countries as $key => $value) {
+            
+            $value = trim($value);
+           
+            if (!empty($value))
+               $country_name = $value;  
+            
+          }     
+
+        delete_post_meta($id, 'artist');
+        update_post_meta($id, 'artist', $artist_name); 
+
+       
+        delete_post_meta($id, 'country');
+        update_post_meta($id, 'country', $country_name);  
+      
+
+       } //close if category
+
+} //close save_metadata_non_arab
+
+
+
 
 // check for a certain meta key on the current post and add a body class if meta value exists
 	

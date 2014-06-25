@@ -128,7 +128,7 @@
 
 		<h2 class="entry-title">
 			
-				<?php $artist_name_no_tags = rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
+				<?php $artist_name_no_tags = rw_get_the_term_list(null, 'non-arab-artist', false, '', ', ', ''); ?>
 
 				<?php echo wp_strip_all_tags( $artist_name_no_tags, $remove_breaks );?>
 
@@ -137,7 +137,7 @@
 			<ul class="entry-meta">	
 									
 
-									<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
+									<?php $country = rw_get_the_term_list(null, 'non-arab-artist', true, '', ', ', '');  ?>
 
 									<?php $country_no_tags = wp_strip_all_tags( $country, $remove_breaks );?>
 								

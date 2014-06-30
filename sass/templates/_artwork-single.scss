@@ -112,6 +112,15 @@
 
 	}
 
+
+	nav.next-previous ul li.previous:after {
+			@include respond-to(mobile) { 	
+			content: "•";
+			padding-left: 6px;
+			color: $barjeel-grey;
+		}
+	}
+
 	.random {
 		@extend .blue-back;
 		@extent .center;

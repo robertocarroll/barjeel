@@ -19,7 +19,21 @@
 
 				$total_pages = (int) $wp_query->max_num_pages;
 
-					echo '<div class="collection-meta-non-arab"><h2 class="zeta light gray inline">The non-Arab art collection is a small portion of the personal collection of Sultan Sooud Al Qassemi. We have <span class="bold uppercase blue">' .$total_posts. '</span> artworks in this collection.</h2></div>' ;
+				if ( is_tax() ) {
+
+					if ($term->count == 1) {
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase blue"> ' .$term->count. '</span> artwork by this artist.</h2></div>';			
+					}
+
+					else {
+						echo  '<div class="collection-meta"><h2 class="zeta light gray inline"><span class="red bold uppercase">' .$term->name. '</span> - we have <span class="bold uppercase blue"> ' .$term->count. '</span> artworks by this artist.</h2></div>';			
+					}
+					
+					}
+
+					else {
+						echo '<div class="collection-meta-non-arab"><h2 class="zeta light gray inline">The non-Arab art collection is a small portion of the personal collection of Sultan Sooud Al Qassemi. We have <span class="bold uppercase blue">' .$total_posts. '</span> artworks in this collection.</h2></div>' ;
+					}
 
 				 ?>	
 
@@ -55,6 +69,8 @@
 					          }
 					?> 	
 
+				<?php if ( is_category() ) {	 ?>
+							
 				<div class="sort-collection-non-arab">
 
 				<span class="list-title uppercase small top-menu">Sort by</span>
@@ -68,6 +84,8 @@
 		        </select>
 
 		       </div><!-- sort-collection -->	
+
+		     <?php }	 ?> 
 
 		    <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
 
@@ -167,6 +185,8 @@
 
 							</div><!--artwork-list -->
 
+						
+
 								<div class="pagination-wrapper">
 
 										<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
@@ -182,6 +202,47 @@
 								</div>
 
 				</div><!--collection-non-arab-art -->
+
+						<aside>
+
+				<div class="browse center">
+
+					<h1 class="browse-title">Browse by artist</h1>
+
+					<?php
+
+							$args = array('hide_empty' => 1, 'orderby' => 'name');
+
+							$terms = get_terms('non-arab-artist', $args);
+
+							if($terms) :
+
+								$output .= '<ul class="country-list small">';
+
+							    foreach($terms as $term) :	
+
+									if($parent = $term->parent) :
+
+										$output .= '<li><a href="'.get_term_link($term->slug, 'non-arab-artist').'">'.$term->name.'</a></li>';
+
+									endif;   
+
+									$parent = $term->parent; 
+
+							    endforeach;
+
+								$output .= '</ul>';
+
+							    echo $output;
+
+							endif;
+
+							?>
+				
+				</div> <!-- browse -->	
+
+			</aside>
+
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->
 			

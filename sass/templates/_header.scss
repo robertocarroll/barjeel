@@ -4,9 +4,11 @@
 
 header[role="banner"] {
   @include gs-span(da, 1);
+  width: 144px !important;
 
   @include respond-to(mobile) { 
     @include gs-span(m, all);
+    width: 100% !important;
     }
 
 }
@@ -43,25 +45,7 @@ header[role="banner"] {
 
 }
 
-#s { 
-	border: 1px solid $barjeel-grey;
-    @include border-radius(4px);
-    color: $barjeel-text-grey;
-    max-width: 180px;
-    padding: 4px;
-    @extend .zeta;
-    width: 90%;
 
-}
-
-#search-3 {
-	padding-bottom: $base-spacing-unit;
-
-	@include respond-to(mobile) { 
-    	display:none;
-    }
-
-}
 
 .widget-title {
 	text-transform: uppercase;

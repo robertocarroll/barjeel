@@ -28,7 +28,6 @@ jQuery(document).ready(function($){
 
 
 
-
 jQuery(document).ready(function($){
 
 var jPM = $.jPanelMenu({
@@ -103,19 +102,30 @@ jRes.addFunc({
         if(!paginationMove){
           movePagination();
         }
-
       },
       exit: function() {
           jPM.off();
           closeBtn = false;
 
-          if(paginationMove){
+        if(paginationMove){
           movePaginationBack();
-        }
+        }  
       }
-  });     
+  }); 
+      
+jRes.addFunc({
+    breakpoint: 'large',
+    enter: function() {
+      $('.imagezoom').okzoom({
+       // scaleWidth: 1000,
+        backgroundRepeat: "repeat",
+        width: 200,
+        height: 200
+      });
+    }
 });
 
+});
 
 
 
@@ -154,22 +164,7 @@ jQuery(document).ready(function($){
     });
 
 
-/*! For the magnifying glass on the artwork */
 
-jQuery(document).ready(function ($) {
-
- if(current_width > 768){
-
-      $('.imagezoom').okzoom({
-       // scaleWidth: 1000,
-        backgroundRepeat: "repeat",
-        width: 200,
-        height: 200
-      });
-
-       }
-
-    });
 
 /*! For the carousel on the artist page */
 
@@ -293,8 +288,6 @@ $(window).smartresize(function(){
     // update columnWidth to a percentage of container width
     masonry: { columnWidth: $container.width() / isotope_columns }
   });
-
-
 
 });
 

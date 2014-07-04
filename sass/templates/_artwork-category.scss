@@ -125,9 +125,20 @@
 		clear:left;
 
 		@include respond-to(mobile) { 
-        @include gs-span(m, all);     
+        @include gs-span(m, all);       
     	} 
+    
+    @media (max-width: 420px) {
+      margin-left: 25%;
+    } 
+
 	}
+
+  #sortArtwork {
+    @media (max-width: 420px) {
+      margin-left: 25%;
+    } 
+  }
 	
 .artwork-list {
   clear: left;
@@ -147,14 +158,15 @@
 
 	@include respond-to(tablet) { width: 190px; }
 
-	 @include respond-to(mobile) { width: 135px; }
+	  @include respond-to(mobile) { width: 190px; } 
 }
 
 
 .vignette { 
 	 border-radius: 50%;
-    width:172px;
-    height: 172px;
+   width:172px;
+   height: 172px;
+   margin: auto;
  
     @include transition-property(box-shadow);
     @include transition-duration(0.2s);

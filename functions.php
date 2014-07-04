@@ -840,4 +840,3 @@ function be_change_event_posts_per_page( $query ) {
 
 
 
-?>

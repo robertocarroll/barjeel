@@ -76,12 +76,8 @@
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'barjeel' ); ?>"><?php _e( 'Skip to content', 'barjeel' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class'      => 'nav  nav--stacked bold') ); ?>
-		
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('search') ) : ?> <?php endif; ?>
-
+	
 		</nav>
-
-		
 
 	</header>
 

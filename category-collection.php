@@ -58,7 +58,7 @@
 					                					$meta_key = "artist";
 					                					$order_set = 'ASC';
 						                                $msg = 'Artist A-Z';
-					                                break;                
+					                                break;                                 
 					                             
 					              }
 					          }
@@ -82,12 +82,12 @@
 
 				<span class="list-title uppercase small top-menu">Sort by</span>
 
-				<select class="sort-by">
+					<select class="sort-by">
 
 		            <option value="date-desc" <?php echo (!isset($order) || $order == '' || $order == 'date-desc')? 'selected="selected"':''; ?>>&nbsp;Date Added&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="title-asc" <?php echo ($order == 'title-asc')? 'selected="selected"':''; ?>>&nbsp;Title (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 		            <option value="artist-asc" <?php echo ($order == 'artist-asc')? 'selected="selected"':''; ?>>&nbsp;Artist (A to Z)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
-		              
+
 		        </select>
 
 		       </div><!-- sort-collection -->	

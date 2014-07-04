@@ -37,7 +37,7 @@
   line-height: 34px;
   text-decoration: none;
   border-left-width: 0;
-  font-weight: 700;
+  font-weight: 400;
 
   @include respond-to(mobile) { 	
 		padding: 0 7px;
@@ -47,25 +47,39 @@
 
 .pagination {
 	padding: $base-spacing-unit;
+}
 
-	@include respond-to(tablet) { 	
-		padding: $half-spacing-unit;
-	}
+.prev, .next {
+	font-size: $micro-size;
+	font-weight: 400;
+
+   @media (max-width: 900px) {
+      font-size: $h4-size;
+    } 
+
+  @include respond-to(tablet) {   
+    font-size: $h4-size;
+  }
 
 	@include respond-to(mobile) { 	
-		padding: $half-spacing-unit;
+		font-size: $h4-size;
 	}
 
 }
 
-.prev, .next {
-	font-size: 16px;
-	font-weight: 700;
+.page-number {
 
-	@include respond-to(mobile) { 	
-		font-size: 14     px;
-	}
+   @media (max-width: 900px) {
+      display: none;
+    } 
 
+   @include respond-to(tablet) {   
+    display: none;
+  }
+
+  @include respond-to(mobile) {   
+    display: none;
+  }
 }
 
 .pagination .dots {
@@ -75,9 +89,16 @@
   text-decoration: none;
   font-weight: normal;
 
+   @media (max-width: 900px) {
+      display: none;
+    } 
+
+  @include respond-to(tablet) {   
+    display: none;
+  }
+
   @include respond-to(mobile) {   
-    font-size: 6px;
-    padding: 0;
+    display: none;
   }
 }
 

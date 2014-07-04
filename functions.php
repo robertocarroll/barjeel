@@ -551,17 +551,19 @@ function base_pagination() {
 		'base' => str_replace( $big, '%#%', get_pagenum_link($big) ),
 		'current' => max( 1, get_query_var('paged') ),
 		'total' => $wp_query->max_num_pages,
-		'prev_text'    => __('«'),
-		'next_text'    => __('»'),
+		'prev_text'    => __('PREVIOUS'),
+		'next_text'    => __('NEXT'),
 		'end_size' => 1,
-		'mid_size' => 2
+		'mid_size' => 2,
+    'before_page_number' => '<span class="page-number">',
+    'after_page_number' => '</span>',
 	) );
  
 	// Display the pagination if more than one page is found
 	if ( $paginate_links ) {
-		echo '<div class="pagination">';
+		echo '<div class="pagination-wrapper"><div class="pagination">';
 		echo $paginate_links;
-		echo '</div><!--// end .pagination -->';
+		echo '</div><!--// end .pagination --></div>';
 	}
 }
 

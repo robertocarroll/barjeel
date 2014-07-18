@@ -29,7 +29,7 @@
 			
 					<?php /* Start the Loop */ ?>
 					
-				<div class="news-list">
+				<div class="news-list ">
 					
 						<?php while ( have_posts() ) : the_post(); ?>				
 						

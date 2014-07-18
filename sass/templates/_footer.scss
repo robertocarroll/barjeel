@@ -234,6 +234,11 @@ footer[role="contentinfo"] {
 
 #search-3 {
   padding-top: $base-spacing-unit;
+
+  @include respond-to(mobile) { 
+       padding-left: $base-spacing-unit; 
+       padding-right: $base-spacing-unit;    
+     }
 }
 
 #searchform input:focus { 

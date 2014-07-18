@@ -39,10 +39,13 @@ var jPM = $.jPanelMenu({
 
 var closeBtn = false;
 var paginationMove = false;
+var searchBox = $('.widget_search').clone();
+
 
 function addCloseBtn () {
   $(document).on("click", ".menu-trigger", function (e) {
-    $( "#jPanelMenu-menu" ).prepend( "<div class='menu-close' id='close-menu'></div>" );
+    $("#jPanelMenu-menu").prepend( "<div class='menu-close' id='close-menu'></div>" );
+    $("#jPanelMenu-menu").append(searchBox);
   });
 
   closeBtn = true;

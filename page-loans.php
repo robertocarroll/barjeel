@@ -62,14 +62,14 @@ Template Name: Loans page
 <div class="article-row">
 
 			<?php
-			    $barjeel_style_classes = array('article-one column-one','article-two column-two','article-three column-three');
+			    $barjeel_style_classes = array('article-one column-one','article-two column-two','article-three column-three', 'article-four column-four');
 			    $barjeel_styles_count = count($barjeel_style_classes);
 			    $barjeel_style_index = 0;
 			?>		
 				
 			<?php
 				$args = array(
-					'posts_per_page' => 9,
+					'posts_per_page' => 8,
 					'category_name' => 'news',
 					 'news-themes' => 'loans',
 					'ignore_sticky_posts' => 1,

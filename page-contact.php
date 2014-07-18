@@ -129,8 +129,6 @@ var map;
 	
 	</script>
 
-	
-	
 <!--Google Maps APIv3 -->	
 
 		<div id="map_canvas" ></div>	

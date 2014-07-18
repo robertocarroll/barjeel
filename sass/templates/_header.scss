@@ -4,7 +4,7 @@
 
 header[role="banner"] {
   @include gs-span(da, 1);
-  width: 144px !important;
+  width: 147px !important;
 
   @include respond-to(mobile) { 
     @include gs-span(m, all);

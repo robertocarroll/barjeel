@@ -200,15 +200,6 @@ function barjeel_widgets_init() {
     'after_title' => '</h1>',
   ) );  
 
-  register_sidebar( array(
-    'name' => __( 'News-description', 'barjeel' ),
-    'id' => 'news-description',
-    'before_widget' => '<h2 class="category-description">',
-    'after_widget' => '</h2>',
-    'before_title' => '<h1 class="widget-title">',
-    'after_title' => '</h1>',
-  ) ); 
-
 }
 add_action( 'widgets_init', 'barjeel_widgets_init' );
 
@@ -827,6 +818,7 @@ function only_collection_cat($query) {
 
 
 add_action( 'pre_get_posts', 'be_change_event_posts_per_page' );
+
 /**
  * Change Posts Per Page for Exhibition 
  *
@@ -840,5 +832,16 @@ function be_change_event_posts_per_page( $query ) {
 
 }
 
+/**
+ * Allow HTML in term (category, tag) descriptions
+ *
+ */
 
+foreach ( array( 'pre_term_description' ) as $filter ) {
+  remove_filter( $filter, 'wp_filter_kses' );
+}
+
+foreach ( array( 'term_description' ) as $filter ) {
+  remove_filter( $filter, 'wp_kses_data' );
+}
 

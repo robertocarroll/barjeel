@@ -4,6 +4,8 @@
 			<div id="content" class="container" role="main">	
    
 				<?php if ( have_posts() ) : ?>
+
+				<div class="white pad-in padding-top padding-bottom filter-sort-menu-wide">
 					
 				<h1 class="entry-title-page margin-below-half">
 						<?php
@@ -12,9 +14,7 @@
 						?>
 				</h1>	
 
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('news-description') ) : ?> <?php endif; ?>
-
-				<div class="filter-sort-menu-wide">
+				<?php echo '<h2 class="category-description">'.category_description( $category_id ).'</h2>'; ?>
 
 		        <span class="list-title uppercase small top-menu">Categories</span>
 
@@ -52,7 +52,6 @@
 			<?php wp_reset_query(); ?>  
 
 				<!-- Related posts - news with the tag featured -->
-
 
 			<?php
 			    $barjeel_style_classes = array('article-one','article-two','article-three', 'article-four');

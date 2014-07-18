@@ -62,7 +62,7 @@ Template Name: Loans page
 <div class="article-row">
 
 			<?php
-			    $barjeel_style_classes = array('article-one column-one','article-two column-two','article-three column-three', 'article-four column-four');
+			    $barjeel_style_classes = array('article-one column-one','article-two column-two','article-three column-three');
 			    $barjeel_styles_count = count($barjeel_style_classes);
 			    $barjeel_style_index = 0;
 			?>		

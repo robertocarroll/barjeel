@@ -69,7 +69,7 @@ Template Name: Education page
 				
 			<?php
 				$args = array(
-					'posts_per_page' => 3,
+					'posts_per_page' => 4,
 					'category_name' => 'news',
 					 'news-themes' => 'education',
 					'ignore_sticky_posts' => 1,

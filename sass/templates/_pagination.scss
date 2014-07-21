@@ -68,6 +68,15 @@
 }
 
 a.prev, a.next {			
+
+	@media (max-width: 900px) {
+      background: $barjeel-blue; color: white !important; 
+    	text-decoration: none; @include transition(color, 0.5s, ease-out); 
+    	padding-left: $half-spacing-unit; 
+    	padding-right: $half-spacing-unit; 
+    	padding-top: 6px; 
+    	padding-bottom: 3px;
+    }	
 	
 	@include respond-to(tablet) {  		
 			background: $barjeel-blue; color: white !important; 
@@ -89,7 +98,11 @@ a.prev, a.next {
  
  }
 
-a:hover.prev, a:hover.next {			
+a:hover.prev, a:hover.next {		
+
+	@media (max-width: 900px) {
+      color: $barjeel-blue !important; text-decoration: none; background: white;
+    }	
 	
 	@include respond-to(tablet) {  		
 			color: $barjeel-blue !important; text-decoration: none; background: white;

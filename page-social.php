@@ -111,5 +111,6 @@ Template Name: Social page
 
 				</div>	<!-- .article-row -->
 
+				<div class="see-more"><a href="/news-themes/social-responsibility/">See all <?php the_title(); ?> posts</a></div>
 
 <?php get_footer(); ?>

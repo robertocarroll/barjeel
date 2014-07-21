@@ -111,5 +111,7 @@ Template Name: Loans page
 
 				</div>	<!-- .article-row -->
 
+				<div class="see-more"><a href="/news-themes/loans/">See all <?php the_title(); ?> posts</a></div>
+
 
 <?php get_footer(); ?>

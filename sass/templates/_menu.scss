@@ -53,8 +53,8 @@ nav[role="navigation"] {
 
 #jPanelMenu-menu a {
   color: white;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  padding-bottom: 3px;
+  padding-top: 3px;
   @include transition(background, 0.2s, ease-out);
 }
 

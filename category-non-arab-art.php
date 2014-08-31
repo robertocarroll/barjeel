@@ -126,8 +126,6 @@
 		      ?>	
    
 				<?php if($query->have_posts()) : ?>
-					
-				</header>
 				
 				<div class="artwork-list">
 
@@ -147,21 +145,21 @@
 
 								<div class="meta white center padding-bottom-half">	
 							
-											<h1 class="artwork-title uppercase bold-italic">
+											<h2 class="artwork-title uppercase bold-italic">
 
 												<?php $title = get_the_title(); 
 												echo mb_strimwidth($title, 0, 40, '...'); 
 												?>
 
-											</h1>	
+											</h2>	
 
-											<h2 class="artist-name">	
+											<h3 class="artist-name">	
 												
 												<?php $artist_name_no_tags = rw_get_the_term_list(null, 'non-arab-artist', false, '', ', ', ''); ?>
 
 												<?php echo wp_strip_all_tags( $artist_name_no_tags, $remove_breaks );?>
 
-											</h2>
+											</h3>
 						
 											<ul class="artwork-meta">	
 					

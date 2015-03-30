@@ -23,7 +23,7 @@ Template Name: Press page
 
 						?>
 
-		<div class="exhibition-text white">	
+		<div class="exhibition-text white padding-top-most">	
 
 			<?php 
 			if ( has_post_thumbnail() ) {?>

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Loans page
+Template Name: Downloads page
 
 */
 ?>
@@ -70,8 +70,7 @@ Template Name: Loans page
 			<?php
 				$args = array(
 					'posts_per_page' => 8,
-					'category_name' => 'news',
-					 'news-themes' => 'downloads',
+					'category_name' => 'download',
 					'ignore_sticky_posts' => 1,
 				);
 				
@@ -111,7 +110,7 @@ Template Name: Loans page
 
 				</div>	<!-- .article-row -->
 
-				<div class="see-more"><a href="/news-themes/downloads/">See all <?php the_title(); ?> posts</a></div>
+				<div class="see-more"><a href="/download/">See all <?php the_title(); ?></a></div>
 
 
 <?php get_footer(); ?>

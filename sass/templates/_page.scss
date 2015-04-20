@@ -129,10 +129,7 @@
 
 .download-page {
 	padding-top: $base-spacing-unit;
-
-	@include respond-to(mobile) { 
-      text-align: center;
-    } 
+	text-align: center;
 }
 
 .download-image {
@@ -140,14 +137,6 @@
 }
 
 .download-text {
-
-	@include respond-to(tablet) { 
-      display: block;
-      padding-top: $base-spacing-unit/2;
-    }
-
-	@include respond-to(mobile) { 
-      display: block;
-      padding-top: $base-spacing-unit/2;
-    } 
+  display: block;
+  padding-top: $base-spacing-unit/2;
 }

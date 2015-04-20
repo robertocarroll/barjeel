@@ -127,3 +127,27 @@
     font-weight: normal;
 }	
 
+.download-page {
+	padding-top: $base-spacing-unit;
+
+	@include respond-to(mobile) { 
+      text-align: center;
+    } 
+}
+
+.download-image {
+	padding-right: $base-spacing-unit/2;
+}
+
+.download-text {
+
+	@include respond-to(tablet) { 
+      display: block;
+      padding-top: $base-spacing-unit/2;
+    }
+
+	@include respond-to(mobile) { 
+      display: block;
+      padding-top: $base-spacing-unit/2;
+    } 
+}

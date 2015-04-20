@@ -110,11 +110,15 @@
 						
 						<?php the_content(); ?>
 
-						<ul class="light uppercase meta-news nav">		
+						<?php $terms = get_the_terms( $post->ID, 'news-themes' ); ?>
 
-								<?php echo get_the_term_list( get_the_ID(), 'news-themes', '<li class="meta-link">', '</li><li class="meta-link">', '</li>') ?>	
+						<?php if ($terms) { ?>
 
-									</ul>		
+							<ul class="light uppercase meta-news nav">		
+									<?php echo get_the_term_list( get_the_ID(), 'news-themes', '<li class="meta-link">', '</li><li class="meta-link">', '</li>') ?>	
+							</ul>		
+
+						<?php } ?>
 
 					</div><!-- .news-text -->
 		

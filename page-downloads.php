@@ -92,12 +92,12 @@ Template Name: Downloads page
 							}
 							?>
 															
-							<h1 class="gamma bold article-list"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+							<h1 class="delta bold article-list"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 							<?php $dates = get_post_meta($post->ID, 'Dates', true);
 								//Checking if anything exists for the dates
 								if ($dates) { ?>
-								<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
+								<?php echo '<h2 class="date zeta e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
 									 				
 						</article>

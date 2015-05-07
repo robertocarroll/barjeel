@@ -94,7 +94,7 @@
 
 						 if ( has_post_thumbnail() ) {?>
 
-							<div class="light-italic gray zeta center">
+							<div class="light-italic gray zeta center padding-top-quarter">
 
 								<?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?>
 

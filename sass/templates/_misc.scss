@@ -2,9 +2,9 @@
     $Misc
 \*------------------------------------*/
 
-	.remove-bottom { margin-bottom: 0 !important; }
-	.half-bottom { margin-bottom: 10px !important; }
-	.add-bottom { margin-bottom: 20px !important; }
+.remove-bottom { margin-bottom: 0 !important; }
+.half-bottom { margin-bottom: 10px !important; }
+.add-bottom { margin-bottom: 20px !important; }
 		
 	/* Text meant only for screen readers */
 	.assistive-text {
@@ -49,6 +49,10 @@
 
  	.padding-top {
 		padding-top: $half-spacing-unit;
+	}
+
+	.padding-top-quarter {
+		padding-top: $quarter-spacing-unit;
 	}
 
 	.padding-top-most {

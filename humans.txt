@@ -1,29 +1,22 @@
 
-	<SITE NAME>
+	<Barjeel Art Foundation>
 	
 	==========================
 	
-	/* TEAM */
+	/* WE ARE THOUGHT FOX - wearethoughtfox.com */
 	
-	PROJECT LEAD
-	John Doe
-	http://johndoe.com
-	@johndoe
+	CONTENT 
+	Clint McLean
 	
 	DESIGNER
-	John Smith
-	http://johnsmith.org
-	@johnny
+	Una Janicijevic
 	
 	DEVELOPER
-	Jane Doe
-	http://janedoe.se
-	@janey
-	
+	Rob Carroll
 	
 	/* SITE */
 	
-	Date: 2011-07-18
+	Date: 2012-12-18
 	
 	TECHNOLOGIES
 	- Built with Wordpress

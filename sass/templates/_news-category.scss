@@ -93,6 +93,10 @@
  		display: none;
  	} 
 
+ 	.meta-news > li a {
+ 		font-weight: normal !important;
+ 	}
+
  	li.current-cat a {
  	 	color: $barjeel-red;
 

@@ -1,6 +1,3 @@
-barjeel
-=======
-
 The WordPress theme for the Barjeel website. Uses SASS and Gridset. Includes lots of things to do with custom taxonomies.  
 
 ### Templates
@@ -26,6 +23,10 @@ The WordPress theme for the Barjeel website. Uses SASS and Gridset. Includes lot
 * page-artist.php - list of artists A-Z (link from side of collections layout)
 * page-contact.php - Google Maps. All the rest of the content is hard-coded in the content of the page called "contact & about" 
 * page-country.php - list of countries and artists A-Z (link from side of collections layout)
+* page-home.php - landing layout of the website, ie barjeelartfoundation.org
+* page-news-categories.php - lists all news categories (link from see more on news themes)
+* page-random.php - powers the random button at the top of the image layout
+* page-wide.php - Takes up all the columns. Used on the Visit Sharjah page
 
 ### Taxonomy layouts
 * taxonomy-artist.php - used for artists and countries with a conditional check
@@ -87,8 +88,6 @@ CATEGORY: Press releases
 Taxonomies: Theme, country, artist?
 Format: Standard
 TEMPLATE: content-single.php
-
-
 
 ## Home title 
 1. Pages > Home

@@ -126,10 +126,11 @@
 }
 
 .article-list { 
-  line-height: $mid-line-height;
+  line-height: $mid-line-height !important;
   margin-bottom: $quarter-spacing-unit;
   text-transform: uppercase;
   padding-top: $half-spacing-unit; 
+  clear: both;
 }
 
 .article-one {		
@@ -138,14 +139,11 @@
   padding-top: $base-spacing-unit; 
 }
 
-
-
 .article-two {
   color: $barjeel-blue;
   text-align: center;
   padding-top: $base-spacing-unit; 
 }
-
 
 .article-three {
   color: $barjeel-red;

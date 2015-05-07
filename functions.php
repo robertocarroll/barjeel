@@ -41,7 +41,7 @@ function barjeel_setup() {
 	 * Enable support for Post Types
 	 */
 	
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'link' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote' ) );
 
 	/**
 	 * This theme uses wp_nav_menu() in one location.

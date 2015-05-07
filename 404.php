@@ -16,24 +16,18 @@ get_header(); ?>
 					<h1 class="entry-title white pad-in uppercase"><?php _e( 'Sorry! That page can&rsquo;t be found. Why not try searching?', 'barjeel' ); ?></h1>
 				</header><!-- .entry-header -->
 
-				<div class="entry-content">
-		
+				<div class="entry-content">	
 					<?php get_search_form(); ?>
-
-					
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 .post .error404 .not-found -->
 
 		</div><!-- #content .site-content -->
 	</div><!-- #primary .content-area -->
 
-	<script>
-
+<script>
  jQuery(document).ready(function ($) {
       $.backstretch("/wordpress/wp-content/uploads/2012/11/Ahmad-Askalany_Hens-1500x1056.jpg");
-    });
-	
-    
+    });    
 </script>
 
 <?php get_footer(); ?>

@@ -855,3 +855,7 @@ foreach ( array( 'term_description' ) as $filter ) {
   remove_filter( $filter, 'wp_kses_data' );
 }
 
+// REMOVE WP EMOJI
+remove_action('wp_head', 'print_emoji_detection_script', 7);
+remove_action('wp_print_styles', 'print_emoji_styles');
+

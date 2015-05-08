@@ -30,6 +30,9 @@ footer[role="contentinfo"] {
   @include gs-span(da, all);  
 }
 
+.social-icons {
+	padding-top: $half-spacing-unit;
+}
 
 .twitter-tweet  {
 	border-left: none;

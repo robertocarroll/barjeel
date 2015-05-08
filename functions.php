@@ -166,8 +166,8 @@ function barjeel_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Footer-4', 'barjeel' ),
 		'id' => 'footer-4',
-		'before_widget' => '',
-		'after_widget' => '',
+		'before_widget' => '<div class="social-icons">',
+		'after_widget' => '</div>',
 		'before_title' => '<h1 class="widget-title">',
 		'after_title' => '</h1>',
 	) );

@@ -844,6 +844,10 @@ function be_change_event_posts_per_page( $query ) {
 		$query->set( 'posts_per_page', '10' );
 	}
 
+	if( $query->is_main_query() && !is_admin() && is_tax( 'news-themes' ) ) {
+		$query->set( 'posts_per_page', '10' );
+	}
+
 }
 
 /**

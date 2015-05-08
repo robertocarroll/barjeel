@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: Custom page
+	Template Name: Standard page
 */
 ?>
 
@@ -20,7 +20,7 @@
 			</div><!-- .featured-image -->				
 		<?php } ?>
 
-		<div class="exhibition-text white padding-top-quarter">	
+		<div class="exhibition-text white padding-top-most">	
 		<?php 
 			if ( has_post_thumbnail() ) {?>
 				<div class="light-italic gray zeta center padding-bottom">
@@ -70,8 +70,7 @@
 			'posts_per_page' => 8,
 					'category_name' => $relatedcategory,
 					'ignore_sticky_posts' => 1,
-		);
-				query_posts( $args ); 
+		);			
 			}
 			
 			else {
@@ -81,7 +80,6 @@
 			 'news-themes' => $newstheme,
 			'ignore_sticky_posts' => 1,
 		);
-		query_posts( $args );
 			}	 
 		?> 
 
@@ -94,7 +92,11 @@
 			$barjeel_style_index = 0;
 		?>		
 		
-		<?php while (have_posts()) : the_post(); ?>
+		<?php 
+					$the_query = new WP_Query( $args );
+					if ( $the_query->have_posts() ) :
+					while ( $the_query->have_posts() ) : $the_query->the_post();
+		 ?>
 				
 		<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">		
 			<article>	
@@ -104,14 +106,7 @@
 					echo '<a href="'.get_permalink().'"><div class="vignette-square">'.$fpw_img_tag.'</div></a>';
 				}?>		
 
-				<?php if ($relatedcategory) { ?>
-					<?php echo '<h1 class="delta bold article-list">'; ?>
-				<?php } ?>	
-
-				<?php if ($newstheme) {?>
-					<?php echo '<h1 class="gamma bold article-list">'; ?>
-				<?php } ?>	
-
+				<?php echo '<h1 class="delta bold article-list">'; ?>
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<?php $dates = get_post_meta($post->ID, 'Dates', true);
 					//Checking if anything exists for the dates
@@ -120,14 +115,20 @@
 				<?php } ?>
 			</article>
 		</div>
-		<?php endwhile; ?>
+		<?php 
+			 $count_posts = $the_query->current_post + 1;		
+			endwhile;
+			endif; ?>
 
-		<?php wp_reset_query(); ?>  		
+		<?php wp_reset_postdata(); ?>  		
 
 	</div>	<!-- .article-row -->
 
 	<?php global $post; $morelink = get_post_meta($post->ID, 'more-post-link', true); ?> 
 
-	<div class="see-more"><?php echo '<a href="'.$morelink.'">'; ?>See all <?php the_title(); ?> posts</a></div>
+	<?php if ($count_posts > 7) { ?>
+		<div class="see-more"><?php echo '<a href="'.$morelink.'">'; ?>See all <?php the_title(); ?> posts</a></div>
+	<?php } ?>
+
 <?php } //End if for the related posts ?>		
 <?php get_footer(); ?>

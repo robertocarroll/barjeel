@@ -502,6 +502,12 @@ remove_filter($filter, 'strip_tags');
 function rename_post_formats( $safe_text ) {
     if ( $safe_text == 'Aside' )
         return 'Exhibitions';
+
+    if ( $safe_text == 'Link' )
+        return 'Image (non-Arab)';  
+
+   if ( $safe_text == 'Quote' )
+        return 'Download';   
     return $safe_text;
 
 }

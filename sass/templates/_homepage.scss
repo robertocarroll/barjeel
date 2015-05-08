@@ -119,6 +119,7 @@
 
 .article-row {
   padding-top: $base-spacing-unit; 
+  clear: both;
 
    @include respond-to(mobile) { 
       padding-top: 0; 

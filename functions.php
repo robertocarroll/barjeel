@@ -836,6 +836,10 @@ function be_change_event_posts_per_page( $query ) {
 		$query-> set('tag__not_in',array(173));
 	}
 
+	if( $query->is_main_query() && !is_admin() && is_category( 'downloads' ) ) {
+		$query->set( 'posts_per_page', '12' );
+	}
+
 }
 
 /**

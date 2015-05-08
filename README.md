@@ -52,23 +52,23 @@ The WordPress theme for the Barjeel website. Uses SASS and Gridset. Includes lot
 * news and press - controls the list on the top of the news and press layout
 
 ## More notes on different posts
-**Artworks are posts** 
+### Artworks are posts
 CATEGORY: Collection 
 Taxonomies: Country > Artist, Movement, Theme, Medium
 Format: Image
 TEMPLATE: content-image.php
 NOTES: Use custom field Name <exhibitions> Value <a href="/wordpress/exhibitions/peripheral-vision/">Peripheral Vision</a> to add links to the exhibitions the artwork features in.
 
-**Countries are terms in taxonomy artist**
+### Countries are terms in taxonomy artist
 TEMPLATE: taxonomy-artist.php (with conditional to check if parent)
 
-**Artists are terms in taxonomy artist**
+### Artists are terms in taxonomy artist
 TEMPLATE: taxonomy-artist.php (with conditional to check if child)
 
-**Movements, Themes, Medium are taxonomies** 
+### Movements, Themes, Medium are taxonomies
 TEMPLATE: taxonomy.php 
 
-**Exhibitions are posts**
+### Exhibitions are posts
 CATEGORY: Exhibitions
 Taxonomies: Theme, country, artist?
 Format: Exhibitions
@@ -83,11 +83,17 @@ One to feature a post - use sticky
 One selects future posts - Published [not restricted to category Exhibitions at the moment]
 One gets all the rest of the exhibitions [past not in sticky]
  
-**Press releases are posts**
-CATEGORY: Press releases
+### Press releases are posts
+CATEGORY: News
 Taxonomies: Theme, country, artist?
 Format: Standard
 TEMPLATE: content-single.php
+
+### Downloads
+CATEGORY: Downloads
+Format: downloads
+Attach a cropped image
+Add a custom field 'pdflink' with the link to the pdf
 
 ## Home title 
 1. Pages > Home

@@ -72,7 +72,7 @@
 
 			<div class="filter-sort-menu">
 
-		        <span class="list-title uppercase small filter-title"><?php echo mf_get_menu_name('filter'); ?></span>
+		        <span class="list-title uppercase small filter-title padding-bottom-quarter"><?php echo mf_get_menu_name('filter'); ?></span>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'filter', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu filter-collection') ); ?>
 
@@ -80,7 +80,7 @@
 
 				<div class="sort-collection">
 
-				<span class="list-title uppercase small top-menu">Sort by</span>
+				<span class="list-title uppercase small top-menu-sort">Sort by</span>
 
 					<select class="sort-by">
 

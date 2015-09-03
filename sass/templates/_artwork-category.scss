@@ -101,12 +101,18 @@
 		line-height: 6px;
 	}
 
-	.top-menu {
+	.top-menu-sort {
 		display: inline-block;
 		margin-bottom: 0;
 		padding-#{$opdir}: $quarter-spacing-unit;
 	}
 
+	.top-menu {
+		display: block;
+		margin-bottom: 0;
+		padding-#{$opdir}: $quarter-spacing-unit;
+		clear: both;
+	}
 
 	.top-menu > li:after  {
  		content: "/";

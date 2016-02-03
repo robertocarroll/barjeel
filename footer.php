@@ -18,35 +18,35 @@
 
 	<div class="footerwrapper">
 
-	<div class="footer">	
-			
-		<div class="footer-logo">	
-			
+	<div class="footer">
+
+		<div class="footer-logo">
+
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('search') ) : ?> <?php endif; ?>
 
 		<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><img src="<?php bloginfo('template_directory'); ?>/images/logofooter.png" alt="<?php bloginfo('name'); ?>" /></a>
-		
+
 		<div class="address-footer">
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-5') ) : ?>
-				<!-- Sidebar 1 content -->	
+				<!-- Sidebar 1 content -->
 
 		<?php endif; ?>
 
-		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-4') ) : ?>
-
-			<?php endif; ?>
-
-		</div><!-- .address-footer -->	
+		</div><!-- .address-footer -->
 
 
 		</div><!-- .logo -->
 
-	<div class="twitter-wrapper">	
+	<div class="twitter-wrapper">
+
+    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-4') ) : ?>
+
+      <?php endif; ?>
 
 	<div class="twitter-one">
-			
+
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-1') ) : ?>
-				<!-- Sidebar 1 content -->	
+				<!-- Sidebar 1 content -->
 
 				<?php endif; ?>
 
@@ -57,20 +57,20 @@
 		<div class="twitter-two">
 
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-2') ) : ?>
-				<!-- Sidebar 2 content -->	
+				<!-- Sidebar 2 content -->
 
 		<?php endif; ?>
-				
-			
+
+
 		</div><!-- .twitter-two -->
 
 		<div class="twitter-three">
 
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-3') ) : ?>
-				<!-- Sidebar 3 content -->	
+				<!-- Sidebar 3 content -->
 
 			<?php endif; ?>
-			
+
 
 		</div><!-- .twitter-three -->
 
@@ -87,7 +87,7 @@
 
 <!-- Optimized Google Analytics -->
 	<script>var _gaq=[['_setAccount','UA-39152844-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
-	
+
 
 <?php wp_footer(); ?>
 

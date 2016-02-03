@@ -5,9 +5,8 @@
 
 
 footer[role="contentinfo"] {
-		width: 100%;	
+		width: 100%;
 		@extend .cf;
-
 		/* Fallback for web browsers that don't support RGBa */
 		background: lighten($barjeel-grey, 25%);
 		/* RGBa with 0.6 opacity */
@@ -16,28 +15,23 @@ footer[role="contentinfo"] {
 		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#508ACFE6, endColorstr=#508ACFE6);
 		/* For IE 8*/
 		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#508ACFE6, endColorstr=#508ACFE6)";
-
 }
 
 
 .footerwrapper {
-  		margin: 0 auto;
-		width: 90%;
-		float: none;
+  margin: 0 auto;
+	width: 90%;
+	float: none;
 }
 
 .footer {
-  @include gs-span(da, all);  
-}
-
-.social-icons {
-	padding-top: $half-spacing-unit;
+  @include gs-span(da, all);
 }
 
 .twitter-tweet  {
 	border-left: none;
-	margin: 10px 0px; 
-	border-radius: 10px 10px 10px 10px; 
+	margin: 10px 0px;
+	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 	@extend .small;
 	padding-bottom: $half-spacing-unit;
@@ -45,20 +39,20 @@ footer[role="contentinfo"] {
 	padding-#{$opdir}: $half-spacing-unit;
 	word-wrap:break-word;
 	background: white;
-	
+
 }
 
 .twitter-tweet p {
 	@extend .zeta;
 	padding-top: $half-spacing-unit;
 	padding-bottom: $half-spacing-unit;
-	
+
 }
 
 #menu-footer-menu {
-	@extend .nav;  
-	@extend .nav--stacked; 
-	@extend .bold; 
+	@extend .nav;
+	@extend .nav--stacked;
+	@extend .bold;
 	@extend .uppercase;
 	padding-top: $half-spacing-unit;
 
@@ -67,12 +61,12 @@ footer[role="contentinfo"] {
 #text-5 {
 	padding-top: $base-spacing-unit;
 	@extend .micro;
-	word-wrap: break-word; 
+	word-wrap: break-word;
 
-	@include respond-to(mobile) { 
-      padding-top: 0;    
-  } 
-}	
+	@include respond-to(mobile) {
+      padding-top: 0;
+  }
+}
 
 #text-8 {
 	padding-top: $base-spacing-unit;
@@ -83,10 +77,9 @@ footer[role="contentinfo"] {
 }
 
 .address-footer {
-
-	@include respond-to(mobile) { 
+	@include respond-to(mobile) {
       float: $opdir;
-    } 
+    }
 }
 
 .copyright {
@@ -94,136 +87,128 @@ footer[role="contentinfo"] {
 	clear:both;
 	padding-top: $base-spacing-unit;
 
-	@include respond-to(mobile) { 
+	@include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
       text-align: center;
-    } 
+    }
 }
 
 .footer-logo {
   @include gs-span(da, 1, 2);
   padding: $base-spacing-unit 0 0 0;
 
-  @include respond-to(mobile) { 
+  @include respond-to(mobile) {
       @include gs-span(m, all);
-    } 
+    }
 }
 
 .twitter-wrapper {
   @include gs-span(da, 3, 5);
-  padding-top: 125px;
+  padding-top: 35px;
 
-  @include respond-to(mobile) { 
+  @include respond-to(mobile) {
   	@include gs-span(m, all);
       clear: both;
       padding-top: $base-spacing-unit;
       text-align: center;
-    } 
+    }
 
- } 
+ }
 
 
 .twitter-one {
   @include gs-span(da, 3, 3, (3, 5));
 
-  	@include respond-to(mobile) { 
+  	@include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
-    } 
-  
+    }
+
 }
 
 .twitter-two {
   @include gs-span(da, 4, 4, (3, 5));
 
-  @include respond-to(mobile) { 
+  @include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
-    } 
+    }
 }
 
 .twitter-three {
   @include gs-span(da, 5, 5, (3, 5));
 
-  @include respond-to(mobile) { 
+  @include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
-    } 
+    }
+}
+
+.social-icons {
+  padding-top: $half-spacing-unit;
+  padding-bottom: $base-spacing-unit;
+}
+
+.facebook-icon-2a, .google-cultural-icon-2a, .google-plus-icon-2a, .instagram-icon-2a, .reader-icon-2a,
+.twitter-icon-2a, {
+  display: inline-block;
+  background: url('../images/social-icon-sprite.png') no-repeat;
+  width: 62px;
+  height: 62px;
+  margin-right: $base-spacing-unit;
+}
+
+.facebook-icon-2a {
+  background-position: -5px -5px;
+}
+
+.facebook-icon-2a:hover {
+  background-position: -77px -5px;
+}
+
+.google-cultural-icon-2a {
+  background-position: -149px -5px;
+}
+
+.google-cultural-icon-2a:hover {
+  background-position: -5px -77px;
+}
+
+.google-plus-icon-2a {
+  background-position: -149px -77px;
+}
+
+.google-plus-icon-2a:hover {
+  background-position: -77px -77px;
+ }
+
+.instagram-icon-2a {
+  background-position: -5px -149px;
+}
+
+.instagram-icon-2a:hover {
+  background-position: -77px -149px;
+}
+
+.reader-icon-2a {
+  background-position: -149px -149px;
+}
+
+.reader-icon-2a:hover {
+  background-position: -221px -5px;
+}
+
+.twitter-icon-2a {
+   background-position: -221px -77px;
+}
+
+.twitter-icon-2a:hover {
+  background-position: -221px -149px;
 }
 
 
-
-.facebook {		
-	display: inline-block;
-	position: relative;
-	text-indent: -9999px;
-	background: url(../images/social-sprites.png) no-repeat top left;
-	background-position: 0 0;  
-	width: 40px; 
-	height: 40px;
-}
-
-.facebook span {
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	background: url(../images/social-sprites.png) no-repeat top left;
-	opacity: 0;
-	@include transition(opacity, 0.5s, ease-out);
-	background-position: 0 -90px; 
-}	
-
-.facebook:hover span {
-	opacity: 1;
-}
-
-.twitter {		
-	display: inline-block;
-	position: relative;
-	text-indent: -9999px;
-	background: url(../images/social-sprites.png) no-repeat top left;
-	 background-position: 0 -360px; 
-	width: 40px; 
-	height: 40px;
-}
-
-.twitter span {
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	background: url(../images/social-sprites.png) no-repeat top left;
-	opacity: 0;
-	@include transition(opacity, 0.5s, ease-out);
-	background-position: 0 -450px; 
-}	
-
-.twitter:hover span {
-	opacity: 1;
-}
-
-.rss {		
-	display: inline-block;
-	position: relative;
-	text-indent: -9999px;
-	background: url(../images/social-sprites.png) no-repeat top left;
-	 background-position: 0 -180px;
-	width: 40px; 
-	height: 40px;
-}
-
-.rss span {
-	position: absolute;
-	top: 0; left: 0; bottom: 0; right: 0;
-	background: url(../images/social-sprites.png) no-repeat top left;
-	opacity: 0;
-	@include transition(opacity, 0.5s, ease-out);
-	background-position: 0 -270px; 
-}	
-
-.rss:hover span {
-	opacity: 1;
-}
-
-#s { 
+#s {
   border: 1px solid $barjeel-grey;
     @include border-radius(4px);
     color: $barjeel-text-grey;
@@ -238,13 +223,13 @@ footer[role="contentinfo"] {
 #search-3 {
   padding-top: $base-spacing-unit;
 
-  @include respond-to(mobile) { 
-       padding-left: $base-spacing-unit; 
-       padding-right: $base-spacing-unit;    
+  @include respond-to(mobile) {
+       padding-left: $base-spacing-unit;
+       padding-right: $base-spacing-unit;
      }
 }
 
-#searchform input:focus { 
+#searchform input:focus {
     border: 2px solid $barjeel-red;
 }
 

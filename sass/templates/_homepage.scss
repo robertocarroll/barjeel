@@ -5,22 +5,22 @@
 .main-image {
   @include gs-span(da, 2, 4, (2, 5));
 
-  @include respond-to(tablet) { 
+  @include respond-to(tablet) {
     @include gs-span(da, 2, 5, (2, 5));
-    
+
     }
 
-    @include respond-to(mobile) { 
+    @include respond-to(mobile) {
       @include gs-span(m, all);
     }
-  
+
 }
 
 .headline {
   @include gs-span(da, 5, 5, (2, 5));
    text-align: $opdir;
 
-   @include respond-to(tablet) { 
+   @include respond-to(tablet) {
     @include gs-span(da, 2, 5, (2, 5));
     clear:both;
     padding-top: $base-spacing-unit;
@@ -28,23 +28,23 @@
     @include gs-pad(da, padinfull);
     }
 
-   @include respond-to(mobile) { 
+   @include respond-to(mobile) {
       @include gs-span(m, all);
       padding-top: $base-spacing-unit;
       clear:both;
       text-align: center;
       @include gs-pad(m, padinfull);
 
-    } 
+    }
 
 }
 
-.main-title { 
+.main-title {
   line-height: $big-line-height;
   margin-bottom: $half-spacing-unit;
   text-transform: uppercase;
 
-  @include respond-to(bigscreen) { 
+  @include respond-to(bigscreen) {
     margin-top: $base-spacing-unit;
     }
 
@@ -63,40 +63,40 @@
 
 }
 
-.widget_featured_post_widget { 
+.widget_featured_post_widget {
 	@extend .cf
-}	
+}
 
 
 .vignette-large {
     border-radius: 50%;
     width: 100%;
     height: auto;
- 
+
     @include transition-property(box-shadow);
     @include transition-duration(0.2s);
-    @include transition-timing-function(ease-in-out);  
+    @include transition-timing-function(ease-in-out);
 
       max-width: 100%;
     /* Part 1: Set a maxium relative to the parent */
-  
+
     width: auto\9;
     /* IE7-8 need help adjusting responsive images */
-  
+
     height: auto;
     /* Part 2: Scale the height according to the width, otherwise you get stretching */
-  
+
 }
 
-.vignette-large:hover { 
+.vignette-large:hover {
   @include box-shadow (rgba($barjeel-blue, $barjeel-hover-opacity) 0 0 0px $base-spacing-unit inset);
-} 
+}
 
 
  img.attachment-homepage-thumb {
   z-index: -1;
   position: relative;
-} 
+}
 
 /* For the video homepage */
 
@@ -114,49 +114,65 @@
  left: 0;
  width: 100%;
  height: 100%;
- 
+
+}
+
+/* For the google interactive */
+
+.interactiveWrapper {
+  height: 0;
+  padding-bottom: 75%;
+  position: relative;
+}
+
+.interactiveWrapper iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 .article-row {
-  padding-top: $base-spacing-unit; 
+  padding-top: $base-spacing-unit;
   clear: both;
 
-   @include respond-to(mobile) { 
-      padding-top: 0; 
-    } 
+   @include respond-to(mobile) {
+      padding-top: 0;
+    }
 }
 
-.article-list { 
+.article-list {
   line-height: $mid-line-height !important;
   margin-bottom: $quarter-spacing-unit;
   text-transform: uppercase;
-  padding-top: $half-spacing-unit; 
+  padding-top: $half-spacing-unit;
   clear: both;
 }
 
-.article-one {		
+.article-one {
   color: $barjeel-red;
   text-align: center;
-  padding-top: $base-spacing-unit; 
+  padding-top: $base-spacing-unit;
 }
 
 .article-two {
   color: $barjeel-blue;
   text-align: center;
-  padding-top: $base-spacing-unit; 
+  padding-top: $base-spacing-unit;
 }
 
 .article-three {
   color: $barjeel-red;
   text-align: center;
-  padding-top: $base-spacing-unit; 
+  padding-top: $base-spacing-unit;
 }
 
 
 .article-four {
   color: $barjeel-blue;
   text-align: center;
-  padding-top: $base-spacing-unit; 
+  padding-top: $base-spacing-unit;
 }
 
 

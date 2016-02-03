@@ -120,7 +120,7 @@ Add a custom field 'pdflink' with the link to the pdf
 5. Rename wp-config.php to wp-config-live-version.php
 6. Paste the wp-config.php file in (this is the local version)
 7. Go to phpMyAdmin 
-8. Click "Databases" and select the database that you will be importing your data into. 
+8. Click "Databases" and select the database that you will be importing your data into.
 9. Check the name is the same as the backup
 10. Import
 11. Browse 

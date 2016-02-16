@@ -41,6 +41,19 @@ module.exports = function(grunt) {
               }
           }
       },
+      postcss: {
+        options: {
+           map: false,
+          processors: [
+            require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+            require('cssnano')() // minify the result
+          ]
+        },
+        dist: {
+          src: 'stylesheets/src/*',
+          dest: 'stylesheets/*'
+        }
+      },
       // watch our project for changes
       watch: {
           compass: {
@@ -71,14 +84,17 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+
 
     // register task
     grunt.registerTask('default', [
         'svgmin',
         'grunticon:myIcons',
         'compass',
+        'postcss',
         'uglify',
         'watch'
     ]);

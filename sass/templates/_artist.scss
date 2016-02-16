@@ -6,7 +6,7 @@
   width: 100% !important;
   height: 400px !important;
 
-   @include respond-to(mobile) { 
+   @include respond-to(mobile) {
       height: 300px !important;
     }
 
@@ -40,13 +40,11 @@
 
 .artist-detail {
 	@include gs-pad(da, padinfull);
-	
 }
 
-.video-thumb-slider  { 
-	   display: block;
-	   background: url(../images/icon-video-square.png) no-repeat;
-	   z-index:200; 
-	  height: 30px;
-
-	}
+.video-thumb-slider  {
+  display: block;
+  background: url(../images/icon-video-square.png) no-repeat;
+  z-index:200;
+  height: 30px;
+}

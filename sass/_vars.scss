@@ -86,7 +86,7 @@ $brand-face:        "adelle-sans", sans-serif!default;
  * Palette
  */
 
-$barjeel-blue: #66BBDD; 
+$barjeel-blue: #66BBDD;
 $barjeel-red: #FF3300;
 $barjeel-grey: #999999;
 
@@ -99,7 +99,7 @@ $barjeel-hover-opacity: 0.7;
 
 
 /**
- * Direction ltr / rtl
+ * Direction ltr / rtl - http://www.amitkazmirsky.com/2011/05/29/dry-your-rtl-and-ltr-css-files-in-rails-with-sass/
  */
 
 $dir: left !default;

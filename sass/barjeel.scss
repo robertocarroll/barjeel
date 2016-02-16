@@ -14,8 +14,35 @@
  * Inuit Setup
  */
 @import "vars";
-@import "inuit/inuit";
+/**
+ * Generic utility styles etc.
+ */
+@import "inuit/generic/mixins";
+@import "inuit/generic/normalize";
+@import "inuit/generic/reset";
+@import "inuit/generic/clearfix";
+@import "inuit/generic/shared";
 
+/**
+ * Base styles; unclassed HTML elements etc.
+ */
+
+@import "inuit/base/main";
+@import "inuit/base/headings";
+@import "inuit/base/paragraphs";
+@import "inuit/base/smallprint";
+@import "inuit/base/quotes";
+@import "inuit/base/code";
+@import "inuit/base/links";
+@import "inuit/base/images";
+@import "inuit/base/lists";
+@import "inuit/base/tables";
+@import "inuit/base/forms";
+
+@import "inuit/objects/nav";
+@import "inuit/objects/pagination";
+@import "inuit/objects/media";
+@import "inuit/objects/buttons";
 
 /**
  * Barjeel imports
@@ -51,8 +78,6 @@
 @import "templates/typography.scss";
 @import "templates/rs-default-inverted.scss";
 
-
-
 /**
  * Fonts
  */
@@ -64,7 +89,7 @@ body {
   font-family: "adelle-sans",sans-serif;
   font-style: normal;
   font-weight: 400;
-	
+
 }
 
 
@@ -84,16 +109,15 @@ body {
   padding-top: $base-spacing-unit * 2;
   padding-bottom: $base-spacing-unit * 2;
 
-  @include respond-to(tablet) { 
-      padding-#{$dir}: $base-spacing-unit; 
-      
-      } 
+  @include respond-to(tablet) {
+    padding-#{$dir}: $base-spacing-unit;
+  }
 
-    @include respond-to(mobile) { 
-      clear:both;
-      @include gs-span(m, all);
-       padding-top: 0;
-    }
+  @include respond-to(mobile) {
+    clear:both;
+    @include gs-span(m, all);
+     padding-top: 0;
+  }
 }
 
 

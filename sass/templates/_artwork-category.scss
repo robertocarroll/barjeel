@@ -1,69 +1,67 @@
 /*------------------------------------*\
     $Artwork category
 \*------------------------------------*/
-	
-	.page-header {
-		@extend .cf;
-		padding-bottom: $base-spacing-unit * 2;
-	}
 
-  .collection-non-arab-art {  
-    @include gs-span(da, 2, 4, (2, 5));
+.page-header {
+	@extend .cf;
+	padding-bottom: $base-spacing-unit * 2;
+}
 
-    @include respond-to(mobile) { 
-      @include gs-span(m, all);
-      clear: both;
-      text-align: center;
-      } 
+.collection-non-arab-art {
+  @include gs-span(da, 2, 4, (2, 5));
+
+  @include respond-to(mobile) {
+    @include gs-span(m, all);
+    clear: both;
+    text-align: center;
   }
+}
 
-	.collection-meta {	
-		@include gs-span(da, 2, 5, (2, 5));
-		padding-bottom: $half-spacing-unit;
-	}
+.collection-meta {
+	@include gs-span(da, 2, 5, (2, 5));
+	padding-bottom: $half-spacing-unit;
+}
 
-  .collection-meta-non-arab {  
-    padding-bottom: $half-spacing-unit;
+.collection-meta-non-arab {
+  padding-bottom: $half-spacing-unit;
+}
+
+.collection-details {
+	@include gs-span(da, 5, 5, (2, 5));
+	padding-bottom: $half-spacing-unit;
+
+  @include respond-to(mobile) {
+    @include gs-span(m, all);
+    clear: both;
+    text-align: center;
   }
+}
 
-
-	.collection-details {	
-		@include gs-span(da, 5, 5, (2, 5));
-		padding-bottom: $half-spacing-unit;
-
-		  @include respond-to(mobile) { 
-      @include gs-span(m, all);
-      clear: both;
-      text-align: center;
-    	} 
-
-	}
-
-	.sort-collection {	
+	.sort-collection {
 		@include gs-span(da, 3, 4, (2, 5));
 		text-align:$opdir;
 
-		  @include respond-to(mobile) { 
+		  @include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
       text-align: center;
-    	} 
+    	}
 	}
 
-  .sort-collection-non-arab {  
+  .sort-collection-non-arab {
     @include gs-span(da, 3, 4, (2, 4));
     text-align:$opdir;
     clear:both;
     padding-bottom: $base-spacing-unit;
 
-      @include respond-to(mobile) { 
+      @include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
       text-align: center;
-      } 
+      }
   }
 
-	.filter-collection {		
+	.filter-collection {
 			display: inline;
 		}
 
@@ -75,10 +73,10 @@
 	.filter-title {
 		float: $dir;
 
-		  @include respond-to(mobile) { 
+		  @include respond-to(mobile) {
 		  	float: none;
       text-align: center;
-    	} 	
+    	}
 	}
 
 
@@ -89,15 +87,15 @@
 
 	.filter-sort-menu {
 		@include gs-span(da, 2, 3, (2, 5));
-		padding-bottom: $quarter-spacing-unit; 
+		padding-bottom: $quarter-spacing-unit;
 
-		  @include respond-to(mobile) { 
+		  @include respond-to(mobile) {
       @include gs-span(m, all);
       display: none;
-    	} 
+    	}
 	}
 
-	.collection-details h2 {	
+	.collection-details h2 {
 		line-height: 6px;
 	}
 
@@ -119,33 +117,33 @@
  		color: $barjeel-grey;
  		padding-left: $quarter-spacing-unit;
  		padding-right: $quarter-spacing-unit;
- 	} 
+ 	}
 
 	.top-menu > li:last-child:after {
  		display: none;
- 	} 
+ 	}
 
 	#sort {
 
 		@include gs-span(da, 2, 4, (2, 5));
 		clear:left;
 
-		@include respond-to(mobile) { 
-        @include gs-span(m, all);       
-    	} 
-    
+		@include respond-to(mobile) {
+        @include gs-span(m, all);
+    	}
+
     @media (max-width: 420px) {
       margin-left: 25%;
-    } 
+    }
 
 	}
 
   #sortArtwork {
     @media (max-width: 420px) {
       margin-left: 25%;
-    } 
+    }
   }
-	
+
 .artwork-list {
   clear: left;
 }
@@ -160,56 +158,56 @@
 
 .box-ms {
 	padding-right: #{2*gs-gutter(da) + '%'};
-	width: 211px; 
+	width: 211px;
 
 	@include respond-to(tablet) { width: 190px; }
 
-	  @include respond-to(mobile) { width: 190px; } 
+	  @include respond-to(mobile) { width: 190px; }
 }
 
 
-.vignette { 
+.vignette {
 	 border-radius: 50%;
    width:172px;
    height: 172px;
    margin: auto;
- 
+
     @include transition-property(box-shadow);
     @include transition-duration(0.2s);
-    @include transition-timing-function(ease-in-out);  
+    @include transition-timing-function(ease-in-out);
 
       max-width: 100%;
     /* Part 1: Set a maxium relative to the parent */
-  
+
     width: auto\9;
     /* IE7-8 need help adjusting responsive images */
-  
+
     height: auto;
     /* Part 2: Scale the height according to the width, otherwise you get stretching */
-  
+
 }
-	
+
 /* For the circle rollovers  */
 
-.vignette:hover { 
+.vignette:hover {
   @include box-shadow (rgba($barjeel-blue, $barjeel-hover-opacity) 0 0 0px $half-spacing-unit inset);
-} 
+}
 
 	img.attachment-cropped-thumb {
   	z-index: -1;
  	 position: relative;
-} 
+}
 
 	.browse {
 		@include gs-span(da, 5, 5, (2, 5));
 		@extend .cf;
 
-		  @include respond-to(mobile) { 
+		  @include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
       text-align: center;
-    	} 
-	}	
+    	}
+	}
 
 	.artwork-title {
 		@extend .bold;
@@ -227,7 +225,7 @@
 	.artwork-meta {
 		@extend .micro;
 		@extend .nav;
-		
+
 	}
 
 	.artwork-meta > li {
@@ -235,14 +233,14 @@
 		margin: 0;
 		text-transform: uppercase;
 	}
- 		
+
  	.artwork-meta > li:after {
  		content: " / ";
- 	} 	
-	
+ 	}
+
 	.artwork-meta > li:last-child:after {
  		display: none;
- 	} 	
+ 	}
 
  	/* Makes the "see more" blue  */
 
@@ -252,7 +250,7 @@
 
  	.menu-item-772 a:hover, .menu-item-775 a:hover {
  		color: $barjeel-link-blue !important; text-decoration: none;
- 	} 
+ 	}
 
  	#menu-by-artist > li, #menu-by-country > li,  #menu-by-medium > li {
  		margin-bottom: $quarter-spacing-unit;
@@ -275,12 +273,12 @@
 		color: $barjeel-grey;
 	}
 
-	.video-thumb  { 
+	.video-thumb  {
 	   display: block;
 	   background: url(../images/icon-video.png) no-repeat;
-	   z-index:200; 
+	   z-index:200;
 
 	}
 
-	
+
 

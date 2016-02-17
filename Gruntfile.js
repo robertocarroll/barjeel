@@ -17,22 +17,6 @@ module.exports = function(grunt) {
               }]
           }
       },
-      grunticon: {
-        myIcons: {
-            files: [{
-                expand: true,
-                cwd: 'images/process',
-                src: ['*.svg', '*.png'],
-                dest: "images/source"
-            }],
-            options: {
-              enhanceSVG: true
-            },
-            customselectors: {
-              "cultural_institute-100-red": [".icon-cultural_institute-100:hover"]
-            },
-        }
-    },
       // style (Sass) compilation via Compass
       compass: {
           dist: {
@@ -82,7 +66,6 @@ module.exports = function(grunt) {
     // load tasks
     //grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -92,7 +75,6 @@ module.exports = function(grunt) {
     // register task
     grunt.registerTask('default', [
         'svgmin',
-        'grunticon:myIcons',
         'compass',
         'postcss',
         'uglify',

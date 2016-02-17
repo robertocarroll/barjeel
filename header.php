@@ -27,14 +27,14 @@
 <!-- Favicons and Apple Touch icons
 	================================================== -->
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico" />
-	
-	<!-- Standard iPhone --> 
+
+	<!-- Standard iPhone -->
 	<link rel="apple-touch-icon" sizes="57x57" href="<?php bloginfo('template_directory'); ?>/images/b-114.png" />
-	<!-- Retina iPhone --> 
+	<!-- Retina iPhone -->
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php bloginfo('template_directory'); ?>/images/b-114.png"  />
-	<!-- Standard iPad --> 
+	<!-- Standard iPad -->
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php bloginfo('template_directory'); ?>/images/b-144.png" />
-	<!-- Retina iPad --> 
+	<!-- Retina iPad -->
 	<link rel="apple-touch-icon" sizes="144x144" href="<?php bloginfo('template_directory'); ?>/images/b-144.png"  />
 
 <!-- Typekit
@@ -55,34 +55,34 @@
 <body <?php body_class(); ?> >
 
 <div id="page" class="hfeed site">
-	
+
 	<?php do_action( 'before' ); ?>
-	
+
 	<header role="banner">
-		
+
 		<!-- First comes the logo -->
 
 		<div class="logo-wrapper">
-			
+
 			<a href="<?php echo get_settings('home'); ?>" accesskey="1" title="Home"><div class="logo"></div><!-- .logo -->	</a>
-		
+
 	</div><!-- .logo-wrapper -->
 
-		<!-- Then the navigation -->		
-			
+		<!-- Then the navigation -->
+
 		<nav role="navigation">
 			<a href="#menu" class="menu-trigger"></a>
 			<h1 class="assistive-text"><?php _e( 'Menu', 'barjeel' ); ?></h1>
 			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'barjeel' ); ?>"><?php _e( 'Skip to content', 'barjeel' ); ?></a></div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => '', 'menu_class'      => 'nav  nav--stacked bold') ); ?>
-	
+
 		</nav>
 
 	</header>
 
 <!-- End Header -->
- 
+
 <!-- Body starts here -->
 
 	<div id="main" class="site-main">

@@ -34,22 +34,9 @@ module.exports = function(grunt) {
           ]
         },
         dist: {
-          src: 'stylesheets/src/*',
-          dest: 'stylesheets/*'
+          src: 'stylesheets/src/barjeel.css',
+          dest: 'stylesheets/barjeel.css'
         }
-      },
-      // watch our project for changes
-      watch: {
-          compass: {
-              files: [
-                  'sass/*',
-                  'sass/grid/*',
-                  'sass/templates/*',
-                  'sass/inuit/*',
-                  'sass/inuit/**/*'
-              ],
-              tasks: ['compass']
-          }
       },
     uglify: {
         options: {
@@ -68,7 +55,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-postcss');
-    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
 
@@ -77,7 +63,6 @@ module.exports = function(grunt) {
         'svgmin',
         'compass',
         'postcss',
-        'uglify',
-        'watch'
+        'uglify'
     ]);
 };

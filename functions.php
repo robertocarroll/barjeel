@@ -36,11 +36,11 @@ function barjeel_setup() {
 	 * Add default posts and comments RSS feed links to head
 	 */
 	add_theme_support( 'automatic-feed-links' );
-	
+
 	/**
 	 * Enable support for Post Types
 	 */
-	
+
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote' ) );
 
 	/**
@@ -65,14 +65,14 @@ add_action( 'after_setup_theme', 'barjeel_setup' );
 /**
  * Enqueue scripts and styles
  */
- 
+
  ################################################################################
 // Loading All CSS Stylesheets
 ################################################################################
   function barjeel_css_loader() {
-  
+
     wp_enqueue_style('barjeel', get_template_directory_uri().'/stylesheets/barjeel.css', false ,'0.90', 'all' );
-    
+
     if (ICL_LANGUAGE_CODE == "ar") {
 	 wp_enqueue_style('barjeel-ar', get_template_directory_uri().'/stylesheets/barjeel-rtl.css', false ,'0.90', 'all' );
 	}
@@ -90,22 +90,22 @@ add_action( 'wp_enqueue_scripts', 'child_add_ie8_style_sheet', 200 );
  * @link   http://code.garyjones.co.uk/enqueued-style-sheet-extras/
  */
 function child_add_ie8_style_sheet() {
-	global $wp_styles;	
+	global $wp_styles;
 	wp_enqueue_style( 'child-ie8', get_stylesheet_directory_uri() . '/barjeel-old-ie.css', array(), '1.0' );
 	$wp_styles->add_data( 'child-ie8', 'conditional', 'lte IE 8' );
 }
- 
- 
+
+
 ################################################################################
 // Loading all JS Script Files.  Remove any files you are not using!
-################################################################################ 
- 
+################################################################################
+
 function barjeel_scripts() {
 
 	wp_enqueue_script( 'okzoom', get_template_directory_uri() . '/javascripts/build/okzoom.js', array( 'jquery' ), '20120206', true );
 
 	wp_enqueue_script( 'barjeel', get_template_directory_uri() . '/javascripts/build/barjeel.min.js', array( 'jquery' ), '20120206', true );
-	
+
 
 }
 add_action( 'wp_enqueue_scripts', 'barjeel_scripts' );
@@ -166,8 +166,8 @@ function barjeel_widgets_init() {
 	register_sidebar( array(
 		'name' => __( 'Footer-4', 'barjeel' ),
 		'id' => 'footer-4',
-		'before_widget' => '<div class="social-icons">',
-		'after_widget' => '</div>',
+		'before_widget' => '',
+		'after_widget' => '',
 		'before_title' => '<h1 class="widget-title">',
 		'after_title' => '</h1>',
 	) );
@@ -198,7 +198,7 @@ function barjeel_widgets_init() {
     'after_widget' => '</section>',
     'before_title' => '<h1 class="widget-title">',
     'after_title' => '</h1>',
-  ) );  
+  ) );
 
 }
 add_action( 'widgets_init', 'barjeel_widgets_init' );
@@ -210,7 +210,7 @@ add_action( 'widgets_init', 'barjeel_widgets_init' );
 | -------------------------------------------------------------------
 | */
 
-// 
+//
 if (class_exists('MultiPostThumbnails')) {
     new MultiPostThumbnails(array(
         'label' => 'Cropped image',
@@ -328,7 +328,7 @@ function barjeel_autoset_featured_img() {
 | -------------------------------------------------------------------
 | Dynamic copyright in footer
 | -------------------------------------------------------------------
-| 
+|
 | */
 
 function barjeel_copyright() {
@@ -342,12 +342,12 @@ function barjeel_copyright() {
 					WHERE
 					post_status = 'publish'
 			");
-			
+
 			$output = '';
-			
+
 			if($copyright_dates) {
 				$copyright = "&copy; " . $copyright_dates[0]->firstdate;
-			
+
 			if($copyright_dates[0]->firstdate != $copyright_dates[0]->lastdate) {
 				$copyright .= '-' . $copyright_dates[0]->lastdate;
 			}
@@ -361,7 +361,7 @@ function barjeel_copyright() {
 | -------------------------------------------------------------------
 |Display navigation to next/previous pages when applicable
 | -------------------------------------------------------------------
-| 
+|
 | */
 
 if ( ! function_exists( 'barjeel_content_nav' ) ):
@@ -378,7 +378,7 @@ function barjeel_content_nav( $nav_id ) {
 		<?php previous_post_link( '<li class="previous">%link</li>', '<span class="meta-nav">' . _x( '', 'Previous post link', 'barjeel' ) . '</span> %title', 'Next post in category', TRUE ); ?>
 		<?php next_post_link( '<li class="next">%link</li>', '%title <span class="meta-nav">' . _x( '', 'Next post link', 'barjeel' ) . '</span>', 'Next post in category', TRUE ); ?>
 </ul>
-	
+
 	<?php endif; ?>
 
 	<?php
@@ -390,7 +390,7 @@ endif; // barjeel_content_nav
 | -------------------------------------------------------------------
 |Thumbnail caption
 | -------------------------------------------------------------------
-| 
+|
 | */
 
 function the_post_thumbnail_caption() {
@@ -403,34 +403,34 @@ function the_post_thumbnail_caption() {
 	'post_status' => null,
 	'post_parent' => $post->ID,
 	'include'  => $thumb_id
-	); 
+	);
 
    $thumbnail_image = get_posts($args);
 
    if ($thumbnail_image && isset($thumbnail_image[0])) {
      //show thumbnail title
-     //echo $thumbnail_image[0]->post_title; 
+     //echo $thumbnail_image[0]->post_title;
 
      //Uncomment to show the thumbnail caption
      echo '<div class="f_caption"><p>'.$thumbnail_image[0]->post_excerpt.'</p></div>';
 
      //Uncomment to show the thumbnail description
-     //echo $thumbnail_image[0]->post_content; 
+     //echo $thumbnail_image[0]->post_content;
 
      //Uncomment to show the thumbnail alt field
      //$alt = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
      //if(count($alt)) echo $alt;
   }
-  
+
   else {echo '<div class="bottom"></div>';}
-  
+
 }
 
 /*
 | -------------------------------------------------------------------
 |Custom taxonomies
 | -------------------------------------------------------------------
-| 
+|
 | */
 
 
@@ -480,9 +480,9 @@ function rw_get_the_term_list($id = null, $taxonomy, $parent = true, $before = '
 
 /*
 | -------------------------------------------------------------------
-|Allow HTML in category description 
+|Allow HTML in category description
 | -------------------------------------------------------------------
-| 
+|
 | */
 
 $filters = array('term_description' , 'category_description' , 'pre_term_description');
@@ -504,10 +504,10 @@ function rename_post_formats( $safe_text ) {
         return 'Exhibitions';
 
     if ( $safe_text == 'Link' )
-        return 'Image (non-Arab)';  
+        return 'Image (non-Arab)';
 
    if ( $safe_text == 'Quote' )
-        return 'Download';   
+        return 'Download';
     return $safe_text;
 
 }
@@ -539,9 +539,9 @@ add_action('admin_head', 'live_rename_formats');
  */
 function base_pagination() {
 	global $wp_query;
- 
+
 	$big = 999999999; // This needs to be an unlikely integer
- 
+
 	// For more options and info view the docs for paginate_links()
 	// http://codex.wordpress.org/Function_Reference/paginate_links
 	$paginate_links = paginate_links( array(
@@ -555,7 +555,7 @@ function base_pagination() {
     'before_page_number' => '<span class="page-number">',
     'after_page_number' => '</span>',
 	) );
- 
+
 	// Display the pagination if more than one page is found
 	if ( $paginate_links ) {
 		echo '<div class="pagination-wrapper"><div class="pagination">';
@@ -568,7 +568,7 @@ function base_pagination() {
 
 /**
  * Don't load css for the language switcher - WPML *
- * 
+ *
  * http://wpml.org/forums/topic/custom-css-for-language-switcher/
  */
 
@@ -577,7 +577,7 @@ define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', true);
 
 /**
  * Count page views *
- * 
+ *
  * http://wpsnipp.com/index.php/functions-php/track-post-views-without-a-plugin-using-post-meta/
  */
 
@@ -611,18 +611,18 @@ endif;
 
 /**
  * Related Post Connection *
- * 
+ *
  * http://www.billerickson.net/manually-curated-related-posts/
  */
 
 add_action( 'init', 'be_post_type_connections' );
 
 function be_post_type_connections() {
- 
+
 	// Make Sure plugin is active
 	if ( !function_exists( 'p2p_register_connection_type' ) )
 		return;
- 
+
 	p2p_register_connection_type( array(
 		'name' => 'related-articles', // unique name
 		'from' => 'post',
@@ -634,8 +634,8 @@ function be_post_type_connections() {
 
 /**
  * Update custom field with taxonomy *
- * 
- * 
+ *
+ *
  */
 
 
@@ -643,20 +643,20 @@ add_action('save_post', 'save_my_metadata');
 
 function save_my_metadata()
 {
-	
+
 	$id = empty($id) ? get_the_ID() : $id;
 
-	if ( in_category( 'collection', $id )) 
+	if ( in_category( 'collection', $id ))
 
 {
 
-	$taxonomy_name = 'artist'; 
+	$taxonomy_name = 'artist';
 
 	$parent_taxonomies = get_terms( $taxonomy_name, array( 'parent' => 0, 'hide_empty' => 0  ) ); // get parent taxonomies for artist
-	
+
 	$parent_terms = array();
 
-	 foreach ( $parent_taxonomies as $term ) 
+	 foreach ( $parent_taxonomies as $term )
      {
 		$parent_terms [] = $term->name; // get the names for the artist parent taxonomies
 
@@ -664,9 +664,9 @@ function save_my_metadata()
 
 	$terms = get_the_terms( $post->ID, $taxonomy_name );	// get the terms in artist taxonomy for this post
 
-	$artist_taxonomies = array();	
-     
-     foreach ( $terms as $term ) 
+	$artist_taxonomies = array();
+
+     foreach ( $terms as $term )
      {
 		$artist_taxonomies [] = $term->name;
 
@@ -675,33 +675,33 @@ function save_my_metadata()
      	$result = array_diff($artist_taxonomies, $parent_terms); // remove the parent terms
 
 		     	foreach ($result as $key => $value) {
-		    		
+
 		    		$value = trim($value);
-				   
+
 				    if (!empty($value))
-				       $artist_name = $value;  
-				    
+				       $artist_name = $value;
+
 					}
 
 
 			$result_countries = array_intersect($artist_taxonomies, $parent_terms); // remove the parent terms
 
 		     	foreach ($result_countries as $key => $value) {
-		    		
+
 		    		$value = trim($value);
-				   
+
 				    if (!empty($value))
-				       $country_name = $value;  
-				    
-					}			
+				       $country_name = $value;
+
+					}
 
         delete_post_meta($id, 'artist');
-        update_post_meta($id, 'artist', $artist_name); 
+        update_post_meta($id, 'artist', $artist_name);
 
-       
+
         delete_post_meta($id, 'country');
-        update_post_meta($id, 'country', $country_name);  
-     	
+        update_post_meta($id, 'country', $country_name);
+
 
        } //close if category
 
@@ -713,20 +713,20 @@ add_action('save_post', 'save_my_metadata_non_arab');
 
 function save_my_metadata_non_arab()
 {
-  
+
   $id = empty($id) ? get_the_ID() : $id;
 
-  if ( in_category( 'non-arab-art', $id )) 
+  if ( in_category( 'non-arab-art', $id ))
 
 {
 
-  $taxonomy_name = 'non-arab-artist'; 
+  $taxonomy_name = 'non-arab-artist';
 
   $parent_taxonomies = get_terms( $taxonomy_name, array( 'parent' => 0, 'hide_empty' => 0  ) ); // get parent taxonomies for artist
-  
+
   $parent_terms = array();
 
-   foreach ( $parent_taxonomies as $term ) 
+   foreach ( $parent_taxonomies as $term )
      {
     $parent_terms [] = $term->name; // get the names for the artist parent taxonomies
 
@@ -734,9 +734,9 @@ function save_my_metadata_non_arab()
 
   $terms = get_the_terms( $post->ID, $taxonomy_name );  // get the terms in artist taxonomy for this post
 
-  $artist_taxonomies = array(); 
-     
-     foreach ( $terms as $term ) 
+  $artist_taxonomies = array();
+
+     foreach ( $terms as $term )
      {
     $artist_taxonomies [] = $term->name;
 
@@ -745,33 +745,33 @@ function save_my_metadata_non_arab()
       $result = array_diff($artist_taxonomies, $parent_terms); // remove the parent terms
 
           foreach ($result as $key => $value) {
-            
+
             $value = trim($value);
-           
+
             if (!empty($value))
-               $artist_name = $value;  
-            
+               $artist_name = $value;
+
           }
 
 
       $result_countries = array_intersect($artist_taxonomies, $parent_terms); // remove the parent terms
 
           foreach ($result_countries as $key => $value) {
-            
+
             $value = trim($value);
-           
+
             if (!empty($value))
-               $country_name = $value;  
-            
-          }     
+               $country_name = $value;
+
+          }
 
         delete_post_meta($id, 'artist');
-        update_post_meta($id, 'artist', $artist_name); 
+        update_post_meta($id, 'artist', $artist_name);
 
-       
+
         delete_post_meta($id, 'country');
-        update_post_meta($id, 'country', $country_name);  
-      
+        update_post_meta($id, 'country', $country_name);
+
 
        } //close if category
 
@@ -781,27 +781,27 @@ function save_my_metadata_non_arab()
 
 
 // check for a certain meta key on the current post and add a body class if meta value exists
-	
+
 add_filter('post_class','barjeel_custom_field_post_class');
- 
+
 function barjeel_custom_field_post_class( $classes ) {
- 
+
 	if ( get_post_meta( get_the_ID(), 'video', true ) ) {
-		
+
 		$classes[] = 'video-thumb';
-		
+
 	}
-	
+
 	// return the $classes array
 	return $classes;
- 
+
 }
 
 
 /**
  * These filters limit the categories on the related posts Yarpp *
- * 
- * 
+ *
+ *
  */
 
 function only_news_cat($query) {
@@ -826,11 +826,11 @@ function only_collection_cat($query) {
 add_action( 'pre_get_posts', 'be_change_event_posts_per_page' );
 
 /**
- * Change Posts Per Page for Exhibition 
+ * Change Posts Per Page for Exhibition
  *
  */
 function be_change_event_posts_per_page( $query ) {
-	
+
 	if( $query->is_main_query() && !is_admin() && is_category( 'exhibitions' ) ) {
 		$query->set( 'posts_per_page', '8' );
 		$query-> set('tag__not_in',array(173));

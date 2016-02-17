@@ -9,14 +9,17 @@
  */
 ?>
 
-<!DOCTYPE html>
+<!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 
-<!-- Meta Data & SEO -->
+<!-- set the encoding -->
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
-  <!--  Mobile Viewport Fix j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag  -->
+<!-- Make older IE play nice -->
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!--  Mobile Viewport Fix j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag  -->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
 <title><?php wp_title(''); ?></title>

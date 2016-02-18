@@ -1,8 +1,6 @@
 /*------------------------------------*\
-    $Header
+    $Footer
 \*------------------------------------*/
-
-
 
 footer[role="contentinfo"] {
 		width: 100%;
@@ -154,16 +152,16 @@ footer[role="contentinfo"] {
   text-align: center;
 }
 
-.icon {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-}
-
 .flexbox.flexwrap .social-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.icon {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
 }
 
 .icon span {
@@ -176,6 +174,16 @@ footer[role="contentinfo"] {
 
 .icon span:hover{
   opacity: 1;
+}
+
+.icon-12 {
+  width: $base-spacing-unit/2;
+  height: $base-spacing-unit/2;
+}
+
+.icon-12 span {
+  width: $base-spacing-unit/2;
+  height: $base-spacing-unit/2;
 }
 
 .icon-24 {
@@ -219,88 +227,203 @@ footer[role="contentinfo"] {
 }
 
 .facebook {
-  background: url('../images/png/facebook-100.png');
-  background-image: url('../images/svg/facebook-100.svg'), none;
+  background-image: url('../images/svg/facebook-100.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .facebook {
+  background-image: url('../images/png/facebook-100.png');
   background-repeat: no-repeat;
 }
 
 .facebook span {
-  background: url('../images/png/facebook-100-hover.png');
-  background-image: url('../images/svg/facebook-100-hover.svg'), none;
+  background-image: url('../images/svg/facebook-100-hover.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .facebook span {
+  background-image: url('../images/png/facebook-100-hover.png');
   background-repeat: no-repeat;
 }
 
 .google-cultural {
-  background: url('../images/png/cultural_institute-100.png');
-  background-image: url('../images/svg/cultural_institute-100.svg'), none;
+  background-image: url('../images/svg/cultural_institute-100.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .google-cultural {
+  background-image: url('../images/png/cultural_institute-100.png');
   background-repeat: no-repeat;
 }
 
 .google-cultural span {
-  background: url('../images/png/cultural_institute-100-hover.png');
-  background-image: url('../images/svg/cultural_institute-100-hover.svg'), none;
+  background-image: url('../images/svg/cultural_institute-100-hover.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .google-cultural span {
+  background-image: url('../images/png/cultural_institute-100-hover.png');
   background-repeat: no-repeat;
 }
 
 .twitter {
-  background: url('../images/png/twitter-100.png');
-  background-image: url('../images/svg/twitter-100.svg'), none;
+  background-image: url('../images/svg/twitter-100.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .twitter {
+  background-image: url('../images/png/twitter-100.png');
   background-repeat: no-repeat;
 }
 
 .twitter span {
-  background: url('../images/png/twitter-100-hover.png');
-  background-image: url('../images/svg/twitter-100-hover.svg'), none;
+  background-image: url('../images/svg/twitter-100-hover.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .twitter span {
+  background-image: url('../images/png/twitter-100-hover.png');
   background-repeat: no-repeat;
 }
 
 .reader {
-  background: url('../images/png/reader-100.png');
-  background-image: url('../images/svg/reader-100.svg'), none;
+  background-image: url('../images/svg/reader-100.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .reader {
+  background-image: url('../images/png/reader-100.png');
   background-repeat: no-repeat;
 }
 
 .reader span {
-  background: url('../images/png/reader-100-hover.png');
-  background-image: url('../images/svg/reader-100-hover.svg'), none;
+  background-image: url('../images/svg/reader-100-hover.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .reader span {
+  background-image: url('../images/png/reader-100-hover.png');
   background-repeat: no-repeat;
 }
 
 .google-plus {
-  background: url('../images/png/google_plus-100.png');
-  background-image: url('../images/svg/google_plus-100.svg'), none;
+  background-image: url('../images/svg/google_plus-100.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .google-plus {
+  background-image: url('../images/png/google_plus-100.png');
   background-repeat: no-repeat;
 }
 
 .google-plus span {
-  background: url('../images/png/google_plus-100-hover.png');
-  background-image: url('../images/svg/google_plus-100-hover.svg'), none;
+  background-image: url('../images/svg/google_plus-100-hover.svg');
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .google-plus span {
+  background-image: url('../images/png/google_plus-100-hover.png');
   background-repeat: no-repeat;
 }
 
 .instagram {
-  background: url('../images/png/instagram-100.png');
-  background-image: url('../images/svg/instagram-100.svg'), none;
+  background-image: url('../images/svg/instagram-100.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.no-svg .instagram {
+  background-image: url('../images/png/instagram-100.png');
+  background-repeat: no-repeat;
+}
+
 .instagram span {
-  background: url('../images/png/instagram-100-hover.png');
-  background-image: url('../images/svg/instagram-100-hover.svg'), none;
+  background-image: url('../images/svg/instagram-100-hover.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.no-svg .instagram span {
+  background-image: url('../images/png/instagram-100-hover.png');
+  background-repeat: no-repeat;
+}
+
+.press-1 {
+  background-image: url('../images/svg/press-square-100.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .press-1 {
+  background-image: url('../images/png/press-square-100.png');
+  background-repeat: no-repeat;
+}
+
+.press-1 span {
+  background-image: url('../images/svg/press-square-100-hover.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .press-1 span {
+  background-image: url('../images/png/press-square-100-hover.png');
+  background-repeat: no-repeat;
+}
+
+.press-2 {
+  background-image: url('../images/svg/press-square-2-100.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .press-2 {
+  background-image: url('../images/png/press-square-2-100.png');
+  background-repeat: no-repeat;
+}
+
+.press-2 span {
+  background-image: url('../images/svg/press-square-2-100-hover.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .press-2 span {
+  background-image: url('../images/png/press-square-2-100-hover.png');
+  background-repeat: no-repeat;
+}
+
+.press-3 {
+  background-image: url('../images/svg/press-square-3-100.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .press-3 {
+  background-image: url('../images/png/press-square-3-100.png');
+  background-repeat: no-repeat;
+}
+
+.press-3 span {
+  background-image: url('../images/svg/press-square-3-100-hover.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-svg .press-3 span {
+  background-image: url('../images/png/press-square-3-100-hover.png');
+  background-repeat: no-repeat;
+}
+
 
 #s {
   border: 1px solid $barjeel-grey;

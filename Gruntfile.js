@@ -13,9 +13,21 @@ module.exports = function(grunt) {
                   expand: true,
                   cwd: 'images/original',
                   src: ['*.svg'],
-                  dest: 'images/process'
+                  dest: 'images/svg'
               }]
           }
+      },
+      svg2png:
+      {options: {
+        subdir: "../png"
+      },
+        fallback: {
+          files: [{
+            expand: true,
+            cwd: "images/original",
+            src: ["*.svg"]
+          }]
+        }
       },
       // style (Sass) compilation via Compass
       compass: {
@@ -53,14 +65,21 @@ module.exports = function(grunt) {
     // load tasks
     //grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks("grunt-svg2png");
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
-
     // register task
     grunt.registerTask('default', [
+        'compass',
+        'postcss',
+        'uglify'
+    ]);
+
+    grunt.registerTask('build', [
         'svgmin',
+        'svg2png',
         'compass',
         'postcss',
         'uglify'

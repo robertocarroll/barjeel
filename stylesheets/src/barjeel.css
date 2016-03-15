@@ -4938,10 +4938,11 @@ a:hover.menu-trigger {
 /* line 38, ../../sass/templates/_misc.scss */
 .inline-icon {
   margin-right: 6px;
-  vertical-align: middle;
+  vertical-align: bottom;
+  margin-bottom: 2px;
 }
 
-/* line 43, ../../sass/templates/_misc.scss */
+/* line 44, ../../sass/templates/_misc.scss */
 .square {
   width: 15px;
   height: 15px;
@@ -4950,57 +4951,57 @@ a:hover.menu-trigger {
   margin-bottom: 12px;
 }
 
-/* line 51, ../../sass/templates/_misc.scss */
+/* line 52, ../../sass/templates/_misc.scss */
 .word-wrap {
   word-wrap: break-word;
 }
 
-/* line 55, ../../sass/templates/_misc.scss */
+/* line 56, ../../sass/templates/_misc.scss */
 .padding-top {
   padding-top: 12px;
 }
 
-/* line 59, ../../sass/templates/_misc.scss */
+/* line 60, ../../sass/templates/_misc.scss */
 .padding-top-quarter {
   padding-top: 6px;
 }
 
-/* line 63, ../../sass/templates/_misc.scss */
+/* line 64, ../../sass/templates/_misc.scss */
 .padding-top-most {
   padding-top: 24px;
 }
 
-/* line 67, ../../sass/templates/_misc.scss */
+/* line 68, ../../sass/templates/_misc.scss */
 .padding-bottom {
   padding-bottom: 24px;
 }
 
-/* line 71, ../../sass/templates/_misc.scss */
+/* line 72, ../../sass/templates/_misc.scss */
 .padding-bottom-half {
   padding-bottom: 12px;
 }
 
-/* line 75, ../../sass/templates/_misc.scss */
+/* line 76, ../../sass/templates/_misc.scss */
 .padding-bottom-quarter {
   padding-bottom: 6px;
 }
 
-/* line 79, ../../sass/templates/_misc.scss */
+/* line 80, ../../sass/templates/_misc.scss */
 .no-margin-below {
   margin-bottom: 0;
 }
 
-/* line 83, ../../sass/templates/_misc.scss */
+/* line 84, ../../sass/templates/_misc.scss */
 .margin-below, .search-title {
   margin-bottom: 6px;
 }
 
-/* line 87, ../../sass/templates/_misc.scss */
+/* line 88, ../../sass/templates/_misc.scss */
 .margin-below-half {
   margin-bottom: 12px;
 }
 
-/* line 91, ../../sass/templates/_misc.scss */
+/* line 92, ../../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5009,13 +5010,13 @@ a:hover.menu-trigger {
   padding-right: 2.22222%;
 }
 
-/* line 95, ../../sass/templates/_misc.scss */
+/* line 96, ../../sass/templates/_misc.scss */
 .border-side {
   border-right: 1px solid #66BBDD;
   padding-left: 0;
 }
 
-/* line 100, ../../sass/templates/_misc.scss */
+/* line 101, ../../sass/templates/_misc.scss */
 .column-one {
   display: block;
   float: left;
@@ -5025,7 +5026,7 @@ a:hover.menu-trigger {
   clear: both;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 100, ../../sass/templates/_misc.scss */
+  /* line 101, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5035,7 +5036,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 100, ../../sass/templates/_misc.scss */
+  /* line 101, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5047,7 +5048,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 117, ../../sass/templates/_misc.scss */
+/* line 118, ../../sass/templates/_misc.scss */
 .column-two {
   display: block;
   float: left;
@@ -5056,7 +5057,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 117, ../../sass/templates/_misc.scss */
+  /* line 118, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5066,7 +5067,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 117, ../../sass/templates/_misc.scss */
+  /* line 118, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5078,7 +5079,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 133, ../../sass/templates/_misc.scss */
+/* line 134, ../../sass/templates/_misc.scss */
 .column-three {
   display: block;
   float: left;
@@ -5087,7 +5088,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 133, ../../sass/templates/_misc.scss */
+  /* line 134, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5099,7 +5100,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 133, ../../sass/templates/_misc.scss */
+  /* line 134, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5111,7 +5112,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 151, ../../sass/templates/_misc.scss */
+/* line 152, ../../sass/templates/_misc.scss */
 .column-four {
   display: block;
   float: left;
@@ -5120,7 +5121,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 151, ../../sass/templates/_misc.scss */
+  /* line 152, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5131,7 +5132,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 151, ../../sass/templates/_misc.scss */
+  /* line 152, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5143,7 +5144,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 169, ../../sass/templates/_misc.scss */
+/* line 170, ../../sass/templates/_misc.scss */
 .column-one-two {
   display: block;
   float: left;
@@ -5152,7 +5153,7 @@ a:hover.menu-trigger {
   width: 48.67525%;
 }
 
-/* line 174, ../../sass/templates/_misc.scss */
+/* line 175, ../../sass/templates/_misc.scss */
 .column-two-three {
   display: block;
   float: left;
@@ -5161,7 +5162,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 179, ../../sass/templates/_misc.scss */
+/* line 180, ../../sass/templates/_misc.scss */
 .column-three-four {
   display: block;
   float: left;
@@ -5170,7 +5171,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 184, ../../sass/templates/_misc.scss */
+/* line 185, ../../sass/templates/_misc.scss */
 .column-two-three-four {
   display: block;
   float: left;

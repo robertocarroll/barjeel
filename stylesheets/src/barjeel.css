@@ -3328,9 +3328,10 @@ footer[role="contentinfo"] {
   float: left;
   margin-left: 0;
   width: 100%;
+  margin-top: 24px;
 }
 
-/* line 28, ../../sass/templates/_footer.scss */
+/* line 29, ../../sass/templates/_footer.scss */
 .twitter-tweet {
   border-left: none;
   margin: 10px 0px;
@@ -3343,53 +3344,53 @@ footer[role="contentinfo"] {
   background: white;
 }
 
-/* line 42, ../../sass/templates/_footer.scss */
+/* line 43, ../../sass/templates/_footer.scss */
 .twitter-tweet p {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-/* line 48, ../../sass/templates/_footer.scss */
+/* line 49, ../../sass/templates/_footer.scss */
 #menu-footer-menu {
   padding-top: 12px;
 }
 
-/* line 56, ../../sass/templates/_footer.scss */
+/* line 57, ../../sass/templates/_footer.scss */
 #text-5 {
   padding-top: 24px;
   word-wrap: break-word;
 }
 @media only screen and (max-width: 695px) {
-  /* line 56, ../../sass/templates/_footer.scss */
+  /* line 57, ../../sass/templates/_footer.scss */
   #text-5 {
     padding-top: 0;
   }
 }
 
-/* line 66, ../../sass/templates/_footer.scss */
+/* line 67, ../../sass/templates/_footer.scss */
 #text-8 {
   padding-top: 24px;
 }
 
-/* line 70, ../../sass/templates/_footer.scss */
+/* line 71, ../../sass/templates/_footer.scss */
 #nav_menu-2 {
   padding-top: 24px;
 }
 
 @media only screen and (max-width: 695px) {
-  /* line 74, ../../sass/templates/_footer.scss */
+  /* line 75, ../../sass/templates/_footer.scss */
   .address-footer {
     float: right;
   }
 }
 
-/* line 80, ../../sass/templates/_footer.scss */
+/* line 81, ../../sass/templates/_footer.scss */
 .copyright {
   clear: both;
   padding-top: 24px;
 }
 @media only screen and (max-width: 695px) {
-  /* line 80, ../../sass/templates/_footer.scss */
+  /* line 81, ../../sass/templates/_footer.scss */
   .copyright {
     clear: both;
     display: block;
@@ -3401,7 +3402,7 @@ footer[role="contentinfo"] {
   }
 }
 
-/* line 92, ../../sass/templates/_footer.scss */
+/* line 93, ../../sass/templates/_footer.scss */
 .footer-logo {
   display: block;
   float: left;
@@ -3411,7 +3412,7 @@ footer[role="contentinfo"] {
   padding: 24px 0 0 0;
 }
 @media only screen and (max-width: 695px) {
-  /* line 92, ../../sass/templates/_footer.scss */
+  /* line 93, ../../sass/templates/_footer.scss */
   .footer-logo {
     clear: both;
     display: block;
@@ -3421,17 +3422,17 @@ footer[role="contentinfo"] {
   }
 }
 
-/* line 101, ../../sass/templates/_footer.scss */
+/* line 102, ../../sass/templates/_footer.scss */
 .twitter-wrapper {
   display: block;
   float: left;
   margin-left: 37.9798%;
   margin-right: -100%;
   width: 61.98232%;
-  padding-top: 35px;
+  padding-top: 3px;
 }
 @media only screen and (max-width: 695px) {
-  /* line 101, ../../sass/templates/_footer.scss */
+  /* line 102, ../../sass/templates/_footer.scss */
   .twitter-wrapper {
     clear: both;
     display: block;
@@ -3444,7 +3445,7 @@ footer[role="contentinfo"] {
   }
 }
 
-/* line 115, ../../sass/templates/_footer.scss */
+/* line 116, ../../sass/templates/_footer.scss */
 .twitter-one {
   display: block;
   float: left;
@@ -3453,7 +3454,7 @@ footer[role="contentinfo"] {
   width: 30.94317%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 115, ../../sass/templates/_footer.scss */
+  /* line 116, ../../sass/templates/_footer.scss */
   .twitter-one {
     clear: both;
     display: block;
@@ -3464,7 +3465,7 @@ footer[role="contentinfo"] {
   }
 }
 
-/* line 125, ../../sass/templates/_footer.scss */
+/* line 126, ../../sass/templates/_footer.scss */
 .twitter-two {
   display: block;
   float: left;
@@ -3473,7 +3474,7 @@ footer[role="contentinfo"] {
   width: 30.94317%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 125, ../../sass/templates/_footer.scss */
+  /* line 126, ../../sass/templates/_footer.scss */
   .twitter-two {
     clear: both;
     display: block;
@@ -3484,7 +3485,7 @@ footer[role="contentinfo"] {
   }
 }
 
-/* line 134, ../../sass/templates/_footer.scss */
+/* line 135, ../../sass/templates/_footer.scss */
 .twitter-three {
   display: block;
   float: left;
@@ -3493,7 +3494,7 @@ footer[role="contentinfo"] {
   width: 30.94317%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 134, ../../sass/templates/_footer.scss */
+  /* line 135, ../../sass/templates/_footer.scss */
   .twitter-three {
     clear: both;
     display: block;
@@ -3504,17 +3505,16 @@ footer[role="contentinfo"] {
   }
 }
 
-/* line 143, ../../sass/templates/_footer.scss */
+/* line 144, ../../sass/templates/_footer.scss */
 .hidden {
   position: absolute !important;
   top: -9999px !important;
   left: -9999px !important;
 }
 
-/* line 149, ../../sass/templates/_footer.scss */
+/* line 150, ../../sass/templates/_footer.scss */
 .social-icons {
   padding-top: 12px;
-  padding-bottom: 24px;
   text-align: center;
 }
 

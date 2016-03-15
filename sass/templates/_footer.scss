@@ -23,6 +23,7 @@ footer[role="contentinfo"] {
 
 .footer {
   @include gs-span(da, all);
+  margin-top: $base-spacing-unit;
 }
 
 .twitter-tweet  {
@@ -100,7 +101,7 @@ footer[role="contentinfo"] {
 
 .twitter-wrapper {
   @include gs-span(da, 3, 5);
-  padding-top: 35px;
+  padding-top: 3px;
 
   @include respond-to(mobile) {
   	@include gs-span(m, all);
@@ -148,7 +149,6 @@ footer[role="contentinfo"] {
 
 .social-icons {
   padding-top: $half-spacing-unit;
-  padding-bottom: $base-spacing-unit;
   text-align: center;
 }
 

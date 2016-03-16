@@ -149,13 +149,13 @@ footer[role="contentinfo"] {
 
 .social-icons {
   padding-top: $half-spacing-unit;
+  padding-bottom: $half-spacing-unit*3;
   text-align: center;
 }
 
 .flexbox.flexwrap .social-icons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .icon {
@@ -427,14 +427,12 @@ footer[role="contentinfo"] {
 
 #s {
   border: 1px solid $barjeel-grey;
-    @include border-radius(4px);
-    color: $barjeel-text-grey;
-    padding: 4px;
-    font-size: 16px;
-    width: calc(100% - 36px);
-    float: left;
-    height: 36px;
-
+  @include border-radius(4px);
+  color: $barjeel-text-grey;
+  font-size: $h5-size;
+  width: calc(100% - 48px);
+  float: left;
+  height: $half-spacing-unit*3;
 }
 
 #search-3 {
@@ -447,22 +445,28 @@ footer[role="contentinfo"] {
 }
 
 #searchform input:focus {
-    border: 2px solid $barjeel-red;
+    border: 2px solid $barjeel-icon-dark-grey;
 }
 
 #searchform input[type="submit"] {
-    background: $barjeel-grey url(../images/search-icon.png) no-repeat top left;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 0 0 0 1px;
-    color: #fff;
+    background-image: url(../images/svg/search-36.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    text-indent: -5000px;
     cursor: pointer;
     height: 36px;
     width: 36px;
-    text-indent: -5000px;
-    @include transition(background, 0.5s, ease-out);
 }
 
 #searchform input[type="submit"]:hover {
-  background: $barjeel-red url(../images/search-icon.png) no-repeat top left;
+  background-image: url(../images/svg/search-36-hover.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-indent: -5000px;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
 }

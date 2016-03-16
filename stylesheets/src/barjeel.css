@@ -3515,14 +3515,14 @@ footer[role="contentinfo"] {
 /* line 150, ../../sass/templates/_footer.scss */
 .social-icons {
   padding-top: 12px;
+  padding-bottom: 36px;
   text-align: center;
 }
 
-/* line 155, ../../sass/templates/_footer.scss */
+/* line 156, ../../sass/templates/_footer.scss */
 .flexbox.flexwrap .social-icons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 /* line 161, ../../sass/templates/_footer.scss */
@@ -3847,51 +3847,52 @@ footer[role="contentinfo"] {
   -webkit-border-radius: 4px;
   border-radius: 4px;
   color: #555555;
-  padding: 4px;
   font-size: 16px;
-  width: calc(100% - 36px);
+  width: calc(100% - 48px);
   float: left;
   height: 36px;
 }
 
-/* line 440, ../../sass/templates/_footer.scss */
+/* line 438, ../../sass/templates/_footer.scss */
 #search-3 {
   padding-top: 24px;
 }
 @media only screen and (max-width: 695px) {
-  /* line 440, ../../sass/templates/_footer.scss */
+  /* line 438, ../../sass/templates/_footer.scss */
   #search-3 {
     padding-left: 24px;
     padding-right: 24px;
   }
 }
 
-/* line 449, ../../sass/templates/_footer.scss */
+/* line 447, ../../sass/templates/_footer.scss */
 #searchform input:focus {
-  border: 2px solid #FF3300;
+  border: 2px solid #262628;
 }
 
-/* line 453, ../../sass/templates/_footer.scss */
+/* line 451, ../../sass/templates/_footer.scss */
 #searchform input[type="submit"] {
-  background: #999999 url(../images/search-icon.png) no-repeat top left;
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 0 0 0 1px;
-  color: #fff;
+  background-image: url(../images/svg/search-36.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  text-indent: -5000px;
   cursor: pointer;
   height: 36px;
   width: 36px;
-  text-indent: -5000px;
-  -webkit-transition: background 0.5s ease-out;
-  -moz-transition: background 0.5s ease-out;
-  -ms-transition: background 0.5s ease-out;
-  -o-transition: background 0.5s ease-out;
-  transition: background 0.5s ease-out;
 }
 
-/* line 466, ../../sass/templates/_footer.scss */
+/* line 463, ../../sass/templates/_footer.scss */
 #searchform input[type="submit"]:hover {
-  background: #FF3300 url(../images/search-icon.png) no-repeat top left;
+  background-image: url(../images/svg/search-36-hover.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  text-indent: -5000px;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
 }
 
 /*------------------------------------*\

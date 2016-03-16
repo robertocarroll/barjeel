@@ -28,8 +28,6 @@
 		</div><!-- .logo -->
 
     <div class="twitter-wrapper">
-      <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-4') ) : ?>
-      <?php endif; ?>
 
       <div class="twitter-one">
         <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer-1') ) : ?>

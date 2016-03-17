@@ -117,7 +117,7 @@ For an inline icon use: <span class="icon icon-24 press-1 inline-icon"></span>
 [Site check](https://sitecheck.sucuri.net/)
 
 ## Upgrade process
-1. Backup the site - Run the backup in BackWPup - "Barjeel to Dropbox - (Rob) - sending to s.barjeel"
+1. Backup the site - Replaced BackWPup with UpdraftPlus. Still goes to Dropbox but in a different folder.
 2. Test the backup locally
 3. Turn off Quick Cache
 4. Update plugins

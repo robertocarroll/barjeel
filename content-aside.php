@@ -189,7 +189,7 @@
         echo '<div class="pagination-wrapper"><div class="pagination">';
         echo paginate_links(array(
             'base' => get_pagenum_link(1) . '%_%',
-            'format' => '/page/%#%#exhibition-artwork',
+            'format' => '/page/%#%',
             'current' => $current_page,
             'total' => $total_pages,
             'prev_text'    => __('PREVIOUS'),

@@ -169,7 +169,7 @@
 
 			?>
 
-      <h2 class="related-title" id="exhibition-artwork" style="clear:both">Artwork from <?php the_title(); ?> </h2>
+      <h2 class="related-title" style="clear:both">Artwork from <?php the_title(); ?> </h2>
 
       <div id="sort">
 		   <?php	if ( $custom_query->have_posts() ) :
@@ -194,6 +194,8 @@
             'total' => $total_pages,
             'prev_text'    => __('PREVIOUS'),
             'next_text'    => __('NEXT'),
+            'end_size' => 1,
+            'mid_size' => 2,
             'before_page_number' => '<span class="page-number">',
             'after_page_number' => '</span>'
         ));

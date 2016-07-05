@@ -576,6 +576,18 @@ define('ICL_DONT_LOAD_LANGUAGE_SELECTOR_CSS', true);
 
 
 /**
+ * Pagination permalinks fix  *
+ *
+ * http://wordpress.stackexchange.com/questions/44537/why-is-page-2-not-working
+ */
+
+add_filter( 'redirect_canonical', 'custom_disable_redirect_canonical' );
+function custom_disable_redirect_canonical( $redirect_url ) {
+    if ( is_paged() && is_singular() ) $redirect_url = false;
+    return $redirect_url;
+}
+
+/**
  * Count page views *
  *
  * http://wpsnipp.com/index.php/functions-php/track-post-views-without-a-plugin-using-post-meta/

@@ -161,7 +161,7 @@
           'field' => 'slug',
         ),
           ), 'paged' => $paged,
-          'posts_per_page' => 9
+          'posts_per_page' => 18
 
                    );
 
@@ -182,15 +182,11 @@
      </div>
 
 <?php
-    // global $wp_rewrite;
     $total_pages = $custom_query->max_num_pages;
 
     if ($total_pages > 1){
         $current_page = (get_query_var('paged')) ? get_query_var('paged') : 1;
          $format = empty( get_option('permalink_structure') ) ? '&page=%#%' : 'page/%#%/';
-
-       /* if( $wp_rewrite->using_permalinks() )
-    $pagination['base'] = user_trailingslashit( trailingslashit( remove_query_arg( 's', get_pagenum_link( 1 ) ) ) . 'page/%#%/', 'paged    ' );*/
 
         echo '<div class="pagination-wrapper"><div class="pagination">';
         echo paginate_links(array(

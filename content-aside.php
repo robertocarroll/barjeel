@@ -138,59 +138,74 @@
 
 ?>
 
-<?php /* Reset query */ wp_reset_query();
 
-  /* Setting a crazy limit here */
-  add_filter('post_limits', 'your_query_limit');
-  function your_query_limit($limit){
-      return "LIMIT 500";
-}
-?>
+<?php /* Reset query */ wp_reset_query(); ?>
 
 <!-- Artwork - looks for posts with a category collection and a taxonomy exhibition -->
 
 		<?php global $post;
-			$artwork['tax_query'] = array(
-				array(
-					'taxonomy' => 'category',
-					'terms' => array('collection'),
-					'field' => 'slug',
-				),
-				array(
-					'taxonomy' => 'exhibition',
-					'terms' => array($post->post_name),
-					'field' => 'slug',
-				),
-        'posts_per_page' => -1
-			);
+
+      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;//The magic, ternary if statement
+
+      $artwork = array(
+
+            'tax_query' => array(
+            array(
+          'taxonomy' => 'category',
+          'terms' => array('collection'),
+          'field' => 'slug',
+        ),
+        array(
+          'taxonomy' => 'exhibition',
+          'terms' => array($post->post_name),
+          'field' => 'slug',
+        ),
+          ), 'paged' => $paged,
+          'posts_per_page' => 9
+
+                   );
+
+      $custom_query = new WP_Query( $artwork );
 
 			?>
 
-			<div class="related-artwork">
+      <h2 class="related-title" style="clear:both">Artwork from <?php the_title(); ?> </h2>
 
-				<?php $artwork_query = new WP_Query( $artwork ); ?>
+      <div id="sort">
+		   <?php	if ( $custom_query->have_posts() ) :
+    while( $custom_query->have_posts() ) : $custom_query->the_post(); ?>
 
-				<h2 class="related-title">Artwork from <?php the_title(); ?> </h2>
+        <?php get_template_part('catalogue'); ?>
 
-				<div id="sort">
+    <?php endwhile; ?>
 
-				<?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>
+     </div>
 
-					<?php get_template_part('catalogue'); ?>
+<?php  $total_pages = $custom_query->max_num_pages;
 
-				<?php endwhile; ?>
+    if ($total_pages > 1){
+        $current_page = max(1, get_query_var('paged'));
 
-				</div>
+        echo '<div class="pagination-wrapper"><div class="pagination">';
+        echo paginate_links(array(
+            'base' => get_pagenum_link(1) . '%_%',
+            'format' => '/page/%#%',
+            'current' => $current_page,
+            'total' => $total_pages,
+            'prev_text'    => __('PREVIOUS'),
+            'next_text'    => __('NEXT'),
+            'end_size' => 1,
+            'mid_size' => 2,
+            'before_page_number' => '<span class="page-number">',
+            'after_page_number' => '</span>'
+        ));
+        echo '</div><!--// end .pagination --></div>';
 
-				<?php /* Reset query */ wp_reset_query();
+    }
+?>
 
-        remove_filter('post_limits', 'your_query_limit');
 
-        ?>
-
+          <?php endif; ?>
+        <?php wp_reset_postdata(); // reset the query ?>
 			</div>
-
-
-
-
 

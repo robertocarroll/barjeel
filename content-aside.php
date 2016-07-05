@@ -169,7 +169,7 @@
 
 			?>
 
-      <h2 class="related-title" style="clear:both">Artwork from <?php the_title(); ?> </h2>
+      <h2 class="related-title" id="exhibition-artwork" style="clear:both">Artwork from <?php the_title(); ?> </h2>
 
       <div id="sort">
 		   <?php	if ( $custom_query->have_posts() ) :
@@ -189,7 +189,7 @@
         echo '<div class="pagination-wrapper"><div class="pagination">';
         echo paginate_links(array(
             'base' => get_pagenum_link(1) . '%_%',
-            'format' => '/page/%#%',
+            'format' => '/page/%#%#exhibition-artwork',
             'current' => $current_page,
             'total' => $total_pages,
             'prev_text'    => __('PREVIOUS'),

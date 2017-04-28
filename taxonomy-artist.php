@@ -112,7 +112,7 @@
 <!-- Artwork - looks for posts with a category collection and a taxonomy exhibition -->
 
     <?php global $post;
-      $taxonomy_name = get_queried_object()->name;
+      $taxonomy_name = get_queried_object()->slug;
 
       $artwork['tax_query'] = array(
         array(
@@ -138,6 +138,14 @@
         <div id="sort">
 
         <?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>
+
+        <?php
+            $a= get_queried_object()->name;
+              echo '<script>console.log("Name: ' . $a  . '")</script>';
+
+            $b= get_queried_object()->slug;
+            echo '<script>console.log("Slug: ' .  $b . '")</script>';
+         ?>
 
           <?php get_template_part('catalogue'); ?>
 

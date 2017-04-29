@@ -42,7 +42,7 @@
 
                 <?php } ?>
 
-                <?php $exhibitions = get_post_meta($post->ID, 'exhibitions', true);
+                <?php $exhibitions = get_post_meta($post->ID, 'exhibitions', false);
 
                 $exhibition_meta [] = $exhibitions;
 
@@ -131,21 +131,13 @@
 
       <div class="related-artwork">
 
-        <?php $artwork_query = new WP_Query( $artwork ); ?>
+        <?php $artwork_query = new WP_Query( $artwork );  ?>
 
         <h2 class="related-title">Artwork by <?php echo get_queried_object()->name; ?> </h2>
 
         <div id="sort">
 
         <?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>
-
-        <?php
-            $a= get_queried_object()->name;
-              echo '<script>console.log("Name: ' . $a  . '")</script>';
-
-            $b= get_queried_object()->slug;
-            echo '<script>console.log("Slug: ' .  $b . '")</script>';
-         ?>
 
           <?php get_template_part('catalogue'); ?>
 

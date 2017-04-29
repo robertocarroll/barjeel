@@ -77,6 +77,14 @@
     padding-bottom: $quarter-spacing-unit;
   }
 
+  .pad-1 {
+    padding: $base-spacing-unit;
+  }
+
+  .no-padding-below {
+    padding-bottom: 0;
+  }
+
 	.no-margin-below {
 		margin-bottom: 0;
 	}

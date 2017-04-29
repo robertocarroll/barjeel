@@ -91,8 +91,7 @@
       <?php endif; ?>
 
       <div class= "artist-text" id="artist-text">
-        <div class= "center margin-below-half">
-          <h2 class="epsilon bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h2>
+        <div class= "margin-below-half">
 
             <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 

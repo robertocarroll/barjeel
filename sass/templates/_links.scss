@@ -2,32 +2,32 @@
     $Links
 \*------------------------------------*/
 
-	
+
 	/*  Normal link */
 	a {color: $barjeel-grey; text-decoration: none; @include transition(color, 0.5s, ease-out);}
-	
-	/*  Hover over */	
-	a:hover, a:focus {color: $barjeel-red !important; text-decoration: none;} 
-	
+
+	/*  Hover over */
+	a:hover, a:focus {color: $barjeel-red !important; text-decoration: none;}
+
 	/*  Link that's been clicked on */
 	a:visited {}
-	
+
 	/*  When the link is being clicked	 */
 	a:active { color: $barjeel-red;}
-	
+
 	p a, .category-description a { color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out); }
 
-	p a:hover, p a:focus, .category-description a:hover  {color: $barjeel-link-blue ; text-decoration: none;} 
-	
-	/*	 
-	   No text-shadow: twitter.com/miketaylr/status/12228805301 
+	p a:hover, p a:focus, .category-description a:hover  {color: $barjeel-link-blue ; text-decoration: none;}
+
+	/*
+	   No text-shadow: twitter.com/miketaylr/status/12228805301
 	   Also: highlight colour for selection */
 	::-moz-selection{ background: $barjeel-red; color:#fff; text-shadow: none; }
-	::selection { background:$barjeel-red; color:#fff; text-shadow: none; } 
-	
-	/*  j.mp/webkit-tap-highlight-color 
+	::selection { background:$barjeel-red; color:#fff; text-shadow: none; }
+
+	/*  j.mp/webkit-tap-highlight-color
 	a:link { -webkit-tap-highlight-color: $barjeel-red; } */
-	
+
 	/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 	a:hover, a:active { outline: none; }
 
@@ -48,6 +48,8 @@
 
 	.artist-list li a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 
+  .artist-detail-link li a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
+
 	.twitter-tweet a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
 
 	.royalCaptionItem a {color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);}
@@ -56,8 +58,8 @@
 
 	.random a {color: white !important; text-decoration: none; @include transition(color, 0.5s, ease-out); padding-left: $quarter-spacing-unit; padding-right: $quarter-spacing-unit;}
 
-	.random a:hover {color: $barjeel-blue !important; text-decoration: none; background: white;} 
+	.random a:hover {color: $barjeel-blue !important; text-decoration: none; background: white;}
 
 	.see-more a {background: $barjeel-blue; color: white !important; text-decoration: none; @include transition(color, 0.5s, ease-out); padding-left: $quarter-spacing-unit; padding-right: $quarter-spacing-unit; padding-top: 3px; padding-bottom: 3px;}
 
-	.see-more a:hover {color: $barjeel-blue !important; text-decoration: none; background: white;} 
+	.see-more a:hover {color: $barjeel-blue !important; text-decoration: none; background: white;}

@@ -1,5 +1,7 @@
 The WordPress theme for the Barjeel website. Uses SASS and Gridset. Includes lots of things to do with custom taxonomies.
 
+Run Grunt in the root to compile CSS
+
 ### Templates
 * catalogue.php - For the round image with truncated title. Loaded in to category-collection.php via get_template_part
 * news.php - Template for the news posts. Loaded in to category-news.php via get_template_part

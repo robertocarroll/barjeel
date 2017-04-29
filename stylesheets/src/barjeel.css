@@ -2028,16 +2028,24 @@ label,
 
 /* line 32, ../../sass/templates/_artist.scss */
 .artist-text {
-  padding-top: 36px;
   padding-bottom: 24px;
 }
 
-/* line 37, ../../sass/templates/_artist.scss */
+/* line 36, ../../sass/templates/_artist.scss */
 .artist-list ul li:after {
   display: none;
 }
 
-/* line 41, ../../sass/templates/_artist.scss */
+/* line 40, ../../sass/templates/_artist.scss */
+.artist-header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 2.22222%;
+  padding-right: 2.22222%;
+}
+
+/* line 44, ../../sass/templates/_artist.scss */
 .artist-detail {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2046,7 +2054,7 @@ label,
   padding-right: 2.22222%;
 }
 
-/* line 45, ../../sass/templates/_artist.scss */
+/* line 48, ../../sass/templates/_artist.scss */
 .video-thumb-slider {
   display: block;
   background: url(../images/icon-video-square.png) no-repeat;
@@ -4466,8 +4474,8 @@ p a:hover, p a:focus, .category-description a:hover {
   text-decoration: none;
 }
 
-/*	 
-   No text-shadow: twitter.com/miketaylr/status/12228805301 
+/*
+   No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: highlight colour for selection */
 /* line 25, ../../sass/templates/_links.scss */
 ::-moz-selection {
@@ -4483,7 +4491,7 @@ p a:hover, p a:focus, .category-description a:hover {
   text-shadow: none;
 }
 
-/*  j.mp/webkit-tap-highlight-color 
+/*  j.mp/webkit-tap-highlight-color
 a:link { -webkit-tap-highlight-color: $barjeel-red; } */
 /* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
 /* line 32, ../../sass/templates/_links.scss */
@@ -4570,7 +4578,7 @@ h2.entry-title a {
 }
 
 /* line 51, ../../sass/templates/_links.scss */
-.twitter-tweet a {
+.artist-detail-link li a {
   color: #66BBDD;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
@@ -4581,7 +4589,7 @@ h2.entry-title a {
 }
 
 /* line 53, ../../sass/templates/_links.scss */
-.royalCaptionItem a {
+.twitter-tweet a {
   color: #66BBDD;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
@@ -4592,7 +4600,7 @@ h2.entry-title a {
 }
 
 /* line 55, ../../sass/templates/_links.scss */
-nav.next-previous ul li a {
+.royalCaptionItem a {
   color: #66BBDD;
   text-decoration: none;
   -webkit-transition: color 0.5s ease-out;
@@ -4603,6 +4611,17 @@ nav.next-previous ul li a {
 }
 
 /* line 57, ../../sass/templates/_links.scss */
+nav.next-previous ul li a {
+  color: #66BBDD;
+  text-decoration: none;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+/* line 59, ../../sass/templates/_links.scss */
 .random a {
   color: white !important;
   text-decoration: none;
@@ -4615,14 +4634,14 @@ nav.next-previous ul li a {
   padding-right: 6px;
 }
 
-/* line 59, ../../sass/templates/_links.scss */
+/* line 61, ../../sass/templates/_links.scss */
 .random a:hover {
   color: #66BBDD !important;
   text-decoration: none;
   background: white;
 }
 
-/* line 61, ../../sass/templates/_links.scss */
+/* line 63, ../../sass/templates/_links.scss */
 .see-more a {
   background: #66BBDD;
   color: white !important;
@@ -4638,7 +4657,7 @@ nav.next-previous ul li a {
   padding-bottom: 3px;
 }
 
-/* line 63, ../../sass/templates/_links.scss */
+/* line 65, ../../sass/templates/_links.scss */
 .see-more a:hover {
   color: #66BBDD !important;
   text-decoration: none;
@@ -4988,21 +5007,31 @@ a:hover.menu-trigger {
 }
 
 /* line 80, ../../sass/templates/_misc.scss */
+.pad-1 {
+  padding: 24px;
+}
+
+/* line 84, ../../sass/templates/_misc.scss */
+.no-padding-below {
+  padding-bottom: 0;
+}
+
+/* line 88, ../../sass/templates/_misc.scss */
 .no-margin-below {
   margin-bottom: 0;
 }
 
-/* line 84, ../../sass/templates/_misc.scss */
+/* line 92, ../../sass/templates/_misc.scss */
 .margin-below, .search-title {
   margin-bottom: 6px;
 }
 
-/* line 88, ../../sass/templates/_misc.scss */
+/* line 96, ../../sass/templates/_misc.scss */
 .margin-below-half {
   margin-bottom: 12px;
 }
 
-/* line 92, ../../sass/templates/_misc.scss */
+/* line 100, ../../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5011,13 +5040,13 @@ a:hover.menu-trigger {
   padding-right: 2.22222%;
 }
 
-/* line 96, ../../sass/templates/_misc.scss */
+/* line 104, ../../sass/templates/_misc.scss */
 .border-side {
   border-right: 1px solid #66BBDD;
   padding-left: 0;
 }
 
-/* line 101, ../../sass/templates/_misc.scss */
+/* line 109, ../../sass/templates/_misc.scss */
 .column-one {
   display: block;
   float: left;
@@ -5027,7 +5056,7 @@ a:hover.menu-trigger {
   clear: both;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 101, ../../sass/templates/_misc.scss */
+  /* line 109, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5037,7 +5066,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 101, ../../sass/templates/_misc.scss */
+  /* line 109, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5049,7 +5078,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 118, ../../sass/templates/_misc.scss */
+/* line 126, ../../sass/templates/_misc.scss */
 .column-two {
   display: block;
   float: left;
@@ -5058,7 +5087,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 118, ../../sass/templates/_misc.scss */
+  /* line 126, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5068,7 +5097,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 118, ../../sass/templates/_misc.scss */
+  /* line 126, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5080,7 +5109,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 134, ../../sass/templates/_misc.scss */
+/* line 142, ../../sass/templates/_misc.scss */
 .column-three {
   display: block;
   float: left;
@@ -5089,7 +5118,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 134, ../../sass/templates/_misc.scss */
+  /* line 142, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5101,7 +5130,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 134, ../../sass/templates/_misc.scss */
+  /* line 142, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5113,7 +5142,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 152, ../../sass/templates/_misc.scss */
+/* line 160, ../../sass/templates/_misc.scss */
 .column-four {
   display: block;
   float: left;
@@ -5122,7 +5151,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 152, ../../sass/templates/_misc.scss */
+  /* line 160, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5133,7 +5162,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 152, ../../sass/templates/_misc.scss */
+  /* line 160, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5145,7 +5174,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 170, ../../sass/templates/_misc.scss */
+/* line 178, ../../sass/templates/_misc.scss */
 .column-one-two {
   display: block;
   float: left;
@@ -5154,7 +5183,7 @@ a:hover.menu-trigger {
   width: 48.67525%;
 }
 
-/* line 175, ../../sass/templates/_misc.scss */
+/* line 183, ../../sass/templates/_misc.scss */
 .column-two-three {
   display: block;
   float: left;
@@ -5163,7 +5192,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 180, ../../sass/templates/_misc.scss */
+/* line 188, ../../sass/templates/_misc.scss */
 .column-three-four {
   display: block;
   float: left;
@@ -5172,7 +5201,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 185, ../../sass/templates/_misc.scss */
+/* line 193, ../../sass/templates/_misc.scss */
 .column-two-three-four {
   display: block;
   float: left;

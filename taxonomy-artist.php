@@ -1,115 +1,33 @@
 <?php get_header(); ?>
+  <section id="primary" class="site-content">
+		<div id="content" class="container" role="main">
+      <div class="meta white">
 
-		<section id="primary" class="site-content">
-			<div id="content" class="container" role="main">
+      <div class="artist-header">
+        <h1 class="alpha bold exhibition-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
-      <?php $exhibition_meta = array (); ?>
+        <ul class="exhibition-meta-list artist-detail-link">
+          <li><a href="#artist-text">Details</a></li>
+        </ul>
+      </div>
+
+      <?php
+          $exhibitions_all = array();
+          $unique_exhibitions = array();
+      ?>
+
       <?php if ( have_posts() ) : ?>
-        <?php $total_posts = $wp_query->found_posts; ?>
-
-        <?php /* Check if more than one image */ ?>
-
-        <?php if ( $total_posts == 1 ) { ?>
-
-        <div class="featured-image center">
-
-                  <?php
-                  if ( has_post_thumbnail() ){ ?>
-
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-
-                  <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'carousel-gallery' ); ?>
-
-                   <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
-
-                    </a>
-
-                    <?php } ?>
-
-                  <div class="light-italic white zeta">
-
-                    <?php echo the_title_attribute(); ?> by
-
-                  <?php $artist_name = rw_get_the_term_list(null, 'artist', false, '', ', ', '');
-
-                      $artist_name = strip_tags( $artist_name );
-
-                      echo $artist_name;  ?>
-
-                </div>
-
-              </div><!-- .featured-image -->
-
-                <?php } ?>
-
-                <?php $exhibitions = get_post_meta($post->ID, 'exhibitions', true);
-
-                $exhibition_meta [] = $exhibitions;
-
-                ?>
-
-				<div class="meta white">
-					<div class= "artist-text">
-						<div class= "center margin-below-half">
-              <h1 class="epsilon bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
-				<?php
-
-					$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
-
-					if($term->parent > 0)  { ?>
-
-				<ul class="entry-meta-artist">
-					<?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
-
-												<?php if ( $country ) { ?>
-
-													<?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
-
-												<?php } ?>
-
-							<?php	if(!empty($exhibition_meta)) { ?>
-
-											Exhibition:
-
-												<?php
-
-												list($value) = $exhibition_meta;
-
-							  							print '<li class="meta-link">'.$value.'</li>';
-
-													?>
-										<?php } ?>
-
-							<?php $bornin = get_the_term_list( get_the_ID(), 'bornin') ?>
-
-										<?php if ( $bornin ) { ?>
-
-													<?php echo '<li class="meta-link">Born in: '.$bornin.'</li> '; ?>
-
-												<?php } ?>
-
-					</ul>
-				<?php
-					}
-				 ?>
-
-				</div>
-
-				<div class= "artist-detail">
-					<?php echo category_description(); ?>
-
-        <?php if ( $total_posts > 1 ) { ?>
 
        <?php /* Reset query */ wp_reset_query();
+        /* Setting a crazy limit here */
+        add_filter('post_limits', 'your_query_limit');
+          function your_query_limit($limit){
+              return "LIMIT 500";
+        }
+      ?>
 
-  /* Setting a crazy limit here */
-  add_filter('post_limits', 'your_query_limit');
-  function your_query_limit($limit){
-      return "LIMIT 500";
-}
-?>
-
-<!-- Artwork - looks for posts with a category collection and a taxonomy exhibition -->
+    <!-- Artwork - looks for posts with a
+      category collection and a taxonomy exhibition -->
 
     <?php global $post;
       $taxonomy_name = get_queried_object()->slug;
@@ -129,42 +47,101 @@
 
       ?>
 
-      <div class="related-artwork">
-
-        <?php $artwork_query = new WP_Query( $artwork ); ?>
-
-        <h2 class="related-title">Artwork by <?php echo get_queried_object()->name; ?> </h2>
+      <div class="related-artwork pad-1 no-padding-below">
+        <?php $artwork_query = new WP_Query( $artwork );  ?>
 
         <div id="sort">
-
         <?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>
+        <?php get_template_part('catalogue'); ?>
 
-        <?php
-            $a= get_queried_object()->name;
-              echo '<script>console.log("Name: ' . $a  . '")</script>';
+          <?php
+                /* Get all the IDs of artwork posts and
+                get all the exhibition custom fields of each post
+                "false" is important as it returns ALL not just the first one.
+                exhibitions_all is an array of arrays. We then remove the duplicates.
+                */
+                $post_id = get_the_ID();
+                $new_exhibitions = get_post_meta($post_id, 'exhibitions', false);
+                array_push($exhibitions_all, $new_exhibitions);
 
-            $b= get_queried_object()->slug;
-            echo '<script>console.log("Slug: ' .  $b . '")</script>';
-         ?>
-
-          <?php get_template_part('catalogue'); ?>
+              ?>
 
         <?php endwhile; ?>
 
-        </div>
+        <?php
+          $result = array();
+          array_walk_recursive($exhibitions_all,function($v, $k) use (&$result){ $result[] = $v; });
+
+          foreach ($result as $row) {
+            if (!in_array($row,$unique_exhibitions))
+              array_push($unique_exhibitions,$row);
+          }
+          unset($row);
+
+          sort($unique_exhibitions);
+        ?>
+
+        </div><!-- #sort -->
 
         <?php /* Reset query */ wp_reset_query();
+           remove_filter('post_limits', 'your_query_limit');
+          ?>
+      </div><!-- .related-artwork -->
 
-        remove_filter('post_limits', 'your_query_limit');
-
-        ?>
-      </div>
-      <?php } ?>
       <?php endif; ?>
 
-      </div><!-- .artist-detail -->
-          </div><!-- .artist-text -->
-        </div><!-- .meta -->
+      <div class= "artist-text" id="artist-text">
+        <div class= "center margin-below-half">
+          <h2 class="epsilon bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h2>
+
+            <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+
+            if($term->parent > 0)  { ?>
+
+            <ul class="entry-meta-artist">
+
+               <?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
+                <?php if ( $country ) { ?>
+                    <?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
+                <?php } ?>
+
+              <?php if(!empty($unique_exhibitions)) {
+                  if (count($unique_exhibitions) > 1) {
+                     print '<li class="meta-link">Exhibitions:';
+                  }
+
+                  else {
+                    print '<li class="meta-link">Exhibition:';
+                  }
+              ?>
+
+            <?php  foreach ($unique_exhibitions as $value) {
+                      print '<li class="meta-link">'.$value.'</li>';
+                       }
+
+                  } ?>
+
+              <?php $bornin = get_the_term_list( get_the_ID(), 'bornin') ?>
+
+                    <?php if ( $bornin ) { ?>
+
+                          <?php echo '<li class="meta-link">Born in: '.$bornin.'</li> '; ?>
+
+                        <?php } ?>
+
+          </ul>
+        <?php
+          }
+         ?>
+
+        </div><!-- .center margin-below-half -->
+
+            <div class= "artist-detail">
+              <?php echo category_description(); ?>
+            </div><!-- .artist-detail -->
+
+    </div><!-- .artist-text -->
+  </div><!-- .meta -->
 
 				<?php
 
@@ -224,11 +201,10 @@
 							</ul>
 
 						</div><!-- .artist-list -->
+  <?php rewind_posts(); ?>
 
-							<?php rewind_posts(); ?>
 
-
-			</div><!-- #content -->
-		</section><!-- #primary .site-content -->
+  </div><!-- #content -->
+</section><!-- #primary .site-content -->
 
 <?php get_footer(); ?>

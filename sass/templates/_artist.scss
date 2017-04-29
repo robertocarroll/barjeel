@@ -30,12 +30,15 @@
 }
 
 .artist-text {
-	padding-top: $half-spacing-unit*3;
 	padding-bottom: $base-spacing-unit;
 }
 
 .artist-list ul li:after{
 	display: none;
+}
+
+.artist-header {
+  @include gs-pad(da, padinfull);
 }
 
 .artist-detail {

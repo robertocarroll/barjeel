@@ -3,44 +3,21 @@
 		<div id="content" class="container" role="main">
       <div class="meta white">
 
+      <div class="artist-header">
+        <h1 class="alpha bold exhibition-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+
+        <ul class="exhibition-meta-list artist-detail-link">
+          <li><a href="#artist-text">Details</a></li>
+        </ul>
+      </div>
+
       <?php
           $exhibitions_all = array();
           $unique_exhibitions = array();
       ?>
 
       <?php if ( have_posts() ) : ?>
-        <?php $total_posts = $wp_query->found_posts; ?>
-        <?php /* Check if more than one image */ ?>
 
-        <?php if ( $total_posts == 1 ) {
-
-            $post_id = get_the_ID();
-            $unique_exhibitions = get_post_meta($post_id, 'exhibitions', false);
-            sort($unique_exhibitions);
-          ?>
-
-        <div class="featured-image center">
-          <?php if ( has_post_thumbnail() ){ ?>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-          <?php $thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'carousel-gallery' ); ?>
-
-            <img src="<?php echo $thumbnail['0']; ?>" alt="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>" width="<?php echo $thumbnail[1]; ?>" height="<?php echo $thumbnail[2]; ?>" />
-            </a>
-        <?php } ?>
-
-              <div class="light-italic white zeta">
-                <?php echo the_title_attribute(); ?> by
-                <?php
-
-                  $artist_name = rw_get_the_term_list(null, 'artist', false, '', ', ', '');
-                  $artist_name = strip_tags( $artist_name );
-                  echo $artist_name;  ?>
-              </div>
-
-        </div><!-- .featured-image -->
-      <?php } ?>
-
-    <?php if ( $total_posts > 1 ) { ?>
        <?php /* Reset query */ wp_reset_query();
         /* Setting a crazy limit here */
         add_filter('post_limits', 'your_query_limit');
@@ -111,13 +88,11 @@
           ?>
       </div><!-- .related-artwork -->
 
-      <?php } ?>
-
       <?php endif; ?>
 
-      <div class= "artist-text">
+      <div class= "artist-text" id="artist-text">
         <div class= "center margin-below-half">
-          <h1 class="epsilon bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+          <h2 class="epsilon bold artist-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h2>
 
             <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 

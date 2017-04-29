@@ -37,6 +37,10 @@
 	display: none;
 }
 
+.artist-header {
+  @include gs-pad(da, padinfull);
+}
+
 .artist-detail {
 	@include gs-pad(da, padinfull);
 }

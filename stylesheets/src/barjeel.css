@@ -2270,21 +2270,13 @@ label,
   background: white;
 }
 
-/* For the circle rollovers  */
 /* line 144, ../../sass/templates/_artwork-category.scss */
-.vignette:hover {
-  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
-  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
-  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
-}
-
-/* line 148, ../../sass/templates/_artwork-category.scss */
 img.attachment-cropped-thumb {
   z-index: -1;
   position: relative;
 }
 
-/* line 153, ../../sass/templates/_artwork-category.scss */
+/* line 149, ../../sass/templates/_artwork-category.scss */
 .browse {
   display: block;
   float: left;
@@ -2293,7 +2285,7 @@ img.attachment-cropped-thumb {
   width: 22.99773%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 153, ../../sass/templates/_artwork-category.scss */
+  /* line 149, ../../sass/templates/_artwork-category.scss */
   .browse {
     clear: both;
     display: block;
@@ -2305,36 +2297,36 @@ img.attachment-cropped-thumb {
   }
 }
 
-/* line 164, ../../sass/templates/_artwork-category.scss */
+/* line 160, ../../sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
   padding-top: 12px;
   margin: 0;
 }
 
-/* line 172, ../../sass/templates/_artwork-category.scss */
+/* line 168, ../../sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 183, ../../sass/templates/_artwork-category.scss */
+/* line 179, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 189, ../../sass/templates/_artwork-category.scss */
+/* line 185, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 193, ../../sass/templates/_artwork-category.scss */
+/* line 189, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   display: none;
 }
 
 /* Makes the "see more" blue  */
-/* line 199, ../../sass/templates/_artwork-category.scss */
+/* line 195, ../../sass/templates/_artwork-category.scss */
 .menu-item-772 a, .menu-item-775 a {
   color: #66BBDD;
   text-decoration: none;
@@ -2345,18 +2337,18 @@ img.attachment-cropped-thumb {
   transition: color 0.5s ease-out;
 }
 
-/* line 203, ../../sass/templates/_artwork-category.scss */
+/* line 199, ../../sass/templates/_artwork-category.scss */
 .menu-item-772 a:hover, .menu-item-775 a:hover {
   color: #3388AA !important;
   text-decoration: none;
 }
 
-/* line 207, ../../sass/templates/_artwork-category.scss */
+/* line 203, ../../sass/templates/_artwork-category.scss */
 #menu-by-artist > li, #menu-by-country > li, #menu-by-medium > li {
   margin-bottom: 6px;
 }
 
-/* line 211, ../../sass/templates/_artwork-category.scss */
+/* line 207, ../../sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 24px;
   margin: 0;
@@ -2364,21 +2356,21 @@ img.attachment-cropped-thumb {
   text-transform: uppercase;
 }
 
-/* line 220, ../../sass/templates/_artwork-category.scss */
+/* line 216, ../../sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 12px;
   margin: 0;
   color: #999999;
 }
 
-/* line 228, ../../sass/templates/_artwork-category.scss */
+/* line 224, ../../sass/templates/_artwork-category.scss */
 .video-thumb {
   display: block;
   background: url(../images/icon-video.png) no-repeat;
   z-index: 200;
 }
 
-/* line 235, ../../sass/templates/_artwork-category.scss */
+/* line 231, ../../sass/templates/_artwork-category.scss */
 #sort {
   display: block;
   float: left;
@@ -2393,7 +2385,7 @@ img.attachment-cropped-thumb {
   flex-wrap: wrap;
 }
 @media only screen and (max-width: 695px) {
-  /* line 235, ../../sass/templates/_artwork-category.scss */
+  /* line 231, ../../sass/templates/_artwork-category.scss */
   #sort {
     clear: both;
     display: block;
@@ -2411,7 +2403,7 @@ img.attachment-cropped-thumb {
   }
 }
 
-/* line 258, ../../sass/templates/_artwork-category.scss */
+/* line 254, ../../sass/templates/_artwork-category.scss */
 .box-ms {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2420,25 +2412,34 @@ img.attachment-cropped-thumb {
   width: 11rem;
 }
 @media only screen and (max-width: 695px) {
-  /* line 258, ../../sass/templates/_artwork-category.scss */
+  /* line 254, ../../sass/templates/_artwork-category.scss */
   .box-ms {
     margin-right: 5%;
     width: 8rem;
   }
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 258, ../../sass/templates/_artwork-category.scss */
+  /* line 254, ../../sass/templates/_artwork-category.scss */
   .box-ms {
     margin-right: 2.5%;
     width: 11rem;
   }
 }
 @media only screen and (min-width: 1100px) {
-  /* line 258, ../../sass/templates/_artwork-category.scss */
+  /* line 254, ../../sass/templates/_artwork-category.scss */
   .box-ms {
     margin-right: 1%;
     width: 12rem;
   }
+}
+
+/* For the circle rollovers  */
+/* line 279, ../../sass/templates/_artwork-category.scss */
+.vignette:hover {
+  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+  border-radius: 50%;
 }
 
 /*------------------------------------*\

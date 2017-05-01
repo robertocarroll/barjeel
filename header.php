@@ -12,15 +12,8 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-
-<!-- set the encoding -->
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-
-<!-- Make older IE play nice -->
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-
-<!--  Mobile Viewport Fix j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag  -->
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title><?php wp_title(''); ?></title>
 

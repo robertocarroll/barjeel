@@ -139,11 +139,7 @@
 
 
 
-/* For the circle rollovers  */
 
-.vignette:hover {
-  @include box-shadow (rgba($barjeel-blue, $barjeel-hover-opacity) 0 0 0px $half-spacing-unit inset);
-}
 
 	img.attachment-cropped-thumb {
   	z-index: -1;
@@ -276,5 +272,12 @@
   display: flex;
   margin-right: 1%;
   width: 11rem;
+}
+
+/* For the circle rollovers  */
+
+.vignette:hover {
+  @include box-shadow (rgba($barjeel-blue, $barjeel-hover-opacity) 0 0 0px $half-spacing-unit inset);
+  border-radius: 50%;
 }
 

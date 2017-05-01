@@ -256,7 +256,6 @@
 }
 
 .box-ms {
-
   @include respond-to(mobile) {
     margin-right: 5%;
     width: 8rem;

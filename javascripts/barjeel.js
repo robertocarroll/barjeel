@@ -57,13 +57,13 @@ $(document).on("click", "#close-menu", function (e) {
         jPM.close();
 
         $( "#close-menu" ).remove();
-        
+
         e.preventDefault();
     });
 
 function movePagination () {
 
-  var pagination = $(".pagination-wrapper"); 
+  var pagination = $(".pagination-wrapper");
   $(pagination).remove();
   $(pagination).insertAfter( "#content" );
   paginationMove = true;
@@ -72,7 +72,7 @@ function movePagination () {
 
 function movePaginationBack () {
 
-  var pagination = $(".pagination-wrapper"); 
+  var pagination = $(".pagination-wrapper");
   $(pagination).remove();
   $(pagination).insertAfter( ".browse-wrapper" );
   paginationMove = false;
@@ -112,10 +112,10 @@ jRes.addFunc({
 
         if(paginationMove){
           movePaginationBack();
-        }  
+        }
       }
-  }); 
-      
+  });
+
 jRes.addFunc({
     breakpoint: 'large',
     enter: function() {
@@ -216,7 +216,7 @@ $.each(list.letters, function(i, letter){
 
 /*! For the isotope layout on the artwork page */
 
-jQuery(document).ready(function($){
+/*jQuery(document).ready(function($){
 
       var $containerArtwork = $('#sortArtwork');
 
@@ -241,11 +241,11 @@ jQuery(document).ready(function($){
 });
 
 });
-
+*/
 
 /*! For the isotope layout on the collection page */
 
-jQuery(document).ready(function($){
+/*jQuery(document).ready(function($){
      var $container = $('#sort');
 
      $(window).resize(function(){
@@ -273,10 +273,10 @@ jQuery(document).ready(function($){
           animationEngine : 'best-available'
         });
 
-});
+});*/
 
 // update columnWidth on window resize
-$(window).smartresize(function(){
+/*$(window).smartresize(function(){
 
   var current_width = $(window).width();
 
@@ -294,4 +294,4 @@ $(window).smartresize(function(){
 
 });
 
-});
+});*/

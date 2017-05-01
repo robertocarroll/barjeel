@@ -123,26 +123,7 @@
  		display: none;
  	}
 
-	#sort {
 
-		@include gs-span(da, 2, 4, (2, 5));
-		clear:left;
-
-		@include respond-to(mobile) {
-        @include gs-span(m, all);
-    	}
-
-    @media (max-width: 420px) {
-      margin-left: 25%;
-    }
-
-	}
-
-  #sortArtwork {
-    @media (max-width: 420px) {
-      margin-left: 25%;
-    }
-  }
 
 .artwork-list {
   clear: left;
@@ -156,36 +137,7 @@
     background: white;
   }
 
-.box-ms {
-	padding-right: #{2*gs-gutter(da) + '%'};
-	width: 211px;
 
-	@include respond-to(tablet) { width: 190px; }
-
-	  @include respond-to(mobile) { width: 190px; }
-}
-
-
-.vignette {
-	 border-radius: 50%;
-   width:172px;
-   height: 172px;
-   margin: auto;
-
-    @include transition-property(box-shadow);
-    @include transition-duration(0.2s);
-    @include transition-timing-function(ease-in-out);
-
-      max-width: 100%;
-    /* Part 1: Set a maxium relative to the parent */
-
-    width: auto\9;
-    /* IE7-8 need help adjusting responsive images */
-
-    height: auto;
-    /* Part 2: Scale the height according to the width, otherwise you get stretching */
-
-}
 
 /* For the circle rollovers  */
 
@@ -273,12 +225,57 @@
 		color: $barjeel-grey;
 	}
 
-	.video-thumb  {
-	   display: block;
-	   background: url(../images/icon-video.png) no-repeat;
-	   z-index:200;
+.video-thumb  {
+   display: block;
+   background: url(../images/icon-video.png) no-repeat;
+   z-index:200;
+}
 
-	}
 
+#sort {
 
+  @include gs-span(da, 2, 4, (2, 5));
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  @include respond-to(mobile) {
+    @include gs-span(m, all);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.box-ms {
+
+  @include respond-to(mobile) {
+    margin-right: 5%;
+    width: 8rem;
+  }
+
+  @include respond-to(tablet) {
+    margin-right: 2.5%;
+    width: 11rem;
+  }
+
+  @include respond-to(desktop) {
+    margin-right: 1%;
+    width: 12rem;
+  }
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1%;
+  width: 11rem;
+}
 

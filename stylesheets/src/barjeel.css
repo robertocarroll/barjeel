@@ -2255,113 +2255,36 @@ label,
   display: none;
 }
 
-/* line 126, ../../sass/templates/_artwork-category.scss */
-#sort {
-  display: block;
-  float: left;
-  margin-left: 0%;
-  margin-right: -100%;
-  width: 74.33762%;
-  clear: left;
-}
-@media only screen and (max-width: 695px) {
-  /* line 126, ../../sass/templates/_artwork-category.scss */
-  #sort {
-    clear: both;
-    display: block;
-    float: left;
-    margin-left: 0;
-    width: 100%;
-  }
-}
-@media (max-width: 420px) {
-  /* line 126, ../../sass/templates/_artwork-category.scss */
-  #sort {
-    margin-left: 25%;
-  }
-}
-
-@media (max-width: 420px) {
-  /* line 141, ../../sass/templates/_artwork-category.scss */
-  #sortArtwork {
-    margin-left: 25%;
-  }
-}
-
-/* line 147, ../../sass/templates/_artwork-category.scss */
+/* line 128, ../../sass/templates/_artwork-category.scss */
 .artwork-list {
   clear: left;
 }
 
-/* line 151, ../../sass/templates/_artwork-category.scss */
+/* line 132, ../../sass/templates/_artwork-category.scss */
 .category-non-arab-art {
   padding-bottom: 48px;
 }
 
-/* line 155, ../../sass/templates/_artwork-category.scss */
+/* line 136, ../../sass/templates/_artwork-category.scss */
 .thumbnail-image-non-arab {
   background: white;
 }
 
-/* line 159, ../../sass/templates/_artwork-category.scss */
-.box-ms {
-  padding-right: 4.44444%;
-  width: 211px;
-}
-@media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 159, ../../sass/templates/_artwork-category.scss */
-  .box-ms {
-    width: 190px;
-  }
-}
-@media only screen and (max-width: 695px) {
-  /* line 159, ../../sass/templates/_artwork-category.scss */
-  .box-ms {
-    width: 190px;
-  }
-}
-
-/* line 169, ../../sass/templates/_artwork-category.scss */
-.vignette {
-  border-radius: 50%;
-  width: 172px;
-  height: 172px;
-  margin: auto;
-  -moz-transition-property: box-shadow;
-  -o-transition-property: box-shadow;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  max-width: 100%;
-  /* Part 1: Set a maxium relative to the parent */
-  width: auto\9;
-  /* IE7-8 need help adjusting responsive images */
-  height: auto;
-  /* Part 2: Scale the height according to the width, otherwise you get stretching */
-}
-
 /* For the circle rollovers  */
-/* line 192, ../../sass/templates/_artwork-category.scss */
+/* line 144, ../../sass/templates/_artwork-category.scss */
 .vignette:hover {
   -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
   -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
   box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
 }
 
-/* line 196, ../../sass/templates/_artwork-category.scss */
+/* line 148, ../../sass/templates/_artwork-category.scss */
 img.attachment-cropped-thumb {
   z-index: -1;
   position: relative;
 }
 
-/* line 201, ../../sass/templates/_artwork-category.scss */
+/* line 153, ../../sass/templates/_artwork-category.scss */
 .browse {
   display: block;
   float: left;
@@ -2370,7 +2293,7 @@ img.attachment-cropped-thumb {
   width: 22.99773%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 201, ../../sass/templates/_artwork-category.scss */
+  /* line 153, ../../sass/templates/_artwork-category.scss */
   .browse {
     clear: both;
     display: block;
@@ -2382,36 +2305,36 @@ img.attachment-cropped-thumb {
   }
 }
 
-/* line 212, ../../sass/templates/_artwork-category.scss */
+/* line 164, ../../sass/templates/_artwork-category.scss */
 .artwork-title, .artist-name {
   padding-top: 12px;
   margin: 0;
 }
 
-/* line 220, ../../sass/templates/_artwork-category.scss */
+/* line 172, ../../sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 231, ../../sass/templates/_artwork-category.scss */
+/* line 183, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 237, ../../sass/templates/_artwork-category.scss */
+/* line 189, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 241, ../../sass/templates/_artwork-category.scss */
+/* line 193, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   display: none;
 }
 
 /* Makes the "see more" blue  */
-/* line 247, ../../sass/templates/_artwork-category.scss */
+/* line 199, ../../sass/templates/_artwork-category.scss */
 .menu-item-772 a, .menu-item-775 a {
   color: #66BBDD;
   text-decoration: none;
@@ -2422,18 +2345,18 @@ img.attachment-cropped-thumb {
   transition: color 0.5s ease-out;
 }
 
-/* line 251, ../../sass/templates/_artwork-category.scss */
+/* line 203, ../../sass/templates/_artwork-category.scss */
 .menu-item-772 a:hover, .menu-item-775 a:hover {
   color: #3388AA !important;
   text-decoration: none;
 }
 
-/* line 255, ../../sass/templates/_artwork-category.scss */
+/* line 207, ../../sass/templates/_artwork-category.scss */
 #menu-by-artist > li, #menu-by-country > li, #menu-by-medium > li {
   margin-bottom: 6px;
 }
 
-/* line 259, ../../sass/templates/_artwork-category.scss */
+/* line 211, ../../sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 24px;
   margin: 0;
@@ -2441,18 +2364,81 @@ img.attachment-cropped-thumb {
   text-transform: uppercase;
 }
 
-/* line 268, ../../sass/templates/_artwork-category.scss */
+/* line 220, ../../sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 12px;
   margin: 0;
   color: #999999;
 }
 
-/* line 276, ../../sass/templates/_artwork-category.scss */
+/* line 228, ../../sass/templates/_artwork-category.scss */
 .video-thumb {
   display: block;
   background: url(../images/icon-video.png) no-repeat;
   z-index: 200;
+}
+
+/* line 235, ../../sass/templates/_artwork-category.scss */
+#sort {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 74.33762%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 695px) {
+  /* line 235, ../../sass/templates/_artwork-category.scss */
+  #sort {
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* line 258, ../../sass/templates/_artwork-category.scss */
+.box-ms {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1%;
+  width: 11rem;
+}
+@media only screen and (max-width: 695px) {
+  /* line 258, ../../sass/templates/_artwork-category.scss */
+  .box-ms {
+    margin-right: 5%;
+    width: 8rem;
+  }
+}
+@media only screen and (min-width: 696px) and (max-width: 960px) {
+  /* line 258, ../../sass/templates/_artwork-category.scss */
+  .box-ms {
+    margin-right: 2.5%;
+    width: 11rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 258, ../../sass/templates/_artwork-category.scss */
+  .box-ms {
+    margin-right: 1%;
+    width: 12rem;
+  }
 }
 
 /*------------------------------------*\

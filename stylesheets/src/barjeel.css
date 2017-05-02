@@ -2432,14 +2432,21 @@ label,
 /* For the circle rollovers  */
 /* line 272, ../../sass/templates/_artwork-category.scss */
 .vignette img {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -moz-transition-property: border;
+  -o-transition-property: border;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
-/* line 280, ../../sass/templates/_artwork-category.scss */
+/* line 278, ../../sass/templates/_artwork-category.scss */
 .vignette img:hover {
   border: 12px, solid rgba(102, 187, 221, 0.7);
 }
@@ -4277,18 +4284,6 @@ img {
   width: 80%;
   height: auto;
   margin-left: 10%;
-  -moz-transition-property: box-shadow;
-  -o-transition-property: box-shadow;
-  -webkit-transition-property: box-shadow;
-  transition-property: box-shadow;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -moz-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   max-width: 100%;
   /* Part 1: Set a maxium relative to the parent */
   width: auto\9;
@@ -4297,30 +4292,44 @@ img {
   /* Part 2: Scale the height according to the width, otherwise you get stretching */
 }
 
-/* line 65, ../../sass/templates/_images.scss */
-.vignette-square:hover {
-  -moz-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
-  -webkit-box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
-  box-shadow: rgba(102, 187, 221, 0.7) 0 0 0px 12px inset;
+/* line 57, ../../sass/templates/_images.scss */
+.vignette-square img {
+  -moz-transition-property: border;
+  -o-transition-property: border;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 63, ../../sass/templates/_images.scss */
+.vignette-square img:hover {
+  border: 12px, solid rgba(102, 187, 221, 0.7);
 }
 
 /* Second thumbnail has a strange width. This setting overrides it.  */
-/* line 73, ../../sass/templates/_images.scss */
+/* line 70, ../../sass/templates/_images.scss */
 .round img {
   border-radius: 50%;
 }
 
-/* line 77, ../../sass/templates/_images.scss */
+/* line 74, ../../sass/templates/_images.scss */
 .round {
   border-radius: 50%;
 }
 
-/* line 81, ../../sass/templates/_images.scss */
+/* line 78, ../../sass/templates/_images.scss */
 .attachment-cropped-thumb {
   width: 170px !important;
 }
 
-/* line 92, ../../sass/templates/_images.scss */
+/* line 89, ../../sass/templates/_images.scss */
 .attachment-homepage-thumb {
   border-radius: 50%;
   -moz-transition-property: box-shadow;
@@ -4337,36 +4346,36 @@ img {
   transition-timing-function: ease-in;
 }
 
-/* line 104, ../../sass/templates/_images.scss */
+/* line 101, ../../sass/templates/_images.scss */
 img.alignright {
   float: right;
   margin: 0 0 1em 1em;
 }
 
-/* line 105, ../../sass/templates/_images.scss */
+/* line 102, ../../sass/templates/_images.scss */
 img.alignleft {
   float: left;
   margin: 0 1em 1em 0;
 }
 
-/* line 106, ../../sass/templates/_images.scss */
+/* line 103, ../../sass/templates/_images.scss */
 img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 107, ../../sass/templates/_images.scss */
+/* line 104, ../../sass/templates/_images.scss */
 .alignright {
   float: right;
 }
 
-/* line 108, ../../sass/templates/_images.scss */
+/* line 105, ../../sass/templates/_images.scss */
 .alignleft {
   float: left;
 }
 
-/* line 109, ../../sass/templates/_images.scss */
+/* line 106, ../../sass/templates/_images.scss */
 .aligncenter {
   display: block;
   margin-left: auto;

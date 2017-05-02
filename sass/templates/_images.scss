@@ -4,21 +4,21 @@
 
 	img {
 	  /* Responsive images (ensure images don't scale beyond their parents) */
-	
+
 	  max-width: 100%;
 	  /* Part 1: Set a maxium relative to the parent */
-	
+
 	  width: auto\9;
 	  /* IE7-8 need help adjusting responsive images */
-	
+
 	  height: auto;
 	  /* Part 2: Scale the height according to the width, otherwise you get stretching */
-	
+
 	  vertical-align: middle;
 	  border: 0;
 	  -ms-interpolation-mode: bicubic;
 	}
-	
+
 	.img-rounded {
 	  -webkit-border-radius: 6px;
 	  -moz-border-radius: 6px;
@@ -40,66 +40,63 @@
 	}
 
 
-	.vignette-square {
+.vignette-square {
+  width: 80%;
+  height: auto;
+  margin-#{$dir}: 10%;
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
 
-    width: 80%;
-    height: auto;
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
 
-   	margin-#{$dir}: 10%;
- 
-    @include transition-property(box-shadow);
-    @include transition-duration(0.2s);
-    @include transition-timing-function(ease-in-out);  
-
-      max-width: 100%;
-    /* Part 1: Set a maxium relative to the parent */
-  
-    width: auto\9;
-    /* IE7-8 need help adjusting responsive images */
-  
-    height: auto;
-    /* Part 2: Scale the height according to the width, otherwise you get stretching */
-  
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
 }
 
-	.vignette-square:hover { 
-	  @include box-shadow (rgba($barjeel-blue, $barjeel-hover-opacity) 0 0 0px $half-spacing-unit inset);
-	} 
+.vignette-square img {
+  @include transition-property(border);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in-out);
+}
 
+.vignette-square img:hover {
+  border: $half-spacing-unit, solid rgba($barjeel-blue, $barjeel-hover-opacity);
+}
 
 
 	/* Second thumbnail has a strange width. This setting overrides it.  */
 
 	.round img {
 		border-radius: 50%;
-	}	
+	}
 
 	.round {
 		border-radius: 50%;
 	}
 
 	.attachment-cropped-thumb {
-	
-		width: 170px !important; 
+
+		width: 170px !important;
 
 	}
 
-	.attachment-cropped-thumb:hover { 
-		
+	.attachment-cropped-thumb:hover {
+
 	}
-	
+
 
 	.attachment-homepage-thumb  {
-		border-radius: 50%;	
+		border-radius: 50%;
 		 @include transition-property(box-shadow);
   		@include transition-duration(.1s);
   		@include transition-timing-function(ease-in);
-	} 
+	}
 
 	.attachment-homepage-thumb:hover {
 		//@include box-shadow($barjeel-blue 0px 0px 0px 20px);
 
-	} 
+	}
 
 	img.alignright {float:right; margin:0 0 1em 1em}
 	img.alignleft {float:left; margin:0 1em 1em 0}

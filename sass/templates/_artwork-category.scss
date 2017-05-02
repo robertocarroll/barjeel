@@ -270,11 +270,9 @@ flex-wrap: wrap;
 /* For the circle rollovers  */
 
 .vignette img {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  @include transition-property(border);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease-in-out);
 }
 
 .vignette img:hover {

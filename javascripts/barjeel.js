@@ -57,13 +57,13 @@ $(document).on("click", "#close-menu", function (e) {
         jPM.close();
 
         $( "#close-menu" ).remove();
-        
+
         e.preventDefault();
     });
 
 function movePagination () {
 
-  var pagination = $(".pagination-wrapper"); 
+  var pagination = $(".pagination-wrapper");
   $(pagination).remove();
   $(pagination).insertAfter( "#content" );
   paginationMove = true;
@@ -72,7 +72,7 @@ function movePagination () {
 
 function movePaginationBack () {
 
-  var pagination = $(".pagination-wrapper"); 
+  var pagination = $(".pagination-wrapper");
   $(pagination).remove();
   $(pagination).insertAfter( ".browse-wrapper" );
   paginationMove = false;
@@ -112,10 +112,10 @@ jRes.addFunc({
 
         if(paginationMove){
           movePaginationBack();
-        }  
+        }
       }
-  }); 
-      
+  });
+
 jRes.addFunc({
     breakpoint: 'large',
     enter: function() {
@@ -211,87 +211,4 @@ $.each(list.letters, function(i, letter){
     });
     $("#list").append($("<li/>").append($("<a/>").attr("name", letter.toLowerCase()).addClass("title").html(letter)).append(ul));
 });
-});
-
-
-/*! For the isotope layout on the artwork page */
-
-jQuery(document).ready(function($){
-
-      var $containerArtwork = $('#sortArtwork');
-
-     $containerArtwork.imagesLoaded( function(){
-       // initialize Isotope
-
-          $containerArtwork.isotope({
-          // options...
-          resizable: false, // disable normal resizing
-          // set columnWidth to a percentage of container width
-            masonry: { columnWidth: $containerArtwork.width() / 4 }
-        });
-
-      // update columnWidth on window resize
-      $(window).smartresize(function(){
-        $containerArtwork.isotope({
-          // update columnWidth to a percentage of container width
-          masonry: { columnWidth: $containerArtwork.width() / 4 }
-        });
-      });
-
-});
-
-});
-
-
-/*! For the isotope layout on the collection page */
-
-jQuery(document).ready(function($){
-     var $container = $('#sort');
-
-     $(window).resize(function(){
-        var current_width = $(window).width();
-    });
-
-      if(current_width < 1168){
-
-        isotope_columns = 2;
-      }
-
-      else {isotope_columns = 3;}
-
-    $container.imagesLoaded( function(){
-
-        $container.show();
-
-          $container.isotope({
-              resizable: false, // disable normal resizing
-              itemSelector : '.box-ms',
-              layoutMode : 'masonry',
-             masonry: {
-            columnWidth: $container.width() / isotope_columns
-          },
-          animationEngine : 'best-available'
-        });
-
-});
-
-// update columnWidth on window resize
-$(window).smartresize(function(){
-
-  var current_width = $(window).width();
-
-    if(current_width < 1168){
-
-        isotope_columns = 2;
-      }
-
-      else {isotope_columns = 3;}
-
-  $container.isotope({
-    // update columnWidth to a percentage of container width
-    masonry: { columnWidth: $container.width() / isotope_columns }
-  });
-
-});
-
 });

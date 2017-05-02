@@ -7,11 +7,11 @@
 		padding-bottom: $base-spacing-unit;
 		padding-top: $half-spacing-unit;
 
-		@include respond-to(mobile) { 
+		@include respond-to(mobile) {
       		padding-bottom: 0;
       		text-align: center;
-	    } 	
-	}	
+	    }
+	}
 
 	.entry-title-page {
 		@extend .bold;
@@ -21,7 +21,7 @@
 		color: $barjeel-grey;
 		line-height: $big-line-height;
 
-		@include respond-to(mobile) { 
+		@include respond-to(mobile) {
 	     text-align: center;
     	}
 	}
@@ -34,23 +34,23 @@
 	.country-list > li.cat-item:after, .children > li.cat-item:after  {
  		display: none;
 
- 	}	
+ 	}
 
 	.page-content {
 		@extend .white;
 		@include gs-span(da, 2, 5, (2, 5));
-		padding-bottom: $base-spacing-unit;		
+		padding-bottom: $base-spacing-unit;
 	}
 
 	.page-image {
 		@include gs-span(da, 2, 3, (2, 5));
 
-	@include respond-to(mobile) { 
+	@include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
       text-align: center;
-    } 
-		
+    }
+
 	}
 
 	.page-text {
@@ -59,18 +59,18 @@
 		@include gs-pad (da, padfull);
 		@extend .cf;
 
-	@include respond-to(mobile) { 
+	@include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
-    } 
+    }
 	}
 
 	.entry-content {
 		padding-top: $base-spacing-unit;
 
-	@include respond-to(mobile) { 
+	@include respond-to(mobile) {
       padding-#{$dir}: $half-spacing-unit;
-    } 	
+    }
 
 	}
 
@@ -103,13 +103,13 @@
 		padding-right: $half-spacing-unit;
 	}
 
-	.visit-table  { 
+	.visit-table  {
    		margin-bottom: $base-spacing-unit*2;
 	}
 
 	.visit-table th, td {
    		padding:1px;
- 
+
 	}
 
 	.visit-guide {
@@ -125,7 +125,7 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: normal;
-}	
+}
 
 .download-page {
 	padding-top: $base-spacing-unit;

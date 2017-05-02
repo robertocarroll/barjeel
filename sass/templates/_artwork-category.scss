@@ -1,10 +1,10 @@
 /*------------------------------------*\
-    $Artwork category
+  $Artwork category
 \*------------------------------------*/
 
 .page-header {
-	@extend .cf;
-	padding-bottom: $base-spacing-unit * 2;
+  @extend .cf;
+  padding-bottom: $base-spacing-unit * 2;
 }
 
 .collection-non-arab-art {
@@ -18,8 +18,8 @@
 }
 
 .collection-meta {
-	@include gs-span(da, 2, 5, (2, 5));
-	padding-bottom: $half-spacing-unit;
+  @include gs-span(da, 2, 5, (2, 5));
+  padding-bottom: $half-spacing-unit;
 }
 
 .collection-meta-non-arab {
@@ -27,8 +27,8 @@
 }
 
 .collection-details {
-	@include gs-span(da, 5, 5, (2, 5));
-	padding-bottom: $half-spacing-unit;
+  @include gs-span(da, 5, 5, (2, 5));
+  padding-bottom: $half-spacing-unit;
 
   @include respond-to(mobile) {
     @include gs-span(m, all);
@@ -37,218 +37,209 @@
   }
 }
 
-	.sort-collection {
-		@include gs-span(da, 3, 4, (2, 5));
-		text-align:$opdir;
+.sort-collection {
+	@include gs-span(da, 3, 4, (2, 5));
+	text-align:$opdir;
 
-		  @include respond-to(mobile) {
-      @include gs-span(m, all);
-      clear: both;
-      text-align: center;
-    	}
-	}
-
-  .sort-collection-non-arab {
-    @include gs-span(da, 3, 4, (2, 4));
-    text-align:$opdir;
-    clear:both;
-    padding-bottom: $base-spacing-unit;
-
-      @include respond-to(mobile) {
-      @include gs-span(m, all);
-      clear: both;
-      text-align: center;
-      }
+	@include respond-to(mobile) {
+    @include gs-span(m, all);
+    clear: both;
+    text-align: center;
   }
+}
 
-	.filter-collection {
-			display: inline;
-		}
+.sort-collection-non-arab {
+  @include gs-span(da, 3, 4, (2, 4));
+  text-align:$opdir;
+  clear:both;
+  padding-bottom: $base-spacing-unit;
 
-	.filter-collection > li {
-		margin-bottom:0;
+    @include respond-to(mobile) {
+    @include gs-span(m, all);
+    clear: both;
+    text-align: center;
+    }
+}
 
+.filter-collection {
+		display: inline;
 	}
 
-	.filter-title {
-		float: $dir;
+.filter-collection > li {
+	margin-bottom:0;
 
-		  @include respond-to(mobile) {
-		  	float: none;
-      text-align: center;
-    	}
+}
+
+.filter-title {
+	float: $dir;
+
+	  @include respond-to(mobile) {
+	  	float: none;
+    text-align: center;
+  	}
+}
+
+
+.sort-title {
+	float:$dir;
+}
+
+
+.filter-sort-menu {
+	@include gs-span(da, 2, 3, (2, 5));
+	padding-bottom: $quarter-spacing-unit;
+
+	  @include respond-to(mobile) {
+    @include gs-span(m, all);
+    display: none;
+  	}
+}
+
+.collection-details h2 {
+	line-height: 6px;
+}
+
+.top-menu-sort {
+	display: inline-block;
+	margin-bottom: 0;
+	padding-#{$opdir}: $quarter-spacing-unit;
+}
+
+.top-menu {
+	display: block;
+	margin-bottom: 0;
+	padding-#{$opdir}: $quarter-spacing-unit;
+	clear: both;
+}
+
+.top-menu > li:after  {
+		content: "/";
+		color: $barjeel-grey;
+		padding-left: $quarter-spacing-unit;
+		padding-right: $quarter-spacing-unit;
 	}
 
-
-	.sort-title {
-		float:$dir;
+.top-menu > li:last-child:after {
+		display: none;
 	}
-
-
-	.filter-sort-menu {
-		@include gs-span(da, 2, 3, (2, 5));
-		padding-bottom: $quarter-spacing-unit;
-
-		  @include respond-to(mobile) {
-      @include gs-span(m, all);
-      display: none;
-    	}
-	}
-
-	.collection-details h2 {
-		line-height: 6px;
-	}
-
-	.top-menu-sort {
-		display: inline-block;
-		margin-bottom: 0;
-		padding-#{$opdir}: $quarter-spacing-unit;
-	}
-
-	.top-menu {
-		display: block;
-		margin-bottom: 0;
-		padding-#{$opdir}: $quarter-spacing-unit;
-		clear: both;
-	}
-
-	.top-menu > li:after  {
- 		content: "/";
- 		color: $barjeel-grey;
- 		padding-left: $quarter-spacing-unit;
- 		padding-right: $quarter-spacing-unit;
- 	}
-
-	.top-menu > li:last-child:after {
- 		display: none;
- 	}
 
 
 
 .artwork-list {
-  clear: left;
+clear: left;
 }
 
 .category-non-arab-art {
-  padding-bottom: 2*$base-spacing-unit;
+padding-bottom: 2*$base-spacing-unit;
 }
 
 .thumbnail-image-non-arab {
-    background: white;
-  }
-
-
-
-
-
-	img.attachment-cropped-thumb {
-  	z-index: -1;
- 	 position: relative;
+  background: white;
 }
 
-	.browse {
-		@include gs-span(da, 5, 5, (2, 5));
-		@extend .cf;
+.browse {
+	@include gs-span(da, 5, 5, (2, 5));
+	@extend .cf;
 
-		  @include respond-to(mobile) {
-      @include gs-span(m, all);
-      clear: both;
-      text-align: center;
-    	}
+	  @include respond-to(mobile) {
+    @include gs-span(m, all);
+    clear: both;
+    text-align: center;
+  	}
+}
+
+.artwork-title {
+	@extend .bold;
+	@extend .small;
+	padding-top: $half-spacing-unit;
+	margin: 0;
+
+}
+
+.artist-name {
+	padding-top: 0;
+	@extend .artwork-title;
+}
+
+.artwork-meta {
+	@extend .micro;
+	@extend .nav;
+
+}
+
+.artwork-meta > li {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+	.artwork-meta > li:after {
+		content: " / ";
 	}
 
-	.artwork-title {
-		@extend .bold;
-		@extend .small;
-		padding-top: $half-spacing-unit;
-		margin: 0;
-
+.artwork-meta > li:last-child:after {
+		display: none;
 	}
 
-	.artist-name {
-		padding-top: 0;
-		@extend .artwork-title;
+	/* Makes the "see more" blue  */
+
+	.menu-item-772 a, .menu-item-775 a {
+		color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);
 	}
 
-	.artwork-meta {
-		@extend .micro;
-		@extend .nav;
-
+	.menu-item-772 a:hover, .menu-item-775 a:hover {
+		color: $barjeel-link-blue !important; text-decoration: none;
 	}
 
-	.artwork-meta > li {
-		padding: 0;
-		margin: 0;
-		text-transform: uppercase;
+	#menu-by-artist > li, #menu-by-country > li,  #menu-by-medium > li {
+		margin-bottom: $quarter-spacing-unit;
 	}
 
- 	.artwork-meta > li:after {
- 		content: " / ";
- 	}
+	.browse-title {
+	@extend .bold;
+	@extend .small;
+	padding-bottom: $base-spacing-unit;
+	margin: 0;
+	color: $barjeel-blue;
+	text-transform: uppercase;
+}
 
-	.artwork-meta > li:last-child:after {
- 		display: none;
- 	}
-
- 	/* Makes the "see more" blue  */
-
- 	.menu-item-772 a, .menu-item-775 a {
- 		color: $barjeel-blue; text-decoration: none; @include transition(color, 0.5s, ease-out);
- 	}
-
- 	.menu-item-772 a:hover, .menu-item-775 a:hover {
- 		color: $barjeel-link-blue !important; text-decoration: none;
- 	}
-
- 	#menu-by-artist > li, #menu-by-country > li,  #menu-by-medium > li {
- 		margin-bottom: $quarter-spacing-unit;
- 	}
-
- 	.browse-title {
-		@extend .bold;
-		@extend .small;
-		padding-bottom: $base-spacing-unit;
-		margin: 0;
-		color: $barjeel-blue;
-		text-transform: uppercase;
-	}
-
-	.list-title {
-		@extend .bold;
-		@extend .small;
-		padding-bottom: $half-spacing-unit;
-		margin: 0;
-		color: $barjeel-grey;
-	}
+.list-title {
+	@extend .bold;
+	@extend .small;
+	padding-bottom: $half-spacing-unit;
+	margin: 0;
+	color: $barjeel-grey;
+}
 
 .video-thumb  {
-   display: block;
-   background: url(../images/icon-video.png) no-repeat;
-   z-index:200;
+ display: block;
+ background: url(../images/icon-video.png) no-repeat;
+ z-index:200;
 }
 
 
 #sort {
 
-  @include gs-span(da, 2, 4, (2, 5));
+@include gs-span(da, 2, 4, (2, 5));
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+@include respond-to(mobile) {
+  @include gs-span(m, all);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-
-  @include respond-to(mobile) {
-    @include gs-span(m, all);
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
+  align-items: center;
+  justify-content: center;
+}
 }
 
 .box-ms {
@@ -270,14 +261,23 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
   margin-right: 1%;
   width: 11rem;
 }
 
 /* For the circle rollovers  */
 
-.vignette:hover {
-  @include box-shadow (rgba($barjeel-blue, $barjeel-hover-opacity) 0 0 0px $half-spacing-unit inset);
-  border-radius: 50%;
+.vignette img {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.vignette img:hover {
+  border: $half-spacing-unit, solid rgba($barjeel-blue, $barjeel-hover-opacity);
 }
 

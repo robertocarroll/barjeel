@@ -219,7 +219,7 @@ padding-bottom: 2*$base-spacing-unit;
 }
 
 
-#sort {
+#sort, #sortArtwork {
 
 @include gs-span(da, 2, 4, (2, 5));
 display: -webkit-flex;

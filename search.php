@@ -13,8 +13,9 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) : ?>
 
-					<h2 class="zeta light gray margin-bottom"><?php $key = wp_specialchars($s, 1); echo 'Your search for <span class="bold uppercase">' . $key . ' </span>received ' . $wp_query->found_posts . ' results'; ?></h2>
-		
+					<h2 class="zeta light gray margin-bottom">
+            <?php $key = wp_specialchars($s, 1); echo 'Your search for <span class="bold uppercase">' . $key . ' </span>received ' . $wp_query->found_posts . ' results'; ?></h2>
+
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -23,9 +24,9 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 				<div style="clear:both;"></div>
-				
+
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
-					
+
 					<?php } ?>
 
 			<?php else : ?>

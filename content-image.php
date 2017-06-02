@@ -121,6 +121,11 @@
       <?php echo '<li class="meta-link">Origin: '.$country.'</li> '; ?>
       <?php } ?>
 
+      <?php $artwork_year = get_the_term_list( get_the_ID(), 'artwork-year') ?>
+      <?php if ( $artwork_year ) { ?>
+        <?php echo '<li class="meta-link">Year: '.$artwork_year.'</li> '; ?>
+      <?php } ?>
+
       </ul>
   </div>
 </div><!-- .meta -->

@@ -813,7 +813,7 @@ add_action( 'pre_get_posts', 'be_change_event_posts_per_page' );
 function be_change_event_posts_per_page( $query ) {
 
 	if( $query->is_main_query() && !is_admin() && is_category( 'exhibitions' ) ) {
-		$query->set( 'posts_per_page', '8' );
+		$query->set( 'posts_per_page', '18' );
 		$query-> set('tag__not_in',array(173));
 	}
 

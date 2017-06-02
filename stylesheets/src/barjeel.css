@@ -828,7 +828,7 @@ h3, .gamma, .search-title {
 }
 
 /* line 20, ../../sass/inuit/base/_headings.scss */
-h4, .delta, .colour-title {
+h4, .delta, .category-description, .colour-title {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.33333;
@@ -842,7 +842,7 @@ h5, .epsilon, .entry-title, .entry-meta, .entry-meta-artist, .related-title, .ex
 }
 
 /* line 26, ../../sass/inuit/base/_headings.scss */
-h6, .zeta, .twitter-tweet p, .category-description, .meta-news {
+h6, .zeta, .twitter-tweet p, .meta-news {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.71429;
@@ -5237,6 +5237,10 @@ a:hover.menu-trigger {
   }
 }
 
+/* line 30, ../../sass/templates/_news-category.scss */
+.category-description {
+  line-height: 1.5;
+}
 @media only screen and (max-width: 695px) {
   /* line 30, ../../sass/templates/_news-category.scss */
   .category-description {
@@ -6251,7 +6255,7 @@ a.rsLink {
 
 @media only screen and (min-width: 696px) and (max-width: 960px) {
   /* line 19, ../../sass/templates/_typography.scss */
-  h4, .delta, .colour-title {
+  h4, .delta, .category-description, .colour-title {
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 1.33333;
@@ -6269,7 +6273,7 @@ a.rsLink {
 
 @media only screen and (min-width: 696px) and (max-width: 960px) {
   /* line 27, ../../sass/templates/_typography.scss */
-  h6, .zeta, .twitter-tweet p, .category-description, .meta-news {
+  h6, .zeta, .twitter-tweet p, .meta-news {
     font-size: 14px;
     font-size: 0.875rem;
     line-height: 1.71429;

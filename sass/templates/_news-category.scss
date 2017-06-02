@@ -1,16 +1,16 @@
 /*------------------------------------*\
     $News-category
 \*------------------------------------*/
-	
+
 	.filter-sort-menu-wide {
 		@include gs-span(da, 2, 4, (2, 5));
 		padding-bottom: $quarter-spacing-unit;
 
-		  @include respond-to(mobile) { 
+		  @include respond-to(mobile) {
       @include gs-span(m, all);
       clear: both;
       text-align: center;
-    	} 
+    	}
 	}
 
 	.news-list {
@@ -18,24 +18,24 @@
 		clear: both;
     margin-top: $base-spacing-unit;
 
-		@include respond-to(mobile) { 
-      
+		@include respond-to(mobile) {
+
       @include gs-span(m, all);
       clear: both;
- 
+
     }
 
 	}
 
 .category-description {
-  @extend .zeta; 
-  @extend .light; 
+  @extend .delta;
+  @extend .light;
   @extend .gray;
+  line-height: 1.5;
 
-  @include respond-to(mobile) { 
+  @include respond-to(mobile) {
     text-align: center;
-
-    }
+  }
 
 }
 
@@ -47,10 +47,10 @@
 		@extend .white;
 		clear: both;
 
-		@include respond-to(mobile) { 
+		@include respond-to(mobile) {
     @include gs-span(m, all);
       clear: both;
-      text-align: center;  
+      text-align: center;
     }
 
 	}
@@ -59,19 +59,19 @@
 	.news-image {
 		@include gs-span(da, 2, 2, (2, 4));
 
-		@include respond-to(mobile) { 
+		@include respond-to(mobile) {
 		    @include gs-span(m, all);
-        text-align: center; 
+        text-align: center;
 	    }
-		
+
 	}
 
 	.news-text {
-		@include gs-span(da, 3, 4, (2, 4));		
+		@include gs-span(da, 3, 4, (2, 4));
 		@extend .cf;
 		padding-top: $half-spacing-unit;
 
-		@include respond-to(mobile) { 
+		@include respond-to(mobile) {
    			@include gs-span(m, all);
    			clear: both;
  	    }
@@ -87,11 +87,11 @@
  		color: $barjeel-grey;
  		padding-left: $quarter-spacing-unit;
  		padding-right: $quarter-spacing-unit;
- 	} 
+ 	}
 
 	.meta-news > li:last-child:after, li.cat-item:last-child:after {
  		display: none;
- 	} 
+ 	}
 
  	.meta-news > li a {
  		font-weight: normal !important;
@@ -110,5 +110,5 @@
  	 }
 
  	 .permalink {
-		word-wrap: break-word; 
-	}	
+		word-wrap: break-word;
+	}

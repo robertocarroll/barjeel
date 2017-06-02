@@ -1,24 +1,18 @@
 <?php
 /*
 Template Name: Contact page
-
 */
 ?>
 
 <?php get_header(); ?>
-		
-	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
-  	
-	<script type="text/javascript">
-	  	
-		/*
-		Global
-		*/
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript">
+/*
+  Global
+*/
 var map;
-	
-	function initialize() {
-
-			 // Create an array of styles.
+function initialize() {
+// Create an array of styles.
   var styles = [
   {
     featureType: "water",
@@ -95,7 +89,7 @@ var map;
 			    center: new google.maps.LatLng(25.329006, 55.366824),
 			    zoomControlOptions: {
     style: google.maps.ZoomControlStyle.SMALL
-  },	
+  },
 			    mapTypeControl: false,
 				scaleControl: false,
 				streetViewControl: false,
@@ -104,7 +98,6 @@ var map;
 				disableDoubleClickZoom: true,     //disable zooming
 				scrollwheel: false
   		};
-  
 
   var map = new google.maps.Map(document.getElementById('map_canvas'),
     mapOptions);
@@ -113,34 +106,25 @@ var map;
   map.mapTypes.set('map_style', styledMap);
   map.setMapTypeId('map_style');
 
+  var image = '<?php echo get_template_directory_uri(); ?>/images/custom.png';
+  var myLatLng = new google.maps.LatLng(25.322311,55.376234); //add new marker
+  var barjeelMarker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: image
+  });
+}//end initialize
 
-			var image = '<?php echo get_template_directory_uri(); ?>/images/custom.png';
-			var myLatLng = new google.maps.LatLng(25.322311,55.376234); //add new marker
-			var barjeelMarker = new google.maps.Marker({
-				      position: myLatLng,
-				      map: map,
-				      icon: image
-				  });
-			
-	
-		}//end initialize
+google.maps.event.addDomListener(window, "load", initialize);
+</script>
 
-		google.maps.event.addDomListener(window, "load", initialize); 
-	
-	</script>
+<!--Google Maps APIv3 -->
+<div id="map_canvas" ></div>
 
-<!--Google Maps APIv3 -->	
-
-		<div id="map_canvas" ></div>	
-
-	<div class="full-page white">	
+<div class="full-page white">
 
     <?php while ( have_posts() ) : the_post(); ?>
-
-	     <?php the_content(); ?>	
-
-	 <?php endwhile; // end of the loop. ?>
-
-	</div><!-- .full-page -->
-		
+      <?php the_content(); ?>
+    <?php endwhile; // end of the loop. ?>
+  </div><!-- .full-page -->
 <?php get_footer(); ?>

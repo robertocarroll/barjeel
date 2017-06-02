@@ -4,33 +4,28 @@
 
 
 .full-page {
-		@include gs-span(da, 2, 5, (2, 5));	
-		
-		@extend .cf;
-		padding: $base-spacing-unit;
-
-		@include respond-to(mobile) { 
-	     @include gs-pad (m, padinfull);
-	     @include gs-span(m, all);	    
-     }
-	}
+  @include gs-span(da, 2, 5, (2, 5));
+  @extend .cf;
+  padding: $base-spacing-unit;
+  @include respond-to(mobile) {
+    @include gs-pad (m, padinfull);
+    @include gs-span(m, all);
+  }
+}
 
 .main-text {
-  @include column-count(2);
-  clear:both;
-  padding-top: $base-spacing-unit;
+  @include gs-span(da, 2, 3, (2, 5));
+  @extend .cf;
+  @include respond-to(mobile) {
+    @include gs-span(m, all);
+  }
 
-  @include respond-to(mobile) { 
-       @include column-count(1);
-      }
-
-} 
+}
 
 
 #map_canvas {
 	width:100%;
 	height: 400px;
-	
 }
 
 #map_canvas img{max-width: inherit;}
@@ -42,62 +37,60 @@
 
 
 .address {
-   @include gs-span(da, 2, 2, (2, 5));
+   @include gs-span(da, 4, 5, (2, 5));
 
-   @include respond-to(mobile) { 
-       @include gs-pad (m, padinfull);
-       @include gs-span(m, all);   
-       clear:both;   
-       text-align: center;
-       padding-bottom: $base-spacing-unit;
+   @include respond-to(mobile) {
+       @include gs-span(m, all);
+       clear:both;
      }
+}
+
+.address-inner {
+  border: $half-spacing-unit solid $barjeel-blue;
+  border-radius: $half-spacing-unit + 4;
+  margin-bottom: $base-spacing-unit;
+  padding-top: $half-spacing-unit;
+
+  @include respond-to(mobile) {
+    padding: $half-spacing-unit;
+  }
 }
 
 .visit-sharjah-badge {
    @include gs-span(da, 3, 3, (2, 5));
 
-   @include respond-to(mobile) { 
+   @include respond-to(mobile) {
        @include gs-pad (m, padinfull);
-       @include gs-span(m, all);   
-       clear:both;   
+       @include gs-span(m, all);
+       clear:both;
        text-align: center;
        padding-bottom: $base-spacing-unit;
      }
 }
 
 .portrait-one {
-   @include gs-span(da, 4, 4, (2, 5));
+   @include gs-span(da, 2, 3, (2, 5));
    padding-bottom: $base-spacing-unit;
-
-   @include respond-to(mobile) { 
-       @include gs-pad (m, padinfull);
-       @include gs-span(m, all);   
-       clear:both;   
-       
-     }
 }
 
 .portrait-two {
-   @include gs-span(da, 5, 5, (2, 5));
+   @include gs-span(da, 4, 5, (2, 5));
    padding-bottom: $base-spacing-unit;
+}
 
-   @include respond-to(mobile) { 
-       @include gs-pad (m, padinfull);
-       @include gs-span(m, all);   
-       clear:both;   
-
-     }
+.portrait-clear {
+  clear: both;
 }
 
 /* ribbon style */
 
  .ribbon {
-	position:relative; 
+	position:relative;
 }
 
  .ribbon-image {
- 	border-radius: 50%; 
- 	position:absolute; 
+ 	border-radius: 50%;
+ 	position:absolute;
  	top: -50%;}
 
  .ribbon-wrapper {
@@ -106,7 +99,7 @@
 	/* @include rotate(-15deg); */
 }
   .ribbon-front {
-	background-color: $barjeel-red;	
+	background-color: $barjeel-red;
 	height: 36px;
 	width: 224px;
 	position: relative;

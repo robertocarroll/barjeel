@@ -702,16 +702,16 @@ textarea:focus {
  * and over in your markup.
  */
 /* line 9, ../../sass/inuit/generic/_clearfix.scss */
-.cf, .nav, .artwork-meta, .entry-meta, .entry-meta-artist, .exhibition-meta-list, #menu-footer-menu, .media, .page-header, .browse, .full-page, footer[role="contentinfo"], .widget_featured_post_widget, .news-text, .page-text, #page {
+.cf, .nav, .artwork-meta, .entry-meta, .entry-meta-artist, .exhibition-meta-list, #menu-footer-menu, .media, .page-header, .browse, .full-page, .main-text, footer[role="contentinfo"], .widget_featured_post_widget, .news-text, .page-text, #page {
   zoom: 1;
 }
 /* line 12, ../../sass/inuit/generic/_clearfix.scss */
-.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .entry-meta-artist:before, .exhibition-meta-list:before, #menu-footer-menu:before, .media:before, .page-header:before, .browse:before, .full-page:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .news-text:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .entry-meta-artist:after, .exhibition-meta-list:after, #menu-footer-menu:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .news-text:after, .page-text:after, #page:after {
+.cf:before, .nav:before, .artwork-meta:before, .entry-meta:before, .entry-meta-artist:before, .exhibition-meta-list:before, #menu-footer-menu:before, .media:before, .page-header:before, .browse:before, .full-page:before, .main-text:before, footer[role="contentinfo"]:before, .widget_featured_post_widget:before, .news-text:before, .page-text:before, #page:before, .cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .entry-meta-artist:after, .exhibition-meta-list:after, #menu-footer-menu:after, .media:after, .page-header:after, .browse:after, .full-page:after, .main-text:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .news-text:after, .page-text:after, #page:after {
   content: " ";
   display: table;
 }
 /* line 18, ../../sass/inuit/generic/_clearfix.scss */
-.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .entry-meta-artist:after, .exhibition-meta-list:after, #menu-footer-menu:after, .media:after, .page-header:after, .browse:after, .full-page:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .news-text:after, .page-text:after, #page:after {
+.cf:after, .nav:after, .artwork-meta:after, .entry-meta:after, .entry-meta-artist:after, .exhibition-meta-list:after, #menu-footer-menu:after, .media:after, .page-header:after, .browse:after, .full-page:after, .main-text:after, footer[role="contentinfo"]:after, .widget_featured_post_widget:after, .news-text:after, .page-text:after, #page:after {
   clear: both;
 }
 
@@ -2718,68 +2718,77 @@ input::-moz-focus-inner {
   }
 }
 
-/* line 18, ../../sass/templates/_contact.scss */
+/* line 16, ../../sass/templates/_contact.scss */
 .main-text {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2;
-  clear: both;
-  padding-top: 24px;
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 48.67525%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 18, ../../sass/templates/_contact.scss */
+  /* line 16, ../../sass/templates/_contact.scss */
   .main-text {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
+    clear: both;
+    display: block;
+    float: left;
+    margin-left: 0;
+    width: 100%;
   }
 }
 
-/* line 30, ../../sass/templates/_contact.scss */
+/* line 26, ../../sass/templates/_contact.scss */
 #map_canvas {
   width: 100%;
   height: 400px;
 }
 
-/* line 36, ../../sass/templates/_contact.scss */
+/* line 31, ../../sass/templates/_contact.scss */
 #map_canvas img {
   max-width: inherit;
 }
 
-/* line 38, ../../sass/templates/_contact.scss */
+/* line 33, ../../sass/templates/_contact.scss */
 .keeptogether {
   display: inline-block;
   width: 100%;
 }
 
-/* line 44, ../../sass/templates/_contact.scss */
+/* line 39, ../../sass/templates/_contact.scss */
 .address {
   display: block;
   float: left;
-  margin-left: 0%;
+  margin-left: 51.33989%;
   margin-right: -100%;
-  width: 23.01287%;
+  width: 48.66011%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 44, ../../sass/templates/_contact.scss */
+  /* line 39, ../../sass/templates/_contact.scss */
   .address {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 6.25%;
-    padding-right: 6.25%;
     clear: both;
     display: block;
     float: left;
     margin-left: 0;
     width: 100%;
     clear: both;
-    text-align: center;
-    padding-bottom: 24px;
   }
 }
 
-/* line 56, ../../sass/templates/_contact.scss */
+/* line 48, ../../sass/templates/_contact.scss */
+.address-inner {
+  border: 12px solid #66BBDD;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding-top: 12px;
+}
+@media only screen and (max-width: 695px) {
+  /* line 48, ../../sass/templates/_contact.scss */
+  .address-inner {
+    padding: 12px;
+  }
+}
+
+/* line 59, ../../sass/templates/_contact.scss */
 .visit-sharjah-badge {
   display: block;
   float: left;
@@ -2788,7 +2797,7 @@ input::-moz-focus-inner {
   width: 22.99773%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 56, ../../sass/templates/_contact.scss */
+  /* line 59, ../../sass/templates/_contact.scss */
   .visit-sharjah-badge {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2806,79 +2815,52 @@ input::-moz-focus-inner {
   }
 }
 
-/* line 68, ../../sass/templates/_contact.scss */
+/* line 71, ../../sass/templates/_contact.scss */
 .portrait-one {
+  display: block;
+  float: left;
+  margin-left: 0%;
+  margin-right: -100%;
+  width: 48.67525%;
+  padding-bottom: 24px;
+}
+
+/* line 76, ../../sass/templates/_contact.scss */
+.portrait-two {
   display: block;
   float: left;
   margin-left: 51.33989%;
   margin-right: -100%;
-  width: 22.99773%;
+  width: 48.66011%;
   padding-bottom: 24px;
-}
-@media only screen and (max-width: 695px) {
-  /* line 68, ../../sass/templates/_contact.scss */
-  .portrait-one {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 6.25%;
-    padding-right: 6.25%;
-    clear: both;
-    display: block;
-    float: left;
-    margin-left: 0;
-    width: 100%;
-    clear: both;
-  }
 }
 
-/* line 80, ../../sass/templates/_contact.scss */
-.portrait-two {
-  display: block;
-  float: left;
-  margin-left: 77.00227%;
-  margin-right: -100%;
-  width: 22.99773%;
-  padding-bottom: 24px;
-}
-@media only screen and (max-width: 695px) {
-  /* line 80, ../../sass/templates/_contact.scss */
-  .portrait-two {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 6.25%;
-    padding-right: 6.25%;
-    clear: both;
-    display: block;
-    float: left;
-    margin-left: 0;
-    width: 100%;
-    clear: both;
-  }
+/* line 81, ../../sass/templates/_contact.scss */
+.portrait-clear {
+  clear: both;
 }
 
 /* ribbon style */
-/* line 94, ../../sass/templates/_contact.scss */
+/* line 87, ../../sass/templates/_contact.scss */
 .ribbon {
   position: relative;
 }
 
-/* line 98, ../../sass/templates/_contact.scss */
+/* line 91, ../../sass/templates/_contact.scss */
 .ribbon-image {
   border-radius: 50%;
   position: absolute;
   top: -50%;
 }
 
-/* line 103, ../../sass/templates/_contact.scss */
+/* line 96, ../../sass/templates/_contact.scss */
 .ribbon-wrapper {
   position: relative;
   margin-left: 10px;
   /* @include rotate(-15deg); */
 }
 
-/* line 108, ../../sass/templates/_contact.scss */
+/* line 101, ../../sass/templates/_contact.scss */
 .ribbon-front {
   background-color: #FF3300;
   height: 36px;
@@ -2888,7 +2870,7 @@ input::-moz-focus-inner {
   z-index: 2;
 }
 
-/* line 117, ../../sass/templates/_contact.scss */
+/* line 110, ../../sass/templates/_contact.scss */
 .ribbon-front,
 .ribbon-back-left,
 .ribbon-back-right {
@@ -2897,7 +2879,7 @@ input::-moz-focus-inner {
   box-shadow: rgba(255, 51, 0, 0.7) 0 0 4px;
 }
 
-/* line 124, ../../sass/templates/_contact.scss */
+/* line 117, ../../sass/templates/_contact.scss */
 .ribbon-edge-topleft,
 .ribbon-edge-topright,
 .ribbon-edge-bottomleft,
@@ -2909,49 +2891,49 @@ input::-moz-focus-inner {
   width: 0px;
 }
 
-/* line 139, ../../sass/templates/_contact.scss */
+/* line 132, ../../sass/templates/_contact.scss */
 .ribbon-edge-bottomleft,
 .ribbon-edge-bottomright {
   top: 36px;
 }
 
-/* line 144, ../../sass/templates/_contact.scss */
+/* line 137, ../../sass/templates/_contact.scss */
 .ribbon-edge-topleft,
 .ribbon-edge-bottomleft {
   left: -18px;
   border-color: transparent #cc2900 transparent transparent;
 }
 
-/* line 150, ../../sass/templates/_contact.scss */
+/* line 143, ../../sass/templates/_contact.scss */
 .ribbon-edge-topleft {
   top: -9px;
   border-width: 9px 18px 0 0;
 }
 
-/* line 154, ../../sass/templates/_contact.scss */
+/* line 147, ../../sass/templates/_contact.scss */
 .ribbon-edge-bottomleft {
   border-width: 0 18px 0px 0;
 }
 
-/* line 158, ../../sass/templates/_contact.scss */
+/* line 151, ../../sass/templates/_contact.scss */
 .ribbon-edge-topright,
 .ribbon-edge-bottomright {
   left: 188px;
   border-color: transparent transparent transparent #cc2900;
 }
 
-/* line 164, ../../sass/templates/_contact.scss */
+/* line 157, ../../sass/templates/_contact.scss */
 .ribbon-edge-topright {
   top: -9px;
   border-width: 9px 0 0 18px;
 }
 
-/* line 168, ../../sass/templates/_contact.scss */
+/* line 161, ../../sass/templates/_contact.scss */
 .ribbon-edge-bottomright {
   border-width: 0 0 0px 18px;
 }
 
-/* line 172, ../../sass/templates/_contact.scss */
+/* line 165, ../../sass/templates/_contact.scss */
 .ribbon-back-left {
   position: absolute;
   top: -9px;
@@ -2961,7 +2943,7 @@ input::-moz-focus-inner {
   z-index: 0;
 }
 
-/* line 181, ../../sass/templates/_contact.scss */
+/* line 174, ../../sass/templates/_contact.scss */
 .ribbon-back-right {
   position: absolute;
   top: -9px;
@@ -2971,14 +2953,14 @@ input::-moz-focus-inner {
   z-index: 0;
 }
 
-/* line 191, ../../sass/templates/_contact.scss */
+/* line 184, ../../sass/templates/_contact.scss */
 .ribbon-front h1 {
   text-align: center;
   text-transform: uppercase;
   padding: 12px;
 }
 
-/* line 200, ../../sass/templates/_contact.scss */
+/* line 193, ../../sass/templates/_contact.scss */
 .ribbon-front h1 a {
   color: white;
 }
@@ -6250,7 +6232,7 @@ a.rsLink {
 }
 
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 13, ../../sass/templates/_typography.scss */
+  /* line 11, ../../sass/templates/_typography.scss */
   h2, .beta {
     font-size: 28px;
     font-size: 1.75rem;
@@ -6259,7 +6241,7 @@ a.rsLink {
 }
 
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 18, ../../sass/templates/_typography.scss */
+  /* line 15, ../../sass/templates/_typography.scss */
   h3, .gamma, .search-title {
     font-size: 26px;
     font-size: 1.625rem;
@@ -6268,7 +6250,7 @@ a.rsLink {
 }
 
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 22, ../../sass/templates/_typography.scss */
+  /* line 19, ../../sass/templates/_typography.scss */
   h4, .delta, .colour-title {
     font-size: 18px;
     font-size: 1.125rem;
@@ -6277,7 +6259,7 @@ a.rsLink {
 }
 
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 26, ../../sass/templates/_typography.scss */
+  /* line 23, ../../sass/templates/_typography.scss */
   h5, .epsilon, .entry-title, .entry-meta, .entry-meta-artist, .related-title, .exhibition-meta-list, .widget-title {
     font-size: 16px;
     font-size: 1rem;
@@ -6286,7 +6268,7 @@ a.rsLink {
 }
 
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 30, ../../sass/templates/_typography.scss */
+  /* line 27, ../../sass/templates/_typography.scss */
   h6, .zeta, .twitter-tweet p, .category-description, .meta-news {
     font-size: 14px;
     font-size: 0.875rem;
@@ -6294,7 +6276,7 @@ a.rsLink {
   }
 }
 
-/* line 35, ../../sass/templates/_typography.scss */
+/* line 32, ../../sass/templates/_typography.scss */
 p {
   color: #555555;
   font-family: "adelle-sans",sans-serif;
@@ -6302,95 +6284,95 @@ p {
   font-weight: 400;
 }
 
-/* line 43, ../../sass/templates/_typography.scss */
+/* line 40, ../../sass/templates/_typography.scss */
 .mid-line {
   line-height: 24px;
 }
 
-/* line 48, ../../sass/templates/_typography.scss */
+/* line 45, ../../sass/templates/_typography.scss */
 .big-line {
   line-height: 32px;
 }
 
-/* line 53, ../../sass/templates/_typography.scss */
+/* line 50, ../../sass/templates/_typography.scss */
 .italic {
   font-style: italic;
 }
 
-/* line 57, ../../sass/templates/_typography.scss */
+/* line 54, ../../sass/templates/_typography.scss */
 .bold, .artwork-title, .artist-name, .browse-title, .list-title, .entry-title, .ribbon-front h1, #menu-footer-menu, .widget-title, .search-title, .entry-title-page, .colour-title {
   font-style: normal;
   font-weight: 700;
 }
 
-/* line 62, ../../sass/templates/_typography.scss */
+/* line 59, ../../sass/templates/_typography.scss */
 .bold-italic {
   font-style: italic;
   font-weight: 700;
 }
 
-/* line 67, ../../sass/templates/_typography.scss */
+/* line 64, ../../sass/templates/_typography.scss */
 .light-italic, .royalCaptionItem {
   font-style: italic;
   font-weight: 300;
 }
 
-/* line 72, ../../sass/templates/_typography.scss */
+/* line 69, ../../sass/templates/_typography.scss */
 .light, .related-title, .category-description, .pagination, .customSelectInner {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 77, ../../sass/templates/_typography.scss */
+/* line 74, ../../sass/templates/_typography.scss */
 .light p, .related-title p, .category-description p, .pagination p, .customSelectInner p {
   font-style: normal;
   font-weight: 300;
 }
 
-/* line 82, ../../sass/templates/_typography.scss */
+/* line 79, ../../sass/templates/_typography.scss */
 .small, .artwork-title, .artist-name, .browse-title, .list-title, .ribbon-front h1, .twitter-tweet, .customSelectInner {
   font-size: 14px;
   line-height: 16px;
 }
 
-/* line 89, ../../sass/templates/_typography.scss */
+/* line 86, ../../sass/templates/_typography.scss */
 .micro, .artwork-meta, .catalogue-caption, #text-5, .copyright, .pagination {
   font-size: 12px;
   line-height: 16px;
 }
 
-/* line 94, ../../sass/templates/_typography.scss */
+/* line 91, ../../sass/templates/_typography.scss */
 .no-padding {
   margin: 0;
 }
 
-/* line 96, ../../sass/templates/_typography.scss */
+/* line 93, ../../sass/templates/_typography.scss */
 .uppercase, .catalogue-caption, #menu-footer-menu, .customSelectInner {
   text-transform: uppercase;
 }
 
 /*  <strong>For emphasizing a snippet of text with important</strong> */
-/* line 99, ../../sass/templates/_typography.scss */
+/* line 96, ../../sass/templates/_typography.scss */
 strong {
   font-style: normal;
   font-weight: 700;
 }
 
 /*  <em>For emphasizing a snippet of text with stress</em> */
-/* line 105, ../../sass/templates/_typography.scss */
+/* line 102, ../../sass/templates/_typography.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
 
 /*  Class for muted text */
-/* line 111, ../../sass/templates/_typography.scss */
+/* line 108, ../../sass/templates/_typography.scss */
 .muted {
   color: #999999;
 }
 
 /*  Defines a thematic change in the content */
-/* line 115, ../../sass/templates/_typography.scss */
+/* line 112, ../../sass/templates/_typography.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -6398,33 +6380,33 @@ hr {
   border-bottom: 1px solid #ffffff;
 }
 
-/*  Stylized implemenation of HTML's <abbr> element for abbreviations and acronyms to show the expanded version on hover. 
-Abbreviations with a title attribute have a light dotted bottom border and a help cursor on hover, 
-providing additional context on hover. 
+/*  Stylized implemenation of HTML's <abbr> element for abbreviations and acronyms to show the expanded version on hover.
+Abbreviations with a title attribute have a light dotted bottom border and a help cursor on hover,
+providing additional context on hover.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 */
-/* line 129, ../../sass/templates/_typography.scss */
+/* line 126, ../../sass/templates/_typography.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 133, ../../sass/templates/_typography.scss */
+/* line 130, ../../sass/templates/_typography.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
 /*  For quoting blocks of content from another source within your document */
-/* line 139, ../../sass/templates/_typography.scss */
+/* line 136, ../../sass/templates/_typography.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
-/* line 145, ../../sass/templates/_typography.scss */
+/* line 142, ../../sass/templates/_typography.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
@@ -6432,14 +6414,14 @@ blockquote p {
   line-height: 25px;
 }
 
-/* line 152, ../../sass/templates/_typography.scss */
+/* line 149, ../../sass/templates/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 
-/* line 158, ../../sass/templates/_typography.scss */
+/* line 155, ../../sass/templates/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
@@ -6447,19 +6429,19 @@ blockquote small:before {
 /*  Add <small> tag for identifying the source. Wrap the name of the source work in <cite>.
 	<small>Someone famous <cite title="Source Title">Source Title</cite></small>
  */
-/* line 166, ../../sass/templates/_typography.scss */
+/* line 163, ../../sass/templates/_typography.scss */
 cite {
   font-style: normal;
 }
 
 /*  <small>For fine print etc.</small> */
-/* line 171, ../../sass/templates/_typography.scss */
+/* line 168, ../../sass/templates/_typography.scss */
 small {
   font-size: 85%;
 }
 
 /* Floated, right-aligned blockquote. */
-/* line 176, ../../sass/templates/_typography.scss */
+/* line 173, ../../sass/templates/_typography.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -6468,23 +6450,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 184, ../../sass/templates/_typography.scss */
+/* line 181, ../../sass/templates/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 188, ../../sass/templates/_typography.scss */
+/* line 185, ../../sass/templates/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 191, ../../sass/templates/_typography.scss */
+/* line 188, ../../sass/templates/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 195, ../../sass/templates/_typography.scss */
+/* line 192, ../../sass/templates/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -6493,7 +6475,7 @@ blockquote:after {
 }
 
 /* Present contact information. Use <br> for line breaks */
-/* line 203, ../../sass/templates/_typography.scss */
+/* line 200, ../../sass/templates/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -6502,7 +6484,7 @@ address {
 }
 
 /* To display code etc. */
-/* line 211, ../../sass/templates/_typography.scss */
+/* line 208, ../../sass/templates/_typography.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -6514,7 +6496,7 @@ pre {
   border-radius: 3px;
 }
 
-/* line 221, ../../sass/templates/_typography.scss */
+/* line 218, ../../sass/templates/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -6522,7 +6504,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 227, ../../sass/templates/_typography.scss */
+/* line 224, ../../sass/templates/_typography.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -6541,12 +6523,12 @@ pre {
   border-radius: 4px;
 }
 
-/* line 244, ../../sass/templates/_typography.scss */
+/* line 241, ../../sass/templates/_typography.scss */
 pre.prettyprint {
   margin-bottom: 20px;
 }
 
-/* line 247, ../../sass/templates/_typography.scss */
+/* line 244, ../../sass/templates/_typography.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -6554,10 +6536,20 @@ pre code {
   border: 0;
 }
 
-/* line 253, ../../sass/templates/_typography.scss */
+/* line 250, ../../sass/templates/_typography.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
+}
+
+/* line 255, ../../sass/templates/_typography.scss */
+.long-word {
+  /* See https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ for further info. */
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 /******************************

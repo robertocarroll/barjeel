@@ -118,7 +118,7 @@
   <ul class="entry-meta">
     <?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
       <?php if ( $country ) { ?>
-      <?php echo '<li class="meta-link">Origin: '.$country.'</li> '; ?>
+      <?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
       <?php } ?>
 
       <?php $artwork_year = get_the_term_list( get_the_ID(), 'artwork-year') ?>

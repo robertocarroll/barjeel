@@ -50,7 +50,7 @@
       <div class="related-artwork pad-1 no-padding-below">
         <?php $artwork_query = new WP_Query( $artwork );  ?>
 
-        <div id="sort">
+        <div id="sortArtwork">
         <?php while ( $artwork_query->have_posts() ) : $artwork_query->the_post(); ?>
         <?php get_template_part('catalogue'); ?>
 

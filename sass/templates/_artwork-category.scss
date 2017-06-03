@@ -195,7 +195,7 @@ padding-bottom: 2*$base-spacing-unit;
 		margin-bottom: $quarter-spacing-unit;
 	}
 
-	.browse-title {
+.browse-title {
 	@extend .bold;
 	@extend .small;
 	padding-bottom: $base-spacing-unit;
@@ -219,7 +219,7 @@ padding-bottom: 2*$base-spacing-unit;
 }
 
 
-#sort, #sortArtwork {
+#sort {
 
 @include gs-span(da, 2, 4, (2, 5));
 display: -webkit-flex;
@@ -240,6 +240,29 @@ flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
+}
+
+#sortArtwork {
+
+@include gs-span(da, 2, 5, (2, 5));
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+
+@include respond-to(mobile) {
+    @include gs-span(m, all);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .box-ms {

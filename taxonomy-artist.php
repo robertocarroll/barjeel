@@ -51,7 +51,7 @@
 
       ?>
 
-      <div class="related-artwork pad-1 no-padding-below">
+      <div id="artwork-section" class="related-artwork pad-1 no-padding-below">
         <?php $artwork_query = new WP_Query( $artwork );  ?>
 
         <div id="sortArtwork">
@@ -95,7 +95,7 @@
       <?php endif; ?>
 
 <div class= "artist-text" id="artist-text">
-  <div class= "margin-below-half">
+  <div id="artist-meta" class= "margin-below-half">
   <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
     if($term->parent > 0)  { ?>
 

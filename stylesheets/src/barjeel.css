@@ -2061,6 +2061,16 @@ ul.entry-meta-artist > li:first-child:before {
 }
 
 /* line 53, ../../sass/templates/_artist.scss */
+#artist-meta {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 2.22222%;
+  padding-right: 2.22222%;
+  margin-left: -6px;
+}
+
+/* line 58, ../../sass/templates/_artist.scss */
 .video-thumb-slider {
   display: block;
   background: url(../images/icon-video-square.png) no-repeat;

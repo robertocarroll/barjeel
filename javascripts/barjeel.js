@@ -26,10 +26,13 @@ jQuery(document).ready(function($){
 
   });
 
+/*! Move the artist meta above the artworks on the artist layout */
+jQuery( document ).ready(function() {
+  jQuery("#artist-meta").insertBefore("#artwork-section");
+});
 
 
 jQuery(document).ready(function($){
-
 var jPM = $.jPanelMenu({
     menu: '#menu-main',
     trigger: '.menu-trigger',

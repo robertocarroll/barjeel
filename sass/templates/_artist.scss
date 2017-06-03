@@ -50,6 +50,11 @@ ul.entry-meta-artist > li:first-child:before {
   @include gs-pad(da, padinfull);
 }
 
+#artist-meta {
+  @include gs-pad(da, padinfull);
+  margin-left: -$quarter-spacing-unit;
+}
+
 .video-thumb-slider  {
   display: block;
   background: url(../images/icon-video-square.png) no-repeat;

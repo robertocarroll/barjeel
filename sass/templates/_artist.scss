@@ -17,6 +17,11 @@
 	padding-bottom: 6px !important;
 }
 
+ul.entry-meta-artist > li:first-child:before {
+  content: "";
+  padding-left: 0;
+}
+
 .rsContent {text-align: center !important; }
 
 .slideshow-video-thumb {

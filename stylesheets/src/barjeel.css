@@ -2011,32 +2011,38 @@ label,
 }
 
 /* line 20, ../../sass/templates/_artist.scss */
+ul.entry-meta-artist > li:first-child:before {
+  content: "";
+  padding-left: 0;
+}
+
+/* line 25, ../../sass/templates/_artist.scss */
 .rsContent {
   text-align: center !important;
 }
 
-/* line 22, ../../sass/templates/_artist.scss */
+/* line 27, ../../sass/templates/_artist.scss */
 .slideshow-video-thumb {
   height: 400px !important;
 }
 
-/* line 26, ../../sass/templates/_artist.scss */
+/* line 31, ../../sass/templates/_artist.scss */
 .artist-title {
   line-height: 24px !important;
   margin-bottom: 6px !important;
 }
 
-/* line 32, ../../sass/templates/_artist.scss */
+/* line 37, ../../sass/templates/_artist.scss */
 .artist-text {
   padding-bottom: 24px;
 }
 
-/* line 36, ../../sass/templates/_artist.scss */
+/* line 41, ../../sass/templates/_artist.scss */
 .artist-list ul li:after {
   display: none;
 }
 
-/* line 40, ../../sass/templates/_artist.scss */
+/* line 45, ../../sass/templates/_artist.scss */
 .artist-header {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2045,7 +2051,7 @@ label,
   padding-right: 2.22222%;
 }
 
-/* line 44, ../../sass/templates/_artist.scss */
+/* line 49, ../../sass/templates/_artist.scss */
 .artist-text {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -2054,7 +2060,7 @@ label,
   padding-right: 2.22222%;
 }
 
-/* line 48, ../../sass/templates/_artist.scss */
+/* line 53, ../../sass/templates/_artist.scss */
 .video-thumb-slider {
   display: block;
   background: url(../images/icon-video-square.png) no-repeat;

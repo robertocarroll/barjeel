@@ -2838,6 +2838,28 @@ input::-moz-focus-inner {
 }
 
 /* line 59, ../../sass/templates/_contact.scss */
+#address-container-mobile {
+  display: none;
+}
+@media only screen and (max-width: 695px) {
+  /* line 59, ../../sass/templates/_contact.scss */
+  #address-container-mobile {
+    display: block;
+  }
+}
+
+/* line 66, ../../sass/templates/_contact.scss */
+#address-container {
+  display: block;
+}
+@media only screen and (max-width: 695px) {
+  /* line 66, ../../sass/templates/_contact.scss */
+  #address-container {
+    display: none;
+  }
+}
+
+/* line 74, ../../sass/templates/_contact.scss */
 .visit-sharjah-badge {
   display: block;
   float: left;
@@ -2846,7 +2868,7 @@ input::-moz-focus-inner {
   width: 22.99773%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 59, ../../sass/templates/_contact.scss */
+  /* line 74, ../../sass/templates/_contact.scss */
   .visit-sharjah-badge {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -2864,7 +2886,7 @@ input::-moz-focus-inner {
   }
 }
 
-/* line 71, ../../sass/templates/_contact.scss */
+/* line 86, ../../sass/templates/_contact.scss */
 .portrait-one {
   display: block;
   float: left;
@@ -2874,7 +2896,7 @@ input::-moz-focus-inner {
   padding-bottom: 24px;
 }
 
-/* line 76, ../../sass/templates/_contact.scss */
+/* line 91, ../../sass/templates/_contact.scss */
 .portrait-two {
   display: block;
   float: left;
@@ -2884,32 +2906,32 @@ input::-moz-focus-inner {
   padding-bottom: 24px;
 }
 
-/* line 81, ../../sass/templates/_contact.scss */
+/* line 96, ../../sass/templates/_contact.scss */
 .portrait-clear {
   clear: both;
 }
 
 /* ribbon style */
-/* line 87, ../../sass/templates/_contact.scss */
+/* line 102, ../../sass/templates/_contact.scss */
 .ribbon {
   position: relative;
 }
 
-/* line 91, ../../sass/templates/_contact.scss */
+/* line 106, ../../sass/templates/_contact.scss */
 .ribbon-image {
   border-radius: 50%;
   position: absolute;
   top: -50%;
 }
 
-/* line 96, ../../sass/templates/_contact.scss */
+/* line 111, ../../sass/templates/_contact.scss */
 .ribbon-wrapper {
   position: relative;
   margin-left: 10px;
   /* @include rotate(-15deg); */
 }
 
-/* line 101, ../../sass/templates/_contact.scss */
+/* line 116, ../../sass/templates/_contact.scss */
 .ribbon-front {
   background-color: #FF3300;
   height: 36px;
@@ -2919,7 +2941,7 @@ input::-moz-focus-inner {
   z-index: 2;
 }
 
-/* line 110, ../../sass/templates/_contact.scss */
+/* line 125, ../../sass/templates/_contact.scss */
 .ribbon-front,
 .ribbon-back-left,
 .ribbon-back-right {
@@ -2928,7 +2950,7 @@ input::-moz-focus-inner {
   box-shadow: rgba(255, 51, 0, 0.7) 0 0 4px;
 }
 
-/* line 117, ../../sass/templates/_contact.scss */
+/* line 132, ../../sass/templates/_contact.scss */
 .ribbon-edge-topleft,
 .ribbon-edge-topright,
 .ribbon-edge-bottomleft,
@@ -2940,49 +2962,49 @@ input::-moz-focus-inner {
   width: 0px;
 }
 
-/* line 132, ../../sass/templates/_contact.scss */
+/* line 147, ../../sass/templates/_contact.scss */
 .ribbon-edge-bottomleft,
 .ribbon-edge-bottomright {
   top: 36px;
 }
 
-/* line 137, ../../sass/templates/_contact.scss */
+/* line 152, ../../sass/templates/_contact.scss */
 .ribbon-edge-topleft,
 .ribbon-edge-bottomleft {
   left: -18px;
   border-color: transparent #cc2900 transparent transparent;
 }
 
-/* line 143, ../../sass/templates/_contact.scss */
+/* line 158, ../../sass/templates/_contact.scss */
 .ribbon-edge-topleft {
   top: -9px;
   border-width: 9px 18px 0 0;
 }
 
-/* line 147, ../../sass/templates/_contact.scss */
+/* line 162, ../../sass/templates/_contact.scss */
 .ribbon-edge-bottomleft {
   border-width: 0 18px 0px 0;
 }
 
-/* line 151, ../../sass/templates/_contact.scss */
+/* line 166, ../../sass/templates/_contact.scss */
 .ribbon-edge-topright,
 .ribbon-edge-bottomright {
   left: 188px;
   border-color: transparent transparent transparent #cc2900;
 }
 
-/* line 157, ../../sass/templates/_contact.scss */
+/* line 172, ../../sass/templates/_contact.scss */
 .ribbon-edge-topright {
   top: -9px;
   border-width: 9px 0 0 18px;
 }
 
-/* line 161, ../../sass/templates/_contact.scss */
+/* line 176, ../../sass/templates/_contact.scss */
 .ribbon-edge-bottomright {
   border-width: 0 0 0px 18px;
 }
 
-/* line 165, ../../sass/templates/_contact.scss */
+/* line 180, ../../sass/templates/_contact.scss */
 .ribbon-back-left {
   position: absolute;
   top: -9px;
@@ -2992,7 +3014,7 @@ input::-moz-focus-inner {
   z-index: 0;
 }
 
-/* line 174, ../../sass/templates/_contact.scss */
+/* line 189, ../../sass/templates/_contact.scss */
 .ribbon-back-right {
   position: absolute;
   top: -9px;
@@ -3002,14 +3024,14 @@ input::-moz-focus-inner {
   z-index: 0;
 }
 
-/* line 184, ../../sass/templates/_contact.scss */
+/* line 199, ../../sass/templates/_contact.scss */
 .ribbon-front h1 {
   text-align: center;
   text-transform: uppercase;
   padding: 12px;
 }
 
-/* line 193, ../../sass/templates/_contact.scss */
+/* line 208, ../../sass/templates/_contact.scss */
 .ribbon-front h1 a {
   color: white;
 }

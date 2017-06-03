@@ -56,6 +56,21 @@
   }
 }
 
+#address-container-mobile {
+  display: none;
+  @include respond-to(mobile) {
+    display: block;
+  }
+}
+
+#address-container{
+  display: block;
+  @include respond-to(mobile) {
+    display: none;
+  }
+}
+
+
 .visit-sharjah-badge {
    @include gs-span(da, 3, 3, (2, 5));
 

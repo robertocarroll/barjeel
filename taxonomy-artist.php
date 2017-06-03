@@ -6,9 +6,13 @@
       <div class="artist-header">
         <h1 class="alpha bold exhibition-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
-        <ul class="exhibition-meta-list artist-detail-link">
-          <li><a href="#artist-text">Details</a></li>
-        </ul>
+        <?php $category_description = category_description();
+         if ( ! empty( $category_description ) ) {
+          print
+            '<ul class="exhibition-meta-list artist-detail-link">
+              <li><a href="#artist-text">Read biography</a></li>
+            </ul>';
+         } ?>
       </div>
 
       <?php
@@ -81,7 +85,7 @@
           sort($unique_exhibitions);
         ?>
 
-        </div><!-- #sort -->
+        </div><!-- #sortArtwork -->
 
         <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
@@ -90,61 +94,47 @@
 
       <?php endif; ?>
 
-      <div class= "artist-text" id="artist-text">
-        <div class= "margin-below-half">
+<div class= "artist-text" id="artist-text">
+  <div class= "margin-below-half">
+  <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+    if($term->parent > 0)  { ?>
 
-            <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+      <ul class="entry-meta-artist">
+      <?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
+      <?php if ( $country ) { ?>
+          <?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
+      <?php } ?>
 
-            if($term->parent > 0)  { ?>
-
-            <ul class="entry-meta-artist">
-
-               <?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
-                <?php if ( $country ) { ?>
-                    <?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
-                <?php } ?>
-
-              <?php if(!empty($unique_exhibitions)) {
-                  if (count($unique_exhibitions) > 1) {
-                     print '<li class="meta-link">Exhibitions:';
-                  }
-
-                  else {
-                    print '<li class="meta-link">Exhibition:';
-                  }
-              ?>
-
-            <?php  foreach ($unique_exhibitions as $value) {
-                      print '<li class="meta-link">'.$value.'</li>';
-                       }
-
-                  } ?>
-
-              <?php $bornin = get_the_term_list( get_the_ID(), 'bornin') ?>
-
-                    <?php if ( $bornin ) { ?>
-
-                          <?php echo '<li class="meta-link">Born in: '.$bornin.'</li> '; ?>
-
-                        <?php } ?>
-
-          </ul>
-        <?php
+      <?php if(!empty($unique_exhibitions)) {
+          if (count($unique_exhibitions) > 1) {
+             print '<li class="meta-link">Exhibitions:';
           }
-         ?>
+          else {
+            print '<li class="meta-link">Exhibition:';
+          }
+        ?>
+        <?php  foreach ($unique_exhibitions as $value) {
+                  print '<li class="meta-link">'.$value.'</li>';
+                 }
+                } ?>
 
-        </div><!-- .center margin-below-half -->
+        <?php $bornin = get_the_term_list( get_the_ID(), 'bornin') ?>
+            <?php if ( $bornin ) { ?>
+              <?php echo '<li class="meta-link">Born in: '.$bornin.'</li> '; ?>
+            <?php } ?>
+        </ul>
+    <?php } ?>
 
-            <div class= "artist-detail">
-              <?php echo category_description(); ?>
-            </div><!-- .artist-detail -->
+</div><!-- .center margin-below-half -->
 
-    </div><!-- .artist-text -->
-  </div><!-- .meta -->
+  <div class= "artist-detail">
+    <?php echo category_description(); ?>
+  </div><!-- .artist-detail -->
 
-				<?php
+  </div><!-- .artist-text -->
+</div><!-- .meta -->
 
-					$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+<?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
 
 					if($term->parent > 0)
 							{
@@ -177,32 +167,26 @@
 							else
 							{
 
-							$show_count   = 0;      // 1 for yes, 0 for no
-							$pad_counts   = 1;      // 1 for yes, 0 for no
-							$orderby      = 'name';
+    $show_count   = 0;      // 1 for yes, 0 for no
+    $pad_counts   = 1;      // 1 for yes, 0 for no
+    $orderby      = 'name';
 
-							 $args = array(
-								'child_of' => $term->term_id,
-								'taxonomy' => $term->taxonomy,
-								'pad_counts'   => $pad_counts,
-								'orderby'      => $orderby,
-								'title_li' => '',
-								'show_count' => $show_count
-								);
-							 ?>
-						<h2 class="related-title">Artists in this country</h2><div class="artist-list">
-							<ul class = "nav  nav--stacked">
-
-									<?php 	 wp_list_categories( $args);
-
-										}
-									?>
-							</ul>
-
-						</div><!-- .artist-list -->
+    $args = array(
+      'child_of' => $term->term_id,
+      'taxonomy' => $term->taxonomy,
+      'pad_counts'   => $pad_counts,
+      'orderby'      => $orderby,
+      'title_li' => '',
+      'show_count' => $show_count
+    );
+    ?>
+      <h2 class="related-title">Artists in this country</h2><div class="artist-list">
+      <ul class = "nav  nav--stacked">
+        <?php 	 wp_list_categories( $args); ?>
+      </ul>
+      <?php } ?>
+    </div><!-- .artist-list -->
   <?php rewind_posts(); ?>
-
-
   </div><!-- #content -->
 </section><!-- #primary .site-content -->
 

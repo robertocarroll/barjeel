@@ -6597,9 +6597,9 @@ pre code {
 
 /******************************
 *
-*  RoyalSlider Default Inverted Skin 
+*  RoyalSlider Default Inverted Skin
 *
-*    1. Arrows 
+*    1. Arrows
 *    2. Bullets
 *    3. Thumbnails
 *    4. Tabs
@@ -6607,11 +6607,11 @@ pre code {
 *    6. Play/close video button
 *    7. Preloader
 *    8. Caption
-*    
+*
 *  Sprite: 'rs-default-inverted.png'
 *  Feel free to edit anything
 *  If you don't some part - just delete it
-* 
+*
 ******************************/
 /* Background */
 /* line 22, ../../sass/templates/_rs-default-inverted.scss */
@@ -6974,16 +6974,13 @@ pre code {
   border-right: 1px solid #f5f5f5;
   text-decoration: none;
   background-color: #FFF;
-  background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4);
-  background-image: -moz-linear-gradient(top, #fefefe, #f4f4f4);
-  background-image: linear-gradient(to bottom, #fefefe, #f4f4f4);
   -webkit-box-shadow: inset 1px 0 0 #fff;
   box-shadow: inset 1px 0 0 #fff;
   *display: inline;
   *zoom: 1;
 }
 
-/* line 290, ../../sass/templates/_rs-default-inverted.scss */
+/* line 287, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsTab:first-child {
   -webkit-border-top-left-radius: 4px;
   border-top-left-radius: 4px;
@@ -6991,7 +6988,7 @@ pre code {
   border-bottom-left-radius: 4px;
 }
 
-/* line 296, ../../sass/templates/_rs-default-inverted.scss */
+/* line 293, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsTab:last-child {
   -webkit-border-top-right-radius: 4px;
   border-top-right-radius: 4px;
@@ -7000,23 +6997,20 @@ pre code {
   border-right: 1px solid #cfcfcf;
 }
 
-/* line 304, ../../sass/templates/_rs-default-inverted.scss */
+/* line 301, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsTab:active {
   border: 1px solid #D9D9DD;
   background-color: #f4f4f4;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 309, ../../sass/templates/_rs-default-inverted.scss */
+/* line 306, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsTab.rsNavSelected {
   color: #FFF;
   border: 1px solid #999;
   text-shadow: 1px 1px #838383;
   box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
   background: #ACACAC;
-  background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
-  background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
-  background-image: linear-gradient(to bottom, #acacac, #bbbbbb);
 }
 
 /***************
@@ -7024,7 +7018,7 @@ pre code {
 *  5. Fullscreen button
 *
 ****************/
-/* line 330, ../../sass/templates/_rs-default-inverted.scss */
+/* line 324, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsFullscreenBtn {
   right: 0;
   top: 0;
@@ -7036,7 +7030,7 @@ pre code {
   cursor: pointer;
 }
 
-/* line 341, ../../sass/templates/_rs-default-inverted.scss */
+/* line 335, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsFullscreenIcn {
   display: block;
   margin: 6px;
@@ -7049,12 +7043,12 @@ pre code {
   border-radius: 2px;
 }
 
-/* line 354, ../../sass/templates/_rs-default-inverted.scss */
+/* line 348, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsFullscreenIcn:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 357, ../../sass/templates/_rs-default-inverted.scss */
+/* line 351, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv.rsFullscreen .rsFullscreenIcn {
   background-position: -32px 0;
 }
@@ -7064,7 +7058,7 @@ pre code {
 *  6. Play/close video button
 *
 ****************/
-/* line 371, ../../sass/templates/_rs-default-inverted.scss */
+/* line 365, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsPlayBtn {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
   width: 64px;
@@ -7074,7 +7068,7 @@ pre code {
   cursor: pointer;
 }
 
-/* line 379, ../../sass/templates/_rs-default-inverted.scss */
+/* line 373, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsPlayBtnIcon {
   width: 64px;
   display: block;
@@ -7090,12 +7084,12 @@ pre code {
   *background-color: #FFF;
 }
 
-/* line 395, ../../sass/templates/_rs-default-inverted.scss */
+/* line 389, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsPlayBtn:hover .rsPlayBtnIcon {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* line 398, ../../sass/templates/_rs-default-inverted.scss */
+/* line 392, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsBtnCenterer {
   position: absolute;
   left: 50%;
@@ -7104,7 +7098,7 @@ pre code {
   height: 20px;
 }
 
-/* line 405, ../../sass/templates/_rs-default-inverted.scss */
+/* line 399, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsCloseVideoBtn {
   right: 0;
   top: 0;
@@ -7117,13 +7111,13 @@ pre code {
   -webkit-transform: translateZ(0);
 }
 
-/* line 417, ../../sass/templates/_rs-default-inverted.scss */
+/* line 411, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsCloseVideoBtn.rsiOSBtn {
   top: -38px;
   right: -6px;
 }
 
-/* line 422, ../../sass/templates/_rs-default-inverted.scss */
+/* line 416, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsCloseVideoIcn {
   margin: 6px;
   width: 32px;
@@ -7134,7 +7128,7 @@ pre code {
   *background-color: #FFF;
 }
 
-/* line 431, ../../sass/templates/_rs-default-inverted.scss */
+/* line 425, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsCloseVideoIcn:hover {
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -7144,7 +7138,7 @@ pre code {
 *  7. Preloader
 *
 ****************/
-/* line 443, ../../sass/templates/_rs-default-inverted.scss */
+/* line 437, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsPreloader {
   width: 20px;
   height: 20px;
@@ -7160,7 +7154,7 @@ pre code {
 *  8. Global caption
 *
 ****************/
-/* line 462, ../../sass/templates/_rs-default-inverted.scss */
+/* line 456, ../../sass/templates/_rs-default-inverted.scss */
 .rsDefaultInv .rsGCaption {
   position: absolute;
   float: none;
@@ -7172,7 +7166,7 @@ pre code {
   border-radius: 2px;
 }
 
-/* line 473, ../../sass/templates/_rs-default-inverted.scss */
+/* line 467, ../../sass/templates/_rs-default-inverted.scss */
 .royalCaptionItem {
   background: #FFF;
   background: rgba(255, 255, 255, 0.85);

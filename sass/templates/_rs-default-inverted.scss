@@ -1,8 +1,8 @@
 /******************************
 *
-*  RoyalSlider Default Inverted Skin 
+*  RoyalSlider Default Inverted Skin
 *
-*    1. Arrows 
+*    1. Arrows
 *    2. Bullets
 *    3. Thumbnails
 *    4. Tabs
@@ -10,11 +10,11 @@
 *    6. Play/close video button
 *    7. Preloader
 *    8. Caption
-*    
+*
 *  Sprite: 'rs-default-inverted.png'
 *  Feel free to edit anything
 *  If you don't some part - just delete it
-* 
+*
 ******************************/
 
 
@@ -46,7 +46,7 @@
 .rsDefaultInv.rsVer .rsArrow {
 	width: 100%;
 	height: 44px;
-	
+
 }
 .rsDefaultInv.rsVer .rsArrowLeft { top: 0; left: 0; }
 .rsDefaultInv.rsVer .rsArrowRight { bottom: 0;  left: 0; }
@@ -54,22 +54,22 @@
 .rsDefaultInv.rsHor .rsArrowLeft { left: 0; top: 0; }
 .rsDefaultInv.rsHor .rsArrowRight { right: 0; top:0; }
 
-.rsDefaultInv .rsArrowIcn {		
+.rsDefaultInv .rsArrowIcn {
 	width: 32px;
 	height: 32px;
 	top: 50%;
 	left: 50%;
-	margin-top:-16px;	
+	margin-top:-16px;
 	margin-left: -16px;
 
-	position: absolute;	
-	cursor: pointer;	
+	position: absolute;
+	cursor: pointer;
 	background: url('rs-default-inverted.png');
 
 	background-color: #FFF;
 	background-color: rgba(255,255,255, .75);
 	*background-color: #FFF;
-	
+
 	border-radius: 2px;
 }
 .rsDefaultInv .rsArrowIcn:hover {
@@ -97,7 +97,7 @@
 	padding-top: 4px;
 	width: 100%;
 	height: auto;
-	margin: 0 auto; 
+	margin: 0 auto;
 
 	text-align: center;
 	line-height: 5px;
@@ -107,7 +107,7 @@
 	width: 6px;
 	height: 6px;
 	display: inline-block;
-	*display:inline; 
+	*display:inline;
 	*zoom:1;
 	padding: 6px;
 }
@@ -195,8 +195,8 @@
 	width: 20px;
 	position: absolute;
 	display: block;
-	cursor: pointer;	
-	z-index: 21;	
+	cursor: pointer;
+	z-index: 21;
 	background: #FFF;
 	background: rgba(255,255,255,0.75);
 }
@@ -213,15 +213,15 @@
 .rsDefaultInv.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
 .rsDefaultInv.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
 
-.rsDefaultInv .rsThumbsArrowIcn {		
+.rsDefaultInv .rsThumbsArrowIcn {
 	width: 16px;
 	height: 16px;
 	top: 50%;
 	left: 50%;
-	margin-top:-8px;	
+	margin-top:-8px;
 	margin-left: -8px;
-	position: absolute;	
-	cursor: pointer;	
+	position: absolute;
+	cursor: pointer;
 	background: url('rs-default-inverted.png');
 }
 
@@ -277,14 +277,11 @@
 	text-decoration: none;
 
 	background-color: #FFF;
-	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
-	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
-	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
 
 	-webkit-box-shadow: inset 1px 0 0 #fff;
 	box-shadow: inset 1px 0 0 #fff;
 
-	*display:inline; 
+	*display:inline;
 	*zoom:1;
 }
 .rsDefaultInv .rsTab:first-child {
@@ -293,7 +290,7 @@
 	-webkit-border-bottom-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
-.rsDefaultInv .rsTab:last-child { 
+.rsDefaultInv .rsTab:last-child {
 	-webkit-border-top-right-radius: 4px;
 	border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
@@ -301,20 +298,17 @@
 
 	border-right:  1px solid #cfcfcf;
 }
-.rsDefaultInv .rsTab:active { 
-	border: 1px solid #D9D9DD;   
+.rsDefaultInv .rsTab:active {
+	border: 1px solid #D9D9DD;
 	background-color: #f4f4f4;
 	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
 }
-.rsDefaultInv .rsTab.rsNavSelected { 
+.rsDefaultInv .rsTab.rsNavSelected {
 	color: #FFF;
 	border: 1px solid #999;
 	text-shadow: 1px 1px #838383;
 	box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
 	background: #ACACAC;
-	background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
-	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
-	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
 }
 
 
@@ -336,7 +330,7 @@
 	display: block;
 	position: absolute;
 	cursor: pointer;
-	
+
 }
 .rsDefaultInv .rsFullscreenIcn {
 	display: block;
@@ -382,7 +376,7 @@
 	height:64px;
 	-webkit-border-radius: 4px;
 	border-radius: 4px;
-	
+
 	-webkit-transition: .3s;
 	-moz-transition: .3s;
 	transition: .3s;
@@ -412,7 +406,7 @@
 	cursor: pointer;
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translateZ(0);
-	
+
 }
 .rsDefaultInv .rsCloseVideoBtn.rsiOSBtn {
 	top: -38px;
@@ -448,7 +442,7 @@
 	left:50%;
 	top:50%;
 	margin-left:-10px;
-	margin-top:-10px;	
+	margin-top:-10px;
 }
 
 
@@ -474,7 +468,7 @@
 	@extend .light-italic;
 	background: #FFF;
     background: rgba(255,255,255, 0.85);
-	position: relative; 
+	position: relative;
 	left: -50%;
 	padding: 2px 8px;
 }

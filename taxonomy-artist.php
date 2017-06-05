@@ -6,13 +6,7 @@
       <div class="artist-header">
         <h1 class="alpha bold exhibition-title gray"><?php printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
-        <?php $category_description = category_description();
-         if ( ! empty( $category_description ) ) {
-          print
-            '<ul class="exhibition-meta-list artist-detail-link">
-              <li><a href="#artist-text">Read biography</a></li>
-            </ul>';
-         } ?>
+
       </div>
 
       <?php

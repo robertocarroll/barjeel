@@ -117,11 +117,6 @@
                   print '<li class="meta-link">'.$value.'</li>';
                  }
                 } ?>
-
-        <?php $bornin = get_the_term_list( get_the_ID(), 'bornin') ?>
-            <?php if ( $bornin ) { ?>
-              <?php echo '<li class="meta-link">Born in: '.$bornin.'</li> '; ?>
-            <?php } ?>
         </ul>
     <?php } ?>
 

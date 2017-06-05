@@ -96,6 +96,11 @@
 		</h1>
 
   <ul class="entry-meta">
+    <?php $artwork_year = get_the_term_list( get_the_ID(), 'artwork-year') ?>
+      <?php if ( $artwork_year ) { ?>
+        <?php echo '<li class="meta-link">Year: '.$artwork_year.'</li> '; ?>
+      <?php } ?>
+
     <?php $medium = get_the_term_list( get_the_ID(), 'medium') ?>
       <?php if ( $medium ) { ?>
         <?php echo '<li class="meta-link">Medium: '.$medium.'</li> '; ?>
@@ -115,18 +120,12 @@
       <?php echo rw_get_the_term_list(null, 'artist', false, '', ', ', ''); ?>
     </h2>
 
-  <ul class="entry-meta">
-    <?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
-      <?php if ( $country ) { ?>
-      <?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
-      <?php } ?>
-
-      <?php $artwork_year = get_the_term_list( get_the_ID(), 'artwork-year') ?>
-      <?php if ( $artwork_year ) { ?>
-        <?php echo '<li class="meta-link">Year: '.$artwork_year.'</li> '; ?>
-      <?php } ?>
-
-      </ul>
+    <ul class="entry-meta">
+      <?php $country = rw_get_the_term_list(null, 'artist', true, '', ', ', '');  ?>
+        <?php if ( $country ) { ?>
+        <?php echo '<li class="meta-link">Country: '.$country.'</li> '; ?>
+        <?php } ?>
+    </ul>
   </div>
 </div><!-- .meta -->
       <?php related_posts(); ?>

@@ -4,6 +4,7 @@
 
 .main-image {
   @include gs-span(da, 2, 4, (2, 5));
+  max-width: 740px;
 
   @include respond-to(tablet) {
     @include gs-span(da, 2, 5, (2, 5));

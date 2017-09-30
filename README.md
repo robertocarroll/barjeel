@@ -102,6 +102,14 @@ Add a custom field 'pdflink' with the link to the pdf
 2. SEO Title
 3. Meta description
 
+## Contributors
+1. Install wp-custom-taxonomy-meta plugin
+2. Add terms to the taxonomy
+3. Update permalinks
+4. Add the metadata fields - portrait, first-name, last-name, email, summary
+5. Add metadata to the term
+6. Mark news and exhibition posts with term
+
 ## Icons
 SVG with a png backup implemented using Modernizr .no-svg class.
 

@@ -21,7 +21,6 @@
      $summary = wp_get_terms_meta($term_id, $summary_key ,true);
     }
 
-
     // array all meta fields for category/term
     print_r($image);
     print_r($firstname);

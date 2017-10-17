@@ -9,6 +9,7 @@
     $image_key = 'portrait';
     $firstname_key = 'first-name';
     $lastname_key = 'last-name';
+    $title_key = 'title';
     $email_key = 'email';
     $summary_key = 'summary';
 
@@ -17,18 +18,19 @@
      $image = wp_get_terms_meta($term_id, $image_key ,true);
      $firstname = wp_get_terms_meta($term_id, $firstname_key ,true);
      $lastname = wp_get_terms_meta($term_id, $lastname_key ,true);
+     $title = wp_get_terms_meta($term_id, $title_key ,true);
      $email = wp_get_terms_meta($term_id, $email_key ,true);
      $summary = wp_get_terms_meta($term_id, $summary_key ,true);
     }
-
-    // array all meta fields for category/term
-    print_r($image);
-    print_r($firstname);
-    print_r($lastname);
-    print_r($email);
-    print_r($summary);
+    $full_name = $firstname . ' ' . $lastname;
 
     ?>
+
+    <img width="100%" class="round" height="auto" src="<?php print_r($image); ?>">
+    <h1 class="alpha bold uppercase gray no-margin-below center"><?php print_r($full_name); ?></h1>
+    <h2 class="beta bold uppercase blue no-margin-below center"><?php print_r($title); ?></h2>
+    <p class="category-description center"><a href="<?php print_r($email); ?>"><?php print_r($email); ?></a></p>
+    <p class="category-description"><?php print_r($summary); ?></p>
 
     <?php $exhibition['tax_query'] = array(
 
@@ -51,14 +53,12 @@
           if($exhibition_query->have_posts()) {
            ?>
 
-    <p>Curating by <?php print_r($firstname); ?></p>
-
+    <h2 class="bold gray gamma"><span class="red">Curating by</span> <?php print_r($firstname); ?></h2>
     <?php while ( $exhibition_query->have_posts() ) : $exhibition_query->the_post(); ?>
-
-    <?php $title = get_the_title();
-          print_r($title);
-    ?>
-
+      <h2 class="date delta e-date">
+        <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
+        </a>
+      </h2>
     <?php endwhile;
         }
      ?>
@@ -87,23 +87,24 @@
     <?php $news_query = new WP_Query( $news );
            if($news_query->have_posts()) {
     ?>
-
-    <p>Writing by <?php print_r($firstname); ?></p>
-
+    <h2 class="bold gray gamma"><span class="red">Writing by</span> <?php print_r($firstname); ?></h2>
     <?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
 
-   <p> <?php $title = get_the_title();
-          print_r($title);
-    ?></p>
+     <h2 class="date delta e-date">
+      <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
+      </a>
+    </h2>
 
     <?php endwhile;
-          }
+      }
      ?>
 
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
           ?>
 
+   <h2 class="related-title" style="clear:both">Staff and contributors</h2>
+   <div id="sort">
     <?php
 
     // get the other contributors and exclude the current one
@@ -124,15 +125,39 @@
 
      foreach ( $all_contributors as $contributor ) {
         $contributor_term_id = $contributor->term_id;
+        $contributor_link = get_term_link( $contributor->slug, 'contributor' );
         $contributor_firstname = wp_get_terms_meta($contributor_term_id, $firstname_key ,true);
+        $contributor_lastname = wp_get_terms_meta($contributor_term_id, $lastname_key ,true);
         $contributor_image = wp_get_terms_meta($contributor_term_id, $image_key ,true);
-        print_r($contributor_image);
-        print_r($contributor_firstname);
-
-    }
+        $contributor_title = wp_get_terms_meta($contributor_term_id, $title_key ,true);
+        $contributor_fullname = $contributor_firstname . ' ' . $contributor_lastname;
 
     ?>
 
+    <div class="box-ms">
+     <article <?php post_class(); ?>>
+      <div class="center round">
+        <a href="<?php echo $contributor_link ?>">
+        <div class="vignette">
+           <img width="100%" height="auto" src="<?php print_r($contributor_image); ?>">
+         </div> <!-- .vignette -->
+        </a>
+        <h1 class="artwork-title uppercase bold-italic">
+          <a href="<?php echo $contributor_link ?>">
+            <?php echo $contributor_fullname ?>
+          </a>
+        </h1>
+        <ul class="artwork-meta">
+              <?php echo '<li class="meta-link">'.$contributor_title.'</li> '; ?>
+        </ul>
+        </div><!-- .center -->
+      </article>
+    </div><!-- .box-ms -->
+
+    <?php
+      }
+    ?>
+      </div><!-- sort -->
     </div><!-- #content -->
   </section><!-- #primary .site-content -->
 

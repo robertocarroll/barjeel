@@ -26,89 +26,96 @@
 
     ?>
 
-    <img width="100%" class="round" height="auto" src="<?php print_r($image); ?>">
-    <h1 class="alpha bold uppercase gray no-margin-below center"><?php print_r($full_name); ?></h1>
-    <h2 class="beta bold uppercase blue no-margin-below center"><?php print_r($title); ?></h2>
-    <p class="category-description center"><a href="<?php print_r($email); ?>"><?php print_r($email); ?></a></p>
-    <p class="category-description"><?php print_r($summary); ?></p>
+    <div class="contributor-outer">
+      <div class="contributor-details">
+        <img width="100%" class="round" height="auto" src="<?php echo $image; ?>">
+        <h1 class="alpha bold uppercase gray no-margin-below center"><?php echo $full_name ; ?></h1>
+        <h2 class="beta bold uppercase blue no-margin-below center"><?php echo $title; ?></h2>
+        <p class="category-description center"><a href="<?php echo $email; ?>"><?php echo $email; ?></a></p>
+      </div>
+      <p class="category-description cb"><?php echo $summary; ?></p>
+
 
     <?php $exhibition['tax_query'] = array(
-
         array(
           'taxonomy' => 'category',
           'terms' => array('exhibitions'),
           'field' => 'slug',
         ),
-
         array(
           'taxonomy' => $taxonomy,
           'terms' => array($queried_object->slug),
           'field' => 'slug',
         )
       );
-
       ?>
 
     <?php $exhibition_query = new WP_Query( $exhibition );
           if($exhibition_query->have_posts()) {
-           ?>
-
+            $has_curated_posts = true;
+    ?>
+    <div class="contributor-left">
     <h2 class="bold gray gamma"><span class="red">Curating by</span> <?php print_r($firstname); ?></h2>
     <?php while ( $exhibition_query->have_posts() ) : $exhibition_query->the_post(); ?>
-      <h2 class="date delta e-date">
+      <h2 class="date delta e-date padding-bottom-half">
         <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
         </a>
       </h2>
     <?php endwhile;
-        }
+      }
      ?>
+     </div>
 
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
           ?>
 
     <?php $news['tax_query'] = array(
-
         array(
           'taxonomy' => 'category',
           'terms' => array('news'),
           'field' => 'slug',
         ),
-
         array(
           'taxonomy' => $taxonomy,
           'terms' => array($queried_object->slug),
           'field' => 'slug',
         )
       );
-
       ?>
 
     <?php $news_query = new WP_Query( $news );
            if($news_query->have_posts()) {
+
+           if ($has_curated_posts === true) {
+            echo '<div class="contributor-right">';
+           }
+
+           else {
+            echo '<div class="contributor-left">';
+           }
     ?>
     <h2 class="bold gray gamma"><span class="red">Writing by</span> <?php print_r($firstname); ?></h2>
     <?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
-
-     <h2 class="date delta e-date">
+     <h2 class="date delta e-date padding-bottom-half">
       <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
       </a>
     </h2>
-
     <?php endwhile;
       }
      ?>
+     </div>
 
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
           ?>
 
+     </div> <!-- .contributor-outer -->
+
    <h2 class="related-title" style="clear:both">Staff and contributors</h2>
    <div id="sort">
     <?php
-
     // get the other contributors and exclude the current one
-
     $taxonomies = array(
       $taxonomy
     );
@@ -119,7 +126,6 @@
     'hide_empty'    => false,
     'exclude'       => array($term_id)
     );
-
 
     $all_contributors = get_terms( $taxonomies , $args);
 

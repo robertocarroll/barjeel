@@ -13,6 +13,10 @@
 		position: absolute !important;
 	}
 
+  .cb {
+    clear: both;
+  }
+
 	.center {text-align:center; }
 
 	.white {background: white;}
@@ -169,25 +173,19 @@
       @include gs-span(m, 1, 2);
     clear:both;
     padding-top: $half-spacing-unit;
-
     }
-
-
 }
 
 	.column-one-two {
  	 @include gs-span(da, 2, 3, (2, 5));
-
   }
 
   .column-two-three {
  	 @include gs-span(da, 3, 4, (2, 5));
-
   }
 
   .column-three-four {
  	 @include gs-span(da, 4, 5, (2, 5));
-
   }
 
   .column-two-three-four {

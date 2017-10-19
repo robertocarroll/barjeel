@@ -36,6 +36,15 @@ Run Grunt in the root to compile CSS
 * taxonomy.php - loads category-collection.php as a template. Used for Movements, Themes, Medium
 * taxonomy-non-arab-artist.php - Loads category-non-arab-art.php as a template. Get to it from links to artists from the private collection page.
 
+### Contributor layouts
+* Remember to save permalinks again if the page gives a 404
+* Change Page title in SEO > Titles and metas > Taxonomies > Contributor (Remove "Archive")
+* Each contributor is a term in the contributor taxonomy
+* Add details on the term page
+* Email, title, first-name, last-name, portrait (square image), summary (not description)
+* Add this term to either exhibition posts or news posts
+* If staff, check box "staff"
+
 ### Standard WP layouts
 * content.php - standard WP file. Not in use as far as I can tell
 * footer.php - standard WP file

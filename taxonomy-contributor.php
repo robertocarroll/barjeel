@@ -32,7 +32,7 @@
         <h1 class="alpha bold uppercase gray no-margin-below center"><?php echo $full_name ; ?></h1>
         <h2 class="beta bold uppercase blue no-margin-below center"><?php echo $title; ?></h2>
         <p class="category-description center"><a href="<?php echo $email; ?>"><?php echo $email; ?></a></p>
-      </div>
+      </div><!-- .contributor-details -->
       <p class="category-description cb"><?php echo $summary; ?></p>
 
 
@@ -61,10 +61,11 @@
         <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
         </a>
       </h2>
-    <?php endwhile;
+    <?php endwhile; ?>
+      </div>
+     <?php
       }
      ?>
-     </div>
 
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
@@ -101,10 +102,11 @@
       <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
       </a>
     </h2>
-    <?php endwhile;
+    <?php endwhile; ?>
+      </div>
+     <?php
       }
      ?>
-     </div>
 
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
@@ -112,7 +114,7 @@
 
      </div> <!-- .contributor-outer -->
 
-   <h2 class="related-title" style="clear:both">Staff and contributors</h2>
+   <h2 class="related-title padding-top-most cb">Staff and contributors</h2>
    <div id="sort">
     <?php
     // get the other contributors and exclude the current one

@@ -128,6 +128,9 @@
 
     $all_contributors = get_terms( $taxonomies , $args);
 
+    $contributors_all_custom = array();
+    $i = 0;
+
      foreach ( $all_contributors as $contributor ) {
         $contributor_term_id = $contributor->term_id;
         $contributor_link = get_term_link( $contributor->slug, 'contributor' );
@@ -138,31 +141,43 @@
         $contributor_staff = wp_get_terms_meta($contributor_term_id, $staff_key ,true);
         $contributor_fullname = $contributor_firstname . ' ' . $contributor_lastname;
 
+        $contributors_all_custom[$i]['link'] = $contributor_link;
+        $contributors_all_custom[$i]['staff'] = $contributor_staff;
+        $contributors_all_custom[$i]['lastname'] = $contributor_lastname;
+        $contributors_all_custom[$i]['fullname'] = $contributor_fullname;
+        $contributors_all_custom[$i]['title'] = $contributor_title;
+        $contributors_all_custom[$i]['image'] = $contributor_image;
+
+        $i++;
+
+       }
     ?>
+
+    <?php foreach ( $contributors_all_custom as $contributor_custom ) { ?>
 
     <div class="box-ms">
      <article <?php post_class(); ?>>
       <div class="center round">
-        <a href="<?php echo $contributor_link ?>">
-        <div class="vignette <?php if($contributor_staff == "checked") echo 'staff-border'; ?>">
-           <img width="100%" height="auto" src="<?php echo $contributor_image; ?>">
+        <a href="<?php echo $contributor_custom['link'] ?>">
+        <div class="vignette <?php if($contributor_custom['staff'] == "checked") echo 'staff-border'; ?>">
+           <img width="100%" height="auto" src="<?php echo $contributor_custom['image']; ?>">
          </div> <!-- .vignette -->
         </a>
         <h1 class="artwork-title uppercase bold-italic">
-          <a href="<?php echo $contributor_link ?>">
-            <?php echo $contributor_fullname ?>
+          <a href="<?php echo $contributor_custom['link'] ?>">
+            <?php echo $contributor_custom['fullname'] ?>
           </a>
         </h1>
         <ul class="artwork-meta">
-              <?php echo '<li class="meta-link">'.$contributor_title.'</li> '; ?>
+              <?php echo '<li class="meta-link">'.$contributor_custom['title'].'</li> '; ?>
         </ul>
         </div><!-- .center -->
       </article>
     </div><!-- .box-ms -->
 
-    <?php
-      }
-    ?>
+    <?php } ?>
+
+
       </div><!-- sort -->
     </div><!-- #content -->
   </section><!-- #primary .site-content -->

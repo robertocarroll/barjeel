@@ -112,7 +112,7 @@
      </div> <!-- .contributor-outer -->
 
    <h2 class="related-title padding-top-most cb">Staff and contributors</h2>
-   <div id="sort">
+   <div id="sortArtwork">
     <?php
     // get the other contributors and exclude the current one
     $taxonomies = array(
@@ -172,22 +172,22 @@
 
     <?php foreach ( $contributors_staff_custom as $contributor_custom ) { ?>
 
-    <div class="box-ms">
+    <div class="box-ms padding-bottom">
      <article <?php post_class(); ?>>
       <div class="center round">
         <a href="<?php echo $contributor_custom['link'] ?>">
         <div class="vignette staff-border">
-           <img width="100%" height="auto" src="<?php echo $contributor_custom['image']; ?>">
+           <img width="110" height="110" src="<?php echo $contributor_custom['image']; ?>">
          </div> <!-- .vignette -->
         </a>
-        <h1 class="artwork-title uppercase bold-italic">
+        <h1 class="light epsilon no-margin-below padding-top-quarter">
           <a href="<?php echo $contributor_custom['link'] ?>">
             <?php echo $contributor_custom['fullname'] ?>
           </a>
         </h1>
-        <ul class="artwork-meta">
-              <?php echo '<li class="meta-link">'.$contributor_custom['title'].'</li> '; ?>
-        </ul>
+        <h2 class="date micro bold no-margin-below">
+              <?php echo $contributor_custom['title']; ?>
+        </h2>
         </div><!-- .center -->
       </article>
     </div><!-- .box-ms -->
@@ -196,22 +196,22 @@
 
     <?php foreach ( $contributors_nonstaff_custom as $contributor_custom ) { ?>
 
-    <div class="box-ms">
+    <div class="box-ms padding-bottom">
      <article <?php post_class(); ?>>
       <div class="center round">
         <a href="<?php echo $contributor_custom['link'] ?>">
         <div class="vignette">
-           <img width="100%" height="auto" src="<?php echo $contributor_custom['image']; ?>">
+           <img width="110" height="110" src="<?php echo $contributor_custom['image']; ?>">
          </div> <!-- .vignette -->
         </a>
-        <h1 class="artwork-title uppercase bold-italic">
+        <h1 class="light epsilon no-margin-below padding-top-quarter">
           <a href="<?php echo $contributor_custom['link'] ?>">
             <?php echo $contributor_custom['fullname'] ?>
           </a>
         </h1>
-        <ul class="artwork-meta">
-              <?php echo '<li class="meta-link">'.$contributor_custom['title'].'</li> '; ?>
-        </ul>
+        <h2 class="date micro bold no-margin-below">
+              <?php echo $contributor_custom['title']; ?>
+        </h2>
         </div><!-- .center -->
       </article>
     </div><!-- .box-ms -->

@@ -12,6 +12,7 @@
     $title_key = 'title';
     $email_key = 'email';
     $summary_key = 'summary';
+    $staff_key = 'staff';
 
     if (function_exists('get_all_wp_terms_meta'))
     {
@@ -35,7 +36,6 @@
       </div><!-- .contributor-details -->
       <p class="category-description cb"><?php echo $summary; ?></p>
 
-
     <?php $exhibition['tax_query'] = array(
         array(
           'taxonomy' => 'category',
@@ -55,10 +55,10 @@
             $has_curated_posts = true;
     ?>
     <div class="contributor-left">
-    <h2 class="bold gray gamma"><span class="red">Curating by</span> <?php print_r($firstname); ?></h2>
+    <h2 class="bold gray gamma"><span class="red">Curating by</span> <?php echo $firstname; ?></h2>
     <?php while ( $exhibition_query->have_posts() ) : $exhibition_query->the_post(); ?>
       <h2 class="date delta e-date padding-bottom-half">
-        <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
+        <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
         </a>
       </h2>
     <?php endwhile; ?>
@@ -66,7 +66,6 @@
      <?php
       }
      ?>
-
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
           ?>
@@ -96,10 +95,10 @@
             echo '<div class="contributor-left">';
            }
     ?>
-    <h2 class="bold gray gamma"><span class="red">Writing by</span> <?php print_r($firstname); ?></h2>
+    <h2 class="bold gray gamma"><span class="red">Writing by</span> <?php echo $firstname; ?></h2>
     <?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
      <h2 class="date delta e-date padding-bottom-half">
-      <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); print_r($title); ?>
+      <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
       </a>
     </h2>
     <?php endwhile; ?>
@@ -107,11 +106,9 @@
      <?php
       }
      ?>
-
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
           ?>
-
      </div> <!-- .contributor-outer -->
 
    <h2 class="related-title padding-top-most cb">Staff and contributors</h2>
@@ -138,6 +135,7 @@
         $contributor_lastname = wp_get_terms_meta($contributor_term_id, $lastname_key ,true);
         $contributor_image = wp_get_terms_meta($contributor_term_id, $image_key ,true);
         $contributor_title = wp_get_terms_meta($contributor_term_id, $title_key ,true);
+        $contributor_staff = wp_get_terms_meta($contributor_term_id, $staff_key ,true);
         $contributor_fullname = $contributor_firstname . ' ' . $contributor_lastname;
 
     ?>
@@ -146,8 +144,8 @@
      <article <?php post_class(); ?>>
       <div class="center round">
         <a href="<?php echo $contributor_link ?>">
-        <div class="vignette">
-           <img width="100%" height="auto" src="<?php print_r($contributor_image); ?>">
+        <div class="vignette <?php if($contributor_staff == "checked") echo 'staff-border'; ?>">
+           <img width="100%" height="auto" src="<?php echo $contributor_image; ?>">
          </div> <!-- .vignette -->
         </a>
         <h1 class="artwork-title uppercase bold-italic">

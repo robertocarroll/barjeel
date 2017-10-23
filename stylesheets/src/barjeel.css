@@ -3137,6 +3137,12 @@ input::-moz-focus-inner {
   }
 }
 
+/* line 42, ../../sass/templates/_contributor.scss */
+.staff-border {
+  border: 6px, solid #FF3300;
+  border-radius: 50%;
+}
+
 /*------------------------------------*\
     $EducationPage
 \*------------------------------------*/

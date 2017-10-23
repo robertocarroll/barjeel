@@ -38,3 +38,8 @@
     @include gs-span(m, all);
   }
 }
+
+.staff-border {
+  border: $quarter-spacing-unit, solid $barjeel-red;
+  border-radius: 50%;
+}

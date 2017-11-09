@@ -1,47 +1,40 @@
 <?php get_header(); ?>
-		
-		<section id="primary" class="site-content">
-			<div id="content" class="container" role="main">	
-   
-				<?php if ( have_posts() ) : ?>
-
-				<div class="white pad-in padding-top padding-bottom filter-sort-menu-wide">
-					
-				<h1 class="entry-title-page margin-below-half">
+  <section id="primary" class="site-content">
+    <div id="content" class="container" role="main">
+      <?php if ( have_posts() ) : ?>
+        <div class="white pad-in padding-top padding-bottom filter-sort-menu-wide">
+					<h1 class="entry-title-page margin-below-half">
 						<?php
 								printf( __( '%s', 'barjeel' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-
 						?>
-				</h1>	
+				</h1>
 
 				<?php echo '<h2 class="category-description">'.category_description( $category_id ).'</h2>'; ?>
-
 		        <span class="list-title uppercase small top-menu">Categories</span>
-
 					<?php wp_nav_menu( array( 'theme_location' => 'news', 'container' => '', 'menu_class'      => 'nav light uppercase small top-menu') ); ?>
 
-			 </div><!-- filter-sort-menu -->	
-		
+			 </div><!-- filter-sort-menu -->
+
 				<?php rewind_posts(); ?>
 
 				<div style="clear:both"></div>
-			
-			
+
+
 					<?php /* Start the Loop */ ?>
-					
+
 				<div class="news-list ">
-					
-						<?php while ( have_posts() ) : the_post(); ?>				
-						
-							<?php get_template_part('news');?> 
-							
-						<?php endwhile; ?>				
-								
+
+						<?php while ( have_posts() ) : the_post(); ?>
+
+							<?php get_template_part('news');?>
+
+						<?php endwhile; ?>
+
 				<?php if ( function_exists('base_pagination') ) { base_pagination(); } else if ( is_paged() ) { ?>
-					
+
 					<?php } ?>
 
-				</div><!-- .news-list -->	
+				</div><!-- .news-list -->
 
 			<?php else : ?>
 
@@ -49,7 +42,7 @@
 
 			<?php endif; ?>
 
-			<?php wp_reset_query(); ?>  
+			<?php wp_reset_query(); ?>
 
 				<!-- Related posts - news with the tag featured -->
 
@@ -58,7 +51,7 @@
 			    $barjeel_styles_count = count($barjeel_style_classes);
 			    $barjeel_style_index = 0;
 			?>
-			
+
 			<div class="related-posts">
 
 			<?php
@@ -67,14 +60,14 @@
 					'tag' => 'news-featured',
 					'ignore_sticky_posts' => 1,
 				);
-				
-				query_posts( $args ); ?>
-					
-					<?php while (have_posts()) : the_post(); ?>
-							
-					<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">		
 
-						<article>	
+				query_posts( $args ); ?>
+
+					<?php while (have_posts()) : the_post(); ?>
+
+					<div class="<?php echo $barjeel_style_classes[$barjeel_style_index++ % $barjeel_styles_count]; ?>">
+
+						<article>
 
 							<div class="square">&nbsp;</div>
 
@@ -85,7 +78,7 @@
 								echo '<a href="'.get_permalink().'"><div class="vignette-square">'.$fpw_img_tag.'</div></a>';
 							}
 							?>
-															
+
 							<h1 class="gamma bold article-list"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 							<?php $dates = get_post_meta($post->ID, 'Dates', true);
@@ -93,18 +86,18 @@
 								if ($dates) { ?>
 								<?php echo '<h2 class="date epsilon e-date">'.$dates.'</h2>'; ?>
 							<?php } ?>
-									 				
+
 						</article>
 
 					</div>
-						
+
 					<?php endwhile; ?>
 
 				</div><!-- #related -->
 
-					<?php wp_reset_query(); ?>  
+					<?php wp_reset_query(); ?>
 
 			</div><!-- #content -->
 		</section><!-- #primary .site-content -->
-			
+
 <?php get_footer(); ?>

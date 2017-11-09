@@ -36,6 +36,15 @@ Run Grunt in the root to compile CSS
 * taxonomy.php - loads category-collection.php as a template. Used for Movements, Themes, Medium
 * taxonomy-non-arab-artist.php - Loads category-non-arab-art.php as a template. Get to it from links to artists from the private collection page.
 
+### Contributor layouts
+* Remember to save permalinks again if the page gives a 404
+* Change Page title in SEO > Titles and metas > Taxonomies > Contributor (Remove "Archive")
+* Each contributor is a term in the contributor taxonomy
+* Add details on the term page
+* Email, title, first-name, last-name, portrait (square image), summary (not description)
+* Add this term to either exhibition posts or news posts
+* If staff, check box "staff"
+
 ### Standard WP layouts
 * content.php - standard WP file. Not in use as far as I can tell
 * footer.php - standard WP file
@@ -101,6 +110,14 @@ Add a custom field 'pdflink' with the link to the pdf
 1. Pages > Home
 2. SEO Title
 3. Meta description
+
+## Contributors
+1. Install wp-custom-taxonomy-meta plugin
+2. Add terms to the taxonomy
+3. Update permalinks
+4. Add the metadata fields - portrait, first-name, last-name, email, summary
+5. Add metadata to the term
+6. Mark news and exhibition posts with term
 
 ## Icons
 SVG with a png backup implemented using Modernizr .no-svg class.

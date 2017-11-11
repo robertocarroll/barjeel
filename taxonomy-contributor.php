@@ -32,7 +32,7 @@
         <img width="100%" class="round" height="auto" src="<?php echo $image; ?>">
         <h1 class="alpha bold uppercase gray no-margin-below center"><?php echo $full_name ; ?></h1>
         <h2 class="beta bold uppercase blue no-margin-below center"><?php echo $title; ?></h2>
-        <p class="category-description center"><a href="<?php echo $email; ?>"><?php echo $email; ?></a></p>
+        <p class="category-description center"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
       </div><!-- .contributor-details -->
       <p class="category-description cb"><?php echo $summary; ?></p>
 

@@ -30,14 +30,18 @@
     <div class="contributor-outer">
       <div class="contributor-details">
         <img width="100%" class="round" height="auto" src="<?php echo $image; ?>">
+      </div><!-- .contributor-details -->
+      <div class="category-description cb">
         <h1 class="alpha bold uppercase gray no-margin-below center"><?php echo $full_name ; ?></h1>
         <h2 class="beta bold uppercase blue no-margin-below center"><?php echo $title; ?></h2>
 
         <?php if ($email) { ?>
-          <p class="category-description center"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
+          <p class="center"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>
         <?php } ?>
-      </div><!-- .contributor-details -->
-      <p class="category-description cb"><?php echo $summary; ?></p>
+        <?php if ($summary) { ?>
+          <?php echo $summary; ?>
+        <?php } ?>
+      </div>
 
     <?php $exhibition['tax_query'] = array(
         array(

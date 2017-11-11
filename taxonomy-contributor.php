@@ -116,7 +116,7 @@
     <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
           ?>
-     </div> <!-- .contributor-outer -->
+    </div> <!-- .contributor-outer -->
 
    <h2 class="related-title padding-top-most cb">Staff and contributors</h2>
    <div id="sortArtwork">

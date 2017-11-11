@@ -3089,7 +3089,7 @@ input::-moz-focus-inner {
   }
 }
 
-/* line 26, ../../sass/templates/_contributor.scss */
+/* line 25, ../../sass/templates/_contributor.scss */
 .contributor-left {
   display: block;
   float: left;
@@ -3098,13 +3098,8 @@ input::-moz-focus-inner {
   width: 48.67525%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 26, ../../sass/templates/_contributor.scss */
+  /* line 25, ../../sass/templates/_contributor.scss */
   .contributor-left {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 6.25%;
-    padding-right: 6.25%;
     clear: both;
     display: block;
     float: left;
@@ -3113,7 +3108,7 @@ input::-moz-focus-inner {
   }
 }
 
-/* line 34, ../../sass/templates/_contributor.scss */
+/* line 32, ../../sass/templates/_contributor.scss */
 .contributor-right {
   display: block;
   float: left;
@@ -3122,13 +3117,8 @@ input::-moz-focus-inner {
   width: 48.66011%;
 }
 @media only screen and (max-width: 695px) {
-  /* line 34, ../../sass/templates/_contributor.scss */
+  /* line 32, ../../sass/templates/_contributor.scss */
   .contributor-right {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding-left: 6.25%;
-    padding-right: 6.25%;
     clear: both;
     display: block;
     float: left;
@@ -3137,13 +3127,13 @@ input::-moz-focus-inner {
   }
 }
 
-/* line 42, ../../sass/templates/_contributor.scss */
+/* line 39, ../../sass/templates/_contributor.scss */
 .staff-border {
   border: 6px, solid #999999;
   border-radius: 50%;
 }
 
-/* line 47, ../../sass/templates/_contributor.scss */
+/* line 44, ../../sass/templates/_contributor.scss */
 .box-ms-contributor {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3154,21 +3144,21 @@ input::-moz-focus-inner {
   width: 11rem;
 }
 @media only screen and (max-width: 695px) {
-  /* line 47, ../../sass/templates/_contributor.scss */
+  /* line 44, ../../sass/templates/_contributor.scss */
   .box-ms-contributor {
     margin-right: 5%;
     width: 8rem;
   }
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 47, ../../sass/templates/_contributor.scss */
+  /* line 44, ../../sass/templates/_contributor.scss */
   .box-ms-contributor {
     margin-right: 2.5%;
     width: 11rem;
   }
 }
 @media only screen and (min-width: 1100px) {
-  /* line 47, ../../sass/templates/_contributor.scss */
+  /* line 44, ../../sass/templates/_contributor.scss */
   .box-ms-contributor {
     margin-right: 3%;
     width: 12rem;

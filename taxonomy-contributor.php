@@ -184,7 +184,7 @@
       <div class="center round">
         <a href="<?php echo $contributor_custom['link'] ?>">
         <div class="vignette staff-border">
-           <img width="110" height="110" src="<?php echo $contributor_custom['image']; ?>">
+           <img width="220" height="220" src="<?php echo $contributor_custom['image']; ?>">
          </div> <!-- .vignette -->
         </a>
         <h1 class="light epsilon no-margin-below padding-top-quarter">
@@ -208,7 +208,7 @@
       <div class="center round">
         <a href="<?php echo $contributor_custom['link'] ?>">
         <div class="vignette">
-           <img width="110" height="110" src="<?php echo $contributor_custom['image']; ?>">
+           <img width="220" height="220" src="<?php echo $contributor_custom['image']; ?>">
          </div> <!-- .vignette -->
         </a>
         <h1 class="light epsilon no-margin-below padding-top-quarter">

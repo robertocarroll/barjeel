@@ -44,6 +44,10 @@ Run Grunt in the root to compile CSS
 * Email, title, first-name, last-name, portrait (square image), summary (not description)
 * Add this term to either exhibition posts or news posts
 * If staff, check box "staff"
+* Contributor page is at /contributor/SLUG
+* Contributors to a news article will show up "Written by " on news article
+* Contributors to a exhibition will show up "Curated by " on exhibition article
+
 
 ### Standard WP layouts
 * content.php - standard WP file. Not in use as far as I can tell

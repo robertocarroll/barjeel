@@ -19,6 +19,10 @@
 
 .center {text-align:center; }
 
+.ta-left {
+  text-align: left !important;
+}
+
 .white {background: white;}
 
 .white-text {color: white;}
@@ -105,12 +109,12 @@
   margin-top: $half-spacing-unit;
 }
 
-.ta-left {
-  text-align: left !important;
-}
-
 .pad-in {
 	@include gs-pad (da, padinfull);
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .border-side {
@@ -119,20 +123,18 @@
 }
 
 .column-one {
-@include gs-span(da, 2, 2, (2, 5));
-clear: both;
+  @include gs-span(da, 2, 2, (2, 5));
+  clear: both;
 
-@include respond-to(tablet) {
-	@include gs-span(da, 2, 3, (2, 5));
-
-	}
+  @include respond-to(tablet) {
+  	@include gs-span(da, 2, 3, (2, 5));
+  }
 
  @include respond-to(mobile) {
     @include gs-span(m, 1, 2);
-  clear:both;
-  padding-top: $half-spacing-unit;
+    clear:both;
+    padding-top: $half-spacing-unit;
   }
-
 }
 
 .column-two {

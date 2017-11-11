@@ -23,7 +23,6 @@
      $email = wp_get_terms_meta($term_id, $email_key ,true);
      $summary = wp_get_terms_meta($term_id, $summary_key ,true);
     }
-    $full_name = $firstname . ' ' . $lastname;
 
     ?>
 
@@ -32,8 +31,8 @@
         <img width="100%" class="round" height="auto" src="<?php echo $image; ?>">
       </div><!-- .contributor-details -->
       <div class="category-description padding-top-most padding-bottom-half ta-left cb">
-        <h1 class="alpha bold uppercase gray margin-below-half center mid-line"><?php echo $full_name ; ?></h1>
-        <h2 class="beta bold uppercase blue margin-below margin-top-half center mid-line"><?php echo $title; ?></h2>
+        <h1 class="alpha bold uppercase gray margin-below-half center big-line"><span class="inline-block"><?php echo $firstname ; ?></span> <span class="inline-block"><?php echo $lastname ; ?></span></h1>
+        <h2 class="beta bold uppercase blue margin-below margin-top-half center big-line"><?php echo $title; ?></h2>
 
         <?php if ($email) { ?>
           <p class="center"><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></p>

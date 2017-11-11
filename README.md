@@ -122,6 +122,8 @@ Add a custom field 'pdflink' with the link to the pdf
 4. Add the metadata fields - portrait, first-name, last-name, email, summary
 5. Add metadata to the term
 6. Mark news and exhibition posts with term
+7. Contributors all is a new page - template contributor
+8. Title and content is editable
 
 ## Icons
 SVG with a png backup implemented using Modernizr .no-svg class.

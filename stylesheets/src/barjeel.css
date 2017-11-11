@@ -5201,6 +5201,11 @@ a:hover.menu-trigger {
 }
 
 /* line 108, ../../sass/templates/_misc.scss */
+.ta-left {
+  text-align: left !important;
+}
+
+/* line 112, ../../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5209,13 +5214,13 @@ a:hover.menu-trigger {
   padding-right: 2.22222%;
 }
 
-/* line 112, ../../sass/templates/_misc.scss */
+/* line 116, ../../sass/templates/_misc.scss */
 .border-side {
   border-right: 1px solid #66BBDD;
   padding-left: 0;
 }
 
-/* line 117, ../../sass/templates/_misc.scss */
+/* line 121, ../../sass/templates/_misc.scss */
 .column-one {
   display: block;
   float: left;
@@ -5225,7 +5230,7 @@ a:hover.menu-trigger {
   clear: both;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 117, ../../sass/templates/_misc.scss */
+  /* line 121, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5235,7 +5240,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 117, ../../sass/templates/_misc.scss */
+  /* line 121, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5247,7 +5252,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 134, ../../sass/templates/_misc.scss */
+/* line 138, ../../sass/templates/_misc.scss */
 .column-two {
   display: block;
   float: left;
@@ -5256,7 +5261,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 134, ../../sass/templates/_misc.scss */
+  /* line 138, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5266,7 +5271,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 134, ../../sass/templates/_misc.scss */
+  /* line 138, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5278,7 +5283,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 150, ../../sass/templates/_misc.scss */
+/* line 154, ../../sass/templates/_misc.scss */
 .column-three {
   display: block;
   float: left;
@@ -5287,7 +5292,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 150, ../../sass/templates/_misc.scss */
+  /* line 154, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5299,7 +5304,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 150, ../../sass/templates/_misc.scss */
+  /* line 154, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5311,7 +5316,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 168, ../../sass/templates/_misc.scss */
+/* line 172, ../../sass/templates/_misc.scss */
 .column-four {
   display: block;
   float: left;
@@ -5320,7 +5325,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 168, ../../sass/templates/_misc.scss */
+  /* line 172, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5331,7 +5336,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 168, ../../sass/templates/_misc.scss */
+  /* line 172, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5343,7 +5348,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 183, ../../sass/templates/_misc.scss */
+/* line 187, ../../sass/templates/_misc.scss */
 .column-one-two {
   display: block;
   float: left;
@@ -5352,7 +5357,7 @@ a:hover.menu-trigger {
   width: 48.67525%;
 }
 
-/* line 187, ../../sass/templates/_misc.scss */
+/* line 191, ../../sass/templates/_misc.scss */
 .column-two-three {
   display: block;
   float: left;
@@ -5361,7 +5366,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 191, ../../sass/templates/_misc.scss */
+/* line 195, ../../sass/templates/_misc.scss */
 .column-three-four {
   display: block;
   float: left;
@@ -5370,7 +5375,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 195, ../../sass/templates/_misc.scss */
+/* line 199, ../../sass/templates/_misc.scss */
 .column-two-three-four {
   display: block;
   float: left;

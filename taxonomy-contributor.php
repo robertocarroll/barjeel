@@ -31,7 +31,7 @@
       <div class="contributor-details">
         <img width="100%" class="round" height="auto" src="<?php echo $image; ?>">
       </div><!-- .contributor-details -->
-      <div class="category-description padding-top-most padding-bottom-half cb">
+      <div class="category-description padding-top-most padding-bottom-half ta-left cb">
         <h1 class="alpha bold uppercase gray margin-below-half center mid-line"><?php echo $full_name ; ?></h1>
         <h2 class="beta bold uppercase blue margin-below margin-top-half center mid-line"><?php echo $title; ?></h2>
 

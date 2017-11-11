@@ -40,6 +40,31 @@
 }
 
 .staff-border {
-  border: $quarter-spacing-unit, solid $barjeel-red;
+  border: $quarter-spacing-unit, solid $barjeel-grey;
   border-radius: 50%;
+}
+
+.box-ms-contributor {
+  @include respond-to(mobile) {
+    margin-right: 5%;
+    width: 8rem;
+  }
+
+  @include respond-to(tablet) {
+    margin-right: 2.5%;
+    width: 11rem;
+  }
+
+  @include respond-to(desktop) {
+    margin-right: 3%;
+    width: 12rem;
+  }
+
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  margin-right: 3%;
+  width: 11rem;
 }

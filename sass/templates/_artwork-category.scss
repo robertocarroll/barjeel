@@ -126,11 +126,11 @@
 
 
 .artwork-list {
-clear: left;
+  clear: left;
 }
 
 .category-non-arab-art {
-padding-bottom: 2*$base-spacing-unit;
+  padding-bottom: 2*$base-spacing-unit;
 }
 
 .thumbnail-image-non-arab {
@@ -153,7 +153,6 @@ padding-bottom: 2*$base-spacing-unit;
 	@extend .small;
 	padding-top: $half-spacing-unit;
 	margin: 0;
-
 }
 
 .artist-name {
@@ -164,7 +163,6 @@ padding-bottom: 2*$base-spacing-unit;
 .artwork-meta {
 	@extend .micro;
 	@extend .nav;
-
 }
 
 .artwork-meta > li {

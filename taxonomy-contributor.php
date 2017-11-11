@@ -179,7 +179,7 @@
 
     <?php foreach ( $contributors_staff_custom as $contributor_custom ) { ?>
 
-    <div class="box-ms padding-bottom">
+    <div class="box-ms-contributor padding-bottom">
      <article <?php post_class(); ?>>
       <div class="center round">
         <a href="<?php echo $contributor_custom['link'] ?>">
@@ -203,7 +203,7 @@
 
     <?php foreach ( $contributors_nonstaff_custom as $contributor_custom ) { ?>
 
-    <div class="box-ms padding-bottom">
+    <div class="box-ms-contributor padding-bottom">
      <article <?php post_class(); ?>>
       <div class="center round">
         <a href="<?php echo $contributor_custom['link'] ?>">

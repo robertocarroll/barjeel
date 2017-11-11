@@ -2313,30 +2313,30 @@ ul.entry-meta-artist > li:first-child:before {
   margin: 0;
 }
 
-/* line 159, ../../sass/templates/_artwork-category.scss */
+/* line 158, ../../sass/templates/_artwork-category.scss */
 .artist-name {
   padding-top: 0;
 }
 
-/* line 170, ../../sass/templates/_artwork-category.scss */
+/* line 168, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
 }
 
-/* line 176, ../../sass/templates/_artwork-category.scss */
+/* line 174, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li:after {
   content: " / ";
 }
 
-/* line 180, ../../sass/templates/_artwork-category.scss */
+/* line 178, ../../sass/templates/_artwork-category.scss */
 .artwork-meta > li:last-child:after {
   display: none;
 }
 
 /* Makes the "see more" blue  */
-/* line 186, ../../sass/templates/_artwork-category.scss */
+/* line 184, ../../sass/templates/_artwork-category.scss */
 .menu-item-772 a, .menu-item-775 a {
   color: #66BBDD;
   text-decoration: none;
@@ -2347,18 +2347,18 @@ ul.entry-meta-artist > li:first-child:before {
   transition: color 0.5s ease-out;
 }
 
-/* line 190, ../../sass/templates/_artwork-category.scss */
+/* line 188, ../../sass/templates/_artwork-category.scss */
 .menu-item-772 a:hover, .menu-item-775 a:hover {
   color: #3388AA !important;
   text-decoration: none;
 }
 
-/* line 194, ../../sass/templates/_artwork-category.scss */
+/* line 192, ../../sass/templates/_artwork-category.scss */
 #menu-by-artist > li, #menu-by-country > li, #menu-by-medium > li {
   margin-bottom: 6px;
 }
 
-/* line 198, ../../sass/templates/_artwork-category.scss */
+/* line 196, ../../sass/templates/_artwork-category.scss */
 .browse-title {
   padding-bottom: 24px;
   margin: 0;
@@ -2366,21 +2366,21 @@ ul.entry-meta-artist > li:first-child:before {
   text-transform: uppercase;
 }
 
-/* line 207, ../../sass/templates/_artwork-category.scss */
+/* line 205, ../../sass/templates/_artwork-category.scss */
 .list-title {
   padding-bottom: 12px;
   margin: 0;
   color: #999999;
 }
 
-/* line 215, ../../sass/templates/_artwork-category.scss */
+/* line 213, ../../sass/templates/_artwork-category.scss */
 .video-thumb {
   display: block;
   background: url(../images/icon-video.png) no-repeat;
   z-index: 200;
 }
 
-/* line 222, ../../sass/templates/_artwork-category.scss */
+/* line 220, ../../sass/templates/_artwork-category.scss */
 #sort {
   display: block;
   float: left;
@@ -2395,7 +2395,7 @@ ul.entry-meta-artist > li:first-child:before {
   flex-wrap: wrap;
 }
 @media only screen and (max-width: 695px) {
-  /* line 222, ../../sass/templates/_artwork-category.scss */
+  /* line 220, ../../sass/templates/_artwork-category.scss */
   #sort {
     clear: both;
     display: block;
@@ -2413,7 +2413,7 @@ ul.entry-meta-artist > li:first-child:before {
   }
 }
 
-/* line 245, ../../sass/templates/_artwork-category.scss */
+/* line 243, ../../sass/templates/_artwork-category.scss */
 #sortArtwork {
   display: block;
   float: left;
@@ -2428,7 +2428,7 @@ ul.entry-meta-artist > li:first-child:before {
   flex-wrap: wrap;
 }
 @media only screen and (max-width: 695px) {
-  /* line 245, ../../sass/templates/_artwork-category.scss */
+  /* line 243, ../../sass/templates/_artwork-category.scss */
   #sortArtwork {
     clear: both;
     display: block;
@@ -2446,7 +2446,7 @@ ul.entry-meta-artist > li:first-child:before {
   }
 }
 
-/* line 268, ../../sass/templates/_artwork-category.scss */
+/* line 266, ../../sass/templates/_artwork-category.scss */
 .box-ms {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2457,21 +2457,21 @@ ul.entry-meta-artist > li:first-child:before {
   width: 11rem;
 }
 @media only screen and (max-width: 695px) {
-  /* line 268, ../../sass/templates/_artwork-category.scss */
+  /* line 266, ../../sass/templates/_artwork-category.scss */
   .box-ms {
     margin-right: 5%;
     width: 8rem;
   }
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 268, ../../sass/templates/_artwork-category.scss */
+  /* line 266, ../../sass/templates/_artwork-category.scss */
   .box-ms {
     margin-right: 2.5%;
     width: 11rem;
   }
 }
 @media only screen and (min-width: 1100px) {
-  /* line 268, ../../sass/templates/_artwork-category.scss */
+  /* line 266, ../../sass/templates/_artwork-category.scss */
   .box-ms {
     margin-right: 1%;
     width: 12rem;
@@ -2479,7 +2479,7 @@ ul.entry-meta-artist > li:first-child:before {
 }
 
 /* For the circle rollovers  */
-/* line 295, ../../sass/templates/_artwork-category.scss */
+/* line 293, ../../sass/templates/_artwork-category.scss */
 .vignette img {
   -moz-transition-property: border;
   -o-transition-property: border;
@@ -2495,7 +2495,7 @@ ul.entry-meta-artist > li:first-child:before {
   transition-timing-function: ease-in-out;
 }
 
-/* line 301, ../../sass/templates/_artwork-category.scss */
+/* line 299, ../../sass/templates/_artwork-category.scss */
 .vignette img:hover {
   border: 12px, solid rgba(102, 187, 221, 0.7);
 }
@@ -3139,8 +3139,40 @@ input::-moz-focus-inner {
 
 /* line 42, ../../sass/templates/_contributor.scss */
 .staff-border {
-  border: 6px, solid #FF3300;
+  border: 6px, solid #999999;
   border-radius: 50%;
+}
+
+/* line 47, ../../sass/templates/_contributor.scss */
+.box-ms-contributor {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+  margin-right: 3%;
+  width: 11rem;
+}
+@media only screen and (max-width: 695px) {
+  /* line 47, ../../sass/templates/_contributor.scss */
+  .box-ms-contributor {
+    margin-right: 5%;
+    width: 8rem;
+  }
+}
+@media only screen and (min-width: 696px) and (max-width: 960px) {
+  /* line 47, ../../sass/templates/_contributor.scss */
+  .box-ms-contributor {
+    margin-right: 2.5%;
+    width: 11rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 47, ../../sass/templates/_contributor.scss */
+  .box-ms-contributor {
+    margin-right: 3%;
+    width: 12rem;
+  }
 }
 
 /*------------------------------------*\

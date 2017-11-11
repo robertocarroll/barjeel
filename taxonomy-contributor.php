@@ -31,7 +31,7 @@
       <div class="contributor-details">
         <img width="100%" class="round" height="auto" src="<?php echo $image; ?>">
       </div><!-- .contributor-details -->
-      <div class="category-description padding-top-most cb">
+      <div class="category-description padding-top-most padding-bottom cb">
         <h1 class="alpha bold uppercase gray margin-below-half center mid-line"><?php echo $full_name ; ?></h1>
         <h2 class="beta bold uppercase blue margin-below center mid-line"><?php echo $title; ?></h2>
 
@@ -62,7 +62,7 @@
             $has_curated_posts = true;
     ?>
     <div class="contributor-left">
-    <h2 class="bold gray gamma"><span class="red">Curating by</span> <?php echo $firstname; ?></h2>
+    <h2 class="bold gray gamma mid-line"><span class="red">Curating by</span> <?php echo $firstname; ?></h2>
     <?php while ( $exhibition_query->have_posts() ) : $exhibition_query->the_post(); ?>
       <h2 class="date delta e-date padding-bottom-half">
         <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
@@ -102,7 +102,7 @@
             echo '<div class="contributor-left">';
            }
     ?>
-    <h2 class="bold gray gamma"><span class="red">Writing by</span> <?php echo $firstname; ?></h2>
+    <h2 class="bold gray gamma mid-line"><span class="red">Writing by</span> <?php echo $firstname; ?></h2>
     <?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
      <h2 class="date delta e-date padding-bottom-half">
       <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>

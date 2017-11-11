@@ -77,8 +77,6 @@ p {
 .small {
 	font-size: $milli-size;
 	line-height: $lowest-line-height;
-
-
 }
 
 .micro {
@@ -89,6 +87,16 @@ p {
 .no-padding {margin: 0;}
 
 .uppercase {text-transform: uppercase;}
+
+.category-description h2 {
+  margin-top: $half-spacing-unit;
+  margin-bottom: $quarter-spacing-unit;
+  font-weight: bold;
+}
+
+.category-description li {
+  list-style-type: circle;
+}
 
 /*  <strong>For emphasizing a snippet of text with important</strong> */
 strong {

@@ -41,6 +41,29 @@
   border-radius: 50%;
 }
 
+#sortArtwork-contributor {
+
+  @include gs-span(da, 2, 5, (2, 5));
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+@include respond-to(mobile) {
+    @include gs-span(m, all);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .box-ms-contributor {
   @include respond-to(mobile) {
     margin-right: 5%;

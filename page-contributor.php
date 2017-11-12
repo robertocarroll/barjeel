@@ -5,11 +5,12 @@ Template Name: Contributor single
 ?>
 
 <?php get_header();
+   global $post;
+   $page_slug = $post->post_name;
    $firstname = get_post_meta($post->ID, 'first-name', true);
    $lastname = get_post_meta($post->ID, 'last-name', true);
    $email = get_post_meta($post->ID, 'email', true);
    $title = get_post_meta($post->ID, 'title', true);
-
 ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
@@ -32,14 +33,76 @@ Template Name: Contributor single
     <?php the_content(); ?>
   </div>
 
-</div> <!-- .contributor-outer -->
-
 <?php endwhile; ?>
 
 <?php /* Reset query */ wp_reset_query();
            remove_filter('post_limits', 'your_query_limit');
           ?>
 
+    <?php $exhibition['tax_query'] = array(
+        array(
+          'taxonomy' => 'contributor-curator',
+          'field' => 'slug',
+          'terms' => $page_slug
+        )
+      );
+      ?>
+
+   <?php $exhibition_query = new WP_Query( $exhibition );
+          if($exhibition_query->have_posts()) {
+            $has_curated_posts = true;
+    ?>
+    <div class="contributor-left">
+    <h2 class="bold gray delta mid-line">Curating by <?php echo $firstname; ?></h2>
+    <?php while ( $exhibition_query->have_posts() ) : $exhibition_query->the_post(); ?>
+      <h2 class="date epsilon e-date padding-bottom-half">
+        <a class="blue" href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
+        </a>
+      </h2>
+    <?php endwhile; ?>
+      </div>
+     <?php
+      }
+     ?>
+    <?php /* Reset query */ wp_reset_query();
+           remove_filter('post_limits', 'your_query_limit');
+          ?>
+
+    <?php $news['tax_query'] = array(
+        array(
+          'taxonomy' => 'contributor-writer',
+          'field' => 'slug',
+          'terms' => $page_slug
+        )
+      );
+      ?>
+
+    <?php $news_query = new WP_Query( $news );
+           if($news_query->have_posts()) {
+
+           if ($has_curated_posts === true) {
+            echo '<div class="contributor-right">';
+           }
+
+           else {
+            echo '<div class="contributor-left">';
+           }
+    ?>
+    <h2 class="bold gray delta mid-line">Writing by <?php echo $firstname; ?></h2>
+    <?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
+     <h2 class="date epsilon e-date padding-bottom-half">
+      <a class="blue" href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
+      </a>
+    </h2>
+    <?php endwhile; ?>
+      </div>
+     <?php
+      }
+     ?>
+    <?php /* Reset query */ wp_reset_query();
+           remove_filter('post_limits', 'your_query_limit');
+          ?>
+   </div> <!-- .contributor-outer -->
 
    <h2 class="related-title padding-top-most cb">Staff and contributors</h2>
    <div id="sortArtwork-contributor">

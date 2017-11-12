@@ -7,7 +7,6 @@ Template Name: Contributors
 <?php get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-
 <div class="pad-in padding-top-most filter-sort-menu-wide">
   <h1 class="entry-title-page no-margin-below padding-top-most">
     <?php the_title(); ?>

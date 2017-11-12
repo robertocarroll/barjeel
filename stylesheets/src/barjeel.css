@@ -3139,7 +3139,7 @@ input::-moz-focus-inner {
   float: left;
   margin-left: 0%;
   margin-right: -100%;
-  width: 100%;
+  width: 74.33762%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -5125,63 +5125,68 @@ a:hover.menu-trigger {
 }
 
 /* line 22, ../../sass/templates/_misc.scss */
+.ta-left {
+  text-align: left !important;
+}
+
+/* line 26, ../../sass/templates/_misc.scss */
 .white, .news-item, .page-content, .page-content-exhibitions {
   background: white;
 }
 
-/* line 24, ../../sass/templates/_misc.scss */
+/* line 28, ../../sass/templates/_misc.scss */
 .white-text, .colour-title {
   color: white;
 }
 
-/* line 26, ../../sass/templates/_misc.scss */
+/* line 30, ../../sass/templates/_misc.scss */
 .grey {
   background: #999999;
 }
 
-/* line 28, ../../sass/templates/_misc.scss */
+/* line 32, ../../sass/templates/_misc.scss */
 .gray, .category-description {
   color: #999999;
 }
 
-/* line 30, ../../sass/templates/_misc.scss */
+/* line 34, ../../sass/templates/_misc.scss */
 .red {
   color: #FF3300;
 }
 
-/* line 32, ../../sass/templates/_misc.scss */
+/* line 36, ../../sass/templates/_misc.scss */
 .red-back {
   background: #FF3300;
 }
 
-/* line 34, ../../sass/templates/_misc.scss */
+/* line 38, ../../sass/templates/_misc.scss */
 .blue {
   color: #66BBDD;
 }
 
-/* line 36, ../../sass/templates/_misc.scss */
+/* line 40, ../../sass/templates/_misc.scss */
 .blue-back, .random {
   background: #66BBDD;
 }
 
-/* line 38, ../../sass/templates/_misc.scss */
+/* line 42, ../../sass/templates/_misc.scss */
 .outline {
   outline: 1px solid #99999a;
 }
 
-/* line 40, ../../sass/templates/_misc.scss */
+/* line 44, ../../sass/templates/_misc.scss */
 .inline {
   display: inline;
 }
 
-/* line 42, ../../sass/templates/_misc.scss */
+/* line 46, ../../sass/templates/_misc.scss */
 .inline-icon {
   margin-right: 6px;
   vertical-align: bottom;
   margin-bottom: 2px;
 }
 
-/* line 48, ../../sass/templates/_misc.scss */
+/* line 52, ../../sass/templates/_misc.scss */
 .square {
   width: 15px;
   height: 15px;
@@ -5190,77 +5195,77 @@ a:hover.menu-trigger {
   margin-bottom: 12px;
 }
 
-/* line 56, ../../sass/templates/_misc.scss */
+/* line 60, ../../sass/templates/_misc.scss */
 .word-wrap {
   word-wrap: break-word;
 }
 
-/* line 60, ../../sass/templates/_misc.scss */
+/* line 64, ../../sass/templates/_misc.scss */
 .padding-top {
   padding-top: 12px;
 }
 
-/* line 64, ../../sass/templates/_misc.scss */
+/* line 68, ../../sass/templates/_misc.scss */
 .padding-top-quarter {
   padding-top: 6px;
 }
 
-/* line 68, ../../sass/templates/_misc.scss */
+/* line 72, ../../sass/templates/_misc.scss */
 .padding-top-most {
   padding-top: 24px;
 }
 
-/* line 72, ../../sass/templates/_misc.scss */
+/* line 76, ../../sass/templates/_misc.scss */
 .padding-bottom {
   padding-bottom: 24px;
 }
 
-/* line 76, ../../sass/templates/_misc.scss */
+/* line 80, ../../sass/templates/_misc.scss */
+.padding-right {
+  padding-right: 24px;
+}
+
+/* line 84, ../../sass/templates/_misc.scss */
 .padding-bottom-half {
   padding-bottom: 12px;
 }
 
-/* line 80, ../../sass/templates/_misc.scss */
+/* line 88, ../../sass/templates/_misc.scss */
 .padding-bottom-quarter {
   padding-bottom: 6px;
 }
 
-/* line 84, ../../sass/templates/_misc.scss */
+/* line 92, ../../sass/templates/_misc.scss */
 .pad-1 {
   padding: 24px;
 }
 
-/* line 88, ../../sass/templates/_misc.scss */
+/* line 96, ../../sass/templates/_misc.scss */
 .no-padding-below {
   padding-bottom: 0;
 }
 
-/* line 92, ../../sass/templates/_misc.scss */
+/* line 100, ../../sass/templates/_misc.scss */
 .no-margin-below {
   margin-bottom: 0;
 }
 
-/* line 96, ../../sass/templates/_misc.scss */
+/* line 104, ../../sass/templates/_misc.scss */
 .margin-below, .search-title {
   margin-bottom: 6px;
 }
 
-/* line 100, ../../sass/templates/_misc.scss */
+/* line 108, ../../sass/templates/_misc.scss */
 .margin-below-half {
   margin-bottom: 12px;
 }
 
-/* line 104, ../../sass/templates/_misc.scss */
+/* line 112, ../../sass/templates/_misc.scss */
 .margin-top-half {
   margin-top: 12px;
 }
 
-/* line 108, ../../sass/templates/_misc.scss */
-.ta-left {
-  text-align: left !important;
-}
-
-/* line 112, ../../sass/templates/_misc.scss */
+/* line 116, ../../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5269,18 +5274,23 @@ a:hover.menu-trigger {
   padding-right: 2.22222%;
 }
 
-/* line 116, ../../sass/templates/_misc.scss */
+/* line 120, ../../sass/templates/_misc.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 120, ../../sass/templates/_misc.scss */
+/* line 124, ../../sass/templates/_misc.scss */
+.block {
+  display: block !important;
+}
+
+/* line 128, ../../sass/templates/_misc.scss */
 .border-side {
   border-right: 1px solid #66BBDD;
   padding-left: 0;
 }
 
-/* line 125, ../../sass/templates/_misc.scss */
+/* line 133, ../../sass/templates/_misc.scss */
 .column-one {
   display: block;
   float: left;
@@ -5290,7 +5300,7 @@ a:hover.menu-trigger {
   clear: both;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 125, ../../sass/templates/_misc.scss */
+  /* line 133, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5300,7 +5310,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 125, ../../sass/templates/_misc.scss */
+  /* line 133, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5312,7 +5322,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 140, ../../sass/templates/_misc.scss */
+/* line 148, ../../sass/templates/_misc.scss */
 .column-two {
   display: block;
   float: left;
@@ -5321,7 +5331,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 140, ../../sass/templates/_misc.scss */
+  /* line 148, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5331,7 +5341,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 140, ../../sass/templates/_misc.scss */
+  /* line 148, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5343,7 +5353,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 156, ../../sass/templates/_misc.scss */
+/* line 164, ../../sass/templates/_misc.scss */
 .column-three {
   display: block;
   float: left;
@@ -5352,7 +5362,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 156, ../../sass/templates/_misc.scss */
+  /* line 164, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5364,7 +5374,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 156, ../../sass/templates/_misc.scss */
+  /* line 164, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5376,7 +5386,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 174, ../../sass/templates/_misc.scss */
+/* line 182, ../../sass/templates/_misc.scss */
 .column-four {
   display: block;
   float: left;
@@ -5385,7 +5395,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 174, ../../sass/templates/_misc.scss */
+  /* line 182, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5396,7 +5406,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 174, ../../sass/templates/_misc.scss */
+  /* line 182, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5408,7 +5418,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 189, ../../sass/templates/_misc.scss */
+/* line 197, ../../sass/templates/_misc.scss */
 .column-one-two {
   display: block;
   float: left;
@@ -5417,7 +5427,7 @@ a:hover.menu-trigger {
   width: 48.67525%;
 }
 
-/* line 193, ../../sass/templates/_misc.scss */
+/* line 201, ../../sass/templates/_misc.scss */
 .column-two-three {
   display: block;
   float: left;
@@ -5426,7 +5436,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 197, ../../sass/templates/_misc.scss */
+/* line 205, ../../sass/templates/_misc.scss */
 .column-three-four {
   display: block;
   float: left;
@@ -5435,7 +5445,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 201, ../../sass/templates/_misc.scss */
+/* line 209, ../../sass/templates/_misc.scss */
 .column-two-three-four {
   display: block;
   float: left;
@@ -6619,30 +6629,31 @@ p {
 /* line 97, ../../sass/templates/_typography.scss */
 .category-description li {
   list-style-type: circle;
+  color: #555555;
 }
 
 /*  <strong>For emphasizing a snippet of text with important</strong> */
-/* line 102, ../../sass/templates/_typography.scss */
+/* line 103, ../../sass/templates/_typography.scss */
 strong {
   font-style: normal;
   font-weight: 700;
 }
 
 /*  <em>For emphasizing a snippet of text with stress</em> */
-/* line 108, ../../sass/templates/_typography.scss */
+/* line 109, ../../sass/templates/_typography.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
 
 /*  Class for muted text */
-/* line 114, ../../sass/templates/_typography.scss */
+/* line 115, ../../sass/templates/_typography.scss */
 .muted {
   color: #999999;
 }
 
 /*  Defines a thematic change in the content */
-/* line 118, ../../sass/templates/_typography.scss */
+/* line 119, ../../sass/templates/_typography.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -6656,27 +6667,27 @@ providing additional context on hover.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 */
-/* line 132, ../../sass/templates/_typography.scss */
+/* line 133, ../../sass/templates/_typography.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 136, ../../sass/templates/_typography.scss */
+/* line 137, ../../sass/templates/_typography.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
 /*  For quoting blocks of content from another source within your document */
-/* line 142, ../../sass/templates/_typography.scss */
+/* line 143, ../../sass/templates/_typography.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
-/* line 148, ../../sass/templates/_typography.scss */
+/* line 149, ../../sass/templates/_typography.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
@@ -6684,14 +6695,14 @@ blockquote p {
   line-height: 25px;
 }
 
-/* line 155, ../../sass/templates/_typography.scss */
+/* line 156, ../../sass/templates/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 
-/* line 161, ../../sass/templates/_typography.scss */
+/* line 162, ../../sass/templates/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
@@ -6699,19 +6710,19 @@ blockquote small:before {
 /*  Add <small> tag for identifying the source. Wrap the name of the source work in <cite>.
 	<small>Someone famous <cite title="Source Title">Source Title</cite></small>
  */
-/* line 169, ../../sass/templates/_typography.scss */
+/* line 170, ../../sass/templates/_typography.scss */
 cite {
   font-style: normal;
 }
 
 /*  <small>For fine print etc.</small> */
-/* line 174, ../../sass/templates/_typography.scss */
+/* line 175, ../../sass/templates/_typography.scss */
 small {
   font-size: 85%;
 }
 
 /* Floated, right-aligned blockquote. */
-/* line 179, ../../sass/templates/_typography.scss */
+/* line 180, ../../sass/templates/_typography.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -6720,23 +6731,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 187, ../../sass/templates/_typography.scss */
+/* line 188, ../../sass/templates/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 191, ../../sass/templates/_typography.scss */
+/* line 192, ../../sass/templates/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 194, ../../sass/templates/_typography.scss */
+/* line 195, ../../sass/templates/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 198, ../../sass/templates/_typography.scss */
+/* line 199, ../../sass/templates/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -6745,7 +6756,7 @@ blockquote:after {
 }
 
 /* Present contact information. Use <br> for line breaks */
-/* line 206, ../../sass/templates/_typography.scss */
+/* line 207, ../../sass/templates/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -6754,7 +6765,7 @@ address {
 }
 
 /* To display code etc. */
-/* line 214, ../../sass/templates/_typography.scss */
+/* line 215, ../../sass/templates/_typography.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -6766,7 +6777,7 @@ pre {
   border-radius: 3px;
 }
 
-/* line 224, ../../sass/templates/_typography.scss */
+/* line 225, ../../sass/templates/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -6774,7 +6785,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 230, ../../sass/templates/_typography.scss */
+/* line 231, ../../sass/templates/_typography.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -6793,12 +6804,12 @@ pre {
   border-radius: 4px;
 }
 
-/* line 247, ../../sass/templates/_typography.scss */
+/* line 248, ../../sass/templates/_typography.scss */
 pre.prettyprint {
   margin-bottom: 20px;
 }
 
-/* line 250, ../../sass/templates/_typography.scss */
+/* line 251, ../../sass/templates/_typography.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -6806,13 +6817,13 @@ pre code {
   border: 0;
 }
 
-/* line 256, ../../sass/templates/_typography.scss */
+/* line 257, ../../sass/templates/_typography.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
 }
 
-/* line 261, ../../sass/templates/_typography.scss */
+/* line 262, ../../sass/templates/_typography.scss */
 .long-word {
   /* See https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ for further info. */
   word-wrap: break-word;

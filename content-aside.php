@@ -21,23 +21,36 @@
         <?php $location = get_post_meta($post->ID, 'Location', true); ?>
         <?php $exhibition_meta = array ($dates, $location) ?>
         <?php	if(!empty($exhibition_meta)) { ?>
-          <?php echo '<ul class="exhibition-meta-list">' ?>
+          <?php echo '<ul class="exhibition-meta-list no-margin-below">' ?>
           <?php
               foreach($exhibition_meta as $value) {print '<li>'.$value.'</li>'; ;}
           ?>
           <?php echo '</ul>' ?>
-          <?php }
+          <?php } ?>
 
-            $terms = wp_get_post_terms($post->ID,'contributor');
-            $count = count($terms);
+       <?php
+        $terms = wp_get_post_terms($post->ID,'contributor-curator');
+        $count = count($terms);
+         if ( $count > 0 ){
+           echo '<ul class="entry-meta meta-exhibition padding-bottom padding-right">Curated by';
+             foreach ( $terms as $term ) {
+               echo '<li><a href="'.get_term_link($term->slug, 'contributor-curator').'">'. $term->name . "</a></li>";
+             }
+             echo "</ul>";
+           } ?>
 
-             if ( $count > 0 ){
-               echo '<ul class="entry-meta meta-exhibition">Curated by';
-                 foreach ( $terms as $term ) {
-                   echo '<li><a href="'.get_term_link($term->slug, 'contributor').'">'. $term->name . "</a></li>";
-                 }
-                 echo "</ul>";
-               } ?>
+        <?php
+        $terms = wp_get_post_terms($post->ID,'contributor-writer');
+        $count = count($terms);
+         if ( $count > 0 ){
+           echo '<ul class="entry-meta meta-exhibition padding-bottom">Writing by';
+             foreach ( $terms as $term ) {
+               echo '<li><a href="'.get_term_link($term->slug, 'contributor-writer').'">'. $term->name . "</a></li>";
+             }
+             echo "</ul>";
+           } ?>
+
+
 
         <div class="exhibition-main-text">
           <?php the_content(); ?>

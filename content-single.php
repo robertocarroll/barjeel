@@ -65,12 +65,12 @@
       <h1 class="entry-title-page margin-below"><?php the_title(); ?></h1>
 
         <?php
-        $terms = wp_get_post_terms($post->ID,'contributor');
+        $terms = wp_get_post_terms($post->ID,'contributor-writer');
         $count = count($terms);
          if ( $count > 0 ){
            echo '<ul class="entry-meta meta-exhibition padding-bottom">Written by';
              foreach ( $terms as $term ) {
-               echo '<li><a href="'.get_term_link($term->slug, 'contributor').'">'. $term->name . "</a></li>";
+               echo '<li><a href="'.get_term_link($term->slug, 'contributor-writer').'">'. $term->name . "</a></li>";
              }
              echo "</ul>";
            } ?>

@@ -118,7 +118,7 @@
     </div> <!-- .contributor-outer -->
 
    <h2 class="related-title padding-top-most cb">Staff and contributors</h2>
-   <div id="sortArtwork">
+   <div id="sortArtwork-contributor">
     <?php
     // get the other contributors and exclude the current one
     $taxonomies = array(
@@ -223,7 +223,6 @@
     </div><!-- .box-ms -->
 
     <?php } ?>
-
 
       </div><!-- sort -->
     </div><!-- #content -->

@@ -30,14 +30,61 @@
 
             $terms = wp_get_post_terms($post->ID,'contributor');
             $count = count($terms);
+            $contributors_custom_writers = array();
+            $contributors_custom_curators = array();
+            $i = 0;
 
              if ( $count > 0 ){
-               echo '<ul class="entry-meta meta-exhibition">Curated by';
-                 foreach ( $terms as $term ) {
-                   echo '<li><a href="'.get_term_link($term->slug, 'contributor').'">'. $term->name . "</a></li>";
-                 }
-                 echo "</ul>";
-               } ?>
+             foreach ( $terms as $term ) {
+              $term_id = $term->term_id;
+
+              if (function_exists('get_all_wp_terms_meta')) {
+               $term_exhibition_writer = wp_get_terms_meta($term_id, 'exhibition-writer' ,true);
+              }
+
+              if (function_exists('get_all_wp_terms_meta')) {
+               $term_exhibition_curator = wp_get_terms_meta($term_id, 'exhibition-curator' ,true);
+
+              }
+
+              $term_name = $term->name;
+              $term_link = get_term_link($term->slug, 'contributor');
+
+              if ($term_exhibition_writer == 'checked') {
+               $contributors_custom_writers[$i]['name'] = $term_name;
+               $contributors_custom_writers[$i]['link'] = $term_link;
+              }
+
+              if ($term_exhibition_curator == 'checked') {
+               $contributors_custom_curators[$i]['name'] = $term_name;
+               $contributors_custom_curators[$i]['link'] = $term_link;
+              }
+
+              $i++;
+            }
+
+             if ($contributors_custom_curators) { ?>
+               <ul class="entry-meta meta-exhibition block">Curated by <?php
+                 foreach ( $contributors_custom_curators as $contributors_custom_curator ) {
+                  ?>
+                   <li><a href="<?php echo $contributors_custom_curator['link'] ?>"><?php echo $contributors_custom_curator['name'] ?></a></li>
+                <?php } ?>
+                 </ul>
+
+             <?php }
+
+             if($contributors_custom_writers) { ?>
+
+             <ul class="entry-meta meta-exhibition block">Writing by <?php
+                 foreach ( $contributors_custom_writers as $contributors_custom_writer ) {
+                  ?>
+                   <li><a href="<?php echo $contributors_custom_writer['link'] ?>"><?php echo $contributors_custom_writer['name'] ?></a></li>
+                <?php } ?>
+                 </ul>
+
+             <?php }
+
+        } ?>
 
         <div class="exhibition-main-text">
           <?php the_content(); ?>

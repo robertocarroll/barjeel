@@ -77,6 +77,10 @@
 	padding-bottom: $base-spacing-unit;
 }
 
+.padding-right {
+  padding-right: $base-spacing-unit;
+}
+
 .padding-bottom-half {
   padding-bottom: $half-spacing-unit;
 }
@@ -115,6 +119,10 @@
 
 .inline-block {
   display: inline-block;
+}
+
+.block {
+  display: block !important;
 }
 
 .border-side {

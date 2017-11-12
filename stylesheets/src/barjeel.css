@@ -5221,46 +5221,51 @@ a:hover.menu-trigger {
 }
 
 /* line 80, ../../sass/templates/_misc.scss */
+.padding-right {
+  padding-right: 24px;
+}
+
+/* line 84, ../../sass/templates/_misc.scss */
 .padding-bottom-half {
   padding-bottom: 12px;
 }
 
-/* line 84, ../../sass/templates/_misc.scss */
+/* line 88, ../../sass/templates/_misc.scss */
 .padding-bottom-quarter {
   padding-bottom: 6px;
 }
 
-/* line 88, ../../sass/templates/_misc.scss */
+/* line 92, ../../sass/templates/_misc.scss */
 .pad-1 {
   padding: 24px;
 }
 
-/* line 92, ../../sass/templates/_misc.scss */
+/* line 96, ../../sass/templates/_misc.scss */
 .no-padding-below {
   padding-bottom: 0;
 }
 
-/* line 96, ../../sass/templates/_misc.scss */
+/* line 100, ../../sass/templates/_misc.scss */
 .no-margin-below {
   margin-bottom: 0;
 }
 
-/* line 100, ../../sass/templates/_misc.scss */
+/* line 104, ../../sass/templates/_misc.scss */
 .margin-below, .search-title {
   margin-bottom: 6px;
 }
 
-/* line 104, ../../sass/templates/_misc.scss */
+/* line 108, ../../sass/templates/_misc.scss */
 .margin-below-half {
   margin-bottom: 12px;
 }
 
-/* line 108, ../../sass/templates/_misc.scss */
+/* line 112, ../../sass/templates/_misc.scss */
 .margin-top-half {
   margin-top: 12px;
 }
 
-/* line 112, ../../sass/templates/_misc.scss */
+/* line 116, ../../sass/templates/_misc.scss */
 .pad-in {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5269,18 +5274,23 @@ a:hover.menu-trigger {
   padding-right: 2.22222%;
 }
 
-/* line 116, ../../sass/templates/_misc.scss */
+/* line 120, ../../sass/templates/_misc.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 120, ../../sass/templates/_misc.scss */
+/* line 124, ../../sass/templates/_misc.scss */
+.block {
+  display: block !important;
+}
+
+/* line 128, ../../sass/templates/_misc.scss */
 .border-side {
   border-right: 1px solid #66BBDD;
   padding-left: 0;
 }
 
-/* line 125, ../../sass/templates/_misc.scss */
+/* line 133, ../../sass/templates/_misc.scss */
 .column-one {
   display: block;
   float: left;
@@ -5290,7 +5300,7 @@ a:hover.menu-trigger {
   clear: both;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 125, ../../sass/templates/_misc.scss */
+  /* line 133, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5300,7 +5310,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 125, ../../sass/templates/_misc.scss */
+  /* line 133, ../../sass/templates/_misc.scss */
   .column-one {
     display: block;
     float: left;
@@ -5312,7 +5322,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 140, ../../sass/templates/_misc.scss */
+/* line 148, ../../sass/templates/_misc.scss */
 .column-two {
   display: block;
   float: left;
@@ -5321,7 +5331,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 140, ../../sass/templates/_misc.scss */
+  /* line 148, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5331,7 +5341,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 140, ../../sass/templates/_misc.scss */
+  /* line 148, ../../sass/templates/_misc.scss */
   .column-two {
     display: block;
     float: left;
@@ -5343,7 +5353,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 156, ../../sass/templates/_misc.scss */
+/* line 164, ../../sass/templates/_misc.scss */
 .column-three {
   display: block;
   float: left;
@@ -5352,7 +5362,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 156, ../../sass/templates/_misc.scss */
+  /* line 164, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5364,7 +5374,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 156, ../../sass/templates/_misc.scss */
+  /* line 164, ../../sass/templates/_misc.scss */
   .column-three {
     display: block;
     float: left;
@@ -5376,7 +5386,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 174, ../../sass/templates/_misc.scss */
+/* line 182, ../../sass/templates/_misc.scss */
 .column-four {
   display: block;
   float: left;
@@ -5385,7 +5395,7 @@ a:hover.menu-trigger {
   width: 22.99773%;
 }
 @media only screen and (min-width: 696px) and (max-width: 960px) {
-  /* line 174, ../../sass/templates/_misc.scss */
+  /* line 182, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5396,7 +5406,7 @@ a:hover.menu-trigger {
   }
 }
 @media only screen and (max-width: 695px) {
-  /* line 174, ../../sass/templates/_misc.scss */
+  /* line 182, ../../sass/templates/_misc.scss */
   .column-four {
     display: block;
     float: left;
@@ -5408,7 +5418,7 @@ a:hover.menu-trigger {
   }
 }
 
-/* line 189, ../../sass/templates/_misc.scss */
+/* line 197, ../../sass/templates/_misc.scss */
 .column-one-two {
   display: block;
   float: left;
@@ -5417,7 +5427,7 @@ a:hover.menu-trigger {
   width: 48.67525%;
 }
 
-/* line 193, ../../sass/templates/_misc.scss */
+/* line 201, ../../sass/templates/_misc.scss */
 .column-two-three {
   display: block;
   float: left;
@@ -5426,7 +5436,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 197, ../../sass/templates/_misc.scss */
+/* line 205, ../../sass/templates/_misc.scss */
 .column-three-four {
   display: block;
   float: left;
@@ -5435,7 +5445,7 @@ a:hover.menu-trigger {
   width: 48.66011%;
 }
 
-/* line 201, ../../sass/templates/_misc.scss */
+/* line 209, ../../sass/templates/_misc.scss */
 .column-two-three-four {
   display: block;
   float: left;

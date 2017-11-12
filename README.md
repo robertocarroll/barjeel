@@ -116,14 +116,14 @@ Add a custom field 'pdflink' with the link to the pdf
 3. Meta description
 
 ## Contributors
-1. Install wp-custom-taxonomy-meta plugin
-2. Add terms to the taxonomy
-3. Update permalinks
-4. Add the metadata fields - portrait, first-name, last-name, email, summary
-5. Add metadata to the term
-6. Mark news and exhibition posts with term
-7. Contributors all is a new page - template contributor
-8. Title and content is editable
+1. New page - staff-and-contributors/ - Template: contributors
+2. Add each staff or contributor as a page - parent: staff-and-contributors/ - Template: contributors-single
+3. Add custom fields - first-name, last-name, email, title
+4. Add square featured image, 600px x 600px
+3. Only include custom field staff: true if staff. Don't include anything if not.
+4. Taxonomy slug has to match the contributor page slug, e.g. contributor-writers: sarah-adamson and contributor page: sarah-adamson. That's how the page knows which posts to get from that taxonomy.
+5. You can add these taxonomies - contributor writer and contributor curator - to any post and they will show in the list.
+
 
 ## Icons
 SVG with a png backup implemented using Modernizr .no-svg class.

@@ -21,7 +21,7 @@
         <?php $location = get_post_meta($post->ID, 'Location', true); ?>
         <?php $exhibition_meta = array ($dates, $location) ?>
         <?php	if(!empty($exhibition_meta)) { ?>
-          <?php echo '<ul class="exhibition-meta-list">' ?>
+          <?php echo '<ul class="exhibition-meta-list no-margin-below">' ?>
           <?php
               foreach($exhibition_meta as $value) {print '<li>'.$value.'</li>'; ;}
           ?>

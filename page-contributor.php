@@ -45,7 +45,10 @@ Template Name: Contributor single
    <div id="sortArtwork-contributor">
     <?php
       $parent_page_id = ( '0' != $post->post_parent ? $post->post_parent : $post->ID );
-      $all_contributors = get_pages( array( 'child_of' => $parent_page_id));
+      $all_contributors = get_pages( array(
+            'child_of' => $parent_page_id,
+            'exclude' => $post->ID
+            ));
       $contributors_staff_custom = array();
       $contributors_nonstaff_custom = array();
       $i = 0;

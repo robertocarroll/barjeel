@@ -6629,30 +6629,31 @@ p {
 /* line 97, ../../sass/templates/_typography.scss */
 .category-description li {
   list-style-type: circle;
+  color: #555555;
 }
 
 /*  <strong>For emphasizing a snippet of text with important</strong> */
-/* line 102, ../../sass/templates/_typography.scss */
+/* line 103, ../../sass/templates/_typography.scss */
 strong {
   font-style: normal;
   font-weight: 700;
 }
 
 /*  <em>For emphasizing a snippet of text with stress</em> */
-/* line 108, ../../sass/templates/_typography.scss */
+/* line 109, ../../sass/templates/_typography.scss */
 em {
   font-style: italic;
   font-weight: 400;
 }
 
 /*  Class for muted text */
-/* line 114, ../../sass/templates/_typography.scss */
+/* line 115, ../../sass/templates/_typography.scss */
 .muted {
   color: #999999;
 }
 
 /*  Defines a thematic change in the content */
-/* line 118, ../../sass/templates/_typography.scss */
+/* line 119, ../../sass/templates/_typography.scss */
 hr {
   margin: 20px 0;
   border: 0;
@@ -6666,27 +6667,27 @@ providing additional context on hover.
 
 <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
 */
-/* line 132, ../../sass/templates/_typography.scss */
+/* line 133, ../../sass/templates/_typography.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
 
-/* line 136, ../../sass/templates/_typography.scss */
+/* line 137, ../../sass/templates/_typography.scss */
 abbr.initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 
 /*  For quoting blocks of content from another source within your document */
-/* line 142, ../../sass/templates/_typography.scss */
+/* line 143, ../../sass/templates/_typography.scss */
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #eeeeee;
 }
 
-/* line 148, ../../sass/templates/_typography.scss */
+/* line 149, ../../sass/templates/_typography.scss */
 blockquote p {
   margin-bottom: 0;
   font-size: 16px;
@@ -6694,14 +6695,14 @@ blockquote p {
   line-height: 25px;
 }
 
-/* line 155, ../../sass/templates/_typography.scss */
+/* line 156, ../../sass/templates/_typography.scss */
 blockquote small {
   display: block;
   line-height: 20px;
   color: #999999;
 }
 
-/* line 161, ../../sass/templates/_typography.scss */
+/* line 162, ../../sass/templates/_typography.scss */
 blockquote small:before {
   content: '\2014 \00A0';
 }
@@ -6709,19 +6710,19 @@ blockquote small:before {
 /*  Add <small> tag for identifying the source. Wrap the name of the source work in <cite>.
 	<small>Someone famous <cite title="Source Title">Source Title</cite></small>
  */
-/* line 169, ../../sass/templates/_typography.scss */
+/* line 170, ../../sass/templates/_typography.scss */
 cite {
   font-style: normal;
 }
 
 /*  <small>For fine print etc.</small> */
-/* line 174, ../../sass/templates/_typography.scss */
+/* line 175, ../../sass/templates/_typography.scss */
 small {
   font-size: 85%;
 }
 
 /* Floated, right-aligned blockquote. */
-/* line 179, ../../sass/templates/_typography.scss */
+/* line 180, ../../sass/templates/_typography.scss */
 blockquote.pull-right {
   float: right;
   padding-right: 15px;
@@ -6730,23 +6731,23 @@ blockquote.pull-right {
   border-left: 0;
 }
 
-/* line 187, ../../sass/templates/_typography.scss */
+/* line 188, ../../sass/templates/_typography.scss */
 blockquote.pull-right p,
 blockquote.pull-right small {
   text-align: right;
 }
 
-/* line 191, ../../sass/templates/_typography.scss */
+/* line 192, ../../sass/templates/_typography.scss */
 blockquote.pull-right small:before {
   content: '';
 }
 
-/* line 194, ../../sass/templates/_typography.scss */
+/* line 195, ../../sass/templates/_typography.scss */
 blockquote.pull-right small:after {
   content: '\00A0 \2014';
 }
 
-/* line 198, ../../sass/templates/_typography.scss */
+/* line 199, ../../sass/templates/_typography.scss */
 q:before,
 q:after,
 blockquote:before,
@@ -6755,7 +6756,7 @@ blockquote:after {
 }
 
 /* Present contact information. Use <br> for line breaks */
-/* line 206, ../../sass/templates/_typography.scss */
+/* line 207, ../../sass/templates/_typography.scss */
 address {
   display: block;
   margin-bottom: 20px;
@@ -6764,7 +6765,7 @@ address {
 }
 
 /* To display code etc. */
-/* line 214, ../../sass/templates/_typography.scss */
+/* line 215, ../../sass/templates/_typography.scss */
 code,
 pre {
   padding: 0 3px 2px;
@@ -6776,7 +6777,7 @@ pre {
   border-radius: 3px;
 }
 
-/* line 224, ../../sass/templates/_typography.scss */
+/* line 225, ../../sass/templates/_typography.scss */
 code {
   padding: 2px 4px;
   color: #d14;
@@ -6784,7 +6785,7 @@ code {
   border: 1px solid #e1e1e8;
 }
 
-/* line 230, ../../sass/templates/_typography.scss */
+/* line 231, ../../sass/templates/_typography.scss */
 pre {
   display: block;
   padding: 9.5px;
@@ -6803,12 +6804,12 @@ pre {
   border-radius: 4px;
 }
 
-/* line 247, ../../sass/templates/_typography.scss */
+/* line 248, ../../sass/templates/_typography.scss */
 pre.prettyprint {
   margin-bottom: 20px;
 }
 
-/* line 250, ../../sass/templates/_typography.scss */
+/* line 251, ../../sass/templates/_typography.scss */
 pre code {
   padding: 0;
   color: inherit;
@@ -6816,13 +6817,13 @@ pre code {
   border: 0;
 }
 
-/* line 256, ../../sass/templates/_typography.scss */
+/* line 257, ../../sass/templates/_typography.scss */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
 }
 
-/* line 261, ../../sass/templates/_typography.scss */
+/* line 262, ../../sass/templates/_typography.scss */
 .long-word {
   /* See https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ for further info. */
   word-wrap: break-word;

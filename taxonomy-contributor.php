@@ -61,10 +61,10 @@
             $has_curated_posts = true;
     ?>
     <div class="contributor-left">
-    <h2 class="bold gray gamma mid-line"><span class="red">Curating by</span> <?php echo $firstname; ?></h2>
+    <h2 class="bold gray delta mid-line">Curating by <?php echo $firstname; ?></h2>
     <?php while ( $exhibition_query->have_posts() ) : $exhibition_query->the_post(); ?>
-      <h2 class="date delta e-date padding-bottom-half">
-        <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
+      <h2 class="date epsilon e-date padding-bottom-half">
+        <a class="blue" href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
         </a>
       </h2>
     <?php endwhile; ?>
@@ -101,10 +101,10 @@
             echo '<div class="contributor-left">';
            }
     ?>
-    <h2 class="bold gray gamma mid-line"><span class="red">Writing by</span> <?php echo $firstname; ?></h2>
+    <h2 class="bold gray delta mid-line">Writing by <?php echo $firstname; ?></h2>
     <?php while ( $news_query->have_posts() ) : $news_query->the_post(); ?>
-     <h2 class="date delta e-date padding-bottom-half">
-      <a href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
+     <h2 class="date epsilon e-date padding-bottom-half">
+      <a class="blue" href="<?php the_permalink(); ?>"><?php $title = get_the_title(); echo $title; ?>
       </a>
     </h2>
     <?php endwhile; ?>

@@ -416,7 +416,6 @@ function create_my_taxonomies() {
 	register_taxonomy( 'news-themes', 'post', array( 'hierarchical' => false, 'label' => 'News themes', 'query_var' => true, 'rewrite' => true ) );
   register_taxonomy( 'non-arab-artist', 'post', array( 'hierarchical' => true, 'label' => 'Non Arab Artist', 'query_var' => true, 'rewrite' => array('hierarchical' => true ) ) );
   register_taxonomy( 'artwork-year', 'post', array( 'hierarchical' => false, 'label' => 'Artwork year', 'query_var' => true, 'rewrite' => true ) );
-  register_taxonomy( 'contributor', 'post', array( 'hierarchical' => false, 'label' => 'Contributor', 'query_var' => true, 'rewrite' => true ) );
   register_taxonomy( 'contributor-curator', 'post', array( 'hierarchical' => false, 'label' => 'Contributor Curator', 'query_var' => true, 'rewrite' => true ) );
   register_taxonomy( 'contributor-writer', 'post', array( 'hierarchical' => false, 'label' => 'Contributor Writer', 'query_var' => true, 'rewrite' => true ) );
 }
